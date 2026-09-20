@@ -18,6 +18,11 @@ config.yaml
 # ---------------------------------------------------------------------------
 content/schedule_run.lock
 content/*.lock
+
+# Local safety copies made by scripts/repair_phantoms.py.  Never committed:
+# they duplicate post text that is already in posts_sent.txt.
+content/_backup_repair/
+content/_backup_*/
 logs/
 *.log
 
