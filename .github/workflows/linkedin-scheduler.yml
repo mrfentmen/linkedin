@@ -62,6 +62,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-ci.txt
 
+      - name: Run tests
+        # Cheap, and it fails fast: the slot planner must never hand an already
+        # claimed slot to the poster, or a run double books it.
+        run: python -m pytest tests -q
+
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
 

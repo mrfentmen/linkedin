@@ -84,6 +84,20 @@ def get_ambiguous_times() -> set[str]:
     return scheduled
 
 
+def compute_remaining(
+    all_slots: list[str],
+    already: set[str],
+    ambiguous: set[str],
+) -> list[str]:
+    """Slots in the range that are still free.
+
+    Kept as its own function so the reconcile ordering below can be tested:
+    a slot claimed by reconcile must never come back as free.
+    """
+    skip = already | ambiguous
+    return [s for s in all_slots if s not in skip]
+
+
 def run_reconcile() -> bool:
     """Run --reconcile to clean up any pending state."""
     result = subprocess.run(
@@ -179,9 +193,8 @@ def main():
     # Get already-scheduled
     already = get_already_scheduled()
     ambiguous = get_ambiguous_times()
-    skip = already | ambiguous
-    remaining = [s for s in all_slots if s not in skip]
-    
+    remaining = compute_remaining(all_slots, already, ambiguous)
+
     print(f"Already scheduled: {len(already)}")
     print(f"Ambiguous (skipping): {len(ambiguous)}")
     print(f"Remaining to schedule: {len(remaining)}")
@@ -198,6 +211,16 @@ def main():
     # Reconcile any pending state first
     print("\n--- Reconciling pending state ---")
     run_reconcile()
+
+    # Reconcile finalizes posts that an interrupted run left pending, and that
+    # claims their slots in posts_sent.txt.  `remaining` was built BEFORE that,
+    # so it still lists those slots and every one of them would get a second
+    # post.  Rebuild it now that the state has settled.  Without this, a run
+    # that follows an interrupted run double books its slots.
+    already = get_already_scheduled()
+    ambiguous = get_ambiguous_times()
+    remaining = compute_remaining(all_slots, already, ambiguous)
+    print(f"Remaining after reconcile: {len(remaining)}")
 
     q_count = get_queue_count()
     print(f"Queue count: {q_count}")
@@ -220,7 +243,15 @@ def main():
         start_idx = batch_num * batch_size
         end_idx = min(start_idx + batch_size, len(remaining))
         batch_slots = remaining[start_idx:end_idx]
-        
+
+        # Last line of defence: never hand the poster a slot that is already
+        # claimed, whatever the plan said when the run started.
+        claimed = get_already_scheduled() | get_ambiguous_times()
+        batch_slots = [s for s in batch_slots if s not in claimed]
+        if not batch_slots:
+            print("Every slot in this batch is already claimed; skipping it.")
+            continue
+
         # Check queue before each batch
         q_count = get_queue_count()
         if q_count < len(batch_slots):

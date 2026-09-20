@@ -99,6 +99,10 @@ visible without reading logs.
   ```bash
   python3 scripts/batch_schedule.py --start-date 2026-09-21 --end-date 2026-09-21 --show-plan
   ```
+- Tests (runs in CI before anything is scheduled):
+  ```bash
+  python3 -m pytest tests -q
+  ```
 
 ## What is deliberately not here
 
