@@ -1,0 +1,6 @@
+# Minimal dependency set for the GitHub Actions scheduler.
+# Pinned to the versions proven working on the local machine, so CI behaves the
+# same way the local poster did.
+playwright==1.61.0
+playwright-stealth==2.0.3
+PyYAML==6.0.3

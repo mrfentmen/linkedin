@@ -1,0 +1,215 @@
+Agent memory is the wrong name for the thing I keep needing, and it took me a year to see why. What I want is continuity. I want last week's notes, not a recap of the file I pasted into the window. Those are not the same thing.
+
+I loaded an entire service into the window, watched it answer well for one turn, and then watched it guess on the very next question. Long context didn't fix it and I spent a month believing it would. So I stopped asking a model to hold everything in its head.
+
+Now there's a note file in the repo and every session reads it first. It holds decisions with dates, plus the reason we rejected the obvious approach. Every session writes to it last. Four hundred lines of plain text, one rule, and the rule says append rather than rewrite. Nothing in it is clever.
+
+Six months in, that file is the only thing my agents share. It's ten minutes of work. I have never once had to explain our history to a new agent since. Continuity beats recall every time.
+
+#AI #BuildInPublic #VibeCoding #tech #AIAgents #ContextEngineering #Developer #Software #Engineering #Coding #DevTools #PromptEngineering #LLM #Backend #Craft #Automation
+
+---
+
+I trusted my first agent with a refactor and it rewrote a working module into a worse one. I kept that diff because it taught me where the line sits. The code looked tidy and the tests all passed.
+
+The module was ugly. Two hundred lines, four responsibilities, and a name that lied about all of them. The agent produced something shorter and cleaner and broken. It removed a fallback that only runs during one vendor's outage, because nothing in the code said the fallback mattered.
+
+That fallback existed because of an incident in 2022. That knowledge lived in one person's head and in a comment the agent deleted as dead code. So I write the constraint down before the refactor now. Not the design, the constraint.
+
+This path has to keep working when the vendor fails, and here is the test that proves it. I paste that in and the agent holds it. An agent can hold any constraint you hand it. It can't invent the ones you forgot.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #AIAgents #LegacyCode #Developer #Software #Engineering #Coding #Testing #DeepTech #Backend #Craft #CodeReview
+
+---
+
+I estimate migrations backward now and my dates got honest almost overnight. It sounds like a trick and it isn't one. The change was small.
+
+Instead of guessing how long the work takes, I write down the date it has to be done. Then I walk backward through the steps that must exist before that date. Backfill first. Dual writes before that. The read path last of all.
+
+What changed is that the estimate stopped being a number and became a sequence. I can point at step four and ask whether we need it this quarter. My old number was always the optimistic middle of a range I never wrote down. The range is the artifact.
+
+I put it in the ticket with the steps and let the team delete what they don't want. The number comes last, after the list, every single time. Nobody has asked me for a single number since.
+
+#AI #BuildInPublic #VibeCoding #tech #Estimation #SoftwareEngineering #Developer #Planning #Migrations #Backend #Engineering #ProjectManagement #DeepTech #Coding #Craft #Databases
+
+---
+
+I run heavy batches through Freebuff when my paid usage is tight and the work is boring. That sentence is the whole reason it stays installed. It isn't a tool I admire.
+
+The pattern is simple. One giant prompt that says what to change, where the tests live, and what must not change. Then it grinds through the repository while I do something else. It never asks me a question, which is the point.
+
+It isn't what I reach for on design work. It's what I reach for when there are two hundred small edits and nobody's judgment is needed. Names, imports, dead code, and fixtures. The work is real and it is dull.
+
+The trade is that I have to write a better prompt than I would write for myself, and that is the whole cost of using it. Vague instructions get vague diffs. I keep mine in the repo next to the script.
+
+#freebuff #AI #BuildInPublic #VibeCoding #tech #CLI #Automation #Developer #Software #Engineering #Coding #DevTools #LLM #Productivity #Refactoring #OpenSource
+
+---
+
+I stopped asking candidates to solve a puzzle and started pairing with them on real work. The signal went up and the interviews got shorter. I haven't gone back.
+
+Puzzles measure practice at puzzles. I was hiring for the ability to read someone else's code, ask a good question, and change their mind with evidence. None of that shows up in a linked list.
+
+The interview runs forty minutes in our repository now. I pick a small bug we already fixed and remove the fix. We work on it together and they drive the whole time. I keep my hands off the keyboard.
+
+What I watch for isn't speed. It's what they do when the test fails twice and their theory is wrong. Everyone has that moment. Almost nobody narrates it well, and the ones who do are the ones I want.
+
+The people I've hired this way are the strongest on my team. That's taste, not data, and I would say it to anyone's face.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviewing #Developer #Software #Engineering #Coding #Teamwork #Leadership #PairProgramming #DeepTech #Career #Craft
+
+---
+
+I asked a model to choose between two libraries and it picked confidently, with reasons, and it was wrong. Then I asked it to describe what each one optimizes for and the answer turned useful. Same model, different question.
+
+The first question invites a verdict. The second invites a map. A model asked for a verdict will produce one, because the shape of the question demands it. I had been asking for verdicts for months and calling the results research.
+
+I ask for tradeoffs now, not recommendations. What does this library do well, what does it do badly, and which of my constraints does it break. That third part is the one I care about. It is also the part a confident answer skips.
+
+I still make the call. I make it with a better picture, and I stopped outsourcing the part where judgment matters. That was the whole lesson and it cost me a bad migration.
+
+#AI #BuildInPublic #VibeCoding #tech #PromptEngineering #LLM #Developer #Software #Engineering #Coding #DecisionMaking #Architecture #DeepTech #Backend #Craft #Learning
+
+---
+
+I handed over a project I had owned for three years and the handover took longer than the project's last two quarters. That ratio was my own fault. Nobody else to blame.
+
+Everything important was in my head, in a document from 2023, or in a commit message. Three sources, none of them reliable, and only one of them readable by somebody else. I had been the index for all of it.
+
+So I did it as a checklist instead. Every alert, what wakes a human, what the runbook assumes, and which decisions are actually locked. Then I sat with the new owner for two afternoons while they asked the embarrassing questions. The embarrassing questions are the handover.
+
+Everything else is a transfer of files. I write that page at the start now, when nothing is broken and nobody is watching. The version written at the end reads like a defense.
+
+#AI #BuildInPublic #VibeCoding #tech #Handover #Documentation #Developer #Software #Engineering #Coding #Teamwork #Leadership #Operations #DeepTech #Craft #Career
+
+---
+
+I ran a local model on my laptop for a month and the honest summary is that it replaced two percent of my work and taught me about the other ninety eight. Both halves were worth the experiment.
+
+The two percent is the boring part. Formatting, renaming, turning a paragraph into a commit message. A small model does that offline and fast, and offline matters more than I expected on a plane.
+
+The ninety eight percent is the interesting part. Watching it fail showed me which of my tasks are actually hard. Summarizing a diff is hard. Classifying a string is not. I had assumed both were easy and I had been wrong about which one deserved my attention.
+
+So I route work by difficulty now instead of by habit. Cheap tasks go to the laptop and anything involving a decision goes to a model I pay for. The saving is real but small, and the routing knowledge is the part I kept.
+
+#AI #BuildInPublic #VibeCoding #tech #LocalModels #LLM #Developer #Software #Engineering #Coding #Privacy #DeepTech #Hardware #MachineLearning #Craft #Experiments
+
+---
+
+My evaluation set drifted away from my product and I didn't notice for two months. The scores looked great the entire time. That's the danger of a green dashboard.
+
+I wrote twenty cases when the feature was new. Then the feature changed and the prompts changed and the tenant model changed. The cases kept passing because they were written against the old world, and passing tests are easy to ignore.
+
+So the answer was a date on every case plus a rule about reading them. Anything older than ninety days gets reread, not rerun. Reading is the part that matters. Rerunning a stale case produces a number that means nothing at all.
+
+The file has a column for why the case exists, written by hand, and another for the last time a human read it. Two of the twenty were testing behavior we had removed. They'd been green for ten weeks.
+
+#AI #BuildInPublic #VibeCoding #tech #Evaluation #AIAgents #Testing #Developer #Software #Engineering #Coding #Quality #LLM #DeepTech #MachineLearning #Process
+
+---
+
+My alert said high error rate on the checkout service and nothing else. I spent ninety minutes at three in the morning learning that it was a cache key. The alert told me a symptom and I needed a name.
+
+At midnight the key format changed. Every lookup started missing. Nobody had designed for a key that expires, so every request hit the database and the database did what databases do under that load. I didn't know any of that until I traced it by hand.
+
+The fix was a version prefix and four minutes of typing. The real fix is the alert. It names the dependency now, plus the failure count and the runbook. My rule after that night is that no alert ships without the name of the thing that broke.
+
+A symptom alert wakes me up. A diagnosis alert lets me go back to sleep, and I will take the second one every single night. That difference is worth more than any dashboard I own.
+
+#AI #BuildInPublic #VibeCoding #tech #Observability #Alerting #SRE #Developer #Software #Engineering #Coding #Backend #Reliability #DeepTech #OnCall #Caching
+
+---
+
+I added an idempotency key that saved us from a duplicate charge and nobody on the team had asked for it. A payments engineer told me to, years earlier, and I finally listened.
+
+The key is a string the caller sends with a request. Same string, same effect, however many times it arrives. Our retry logic was aggressive and our network was not, so requests arrived twice often enough to matter.
+
+What surprised me is how the code got simpler. I stopped writing guards against double submission, because the key handles it. Our retry policy went from careful to rude. A retry policy should be rude.
+
+If you handle money or email, add one. Twenty minutes of work and it is the cheapest insurance in the building. I learned it from someone else's outage and I just copied the receipt in time.
+
+#AI #BuildInPublic #VibeCoding #tech #Backend #Reliability #Developer #Software #Engineering #Coding #Payments #Idempotency #DeepTech #DistributedSystems #BestPractices #Craft
+
+---
+
+I deleted a feature that four paying customers asked for and kept two of them. The other two sent me a polite note explaining why they were leaving. I read both notes twice.
+
+The feature had been in the product for eleven months. Nine percent of accounts used it once, usually in their first week. Every one of those accounts churned anyway, so the feature was not holding anybody. I had been reading a request as a retention signal.
+
+What I got wrong was the cost I never counted. Every new screen had to work with it. Every migration had to carry it. My two best engineers spent about a week a quarter keeping it alive.
+
+So I emailed the four accounts and offered a manual path to the one who needed the workflow. Two stayed. Two didn't. Removing something always looks like a loss on a slide. In my week it was a gain of fourteen days a year.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Startup #Developer #Software #Engineering #Coding #Strategy #Simplicity #Prioritization #DeepTech #Leadership #DecisionMaking
+
+---
+
+My first week at a new team taught me how much of my knowledge lived in my calendar instead of my repo. I fixed that and it changed the way I work. It took one afternoon.
+
+That first week had no plan. I answered questions as they came, which meant I repeated the same forty minutes of context for five days and forgot half of it by Friday.
+
+So I wrote the page I wished had existed. What this service does, what it must never do, and the three commands that matter. No architecture diagram, because diagrams age faster than prose and nobody updates them.
+
+Then I gave the next hire the page and told them to fix it as they went. Their version is better than mine, because a stranger's confusion is a sharper editor than my memory. Three hires later that page is still the first week's only real artifact.
+
+#AI #BuildInPublic #VibeCoding #tech #Onboarding #Documentation #Developer #Software #Engineering #Coding #Teamwork #Leadership #KnowledgeTransfer #DeepTech #Craft #Hiring
+
+---
+
+The week I noticed burnout was not the week I felt it. I noticed because I checked my own commit times and every one of them was after ten at night. The pattern was there for six weeks.
+
+Nothing dramatic happened. No crunch, no deadline, no bad manager anywhere near me. I stopped having a first idea and started every task by rereading yesterday's work. That's how it shows up in my life, quietly.
+
+What I changed is small and probably obvious. The first hour of the day belongs to the hardest task and nothing else. No email, no messages, no dashboards. Then I take a walk without a phone before I look at anything.
+
+That sounds soft to some people. What it actually does is protect the only part of the job that is hard to buy. My output went up and my evenings came back. I would rather notice the pattern early than learn it from a doctor.
+
+#AI #BuildInPublic #VibeCoding #tech #Burnout #Health #Developer #Software #Engineering #Coding #DeepWork #Habits #Career #Productivity #WorkLife #Learning
+
+---
+
+Concord cost around four hundred million dollars and peaked at six hundred and ninety seven players on Steam. Tango Gameworks closed the same year Hi Fi Rush came out and got loved. Neither closure was about quality.
+
+Both were about the model underneath. One was a live service bet that nobody wanted to play. The other was a studio sitting inside a subscription argument it could not win. The people who made the games did their jobs.
+
+I keep coming back to the same principle. The tool is never the problem, the motive is. A studio optimising for internal approval will greenlight a genre it has no audience for, and no amount of craft rescues that decision. That's my whole thesis and it holds across games, film, and software.
+
+The developers behind both of those things did their jobs well. The decision makers didn't, and they weren't the ones who lost their jobs. That distinction is the reason I write about this industry at all.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Concord #LiveService #Industry #Games #Software #Engineering #Coding #Leadership #DeepTech #GamesIndustry #Strategy
+
+---
+
+Fallout 3 scored ninety three and sold about twelve million copies. New Vegas scored eighty four and sold slightly less. New Vegas is the one people still mod, still quote, and still argue about fifteen years later.
+
+That gap is the most useful thing in my industry. It says the score and the sales both measured something, and neither of them measured whether anyone would love the thing. Awards and Metacritic are weak proxies for that question.
+
+Obsidian had eighteen months for New Vegas. Bethesda spent roughly four years on Fallout 3. The shorter game, built faster and with less money, is the one with the lasting community around it.
+
+I think about that whenever a plan says we can do it properly later. Later is a schedule. Properly is a decision you make at the start or not at all. And both remasters are confirmed now, so the rushed one is the one they're bringing back.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Fallout #NewVegas #Design #Games #Software #Engineering #Coding #Quality #GamesIndustry #DeepTech #Craft
+
+---
+
+I wrote the changelog before I wrote the code and it stopped me shipping three features that weren't worth a sentence. The rule takes two minutes and it saves weeks.
+
+Before I start, I write the line that will go in the changelog. If I can't write that line, I can't build the thing. Most bad features die right there, and they die before anyone has spent a sprint on them.
+
+Added a settings page for notification preferences. Nobody wants to read that sentence, and worse, nobody wants to maintain it either. The good ones read like a promise. Deploys finish before your coffee does, and here is what changed.
+
+That sentence shapes how I build, because I know what it has to feel like at the end. This isn't documentation and nobody reads a changelog. It's a blunt instrument for deciding what not to build.
+
+#AI #BuildInPublic #VibeCoding #tech #Changelog #ProductManagement #Developer #Software #Engineering #Coding #Writing #Documentation #DeepTech #Startup #Craft #Process
+
+---
+
+Tool sprawl crept up on my team and the bill was not the expensive part. The expensive part was that nobody knew where anything was. We had three places to talk by the end of it.
+
+Two places to track work. Four ways to deploy. Each one was added by a reasonable person solving a real problem, which is how every mess starts. Nobody wakes up wanting a fifth tool.
+
+The fix was a rule instead of a tool. One place for decisions, one place for work, and a deploy that exists in one script. Anything new has to replace something old rather than sit beside it. That last clause is the whole rule.
+
+It took three weeks and one argument about a wiki. The argument was worth having. A new hire can now find the reason for a decision without asking me, and that's worth more than the tools ever were. I would rather own fewer systems at a small team.
+
+#AI #BuildInPublic #VibeCoding #tech #DevTools #Simplicity #Developer #Software #Engineering #Coding #Teamwork #Leadership #Startup #DeepTech #Process #Craft

@@ -1,0 +1,561 @@
+Six months ago I couldn't read a stack trace. Today I deleted a file that was doing nothing and the whole thing ran faster.
+
+Nobody teaches you that. Tutorials teach you the happy path. The real learning is in the parts that break at 1am and the twenty minutes you spend staring at a line that looks fine.
+
+I keep a folder of things I have broken. Not to feel bad about it. I keep it so I remember which mistakes I have already paid for. That's the point.
+
+The list is long now. I'm not complaining. A database I dropped twice. A loop that ate an entire afternoon. A deploy that took the site down for eleven minutes while I watched.
+
+Every one of those taught me something a course would have skipped. People ask how to start. I say build the dumbest possible version and break it on purpose. Reading about a system isn't the same as watching it fail while you're the one who caused it. That's the whole difference between knowing a tool and understanding it.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Coding #Learning #SoloBuilder #IndieHacker #Developer #Software #SideProject #OpenSource #Programming #Engineering #Journey #GrowthMindset #devops #Startup #DeepTech
+---
+I built five small command line tools in one year and the biggest lesson wasn't about code.
+
+It was about scope. Each one started as something reasonable. Each one grew a second feature. Then a config file. Then a plugin system that I thought about for three days and never once used.
+
+The one that gets used every single day is forty lines long. I wrote it in an evening. It does one thing and it has never once surprised me. The fancy one has tests, docs, and a folder of dead code I keep meaning to clean up. I open it twice a month. That's it.
+
+So the bar I use now is simple. If I can't explain the tool in one sentence, it's too big. If it needs a config file, I ask whether it needs to exist at all. Usually it doesn't. Small tools aren't less ambitious. They are just honest about how much time I actually have.
+
+I think the industry has this backwards. Everyone brags about the size of what they built, and almost nobody brags about how little they got away with.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #CLI #Developer #SoloBuilder #IndieHacker #OpenSource #Software #Coding #Tools #Engineering #Productivity #SideProject #Minimalism #Startup #cleancode #DeepTech
+---
+My game runs at a stable frame rate now. It took me three weeks to find a problem that turned out to be eleven lines.
+
+The bug was mine. Two systems were both writing to the same list every frame, and they disagreed about the order. Sometimes it looked fine. Sometimes a character would slide sideways for a frame and snap back.
+
+I couldn't reproduce it on purpose. Not once. That's the worst kind of problem. So I stopped guessing and started measuring. I logged the list length every frame into a file and let it run for ten minutes while I made coffee. When I came back the answer was sitting there in plain text.
+
+That habit changed how I work. When something is weird and I can't explain it, I don't read the code again. I add a line that prints the thing and I go get water.
+
+I think the reason people get stuck is that they try to think their way out of a problem that needs to be observed. The code doesn't care what you believe about it. It cares what's happening right now.
+
+#AI #gamedesign #BuildInPublic #VibeCoding #tech #GameDev #Debugging #IndieGame #FPS #Development #Coding #Engineering #FPSGame #Unreal #SoloBuilder #Programming #Software #gamefeel #OpenSource #DeepTech
+---
+Local models are good enough for most of what I do and I spent way too long assuming otherwise.
+
+I had this idea in my head that anything running on my own laptop would be a toy. Something to play with while the real work happened on someone else's servers, and that assumption cost me money for months.
+
+Then I started paying attention to what I ask for. Rename this function and explain this error. Write the boring boilerplate for this file. Fix my indentation. All of that is small.
+
+A small model handles small things and runs with no network, no bill, and no waiting. That's the appeal. It answers before I finish rereading my own sentence. The big remote models still earn their place. I keep them for architecture questions, weird bugs, and anything where the answer needs to hold up. I use them about one request in ten. Not often.
+
+The trick is honest routing. Which means I had to notice what I was doing instead of guessing. I wish I had done that audit a year earlier. Turns out most of my prompts were errands, not thinking.
+
+#AI #promptengineering #BuildInPublic #VibeCoding #tech #Ollama #LocalLLM #LLM #DeepTech #Developer #Coding #SelfHosted #OpenSource #MachineLearning #Software #Tools #Engineering #Privacy #programming #Automation
+---
+I told the model no for the first time and the code got better.
+
+It had refactored a function into something clever. Three layers. An abstraction I didn't ask for. All of it correct, all of it impossible to read six weeks later when I have forgotten why any of it exists.
+
+So I said do it again, simpler, and I want one function. The second version was fifteen lines. Same job. I understood every line of it.
+
+I changed how I use these tools after that. Being handed something working isn't the same as being handed something I own. If I can't explain it to someone else, I haven't finished the job, I have just moved it. Now I treat the output like a draft from someone fast and overconfident. Useful. Not final.
+
+Saying no is a skill and it took me months to develop it. The instinct is to accept whatever comes back because it works. But working and being understood are two different bars, and just one of them matters when I come back to this file in March.
+
+#AI #machinelearning #BuildInPublic #VibeCoding #tech #Coding #CodeReview #Developer #Software #Engineering #Refactoring #LLM #OpenSource #SoloBuilder #Programming #automation #Simplicity #DeepTech #Productivity #Startup
+---
+The most useful thing I did this month was write down every time an AI tool surprised me.
+
+Not the big surprises. The small ones. It guessed my variable name right and forgot what we agreed two messages ago. It rewrote something I hadn't asked it to touch.
+
+Two pages later a pattern showed up that I would never have noticed otherwise. It's confident about structure and careless about scope. Great at the shape of a thing. Rubbish at remembering the edges I drew. So I changed how I talk to it. I give the structure question first and then I lock the scope down in a separate message. Fewer surprises, less fixing.
+
+I never saw this written down anywhere. Not one article. I had to trip over it four times before I started keeping notes. The notes took five minutes a day. They are the highest return thing I have done all year, which says something about how little I was paying attention before.
+
+Tools don't change. They keep doing what they do. What changes is whether you can see the shape of it.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #LLM #Prompting #Developer #Coding #Notes #Learning #Software #Engineering #DeepTech #MachineLearning #Productivity #cleancode #SoloBuilder #OpenSource #SelfImprovement
+---
+Science doesn't advance in breakthroughs. It advances in replication and nobody films that part.
+
+A result isn't real until a separate lab with separate equipment and separate people gets the same number, which takes years. It's boring, it's unglamorous, and it's the entire foundation.
+
+The people closest to the work are almost always the least confident about grand claims, because they know how many things could have gone wrong. The people furthest from the lab are the most certain, and that inversion tells you where to put your trust.
+
+I read a paper last week. It said conclusive three times. I went looking for the replication and found none. None at all. I filed it under interesting and moved on. That's the whole habit.
+
+That isn't cynicism. It's just the difference between a result and a finding. I'm more optimistic about the slow grind than the flashy headline. The grind is where progress lives, one confirmation at a time.
+
+#AI #reproducibility #learning #thinking #tech #Science #Research #Physics #ScientificMethod #STEM #PeerReview #DataScience #DeepTech #Evidence #Innovation #AcademicChatter #OpenScience #notes #Engineering #Knowledge
+---
+Every energy argument I read skips the same step, which is how much of the power we make is wasted.
+
+Everybody argues about generation. Solar versus nuclear versus gas. That argument is loud and it's also not where the biggest number lives.
+
+The grid loses power in transmission and buildings lose heat through walls. Data centers spend a shocking share of their draw on cooling the machines they just heated up, and fixing that waste would shrink the generation debate. That's less exciting than a new reactor, which is why nobody campaigns on it.
+
+I care about this because I build things that run on servers. My own little tools have a footprint and I have never once measured it. That's on me. I should. The uncomfortable part is that efficiency is boring. Insulation doesn't photograph well. Nobody writes a viral post about better ductwork.
+
+But the cheapest kilowatt hour is the one you didn't need. I have never heard a serious person in energy argue otherwise. Almost nobody in the public argument repeats it.
+
+#AI #electricity #datacenters #programming #tech #Energy #Climate #Renewable #Efficiency #Sustainability #Grid #Solar #Nuclear #DeepTech #Engineering #Environment #Science #cleancode #Future #Infrastructure
+---
+Game feel is a real engineering discipline and most people treat it as decoration.
+
+You can have correct collision, correct physics and correct animation, and the whole thing still feels dead in your hands and no fun to touch. The difference is response time. How many frames between the input and the visible reaction. Whether the camera leads slightly. Whether the sound lands on the same frame as the impact.
+
+None of that is in the design document. I know what people mean when they say a game feels good. I spent a weekend on nothing but this. No new features. Just moving things a few frames earlier and watching the same level become something I wanted to replay.
+
+My animation setup was correct for the first time and the game felt worse than before. I was confused for about an hour. Now I tune feel before I build content. It's easier to add levels to something that feels right than to fix a feel problem under ten levels of stuff.
+
+Most guides skip this. That's a mistake. It's hard to describe and impossible to screenshot.
+
+#AI #leveldesign #fpsgame #science #tech #GameDev #GameDesign #IndieGame #FPS #GameFeel #Unity #Unreal #Games #Development #research #IndieDev #Programming #physics #Design #Engineering
+---
+I stopped watching tutorials and started breaking things and my progress tripled.
+
+A tutorial is a promise that nothing will go wrong. That's the wrong promise for someone trying to learn. You finish it, everything works, and you have no idea why. Breaking something is different. You have a real question with a real cost. The answer sticks because you paid for it.
+
+The first time I deleted a file I shouldn't have I spent forty minutes putting it back, and I have never made that mistake again. Forty minutes was the price of the lesson and it was cheap. I still use docs constantly. Docs are reference. Tutorials are theatre.
+
+The shift happened when I started asking what happens if instead of how do I. What happens if I remove this. What happens if I run it twice. What happens if the network drops here.
+
+I have never found a video for those questions, they just have an answer, and you find it by looking. I'm not against learning from other people. I'm against the version where you watch and never touch.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Learning #Coding #Developer #Software #SelfTaught #Programming #Engineering #Debugging #devops #SoloBuilder #OpenSource #GrowthMindset #DeepTech #Startup #Journey
+---
+I keep a list of the questions I got wrong. It's more useful than the list of things I know.
+
+I ask the wrong question a lot. It always looks reasonable at the time. Is this model good. Is this tool fast. Which language should I learn. All of them sound like engineering and none of them are.
+
+The better version is always narrower. Good at what task. Fast compared to what. Learn in order to build which thing.
+
+I get vague answers when I ask vague questions, and then I build on top of a shrug. That's how a project ends up with three ways to do the same job. So now when I catch myself asking something broad, I stop and write the narrow version underneath it. What am I actually trying to do this afternoon. Nine times out of ten the narrow question is answerable in five minutes and the broad one would have eaten a week. That's the whole fix.
+
+The skill isn't knowing more. It's asking the thing you can actually act on.
+
+#AI #llm #BuildInPublic #VibeCoding #tech #Thinking #Coding #Developer #Software #Questions #Engineering #Learning #DeepTech #Productivity #machinelearning #SoloBuilder #ProblemSolving #Programming #OpenSource #Startup
+---
+Batteries are the part of the energy story that decides the timeline and almost nobody talks about them.
+
+Generation gets the headlines. But solar and wind both produce power at times we don't control. Without storage, a great afternoon of production is worth very little at 9pm. Every serious plan for a renewable grid becomes a storage plan. It takes about two paragraphs. It always does.
+
+I know the progress is real. It's measured in small percentages per year, not breakthroughs. Cost per kilowatt hour keeps sliding down and cycle life keeps getting longer. It's slow and it compounds.
+
+I was surprised by how much of the problem isn't chemistry. It's permitting, land, and the fact that nobody wants a facility near their house, which is a social problem wearing a technical costume, and that kind is the hardest to fix.
+
+I follow this stuff because I care about where the power for the servers I use comes from. Pretending the compute is invisible doesn't make it free.
+
+#AI #nuclear #electricity #datacenters #tech #Energy #Batteries #Storage #Climate #Renewable #Solar #Grid #Sustainability #DeepTech #Engineering #Infrastructure #Science #programming #Future #Environment
+---
+Accessibility options made my game better for people who don't need them and that surprised me.
+
+I added remappable keys because it's the right thing to do. Then I played with a layout I had never tried, it was faster than mine, and my own default was worse. That stung.
+
+I added a toggle for reducing screen shake. Turning it off made me notice something. I had been using screen shake to hide animation problems. Every one of those options was something I should have questioned on my own. I didn't, because I had been staring at it for months and it had stopped looking like a choice. That's the trap.
+
+That's the pattern. Accessibility work forces you to justify assumptions you never knew you were making, and I had a lot of them. Now I add the options first instead of at the end. Building them in from the start means the systems have to be flexible, which is better engineering anyway. Cheaper too.
+
+Doing the right thing and getting a better product are not in conflict. They look like a tradeoff when you leave it until the last week.
+
+#AI #gamefeel #leveldesign #indiedev #tech #GameDev #Accessibility #GameDesign #IndieGame #FPS #UX #Design #Unity #Unreal #Games #Development #fpsgame #Engineering #geopolitics #Inclusion
+---
+I ran four different models on the same task and got four working answers with four different architectures.
+
+None of them were wrong. That's the interesting part. One made a loop, one made a recursive function, one added a helper class, one wrote it in three lines flat.
+
+Which one is best depends on something none of them know, which is what my codebase looks like and what I need in two months. So I picked the three line one and I'm still not sure it was right. I still don't know.
+
+I wish more people said this out loud. The hard part of using these tools was never getting an answer. It was always deciding which answer belongs in your project.
+
+That decision needs context about your code and your future plans. It isn't a prompt problem. It's a judgment problem and it lives on your side of the table. Models are getting better at the producing. The choosing is getting more valuable, not less.
+
+#AI #automation #BuildInPublic #VibeCoding #tech #LLM #Coding #Developer #Software #Architecture #Engineering #DeepTech #promptengineering #MachineLearning #Programming #SoloBuilder #OpenSource #DecisionMaking #Startup #CodeReview
+---
+Star ratings on app stores measure almost nothing and I learned that the expensive way.
+
+I shipped something that I thought was clean. Two reviews appeared on day one. Both said the same thing about a screen I had tested maybe fifty times.
+
+I thought they were wrong. They weren't wrong. They were using it in a way I had never imagined because I built the flow and I already knew where everything was. The blind spot is always your own familiarity. You can't test your way out of it because the test exists in your head.
+
+So now I watch one person use it without saying anything. No instructions. No pointing. Just watching where the cursor goes and where the pause is.
+
+Every single time that has found something. Every time. The feedback isn't the review. The feedback is the pause. I treat the review as a receipt for a mistake I already made three weeks ago and shipped anyway.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #UX #ProductDesign #AppDev #Testing #Software #UserExperience #Developer #Design #Startup #IndieHacker #SoloBuilder #Feedback #cleancode #Engineering #Product
+---
+The most underrated AI skill is knowing when the output is confidently wrong.
+
+This isn't about hallucination in the obvious sense. It's about code that runs, passes a quick look, and does something different from what you asked. No error and no warning, just a semantic drift that shows up in production.
+
+I caught one last week. The function took a list and returned a list. Correct types, correct shape. It dropped duplicates the whole time, which I never asked for and never noticed because my test data had none.
+
+I would take a crash over that. A crash tells you, while a quiet wrong answer compounds. I don't defend against it by reading carefully. I ask what this does that I didn't ask for. Then I look for that on purpose.
+
+Reading for correctness is slow and you stop seeing it after two minutes, while reading for surprises is fast and stays sharp, and nobody trains it. Every guide is about getting output, not about auditing it. The auditing is the job. The rest is typing.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #CodeReview #Debugging #LLM #Coding #Developer #Software #Engineering #Testing #DeepTech #Quality #devops #Programming #SoloBuilder #OpenSource #MachineLearning
+---
+I deleted a feature that took me three weekends to build and the tool got better.
+
+It was a clever feature that solved a problem I had invented.I was proud of the code and I used the thing maybe twice, which is embarrassing. The moments that told me were small. I avoided opening my own settings page. I explained the feature to somebody and heard myself say it's optional, you can ignore it. If you're telling people to ignore something, it shouldn't exist.
+
+So I removed it. That took ten minutes. The codebase got shorter, the config got simpler, and nothing broke because nothing depended on it. The three weekends are gone, and that's the part that stings with no way around it. Sunk cost is real and it doesn't care about your feelings.
+
+I keep a rule now. If I haven't used something myself in two weeks it either gets used or it gets cut, and there's no keeping things just because deleting feels like admitting something. Deleting isn't admitting failure. It's just maintenance, and I do it more often than I add now.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Refactoring #Software #Developer #Coding #Simplicity #Engineering #SoloBuilder #SunkCost #Minimalism #backend #CleanCode #IndieHacker #OpenSource #Productivity #Programming
+---
+I read a physics paper every week and I understand maybe a third of it. I keep doing it anyway.
+
+The parts I don't understand are the useful part. They give me a shape of what I'm missing. A vocabulary I don't have yet. Questions I can't even form properly.
+
+The parts I do understand are not that surprising. It's the fog that teaches you where your map ends. Nobody tells you that reading above your level is a skill you can practice. It feels bad the whole time. You finish a page and can't summarise it and that feels like failure.
+
+It isn't failure. It's calibration. I write one sentence after each paper about what I think it claimed. Six months of those and I can see which fields I have learned something about, and which I have just visited.
+
+That list was humbling. I thought I was following a lot more than I was. Being confused on purpose, regularly, and writing down what confused you, is the best route I have found from not knowing to knowing.
+
+#AI #scientificmethod #evidence #reproducibility #tech #Science #Physics #Research #Learning #STEM #Reading #DeepTech #Astronomy #Quantum #ScienceCommunication #thinking #Knowledge #notes #Engineering #GrowthMindset
+---
+I switched to keyboard only for two weeks and found out how much time I was spending on nothing.
+
+No file tree. No clicking around. Just a terminal, a text file, and whatever the tool could do with commands. The first two days were miserable and slow. I had to look up how to do things I did a hundred times a day with a mouse.
+
+By day five something changed. My hands stopped leaving the home row and I stopped losing my place. The little pauses between actions disappeared because there was nothing in between the actions.
+
+The thing I missed most surprised me. Not the file tree. The scrollbar. I didn't realise how often I used position on screen as a memory aid. It didn't change what I built. It changed how much thinking happened between the building.
+
+I'm not a terminal purist now. I use the mouse plenty. But I know which of my habits were load bearing and which were just comfortable. That's worth two uncomfortable weeks.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #CLI #Developer #Productivity #Coding #Terminal #Software #Engineering #Tools #devops #SoloBuilder #Workflow #OpenSource #Programming #DeepTech #Habits
+---
+Sleep research is the one area where the findings are boring and unambiguous and we all ignore them anyway.
+
+The evidence doesn't argue. Consistent timing matters more than total hours, and light in the morning and dark at night does measurable work. Caffeine has a half life and it's longer than the afternoon. Nobody acts like it.
+
+None of this is a secret. Every part of it is published, replicated and cheap to act on, and I ignored all of it for years while reading about it, which is the strange part. I had the information and didn't act, which means the information was never the bottleneck.
+
+I tested one thing for 30 days. It was a rule, not a habit. Same wake time every day, including weekends, and everything else followed because the rest of the day has an anchor to sit on.
+
+The research is clear and my behaviour wasn't. Being aware of a good idea isn't the same as doing it. Most of us already know that.
+
+#AI #physics #stem #scientificmethod #tech #Health #Sleep #Science #Biology #Research #Habits #Wellness #Productivity #DeepTech #Medicine #Neuroscience #knowledge #Evidence #PublicHealth #Life
+---
+The junior developer question is being argued wrong and it's going to hurt people my age.
+
+The argument goes that AI can do the entry level tasks, so why hire someone who needs a year of training. That framing treats a junior as a task machine. I don't buy that. They were never that.
+
+I would argue a junior's value in year one isn't output. It's the fact that they have to be explained to. Every time you explain your system to someone new you find the gaps. The parts you can't explain. That's the most valuable review your architecture will ever get.
+
+Remove that and the pipeline stops. You end up with a pile of people who all learned in the same two years with the same tools and nobody asking the obvious question, and I'm saying this as somebody trying to get hired right now. I have a stake here and I know it.
+
+The honest answer is that the entry level task list got shorter and the explanation value didn't. Companies cutting the first thing are eating the second one without noticing. That's a decision that looks cheap this quarter and expensive in five years.
+
+#AI #career #BuildInPublic #VibeCoding #tech #Hiring #Careers #FutureOfWork #TechJobs #Mentorship #JuniorDev #Workforce #work #Employment #Engineering #leadership #Talent #Skills #DeepTech #Jobs
+---
+I measured my own output for a month and found out I was wrong about what made me productive.
+
+I assumed the good days were the long ones. More hours, more shipped. It turns out the long days were mostly spent recovering from context switching. The strongest correlation with a good day was one number. How many uninterrupted blocks over forty minutes I had. Not total time. Blocks.
+
+Four short blocks beat nine hours of steady interruption every single time I looked. That's annoying because blocks aren't something I can buy. They come out of saying no to things, and saying no has a social cost that is easy to avoid paying.
+
+The other surprise was the afternoon. I had been treating it as a second morning for years. It isn't. It's a different animal and I was feeding it the wrong food.
+
+I don't have a productivity system now. I have one number I try to protect. Everything else is decoration on top of that.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Productivity #DeepWork #Focus #Work #Coding #Developer #TimeManagement #cleancode #SoloBuilder #Habits #Engineering #Attention #Software #GrowthMindset #Life
+---
+Data centers are the new factories and the comparison is more useful than it sounds.
+
+A factory converts inputs into goods and concentrates workers in one place, while a data center converts power into computation and concentrates machines in one place. Both reshape the town they sit in, and both need water, a grid connection, and a fight with the neighbours.
+
+The difference is that a factory was visible. You could see the shift change. You can't see a warehouse of servers doing anything. That invisibility is why the argument keeps missing. People experience AI through an app and never think about the building. The building is the part with the constraints.
+
+Land, power, water, and cooling are the real limits. Not model quality. We are going to hit the physical ceiling long before we run out of ideas. Probably sooner.
+
+I spent a weekend reading about grid queues after a thread like this one and came away less sure, not more. I say this as someone who uses these services daily and has never once looked up where my requests land. That's the honest position. I benefit from infrastructure I don't think about and can't see.
+
+#AI #nuclear #renewable #electricity #tech #DataCenters #Energy #Infrastructure #Climate #llm #Cloud #Sustainability #DeepTech #Engineering #machinelearning #Compute #Grid #Future #Industry #Coding
+---
+The single biggest jump in my skill came from reading code I didn't write.
+
+Not tutorials. Not docs. Actual code, written by somebody with a different idea of how to organise things. I kept wanting to rewrite it in my own shape. That was uncomfortable.
+
+I found one function smarter than anything I had written. I spent an hour working out why it worked. That hour taught me more than the previous month. Reading other people's code is how you find out your habits aren't universal laws. They are just what you happened to do first.
+
+I know it's slow and there's no reward at the end. You don't ship anything. Nobody sees it. It feels like nothing happened.
+
+But it's the only way I have found to get better at the judgment part, which is the part that doesn't come from practice alone. Writing code teaches you to write. Reading code teaches you to choose, and choosing is what I actually get paid for.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #OpenSource #Coding #Developer #Software #Learning #CodeReading #Engineering #Programming #devops #SoloBuilder #DeepTech #Skills #GitHub #Reading #GrowthMindset
+---
+I stop trusting a tool the moment it starts guessing at my intent.
+
+I have learned to watch for one specific behaviour. When something can't find what it needs and instead of saying so, it invents a reasonable substitute. It creates a file that doesn't exist. It calls a function with made up arguments. It fills a gap with something plausible.
+
+Plausible is the dangerous word. It means the error can't surface until much later, which means the cost of the mistake lands on me instead of on the tool.
+
+I would much rather have a loud failure. Tell me you couldn't find it. Stop. Let me fix the input.
+
+So I look for tools that prefer stopping over guessing, and I have started writing my own little scripts that way. If a required file is missing, exit with a message. Don't create an empty one. That single habit has saved me more time than any feature. An empty file in the right place looks exactly like success and it's never success.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Software #Engineering #Developer #Coding #LLM #ErrorHandling #Robustness #DeepTech #devops #SoloBuilder #OpenSource #Programming #Quality #Tools #Automation
+---
+I stopped trying to make the AI build the whole thing and started using it for the parts I hate.
+
+That one change made it useful instead of exhausting. Handing over a whole project means reviewing a whole project. All the decisions get made in a place I'm not looking, and at the end I have a working thing I don't understand and can't maintain.
+
+Handing over the boring middle is different. Write the argument parsing. Convert this list to that shape. Add the error case I keep forgetting. Small, checkable, done in a minute.
+
+That's where these tools are excellent. Not because they can't do more, but because the value of doing more collapses when the review cost equals the build cost. I do the architecture and the naming and the things that are hard to change later. I hand over the typing.
+
+Two hours of my day came back. Not from magic. From being honest about which half of the work I was adding value to.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Coding #Developer #LLM #Automation #Software #Engineering #Productivity #DeepTech #devops #SoloBuilder #Workflow #Programming #OpenSource #Tools #Startup
+---
+Nuclear keeps coming back up in every serious energy conversation and the reason isn't political.
+
+It's the one large source that produces steady power regardless of weather or time of day, and everything else needs either storage or a backup, both of which cost money and land.
+
+The problem has never been physics. It has been time and cost per project. A reactor takes a decade. The budget will be wrong by the end. That's it. Investors hate both of those things and they're right to.
+
+I don't think the interesting question is whether nuclear is good. It's whether anything can be built at that scale on a predictable schedule. I don't have a strong view and I have stopped pretending to. Every time I read a confident take on this topic, the person has picked a side in advance. A grid plan without a steady source in it assumes storage gets very cheap very fast, and that assumption is doing a lot of work.
+
+That assumption might be right. I want it stated out loud instead of buried.
+
+#AI #research #physics #stem #tech #Energy #Nuclear #Power #Climate #Grid #Infrastructure #DeepTech #Engineering #Sustainability #Science #scientificmethod #Future #Policy #Electricity #Renewable
+---
+The tools I use every day are a much shorter list than the ones I talk about.
+
+I went through my history and counted honestly. Four things run my actual work. Everything else is something I tried, enjoyed, and stopped opening. The gap between those lists is uncomfortable. Some of it is enthusiasm. Some of it is that a tool is fun to learn and tedious to depend on.
+
+I know what separated the keepers and it was boring. They were fast to start, they failed in ways I could understand, and they didn't need me to change my habits to accommodate them.
+
+Nothing about the look of them. Nothing about the feature list. I think we talk about tools the way people talk about diets. The interesting part is the one you stick to, and that has almost nothing to do with how impressive it looks on the day you start.
+
+So my list of four isn't the best tools. It's the four I didn't quit, which is a different and more useful category.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Tools #Developer #Coding #Software #Productivity #Workflow #devops #SoloBuilder #OpenSource #Engineering #Honesty #DeepTech #Programming #Habits #Product
+---
+I have a folder of unfinished projects and I have stopped feeling bad about it.
+
+Fourteen of them. Some are an evening's worth of work. One is almost complete and I know why I stopped, which is that it stopped being interesting the moment it became maintenance. The instinct is to call that a discipline problem. I think it's a filtering mechanism that runs on its own.
+
+The three things I finished all had the same property. I used them myself while building them. That created a feedback loop the unfinished ones never had.
+
+Without that loop, a project is just an obligation I invented for myself, and obligations without deadlines tend to die. So the rule I use now is blunt. If I'm not using it while I build it, I'm not going to finish it, and I should stop pretending otherwise.
+
+That has cut my project count way down. It hasn't cut my output. The fourteen are still there. I don't open them and I don't delete them, because they're a decent record of what I find interesting. Worth it.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #SideProject #IndieHacker #SoloBuilder #Startup #Developer #Coding #Projects #Motivation #cleancode #Software #OpenSource #Learning #DeepTech #Building #Focus
+---
+War taught a generation of people something the rest of us got from a screen.
+
+That gap isn't going away and I think it explains more political argument than any ideology does. Two people can look at the same event and be describing different things, because one of them has a body memory of it. Technology changed how war is reported and didn't change how it's experienced. You can watch a strike live and still have no idea what the street smelled like afterwards.
+
+The asymmetry that worries me is the incentive. Coverage rewards the dramatic frame and the slow aftermath doesn't photograph. Reconstruction takes years and gets one article. One article. Years of work.
+
+I don't have a solution. I do have a rule, which is to be suspicious of my own certainty about anything I have seen in a clip.
+
+That applies to me specifically. I have formed a lot of opinions this year from footage and I have never once verified any of them against anyone who was there. That's worth admitting out loud.
+
+#AI #learning #research #thinking #tech #War #Media #Geopolitics #Journalism #Conflict #History #Perspective #WorldNews #Technology #Society #Ethics #Information #knowledge #Veterans #Reality
+---
+Indie games are where the interesting design decisions live because there's no money to hide behind.
+
+I understand why a studio satisfies a spreadsheet before an idea. That isn't a criticism, it's just arithmetic. Budgets come with expectations and expectations come with a list of things you aren't allowed to do. A small team has a different problem. Every feature is a real tradeoff against sleep. So the decisions are visible and they're honest.
+
+Some of the best mechanics of the last few years came out of one person working around a limitation. Not ambition. Constraint.
+
+I notice this in my own work now. When I remove an option, the design gets sharper. When I add one, it gets mushier because now I have two things to balance instead of one committed bet.
+
+I know most indie games fail and the failure is rarely the idea. It's scope, time, and finishing. I keep coming back to one constraint. It isn't money. It's how many months of your life the idea is worth.
+
+#AI #gamefeel #leveldesign #fpsgame #tech #GameDev #IndieGame #GameDesign #IndieDev #Unity #Unreal #Games #Development #health #Design #Scope #Creativity #sleep #FPS #Startup
+---
+AI in game development is being argued at the wrong level and both sides are skipping the interesting part.
+
+I get the argument about art and jobs. It's real. There is a smaller question underneath it and nobody asks it. Which parts of making a game are bottlenecked by human taste and which are just slow?
+
+Animation blending is slow. Dialogue trees are slow. Placeholder geometry is slow. All of that is grunt work and none of it is where the game becomes good.
+
+The design, the feel, the pacing, the moments, that's where taste lives and it isn't on the table. So the honest position is that the grunt work is going away and the taste work is getting more valuable, which sounds encouraging until you remember that the grunt work is where people learned the taste.
+
+You can't skip the boring middle and arrive at judgment, and I don't know a shortcut past it. I've watched it take years for people who are better at this than me. I find that part worrying and it doesn't fit into either side of the argument.
+
+#AI #gamefeel #BuildInPublic #VibeCoding #tech #GameDev #leveldesign #GameDesign #IndieGame #Games #Development #FutureOfWork #Unity #Unreal #SoloBuilder #indiedev #Creativity #Design #Ethics #Industry
+---
+Three summaries of one report gave me three different headlines.
+
+That's a useful thing to notice. Nothing in the source changed. The framing did all the work.
+
+I went and opened the actual report. Forty pages. One number thirty pages in undercut the headline every summary ran with. That's the problem with summaries. That isn't a conspiracy. It's just what happens when people write fast about something long, and it's why I have stopped forming views from summaries.
+
+That cost is real. Reading the primary thing takes ten times as long and I can't do it for everything. So I pick. Anything that is going to change what I do gets the original.
+
+I hold the rest loosely, with a note that all I have is somebody's compressed version of somebody else's compression. That habit has made me slower and much less often wrong. I consider that a good trade.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Media #Research #CriticalThinking #News #Information #Data #Journalism #Evidence #Science #cleancode #Literacy #Society #Reading #DeepTech #Analysis
+---
+The thing that made my code slower wasn't a bad algorithm. It was one line inside a loop that opened a file.
+
+I spent two days reading about data structures and benchmarked three different approaches, and I argued with myself about which was cleanest, while my answer sat in the middle of the function the whole time.
+
+File access inside a loop is invisible when you test with four rows and painful when you test with forty thousand. My test data was tiny and so my confidence was enormous. The fix took six minutes. Move the file handle outside, read once, pass it in.
+
+I have a rule now that comes straight out of this. Before I optimise anything, I go and count the expensive operations. Not the clever path. The obvious path. Noticing beats theory almost every time.
+
+I didn't waste the reading. I understand the data structures better than I did. That's the point. But I reached for the complicated tool because it was more fun to think about than the dumb one.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Performance #Debugging #Coding #Developer #Software #Optimization #Engineering #Benchmarking #DeepTech #devops #Programming #OpenSource #SoloBuilder #Profiling #Quality
+---
+I have started writing the documentation before the code and it catches more design problems than any review.
+
+Not full documentation. One page. What this thing does, what goes in, what comes out, what happens when it breaks.
+
+The uncomfortable part is how often I can't finish the page. I get to the error section and realise I have no idea what should happen, which means the design has a hole I would have discovered at 2am. Writing the page first doesn't slow me down. It moves the discovery earlier where it's cheap.
+
+The other effect is that it kills features. Half the time I finish the page and think this doesn't need to exist. That has saved me entire weekends.
+
+Nobody reads the page afterwards. That's fine. The page was never for readers, it was for the version of me that was about to type without thinking. I think documentation is mostly a thinking tool that happens to be written down.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Documentation #Writing #Software #Engineering #Developer #Design #Coding #devops #Programming #SoloBuilder #Planning #DeepTech #OpenSource #Productivity #Quality
+---
+My first version of anything is always too clever and I have stopped fighting it.
+
+The pattern is reliable now. I sit down, I plan something sensible, and forty minutes later I have built a small framework. An abstraction. A thing that could handle cases I will never have.
+
+Then I use it for a day and it annoys me. The second version is smaller and the third is almost nothing. The third is the one that survives. What changed isn't my instinct. It's my willingness to skip ahead. I now go straight to writing version three on purpose, which means ignoring the framework idea and writing the direct thing.
+
+It doesn't work every time. Sometimes the clever version was needed, but that happens far less often than my brain insists it will.
+
+The skill isn't having good first instincts. It's recognising your own predictable mistakes in time to route around them. I know what my brain does first. So I do something else first. Same every time.
+
+#AI #health #sleep #biology #tech #Refactoring #Software #Developer #Coding #Engineering #Simplicity #OverEngineering #medicine #Programming #neuroscience #Design #publichealth #DeepTech #Iteration #Quality
+---
+I have a note file called things I was sure about and it's wrong now.
+
+Every entry is something I was sure about and later changed my mind on. A tool I said was dead. A pattern I said scaled. An approach I said nobody should use. The list is long enough to be uncomfortable, which is the point of keeping it.
+
+It does three things. It stops me from saying never, reminds me that my current certainties are on the list in a year, and makes being wrong feel like a normal cost of paying attention instead of an event.
+
+I still hold opinions, I just hold them with a date attached. The other benefit is that it makes me a better listener. When somebody disagrees, I now assume there's a decent chance they're right and I'm attached. That's a much cheaper way to update than being corrected by reality in a year. That's the whole benefit.
+
+Keeping score of your own wrongness isn't self flagellation. It's just maintenance on the instrument you think with.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Learning #Humility #Thinking #GrowthMindset #Writing #Knowledge #IntellectualHonesty #cleancode #SoloBuilder #Reflection #DeepTech #Science #OpenSource #Developer #Notes
+---
+I removed every dependency I could from my tool and it went from a two hour install to one command.
+
+The install was always the part that broke. Somebody's machine, some version mismatch, a package that needed a compiler, a wheel that didn't exist for their platform, and every one of those problems was in a library I added for a small convenience.
+
+So I rewrote the three pieces I actually needed. Sixty lines total. Nothing clever. Now it runs on a fresh machine in seconds and I haven't had an install question in months.
+
+The tradeoff is real and I want to be honest about it. I gave up features. I gave up a lot of edge case handling that other people built and maintained for free.
+
+What I got was a tool I understand and can debug at any point. For something I use daily on my own projects, that was worth more. Dependencies aren't free. They're a loan against your future time, and I wasn't paying attention to the interest rate.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #OpenSource #Dependencies #Software #Developer #Coding #CLI #Engineering #Tools #Simplicity #devops #Programming #SoloBuilder #DeepTech #Maintenance #Architecture
+---
+Git has saved me from myself more times than any other tool and I still meet people who don't use it.
+
+The pitch is always about collaboration, which is the wrong pitch if you work alone. The reason to use it by yourself is that it lets you be reckless, you can try the stupid idea and delete the function and rewrite it badly. Because the version that worked is sitting there and getting it back takes one command.
+
+I attempt more because of it. I write more experimental code now because the cost of being wrong dropped to nothing.
+
+The moment it clicked for me was the first time I reverted something and watched it come back as it was. No copy of the file. No copy with a date on the end. No hoping.
+
+I commit all the time. Small messages. They're for me and they say things like fix the thing again. Drafts of your own work are a strange thing to keep. But it's the one way I have found to stay brave.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Git #VersionControl #Developer #Coding #Software #Engineering #devops #OpenSource #Programming #SoloBuilder #Workflow #DeepTech #Tools #Backup #Habits
+---
+The best thing I did for my FPS was build a tiny level that takes eleven seconds to cross.
+
+No textures. Grey boxes. One room. Just enough to test movement, shooting, and the camera in the smallest space that could still be fun. Every time I changed something about how the player moves I ran that level twenty times in a row. It takes four minutes. I can feel a difference of two frames.
+
+I worked in the real levels for months, which was a mistake. Too much noise. By the time I got to the interesting corner I had forgotten what I was testing. Small test spaces are the game equivalent of a unit test. Not fun to build, not impressive to show anyone, and they catch everything.
+
+I keep three now. Movement. Combat. Camera. Each one fits on a screen.
+
+I care about this because feel is a hundred small decisions and you can't evaluate a hundred things at once in a big level. You need a place where the only thing that changed is the thing you changed.
+
+#AI #gamefeel #BuildInPublic #VibeCoding #tech #GameDev #GameDesign #FPS #IndieGame #LevelDesign #Unity #Unreal #Development #Games #Testing #SoloBuilder #IndieDev #Design #fpsgame #Engineering
+---
+I understood the difference the day somebody used mine without me in the room.
+
+Every bug they hit was a bug I knew about, and not one of them was a surprise. What surprised me was that all of my known issues became fatal the moment I wasn't there to explain them away.
+
+A demo is a thing you narrate, while a product is a thing that survives contact with somebody who has no idea what you meant. The gap between those two isn't polish. It's removal of every place that needs a sentence of explanation.
+
+I spent a week on that. No new features. Just going through the app and asking where would a person stop here. Nine stops. Nine small fixes.
+
+I know nobody will ever notice those nine fixes. That's what working software feels like from the outside. The uncomfortable part is how much of the work is invisible. The visible part is what you built. The product is everything you removed that could have confused someone.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Software #Developer #Design #AppDev #IndieHacker #Startup #UserExperience #cleancode #SoloBuilder #Shipping #Engineering #Quality #SaaS
+---
+I follow the unfamous parts of physics. I suspect that's true for most people who follow it.
+
+Black holes are photogenic. They are also a corner case at extreme scales. What shapes what I can do is much more ordinary. Materials, batteries, semiconductors, heat.
+
+Heat runs everything. Getting rid of it is why your laptop throttles, why data centers drink water, and why a phone gets slow in the sun. Semiconductors are the other one. Every advance in what I can build is downstream of somebody making a smaller thing with fewer defects.
+
+Neither topic has a documentary. Both of them set the ceiling on everything else. I started paying attention to the boring parts of science and my sense of what is realistic got much better. Fusion timelines stopped looking like a countdown and started looking like a materials problem with a schedule I can't guess at.
+
+The famous questions are fun. The ordinary questions decide.
+
+#AI #scientificmethod #evidence #knowledge #tech #Physics #Science #Materials #Semiconductors #Heat #Engineering #DeepTech #Research #STEM #Energy #Technology #Future #Hardware #ScienceCommunication #reproducibility
+---
+I stopped asking people to use my tools and started watching them instead. The feedback got ten times better and it stopped being about taste.
+
+Asking produces opinions. People are polite and they give you reasonable suggestions that you then spend a weekend implementing because it sounds plausible.
+
+Watching produces behaviour. Where the cursor pauses. What gets clicked twice. Where they reach for something that isn't there. Behaviour doesn't have a social layer on top of it, which makes it much more useful.
+
+The first time I did this the person got stuck on a screen I had entirely forgotten existed. Not broken. Just forgettable. I hadn't looked at it in six weeks.
+
+I didn't fix anything they suggested. I fixed the three places they stopped and I have no idea whether the suggestions would have helped. Watching is slower and quieter and it requires not talking, which is genuinely hard.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #UX #ProductDesign #Testing #Software #UserResearch #AppDev #Design #Startup #Feedback #cleancode #IndieHacker #SoloBuilder #Engineering #Quality #Product
+---
+I have one rule for buying tools and it has saved me more than any discount ever did.
+
+If I can't start using it in fifteen minutes on a real task, I close the tab. Not because a learning curve is bad, and not because I'm impatient, but because I have a drawer full of things I intended to learn later. Later doesn't come. There's always a different afternoon.
+
+The tools that survived on my machine all had the same quality. That's the test. I did something useful in the first quarter of an hour, however small. That tiny win is what makes you come back tomorrow.
+
+Anything that asks for a day of setup before the first win is asking me to trust it on faith. I have no faith left to allocate. I have given it away too many times.
+
+This applies to free things too. Free isn't the same as cheap if it costs a weekend. The cost of a tool isn't the price. It's the price plus the days before it does anything.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Tools #Software #Developer #Coding #Productivity #DecisionMaking #cleancode #SoloBuilder #OpenSource #Workflow #Product #Engineering #DeepTech #Time #Habits
+---
+The first hour of building is the hour I used to waste and now it's the most valuable.
+
+I used to open the editor and start typing. Ninety minutes later I would have a shape I didn't want and a decision I had made accidentally by typing it out.
+
+Now I sit with a notebook for the first hour. What is the input. What is the output. Where does it live. What breaks first.
+
+It feels like nothing is happening. That's the whole problem with it. Procrastination and design look identical from the outside and only one of them is useful. The test I use to tell them apart. If I'm writing down decisions, it's design. If I'm reading about unrelated things, it's procrastination.
+
+I get that hour back because decisions made on paper cost nothing to change. Decisions encoded in forty files cost a weekend. I still get it wrong. But the ratio has flipped and most of my rework disappeared, which is a strange thing to be able to say about rework.
+
+#AI #science #research #physics #tech #Planning #Software #Engineering #Developer #Design #Coding #Architecture #Productivity #stem #scientificmethod #Product #DeepTech #DecisionMaking #evidence #Process
+---
+The most useful thing I learned from physics wasn't a fact. It was a habit of asking what would change my mind.
+
+Good experimental design has that built in. You state the result in advance and you state what would make it false. Otherwise the data gets interpreted to fit whatever you already believed.
+
+I started doing the same thing with my own opinions about technology. What evidence would make me stop believing this. The answer is uncomfortable because I have to admit that nothing I have seen could do it.
+
+That's the tell. If no possible observation would change your position, you aren't holding a belief, you're holding an identity. I have found this in my own work constantly. I was certain one tool was better until I wrote down what would prove me wrong, and then I noticed I had never tested the thing I was certain about.
+
+Stating the test in advance is cheap. Skipping it costs years.
+
+#AI #stem #reproducibility #programming #tech #Science #CriticalThinking #ScientificMethod #Thinking #Evidence #Learning #Bias #cleancode #DecisionMaking #DeepTech #Physics #Research #Knowledge #Reasoning #Habits
+---
+I write every post about my work as if my future employer is reading it, which changed what I write.
+
+That sounds like a constraint and it turned out to be a good filter. It removes the performance. No dunking on tools I didn't like. No absolute claims about industries I have never worked in. No pretending to know what I don't know. That's the filter.
+
+What is left is the part I can defend in a conversation. I built this. Here is what broke. Here is what I would do differently. Here is what I still don't understand.
+
+Those posts take longer and they get fewer reactions, and that's fine because reactions were never the thing I needed. The other effect is that it made me better at my actual job. If you write for somebody who might ask a follow up question, you have to think one step further than the post.
+
+I'm looking for work right now. Everything I write is a signal about how I think. That pressure has been good for me. I would recommend writing that way even if nobody is hiring you.
+
+#AI #skills #BuildInPublic #VibeCoding #tech #Careers #Writing #PersonalBrand #Jobs #TechJobs #Hiring #Professional #LinkedIn #Career #Work #futureofwork #SoloBuilder #Reputation #Honesty #Growth

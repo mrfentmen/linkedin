@@ -1,0 +1,187 @@
+I work on an AI product that people use to research their own money, and it changed how I write code.
+
+Not because the code is harder. Because the consequences are. A bug in a game is annoying. A wrong number next to someone's portfolio becomes a decision they make badly, and they won't know it was me.
+
+So AskApe has one rule that shapes everything we ship. Never fake certainty. That rule is harder to build than any feature. A disclaimer at the bottom of the page costs nothing and fixes nothing. What works is showing where a number came from, what period it covers, and what it leaves out.
+
+I've written plenty of features that were fun. This is the first one where being vague is the bug itself.
+
+I learned more about finance in 6 months here than in all the years I spent reading about it, because I can't hand wave anything. Someone will ask why the number is what it is.
+
+#AskApe #AI #fintech #gamedev #indiegame #tech #Software #Developer #Engineering #Coding #Product #Startup #Investing #RetailInvestor #FinancialLiteracy #Learning #DeepTech #gamedesign #MachineLearning #ProductManagement
+---
+The hardest question I get about my job is what the product does.
+
+People hear AI and finance in the same sentence and assume we predict stocks. We don't. AskApe is a research tool. You ask it a question in plain English about a company, a portfolio, or a filing, and it pulls the pieces together and shows you where each one came from.
+
+That sounds like a small thing until you've done the alternative. I've spent an evening working out what a company earns after one time charges, across 3 tabs, 2 PDFs, and a search result from 2021. The tool does that part in seconds. The judgement stays mine, which is where I want it.
+
+What we don't do matters as much. We don't take custody of anyone's money. We don't place trades on our own. We don't tell you what to buy. Every one of those limits is deliberate, and they're the reason I'm comfortable working here.
+
+I've been in products where the pitch was bigger than the thing. This one is the other way round.
+
+#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Developer #Software #Engineering #tech #Coding #Product #Startup #science #research #Learning #DeepTech #ProductManagement #MachineLearning
+---
+I use the thing we build for my own positions, which is either good discipline or a conflict of interest depending on who you ask.
+
+Both, probably. What it does for me is shrink the boring part. I used to keep a note file with 4 columns and a prayer. Now I connect an account, ask what changed this week, and get an answer that cites the numbers instead of summarising vibes.
+
+The part I care about is that it doesn't flatter me. It doesn't. It will tell me a position I'm proud of has done nothing for 8 months while a boring one carried the whole year. I've never had a tool do that, because most of them are trying to keep me engaged.
+
+Using your own product is the cheapest review you'll get. Nobody does it. I found 3 confusing screens in the first week just by being a normal user instead of the person who built them.
+
+I don't think you can build for investors without being one. Even a bad one.
+
+#AskApe #AI #fintech #Investing #geopolitics #conflict #tech #Developer #Software #Engineering #Coding #Product #Startup #RetailInvestor #Trading #Learning #DeepTech #PortfolioManagement #ProductManagement #FinancialLiteracy
+---
+
+The tools that people need for this stuff have always existed. They just cost more than a car.
+
+When I started here I assumed the job was making a cheaper version of a terminal. It isn't. It's making the same information usable by somebody who doesn't have 3 hours and a finance degree to spare. Those are different problems and the second one is much harder.
+
+A professional can read a dense table and know within 10 seconds which numbers matter, because they have seen a thousand tables like it. Everybody else sees 40 numbers and no idea which 2 are the story. So most of the work is not fetching data. It's deciding what to leave out and what to explain in the same breath.
+
+I find that part interesting. Anyone can render a table. Explaining why the number moved, and what it doesn't tell you, is the product.
+
+I don't think retail investors are less serious. They have less time. Good tools respect that.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Product #Software #Developer #Engineering #Coding #Startup #Design #UX #BuildInPublic #VibeCoding #Learning #DeepTech #ProductManagement
+
+---
+
+Every feature request we get can be traced back to a sentence somebody didn't understand.
+
+Not a missing number. A missing explanation. So we spend a lot of time on plain English, and I mean that as an engineering constraint rather than a tone of voice. If a screen needs a glossary, it's broken.
+
+The test I use is whether my dad would get it. He's not stupid, he just doesn't work in finance, and he's not going to look up "adjusted" before deciding whether he cares. If the answer depends on him knowing one industry word, I've shipped a bad answer.
+
+I'm still surprised by how much harder simple is. Jargon is a shortcut. It assumes you already know. Writing "the company made less per sale than last quarter" takes 4 more drafts than "margin compression".
+
+I have never once looked at a finance tool and wished it were more technical. Not once.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #UX #Product #Design #Software #Developer #Engineering #Coding #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Communication
+
+---
+
+A demo of an AI finance tool and the thing you'd trust with your portfolio are about 90 percent different work.
+
+I learned that here. Making a model answer a question is a weekend. Making it answer the same question the same way, with the right source attached, at 8:30 in the morning on a heavy news day, is the job. Demos don't have bad days. Products do.
+
+So I spend my time on the unglamorous half. What happens when a provider is slow. What happens when a filing lands 10 minutes late. What the screen looks like when we have nothing to say, because that's a real answer and it shouldn't look like an error.
+
+I don't post about that work. It's also the reason the impressive part is worth anything.
+
+I've shipped features that looked great in a demo and I'd rather not do it again. Trust is built in the boring cases.
+
+#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Engineering #Software #Developer #Coding #Reliability #Product #Startup #Investing #RetailInvestor #Learning #DeepTech #Quality #ProductManagement #Testing
+
+---
+
+I built alone for years, and the first thing a team gave me was somebody to tell me when I was wrong.
+
+That's the whole difference. Working solo, my own confusion became the roadmap, because nobody was there to say that isn't the problem. Here, there's a person whose job is to disagree with me, and they do it in a meeting rather than 3 weeks later in production.
+
+It's slower to decide and much faster to correct. I didn't expect to like that. I spent years optimising for autonomy and I was quietly using it to avoid ever being wrong in public.
+
+The other thing is scale. A product serving real portfolios has surface area I'd never touch on my own. I've learned more about data pipelines in a few months here than in 2 years of side projects, because the side projects had 1 user and he was me.
+
+I still build at night. I just stopped assuming that was the only way.
+
+#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Team #Startup #Learning #DeepTech #SoloBuilder #Career #Product #RetailInvestor #Investing #ProductManagement
+
+---
+
+I learned more about finance from writing software for it than from any book I tried to read.
+
+Books explain the system. Code explains the edge cases. I know how a dividend works. I did not know that a company's fiscal year isn't the calendar year until a date range broke, and I did not know how messy "reported" versus "adjusted" gets until I had to show both on one line.
+
+Every one of those lessons showed up as a bug first. That's the most expensive way to learn anything and it's also the only way that stuck.
+
+So I stopped trying to study my way into the domain. I read the filings for the companies users ask about most, and I pay attention when a number surprises me. Curiosity that has a real question behind it beats a curriculum.
+
+I'm still not an expert. I'm just a developer who now flinches at 3 specific kinds of wrong number, and that's more useful than general knowledge.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #Developer #Engineering #Software #Coding #tech #Learning #DeepTech #BuildInPublic #VibeCoding #DataEngineering #Product #Startup #Trading #ProductManagement
+
+---
+
+The most valuable thing I've worked on here is a connection that just doesn't break, and I can't show anyone a screenshot of it.
+
+Nobody signs up for reliability. They sign up for the thing it enables and they notice when it's gone. Brokerage connections are the least glamorous surface in this product and the one I think about most, because everything else depends on the holdings being right.
+
+So I look at the failures instead of the features. What happens when a provider revokes access. What happens when a sync lands halfway. What a user sees when their positions are 2 days stale, because showing stale data without saying so is worse than showing nothing.
+
+I argued about that one for 3 weeks.
+
+I've made peace with the fact that my best work here will never demo well. Reliability is invisible when it works, and the reward is that nobody has a reason to think about it. That is the job.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #Engineering #Software #Developer #Reliability #Coding #tech #BuildInPublic #VibeCoding #DataEngineering #Product #Startup #Learning #DeepTech #Architecture #ProductManagement
+
+---
+
+I stopped being impressed by fast answers and started asking where they came from.
+
+Any product can produce a confident sentence about a stock. That takes an API call and an afternoon. What's hard is producing the sentence and the receipt, so you can check it and disagree with it. The receipt is the product.
+
+I changed what I build because of it. When a number shows up on a screen here, there's a line under it that says what period it covers and what it excludes, and a way to get to the source. That's 3 small UI decisions and about 8 weeks of backend work that nobody will ever tweet about.
+
+The reason it matters is simple. If you can't trace a number, you can't trust it, and if you can't trust it you're just reading a horoscope with a stock ticker attached.
+
+Confidence is cheap now. Receipts don't demo well. Provenance is the scarce thing, and it's the part I'd defend hardest if someone tried to cut it for speed.
+
+#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Software #Developer #Engineering #tech #Coding #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Transparency #ProductManagement
+
+---
+
+The question I get most is whether the product tells you what to buy, and the honest answer is no, which disappoints everybody.
+
+I get why. People want the part that removes the decision. What AskApe does is remove the homework. It'll tell you what changed, what the numbers say, what the risks are, and what question you haven't asked yet. It won't tell you whether to buy, because nobody knows that, and software that pretends to is selling you something.
+
+Knowing that upfront is why I took the job. I've turned down work at places where the pitch required me to be comfortable with a promise I couldn't keep.
+
+People arrive at the same place anyway. They make their own call, and they make it on the numbers rather than on a headline and a feeling.
+
+I want to build for that version of this industry. Fewer hot tips. Better questions. I will take that trade 10 times out of 10.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #Trading #FinancialLiteracy #Developer #Software #Engineering #tech #Coding #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #ProductManagement #InvestingTips
+
+---
+
+A good day here looks like shipping one small boring thing and deleting 2 features that turned out to be guesses.
+
+The work is slower than I expected and better for it. On my own projects I'd pick the interesting problem and let the edges rot. Here, the edges are somebody's portfolio, so the interesting problem is usually the one nobody wants. Rate limits. Missing data. A provider that returns yesterday's date.
+
+I've also had more arguments about wording than I ever had about architecture, and I think that's correct for this product. A sentence that implies a guarantee is a bug, even if every number in it is right.
+
+My favourite part is how fast a question from a user turns into a change. Small team. Short distance from somebody being confused to the thing being fixed.
+
+I've worked places where the product was a rumour. Watching it move because someone asked is a different feeling.
+
+#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Product #Startup #RetailInvestor #Investing #Learning #DeepTech #ProductManagement #Career #StartupLife #Quality
+
+---
+
+I build for investors who don't look like me, and the first time I watched that happen I got several things wrong.
+
+Sessions, screen recordings, support threads. The users who ask the best questions are the ones with the least context, and they ask things I would never think to answer because I already know them. That gap is where the product gets better.
+
+So we watch people use it rather than guess. Twenty minutes and 1 real question beats a week of me imagining a persona. The last session, somebody spent half of it looking for a number that was on the screen the whole time, which is a layout problem and not a data problem.
+
+I've been guilty of building for the version of me that didn't exist yet. He knew the app. He knew the shortcuts. He had no questions. Real users have questions and they arrive in the wrong order.
+
+That's why I like this job. The customers keep making me less wrong.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Product #UX #Design #Software #Developer #Engineering #Coding #Startup #BuildInPublic #VibeCoding #UserResearch #Learning #DeepTech
+
+---
+The reason I took this job is that the person on the other end of it is getting a worse deal than the people already in the building.
+
+That sounds dramatic. It isn't. Research quality is a function of time and access. Most people have neither. So they get their information from a headline, a comment section, or a creator who is paid to be certain. Then they make a real decision with real money.
+
+I don't think software fixes that. I do think it makes a dent, and a dent is worth a lot when the alternative is nothing. Giving somebody the same numbers a professional gets, in language they can use, is a decent thing to spend 8 hours on.
+
+The bar I hold myself to is whether I'd be comfortable with my own family using it. That's a low bar and it's also a stricter one than any spec I've been given.
+
+It's the first job where the mission didn't make me roll my eyes.
+
+#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Software #Developer #Engineering #Coding #Product #Startup #science #research #Learning #DeepTech #Mission #Career #ProductManagement

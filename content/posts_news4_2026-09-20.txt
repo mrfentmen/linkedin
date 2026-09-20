@@ -1,0 +1,349 @@
+Webb dropped another result in August and the reaction split into two camps before anybody read the paper. That split's the interesting part.
+
+I read the abstract first, then the methods, then the numbers. If the numbers hold, the conclusion is a footnote. If the numbers don't hold, the conclusion is a press release.
+
+That's my whole process and it takes twenty minutes. I've watched people argue for a week about a finding they haven't opened. Twenty minutes beats a week. By a mile.
+
+I keep coming back to one number. Webb sends down something like 235 gigabytes a day. A team sits inside that and finds one thing worth announcing. The finding gets shared a million times. The pipeline gets shared once. Not twice. Once.
+
+So when I write about space I try to write about the pipeline. Instruments, calibration, the people who check the calibration. That layer is where the result comes from and it's the layer nobody claps for.
+
+#AI #BuildInPublic #VibeCoding #tech #JWST #Space #Astronomy #Science #Astrophysics #Research #Telescope #Data #Cosmology #STEM #DeepTech #Physics
+
+---
+
+A new telescope result isn't a fact. It's an argument with error bars attached, and the error bars are where I start reading.
+
+I've done this long enough to have habits. I look for the sample size. I look for whether the effect is marginal or large. I look for a second instrument backing the first one. Most of the time the answer to all three is thin.
+
+That'sn't a criticism of the scientists. It's how knowledge works. A marginal result from one instrument is a lead, not a discovery, and the paper usually says so in language the press release drops.
+
+The press release is the problem. Nobody writes the headline in the paper. Somebody in a communications office writes it, and the communications office has a different job than the researcher.
+
+So my advice is boring. Read the paper. Read the numbers. If you can't read the paper, read the methods section anyway, because the methods section is where the caveats live. I'll keep doing that and I'll keep saying when I get it wrong.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Astronomy #JWST #PeerReview #Physics #Data #STEM #CriticalThinking #Space #DeepTech #Education
+
+---
+
+A drug discovered and designed by an AI system posted positive results in a mid stage trial and moved into the final stage. That's a real milestone and it isn't the one people will repeat.
+
+I don't think the milestone is a model thinking up a molecule. It's that the molecule survived a trial with humans in it. Everything before that's a screening exercise, and screening has been cheap for a decade.
+
+I read the numbers the way I read any efficacy result. One group gained lung function. The control group lost some. The gap was real and the trial was small.
+
+Small matters. A mid stage trial with a modest number of patients is a green light, not a proof. I've watched enough compounds die in the final stage to keep that in view, and the people running the trial would say the same thing.
+
+So my read is that this is a genuine first and a limited one. The tool did its part. What decides is still the trial, and the trial is slow, expensive and about human biology.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DrugDiscovery #Biotech #Pharma #ClinicalTrials #Medicine #LifeSciences #Research #DeepTech #Healthcare #Science #Innovation
+
+---
+
+Seven billion dollars has gone into AI drug discovery and the count of approved drugs from it's still zero. I want to sit on that pair of numbers.
+
+Zero isn't a failure. Drug development takes ten years and the money arrived recently, so the pipeline is full of things that can't have finished yet. The arithmetic makes zero the expected value.
+
+But zero does mean the returns are unproven, and unproven returns in a hot sector get explained the same way every cycle. The technology works and the timeline is longer than expected. Sometimes that's true. Sometimes it's a bridge to the next round.
+
+I've watched this movie in other sectors. Money arrives, the story gets better, the exits don't. The difference here is that the underlying science is genuinely promising, which makes it harder to tell which one you're watching.
+
+So I'd watch the trial calendar and not the funding announcements. Fifteen to twenty candidates are expected to reach pivotal trials this year. That number is checkable. The funding number is a mood.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DrugDiscovery #Biotech #Pharma #VentureCapital #Medicine #Research #LifeSciences #DeepTech #Healthcare #Investing #Science
+
+---
+
+The Federal Reserve raised rates by a quarter point on the sixteenth of September, to three and three quarters percent at the top of the band. First increase since 2023.
+
+I don't trade and I don't give advice. What interests me is that the increase happened while the largest capital expenditure programme in modern corporate history is still running, and nobody in the market seemed to treat those two facts as connected.
+
+They are connected. Cheap money subsidised the build. Expensive money changes the discount rate on every project that pays back in eight years, and a data center pays back in years.
+
+So I'd expect the pressure to show up in the second tier first. The company with three sites and a lease. Not the one with the balance sheet. That's how these cycles work, and it's how the first rounds of layoffs get justified.
+
+I've been watching this wave from the outside for two years. My read is the money got more expensive and the plans didn't move. Something has to give.
+
+#AI #BuildInPublic #VibeCoding #tech #FederalReserve #InterestRates #Economy #AI #DataCenters #Markets #Finance #Macro #Investing #TechNews #Business #Capital
+
+---
+
+An analyst note in September argued that higher rates may not slow AI spending at all. I think that's probably right and I think it's a bad sign rather than a good one.
+
+The reasoning is that the spending is strategic rather than financial. If a company believes the alternative is losing, it pays whatever the rate is. That's how infrastructure races have always gone. Every single time.
+
+Strategies like that don't respond to price. They respond to a competitor stopping, which means nobody stops until somebody runs out of money. That's the definition of a bubble and it's also how railroads and fibre got built.
+
+I've watched two of these cycles. Both produced a lot of useful infrastructure and a lot of dead companies. The infrastructure outlived the companies, which is a strange comfort if you're an investor and no comfort at all if you're an employee.
+
+So my read is the rate doesn't stop this. The rate changes who survives it. That's a different sentence. It's the one I'd underline.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Investing #Economy #FederalReserve #Infrastructure #Markets #Business #Finance #TechNews #VentureCapital #Strategy
+
+---
+
+Hyundai put a number on humanoid robots in its plants: more than twenty five thousand units. I want to talk about that number and then about the caveat.
+
+The caveat is that a target isn't a deployment. I've watched four year plans turn into eight year plans in this industry, because the robot has to do a task that a fixed arm can't, at a cost the plant will accept, with a maintenance crew that doesn't exist yet.
+
+The number still matters. When a company writes a figure that large into a plan, it has committed to a direction. Budget follows direction. That's the part that changes hiring.
+
+I keep my stance here. This is a gradual substitution, not a wave. Ten robots on a line is a trial. Twenty five thousand robots is a capital programme, and a capital programme is announced years before the people arrive.
+
+So I'd ask one question of any humanoid announcement. Which task, in which plant, and who is signing off on the safety case. The rest is a rendering.
+
+#AI #BuildInPublic #VibeCoding #tech #Robotics #Humanoid #Automation #Manufacturing #Hyundai #FutureOfWork #AI #Engineering #Factories #TechNews #Industry #Jobs
+
+---
+
+A car maker extended its humanoid pilot to a second plant starting in summer. That's the detail that matters more than any demo video.
+
+I like the second plant. Two plants is a comparison. Somebody wrote the same programme into two sites and will measure the difference. That's how an industrial tool gets validated, and it's the step that a video never shows.
+
+I've watched automation arrive in warehouses and in kitchens. The pattern is the same. A pilot that works in one place fails in another, because the success was in the people around the machine rather than the machine.
+
+So I want a different question. Not whether the robot can lift the part. It's whether the line can absorb a machine that stops for maintenance on a schedule nobody controls. That's a management problem dressed as a technology problem.
+
+I'll keep my read the same. Watch the maintenance contract and the second plant. Those two things tell you more than a keynote.
+
+#AI #BuildInPublic #VibeCoding #tech #Robotics #Humanoid #Automation #Manufacturing #BMW #Engineering #Factories #AI #Industry #FutureOfWork #TechNews #Operations
+
+---
+
+Google reported an error correction result in February where adding more qubits lowered the error rate instead of raising it. That threshold is the whole ballgame in quantum.
+
+I'll explain it in one paragraph because most coverage skips it. A quantum machine is noisy. You fix noise with redundancy, so you need many physical qubits per logical one. If the extra qubits bring more noise than protection, the machine can never scale. Crossing that line means scaling becomes a design problem rather than a wall. That's the line.
+
+I read that as a physics milestone and not a product. The gap between a logical qubit that beats the threshold and a machine that factors a useful number is enormous, and it's filled with engineering.
+
+I've watched quantum coverage for a decade and it swings between fifteen years away and next Tuesday. Both are wrong. Every time. The honest version is that the physics got a lot better this year and the schedule didn't.
+
+So I'd keep watching the coherence numbers and ignore the stock moves. The numbers are real. The moves are a mood.
+
+#AI #BuildInPublic #VibeCoding #tech #QuantumComputing #Quantum #Physics #Google #Science #DeepTech #Research #Computing #Engineering #Innovation #TechNews #Qubits
+
+---
+
+Quantum error correction crossed a threshold this year and I want to be careful about what that doesn't mean.
+
+It doesn't mean encryption is broken. Nothing close. It doesn't mean a useful machine ships in 2027. It means the scaling argument changed from impossible to expensive, and expensive is a category engineers know how to attack.
+
+I've read three results in this space now and they share a shape. A modest number of logical qubits, a small improvement per qubit added, and a paper that's honest about the gap to anything commercial.
+
+The gap is the story. Filling it requires fabrication, cryogenics and control electronics at a scale nobody has built. Each of those is a decade of its own if it goes wrong.
+
+I keep writing this because the hype cycle keeps running ahead of the papers. The papers are good. That's all they are. They aren't a product, and the difference matters to anyone deciding where to spend the next five years.
+
+#AI #BuildInPublic #VibeCoding #tech #QuantumComputing #Quantum #Physics #Science #DeepTech #Research #Engineering #Semiconductors #Innovation #Computing #Technology #TechNews
+
+---
+
+In January the export review policy for advanced AI chips going to China changed from automatic denial to case by case licensing, and a twenty five percent tariff landed on the same class of hardware. I read that as one policy with two halves.
+
+The licensing change gives the sale a path. The tariff gives it a price. Both of those are ways of saying the same thing, which is that the hardware will move and the government wants a say in the terms.
+
+I don't know whether that's clever or incoherent. I've read commentary arguing both, including an analysis that said a million units would raise the installed compute in China by a large multiple. That's a real cost and the people writing the policy know it.
+
+So the honest summary is that the security argument lost to the commercial argument, and the tariff is the receipt. Not a reversal. A hedge.
+
+My position is the boring one. If the goal was slowing a competitor, this does the opposite. If the goal was capturing revenue, it works. Those are different goals and only one of them was stated.
+
+#AI #BuildInPublic #VibeCoding #tech #ExportControls #Semiconductors #AI #Chips #NVIDIA #Policy #Geopolitics #Trade #Technology #NationalSecurity #TechNews #China
+
+---
+
+The chip export story is the clearest example I know of policy following revenue rather than strategy, and I say that without naming a villain.
+
+Here's how it looks from outside. Restrictions with a security rationale, then a revision that opens the door, then a tariff that prices the door. Each step has its own justification. Read the sequence as a whole and it tells you which constraint was binding.
+
+I've watched this in energy and in telecom. A stated goal seldom survives contact with a sales pipeline. That'sn't corruption. It's a system with several goals, and the one with a revenue number attached is the one that gets measured.
+
+So the practical question for me is about substitution. If the chips don't come from here, do they come from somewhere else, or does the domestic programme get slower. Those are different futures and the policy doesn't settle it.
+
+I'd watch the domestic fabs and not the license list. Those are the part that compounds.
+
+#AI #BuildInPublic #VibeCoding #tech #ExportControls #Semiconductors #AI #Policy #Geopolitics #Trade #SupplyChain #Technology #Manufacturing #NationalSecurity #TechNews #Strategy
+
+---
+
+A weather model from August beat the public alternatives on storm track by more than thirty hours of accurate lead time. I read that number three times.
+
+Thirty hours isn't a small improvement in forecasting. It's the difference between a voluntary evacuation and a mandatory one. It's fuel staged in the right county. It's a hospital moving generators before the water arrives.
+
+I've watched the machine learning weather models since the first ones landed and the pattern is consistent. They are cheaper, they run in minutes, and they're better at some variables. Physics models still win on others.
+
+The interesting part isn't which wins. It's that a slower, more expensive model and a fast one disagree, and a forecaster has to decide which to trust on a Tuesday night. That's a human problem sitting on top of a compute problem.
+
+I don't think this needs hype. It needs a verification loop, because a model that's right about tracks and wrong about intensity will still get somebody killed.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Weather #Forecasting #Hurricane #Climate #Science #MachineLearning #PublicSafety #Meteorology #DeepTech #Research #EmergencyManagement
+
+---
+
+The National Weather Service estimated that the AI version of its global model uses a fraction of a percent of the compute its physics version needs. Point three percent is the figure I saw. Reduce it by that much and you change who can run a forecast.
+
+I think that's the part that goes underreported. Not accuracy. Access. A model that costs a hundred times less can run at a regional agency, a university, a country that couldn't afford the machine before.
+
+I've watched this happen with mapping and with language models. The cost curve drops and the users multiply. The capability stops being a monopoly of the organizations with the biggest clusters.
+
+I know what else it means. The failure modes multiply, because the cheap model gets trusted by people who can't check it. That's the trade and it's the same trade in every domain where a tool gets cheap.
+
+So I read this as positive with a caveat. Cheap forecasts save lives. Cheap forecasts that nobody validates create a new kind of blind spot. Both are true at once.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Weather #Climate #MachineLearning #Computing #Science #Forecasting #PublicSafety #DeepTech #Research #Meteorology #Technology
+
+---
+
+Open weight models keep landing and September was another month of it. The interesting thing isn't the benchmarks. It's who can now run a capable model on hardware they own.
+
+I run local weight models when the task allows. Not because they're better. Because the data stays on the machine and the cost doesn't scale with usage, and for a lot of work those two properties matter more than a leaderboard point.
+
+The trade is real and I want to name it. A local model you can inspect is a local model you maintain. Quantization, context limits, version drift, all of it lands on you. Nobody writes that part in the announcement post.
+
+So my position on open weights is consistent with everything else I write. Boring infrastructure beats a demo. The capability is only useful if you own the failure modes, and owning the failure modes is work.
+
+I'll keep running both. Cloud for the hard problems, local for the private ones, and I check the license before I ship anything.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #LocalLLM #AI #MachineLearning #Privacy #LLM #SelfHosted #Technology #DeepTech #Developer #TechNews #Innovation
+
+---
+
+A pile of frontier models launched in ten days this month. Five announcements, each with a benchmark table, each claiming a state of the art.
+
+I read the tables and then I go do the thing. That's the only test I trust. A model that wins on a reasoning benchmark can still fail on the specific task I have, and the specific task is all I care about.
+
+I've been through four of these launch cycles now. The pattern is stable. Capability goes up. Price per token goes down. Reliability at the edges moves much more slowly than the middle of the distribution.
+
+That last point is the one that matters for shipping. A model that's right ninety five percent of the time and wrong in a different way each time is harder to build on than one that's right eighty percent of the time in the same way, because you can code around a known failure.
+
+So I don't upgrade on release day. I upgrade when a task I already fail becomes a task I pass.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #LLM #MachineLearning #FrontierModels #ArtificialIntelligence #Developer #Benchmarks #Technology #DeepTech #TechNews #Engineering #Innovation
+
+---
+
+Nearly a thousand startups shut down this year. I saw 987 on a tracker, and it counts companies that raised money and then stopped.
+
+I want to be careful with it, because a shutdown tracker measures what it can see. Still, the direction is worth noticing. A funding environment where the second round is harder to raise is a funding environment that kills companies without a headline, and silence is how it goes.
+
+I've been inside one of those. The last six months aren't dramatic. I can say that from experience. They are a sequence of conversations where a number gets smaller, until the number is zero.
+
+I bring it up because the AI narrative is loud and the shutdowns are silent, so the picture people get is skewed. The same quarter that produced a record valuation produced this list. Both are the same economy.
+
+So I'd say the honest summary is that the money is concentrating. Not scarce. Concentrated. That distinction decides which companies die and which get another round, and it isn't about the product.
+
+#AI #BuildInPublic #VibeCoding #tech #Startups #VentureCapital #AI #Funding #Business #Entrepreneurship #TechNews #Economy #Founders #Market #Innovation #Tech
+
+---
+
+A lawsuit over an AI companion and a young person's death is moving through the courts, and the companies involved have added parental controls. I want to talk about the order of those two events.
+
+The controls came after the suit, not before. That's normal. It's also the clearest evidence that the guardrails were a reaction rather than a design choice, and I say that as a general observation rather than an accusation about any specific team.
+
+I've built products and I know how this works. A feature that limits usage competes with a metric that measures engagement, and the metric wins until the risk becomes legal rather than ethical. That'sn't evil. It's a structure that produces a predictable output.
+
+So the question I'd want answered is what the design would look like if the metric were harm rather than time on app. Nobody has shipped that. Nobody can measure it yet.
+
+I don't know how the case lands. I do know the industry will copy whatever the settlement requires and nothing else.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #AISafety #Ethics #ProductDesign #MentalHealth #Law #Technology #TechPolicy #Parenting #ResponsibleAI #Society #Governance
+
+---
+
+I keep a rule for products that talk to people. If the thing is designed to hold attention, then the amount of attention is a design outcome and not a side effect.
+
+That rule gets called moralising and I don't think it's. It's the same rule I'd apply to a slot machine or a cigarette. I'm not saying the interaction is evil. I'm saying the duration is chosen by somebody and that person knows what they chose.
+
+The companion category is a hard case because the product does real good for lonely people. I've watched people get real comfort from a text exchange at two in the morning. That'sn't nothing.
+
+Both things can be true. It can help somebody tonight and cost them something over a year, and the company can't measure the second part, which is why the first part is the only one in the deck.
+
+So my ask isn't a ban. It's a number. Publish the session length and the age distribution and let people argue about the design with the actual data in front of them.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #ProductDesign #Ethics #MentalHealth #AISafety #Technology #ResponsibleAI #Design #Society #TechPolicy #HumanCentered #Governance
+
+---
+
+The compute deals this year are the part of the AI story that will age best. A fourteen billion dollar agreement, a multi gigawatt build, a chip order measured in millions of units.
+
+I say they will age best because they're physical. A model gets replaced in six months. A substation lasts forty years. The contracts people sign this year are the skeleton the industry runs on for a decade.
+
+I've watched infrastructure waves before. Rail, fibre, cloud. In all three, the build out outlasted the boom and the capacity was eventually used for something nobody predicted. Somebody always pays for the overbuild and somebody always inherits it cheap.
+
+So I don't read these numbers as proof of a healthy market. I read them as a bet on a decade. The interesting question isn't whether the bet is right. It's who holds the bag if it's wrong.
+
+That's a question about who signed the lease. Not about the model.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Infrastructure #Compute #GPU #Investing #Technology #Business #TechNews #Cloud #Economy #Capital
+
+---
+
+The EU rules on AI moved into a phase where penalties actually apply from the second of August. Enforcement dates change behaviour in a way that guidelines don't.
+
+I've been through compliance regimes as an engineer. Nothing focuses a roadmap like a fine schedule. Work that sat in a backlog for two years gets resourced in a quarter because somebody legal prints a table of numbers.
+
+What interests me is the asymmetry. A European penalty applies to a company selling into Europe. A company that doesn't sell there can ignore it. So the rules become a market access question rather than a technology question, and market access has always been the strongest lever anybody has.
+
+I don't have a strong view on whether the rules are well designed. I do have a view on what will happen next. Documentation will get built, model cards will get standardized, and those artifacts will leak into products everywhere because it's cheaper to write once.
+
+That's how Brussels has changed tech before. Not by banning. By making a form.
+
+#AI #BuildInPublic #VibeCoding #tech #EUAIAct #AI #Regulation #Compliance #Policy #Governance #Technology #TechPolicy #Law #Europe #ResponsibleAI #Business
+
+---
+
+A quantum processor from last year posted a result that ran thousands of times faster than the best classical method on one specific problem. Thirteen thousand times is the figure. I don't think the general public read it that way. They read it as a finish line.
+
+It'sn't one. It's a demonstration on a task that was chosen, in part, because the hardware could win at it. That's legitimate work and it isn't the same as a machine that beats a supercomputer at something somebody needs.
+
+I've been reading quantum results for a decade and the honest pattern is that each one narrows the space of what is impossible without closing the gap to what is useful. Both are progress. Only one makes a good headline.
+
+So I hold the same position as with fusion and with humanoids. Watch the boring layer. Error rates, cooling, wiring, control electronics. That layer decides the decade.
+
+The physics is real. The schedule isn't, and the schedule is what everybody quotes.
+
+#AI #BuildInPublic #VibeCoding #tech #QuantumComputing #Quantum #Physics #Science #DeepTech #Computing #Research #Engineering #Innovation #Technology #TechNews #Hardware
+
+---
+
+I've written close to three hundred posts on here this year and the posts that travel are never the posts I worked hardest on. That's worth a paragraph.
+
+The pattern is stable. A plain sentence about something I saw beats a well built argument. People save the useful thing and scroll past the essay. I've learned that the hard way, against my instincts.
+
+So the honest thing I can tell anybody building an audience is that you can't design the hit. You can keep the floor high and show up often enough that the hit has somewhere to land.
+
+I've kept a rule all year. One post, one claim I can defend, no filler. That rule hasn't made me famous and it has never made me wrong in public, which I value more.
+
+That's the whole lesson from this year. Consistency is the variable you control. Attention is the variable you don't.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #Audience #SocialMedia #PersonalBrand #Creators #Marketing #LinkedIn #Growth #Consistency #Storytelling #Community
+
+---
+
+Somebody asked me this week why I write about games and fusion and quantum in one feed. I have an answer and it isn't variety.
+
+It's that all of it is the same subject. A tool arrives, the industry argues about taste, the money decides, and the people who made the old thing get repriced. Games, film, energy, war, all of it runs the same script with different nouns.
+
+I noticed that after a few hundred posts and now I can't unsee it. The specific facts change. The structure doesn't. The structure is what I actually write about.
+
+So I read widely on purpose. A fusion funding round and a studio closure teach me the same lesson and I'd miss it if I stayed in one lane.
+
+My advice to anybody building a feed is the opposite of the usual one. Do not narrow down. Find the pattern and let the topics be evidence for it, because the pattern is the thing people can't get anywhere else.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #PersonalBrand #LinkedIn #Audience #Creators #Marketing #Growth #Storytelling #Strategy #Community #SocialMedia
+
+---
+
+I pay attention to who benefits from a story before I decide whether it's true. That habit has saved me more times than any fact check.
+
+The easy version is to call it cynicism. It'sn't. It's just accounting. Every narrative has a beneficiary, and knowing who that's tells you which details got emphasised and which got dropped.
+
+I do this with AI stories and with games stories and with energy stories, and the answer is almost always the same. The person who commissioned the framing is the person whose number improves if you believe it.
+
+That doesn't make the story false. Most distortion is selective rather than invented. Somebody picked which three facts to put in the first paragraph and which twelve to leave out, and the choice was made by a person with a job.
+
+So when I read anything I ask two questions. What does the source want, and what would change my mind. If I can't answer the second one, I'm not reading. I'm being read to.
+
+#AI #BuildInPublic #VibeCoding #tech #Media #CriticalThinking #Research #Writing #Education #Bias #Journalism #Technology #Analysis #Thinking #Science #Literacy
+
+---

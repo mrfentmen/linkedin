@@ -1,0 +1,213 @@
+Bethesda took male and female out of Oblivion. The remaster ships Body Type 1 and Body Type 2 instead. Same creator, different words. I could live with that one, though nobody asked for it.
+
+Then the armor went too. Modders went through the files and found the female variants missing. Glass, Iron, Chainmail. Sets that shipped in 2006 aren't in the remaster, and the two that survived came back with longer skirts.
+
+I keep coming back to the meeting where that got decided. Somebody looked at armor from nineteen years ago and called it a problem. Players never asked. The game had already shipped once with it.
+
+I watched how players answered. A mod went up restoring male and female to the creator. Nexus pulled it down, then put it back once the backlash landed, and it's the most endorsed mod for that game now. The most endorsed mod for a remaster undoes the remaster. Nobody wanted this, and the fix took a volunteer a week.
+
+#Gaming #GameDev #ElderScrolls #Bethesda #Oblivion #VideoGames #Remaster #Modding #PCGaming #GameDesign #RPG #Culture #GamingCommunity #Steam #Tech #RetroRPG
+
+---
+
+They redesigned Cortana and the audience never let it go. Halo 4 shipped a new look for her, and Wikipedia calls it one of the most dramatic changes in the series. Halo 5 kept going that direction. The campaign took the hit.
+
+I didn't care about the story either way. What I noticed was what happened after. Halo Campaign Evolved changed her again in 2026 and swapped some character genders. A fan built a replacement model to put the old one back.
+
+That's the part worth sitting with. Players aren't writing essays. They're opening a modeling program and fixing it themselves. Developers keep reading this as an audience that hates change.
+
+That isn't it. This audience accepts change constantly and pays for it. What it won't accept is a change nobody in the room can justify out loud. I'd test it by saying the sentence in the room. We redesigned a character people have loved for twenty years because the new version tests better with a focus group. If that sounds insane to say out loud, it's insane to ship.
+
+#Gaming #GameDev #Halo #Xbox #GameDesign #VideoGames #Culture #GamingCommunity #CharacterDesign #PCGaming #Gamers #Steam #Tech #3DModeling #GameArt
+
+---
+
+Concord took eight years and about four hundred million dollars to make. It peaked at 697 players on Steam. Sony shut the game down and closed the studio within two weeks of launch. That isn't a creative failure.
+
+That's a business model failure, and the numbers aren't close. I think about the eight years. Somewhere in there a room full of people looked at a live service hero shooter and said yes. The market already had Overwatch, Valorant, Apex and Fortnite.
+
+Everyone in that room had to know. Here's what I wonder about. What did the people who were unsure say in that meeting? In my experience they say nothing, because the deck is already built and the decision is going up.
+
+A studio closing is always sold as a market problem. Sometimes it is. This one was a decision made years earlier by people who never had to play it against Fortnite on a Tuesday night. I'd frame the lesson differently. I've seen plenty of bad games make money. The problem is that nobody in the chain got paid to ask whether anyone would show up.
+
+#Gaming #GameDev #Concord #PlayStation #Sony #LiveService #GameDesign #VideoGames #BusinessOfGaming #Culture #GamingCommunity #Steam #PCGaming #Tech #Markets
+
+---
+
+Sixty six percent of AAA developers watched their own company cut people in the last year. That's from the Game Developers Conference survey of more than two thousand developers. Two thirds. One year.
+
+There's a second number in the same report that matters more to me. Developers who say generative AI is bad for the industry went from 18 percent to 52 percent in two years. I don't think that's a trend. I think it's a stampede.
+
+I keep seeing people argue about which audience caused this. Nobody caused this. The studios bet on live service games and missed the market, so they cut staff to protect the quarterly number.
+
+Here's the part that gets skipped. Thirty three percent of US developers were laid off in the last two years. Those people weren't making decisions. They were building what they were told to build, and then the company lost the bet. I've watched three cycles of this now. The first one is always sold as a correction. The people who chose the strategy are still there. The people who executed it are updating a resume.
+
+#AI #Gaming #GameDev #Tech #Layoffs #FutureOfWork #VideoGames #BusinessOfGaming #Culture #GamingCommunity #MachineLearning #Careers #TechNews #Steam #News
+
+---
+
+The most common argument about game sales doesn't survive contact with the market size. Here's the version everyone uses. This old game sold fourteen million and this new game sold forty million, so the new one is bigger. That treats the market as fixed.
+
+It wasn't. The global games market was about forty five billion dollars in 2007. In 2023 it was closer to a hundred and eighty four billion. That's about four times the spending from about four times the buyers.
+
+So adjust it. Fourteen million in a forty five billion dollar market isn't four hundred million in a hundred and eighty four billion dollar market. It's a bigger share of a much smaller pond.
+
+I used to make this mistake constantly. I'd pull two years of numbers and compare them like the world stood still in between. It doesn't. I still see people do it. Phones happened. Free to play happened. Half of that growth is mobile, which is a different audience buying a different thing. The honest answer is that I don't know how to compare 2007 to 2023 fairly, and neither does anyone else arguing about it. Which means the argument can't decide anything.
+
+#Markets #Gaming #GameDev #Economy #DataScience #VideoGames #Tech #Finance #Investing #BusinessOfGaming #Statistics #Culture #Steam #PCGaming #GamingCommunity
+
+---
+
+A remaster has one job. Lose nothing.
+
+The good ones add a resolution bump, some quality of life, and get out of the way. Old audio stays. Old art stays. Nobody gets a vote on what the old version should have been.
+
+I play remasters for the old version, not the new one. I want the thing I remember, cleaned up. That's the whole product. If I wanted a remake I'd buy a remake. So when a remaster drops character options or deletes armor sets from 2006, it isn't a creative decision. It's a decision made by someone who thinks the old thing was wrong, shipped inside a product whose only selling point is the old thing.
+
+That's the contradiction I can't get past. The pitch is nostalgia. The delivery is editing. I'd respect it more if it were a remake, because then the argument is creative and I can disagree with it. Calling it a remaster and changing the content is a way to skip the argument. Ship the old version. Charge for it.
+
+#Gaming #GameDev #Remaster #VideoGames #GameDesign #Culture #GamingCommunity #RetroGaming #PCGaming #Steam #Nostalgia #RPG #Tech #Gamers #ElderScrolls
+
+---
+
+I stopped arguing about games with other people's sales numbers.
+
+For a while I had a habit. Someone would say a design choice hurt a game, and I'd go find a chart. Two million copies, top of the chart, argument over. I thought I was being rigorous. I was being lazy. Sales measure how many people bought something. They don't measure whether it was any good.
+
+There are games that sold thirty million that I think are bad. There are games that sold four hundred thousand that I'd defend for hours. The two numbers are related and they aren't the same number. Treating them as the same thing is how you end up defending a game you don't like because the spreadsheet says you should.
+
+I still use sales for one thing, and only one. Working out what a company will do next. That's a forecast, not a verdict. If you want to argue a game got worse, name the change and explain why it was worse. That's a harder argument. It's also the only one that survives someone disagreeing with you.
+
+#Gaming #GameDev #VideoGames #Culture #GameDesign #GamingCommunity #Markets #DataScience #Tech #Design #CriticalThinking #Steam #PCGaming #News #Gamers
+
+---
+
+The tool is almost never the problem. The motive is.
+
+I build games with AI myself. It's the most fun I've had making anything, and I'll talk about it all day. So I'm not the guy telling you AI ruins games. Here's what I do think. Watch what a studio uses it for. If they use it to build something that was impossible before, you can feel it in the first hour. If they use it to avoid paying artists, you feel that faster.
+
+Same technology. Opposite outcome. The difference is whether anyone in the building wanted the game to be good or wanted the budget line to go down. I've watched this pattern in software for years now. Teams that use AI to remove people ship worse products and lose the experienced people who knew why the old decisions were made. Teams that use it to let people do more keep everyone and go faster. Mine went from 340 dollars a month to 11 by routing tasks to smaller models, and nobody got let go.
+
+That isn't a technology question. It's a management question wearing a technology costume. So I've stopped asking whether a studio uses AI. I ask what they cut, and who decided.
+
+#AI #GameDev #Gaming #MachineLearning #Tech #FutureOfWork #GenAI #VideoGames #GameDesign #Software #Building #Culture #Automation #Engineering #VibeCoding
+
+---
+
+Nobody in the chain gets paid to ask whether the game is any good.
+
+I've been in rooms where the roadmap got agreed in the first twenty minutes and the next two hours went to dates. Everyone was solving a scheduling problem. Nobody was solving the product problem. That's how a game ends up in a saturated genre with a shrinking budget and a launch date nobody believes. Not because someone decided it would be bad. Because asking the uncomfortable question wasn't anyone's job.
+
+Startups have this problem and so do studios. The person who raises the question slows the room down, and slowing the room down isn't rewarded anywhere I've worked.
+
+So the question moves outside. It ends up with the modders, the reviewers, and the people posting on a Saturday about armor sets that got deleted. That isn't a healthy feedback loop. It's a feedback loop with a two year delay and no authority. I don't have a clever fix. I do think paying someone to ask, and giving them standing in the room where the date gets set, would have caught more than one four hundred million dollar bet.
+
+#GameDev #Gaming #ProductManagement #Tech #VideoGames #Culture #BusinessOfGaming #Leadership #Design #Startups #GameDesign #Software #GamingCommunity #TechNews #FutureOfWork
+
+---
+
+Hi Fi Rush wasn't a diversity problem. The studio closed anyway.
+
+Tango Gameworks shipped a game critics loved and players loved. Awards, good reviews, a soundtrack people still talk about. Microsoft shut the studio in 2024 regardless. I bring this up because it breaks a rule people repeat constantly. The rule is that studios close when they make games nobody wanted. Tango made a game people wanted and closed anyway, because the model underneath it didn't work.
+
+That's the part nobody wants to say out loud. Subscription economics showed up in games. If your game is available on a subscription, people stop buying it, and then it doesn't matter how good it is.
+
+So the pattern across closures isn't the content. It's the model. Live service, subscription, budget, subscriber count. Four things that closed more studios in two years than any design decision ever has. I liked that game a lot. I played it on a subscription and never paid for it directly. I'm part of the number that closed the studio.
+
+#Gaming #GameDev #Xbox #GamePass #VideoGames #BusinessOfGaming #Culture #GamingCommunity #GameDesign #Tech #Markets #Subscription #Steam #PCGaming #News
+
+---
+
+Every studio says it listens to players. Almost none of them change anything when players speak.
+
+I watched this play out twice this year, in public, with numbers attached. A mod restoring a character creator option became the most endorsed mod for a remaster, and the platform hosting it reversed its own removal decision after the backlash. That's an audience being loud and getting a result. Then I watched the second one. The same audience said the same thing about a remake, and it shipped the way it shipped.
+
+The difference between those cases isn't conviction. It's timing. In the first case the fix was one file away. In the second the fix meant rebuilding a character pipeline, so the feedback arrived after the point where anyone could act on it.
+
+I don't think studios are lying about listening. I think the listening happens in a marketing meeting and the decision happened a year earlier in a different building. Feedback only matters if it arrives while the decision is still open. After that it's customers being angry at a finished product, and companies have gotten very good at waiting that out.
+
+#Gaming #GameDev #VideoGames #GameDesign #Culture #GamingCommunity #ProductManagement #Marketing #Tech #Steam #PCGaming #Remaster #Modding #Gamers #BusinessOfGaming
+
+---
+
+I built a game this year and the hardest part was deciding what to leave out.
+
+Everyone assumes the hard part is the code. It isn't. I write code with AI and it goes fast. The bottleneck moved somewhere I didn't expect, which is taste. When you can build almost anything, the question stops being can I make this. It becomes should this be in the game. Every feature costs you the thing you didn't add instead, and nobody teaches you how to price that.
+
+I cut a whole combat system three weeks in. It worked. It was fine. It made the game worse by being in there, because it pulled attention away from the part that was good.
+
+I've never made a decision like that at a job. At a job you add things, because adding is visible and cutting needs a reason that survives a status meeting. That's the argument for building alone, and it isn't about speed. It's that the only person I have to convince is me, and I'm allowed to be wrong quickly. Most design problems are subtraction problems. Most companies are built to reward addition.
+
+#GameDev #AI #Gaming #IndieGame #SoloBuilder #GameDesign #Tech #Building #VideoGames #MachineLearning #ProductManagement #Design #Culture #BuildInPublic #VibeCoding
+
+---
+
+Bethesda spent about four years making Fallout 3. They gave Obsidian eighteen months to make New Vegas. Same engine. Same assets. Roughly a third of the time.
+
+I think about what that room looked like. Eighteen months for a game that size means you can't build anything twice. Every system you inherit is one you can't fix. So Obsidian did the only thing left, which was spend the time on writing.
+
+The lead designer, Josh Sawyer, has said the deadline forced the team to focus, and that the constraints pushed them toward the best story they could make. I believe him. Half of New Vegas is dialogue and choice, and dialogue is the cheapest thing in a game to produce.
+
+I don't read that as a compliment to the deadline. It's a description of what a deadline does. Give a team less time and they cut the expensive things first, and expensive means animation, set pieces and polish. The bugs at launch were the bill. Obsidian didn't beat the timeline. They picked a fight they could win inside it.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #GameDesign #GamingCommunity #RPG #PCGaming #Steam #Culture #NarrativeDesign #Writing #Tech
+
+---
+
+Fallout 3 scored 93 on Metacritic and sold 12.4 million copies. New Vegas scored 84 and sold 11.6 million. By every number, Fallout 3 wins. Higher reviews, more copies and a shelf of Game of the Year awards.
+
+Now go look at which one people are still modding in 2026.
+
+I've watched this happen enough times to stop being surprised. The game that scores highest on release and the game that lasts are often two different games, and the gap only shows up years later when the reviews have stopped mattering. New Vegas spent its budget on choice. Different factions, different endings, dialogue that remembers what you did. That kind of thing reviews badly at launch, because reviewers play on a deadline and the branching doesn't pay off until a second run.
+
+I'm not saying Fallout 3 is bad. It's not. I'm saying the score measured the launch, and the audience measured something else and took sixteen years to say so. Bethesda's own highest rated Fallout is not the one with the mod scene. That's the whole thing in one sentence.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #GameDesign #GamingCommunity #RPG #PCGaming #Steam #Culture #Reviews #Media #Tech
+
+---
+
+Obsidian is officially working on a new Fallout game, and Josh Sawyer is involved. Sawyer was the lead designer on New Vegas. Reports say Obsidian set aside work on a sequel to Avowed to do it, which tells you what the company thinks the audience wants.
+
+I read that as Bethesda admitting something. Sixteen years later, the studio that owns the franchise is handing the next one to the team that made the fan favorite. That's real.
+
+I don't think that's an insult to Bethesda. It isn't. It's what happens when you own a franchise for two decades. Your own studio has a twelve year pipeline, and the fanbase keeps asking about a game you didn't make.
+
+That's an odd position. You own the characters and you own the studio, and the thing people want was built by someone else on a third of the budget. I'd take the meeting too. Nobody turns down the game everyone keeps asking about.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #GameDesign #GamingCommunity #RPG #PCGaming #Steam #Culture #Tech #News #Microsoft
+
+---
+
+Bethesda confirmed both Fallout remasters in July. Fallout 3 and New Vegas, modern platforms, plus Fallout 5 in pre production. I want to sit on the New Vegas one.
+
+That game was made in eighteen months by a different studio on Bethesda's engine, which is roughly a third of the time Bethesda spent on its own. It scored 84 against Fallout 3's 93. It sold 11.6 million against 12.4 million. On paper it lost both counts, and it's the one getting remastered alongside the original.
+
+I don't think that's a consolation prize. It's a correction. Remasters cost real money, and companies don't spend it on games the audience forgot. A publisher with a dozen franchises doesn't do that on a whim.
+
+The other half of the announcement matters more. Obsidian is officially making a new Fallout again, and Bethesda made the partnership public this time. Sixteen years between New Vegas and that phone call. I'd like to know what changed in the room.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #Remaster #GamingCommunity #RPG #PCGaming #Steam #Culture #Tech #News #Xbox
+
+---
+
+The most watched thing in the Fallout franchise right now is set in a game Bethesda didn't make.
+
+Season 2 of the show takes place in New Vegas. Amazon says it reached 83 million viewers worldwide, making it the second most watched returning series on the service, behind only Reacher. Its audience score sits at 96 percent, which is above season 1, and reviewers keep mentioning the set design.
+
+I think that's the interesting part. I keep coming back to the dates. The franchise's flagship story is running through territory another studio built, and the people making it treated that material as canon.
+
+So the remaster announcement isn't nostalgia. It's the company following the audience. A television show made New Vegas the center of the franchise again, and now the games are catching up. The adaptation picks a favorite and the original property has to respond. Bethesda's response was to green light the remaster and hand the next Fallout game back to the studio that built the original. That tracks.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #Television #GamingCommunity #RPG #Streaming #Culture #Tech #News #Amazon #Media
+
+---
+
+There's a theory that Todd Howard hates Fallout New Vegas. He's denied it on the record, repeatedly, and it keeps coming back.
+
+I went looking for how many times. He said the Obsidian team did a fabulous job back in 2018. He said they did an incredible job in December 2025 as season 2 launched. In July he told a reporter there's a huge amount of mutual respect behind the scenes, and that he appreciates the fan chatter. He also invited Obsidian developers to the set to see New Vegas in person.
+
+That's four occasions. He still gets asked.
+
+I understand why the myth survives. It's a better story than the boring one. The boring one is that a publisher hired a studio for a spin off, it worked, and sixteen years later they're working together again. Nobody shares that. The question isn't whether he hates the game. It's why the audience needs him to.
+
+#Gaming #GameDev #Fallout #Bethesda #Obsidian #VideoGames #GamingCommunity #RPG #Culture #Media #Tech #Writing #News #Fandom #Narrative

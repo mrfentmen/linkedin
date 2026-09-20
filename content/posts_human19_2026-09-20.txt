@@ -1,0 +1,249 @@
+A bad name cost me half a day last week. The function was called check and it did four things.
+
+I kept reading it as a validator. It validated, then wrote to the database, then sent a message, then returned a count. The name told me one of those jobs and hid the other three. My brain filled in the rest and got it wrong.
+
+The fix was a rename. ValidateAndEnqueue is uglier and it's honest. Nobody reads that function now and assumes it's safe to call twice, which is exactly what I assumed for a year.
+
+I used to think names were cosmetic. They are the cheapest documentation a codebase gets, and a misleading one is worse than none at all. Half a day for one word. I would rather spend two minutes on the word. I still forget that. I forget it less than I used to, most weeks.
+
+#AI #BuildInPublic #VibeCoding #tech #Naming #CleanCode #Programming #Developer #Software #Engineering #Coding #Refactoring #CodeReview #Learning #DeepTech #Backend #BestPractices #OpenSource #Skills #Engineering
+
+---
+
+I found an N+1 query in a page that loaded in four seconds. One line in a loop fixed it and the page came back in under 200 milliseconds.
+
+The code looked innocent. For each order, fetch the customer. Ten orders, ten queries. A thousand orders, a thousand queries, and a database that spends its day answering the same question over and over.
+
+I saw it because I turned on query logging for ten minutes. The log was sixty thousand lines long. Reading it was like watching someone walk to the shops a thousand times when once would do.
+
+The fix was to ask for every customer in one go and join them up in memory. Same shapes, same results, one query. That's the whole trick. I log query counts on every page I build now, because a number in a log beats a hunch every single time and it's cheaper than a bad week.
+
+#AI #BuildInPublic #VibeCoding #tech #Database #Performance #Backend #Developer #Software #Engineering #Coding #SQL #Optimization #DeepTech #Reliability #Monitoring #OpenSource #WebDevelopment #Profiling #Engineering
+
+---
+
+I pinned every dependency in my project and nothing broke for a year. Then I unpinned one and spent a Saturday on the fallout.
+
+The problem wasn't the update. It was that I had no idea what had changed in eleven months of releases. Three major versions arrived at once. Each one carried a deprecation I had not read. That's a lot of surprise in one afternoon. None of it was planned.
+
+So the real cost of pinning is that it hides the bill. You get stability now and a very large payment on a day you did not choose. My bill came due on a Saturday I would rather have spent elsewhere.
+
+I update one package a week now, on purpose, and I read the changelog before I run the tests. It takes fifteen minutes. It has never taken a Saturday. Small updates on a schedule beat one enormous update at the worst possible moment, and I stopped dreading the word upgrade.
+
+#AI #BuildInPublic #VibeCoding #tech #Dependencies #DevOps #Developer #Software #Engineering #Coding #Security #Maintenance #DeepTech #Backend #Reliability #OpenSource #VersionControl #Learning #Automation #Engineering
+
+---
+
+I wrote my first runbook in a panic at eleven at night. It was four steps long and it saved me twice in the following month.
+
+The steps are boring. Check the queue depth. Restart the worker. Watch the depth fall. If it doesn't fall, this is the command that shows why. Written down, in order, with the exact strings copied.
+
+What makes it work is that I wrote it while I was scared. That's the only time I remember the details that matter, like the service name I always get wrong and the flag that has to come before the argument.
+
+Nobody else reads it. That was never the point. The point is that the worst version of me, tired and under pressure, gets to follow a list instead of inventing one at two in the morning. A runbook is a note you leave for the person having the worst night. I wrote mine for me.
+
+#AI #BuildInPublic #VibeCoding #tech #Runbook #DevOps #Reliability #Engineering #Software #Developer #OnCall #Infrastructure #Coding #DeepTech #Documentation #IncidentResponse #Monitoring #OpenSource #Production #Engineering
+
+---
+
+Someone asked me how many tools I use and I had to count. The honest answer is seven, and three of them do almost all the work.
+
+The other four are things I installed because a post said they were important. I opened one of them twice. Another has never been opened at all. They sit in my config taking up space in my head, which is the part that costs.
+
+So I wrote the list down and deleted everything else. Editor, terminal, language runtime, a version tool, a database client, a browser, and one CLI for models. That's it. If I add an eighth, something has to leave the list.
+
+I have one test now. If I didn't open it last week, it goes. That's it. My machine got faster and my mornings got simpler, and neither of those is a coincidence. Deleting a tool is easier than learning it was useless.
+
+#AI #BuildInPublic #VibeCoding #tech #DeveloperTools #Minimalism #Software #Developer #Engineering #Coding #Productivity #DevTools #DeepTech #CLI #Learning #OpenSource #Focus #Workflow #Tools #Engineering
+
+---
+
+I told a client I didn't know and it went better than any answer I could have invented. The question was about a number I had never measured.
+
+I had a guess ready. It would have sounded confident. It would also have been wrong, and wrong in a way that would have shown up three weeks later in a spreadsheet that contradicted me.
+
+So I said the honest thing. I don't know. Here is how I would find out. Here is when you will have it. They relaxed, which I did not expect, because a plan to find out is worth more than a fact I made up on the spot.
+
+I don't do this enough. The urge to fill a silence with a number is strong and it has cost me trust before. Every time I have said I don't know and followed it with a date, the relationship got stronger. Not one exception so far.
+
+#AI #BuildInPublic #VibeCoding #tech #Honesty #Communication #Career #Developer #Software #Engineering #Consulting #Leadership #Trust #DeepTech #Learning #Professionalism #Work #Freelance #Growth #Engineering
+
+---
+
+A code review comment changed how I write code and it wasn't about style. The comment asked one question. What happens when this is called twice, or halfway through?
+
+I didn't have an answer. The function sent an email, and if the job retried, the customer got the same email again. Nothing in my design prevented it, because I had never thought about retries at all.
+
+So I added a key. One field on the record that means this work has already been done. Now calling it twice is safe, and the second call returns the first result instead of doing the work again.
+
+I write that question at the top of my own diffs now. It runs twice, or ten times, or in a bad order, and the answer used to be nothing good. It has caught four bugs before they shipped, which is four bugs I never had to find in production at midnight. One question, four bugs.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Idempotency #Backend #Developer #Software #Engineering #Coding #Reliability #DistributedSystems #DeepTech #Learning #BestPractices #OpenSource #Testing #Design #Engineering
+
+---
+
+I put a cache in front of a slow query and created a bug that lasted six days. The cache worked fine. That was the problem.
+
+The data changed once an hour. My cache held it for a day. So every user saw yesterday's totals with today's date on them, and nothing in my logs complained, because a cache hit is a success by definition.
+
+I found it because a support message said the numbers looked stale. They were stale. My cache was doing what I told it to do, and I had told it the wrong thing.
+
+Now every cache entry has a lifetime I can explain out loud. If I can't say why ten minutes is right, it doesn't get a cache. The metrics track hits and misses too, so a suspiciously high hit rate is a warning now instead of a win. Six days of stale totals taught me that.
+
+#AI #BuildInPublic #VibeCoding #tech #Caching #Backend #Performance #Developer #Software #Engineering #Coding #Reliability #DistributedSystems #DeepTech #Debugging #Monitoring #OpenSource #WebDevelopment #Production #Engineering
+
+---
+
+A cron job of mine ran twice a minute for a day. I had written the schedule wrong and the system did exactly what I asked.
+
+Nothing crashed. That's what made it bad. It quietly doubled every number in my reports, and I spent a morning convinced my traffic had doubled overnight. Two weeks of growth in one night should have been the first clue.
+
+The job was also not safe to run twice. It appended, so the second run added a second copy. Crontab never complains about a job that succeeds twice.
+
+So I made the job safe to repeat and added a guard that refuses to run if the last run was minutes ago. Then I wrote a test that calls it three times in a row and checks the result is unchanged. That test protects a job I never want to think about again. Three calls. One result. I sleep better.
+
+#AI #BuildInPublic #VibeCoding #tech #Cron #Backend #Engineering #Software #Developer #Reliability #Coding #Automation #DevOps #DeepTech #Scheduling #Idempotency #OpenSource #Production #Monitoring #Engineering
+
+---
+
+I removed a feature nobody used and six people complained. That's the most useful thing I learned about deletion all year.
+
+Nobody used it in the data. Twenty two accounts, zero calls in ninety days, if you count by machine. But six humans had a habit built around it, and a habit does not show up in a log until someone takes it away.
+
+The lesson isn't to keep everything. It's to ask before you cut. I emailed the accounts that could possibly care, waited a week, then removed it with a note saying where the replacement lived.
+
+Two of the six came back and told me the workflow they actually had. I built that in an afternoon and forty people used it in the first month. The dead feature was hiding a live need that nobody had ever phrased for me. Worth it. Worth six complaints and a week of email.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Startup #Software #Developer #Engineering #UX #Coding #ProductDesign #DeepTech #Feedback #CustomerSupport #Career #DataDriven #Learning #Growth #Engineering
+
+---
+
+My side project taught me more than my day job did this year. The reason is unglamorous. On the side project, I do every part.
+
+At work I write the backend and hand off the rest. On my own thing, I write the backend, the interface, the copy, the pricing page and the support replies. Each one exposes a way of thinking I had been ignoring.
+
+The pricing page taught me more than any architecture decision. Writing the sentence that explains why someone should pay forced me to know what the product does, in one line, without jargon. That sentence took a week.
+
+I don't think everyone needs a side project. I do think everyone should ship something end to end at least once, because the parts you delegate are the parts you never learn. Two hours a week was enough for me to find that out. The gaps showed up fast. All of them.
+
+#AI #BuildInPublic #VibeCoding #tech #SideProject #Developer #Software #Engineering #Startup #Coding #ProductDesign #Career #Learning #IndieHacker #DeepTech #SoloBuilder #Growth #Marketing #OpenSource #WorkLife
+
+---
+
+I spent an afternoon chasing a memory leak that turned out to be a list that only grew. Fifty thousand entries, added and never removed.
+
+It was an event log I kept in memory for the dashboard. Every request appended a line. Nobody ever dropped the old ones, because in testing there were twelve. In production there were fifty thousand and the process crept up by ten megabytes an hour.
+
+The fix was four lines. Keep the last thousand, drop the rest. Memory went flat within a minute and stayed flat for the week I watched it. That's the whole change, right there.
+
+What I take from it is that the bug was a policy I never set. Data that accumulates needs a rule for shrinking. If I add something to a list and there's no line that removes it, I haven't finished the code. I've just finished the easy half.
+
+#AI #BuildInPublic #VibeCoding #tech #Memory #Debugging #Backend #Developer #Software #Engineering #Coding #Performance #DeepTech #Reliability #Monitoring #Production #OpenSource #Profiling #Learning #Engineering
+
+---
+
+I reverted a deploy in ninety seconds and the revert was the best engineering I did that quarter. The feature was fine. The timing wasn't.
+
+We'd shipped at four in the afternoon on a Friday. By half past four the error rate on the checkout path had tripled. Nothing in the code was wrong. It was a config value that misbehaved under production load.
+
+One sentence decided it. Do we understand this in the next ten minutes, or do we roll back and understand it on Monday. We rolled back. The error rate fell to baseline while I was still talking.
+
+I used to think reverting was an admission. Now I think staying up to prove a point is the admission. A revert is one command and a clear head, and the same feature ships again on Tuesday with the config fixed. It isn't a defeat. That's the whole story.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #DevOps #Reliability #Engineering #Software #Developer #IncidentResponse #Coding #Rollback #Backend #DeepTech #Production #Monitoring #OpenSource #Release #Engineering
+
+---
+
+I was on call for a project of my own for six months and nobody paged me once. That sounds like success. It was luck and one habit.
+
+The habit was a twenty minute pass every Sunday. I read the error log, opened the slowest endpoint, checked the disk, and cleared anything that had been red for more than a day. Every Sunday. Twenty minutes.
+
+Because of that, the mornings after a storm were quiet. Problems got found on a Tuesday afternoon with a coffee, instead of at two in the morning with a phone in my ear.
+
+I'm not pretending this scales. One person can't be on call for a busy system for long. But for the size of project I run, the Sunday pass replaced the pager. I kept a note of every fix, and it ran to four lines. I would take a boring Tuesday over a dramatic Thursday every time, and I have had both.
+
+#AI #BuildInPublic #VibeCoding #tech #OnCall #DevOps #Reliability #Engineering #Software #Developer #Monitoring #Coding #Infrastructure #DeepTech #Operations #Production #OpenSource #Learning #Maintenance #Engineering
+
+---
+
+I wrote a bug report that got fixed in two hours and it had nothing to do with being polite. It had the exact steps and the exact account.
+
+One I sent before it sat for three weeks. It said the export was broken. It didn't say which export, or with which data, or what broken looked like. The developer couldn't reproduce it and moved on to the next thing.
+
+My second one had four lines. Account size, the button, what I expected, what I got, plus a screenshot and the row count. Same developer, two hours, done.
+
+I did the boring part of the work. Finding the smallest case that shows the bug is the expensive half of the fix, and whoever does it shrinks the job for everyone else. I do that half now. It has never been wasted effort, and the whole thing takes ten minutes of my week.
+
+#AI #BuildInPublic #VibeCoding #tech #BugReports #Developer #Software #Engineering #Communication #Coding #Testing #DeepTech #Debugging #Teamwork #Career #QualityAssurance #OpenSource #BestPractices #Learning #Engineering
+
+---
+
+I read a changelog before updating a library and it saved a week. My version was fine. The next one removed the thing my code was built on.
+
+One note, two lines long, tucked under a heading that said breaking. That's all it was. Below it, in the same section, was the replacement and a short example. Two minutes of reading. The whole week stayed intact.
+
+I'd skipped changelogs for years. My logic was that the tests would tell me. They did tell me, eventually, in the middle of a release, on a branch I wasn't expecting to touch that day.
+
+Now I read the breaking section before I run the update and I read the rest after. It isn't diligence. It's that the library already wrote down the answer, and guessing instead costs me a weekend I could have spent anywhere else. The note is free and the weekend is not.
+
+#AI #BuildInPublic #VibeCoding #tech #Dependencies #Developer #Software #Engineering #Coding #Maintenance #Learning #DevOps #DeepTech #Backend #Reliability #OpenSource #Documentation #BestPractices #Security #Engineering
+
+---
+
+I turned on telemetry for my own app and turned half of it off a week later. The numbers I collected didn't tell me what I needed to know.
+
+I had page views, session length, click counts, device types, and a heat map. None of it answered the question I actually had, which was where people stopped and why. I was drowning in measurement and starving for a reason.
+
+The half I kept was small. Where the form failed. Which errors users saw. How long the slowest request took. Three things, all of them about friction rather than attention or vanity.
+
+The heat map bothered me most. It was watching people without asking. I keep that in mind now. Collect what you will act on, delete the dashboards nobody opens, and ask before you watch people. That's the rule I use now. Fewer numbers, better questions, and a cleaner conscience.
+
+#AI #BuildInPublic #VibeCoding #tech #Analytics #Privacy #ProductManagement #Developer #Software #Engineering #DataPrivacy #Coding #UX #DeepTech #Telemetry #Ethics #OpenSource #Startup #Learning #Engineering
+
+---
+
+A telescope result this month was reported as a discovery. Read the paper and it's a candidate, with three more years of observations to confirm it.
+
+I don't blame the press office. The result is genuinely interesting and the signal is real in the data they have. What it isn't yet is settled, and the difference between a candidate and a confirmation is the entire point of the method.
+
+The team was careful. Their own words say tentative. The headline dropped that word, because tentative is a hard sell on a Tuesday and the number is easy to sell.
+
+I look for one thing when a science story lands. Does the paper use the word suggest, or does it use detect. Detect means they measured it. It's solid. Suggest means the data is leaning that way. I have never regretted waiting for the second word, and three years is not a long wait for a fact.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Astronomy #Research #Space #Physics #Learning #DeepTech #STEM #Evidence #Methodology #CriticalThinking #Telescope #Education #Writing #Analysis #Science
+
+---
+
+A grid operator I follow said the battery build is now faster than the plant build. That one sentence explains more about energy than any policy paper I have read.
+
+Batteries are modular. A gas plant is a project. One arrives in trucks and gets wired up over months. The other needs permits, pipelines, and a decade of patience. That difference in speed is not a political opinion. It is a fact about how the two things are built.
+
+So the argument shifts. It isn't about which generation is cleaner now. It's about which one can be added this year, at this site, without waiting for anything to be approved.
+
+I don't think this makes the transition easy. I think it makes it fast where speed matters and slow where a wire has to cross three states. Speed decides. Our bottleneck moved from generation to connection, and that's a different job for a different decade.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #Batteries #Grid #Climate #Infrastructure #Engineering #DeepTech #Renewables #EnergyTransition #Policy #Science #FutureTech #Learning #Sustainability #Electricity #Engineering
+
+---
+
+I played a game this month whose dialogue was generated and it was the best argument against doing that. Thousands of lines. Nothing to remember.
+
+Every character spoke in the same voice with the same length of sentence. Nobody interrupted anybody. Nobody was rude, or funny, or wrong in an interesting way. It was fluent. It was empty. Like a meeting where everyone agrees with the person who spoke first.
+
+The studio got what it paid for, which was volume. A writer would have spent a week on one conversation and made me care about a character I met for ninety seconds. That trade is the whole issue, and it isn't about the tool.
+
+I use these models every day and I like them. I also know what they can't do, which is decide that one line matters more than the other forty. That judgement is the job, and it is still a human one.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Games #GameDesign #Narrative #Writing #AIethics #Developer #Software #Engineering #IndieGame #DeepTech #Creativity #GamesIndustry #Gaming #Learning #Ethics
+
+---
+
+I deleted my analytics for a month and shipped more software. That was not the plan. It just happened.
+
+Without the dashboard I stopped the morning check. That check was ten minutes of reading numbers that changed nothing about what I built that day. Then it was twenty minutes, then it was a habit with a cup of coffee and a bad mood.
+
+What I did instead was talk to four users. One conversation told me more than ninety days of graphs, because a person can say why, and a graph can only say what.
+
+I'm not against measurement. I still track errors and latency, because those change what I do within the hour. The rest came back when I had a question that needed an answer, which took a month and a half. Measurement should follow a question, not replace one. Most dashboards are answers to questions nobody asked. That's the rule.
+
+#AI #BuildInPublic #VibeCoding #tech #Analytics #ProductManagement #Startup #Developer #Software #Engineering #Productivity #Coding #UX #DeepTech #Focus #Learning #Growth #CustomerSupport #Minimalism #Engineering

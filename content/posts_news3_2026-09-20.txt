@@ -1,0 +1,349 @@
+Xbox cut 3,200 jobs and closed four studios. The reporting put the total at nearly 20,000 across two years. I still don't think the layoffs are the interesting part.
+
+Here's what I keep saying. Nobody at that company decided games were bad. They decided the number was too high. That's a spreadsheet decision, not a taste decision, and it tells you exactly where the pressure came from.
+
+The four studios were Compulsion, Double Fine, Ninja Theory and Undead Labs. Between them they shipped well reviewed games. That's the tell. Quality was not the variable in the room.
+
+So when people argue about whether AI can make good games, I think they're arguing the wrong case. The tool was never on trial. The margin was.
+
+I wrote a post two years ago saying the same thing and I got told I was being cynical. I'm not. Cynical would be saying it doesn't matter. I think it matters a lot, which is why I want the real motive written down instead of the comfortable one. Blame the tool and the spreadsheet wins again.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Layoffs #Xbox #GamesIndustry #IndieDev #StudioClosure #TechLayoffs #Games #GameDesign #Publisher #ConsoleGaming #Industry
+
+---
+
+Four studios shut in one afternoon. All four had shipped something people liked. I want to sit on that fact for a second.
+
+The instinct is to look for the bad game. There isn't one. There's a portfolio review, a target margin, and a list of teams that cost more than the plan allowed.
+
+That's what I mean when I say motive beats tool. If the business model needs a hit rate that no studio can deliver, then no tool saves you. Not AI, not a bigger team, not a longer schedule. The arithmetic was decided in a room that never saw the code.
+
+I've shipped work that got cancelled for reasons that had nothing to do with the work. It's the most common story in this industry and the least told, because the press release always frames it as a realignment.
+
+So here's my line. Judge the decision, not the tool. Ask what number moved, who moved it, and whether anyone with a shipped game on their record got a vote. Most of the time the answer is no.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Layoffs #GamesIndustry #IndieDev #StudioClosure #TechLayoffs #Games #GameDesign #Publisher #ConsoleGaming #Industry #Business
+
+---
+
+Obsidian cut 52 people. ZeniMax cut 213. Eleven days later the publisher announced a remaster of a game the first studio made.
+
+I don't have a memo. I have a calendar. Eleven days is short enough that I'd like somebody to explain the sequence, because from outside it looks like the headcount and the catalogue were decided in the same meeting.
+
+This is the pattern I keep pointing at. The people who make the thing get treated as a cost line. The thing they made gets treated as an asset. Same company, same week, two different ledgers.
+
+I've watched this in every creative industry I've paid attention to. Music, film, games, all of it. The catalogue is permanent and the people are seasonal, and once a company internalises that, the decisions write themselves.
+
+I don't think this needs a moral lecture. It needs a question. If the studio was worth keeping the games from, what changed in eleven days that made the people optional. Nobody has answered that one yet.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Layoffs #Obsidian #ZeniMax #GamesIndustry #StudioClosure #TechLayoffs #Games #Publisher #Industry #Business #Fallout
+
+---
+
+One tracker put 2026 at 10,863 layoffs and 135 closed studios in games and tech. I want to be careful with that number, because it's an aggregator and not a filing.
+
+That said, the direction is not in dispute. Every quarter this year has been worse than the one before it, and the announcements have stopped being events. That's the part that should worry people. When a studio closure stops being news, the norm has moved.
+
+I've been on the wrong side of that curve. You read the trades like weather, and after a while you stop feeling each one, which is how a slow disaster works.
+
+So I'd rather cite a soft number I can defend than a hard number I cannot. The tracker is directional. The individual announcements are checkable. Go read three of them in the original if you want the texture, because the texture is where it stops being statistics.
+
+The trend is real. I just won't dress it up as precision I don't have.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Layoffs #GamesIndustry #TechLayoffs #StudioClosure #Jobs #TechNews #IndieDev #Games #Industry #Business #Data
+
+---
+
+A consulting firm found that junior hiring fell about eight percent while the same firms kept saying they were still hiring. Both things were true at once.
+
+I care about this one most this year because it is quiet. Layoffs make headlines. A hiring plan that never gets funded doesn't, and that's where the damage lands over a longer window.
+
+I've watched this in tech for a decade. The entry level job is the apprenticeship, whether or not anybody calls it that. Cut it and you don't lose a headcount. You lose the pipeline that fills senior roles eight years from now.
+
+I don't think anybody in the current quarter gets judged on that. That's the whole problem. The cost is real, it's just paid by a version of the company that doesn't exist yet.
+
+So when I say gradual change rather than a sudden wave, this is what I mean. Not a robot taking a job. A requisition that quietly never opened.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Jobs #EntryLevel #TechLayoffs #FutureOfWork #AI #Careers #Recruiting #Workforce #Economy #Employment #Graduates
+
+---
+
+The gradual version of the jobs story is harder to write about than the dramatic one, so most people write the dramatic one.
+
+I get it. A robot in a warehouse is a picture. A requisition that never opens is a spreadsheet cell. One of those travels and the other doesn't.
+
+I think the spreadsheet is where the change happens. I've hired and I've been hired. The decision to add a role is soft. It's a budget conversation, it's a manager's nerve, and it's easy to defer by a quarter. Defer it four times and the role is gone and nobody ever announces it.
+
+That's why I don't buy the sudden wave framing. Waves are visible and news covers them. What I've watched is closer to erosion. Slower, quieter, and much harder to argue about because there's no single moment to point at.
+
+My rule is simple. When somebody tells you the change is coming, ask which requisition closed. If they can't name one, they're describing a feeling.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Jobs #FutureOfWork #TechLayoffs #EntryLevel #Careers #Recruiting #Workforce #Economy #Employment #AI #Management
+
+---
+
+Helion ran deuterium and tritium fuel in February and became the first private company to do it. That's a real milestone and I want to give it its due before I say the other thing.
+
+The other thing is the timeline. Fusion has been ten years away for forty years, and the reason is that a plasma event in a test cell and a power plant on a grid are different products. The gap between them is not science. It's engineering at a scale nobody has financed yet.
+
+I still think this matters more than most of what gets a headline. It's the enabling layer. It's the boring middle of the energy story, and the boring middle is what actually moves.
+
+So my read is the same as it's always been. Watch the fuel handling and the turbine, not the announcement. Those are the two places where a demo becomes a product, and they're the two places nobody films.
+
+Ten years is still my guess. I'd love to be wrong and I'd love it to be three.
+
+#AI #BuildInPublic #VibeCoding #tech #Fusion #Energy #CleanEnergy #Helion #Climate #DeepTech #Science #Physics #EnergyTransition #Research #Infrastructure #FutureTech
+
+---
+
+Fifteen billion dollars went into fusion this year. That number tells you more about investor nerve than it does about physics.
+
+I've watched capital chase stories before. Solar, batteries, then model training, all the same shape. Money arrives before the engineering is proven, because the story is clean and the alternative story is bureaucratic. Fusion has the cleanest story in energy.
+
+Here's what I'd watch. A funding round is a bet on a decade. A purchase agreement is a bet on a delivery date, and a purchase agreement has to survive a grid operator asking when the megawatts show up.
+
+I don't think the money is wasted. I think it's early, and early money in a hard technology gets converted into a learning curve whether or not the original company survives.
+
+That's the honest version of my position. I'm not skeptical about fusion. I'm skeptical about the calendar, and the calendar is the part a buyer cares about.
+
+#AI #BuildInPublic #VibeCoding #tech #Fusion #Energy #CleanEnergy #VentureCapital #Climate #DeepTech #Science #EnergyTransition #Investing #Infrastructure #Technology #FutureTech
+
+---
+
+Fusion and grid demand are two halves of the same story. Almost nobody puts them in one paragraph. Data centers are forecast to take around a tenth of the power the Western grid plans for. That is a big number. It is not a crisis.
+
+I keep coming back to that tenth. So I read it as an allocation question. Somebody has to decide what gets built, and the deciding is done by utilities and planners in rooms with no cameras.
+
+I've said for a while that energy is the unsexy layer under all of this. Everyone wants to talk about the model. The model runs on megawatts, and the megawatts come from a transmission line that took nine years to permit.
+
+So the interesting projects to me aren't the flagship ones. They're the interconnects, the transformers, the permitting reform, the boring hardware that has to exist before any of the flashy stuff works.
+
+That layer is where the whole thing is decided. It's also the layer with the worst press cycle, which is why it stays underfunded.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Climate #AI #EnergyTransition #Utilities #DeepTech #Policy #Sustainability #Fusion
+
+---
+
+Everyone wants to talk about the model. The model is downstream of a transformer yard and a permitting office.
+
+I've watched this pattern in every wave. The visible layer gets the attention and the invisible layer sets the ceiling. I don't think compute is the constraint on AI in the long run. Power is. Power is a construction project with a public comment period. That is the ceiling.
+
+So when I read about a data center build, I want to know three things. Where the power comes from, who approved the interconnect, and what the local ratepayer ends up paying. Those three questions get asked at every county meeting and answered at almost none.
+
+I don't think this is a villain story. It's a timing story. Utilities plan in decades and the demand showed up in eighteen months, and the mismatch has to land somewhere.
+
+It lands on the rate base and on the schedule. Which is why I keep writing about transformers instead of benchmarks. Boring, and it's the actual constraint.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Utilities #Climate #DeepTech #Policy #AI #Sustainability #Engineering #EnergyTransition
+
+---
+
+A data center uses water the same way it uses power, and the water bill shows up in a county nobody was watching. I've read four siting reports this year and the water line is where the public meeting turns.
+
+Cooling is the reason. Water, not compute. Air cooling works in a cold place and struggles in a hot one, so operators move to liquid and the liquid needs a plant on site. That's a construction project attached to a construction project.
+
+I don't think most people connect the two. They hear about compute and they picture a warehouse. The warehouse is the cheap part. The mechanical plant and the water rights are the part that decides whether the site opens.
+
+So when a county approves a project and the water table is already under pressure, I watch for the second meeting. That's where the numbers get read out and where a company discovers a constraint it didn't model.
+
+I'd rather see the water budget published next to the power budget. Two numbers, one page. That's the transparency that would actually help a town decide.
+
+#AI #BuildInPublic #VibeCoding #tech #DataCenters #Water #Infrastructure #AI #Climate #Utilities #Energy #Policy #Sustainability #Engineering #TechNews #Community
+
+---
+
+Advanced packaging is the bottleneck nobody argues about, and it's a stranger story than the chips themselves. I've read three supply chain notes this year and all three land on the same step.
+
+Here's the shape. A fast chip is one part of a finished module. Connecting it to memory and to everything else needs a plant that took a decade to build, and there are a handful of them on the planet.
+
+That's the constraint. Not design. Not the fab. It's the assembly step in between, and it gets left out of the announcement because it doesn't photograph well.
+
+I've watched this pattern in batteries and in solar. Visible layers get the subsidies and the invisible layer becomes the chokepoint, and then a trade dispute over the chokepoint does more damage than any policy on the headline product.
+
+So I'd track the packaging capacity before I track the chip roadmap. Roadmaps are marketing. Capacity is arithmetic, and arithmetic wins this argument every time.
+
+#AI #BuildInPublic #VibeCoding #tech #Semiconductors #Chips #SupplyChain #AI #Manufacturing #AdvancedPackaging #Technology #TechNews #DeepTech #Engineering #Trade #Hardware
+
+---
+
+Rare earths and magnets are the least exciting sentence in the energy story and the one that decides the most. I've followed this chain for a while and the shape never changes.
+
+Mining is the part people talk about. Refining and magnet making are the parts that bind and both of those are concentrated in a small number of places, and both of those are concentrated in a small number of places for reasons that are part technical and part environmental. Nobody wants the acid in their county.
+
+That's the trap. Every country wants the turbines and the motors and none of them wants the middle of the supply chain. So the middle stays where it is and everybody builds on a dependency they've said out loud they'd like to remove. The middle is the story.
+
+I've watched two attempts to restart domestic refining and both bumped into the same wall. The permitting is slow and the neighbours are organized, and the neighbours have a point.
+
+So my read is that this decade ends with the same map and a lot more rhetoric. I'd rather fund the boring middle than buy another study about it.
+
+#AI #BuildInPublic #VibeCoding #tech #CriticalMinerals #RareEarths #SupplyChain #Energy #Manufacturing #Trade #Policy #Technology #Mining #Geopolitics #TechNews #Infrastructure
+
+---
+
+Grid batteries are the part of the energy transition that actually shipped, and I don't think most people have noticed. I've watched a substation add a container yard and turn a peak problem into a scheduling problem.
+
+That's the whole trick. A battery doesn't make power. It moves it four hours later, and four hours happens to be the gap between the sun going down and the evening load. That gap is what everyone argued about for twenty years.
+
+I've read the case against the batteries and some of it is fair. They don't solve a windless week. They do solve the daily cycle, and they're buildable in eighteen months without a new transmission line.
+
+That last part is why I care. It's a cheap answer that doesn't need federal approval, and cheap answers that clear a local hurdle get built while the elegant ones sit in a queue.
+
+I don't know how far the curve goes. I know the container yard arrived before the reactor did, and that ordering matters.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #Batteries #Grid #Storage #Renewables #Climate #Infrastructure #EnergyTransition #Utilities #DeepTech #Technology #Engineering
+
+---
+
+Hydrogen got sold as the answer to everything and it's turned into the answer to about three things. I've watched that correction happen and I think it was healthy.
+
+The pitch was heat, transport, industry, power. The reality is refining, ammonia and a few industrial processes where nothing else fits. That's not a failure. It's a smaller, more honest market.
+
+I've watched the same correction in other technologies. A tool gets marketed as universal, the easy cases get funded, and the hard cases go back to the old solution. The hard cases were never the point.
+
+What I'd keep an eye on is the electrolyser cost curve and the hours it runs. A machine that runs a third of the time pays back three times slower, and that arithmetic is what killed the early projects.
+
+So my position is that hydrogen stays a chemical feedstock play for now and a heat play later. Boring, smaller than the slide deck, and much closer to the truth.
+
+#AI #BuildInPublic #VibeCoding #tech #Hydrogen #Energy #Climate #EnergyTransition #Industry #DeepTech #Infrastructure #Technology #Policy #Engineering #Chemicals #Sustainability
+
+---
+
+Legal discovery is where AI changed a profession first and the profession barely talks about it. I've watched two firms describe the workflow and it's the same story both times.
+
+Reviewing documents used to be a room full of people and a deadline. A model sorts the pile by relevance, a smaller group checks the edge cases, and the cost drops by an order of magnitude. The work that shrank is real work and it was somebody's first job out of school. Real work. First job. Gone.
+
+That's the pattern I keep writing about. The tool lands where the volume is, not where the prestige is. Nobody writes an article about document review and every junior lawyer spent two years doing it.
+
+I don't know whether the profession ends up better. I know the training pipeline changed and nobody rebuilt it, and that's the part I'd flag in any industry this happens to.
+
+The work that survives is judgement on the edge cases. Judgement is what the old work was teaching. We removed the lesson and kept the exam.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #LegalTech #Law #Discovery #Professions #FutureOfWork #Technology #Automation #Careers #DeepTech #TechNews #Jobs
+
+---
+
+Audit and bookkeeping is the clearest case I know of AI changing a profession from the bottom up. I've read the vendor decks and the sceptical replies, and the sceptical replies are better.
+
+Here's what's true. A model can read a pile of invoices and a ledger and spot the mismatch. That's most of what a junior accountant did, and it's now an integration.
+
+Here's what isn't. Somebody still signs the opinion, and that signature carries legal weight that has nothing to do with the tool. The liability sits with a person, and the person needs to have done work the court will accept.
+
+That gap is where the profession is stuck. The automation is real and the accountability hasn't moved, so the same signature now covers work nobody at the firm performed by hand. Nobody. Not once.
+
+I've watched three industries hit this and the resolution was always the same. A new rule about what a signature means. That rule takes about a decade and it's being written now.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Accounting #Audit #Finance #Professions #FutureOfWork #Technology #Automation #Compliance #Law #TechNews #Jobs
+
+---
+
+Customer service is the first job most companies hand to a model and the first one that breaks in public. I've sat in the queue and I've read the transcripts.
+
+Here's the failure I keep seeing. A model handles ninety percent of the volume, the ten percent that needs a human gets stuck in a system designed for the ninety, and the customer has no path out. So a tool that fixed the average case made the worst case worse.
+
+That's a design choice. Not a limit. I've watched teams ship without an escape hatch because the metrics measured containment and containment was the goal.
+
+I don't have a moral objection to automating support. I have a design objection to a system with no door. Every flow I've built has an exit at the top and it costs nothing to add.
+
+So my rule is simple. Automate the tier, keep the human, and make the jump between them one click. One click. That's it. I've never seen that fail a review and I've seen the alternative fail loudly.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #CustomerService #Support #Automation #ProductDesign #Technology #TechNews #Business #UX #Experience #DeepTech #Chatbots
+
+---
+
+Assessment is the part of education nobody wants to fix, and it's the part a model breaks first. I've watched three institutions try to solve this and all three landed in the same place.
+
+The problem is simple. An essay was a proxy for understanding and the proxy was cheap to fake. Now the proxy is free to fake and the institution has to decide what it was actually measuring.
+
+I've watched the reactions split. Some went back to proctored exams, which measure recall under stress. Some went to oral defence, which is expensive and better. Most added a policy and hoped.
+
+I don't think the answer is detection. I've written about that and I'll say it again. A tool that guesses is not a standard, and building a person's future on a percentage is how you get it wrong in both directions.
+
+What I'd do is change the assignment. Work that has to be defended out loud is work that has to be understood. That costs a teacher four minutes per student. Four minutes is the whole reform.
+
+#AI #BuildInPublic #VibeCoding #tech #Education #AI #Assessment #Teaching #Universities #Technology #Detection #Policy #Students #Learning #EdTech #Integrity
+
+---
+
+Low orbit is getting crowded and the debris problem is arithmetic rather than prophecy. I've read the conjunction reports and the number that matters is tracked objects.
+
+Here's the shape. Two objects crossing a kilometre apart is not a near miss at orbital speed. It's a coin flip nobody can call, and each collision creates thousands of pieces that then threaten everything else at that altitude.
+
+I've watched the industry argue about whose responsibility the cleanup is. The answer is that nobody wants it, because removing junk produces no revenue and the cost lands on the operator who pays now for a risk that arrives in a decade.
+
+That's why I think the rule has to be a deposit rather than a treaty. You pay at launch, you get it back when you deorbit. Same logic as a bottle return and the same reason it works. It works. Ask any bottle. The incentive sits at the moment of the decision.
+
+I don't know if it passes. I do know the sky is a shared resource and shared resources get overused until somebody prices the exit.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Satellites #Debris #Orbital #Policy #Aerospace #Technology #Engineering #Regulation #Geopolitics #TechNews #Sustainability
+
+---
+
+Modding communities keep games alive long after the publisher stops and I've watched that pattern for twenty years.
+
+Here's the thing the industry keeps forgetting. A game with a toolkit gets a decade of new content from people who were never on payroll. A studio gets a reason for the store page to stay warm and the players get something nobody shipped.
+
+I've watched two companies fight this and one embrace it. One embraced it and is still selling copies of a game from a previous console generation. Two fought it and got a modding community anyway, minus the goodwill.
+
+That's the whole analysis. I think the community is coming either way, and the sole choice is whether it has documentation and an official path.
+
+So when I see a roadmap with no toolkit I read it as a bet on a short life. Nothing wrong with that. Just don't act surprised in year three.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Modding #Games #Community #GamesIndustry #PCGaming #IndieDev #StudioClosure #Craft #Gaming #Technology #Players
+
+---
+
+I want to make a prediction I can be held to on film and AI. Within two years, a mid budget feature with substantial AI generated shots will open wide and the studio will not mention it in the marketing.
+
+I say that because the incentives run one way. Cheaper is cheaper. Audiences judge the film. Nobody buys a ticket because of a pipeline. It will stay quiet. So the silence will be a business decision rather than a cover up.
+
+I'm less sure about the credit fight. Unions have real bargaining power and the contract language is being written right now. That window is short. It's the one that opens for this kind of question, and once it closes the terms are set for years.
+
+So I'll track it and I'll say when I'm wrong. I've been wrong about this industry before. I thought the announcement would come first and it did not.
+
+That's the point of writing a prediction down. Anybody can be right in hindsight.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #AIinFilm #Media #Production #Storytelling #Entertainment #Union #CreativeEconomy #FutureOfWork #Prediction #Technology
+
+---
+
+Hollywood resistance is loud and the adoption is quiet, and I think the loud part is about dignity rather than money.
+
+That's not a small thing. People spent decades building a craft and the craft is being valued at a different number. That stings in a way a contract clause cannot fix, and pretending it's all economics misses the human part.
+
+But I've watched enough industries hit this wall to know how it goes. The craft doesn't vanish. It gets repriced and the top of the market keeps doing it by hand, because the top of any market sells provenance.
+
+So my read is a split. I think volume work goes to the tool. Prestige work stays human and charges more for being human. That's what happened with photography and illustration. Film won't be special.
+
+I think the interesting question is the middle. The middle is where most of the jobs live. The middle gets squeezed first.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #Media #Craft #CreativeEconomy #FutureOfWork #Storytelling #Entertainment #AIinFilm #Production #Technology #Labour
+
+---
+
+The studios are not confused about AI. They're managing a message. They want the cost saving and they don't want the conversation.
+
+I've worked inside four companies and I recognise the pattern. When leadership has decided something and the public position is still under review, that isn't indecision. That's sequencing.
+
+I understand the sequencing. It makes sense if you're the one holding the risk. Announce after the release performs, not before, because before means a story about how it was made instead of a story about the film.
+
+I don't think there's a conspiracy. I think it's the ordinary shape of corporate behaviour when the upside is clear and the reputational cost is uncertain. That's how every quiet roll out works.
+
+What I'd ask is different. If the technique is good enough to ship, it's good enough to name. The silence is the tell, and the tell is a statement about how they expect the audience to react.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #Media #PR #Storytelling #Entertainment #AIinFilm #Production #Business #Transparency #Technology #Marketing
+
+---
+
+I've been wrong about timelines before and I want to own one now. Two years ago I wrote that the film industry would make a public decision about AI by 2026. It went quiet instead.
+
+The reason is obvious in hindsight. Big studios are risk managers. A quiet integration keeps the union conversation contained and avoids a headline that costs a weekend of press.
+
+So the adoption raced ahead of the announcement, which is the opposite of what I expected. I assumed the announcement would come first because the cost saving is a good story for investors.
+
+It wasn't. Investors were told in earnings language and audiences were told nothing. That is a more efficient path than the one I predicted, and I should have seen it, because it is how every quiet roll out works.
+
+I'll keep writing down where I'm wrong. Three wrong calls this year so far. A person who never revises is just running a broadcast.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #AIinFilm #Media #Storytelling #Entertainment #Production #Prediction #Technology #Innovation #Business #Lessons
+
+---

@@ -1,0 +1,297 @@
+I rebuilt a service in one weekend. It took two years to recover from that weekend.
+
+That old service was slow, hard to read, and did four things. I replaced it with three small services and a queue. I shipped it on Sunday night and felt like a genius. I was the one person who understood how the pieces fit together.
+
+By Wednesday two of the three services were doing work nobody asked for. Six months in, a retry storm took down the queue, and the old service would have absorbed it. Two years later we removed the queue and went back to fewer moving parts. The old service was right about more things than I gave it credit for.
+
+The final shape looked a lot like the thing I'd deleted. Its code was cleaner and I understood why it was that shape. That understanding cost twenty four months and I could have bought it with a design doc. Cheap weekend. Expensive two years. I know that now. The version I'd keep is the one where I spend one afternoon reading the old service before deleting a line of it, because the shape was never the problem and the reasons behind the shape were the whole product.
+
+#AI #BuildInPublic #VibeCoding #tech #Architecture #Backend #Microservices #Refactoring #Software #Engineering #Coding #Developer #Distributed #Reliability #Learning #Craft #Design #Tech #Production #Simplicity
+
+---
+
+A teammate of mine wrote a service and documented none of it. He wasn't lazy and he wasn't careless.
+
+He held the whole thing in his head. Every decision, every workaround, the reason a retry had a two second delay. Asking him a question got a good answer in ten seconds. Asking the codebase got nothing.
+
+Then he took a month off. We had three incidents that month that he'd have closed in five minutes. None of them were his fault. They were ours, for not writing down what he told us.
+
+I don't think he was wrong to know his work. I think the team was wrong to let that knowledge have one home. We fixed it after he left, which is the expensive way to learn anything. That's the version I'd rather not repeat. His name is still on the author line of forty files. Every file. Every time I open one I wish he'd written one paragraph. He was gone. The knowledge left with him in a way that no repository could hold, and the rest of us spent a month rebuilding what he could have handed over in an afternoon of writing.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #Teamwork #Knowledge #Backend #Culture #Learning #Craft #Onboarding #Mentorship #Tech #Engineering #BestPractices
+
+---
+
+A job failed on the twenty ninth of February and it had never failed before, because that date shows up once every four years.
+
+The code was written in 2019 by someone who left in 2021. It assumed every month had at least twenty eight days and every year had three hundred and sixty five. Both assumptions hold until they don't.
+
+I found it at nine in the morning because the report was empty. I fixed it in twenty minutes. I spent another hour wondering what else in the system assumed a calendar that doesn't exist.
+
+There were four more. Two were harmless. One mis-sorted a queue every April. One crashed on the thirty first of a month that has no such day, which is a bug I'd have bet money wasn't possible. I wrote all five down and put the list in the repo. Next February, someone will thank me, or nobody will.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Dates #Backend #Learning #Craft #Production #Reliability #Tech #EdgeCases #Engineering #Legacy #BestPractices
+
+---
+
+I made an outage worse with a fix and it taught me more than any postmortem I've read.
+
+The database was slow. I added a cache in front of a read path because that's the obvious move. The cache filled, memory spiked, and the process started swapping. Now the read path was slow and the process was dying.
+
+I rolled back in four minutes. The rollback took another six to take effect because the cache had to drain. So my four minute fix cost twenty minutes of outage across the worst window of the day.
+
+What I do now is name the mechanism before I touch anything. If I can't finish the sentence this will help because X, then I'm guessing. Guessing during an incident is how one problem becomes two. I keep a note open and write the mechanism down first, and half the time writing it stops my hand. It costs nothing and it has caught three bad fixes of mine. Half the time. That number is the reason I keep doing it. Write it down. The habit that has saved me most is the one where I open a note file, type the mechanism in one sentence, and then read it back to myself before I run anything at all.
+
+#AI #BuildInPublic #VibeCoding #tech #Incident #DevOps #SRE #Developer #Software #Engineering #Coding #Reliability #Backend #Production #OnCall #Learning #Craft #Postmortem #Tech #Caching
+
+---
+
+Reading code that isn't yours at two in the morning is a specific skill and I got good at it against my will.
+
+You can't hold a mental model of a system you've never seen, so I stopped trying.
+
+I read one path. I follow it from the entry point to the failure and I write down every call in between. That list becomes the map. Writing it down is the trick. In my head the path feels simple and I skip steps. On paper the gap shows up fast. Twice now I've found the bug on the line where my list went blank.
+
+The other thing I learned is to read the tests before the code. Tests say what the author believed. The code says what he was willing to accept. The distance between those two is where bugs live, and it's wider than anyone wants to admit. That one habit cost me nothing and saved me four hours.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Backend #Incident #Learning #Craft #CodeReview #Testing #Tech #Production #OnCall #Engineering #Legacy
+
+---
+
+We split a large service into seven smaller ones over a year. Six boundaries were right. One cost us more than the other six saved.
+
+We cut along the data model instead of along the work. Two of the pieces shared a table for eighteen months, so every write needed a synchronous call between them. That call became the slowest part of the system and the hardest thing to reason about.
+
+The right boundary was the team. One team owned the whole flow, so splitting it put two teams on the critical path with a network hop in between and no shared understanding of the failure modes.
+
+Merging them back took three weeks and nobody argued. If I did it again I'd draw the boundary where a single team can own a whole request. That rule is less elegant than cutting along the data and it survives contact with a support ticket, which is the test that matters. Elegance doesn't survive a support ticket. Boundaries do. Boring works.
+
+#AI #BuildInPublic #VibeCoding #tech #Architecture #Microservices #Backend #Software #Engineering #Coding #Developer #Teamwork #Distributed #Refactoring #Tech #Design #Learning #Craft #Production #Reliability
+
+---
+
+A demo went well because I ran it eleven times the day before and that's the whole secret.
+
+The product worked. That was never the risk. The risk was the network, the seed data, and the one flow slow enough to make everyone uncomfortable. So I ran the whole thing eleven times in the actual room.
+
+Run four showed me a page that took nine seconds. Run seven showed me a chart with the wrong colors. Run nine showed me a flow that needed a second click nobody would make. I fixed each one and each fix was small.
+
+The demo took eight minutes and no one noticed the seams. I don't think that's performance. There's a version of a product that only exists after you've watched it fail nine times, and you can't get there without rehearsing. Nothing about that is clever. It's repetition, and repetition is the one thing I control.
+
+#AI #BuildInPublic #VibeCoding #tech #Demo #Product #Developer #Software #Engineering #Coding #Startups #Craft #UX #Tech #Preparation #Learning #Presentations #Backend #Engineering #Reliability
+
+---
+
+I deleted customer data on a Friday and I want to write down what happened.
+
+A cleanup script had a date filter with the wrong comparison. It should've skipped the last thirty days of records. It kept those and removed everything else. Nine hundred rows across two tables, gone in four seconds.
+
+The recovery was a restore and a replay. The restore took ninety minutes. The replay took six hours because we had to reorder events by hand for the affected accounts. Two customers noticed. Both were kind about it and that's what made it worse. I still think about those nine hundred rows.
+
+What's changed: the script needs two people to run and prints the row count it intends to delete. If that number is over a hundred, it stops and waits for a second person to press a key. Boring. It has fired twice in a year and both times it was right to stop.
+
+#AI #BuildInPublic #VibeCoding #tech #Database #DataSafety #Developer #Software #Engineering #Coding #Backend #Production #Reliability #Incident #Tech #Learning #Craft #DevOps #Engineering #Recovery
+
+---
+
+I stopped asking puzzle questions in interviews after a candidate finished one and then told me it proved nothing.
+
+He was right. The puzzle had one path and it rewarded shape recognition. Someone who'd seen that puzzle family got it in a minute. Someone with nine years of production work got it in ten. Neither outcome tells me how they behave when a deploy fails on a Friday.
+
+I replaced it with a small service that has a real bug in it and a real test that passes for the wrong reason. The task is find the bug and explain why the test lied. That's the job. That's most of the job.
+
+The signal got clearer right away. People who talk out loud do better. People who read before typing do better. People who ask what the system is for do best. None of those had room to show up in a logic puzzle.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviews #Developer #Software #Engineering #Coding #Testing #Debugging #Tech #Careers #Learning #Craft #Culture #Mentorship #Backend #Teamwork
+
+---
+
+An intern built a small internal tool two summers ago. It's now the thing four teams depend on and she's on a different team.
+
+She built it to avoid a manual step that took her ten minutes an afternoon. No proposal, no design review, one afternoon and a small script behind a button. It worked because it did the boring part and nothing else.
+
+I watched it hit two hundred runs a day six months later. Eighteen months later it had auth, an audit log, and a page in the onboarding doc. I didn't plan that. She didn't either. That was the whole spec. It grew because the alternative was worse.
+
+The lesson I keep taking from it is that adoption is the one design review that matters. Every approval process we had would have slowed that tool down and none of them would have predicted that it would end up carrying four teams. The best thing I did that summer was get out of her way.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #Developer #Software #Engineering #Coding #Startups #InternalTools #Teamwork #Tech #Learning #Craft #Mentorship #Culture #Adoption #Engineering #Simplicity
+
+---
+
+I own a script that runs once a year and it's the scariest code I maintain.
+
+It builds an annual statement. It runs in January. It takes four minutes. If it breaks, nobody knows for a week, and the people it breaks for are customers who plan their year around the output.
+
+The problem with code that runs once a year is that nobody has muscle memory. The runbook goes stale, credentials rotate, and the person who knew it left. This year the database user had expired. I found out from an email.
+
+So I practice. In December I run the whole thing against a copy, with a fake date, and I write down every step I had to guess. That practice run costs me an hour and it has saved the January run twice. Practicing something once a year is the cheapest insurance I buy. One hour, once a year, for the code that scares me most. That's a trade I'd make every time.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Runbook #DevOps #Backend #Reliability #Tech #Learning #Craft #Production #Maintenance #BestPractices #Operations #Legacy
+
+---
+
+We built a queue to slow down a bad process. Six years later the queue was the process.
+
+It started as a holding area. Work arrived faster than it could be handled, so we queued it and reviewed it in order. Sensible. The review step grew a priority flag. Flags grew rules, and the rules grew a team.
+
+Last year someone asked why work couldn't start right away and nobody could answer. The queue had become the reason the work took three weeks, not a fix for it.
+
+We kept the queue and removed the priority rules. Throughput doubled in a month. I think about that a lot. A workaround that lasts long enough becomes architecture, and architecture is much harder to question because it looks like a decision somebody made on purpose. I keep a list of our workarounds now. Nine of them. Two are older than the team that owns them.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #ProductManagement #Process #Backend #Teamwork #Tech #Learning #Craft #Architecture #Culture #Simplicity #Operations #Systems
+
+---
+
+I said the same sentence in standup for three weeks and nobody asked what it meant, including me.
+
+The sentence was still working on the migration. It was true every day. It was also useless. In week two I should have said the index build won't finish before Friday. In week three I should have said I need help.
+
+What stopped it was a manager who asked one question. What would make this impossible by Friday. I answered in a minute, and the answer included two things nobody on the call knew about.
+
+One of them was a dependency on a team I'd never contacted. That got fixed the next day. I'd been carrying it for nineteen days and never said a word, because it felt like my problem to solve. Standups aren't status reports. They're a chance to find out what somebody else already knows. One question. That's all it took. Nineteen days. I ask people now what would make this impossible, and I ask it on day two instead of day nineteen.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Communication #Agile #Tech #Management #Learning #Craft #Culture #Backend #Careers #Leadership #Standup
+
+---
+
+A password rotation broke four services last month and three of them failed without an error.
+
+The rotation itself worked. Its new value landed in the secret store on time. The problem was three services cached the old value at startup and never refreshed. Two of them kept retrying and logged every failure, which is how we found it. A third swallowed the error and returned empty results.
+
+That third one had been returning empty results for eleven hours. No alert, no change in the error rate, because an empty list is a valid response. A customer noticed before our monitoring did. I fixed that gap first. I found the silent one because a customer emailed.
+
+What I changed is small. Every service now reports the age of its credentials, and a dashboard page turns red at ninety days. That's it. It doesn't prevent a bad rotation. It means the next one gives us a warning instead of a support ticket.
+
+#AI #BuildInPublic #VibeCoding #tech #DevOps #Secrets #Developer #Software #Engineering #Coding #Backend #Monitoring #Tech #Reliability #Learning #Craft #Security #Observability #Production #Platform
+
+---
+
+It took me two years to learn to read a stack trace the right way and the trick is smaller than it sounds.
+
+I used to read the top line, panic, and start guessing. The top line is where the program noticed. It's often four layers away from the line that caused it.
+
+Now I read the bottom of my own code first. The last frame that belongs to us is the one that decided something wrong. Everything above that line is machinery doing what it was told.
+
+I also read the whole trace before touching the keyboard. Ten seconds of reading beats ten minutes of guessing, every single time. I know that sounds like advice from a poster. It also happens to be the one change that cut my debugging time in half, and I found it because I stopped trusting my first guess. Read first. Type later. Guessing is fast. Being right is faster.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Backend #Learning #Craft #Production #Logging #Tech #BestPractices #Observability #Errors #Engineering #Fundamentals
+
+---
+
+I spent four days writing a test for a feature that took one day to build, and the test was the better investment.
+
+That feature merges a list of records and removes duplicates. Twelve lines. I needed fixtures for every shape a duplicate can take: same id, same name and different id, same everything but a trailing space, and two records that look identical in every field.
+
+Writing those fixtures made me change the code three times. One case needed normalization for a trailing space. Another case needed a rule about which record wins, and the product owner had never thought about it. That conversation was the feature.
+
+It has caught two regressions since. It also serves as the spec, because it's the one place the tie breaking rule is written down. Four days for twelve lines of code sounds ridiculous until you count the argument it prevented and the two bugs it stopped. Four days well spent.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Developer #Software #Engineering #Coding #QA #Backend #Specification #Tech #Learning #Craft #BestPractices #Refactoring #CodeReview #Production #Engineering
+
+---
+
+I estimate migrations backward now and my numbers got better overnight.
+
+I start at the end. Cleanup done, old code deleted, dashboards updated. Then I list everything that has to happen before that. Then I put a date on each item based on the last time I did something similar, not on how long it feels like it should take.
+
+The list is longer than anyone wants. My last one had eleven items and three of them were conversations with other teams. Those three took sixty percent of the calendar time.
+
+What I hand over is the list, not a number. People trust a list because they can argue with it. When they cut scope, they cut a real item, and I can say what that item was protecting. A bare number invites negotiation about the number. A list invites a decision about the work. Nobody wants a list. Nobody argues with one either. That's the difference, and it's the reason I stopped handing over a number.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Estimation #ProductManagement #Backend #Planning #Tech #Learning #Craft #Teamwork #Leadership #Migration #Projects #Communication
+
+---
+
+A vendor I depended on got acquired and the product disappeared in fourteen months.
+
+The acquisition news was fine. Six months later nothing had changed. Then the pricing page changed, then the docs stopped updating, then support replies went from a day to a week. None of those felt like a signal at the time. Together they were a countdown.
+
+We migrated in a rush at the end, which is the worst way to migrate. Nine weeks of work that could have been twelve months of calm if we'd started when the pricing page moved.
+
+Building everything yourself isn't the lesson. That's not realistic and it isn't better. What matters is watching the health signals of anything on your critical path and treating a support response time doubling as an event. I keep a list now. Nine vendors, four numbers each, twenty minutes a quarter. I moved that check into the quarterly planning doc so nobody has to remember it. Cheap, boring, and it has already flagged two vendors.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Vendors #Risk #Backend #Business #Tech #Learning #Craft #Strategy #Infrastructure #Communication #Planning #Platform
+
+---
+
+I refactored a module in the wrong order and paid for it three times over.
+
+I started with the messy part because that's where the pain was. I rewrote it, cleaned the interfaces, and shipped. Then I discovered the messy part was messy because two callers had different requirements that nobody had written down.
+
+So I had a clean module with a compromise hidden inside it. Worse than before. The compromise now sat behind a nice interface, which made it harder to see and easier to keep.
+
+The right order is to read every caller first and write down what each one needs. That took me half a day when I finally did it. The refactor then took a day and the compromise turned into two small functions with honest names. Pain is a signal about history. If you clean the code before you read the history, you throw away the notes. Read first. Refactor second. I learned that one the slow way.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #Backend #Architecture #TechnicalDebt #Tech #Learning #Craft #CodeReview #BestPractices #Design #Maintenance #Legacy
+
+---
+
+A README saved my weekend last month and I didn't write it. Someone on my team did, two years ago.
+
+We had a production problem at six on a Friday. The service was one I'd never touched. I opened the repository with the specific dread of someone about to learn a system the hard way.
+
+The README had four paragraphs. What the service does. Where the data comes from. What to check first when it looks wrong. Who to ask. The third paragraph named the exact symptom I was seeing and the second paragraph named the cause.
+
+I fixed it in thirty five minutes. Then I updated one line in that README and added my name to the fourth paragraph. Four paragraphs, written once, on a Friday two years before, paid for itself and then some. I've started writing them before the code now. It's a small habit that costs nothing and it has paid for itself over and over.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #Teamwork #Backend #Onboarding #Tech #Learning #Craft #Culture #BestPractices #Production #Incident #Engineering
+
+---
+
+I worked with someone who never said no and he was the most expensive teammate I've had.
+
+Every request got a yes. Small requests, huge requests, things he had no business taking on. He'd start them all and finish most of them late. Nobody complained because he was pleasant and fast and the yes always arrived with a smile.
+
+What nobody saw was the cost. Three projects slipped a quarter because he'd taken on work that belonged to another team. Two people stopped proposing ideas, because his yes meant their project would sit behind his other yesses.
+
+I don't think he was dishonest. I think saying no felt rude and saying yes felt generous, and he never saw the bill. The bill is always paid by the queue, and the queue doesn't complain. Now I ask people what they're dropping when they say yes. It's a fair question with an unfair history. Yes is easy. No is work.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Leadership #ProductManagement #Tech #Careers #Culture #Learning #Craft #Priorities #Communication #Mentorship #Startups
+
+---
+
+I spent a week optimizing a function that was responsible for one percent of the runtime.
+
+It looked slow. It had a loop inside a loop and a comment from 2018 explaining a workaround. That was all the evidence I needed. I rewrote it, made it four times faster, and shipped it with a chart.
+
+The page got slower. I'd added caching that made the first call worse and the memory footprint bigger. The real cost was a network round trip inside a serial loop three files away, which I'd never opened.
+
+A profiler found it in ninety seconds. I'd been avoiding the profiler because I assumed I knew. That assumption cost a week and produced a chart nobody asked for. I have a rule now. No optimization without a measurement, and the measurement goes in the pull request description so the next person can see the reasoning. Ninety seconds with a profiler. That's what I skipped for a week.
+
+#AI #BuildInPublic #VibeCoding #tech #Performance #Developer #Software #Engineering #Coding #Profiling #Backend #Optimization #Tech #Learning #Craft #Debugging #BestPractices #Production #Engineering #CodeReview
+
+---
+
+The most important comment I've written is one line and it explains a bug I couldn't reproduce.
+
+This code sorts by a timestamp and then by an internal id. That second sort looks pointless, and every reviewer has asked about it. It's there because two records can arrive with the same timestamp, and without a tiebreaker the order changes between runs and a customer sees their history reshuffle.
+
+Finding it took two weeks, because it happened once on a day when a batch job wrote two rows in the same second. Four sentences in the file explain it. It says why, not what.
+
+I write comments like that now and I delete comments that repeat the code. My test is simple. Nothing more. If a reviewer might suggest deleting the line, the line needs a reason next to it. If they'd never suggest deleting it, the comment is noise. I keep to that rule and my files stay readable. That's the whole rule.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Documentation #Backend #Debugging #Tech #Learning #Craft #CleanCode #BestPractices #Testing #Engineering #Teamwork
+
+---
+
+I keep a work journal and it has changed my performance reviews more than any project I shipped.
+
+One file, one line per day. What I did, what broke, what I decided. Forty words on a busy day and ten on a quiet one. It takes a minute and I never skip it.
+
+The value isn't the record. It's the pattern. Three entries in a row mentioning the same flaky test. Two weeks of entries where every day starts with a question from the same team, which means a document needs writing. The journal shows me things a calendar can't.
+
+The other value shows up in December. When someone asks what I did this year, I don't guess. I read. Nobody remembers a year of work, and the people who do well in reviews aren't better engineers. They just have the facts and I used to show up with a feeling.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Careers #Journal #Backend #Learning #Craft #Tech #Productivity #Reviews #BestPractices #Habits #Documentation #Culture
+
+---
+
+Some of the code I maintain is older than the company I work for and its authors are gone.
+
+That code has no repository history before a certain date because the original version control didn't survive. No tickets, no design docs, no names. What survives is the behavior. It does a thing every night and the business depends on the thing.
+
+I used to find that frustrating. Now I think it's the honest state of most software. Your careful documentation has a half life. Your tests and your behavior are the parts that persist, and everything else is a letter to a person who may never exist.
+
+I write two things now and skip the rest. A test that encodes the rule. A short file next to the code that says why the rule exists. No architecture diagrams, no wiki page, because I've watched those rot inside two years while the tests kept telling the truth. Build the thing that ages well.
+
+#AI #BuildInPublic #VibeCoding #tech #Legacy #Developer #Software #Engineering #Coding #Documentation #Backend #Maintenance #Tech #Learning #Craft #Testing #BestPractices #Architecture #Engineering #Culture

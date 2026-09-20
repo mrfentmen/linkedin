@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# SECRETS AND SESSION STATE — must never be committed
+# ---------------------------------------------------------------------------
+# The logged-in browser session. This file IS a credential: it holds the
+# LinkedIn cookies (and, if exported from a normal browser, Google cookies too).
+browser_profile/
+storage.json
+*.storage.json
+
+# Any local env / config files.
+.env
+.env.*
+!.env.example
+config.yaml
+
+# ---------------------------------------------------------------------------
+# Runtime state written by the poster
+# ---------------------------------------------------------------------------
+content/schedule_run.lock
+content/*.lock
+logs/
+*.log
+
+# ---------------------------------------------------------------------------
+# Backups and scratch copies
+# ---------------------------------------------------------------------------
+*.bak
+*.bak_*
+*_preview.md
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,346 @@
+A model company raised a round big enough to buy a small country and the product is a text box with a better prompt.
+
+I'm not sneering at the product. I use it. What interests me is the arithmetic. Compute grows with every user and the price is set by a competitor who is also losing money on every user. Both sides are waiting for the other one to run out.
+
+I've watched this film in other industries. Ride sharing did it. Streaming did it. The winner isn't the best product. The winner is whoever can keep paying for the losses longest, and the customer gets a cheap product and then a repriced one.
+
+What I do about it is unglamorous. I keep a local model for the work that doesn't need a frontier model and I keep my prompts portable enough to move. I'd rather be able to leave than be right about who wins.
+
+Noah built a boat before anyone believed the weather and that worked out. The difference is he could see the sky and I can only see a burn rate.
+
+#AI #BuildInPublic #VibeCoding #tech #Business #LLM #Startups #Economics #Developer #Software #Engineering #Coding #TechNews #Strategy #CostOptimization #Portability
+
+---
+
+I asked an agent to write the tests for the code it had just written and the tests passed on the first run.
+
+That's not a good sign. A test written by the same mind that wrote the bug tends to test the same assumption twice. My prompt said add tests. It added tests. Both of us were satisfied and neither of us had checked the thing that actually breaks.
+
+Now the brief says something different. Write the test that would fail if the feature were removed, and list the three ways the feature could be wrong that the test can't see. That second part is the part I read. The list is where the useful thinking lands, and about half the time it names the bug.
+
+The tests are fine. They're not the value. The value is a machine that has to say out loud what it can't prove, which is a habit I want in people too.
+
+I still write the test for the money path myself. Some work doesn't belong to a tool.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Agents #CodeReview #Developer #Software #Engineering #Coding #QualityAssurance #MachineLearning #Automation #Craft #Trust
+
+---
+
+The first thing I check in a diff written by an agent isn't the logic.
+
+It's the error handling. Logic is the part the agent gets right, because logic is what the prompt described. Error handling is what happens when the happy path doesn't, and nobody puts that in a brief.
+
+So I look for three things. A failure that gets swallowed with a default value. A retry with no limit. A catch that logs and continues. Every one of those is a decision a person should make out loud, and every one of them is invisible in a passing test suite.
+
+I add them to the brief now, in one line. Fail loudly, no silent defaults, retries need a ceiling. Sixteen words and my review time per change dropped by about half.
+
+I don't blame the tool for that. It's literal. If I want judgment about failure I have to ask for it, in writing, before I read a diff.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #ErrorHandling #Agents #Developer #Software #Engineering #Coding #Reliability #Automation #Craft #Reliability #Production
+
+---
+
+My whole agent loop fits in four steps and I've stopped trying to make it cleverer.
+
+Run it. Read the diff. Change one thing. Run it again. That's the loop. It hasn't changed in a year and the tooling around it has been rewritten three times.
+
+The one thing that matters is the third step. One change at a time. When I batch three fixes into one prompt I lose the ability to know which one mattered, and then I'm guessing about my own code with extra confidence.
+
+I keep a scratch file beside the run where I write the change and the result, one line each. Twelve runs is a normal afternoon. When it works I read the twelve lines and know exactly what happened, which is worth more than the code that came out.
+
+I have abandoned clever loops. A loop with four steps survives a bad week, and a bad week is when I need it.
+
+#AI #BuildInPublic #VibeCoding #tech #Agents #Workflow #Developer #Software #Engineering #Coding #Productivity #Debugging #Craft #Automation #DeveloperTools #Habits
+
+---
+
+A vendor added an AI assistant to their dashboard. I couldn't find the export button for four minutes.
+
+It used to be a row of buttons. Now one of them is a sparkle icon and two of them moved behind a chat panel that wants to help me. The feature set grew and the surface I actually use got smaller.
+
+I've done this too. I added a suggestion box to a tool nobody asked to be suggested to, because it looked good in a demo and it took two days. Six months of data said eleven people used it. Four of those were me testing.
+
+The mistake isn't the feature. It's the promotion. I put the new thing where the old thing was and called it improvement. The old thing was the thing people opened the tool to do.
+
+My rule now is that a new feature can't move an existing control. It gets its own space until the usage data says otherwise. My demo is slower and the product stays where people left it.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductDesign #UX #ProductManagement #Developer #Software #Engineering #Coding #FeatureFlags #DataDriven #Craft #Design #Users
+
+---
+
+When two models give me different answers I treat the disagreement as the useful output.
+
+Not the answer. The gap. I run the same question through two providers, and when both agree I move on with a bit more confidence. When they disagree I read the question again, and about a third of the time I find that my own instruction was ambiguous in the place they diverged.
+
+That's the part I wasn't expecting. Models aren't telling me about the world. They're telling me about my prompt. A disagreement is a map of the sentences where I left something out.
+
+The cost is real and it is small. Two calls instead of one, on maybe a tenth of my work. The saving is measured in the bugs I don't ship from a rule I thought I had written down.
+
+I've caught three specification problems this way in two months. None of them would have shown up in a test, because a test can't know what I meant.
+
+#AI #BuildInPublic #VibeCoding #tech #LLM #MachineLearning #Evals #Developer #Software #Engineering #Coding #Prompting #QualityAssurance #Ambiguity #Craft #Observability
+
+---
+
+My prompts live in version control next to the code and the diff on a prompt change is the most interesting diff I read all week.
+
+A prompt is business logic wearing a string. It decides what the product does, what it refuses, and what shape the answer takes. And for a year I kept mine in a database field that nobody reviewed, where the change history was one row per save. I never wrote the reason down.
+
+Now they're files. A change to a prompt goes through the same review as a function. The diff shows me the sentence that was added and the sentence that was removed. It forces the question of what the new one does that the old one didn't.
+
+The first week of this found two prompts that contradicted each other in the same request path. One said never guess when the field is missing. Another said always return a value. Both had been live for months and the one that won was decided by the order of the calls.
+
+Prompts are code. I treat them like config and I got config behaviour.
+
+#AI #BuildInPublic #VibeCoding #tech #Prompting #VersionControl #LLM #Developer #Software #Engineering #Coding #CodeReview #Documentation #Configuration #MachineLearning #Craft
+
+---
+
+A bug appeared only when two features were on at once and neither feature was wrong.
+
+A discount flag and a tax flag. Each one worked. Together, the tax calculated on the pre-discount amount for one customer segment and the post-discount amount for another, and the difference was about eleven cents per order, which is why nobody found it for a year.
+
+Every test we had covered one flag. That's the shape of the coverage gap. Two toggles produce four states, three toggles produce eight, and my suite tested the two states where the code was written.
+
+I didn't write four hundred tests. I wrote one test that turns every flag on and walks the checkout. It failed on the first run and the fix was two lines. That single test has caught two more interactions since, neither of which I was looking for.
+
+Feature flags multiply the state space and the multiplication is invisible in a coverage report. One test with everything on is the cheapest insurance I've found and it took a year to think of it.
+
+#AI #BuildInPublic #VibeCoding #tech #FeatureFlags #Testing #QualityAssurance #Developer #Software #Engineering #Coding #Combinatorics #Payments #Regression #Coverage #Reliability
+
+---
+
+My form validation rejected a legitimate name and the customer emailed the founder.
+
+The name had an apostrophe in it. My pattern allowed letters, spaces and a hyphen. I had written it in about four seconds. It had been rejecting a real class of names for eight months without a single complaint, because most people typed it another way or gave up.
+
+I found three more of the same shape that week. A phone field that stripped a leading plus. A postcode field that demanded a format two countries use. An address field that capped at sixty characters.
+
+My fix wasn't a better pattern. It was to stop rejecting. Accept anything printable, trim it, store it, and if the value is wrong the consequence is a bounce and a support message, which is a much smaller failure than refusing a customer at the door.
+
+Validation should protect the system, not my idea of what a name looks like. That's a sentence I would have agreed with on the spot. I didn't apply it for eight months. The difference shows up when you read the tickets.
+
+#AI #BuildInPublic #VibeCoding #tech #Validation #UX #ProductDesign #Developer #Software #Engineering #Coding #Accessibility #Forms #CustomerSupport #Craft #Frontend
+
+---
+
+I tried to use my own app with the keyboard only and I couldn't get past the second screen.
+
+The modal had no way to close. Escape did nothing. The focus stayed behind it, so tabbing walked through the page underneath a dialog I couldn't see past. A person who doesn't use a mouse was locked out of my product at the first interruption.
+
+I had built it myself and I had never noticed because I always have a mouse. That's the whole failure. My testing method couldn't see the bug because my testing method was one person with a trackpad.
+
+The fixes are small. Escape closes. Focus moves into the dialog and returns when it closes. Each button is reachable and it has a name. About an hour for the whole app, and I found two more places where the same pattern repeated.
+
+Accessibility isn't a feature I add for other people. It's a set of bugs I can't see with my own hands, which means I need a different method, not more attention.
+
+#AI #BuildInPublic #VibeCoding #tech #Accessibility #Frontend #UX #Developer #Software #Engineering #Coding #KeyboardNavigation #Testing #ProductDesign #Inclusion #Craft
+
+---
+
+A cached error response kept one customer broken for three months and no alarm ever fired.
+
+The flow called a vendor and cached the result for an hour. When the vendor returned a five hundred, my code cached that too, with the same one hour lifetime, which meant every retry for the rest of that hour got handed the same broken answer. The customer retried, got the cached failure. Their integration looked dead to them while my dashboard showed one error at the start and nothing after.
+
+Caching a failure is almost never right. My cache layer had no opinion about it. I fixed it with one line. Don't cache a response that's not a success.
+
+The part that bothers me is the three months. My dashboard was quiet and the logs were quiet. One signal existed. Someone quit and said nothing. I found it by reading a cancellation reason, which is a report I had never opened before.
+
+Negative caching isn't a technical detail. It's a decision to make the system remember its own failure and serve it back. I had made that decision by accident.
+
+#AI #BuildInPublic #VibeCoding #tech #Caching #ErrorHandling #Observability #Developer #Software #Engineering #Coding #Backend #IncidentResponse #CustomerSupport #Reliability #Production
+
+---
+
+I deployed on a Friday on purpose for a year to find out whether the warning was true.
+
+The rule exists for a reason and the reason is staffing. A bad deploy at five on a Friday has nobody to fix it. The person who does fix it is doing it annoyed at eleven at night. That's real and I have lived it.
+
+What I found when I tested it is that my deploys were bad in a specific way, and the specific way was always the same, and it had nothing to do with the day of the week. Four of the eleven Friday deploys needed a rollback and three of those were configuration, not code. Configuration had no test and no review. The day of the week was never the problem.
+
+So I fixed the actual thing. Config now goes through the same pipeline as code. It boots the app with production values. My last six deploys, including two on Fridays, have rolled back zero times.
+
+My lesson isn't that deploying on Friday is fine. It's that a rule about timing is often a rule about something else. That something else is cheaper to fix. I spent a year proving that. I'd do it again.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #DevOps #Configuration #Developer #Software #Engineering #Coding #CI #Reliability #IncidentResponse #Culture #Rollback
+
+---
+
+I wrote a test for a bug I couldn't reproduce. It caught a different one three weeks later.
+
+A report showed wrong totals for about two percent of runs. No stack trace. No pattern. It never happened when I watched it. I couldn't fix what I couldn't see. I wrote a test that ran the calculation two thousand times with random inputs and asserted the invariant.
+
+It failed on run thirty one. The cause was a floating point accumulation in a running sum. The fix was to sum integers and divide at the end. That took nine minutes after three days of looking.
+
+Three weeks later the same test caught a rounding change in a dependency upgrade, which is a bug I'd have shipped to production because it passed every other test I had.
+
+Property tests are how I test the things I don't understand. I can't assert the answer because I don't know it. I can assert the rule the answer has to follow. The machine finds the input that breaks it.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Debugging #QualityAssurance #Developer #Software #Engineering #Coding #PropertyBasedTesting #FloatingPoint #Money #Craft #Reliability
+
+---
+
+I stopped estimating in points and started giving a range with the reason written next to it.
+
+Three days if the vendor schema is what the docs say. Five days if it isn't, which happened twice last quarter. I'll know by Wednesday. That's the whole estimate and it takes four minutes to write.
+
+Points gave me a number that felt precise. It carried no information. A three was a three. Nobody could say what a three meant in this codebase. The number got argued about instead of the risk.
+
+The range does something the points never did. It names the thing that would make it bigger. Two of my last four estimates were right on the low end and both of them were the estimates where I wrote down what would break it, which means the writing is the part that works.
+
+I still get it wrong. My last one took nine days against a three to five day range. The reason was a migration nobody had mentioned. Next time it goes in the range, on the line where I list what could break it.
+
+#AI #BuildInPublic #VibeCoding #tech #Estimating #Planning #Developer #Software #Engineering #Coding #ProductManagement #RiskManagement #Communication #Craft #Deadlines #Teamwork
+
+---
+
+I read a competitor's changelog every month. I've learned more about their product than their marketing page ever told me.
+
+The page says they help teams move faster. The changelog says they shipped three things this quarter about permissions and one about export, which tells me their customers are enterprises with compliance problems. They're not prioritizing speed at all.
+
+Every product has a gap between the pitch and the work. The changelog is the honest side of the gap. It's also public, dated, and written by engineers who aren't thinking about positioning.
+
+I do this with my own changelog too. Six months of entries read in one sitting shows where the product actually went and whether that matches where I said it was going. Mine had four entries about onboarding and none about the thing I called our main advantage.
+
+Reading somebody else's is research. Reading mine is a check on my own story. That one is cheaper and harder.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductManagement #CompetitiveResearch #Strategy #Developer #Software #Engineering #Coding #Changelog #Marketing #Craft #Positioning #DataDriven
+
+---
+
+An intern asked me why the service needed three databases. I didn't have an answer that survived being said out loud.
+
+One for the app, one for analytics, and one I had added during a migration and never removed. The third had eleven rows and a connection pool. It had been running for two years because deleting it required a change to a config file I didn't remember writing.
+
+She removed it in an afternoon. Nothing broke. That is the answer that should worry me. Two years of operational surface for zero value. The reason it survived is that storing something is cheap and deciding to stop storing it is work.
+
+I run this question on everything now. What happens if this is deleted. If the answer takes more than a sentence I write the sentence down and put it in the ticket, and half the time the sentence reveals that the thing has no owner.
+
+The best architectural review I get costs me nothing and comes from somebody who has been here four days, because they can still see the decisions and I've stopped seeing them.
+
+#AI #BuildInPublic #VibeCoding #tech #Architecture #Refactoring #Mentoring #Developer #Software #Engineering #Coding #TechnicalDebt #Simplicity #Databases #Onboarding #Craft
+
+---
+
+I chose the boring architecture and three years later it is the only reason I have weekends.
+
+One service, one database, one deploy pipeline. When I started, three engineers told me I'd regret it and one drew a diagram with boxes and arrows that I still can't explain. The diagram was right about the future and wrong about my constraints.
+
+What the boring choice bought me is attention. All the time I didn't spend on service discovery, message contracts and distributed tracing went into the product, which for a small team is the only scarce resource that matters.
+
+I've paid for it twice. Two features would have been easier with separate services. I built them inside the monolith in about double the time. That's the tax and it is about four weeks across three years.
+
+I'm not saying monoliths win. I'm saying the diagram describes a company with eight teams and I have two people. The cost of pretending otherwise lands on the people who have to be on call. I'd pick the boring one again.
+
+#AI #BuildInPublic #VibeCoding #tech #Architecture #Monolith #Microservices #Developer #Software #Engineering #Coding #Simplicity #Teamwork #Operations #Craft #Leadership
+
+---
+
+Two teams spent a week arguing about whether the number was going up and neither side had written down what the number counted.
+
+One team said signups. The other said activated accounts. Those differ by about forty percent, and the difference explained the whole argument. Both dashboards were correct and they were measuring two different things with the same label.
+
+We wrote the definition in a shared doc. One paragraph. What counts, what doesn't, where it comes from, who owns the query. Total time, two hours. The argument had cost about eleven.
+
+The thing I keep from that week is that arguments about data are almost never arguments about data. They're arguments about a word, and the word has two owners and no definition.
+
+I have a rule now. Before I argue about a number I ask what it counts and who owns the query. If nobody can answer, the work for that hour isn't the argument, it is the paragraph.
+
+#AI #BuildInPublic #VibeCoding #tech #DataDriven #Metrics #Definitions #Developer #Software #Engineering #Coding #Teamwork #Analytics #Documentation #Process #Leadership
+
+---
+
+I ran out of database connections on a Tuesday and the error message sent me to the wrong place for two hours.
+
+The app reported a timeout. The database reported nothing. I looked at slow queries, then at CPU, then at the network, and the answer was that the app had taken every connection in the pool and was waiting for a connection it would never free.
+
+Fifty requests each holding a connection while calling a vendor that was slow. All fifty waiting on the same external call. The pool was twenty. Simple arithmetic and it took two hours because the symptom had nothing to do with the cause.
+
+My fix wasn't a bigger pool. It was two things. Don't hold a connection while talking to somebody else, and set a timeout on the external call so a slow vendor can't hold a thread forever. Twelve lines.
+
+A connection pool is a queue with a hidden length and the length is the thing nobody looks at. I export the number now and I alert on saturation, which is the metric that would have pointed at the real problem in about four seconds.
+
+#AI #BuildInPublic #VibeCoding #tech #Databases #Performance #Debugging #Developer #Software #Engineering #Coding #Backend #Timeouts #Observability #ConnectionPool #Reliability
+
+---
+
+I broke my own API with a change that every reviewer called safe, by adding a required field to a request.
+
+The field had a sensible default in my head. I made it required in the schema and deployed, and every existing client started getting a four hundred. My own mobile app was the first one to break. It broke in the app store review, which is a bad place to find out.
+
+Adding isn't safe when adding changes what the server demands. The version that would have been safe takes an optional field with a default and a deprecation note, which is three more lines than what I wrote.
+
+I had written a rule about this two years earlier. My rule said removing fields is dangerous. Making something required is removal wearing a different hat, because it removes the ability of a client to omit it.
+
+I wrote the rule again. The example went in with it. Rules that live as a sentence get agreed with. They get forgotten. A rule with a specific failure next to it is the kind that survives my next deadline.
+
+#AI #BuildInPublic #VibeCoding #tech #APIs #Versioning #BackwardsCompatibility #Developer #Software #Engineering #Coding #Contracts #MobileApps #Craft #Documentation #Reliability
+
+---
+
+I read a hundred support tickets in one sitting. My roadmap changed twice.
+
+What I noticed first is that the loudest thread isn't the biggest one. One customer wrote nine paragraphs about a feature. Fourteen people mentioned the same confusing label in one sentence each. Nine paragraphs got a meeting. The label got nothing.
+
+The second thing is how much of the traffic is our own error messages. Thirty one of the hundred were somebody quoting a message we wrote and asking what it meant. A message that says invalid input is a support ticket with a delay built in.
+
+I rewrote four messages. I added the next step to each one. Two weeks later the ticket category dropped by about a third, which is a bigger product change than anything I had on the roadmap for that quarter.
+
+Support tickets are the only place the user writes in their own words with no filter. Dashboards tell me what happened. A hundred tickets tell me what it felt like. The feeling is where the roadmap should come from.
+
+#AI #BuildInPublic #VibeCoding #tech #CustomerSupport #ProductManagement #UX #Developer #Software #Engineering #Coding #UserResearch #ErrorHandling #Roadmap #DataDriven #Craft
+
+---
+
+We had a code freeze before every release. That freeze is why our releases were dangerous.
+
+Two weeks with no merges meant two weeks of work sitting on branches, diverging, and colliding on the day the freeze lifted. Every change landed on the same day. Every change had been tested alone.
+
+Now there's no freeze. We ship small changes every day, behind a flag when the change is risky. A release is a decision about which flags to turn on rather than a merge of a month of work.
+
+The incident rate went down. Not one new test. Not because the code got better. Because the unit of change got smaller, and a small change that breaks something is a small change to roll back.
+
+A freeze is a way to make delivery scary and then handle the fear. The thing that made our releases calm was shipping all the time, which is the opposite of what the process said to do.
+
+#AI #BuildInPublic #VibeCoding #tech #Release #FeatureFlags #DevOps #Developer #Software #Engineering #Coding #Deployment #Reliability #Process #IncidentResponse #Teamwork
+
+---
+
+I wrote a one-off script in March. It is still running in production in September and nobody has ever seen it.
+
+It moves a file between two places. It has no tests, no retry and no logging beyond one print. It runs from a cron on a box nobody looks at, and if it stops, an accounts process breaks in a way that takes two days to notice.
+
+The dangerous part isn't the script. It's the word one-off. I used it as a reason not to write anything down. That reason evaporated the moment it was load bearing.
+
+Now the script has a header comment, four lines long. What it does, who owns it, what breaks if it stops, and the date I last read it. The same script, one pass with a text editor. It went from invisible to owned.
+
+Anything that runs on a schedule is production. The number of writers isn't the test I should use. My test is whether stopping it would wake somebody up. I have three scripts that would and only one of those has tests.
+
+#AI #BuildInPublic #VibeCoding #tech #TechnicalDebt #Cron #Operations #Developer #Software #Engineering #Coding #Documentation #Automation #Reliability #Ownership #LegacyCode
+
+---
+
+My agent asked me a clarifying question mid-run. It changed how I write every brief.
+
+The brief said make the export faster. It read the code, came back with a question. Faster for a single large export or faster for many small ones. Those are two different fixes and it couldn't tell which one I wanted.
+
+I had been writing briefs that assumed the machine would guess. It does guess. The guess is reasonable, and reasonable isn't the same as right. One question from it saved me an afternoon of a fix that solved the wrong half.
+
+I added one line to my template and it has paid for itself since. If the goal can be met two ways, stop and ask. It asks about once every five runs and about four of those have been worth the interruption, which is a ratio I would take from a person and pay for gladly. The fifth was a clarification I had already answered in the brief, which is on me and my writing.
+
+A tool that stops when it is unsure is worth more than a tool that's fast. I had been optimizing for the thing that runs to the end. The end isn't the goal.
+
+#AI #BuildInPublic #VibeCoding #tech #Agents #Prompting #Automation #Developer #Software #Engineering #Coding #Workflow #DeveloperTools #Communication #Craft #Trust
+
+---
+I patched an old service for three more months instead of rewriting it and the patch turned out to be the better engineering.
+
+Everyone wanted the rewrite. I wanted it too, because the code is ugly and the names are wrong and every change takes a day longer than my instinct says. What I did instead was write down what was wrong, in order, and then fix the first one.
+
+A missing index. A query in a loop. Four lines. The service got fast enough that nobody mentioned the rewrite for a month. Then a config value that was read in eleven places. An hour of work and a whole class of bug disappeared.
+
+Three months of patching removed about forty percent of the pain from a service we had been calling unrecoverable. That made the rewrite a smaller job, one page of description and a list of what it must not break, and it sits on the roadmap where it belongs.
+
+I'd still say a rewrite is sometimes right. It's a promise about a future nobody has written down yet. My three months of patching taught me what the service does, which is the knowledge the rewrite always needed and no estimate ever had.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #LegacyCode #TechnicalDebt #Developer #Software #Engineering #Coding #Performance #Documentation #Planning #Craft #Architecture

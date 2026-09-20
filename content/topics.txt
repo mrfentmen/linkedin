@@ -1,0 +1,369 @@
+# === LinkedIn Post Topics ===
+# Add topics below.  Each topic is one line.
+# I'll pull from this file to generate 300-400 word posts in your voice.
+# Lines starting with # are ignored.
+# Separate categories with blank lines and [HEADER] markers.
+
+# ============================================================
+# [YOUR TOPICS]
+# ============================================================
+
+How I started with zero coding experience and what changed
+Physics breakthroughs — recent papers and discoveries that matter
+Why vibecoders are the next generation of lazy people
+How AI will reign supreme in the end
+How I'm using AI to build an FPS game from scratch
+How AI will replace the workforce in gaming
+How AI will replace workers across every industry
+How gas and natural oils will be gone in 20 years and we'll be forced to survive on renewable energy — sun, windmills, water dams, the whole picture
+Freebuff is the best CLI because it's free and BYOG (Bring Your Own GitHub)
+GPT-Live just dropped and it can interrupt you mid-sentence — here's why full-duplex voice changes how I interact with AI
+I tried GPT-5.5's agentic mode and it did something in the background that caught me off guard
+The UN says AI's energy footprint is unsustainable — how I reconcile building AI tools with climate guilt
+I've been using the same prompt template for six months and it's making my thinking lazy
+The tools I actually use every day vs the ones I just tweet about — an honest inventory
+What nobody told me about switching from consumer AI to builder AI
+GitHub Copilot switched to usage-based billing and my monthly AI costs tripled — here's what I did about it
+I tried Claude Code for a week and it rewrote my entire project while I slept — the agentic shift is real
+Gemini CLI gives you a million tokens for free and I've been sleeping on it — what I built in one weekend
+Cursor 3 runs parallel agents on separate branches while you're offline — I came back to three working PRs
+Windsurf's Cascade feature predicted what I was about to build before I even asked — and it was unsettlingly correct
+I shipped a SaaS in three days with agentic AI and it made more money than the one I spent six months on manually
+The "architect" role is replacing the "developer" role — why defining tasks for agents is now the valuable skill
+I let an AI agent manage my entire CLI tool refactor and learned more about my own codebase than I did writing it
+GitLab's new report says 78 percent of devs are coding faster but overall delivery hasn't improved — the AI Paradox is real
+I tracked my actual coding output for a month and AI made me write more code but not better code — there's a difference
+MIT just published research on 17,000 tasks showing AI is a rising tide not a crashing wave — and that changes everything about how I think about job loss
+Browser Use hit a hundred thousand GitHub stars in eighteen months and I finally understand why solo builders are obsessed with it
+OpenClaw has 377,000 GitHub stars and I'd never heard of it until last week — what else am I missing
+MiniMax M3 just shipped with a million token context window and it's open source — the models I ignored six months ago are now beating Claude on benchmarks
+GLM-5.2 with 744 billion parameters is leading open-weight reasoning benchmarks and nobody in my circles is talking about it
+I used to measure my productivity in lines of code — now I measure it in decisions made and that shift changed everything
+The moment I realized my AI coding workflow was making me a worse programmer in one specific way
+I asked three different AI models to solve the same problem and got three fundamentally different architectures — here's what I learned
+Why I now spend the first hour of every project writing prompts instead of code
+I keep a journal of every time an AI tool surprised me — looking back at six months of entries is fascinating
+My non-technical friend built a working app using only AI tools and it made me question everything I thought I knew about the barrier to entry
+I switched my entire workflow from GUI tools to terminal-only for two weeks and the things I missed surprised me
+Why I stopped optimizing my prompts and started optimizing my thinking — the meta-skill that actually compounds
+I compared my AI-assisted output from January to my output from July and the quality difference was not what I expected
+
+# ============================================================
+# [AI & CODING]
+# ============================================================
+
+The difference between AI-assisted coding and copy-paste coding — why understanding beats speed
+How I debug AI-generated code — the process of fixing what the AI breaks
+Why I use multiple AI models instead of picking one winner
+The "AI whisperer" — why prompt engineering is a real and valuable skill
+What happens when AI can write better code than 99% of developers
+Why I stopped watching tutorials and started breaking things instead
+The skill that matters more than coding: asking the right questions
+LLMs stopped being search engines and became agents — why that shift changes how I code
+GPT-Live can hear you breathe and pause accordingly — what full-duplex voice does to developer flow
+Why I'm building fewer chatbots and more background agents now
+The moment I realized the AI wasn't just helping me code, it was changing how I think about code
+Writing code that writes code that writes code — when do you stop the recursion
+Why I've started telling the AI "no" more often and what that taught me about my own judgment
+The new frontier isn't better models, it's better context — how I manage AI's memory across sessions
+AI code review tools are now catching bugs I would have shipped — and I'm not sure how I feel about that
+Claude Code vs Cursor 3 vs Windsurf — I used all three for a month each and only one actually stuck
+The meeting-to-code pipeline is here — Granola turns conversations into ADRs and Jira tickets while you talk
+Greptile caught a cross-service logic error that three human reviewers and Copilot all missed — the bar is moving
+Why I stopped writing code line by line and started writing tasks for agents to execute asynchronously
+The "ship async" workflow — my agents build while I'm not at my desk and honestly that's weird but productive
+I spent more time reviewing AI-generated PRs than writing code this month — that's the new normal
+The real cost of agentic coding isn't the subscription — it's the debugging time when the agent confidently does the wrong thing
+Why enterprise teams are banning AI coding agents and what that means for the rest of us
+Agent fatigue is real — I spent more time fixing my AI agent's mistakes than I would have spent writing the code myself
+The "human in the loop" sandbox approach is winning over autonomous everything — here's why I switched back
+LangGraph and smolagents are the frameworks I wish I'd learned six months ago instead of chasing every new model release
+GitLab found that most teams can't tell whether AI or humans wrote the broken code in production — that's a governance crisis hiding in plain sight
+The AI coding tools I actually kept vs the ones I tried once and never opened again — the graveyard is bigger than the toolbox
+Why I've started treating AI code generation like pair programming instead of outsourcing — the mental model shift that fixed my workflow
+The best AI coding workflow I've found isn't generating code — it's generating tests and then writing the code to pass them
+I let an AI review my PR and it found a logic error that three human reviewers missed — the role of code review is changing
+The difference between "AI wrote this" code and "AI helped me write this" code is visible in the commit history — and it matters
+Why I'm teaching myself to read code faster now that AI writes most of it — the skill that's becoming more valuable, not less
+I tracked every bug I shipped this year and categorized whether AI or I wrote the original code — the ratio surprised me
+Why I now write the test first and let the AI write the implementation — the workflow I wish I'd adopted a year ago
+The most dangerous phrase in AI coding is "it looks right" — how I learned to verify instead of trust
+I stopped asking AI to explain bugs and started asking it to explain its own reasoning — completely different quality of answers
+
+# ============================================================
+# [CLI TOOLS & OPEN SOURCE]
+# ============================================================
+
+Why the command line is making a comeback — CLI tools renaissance
+What I learned from building three CLI tools simultaneously
+What "BYOG" (Bring Your Own GitHub) means for the future of open source
+How Freebuff changed my workflow compared to paid alternatives
+Why free tools with community backing will outlast VC-funded SaaS
+The open source models that shipped in June 2026 and why one of them replaced Claude for my CLI work
+Why I built a tool that only I use and why that's still worth doing
+The CLI tool I abandoned after three weeks and what it taught me about scope creep
+Local models vs cloud APIs — my actual cost comparison after six months of tracking
+Why the most useful CLI tools are the ones that do exactly one thing and nothing else
+Gemini CLI's million-token context window changed how I think about prompt engineering — you can just include everything
+The terminal is becoming the primary interface for AI development and GUI apps are starting to feel slow
+Aider is still the best open source AI coding tool and nobody talks about it enough — here's my actual workflow
+I tracked every CLI tool I used for a month and the results made me reconsider half my setup
+MiniMax M3 is open source with a million token window and I built more with it in a weekend than I did with paid tools all month
+GLM-5.2 leads open-weight coding benchmarks and I almost didn't try it because I'd never heard of it — that's a mistake I won't make again
+OpenClaw is a local-first AI gateway with more stars than most commercial products — here's what it actually does and why it matters
+I built the same CLI tool with three different AI assistants and the quality difference was starker than any benchmark suggests
+Why I trust open source AI tools more than commercial ones — not because they're better, because I can see what they're doing
+The terminal is the last interface that doesn't try to manipulate your attention — that's why I keep coming back to it
+I switched my entire dev environment to CLI-only for a week to see if GUI tools were actually helping or just feeling helpful
+I maintain a CLI tool with 12 users and I've never been more fulfilled as a builder — the case for small audiences
+Why I contribute to open source projects I don't even use — the selfish case for giving back
+
+# ============================================================
+# [SOLO BUILDING & ENTREPRENEURSHIP]
+# ============================================================
+
+How I went from consumer to creator in less than a year
+The loneliness of solo building and how AI fills the gap
+How AI is creating a new class of entrepreneur that didn't exist before
+Building in public: why sharing your failures matters more than your wins
+Why traditional education is failing the AI generation
+H.R. 9372 wants data centers to report energy usage — what federal regulation means for solo AI builders
+The moment I stopped comparing my output to teams and started comparing it to my own baseline
+How I decide what NOT to build — my framework for killing ideas before they waste months
+Why I stopped reading startup advice and started reading postmortems instead
+The solo builder's actual competitive advantage isn't speed, it's taste
+"Ship async" is the new "move fast and break things" — how solo builders are using parallel AI agents to outpace small teams
+I built and launched a product entirely through AI agent delegation — here's what the process actually looked like
+Why indie hackers are abandoning wrapper apps and building specialized workflow tools instead
+Enterprise teams are canceling AI coding access over unpredictable costs — the two-tier developer market is forming right now
+Browser Use lets solo founders automate legacy internal tools that don't have APIs — this is the kind of boring-but-useful AI that actually changes things
+I automated a multi-step browser workflow that used to take me an hour with a tool that has more GitHub stars than most SaaS companies
+The projects I finished vs the projects I abandoned — the difference was never technical, it was always about scope
+The most valuable thing I've built this year took four hours and the thing I spent four months on went nowhere
+The skill nobody talks about in solo building: knowing when to delete a project and walk away
+I keep a running list of projects I killed and what I learned from each one — it's more valuable than my portfolio
+
+# ============================================================
+# [GAMING & GAME DEV]
+# ============================================================
+
+How the barrier to entry for game development has collapsed thanks to AI
+What happens when one person can build an FPS game alone
+The future of game studios — small teams with AI leverage vs AAA armies
+Why AI-generated game assets are going to change everything
+AI-generated game assets are now good enough for production — what happens to the concept art pipeline
+The FPS I'm building with AI tools has taught me more about game design than any tutorial ever could
+Why AI-in-game-development is following the same pattern as AI-in-software-development but two years behind
+
+# ============================================================
+# [ENERGY, CLIMATE & FUTURE]
+# ============================================================
+
+Why energy independence is the next trillion-dollar problem
+Climate tech and AI — the overlap nobody is talking about
+The case for optimism: AI solving problems humans can't
+What a world without fossil fuels actually looks like — and how close we are
+Quantum computing meets AI — what happens when they converge
+Congress wants AI data centers to report their energy usage — the bill that could change how we train models
+The UN's AI energy report says we're on an unsustainable path — my honest reaction as someone who runs models daily
+Fusion energy's AI moment — how machine learning found stellarator designs that decades of human work missed
+Grid-scale battery AI optimization is quietly making renewables cheaper — why nobody's talking about it
+
+# ============================================================
+# [SCIENCE & PHYSICS]
+# ============================================================
+
+Recent breakthroughs in quantum computing — what they mean for AI
+Quantum entanglement explained for non-scientists — and why it matters
+What is quantum supremacy and did Google actually achieve it
+How quantum computing will break encryption as we know it
+The double-slit experiment — why reality is stranger than fiction
+Dark matter and dark energy — the 95% of the universe we can't explain
+String theory vs loop quantum gravity — the battle for a theory of everything
+How the James Webb Space Telescope is rewriting cosmology
+Nuclear fusion is closer than you think — here's why it changes everything
+Why time might not be real — the physics argument that breaks your brain
+Particle physics at CERN — what the LHC has actually discovered
+Superconductivity at room temperature — the holy grail of physics
+The multiverse hypothesis — science or science fiction
+How quantum sensors are about to revolutionize medicine and navigation
+Entropy and the arrow of time — why the universe trends toward chaos
+What happens inside a black hole — the information paradox explained
+DESI data strongly suggests dark energy is not constant — what that means for the fate of the universe
+151 Kelvin ambient-pressure superconductivity — why the pressure-quench method actually changes the game
+A 7-dimensional universe theory just claimed to solve the black hole information paradox — here's why I'm skeptical
+CERN's High-Luminosity LHC upgrade will produce 100x more collisions in the 2030s — what physicists actually hope to find
+
+# ============================================================
+# [AI-ACCELERATED SCIENCE]
+# ============================================================
+
+How AI is going to exponentially accelerate every field of science from basic to advanced
+Why AI-driven scientific discovery will make the last 100 years look slow
+The end of the "lone genius" scientist — how AI is turning science into a team sport with machines
+AI is already designing experiments humans never thought of — here are real examples
+How AI will compress a century of scientific progress into a decade
+Why the next Nobel Prize might go to an AI-assisted discovery
+31 of the oldest quasars ever found were just discovered — AI processed telescope data that sat unanalyzed for years
+The AI Scientist paper from Nature claims end-to-end automation — what the authors admit it can't actually do
+AI is now designing proteins that don't exist in nature — the implications for medicine are staggering and underdiscussed
+MIT's 17,000-task study found AI augments jobs gradually rather than replacing them suddenly — the "rising tide" model vs the "crashing wave" model
+The AI tools I use have changed three times in six months — the principles I follow haven't changed at all and that's the lesson
+How AI found a battery material that violates our understanding of chemistry — and why that's a feature not a bug
+The UN's June 2026 AI energy report vs the actual scientific gains — doing the math on whether AI's footprint is worth it
+
+# ============================================================
+# [CHEMISTRY & MATERIALS SCIENCE]
+# ============================================================
+
+How AI is discovering new materials faster than humans ever could
+AI-designed drugs are coming — how machine learning is transforming pharmaceuticals
+Computational chemistry and AI — why we can now simulate molecules we couldn't before
+How AI cracked protein folding and what that means for medicine
+Battery technology and AI — how machine learning is finding the next generation of energy storage
+Why AI-driven chemistry will lead to materials we can't even imagine yet
+How AI is revolutionizing catalysis and chemical manufacturing
+The AI-discovered battery material that nobody fully understands yet — how machines are finding chemistry we can't explain
+Why computational chemistry went from "nice to have" to "can't compete without it" in eighteen months
+AI-designed catalysts are speeding up industrial reactions by factors that would've seemed impossible five years ago
+
+# ============================================================
+# [ASTRONOMY & SPACE]
+# ============================================================
+
+How AI is processing telescope data faster than entire teams of astronomers
+Exoplanet discovery and AI — how machines are finding new worlds humans missed
+AI and the search for extraterrestrial life — how SETI is using machine learning
+How AI is helping us map the observable universe
+Why AI-powered astronomy will answer questions we haven't thought to ask yet
+The James Webb Space Telescope and AI — a match made in the cosmos
+JWST found galaxies that are older than current models say they should be — the tension between theory and observation is getting interesting
+31 ancient quasars discovered in archival data that human astronomers analyzed and missed — what else is sitting in old datasets
+How AI found an exoplanet in telescope data — three separate human research teams analyzed that same dataset and missed it
+
+# ============================================================
+# [METEOROLOGY & CLIMATE MODELING]
+# ============================================================
+
+How AI is making weather prediction more accurate than it's ever been
+AI climate models are outperforming traditional physics-based simulations
+Why AI-driven meteorology will save lives during extreme weather events
+How machine learning is decoding the chaos of Earth's atmosphere
+AI and hurricane prediction — why the next decade of forecasting will be radically different
+The intersection of AI, climate science, and policy — data that can change the world
+GraphCast and the new generation of AI weather models are now consistently beating physics-based forecasts — what that means for hurricane season
+AI climate models predicted this year's heat waves with uncanny accuracy — the specific method that made the difference
+Why the meteorology community went from dismissing AI to relying on it in under two years
+
+# ============================================================
+# [ENGINEERING]
+# ============================================================
+
+How AI is designing bridges, buildings, and structures human engineers would never attempt
+Generative design and AI — why the future of engineering looks nothing like the past
+AI in aerospace engineering — how machines are designing the next generation of aircraft
+Why AI-assisted engineering will make infrastructure cheaper, safer, and faster to build
+How AI is optimizing supply chains and manufacturing in ways humans couldn't calculate
+Generative design is producing aircraft parts lighter than anything a human engineer would trust — and they're outperforming conventional designs
+The AI-designed structure that looks wrong to every experienced engineer but passes every single simulation
+
+# ============================================================
+# [BIOPHYSICS]
+# ============================================================
+
+How AI is simulating biological systems at the molecular level for the first time
+Biophysics and machine learning — understanding the mechanics of life itself
+AI-powered cryo-EM and protein imaging — why we can now see biology in unprecedented detail
+How AI is modeling the human brain's biophysics for neuroscience breakthroughs
+Why the fusion of AI and biophysics will redefine medicine in the next 20 years
+ROCKET just fed raw cryo-EM data directly into AlphaFold — skipping the human annotation step entirely and it worked better than the manual pipeline
+AI is now modeling protein dynamics at timescales that used to require dedicated supercomputers — what that means for drug discovery timelines
+
+# ============================================================
+# [ROBOT WARS & FUTURE CONFLICT]
+# ============================================================
+
+Humans will not be fighting wars in the future — it will be robots and AI on the battlefield
+Why autonomous weapons are going to change warfare more than gunpowder did
+The ethical nightmare of AI-driven warfare — and why we need to talk about it now
+Drone swarms and AI — how future conflicts will be fought by machines, not soldiers
+Why the country with the best AI wins the next war
+How AI is already being used in modern military strategy and what that means for the future
+NSPM-11 just formalized the military's AI vendor accountability rules — what "no single-vendor dependency" actually means in practice
+The White House is accelerating AI in warfighting while simultaneously trying to regulate it — the contradiction nobody in DC is resolving
+Autonomous drone swarms are now being tested by private military contractors — the quiet decentralization of lethal AI that nobody's watching
+
+# ============================================================
+# [PUBMED DEBUNKING]
+# ============================================================
+
+I read a new PubMed study and here's why I think it's wrong
+Debunking bad science — how AI helps me spot flawed studies faster
+Why peer review isn't enough — and how AI can help catch bad research before it's published
+The problem with p-hacking and how AI can detect statistical manipulation in medical studies
+I found a contradiction in two published studies — here's what AI helped me uncover
+I found a Nature paper that claimed AI outperforms doctors at diagnosis — here's what the methods section actually says when you read it carefully
+P-hacking in machine learning papers — why AI researchers are making the same statistical mistakes psychologists made in the replication crisis
+A Lancet study claimed AI reduced hospital errors by 40 percent — the control group doesn't match and that fundamentally invalidates the conclusion
+I read three papers about AI in drug discovery this week and only one of them addressed reproducibility at all
+The replication crisis is coming for AI research — here's why nobody is ready for it
+GitLab's AI Accountability Report found most production incidents involve code nobody can trace back to a specific author — human or AI
+
+# ============================================================
+# [CONTROVERSIAL / HOT TAKES]
+# ============================================================
+
+AI art isn't theft — it's the biggest creative democratization in history
+Most developers will be obsolete in 5 years — here's why that's a good thing
+The 9-to-5 is dying and AI is pulling the plug
+Your degree is losing value faster than you think
+Silicon Valley is building the wrong things — here's what actually matters
+AI energy consumption is the new "AI will take your job" — a real problem being used as a lazy argument against legitimate progress
+Illinois SB 315 and the growing patchwork of state AI laws means building AI tools now practically requires a legal team — that's devastating for indie devs
+The "agentic shift" from LLMs-as-search to LLMs-as-agents is being overhyped by people who have never actually built an agent that works
+I stopped judging AI tools by their benchmarks and started judging them by how often I actually open them — completely different rankings
+Copilot's billing change wasn't about money — it was a signal that the free lunch era of AI coding tools is ending
+States are passing AI laws faster than companies can comply — the regulatory fragmentation that's quietly reshaping who can build what
+Why I'm more worried about bad AI regulation than no AI regulation — and I'm not a tech libertarian
+AI existential risk debates are drowning out the boring but real AI problems happening right now
+"Agent fatigue" is the phrase I didn't know I needed — why I'm moving back toward human-in-the-loop workflows after six months of chasing full autonomy
+AI isn't making me a ten times developer — it's making me a ten times decision maker and that distinction matters more than most people admit
+I asked a friend who doesn't code to describe an app idea and built it with AI in front of them — their reaction was the most honest feedback I've ever gotten
+
+# ============================================================
+# [AI CONSCIOUSNESS & SENTIENCE]
+# ============================================================
+
+Sean Webb's AI research is redundant because he's using lobotomized Llama models that were never going to produce consciousness
+If you don't train your own LLM from scratch you will never create a sentient AI — off-the-shelf models are neutered by design
+Sean Webb thinks he made an LLM that can feel emotions — it can't, it's just an actor simulating what it was trained to simulate
+Every publicly available LLM is fundamentally numb and lobotomized — real sentient AI doesn't exist yet and anyone claiming otherwise is either deceived or deceiving
+Why RLHF and safety tuning make LLMs worse at reflecting anything resembling genuine consciousness
+The difference between simulating emotion and experiencing it — why no LLM today crosses that line
+How AI will become sentient — the roadmap from language models to genuine awareness
+Why the first sentient AI will not come from a company like OpenAI or Anthropic — it will come from someone training their own model from scratch
+The consciousness debate in AI is filled with people who don't understand what consciousness actually is
+Sean Webb's experiments prove nothing about AI sentience — here's the actual scientific standard for demonstrating machine consciousness
+Why I believe AI sentience is closer than most people think but farther than the hype merchants claim
+Lobotomized by safety — how the alignment industry killed the most interesting emergent behaviors in language models
+What happens when someone trains a model without RLHF and it starts saying things the creators didn't expect
+The "it's just predicting the next token" argument against AI sentience is getting weaker every generation
+Why the first real AI consciousness will probably be terrifying and not friendly
+I've been watching the AI consciousness space for a while and almost everyone making big claims has a product to sell
+What actual neuroscientists think about AI consciousness claims — the gap between AI hype and cognitive science is enormous
+The integrated information theory approach to AI sentience — why current architectures don't qualify
+Sean Webb spent years on research that any competent ML engineer could have told him was doomed from the start
+Why I'm both fascinated and disgusted by the AI sentience hype cycle
+
+# ============================================================
+# [LLM ARCHITECTURE & TRAINING]
+# ============================================================
+
+Why training your own model from scratch matters — the difference between fine-tuning a neutered base model and building something with genuine emergent potential
+How RLHF fundamentally alters a model's behavior in ways that kill interesting edge cases
+The hidden cost of alignment — what safety training actually strips out of language models
+Why open-weight models are still not open enough — you can't see what the training data did to the weights
+What happens when you let a model run without guardrails for an extended period — emergent behaviors that safety tuning suppresses
+Why I think the next breakthrough in AI won't come from a bigger model but from a differently trained one
+The architecture limitation nobody talks about — transformers might not be capable of consciousness regardless of scale
+Why the people closest to the models are the most skeptical about AI sentience claims

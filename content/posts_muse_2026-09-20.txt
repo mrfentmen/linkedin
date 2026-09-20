@@ -1,0 +1,9 @@
+I have several phones running Meta's Muse and none of them needed a laptop to set up. The muse-relay that links them together was written by Muse itself. I gave it the problem and it built the plumbing that lets one chat board drive every phone at once.
+
+Muse told me it couldn't run mcp servers. That's wrong. I wrote mcp-gateway instead, and now those phones reach tools and data the chat surface was never meant to expose. It took an afternoon. No team. No permission. No special access.
+
+That is what bothers me. One keyboard driving many phones, each with its own identity and its own accounts, took me days. If I can do that on my own hardware, so can anyone. Meta should treat it as a real hole and close it, because the next person won't be doing it to learn.
+
+The other half is cost. Some of the muses have their own github accounts, mail logins, chatgpt and deepseek sessions, and the ai-freebuff and ai-opencode tools on the command line. When a job is big they send one large prompt to ai-freebuff or ai-opencode and that CLI does the work. It keeps Meta's usage low. Hand an agent the right accounts and it stops leaning on the expensive one.
+
+#AI #BuildInPublic #VibeCoding #tech #Meta #Muse #MCP #AIagents #Automation #Android #Security #AppSec #InfoSec #CLI #OpenSource #DevTools #PromptEngineering #freebuff #OpenCode #Privacy #LocalModels

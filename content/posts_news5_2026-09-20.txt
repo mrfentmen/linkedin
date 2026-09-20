@@ -1,0 +1,377 @@
+Vibe coding gets dismissed by people who have not shipped with it. I've shipped with it and I'll give you the honest version.
+
+It's fast. Painfully fast at the start, because the first version of anything is cheap now. A working prototype at lunch. Something you can show somebody at four.
+
+Then it slows down. The parts that break are the parts you didn't read. I've spent an afternoon on a bug that came from a line I skimmed at speed, and the lesson wasn't about the tool. It was about me.
+
+So my rule is simple. Speed on the sketch. Care on the seam. The seam is where the pieces meet, and the seam is where I stop trusting anything I didn't write or read.
+
+That's the whole craft argument. Not whether the tool is good. Whether you still read what ships. I know which side I'm on and I've paid to learn it.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Developer #Coding #Programming #AI #DevTools #TechNews #BuildInPublic #IndieDev #Startup #Engineering #Productivity
+
+---
+
+I read code I didn't write more than I write code now. That's the job change nobody warned me about.
+
+I'm not complaining. Reading is the skill. I've watched two juniors with the same tool get opposite results, and the difference was whether they opened the file the tool edited. One did. One didn't. Six months later the gap was obvious.
+
+So I'll keep saying it. The tool compresses the typing, not the thinking. The thinking is now the whole job, and the thinking is harder to fake.
+
+I've made this my rule for anything I ship. If I can't explain a line to somebody on a call, I don't ship it. That rule has cost me time and it's saved me more.
+
+So I read the diff before I merge. Every time. It's the cheapest insurance I know and it's never once wasted my time. I'd rather be slow and honest than fast and wrong.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Developer #Coding #CodeReview #AI #Programming #Engineering #BuildInPublic #TechNews #DevTools #Learning #Career
+
+---
+
+I've watched three junior developers use the same model and get very different results. I gave them all the same tool. Same task. Three outcomes.
+
+Here's what I saw. One used it as a search engine and did well. One used it as an author and got stuck. One used it as a rubber duck and wrote everything himself, and he did best of all.
+
+That's a small sample and I'll say so up front. Still, it matches what I've watched for two years. The tool amplifies whatever you already do. If you don't know what you're doing, I've watched it amplify that too.
+
+So I read the entry level story differently. The job didn't vanish. It moved. Less typing, more judgement, and judgement takes longer to teach a junior.
+
+I know that's the part nobody budgets for. Onboarding a junior now means teaching reading and verification first, and that's slower than teaching syntax ever was.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Hiring #JuniorDev #Mentorship #AI #SoftwareEngineering #Coding #Career #TechLayoffs #Learning #Engineering #FutureOfWork
+
+---
+
+The best developer I've worked with kept a log of every bug he fixed. Two sentences each. I started doing it and I still do. Six years now.
+
+It's the least glamorous habit in the craft and it's the one that compounds. Six months in, you have a searchable record of your own failures, and failure is the only teacher I've found who never gets bored.
+
+I've watched people repeat the same mistake for years because they never wrote it down. I've done it myself. The log catches that, because a pattern you can search is a pattern you can see.
+
+So my advice to anybody starting is boring. Keep notes on what broke. Not a blog, not a portfolio. A file. The log isn't a diary. It's a lookup table.
+
+Mine has about four hundred entries now. It takes me two minutes a week. I open it more than I open any documentation.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #SoftwareEngineering #Learning #Coding #Programming #Engineering #Career #Habits #Debugging #TechNews #BuildInPublic #Productivity
+
+---
+
+I was ghosted by a recruiter after four rounds and I want to write about what I did with the anger.
+
+I wrote it down first. Then I read it. Then I deleted about half of it, because half of it was about me and not about the process.
+
+Here's what I kept. Four rounds is a real investment of somebody's week. I've sat on the other side of that table and I know how easy it is to stop replying. Silence after four rounds is a process failure, not a candidate failure, and the company usually knows it.
+
+So I stopped treating the silence as a verdict. It's a signal about the company. If they can't close a loop with a finalist, they can't close a loop with a customer either, and I've watched that pattern hold more times than it hasn't.
+
+I still get annoyed. I just don't let the annoyance write the story about my worth.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Recruiting #JobSearch #Career #Interviewing #TechLayoffs #Ghosting #WorkLife #FutureOfWork #Jobs #Technology #Resilience
+
+---
+
+A recruiter asked me for a portfolio. I sent a link to working software instead. That changed the conversation.
+
+I've hired and I've been hired, and the thing that never lies is a running thing. You can argue about a resume. You can't argue with a URL that loads.
+
+So my advice to anybody job hunting in this market is to build one small thing and keep it live. One page, one form, one purpose. It doesn't need users. It needs to work when somebody clicks it.
+
+I've watched candidates with better credentials lose to candidates with worse credentials and a demo. Every time, the same reason. The demo answered a question nobody had to ask.
+
+Credentials describe what you did for somebody else. A shipped thing describes what you can do now. Those are different products and one of them is in stock. I know which one I'd bet on.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Portfolio #JobSearch #Career #Developer #Recruiting #BuildInPublic #TechNews #Interviewing #Skills #FutureOfWork #Projects
+
+---
+
+I've watched the hiring market for two years and the change in entry level roles is the signal I trust most, because it's the hardest to fake.
+
+A layoff gets announced. A graduation rate gets reported. A junior position that never opened shows up nowhere. That third one is where the damage accumulates and it's the one that can't be measured.
+
+I've advised a few people through this. The advice changed this year. Apply for the jobs that exist and build the skill that gets used in the job you want, because the gap between the two is bigger than it used to be.
+
+That's not a cheerful answer. I know. But I've watched people burn a year applying to closed doors, and the people who did something visible in that year ended up fine.
+
+The market decides the doors. You decide what's on the other side when one opens.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #JobSearch #EntryLevel #Career #TechLayoffs #FutureOfWork #Graduates #Recruiting #Skills #Economy #Employment #Jobs
+
+---
+
+I've grown an audience on here without buying anything and I want to give the unglamorous version of how.
+
+I post most days. I've done it for a year. I write about a small set of things I actually know. I answer comments. That's it. No growth hack, no engagement pod, no automation.
+
+The compounding is real and it's slow. My first hundred posts did very little. Post three hundred did more than the first two hundred combined, and I couldn't tell you which one did it.
+
+What I can tell you is what didn't work. Posting about whatever was trending got me nothing, because the people who followed that weren't following me. Topic discipline is the whole engine.
+
+So my advice is to pick three subjects and be boring about them for a year. The algorithm rewards consistency and humans reward usefulness, and those two things turn out to point the same way.
+
+#AI #BuildInPublic #VibeCoding #tech #Audience #ContentCreator #LinkedIn #Growth #PersonalBrand #SocialMedia #Marketing #Creators #Consistency #Strategy #Community #Writing
+
+---
+
+My best performing post this year was about getting ghosted. It wasn't about AI and it wasn't clever. It was specific. That's the whole difference.
+
+I've learned that the specific beats the impressive. A number from my own week outperforms a general claim about the industry, because the specific is checkable and the general is just noise.
+
+So when I write I look for the detail nobody else could have. Four rounds. Total silence. The thing I said out loud in the room. That's the material, and it's the material because nobody else in the feed has it.
+
+I've watched people write good posts about their field and get nothing, because they wrote the version anybody in their industry could have written. The field is not the advantage. The vantage point is.
+
+I'll take a specific number over a clever line every single time. That's the whole tactic. Not louder. Closer.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #LinkedIn #Audience #PersonalBrand #Storytelling #Marketing #Creators #SocialMedia #Growth #Community #Career
+
+---
+
+I've stopped reading engagement advice and started reading my own comments. The comments are a better curriculum.
+
+Here's why. Advice describes a general audience. My comments describe an actual one. When six people ask the same follow up question, I have a post, and I know it will land because the demand came before the supply.
+
+I've done this for a year. Roughly one in four of my posts started as a question in a comment thread. Those posts do better than the ones I invent, and the reason isn't mysterious.
+
+Most content advice is written for a person who hasn't written anything yet. If you've published a hundred posts, your own data beats every thread about hooks.
+
+So I'd say this. Read your replies before you read a growth guide. Your readers have already told you what they want and they told you for free. That's the cheapest research there is.
+
+#AI #BuildInPublic #VibeCoding #tech #ContentCreator #Audience #LinkedIn #Growth #Marketing #SocialMedia #Writing #Creators #Community #Strategy #PersonalBrand #Feedback
+
+---
+
+A study with a small sample can still be worth reading. A study with a small sample presented as a large one is not.
+
+I've read enough papers to have a habit and the habit is cheap. I find the number of participants before I read the conclusion, because the conclusion is written to sound complete and the sample size tells you how complete it can be.
+
+There's a case I keep in mind. A sensitivity figure from a handful of patients got repeated in coverage as a general claim about a test. The paper didn't say that. The coverage did, and the coverage was built from the abstract. Nobody lied. Somebody compressed, and compression is how errors travel.
+
+That's the failure mode I care about. Not fraud. Compression. A finding travels one step and loses its error bars on the way.
+
+So my rule is to read the methods section before I repeat anything. It takes twenty minutes and it has stopped me from posting something wrong at least a dozen times this year.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #Data #CriticalThinking #PeerReview #STEM #Media #Health #Evidence #Learning #Education
+
+---
+
+Reproducibility gets treated as a bureaucratic chore. I think it's the most interesting part of science.
+
+Here's why. A result you can reproduce is a result you can build on. A result you can't is a story, and stories don't stack. Every lab that publishes a method is either saving somebody a year or costing them one, and there's no middle.
+
+I've watched this in software. Code that ships with tests gets used. Code that ships with a promise gets rewritten by the next person, and the rewrite takes longer than the tests ever would have.
+
+So when I read about a discovery I want to know whether anybody else has run it since. Not because I doubt the finding. Because the second run is the evidence that matters for anybody downstream.
+
+That's my position on the whole thing. Replication isn't a formality. It's the product. Everything else is a claim.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Reproducibility #Data #SoftwareEngineering #PeerReview #OpenScience #STEM #Methods #Learning #CriticalThinking #Education
+
+---
+
+I run a small open weight model on my own laptop for private work and I'll tell you the trade honestly. I've been doing it for eight months.
+
+It's slower. The context is smaller. The output is worse than the frontier options on anything hard, and I have to think about quantization and memory in a way I never do in the cloud.
+
+I still use it, because the data never leaves the machine and the cost doesn't move when usage does. For anything with a name in it, that trade is worth more to me than a benchmark point.
+
+The part nobody mentions is the maintenance. A local setup is a pet. You update it, you debug it, you own every failure. That's real work and it lands on you at the worst time.
+
+So my advice is to run both and be clear about which is which. Cloud for the hard problems, local for the private ones. And read the license before anything goes near a release.
+
+#AI #BuildInPublic #VibeCoding #tech #LocalLLM #OpenSource #AI #Privacy #MachineLearning #SelfHosted #Developer #LLM #DeepTech #Technology #TechNews #Security
+
+---
+
+Everyone tells you to give an AI agent tools. Nobody tells you the part that actually matters, which is what happens when the tool fails.
+
+I've built three small agents now. Each one worked in the demo and broke in the edge, because a tool returning an error is the normal case and not the exception. A model that gets a clean response is easy. A model that has to recover is the whole problem.
+
+So I write the failure path first. What happens when the API times out. What happens when the response is malformed. What happens when the agent loops. If I can't answer those, it doesn't ship. I've held that line three times this year.
+
+I've watched people skip this and I understand the temptation. The happy path is a better video. The failure path is where the thing actually lives, and nobody films it.
+
+Three agents in, my rule is unchanged. No fire and forget. Every call gets a handler or it doesn't get made.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Agents #SoftwareEngineering #Developer #Engineering #Architecture #Coding #BuildInPublic #Reliability #TechNews #Automation #Systems
+
+---
+
+I evaluate a model by the same test every time, and the test is a task I've already failed with the previous one. That's it.
+
+Benchmarks are useful for a first filter and useless for a decision. What I want to know is whether the specific thing that broke last month breaks again this month, and the only way to know is to run it.
+
+I keep a small set of tasks for this. Ten tasks. All drawn from real work. All with a known answer. I've run the same ten against five models this year. The scores moved in a way the leaderboards didn't predict.
+
+I don't upgrade on launch day. That gap is why. A model that wins on a reasoning suite can still fail my task, and my task is the only one that pays.
+
+So I'll keep the ten tasks and I'll add one every time something breaks. Over time that list becomes the most valuable thing I own.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Evaluation #LLM #MachineLearning #Developer #Benchmarks #Engineering #BuildInPublic #TechNews #Testing #Quality #SoftwareEngineering
+
+---
+
+The best test suite I've ever seen belonged to a team that did almost no manual testing. They didn't have better engineers. They had a rule about every bug.
+
+One bug, one test, no exceptions. Not a doc, not a ticket. A test that fails before the fix and passes after. I've adopted that and it changed how many bugs come back.
+
+Here's what it does over a year. Your suite stops being a checklist and becomes a memory of everything that ever went wrong. Which means the failure modes you've already paid for can't charge you twice.
+
+I've watched teams skip this because the fix feels urgent and the test feels optional. The fix is urgent once. The test is urgent forever, and it's the cheaper of the two.
+
+So my rule is the same rule. Always. One bug, one test. I've kept it for two years. I'd rather lose an afternoon than lose a customer. Every time.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Testing #Developer #Engineering #Quality #Coding #Programming #BuildInPublic #TechNews #Debugging #Reliability #Craft
+
+---
+
+I read my own old code last week and it was worse than I remembered. That's a good sign and I want to explain why.
+
+If your old code still looks fine, you haven't learned much. I've watched people protect old work because their identity is attached to it, and the protecting is what stops the improving.
+
+The file I read had three mistakes I wouldn't make now. A loop that did too much, a name that lied, and an error I swallowed. All three are in my notes now, which is the only reason the review was worth doing.
+
+I do this every few months. It takes about an hour. Read something from a year ago and write down what changed. Not to punish myself. To measure something that otherwise stays invisible.
+
+That's the only performance review I trust. Me against me. Twelve months apart, same person, a different file, a year later.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Developer #Coding #Refactoring #Learning #Career #Programming #Growth #Craft #Engineering #BuildInPublic #CodeReview
+
+---
+
+The most useful review I ever got was three words long. It said this is fine. I was annoyed for a week and then I understood.
+
+The reviewer had looked at the whole thing and decided it was good enough to ship. I wanted notes. What I got was a decision, and the decision was the point. Reviews aren't grading. They're release gates.
+
+I've written a lot of reviews since and I've adopted the shape. First line, do I trust this. Then the specific things that worry me. Then nothing else. I don't restyle somebody's code because I'd have written it differently.
+
+That last rule took years. I've watched reviewers leave forty comments about taste and miss the one line that loses money. Attention is scarce and it should go to risk.
+
+So my advice to anybody reviewing is to lead with the verdict. The author needs the verdict. Everything after that is optional.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #SoftwareEngineering #Developer #Engineering #Craft #Coding #Programming #Management #Career #Teams #BuildInPublic #TechNews
+
+---
+
+Open source gets funded and it gets funded badly, and the badly part is a design problem rather than a moral one.
+
+I've watched maintainers burn out on a project that half the industry depends on. The work is real. The income is not. Then a security issue lands and everybody discovers the dependency they never paid for.
+
+I don't have a fix and I'll say so. I do have an observation. The funding goes to the new thing and the maintenance goes unfunded, and maintenance is where the risk sits. That's true in software, in infrastructure, and in buildings.
+
+So when I pick a dependency I look at who is behind it and whether they have a way to eat. Not because it's charitable. Because a project with funding is a project that answers email in three years.
+
+I'd pay for three dependencies before I'd pay for another tool. Boring, and it's the version that keeps working.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #SoftwareEngineering #Developer #Funding #Maintenance #Coding #BuildInPublic #TechNews #Sustainability #Community #Engineering #Business
+
+---
+
+I've watched the slop problem arrive and it looks nothing like people predicted. It's not wrong answers. It's correct answers with no reason to exist.
+
+I read a lot of posts. The ones that annoy me aren't false. They're empty. Four hundred words about a subject where the author has no position, no number, and nothing that happened to them.
+
+That's the tell for me now. Not the writing style. The absence of stakes. A person with a stake says something that could be wrong. That's the whole bar.
+
+So my rule for my own writing is a question. Could somebody disagree with this. If the answer is no, it's filler and I delete it. That test has never failed me.
+
+I've deleted a lot this year. The posts that survive are the posts where I took a position I can defend, and defending it is the part that makes it worth reading.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #AI #Quality #LinkedIn #Creators #Media #SocialMedia #Craft #Editing #Community #Storytelling
+
+---
+
+I've become suspicious of AI detection tools and I want to be fair about why.
+
+They guess. A detector that says eighty percent generated is telling you a classifier fired, and classifiers are wrong on a regular basis. I've watched people accused of using a tool they never used, with a percentage as the evidence.
+
+The asymmetry is what bothers me. A false positive lands on a person. A false negative costs nobody. Any tool with that shape will get misused, and the misuse is happening now in schools and in hiring.
+
+I still think the underlying question is legitimate. A person deserves to know whether they're arguing with a machine. I just don't think a probability score is an answer.
+
+What I'd trust is provenance. Metadata attached at creation, verifiable, standard. That's a harder problem and it's the one that doesn't punish honest people. It's also the one nobody is funding.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Detection #Ethics #Education #Technology #Trust #Provenance #Policy #TechNews #MachineLearning #Society #Integrity
+
+---
+
+Everybody asks which model to use. I've started answering with a different question. What happens when it's wrong.
+
+I've built enough with these tools to know the capability isn't the deciding factor. My last three projects all worked in the demo and the difference between them was what they did on a bad day. One failed in the open. One failed in silence. One failed and told me.
+
+The one that told me is still running. The one that failed in silence is the one I had to kill, because a system that's wrong without a signal is worse than a system that's down.
+
+So when somebody asks me for a recommendation I ask about their tolerance instead. What's the cost of a wrong answer, and is there a human in the loop when the cost is high.
+
+I've never once been asked that question back. Not one time in two years. It's the question that decides the answer.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Engineering #Reliability #SoftwareEngineering #Developer #MachineLearning #Architecture #BuildInPublic #TechNews #ProductDesign #Risk #Systems
+
+---
+
+Somebody asked me whether AI will replace developers. I've been asked this about thirty times in two years and my answer keeps getting shorter.
+
+No. It will replace the part of the job that was never the job. Typing. Boilerplate. Setup. Forty minutes of nothing. What's left is the reading, the deciding, and the owning, and those three are what a developer always was.
+
+I've watched this pattern in other trades. It removes the boring layer and the boring layer was never where the value lived. What changes is the number of people needed per unit of output, and that number has been falling since compilers.
+
+So the honest answer is less reassuring than either camp wants. The work doesn't vanish and the headcount doesn't stay flat. Both of those are true and people keep insisting on one.
+
+I don't know the number. I know the shape and I've written it down.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #AI #FutureOfWork #SoftwareEngineering #Careers #TechLayoffs #Coding #Engineering #BuildInPublic #TechNews #Jobs #Automation
+
+---
+
+A compiler was the last tool that made every developer worse, according to the people who had memorised assembly. I've read the letters.
+
+That's not a cheap point. I mean it. It's a pattern I've now watched three times. A tool removes a skill, the people who had it object, the tool wins, and the skill becomes a niche that pays more.
+
+I'm not saying every objection is just nostalgia. Some were right. Right about specific losses. The people who wrote assembly still existed. They just stopped being the people who shipped most of the software.
+
+So when I hear the current version of the argument I try to separate two claims. The one about a real capability being lost, which deserves a hearing. And the one about an industry ending, which has a track record of being wrong.
+
+I'd rather argue about which skill to keep than which era to return to. The first one is a decision I can make.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Developer #History #Coding #Programming #AI #Career #Technology #Engineering #BuildInPublic #TechNews #Learning
+
+---
+
+I've watched AI get adopted in four industries now and the order is always the same. Invisible layer first. Then the visible one.
+
+Film adopted it in pre production and post. Games adopted it in tooling and QA. Energy adopted it in forecasting. None of those are the jobs people argue about, and all of them are where the headcount sits.
+
+The visible layer is the last to move, because the visible layer is where the audience has an opinion. Nobody has a view about how a storyboard got made. Everybody has a view about a performance.
+
+I've said this before and I'll keep saying it. I watch the credits nobody reads. That's where the change shows up first and it's where the arguments arrive last.
+
+For me the practical version is simple. Two rules. If you do work the audience never sees, your job is already in the transition. If you do work they see, you've got longer and less warning.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #FutureOfWork #Film #GameDev #Energy #Adoption #Technology #Industry #TechNews #Strategy #Careers #Innovation
+
+---
+
+I'll defend a boring technology choice over a clever one every time, and I've paid for the lesson more than once.
+
+The clever choice wins the demo and loses the third year. I've watched two teams pick the shiny option and one pick the dull one. That one shipped, hired, and didn't get rewritten. Both clever ones are gone and nobody remembers what they were for.
+
+That's not an argument against new tools. I use new tools. It's an argument about where you put them. New things go at the edge, where failure is cheap. Your core stays boring, because the core is what you sell.
+
+I've watched people get this backwards and I understand the pull. Your core is where you want to show off. It's also where the customer lives, and the customer does not care how interesting your architecture is.
+
+Boring core, sharp edges. That's the whole rule.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Architecture #Engineering #Developer #Technology #Coding #BuildInPublic #TechNews #Strategy #Systems #Reliability #Craft
+
+---
+
+I've stopped asking whether a tool is good and started asking whether the people behind it will answer in three years.
+
+That question has saved me more pain than any benchmark. A dependency is a relationship whether or not anybody signs anything. I've watched a project die because the single maintainer got a job and nobody noticed for a year.
+
+I've been the single maintainer. I've been the person who stopped replying. Nothing dramatic happened. The attention moved and the code didn't.
+
+So I look for three things now. Multiple people with commit rights. A way for them to get paid. And a release in the last six months. Those three aren't a guarantee and they filter most of the risk.
+
+I'll take a smaller tool with three maintainers over a better tool with one. Every time. That's a boring preference and it's the one I'd defend in a code review.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #SoftwareEngineering #Developer #Engineering #Dependencies #Risk #BuildInPublic #TechNews #Strategy #Maintenance #Technology #Sustainability
+
+---

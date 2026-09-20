@@ -1,0 +1,215 @@
+Xbox cut 3,200 jobs in July and let four studios go. Double Fine, Compulsion, Ninja Theory, Undead Labs.
+
+None of them were failing in public. Double Fine has awards on the shelf, and Ninja Theory built a motion capture pipeline the rest of the industry copied. Both teams were small by AAA standards, which is supposed to be the safe kind of studio.
+
+I don't think the decision was about the games. Game Pass economics were the input, and a subscription business that grew fast and then had to pay for a hardware business underneath it. People keep arguing about which release caused this. No release caused this. The call came from people who don't ship anything, and their scoreboard is quarterly.
+
+I looked at the tracker for this year. I've read the statement twice. Two thirds of the game industry layoffs came from AAA studios. Same story, bigger budget. The people who chose the model kept their jobs.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+
+---
+
+I read the wording twice, because it decides what happens to the people. Double Fine and Compulsion are going independent. That's the good news in the announcement and it's also the bad news.
+
+They keep their people and lose the funding that made the last five years possible. Ninja Theory and Undead Labs took direct cuts in the same week. Same statement, different outcome for the staff. One group updates a budget. The other updates a resume. Neither version closes the studio.
+
+I don't think the split was an accident. Announcing a spin off and a shutdown in one breath lets the good news carry the bad news, and the sentence reads gentler than either decision alone. That's how a format gets built.
+
+I've watched this in other industries. A layoff becomes a restructure. A closure becomes a strategic review. The framing is always the story, and the people who lost the job know which word is accurate.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+
+---
+
+The safest job in games right now is the one that decides which studios to close. I'm not joking.
+
+Xbox cut 3,200 roles in July and the studios carried the announcement, because studios are the unit that gets measured in a press release. The people who chose the strategy are still choosing strategy. This isn't unique to games either.
+
+Media did it, telecom did it, and every one of those cycles was sold as a correction. A correction means the number went down. It says nothing about who absorbed the cost. In games this year the cost landed on 135 studios and about 10,863 people, by the count one tracker keeps. I'd rather name the number than the mood.
+
+Two thirds of it came from AAA studios. Small teams get the headlines. Big ones get the severance. I don't have a fix. I do have a rule. Watch who presents the decision, because that's usually who caused it.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+
+---
+
+Two of the four studios came out of that announcement intact. Double Fine and Compulsion keep their teams. That's the press release version.
+
+They lose the umbrella. No salary floor from a company with a balance sheet, no marketing department, and no Game Pass slot on day one. Independent sounds like freedom until you price it.
+
+A studio that lived on one publisher's budget now has to find a new partner for every project. The first thing that partner looks at is headcount, because headcount is the bill. I've watched small teams make this exact trade. Some of them got better and smaller. Some had one bad quarter and closed with no press release at all. Nobody watches a studio that hasn't shipped.
+
+So a spin off isn't a win for the people who work there. That's the arithmetic every independent team runs. It's a longer runway and a steeper climb. I've seen it go both ways. I'll keep the second version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+
+---
+
+Obsidian cut 52 developers in early July. Eleven days later the Fallout remaster everyone wanted was announced.
+
+I've written about the eighteen months Obsidian got to build New Vegas. The other team got four years for Fallout 3, which is not a small difference when you're building an open world from scratch. Four years versus eighteen months. That game scored 93 and sold 12.4 million copies. New Vegas scored 84 and sold 11.6 million, and New Vegas is the one people still mod and still argue about, because the writing holds up and the engine never did.
+
+So a shorter schedule produced the game people still argue about a decade later, which is not what any production schedule predicts. I don't think that's a coincidence. I don't think it's proof either. Then the same studio loses 52 people in the month its most requested remaster gets announced.
+
+I can't prove that link. I can put the two facts side by side. This industry keeps its institutional memory in the people it lets go, and somebody at ZeniMax Online is one of 213 who found out the same way that month. The remasters are the easy money. The people who made the original are the hard part to replace.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #Fallout #Obsidian #Bethesda #FutureOfWork #BusinessOfGaming #GameDesign #VideoGames #PCGaming #TechNews
+
+---
+
+ZeniMax Online cut 213 jobs in Maryland and Obsidian cut 52 in California in the same round. I keep thinking about what those two numbers have in common.
+
+Neither studio was closed. Both kept shipping. The work didn't disappear, it got redistributed to the people who stayed, and the target didn't move. This is the pattern I've been writing about for a year.
+
+Not a wave, a squeeze. Nobody announces it, because there's nothing to announce. A role goes quiet and the team absorbs the difference. I read the state filings because they're the only version of this with a real number in them. A press release can say anything. A filing has to name a headcount and a date.
+
+Two hundred and thirteen people in one state. Fifty two in another. They made content millions of people played, and none of them was on the call that decided it. I'd rather read the filings than the statements, because the filings don't have a narrative department.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #Fallout #Obsidian #Bethesda #FutureOfWork #BusinessOfGaming #GameDesign #VideoGames #PCGaming #TechNews
+
+---
+
+A tracker puts this year at about 10,863 game industry layoffs and 135 studios closed. I've stopped treating that as a bad year.
+
+Look at the shape instead of the size. Two thirds of the cuts came from AAA studios, which are the ones with the biggest budgets and the safest assumptions. The studios that closed needed one game to land.
+
+So the industry is doing what the money asks. Cheap to make, big if it hits, gone if it misses. Everything else gets cut first. I don't think this is AI yet. I think it's a business model that was already broken, and AI is arriving in the middle of it. That's the whole argument.
+
+That will let everyone blame the wrong thing for the next five years. If the layoffs keep coming after the tools are standard, the tools were never the reason. The model was. I'd rather argue about the model now, while somebody in the room still remembers the old version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+
+---
+
+The numbers stopped being surprising, and that's what worries me. Three years of layoffs and the announcement is now a format.
+
+A studio, a headcount, a statement about the difficult decision, a nod to the players. I can read the first line and predict the fourth. When something becomes a format, people stop reacting to it. Nobody reacts. The 135 studios that closed this year didn't get a fraction of the attention the first round got in 2024.
+
+That's how a bad norm gets set. Not by a decision anybody defends, but by repetition until the decision needs no defense. I'd rather stay annoyed. Annoyed is renewable. It keeps me reading the filings.
+
+If you work in this industry, the useful habit isn't optimism. Watch which roles stop getting posted. That tells you what the studio decided, long before anybody says it out loud. I'll keep reading them. I'd rather be annoyed than adjusted.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+
+---
+
+Two thirds of this year's game industry layoffs came from AAA studios. The studios with the most money cut the most people, and I keep not being surprised.
+
+Look at the structure. A single AAA game can cost more than the entire output of twenty small studios, so a miss is measured in hundreds of millions and a hit is still a slow return. That forces one move. Cut the variable cost, which is people, and protect the quarter.
+
+I don't think this is a villain story. It's a model story. The model rewards a smaller payroll and a bigger bet every single year, so that's what the industry keeps doing. I don't see anybody in the chain paid to ask a different question.
+
+The alternative is boring and unfashionable. Smaller games, smaller teams, smaller risks, slower money. Somebody has to decide to want that. I'd want the boring version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+
+---
+
+PwC looked at 62 million workers and found junior hiring fell 8% over six quarters at the companies that adopted AI. Not through layoffs. Through the quiet thing.
+
+That's the version I've been describing for a year, and now there's a number on it. No announcement, no round of cuts, just fewer junior roles going up and the work going to whoever is already there.
+
+I read that as worse than a layoff in one specific way. It's invisible while it happens. You can't protest a role that was never posted. There's no day to point at and no statement to reply to.
+
+I've watched it from the inside. Two exits, one replacement post, then nothing. The team gets smaller and the output target doesn't. So when people argue about whether AI is taking jobs, they're arguing about the wrong event. It isn't a firing. It's a requisition that never opens. I'd rather have the headline.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #JobSearch #Automation #Workplace #Recruiting #CareerGrowth #LaborMarket #Economy #Reskilling #Management
+
+---
+
+Junior hiring fell 8% in six quarters at the companies that adopted AI, according to PwC. Eight percent sounds small. It isn't.
+
+A junior hire isn't there to produce output. A junior hire is the training pipeline. It's how an industry turns a graduate into somebody who can run a project in eight years. Cut the pipeline and nothing breaks this year. Nothing breaks next year either.
+
+It breaks in 2034, when there's nobody in the middle and every team needs a senior at once. I don't think these companies decided to break it. I think each one made a locally sensible call about a cost center, and a thousand sensible calls added up to an industry with no entry level.
+
+That's the part worth arguing about. Not whether AI can do junior work, because it often can. Whether an industry survives with no juniors at all. I'd rather train somebody badly than find out in a decade that nobody is left.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #JobSearch #Automation #Workplace #Recruiting #CareerGrowth #LaborMarket #Economy #Reskilling #Management
+
+---
+
+The quiet version of AI replacing work is a role that never gets posted. No statement, no severance, no date. Just a hiring freeze nobody calls a hiring freeze.
+
+I've watched teams shrink by a third without a single layoff announcement. Two people leave. One replacement gets approved. Then the replacement gets downgraded, and at the end of the quarter the whole req disappears. The work stays. The headcount doesn't.
+
+That's the mechanism, and it's why the official numbers always look fine. If you measure layoffs, nothing is happening. If you measure openings per team, something obvious is happening, and nobody publishes that number.
+
+I want one dataset before I believe any confident claim about AI and jobs. Junior openings over time, by company, next to AI adoption at the same company. I'd rather measure openings than announcements. That's a boring chart and it would settle half of this argument. The other half is about what a company owes the person it didn't hire, and I don't have a clean answer for that one either.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #JobSearch #Automation #Workplace #Recruiting #CareerGrowth #LaborMarket #Economy #Reskilling #Management
+
+---
+
+Helion ran a fusion machine on deuterium and tritium fuel in February. Nobody I know talked about it for a week.
+
+The interesting part isn't the fuel. It's that a private company got there before a national lab published a version of the same step, and it did it with investment money instead of a government programme.
+
+I care because of the shape of the money. Fusion has been permanently twenty years away for my whole life, and the thing that changed wasn't the physics. It was that somebody decided there was a company to build. That changes the failure mode. A programme that misses a milestone gets refunded. A company that misses a milestone runs out of runway and the engineers go somewhere else. The clock is shorter.
+
+So the optimism comes with that clock attached to it, which is exactly why it might work. I'm not predicting a plant. I'm noting that the first machine to burn that fuel wasn't a government one. That's the shift.
+
+#AI #BuildInPublic #VibeCoding #tech #FusionEnergy #Energy #CleanEnergy #Physics #Engineering #DeepTech #Nuclear #Science #Research #Innovation #FutureOfEnergy #Sustainability
+
+---
+
+Fusion has pulled in something like 15 billion dollars of investment, and the international energy agency now features it in its energy innovation report. Fifteen billion is real money and it is also small money.
+
+Put it next to the other number. Data centers alone are adding demand that utilities describe in gigawatts, and a gigawatt of anything costs more than a decade of fusion research.
+
+Fusion isn't the thing that solves the next five years of demand. It isn't. Anybody selling it that way is selling a story. What it can solve is the part after that. A grid running on batteries covers the evening. It doesn't cover a bad winter or a week of still air, and that's the hole a baseload source fills.
+
+I'd rather argue about the schedule than the magic. Thirty companies with different designs is a portfolio, and a portfolio is the only honest way to bet on something this uncertain. I've no idea which one lands. So would anybody else.
+
+#AI #BuildInPublic #VibeCoding #tech #FusionEnergy #Energy #CleanEnergy #Physics #Engineering #DeepTech #Nuclear #Science #Innovation #FutureOfEnergy #Sustainability #Investing
+
+---
+
+Astronomers found another object from the early universe in Webb data in August 2026. The pattern matters more.
+
+I keep watching the same tension. The instrument works as designed. Objects keep turning up too developed for the era they're in, which is the kind of result nobody engineers on purpose.
+
+That's the good version of a problem. A paper that breaks its own framework is an honest paper, because the incentive runs the other way. Nobody funds a telescope to confirm what they already think.
+
+What I watch now is the response. The field can adjust the model, or it can hunt for a reason the measurement is wrong. Both are legitimate. That eats about a decade.
+
+I don't know which way it lands. I do think the best era in astronomy is the one where the data annoys the theory. That's where we are. I'd rather live here than in the era of tidy results.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Astronomy #JWST #NASA #Astrophysics #Science #Physics #DataScience #Research #Cosmology #Telescope #ScienceCommunication
+
+---
+
+In the western United States, planned data centers average about 10 percent of the grid region's forecast demand. In some areas they run as high as 40 percent. Forty percent.
+
+Forty percent of a forecast is not a line item. I keep watching this get reported as an AI story and it isn't. It isn't. It's a construction story with an AI label, because the thing that takes years is the transmission line. Not the chip.
+
+A data center can go up in eighteen months. The substation and the lines into it take longer, and the permitting takes longer than that. So demand arrives while the grid is still in a hearing. That's a queue.
+
+That gap is where the politics live. Somebody pays for the upgrade, and the obvious candidate is the customer who caused it, which is a sentence that gets unpopular fast. I don't have a clever answer. I do think cheap power is over for a while, and the bill arrives somewhere nobody was looking.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Electricity #Climate #RenewableEnergy #Nuclear #Policy #Engineering #Economy #Sustainability
+
+---
+
+One estimate puts data centers at about 9 percent of United States electricity generation by 2030. Another puts consumption growth at 15 percent a year. That's four years away.
+
+Nine percent in four years is a lot of new generation, and almost none of it exists yet. So either the forecast is wrong, or this is the biggest infrastructure project in the country. I don't hear it described that way.
+
+The forecasting is the interesting part. Each of these numbers is a range with a huge top end. The top end is what gets quoted, because a scary number travels. The same report that says 9 percent also says it depends on efficiency, on what gets built, and on whether the chips get better.
+
+So I'd plan for the middle of a range. Efficiency first, then generation, then the grid. I'd rather be early on the boring answer than late on the scary one.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Electricity #Climate #RenewableEnergy #Nuclear #Policy #Engineering #Economy #Sustainability
+
+---
+
+The grid is the bottleneck and almost nobody wants to talk about it. Everyone wants to talk about the model, the chip or the fusion reactor.
+
+I get it. A transmission line is a bad video. It takes a decade, it crosses somebody's land, and the fight is with a county board instead of a competitor. That's still the constraint. If you can't move the electricity, the generation doesn't matter, and if the interconnect queue is five years long, the schedule of every data center in the country is fiction.
+
+I've watched this pattern in software. The hard part is never the feature. It's the thing underneath that nobody owned, that everyone assumed, and that turned out to have a queue.
+
+So when I read that planned data centers are a tenth of a grid region's forecast demand, I don't read it as an AI story. I read it as a queue that's about to become the most expensive thing in the industry. The fix is unglamorous and slow. Permitting reform, storage on the distribution side, and a willingness to site things where the power already is. Nobody gets applause for the queue, and the queue decides everything.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Electricity #Climate #RenewableEnergy #Nuclear #Policy #Engineering #Economy #Sustainability

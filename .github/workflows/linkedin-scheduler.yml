@@ -1,0 +1,192 @@
+name: linkedin-scheduler
+
+# Tops up future LinkedIn slots.
+#
+# This job never posts at run time.  Every run only RESERVES future slots using
+# LinkedIn's own scheduler, so a delayed, skipped or failed run cannot produce a
+# missed post or a burst of posts.  Real publishing happens inside LinkedIn.
+#
+# Credentials: the logged-in session lives in the repository secret
+# LINKEDIN_STORAGE_STATE_B64 (base64 of browser_profile/storage.json).
+# It is written to disk for the run and is never committed.
+
+on:
+  schedule:
+    # Every 3 hours.  Each run fills a bounded number of batches, so the window
+    # is topped up gradually instead of one giant run.
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      days_ahead:
+        description: "How many days ahead to fill"
+        required: false
+        default: "14"
+      max_batches:
+        description: "Max batches this run (0 = no cap)"
+        required: false
+        default: "24"
+      plan_only:
+        description: "Show the plan and schedule nothing"
+        required: false
+        type: boolean
+        default: false
+
+# The job commits its own schedule state back to the repo.
+permissions:
+  contents: write
+
+# Never let two runs write state at the same time.
+concurrency:
+  group: linkedin-scheduler
+  cancel-in-progress: false
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-ci.txt
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Restore LinkedIn session
+        env:
+          LINKEDIN_STORAGE_STATE_B64: ${{ secrets.LINKEDIN_STORAGE_STATE_B64 }}
+        run: |
+          set -euo pipefail
+          if [ -z "${LINKEDIN_STORAGE_STATE_B64:-}" ]; then
+            echo "::error::Repository secret LINKEDIN_STORAGE_STATE_B64 is not set."
+            echo "See README.md > Refreshing the LinkedIn session."
+            exit 1
+          fi
+          mkdir -p browser_profile
+          printf '%s' "$LINKEDIN_STORAGE_STATE_B64" | base64 -d > browser_profile/storage.json
+          chmod 600 browser_profile/storage.json
+          python - <<'PY'
+          import json
+          import pathlib
+          import sys
+
+          path = pathlib.Path("browser_profile/storage.json")
+          try:
+              data = json.loads(path.read_text(encoding="utf-8"))
+          except Exception as exc:
+              print(f"::error::session file is not valid JSON ({exc.__class__.__name__})")
+              sys.exit(1)
+
+          cookies = data.get("cookies") or []
+          domains = {c.get("domain", "") for c in cookies}
+          linkedin = [d for d in domains if "linkedin" in d]
+          if not linkedin:
+              print("::error::session file has no linkedin cookies - re-export it")
+              sys.exit(1)
+
+          # Counts only.  Never print cookie names or values.
+          print(f"session loaded: {len(cookies)} cookies, {len(linkedin)} linkedin domains")
+          PY
+
+      - name: Show the plan
+        if: ${{ inputs.plan_only }}
+        run: |
+          set -euo pipefail
+          python scripts/batch_schedule.py \
+            --start-date "$(date -u +%F)" \
+            --end-date "$(date -u -d "+${{ inputs.days_ahead || '14' }} days" +%F)" \
+            --start-time 08:00 \
+            --end-time 19:00 \
+            --interval-minutes 15 \
+            --batch-size 5 \
+            --show-plan
+
+      - name: Schedule slots
+        if: ${{ !inputs.plan_only }}
+        run: |
+          set -euo pipefail
+          python scripts/batch_schedule.py \
+            --start-date "$(date -u +%F)" \
+            --end-date "$(date -u -d "+${{ inputs.days_ahead || '14' }} days" +%F)" \
+            --start-time 08:00 \
+            --end-time 19:00 \
+            --interval-minutes 15 \
+            --batch-size 5 \
+            --max-batches "${{ inputs.max_batches || '24' }}" \
+            --headless
+
+      - name: Commit schedule state
+        if: ${{ always() && !inputs.plan_only }}
+        run: |
+          set -euo pipefail
+
+          # Only these files are ever committed.  Never `git add -A`.
+          paths=(content/posts_sent.txt content/posts_ambiguous.txt
+                 content/posts_queue.txt content/schedule_state.json)
+
+          staged=()
+          for p in "${paths[@]}"; do
+            [ -f "$p" ] && staged+=("$p")
+          done
+
+          if [ ${#staged[@]} -eq 0 ]; then
+            echo "no state files present - nothing to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "${staged[@]}"
+
+          # Belt and braces: refuse to commit a session file, ever.
+          if git diff --cached --name-only | grep -q "storage.json"; then
+            echo "::error::refusing to commit a session file"
+            git reset
+            exit 1
+          fi
+
+          if git diff --cached --quiet; then
+            echo "state unchanged - nothing to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: update LinkedIn schedule state [skip ci]"
+
+          for attempt in 1 2 3; do
+            git pull --rebase --no-edit origin "${GITHUB_REF_NAME}" || true
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "state pushed"
+              exit 0
+            fi
+            echo "push attempt ${attempt} failed, retrying"
+            sleep 5
+          done
+
+          echo "::error::could not push schedule state after 3 attempts"
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### LinkedIn scheduler"
+            echo ""
+            echo "| item | value |"
+            echo "|---|---|"
+            echo "| queue remaining | $(grep -c '^---$' content/posts_queue.txt 2>/dev/null || echo 0) |"
+            echo "| slots recorded | $(grep -c 'scheduled_for=' content/posts_sent.txt 2>/dev/null || echo 0) |"
+            echo "| ambiguous | $(grep -c 'scheduled_for=' content/posts_ambiguous.txt 2>/dev/null || echo 0) |"
+          } >> "$GITHUB_STEP_SUMMARY"

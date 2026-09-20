@@ -1,0 +1,319 @@
+A data center needs power at a scale that no small reactor has ever delivered. That's the whole gap and the news usually skips it.
+
+I've read the small modular reactor pitch a dozen times. Cheap, factory built, walk away safe. It's a good pitch. The problem is that a factory built reactor still needs a site, a license and a grid connection, and those three things take longer than the reactor.
+
+That's why I keep saying the enabling layer is the story. Not the design. The paperwork and the interconnect. I've watched a project wait nine years for a transmission line and get built in two.
+
+So when somebody tells me a reactor powers a data center by 2030 I ask which queue it's in. If they can't answer, the date is a wish.
+
+I'd love to be wrong. Cheap firm power would fix a lot. The reactor isn't the hard part yet.
+
+#AI #BuildInPublic #VibeCoding #tech #Nuclear #Energy #SMR #DataCenters #Grid #Infrastructure #Climate #EnergyTransition #Policy #DeepTech #Utilities #Engineering
+
+---
+
+Everybody wants to talk about the reactor design and nobody wants to talk about the queue. I've spent time in the queue and it's where projects die.
+
+Here's the shape of it. A grid operator has a list of projects waiting for permission to connect. The list is longer than the grid can absorb in a decade. Most of those projects will never be built, and they still hold their place in line.
+
+That's the bottleneck. Not physics. Not funding. A spreadsheet with a waiting list on it, and the waiting list is measured in years.
+
+I don't think people grasp how much this decides. The cheapest generation in the world is useless if you can't connect it, and connection is a process rather than a purchase.
+
+So I'd reform the queue before I'd subsidize another design. I've watched the same pattern in housing and in broadband. The permit is the product.
+
+#AI #BuildInPublic #VibeCoding #tech #Grid #Infrastructure #Energy #Utilities #Policy #EnergyTransition #DataCenters #Climate #Permitting #DeepTech #Engineering #Government
+
+---
+
+The AI build out is creating a category of job nobody argues about, and it's the electrician rather than the engineer.
+
+I've watched this pattern before. A boom creates demand for the trades two years after it creates demand for the software. Conduit. Cable. Switchgear. Cooling. Four trades, four shortages. Those jobs don't get automated away by the thing they're building.
+
+That's the part of the story I'd tell a young person. The flashy role is crowded and the boring role is short staffed. I've watched two decades of that same mismatch and it never resolves.
+
+So my honest read is that the AI boom is good for the trades and ambiguous for the knowledge work it's named after. Both of those are true and only one gets written about.
+
+I don't know how long the build lasts. Nobody does. I know the wiring outlives the model. Copper lasts decades.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Trades #Infrastructure #Jobs #FutureOfWork #Energy #Careers #Construction #Economy #Employment #Skills
+
+---
+
+Games get deleted and nobody holds a funeral. I've watched storefronts close and take whole libraries with them.
+
+That's the part of this industry I find hardest to defend. A film can be found in an archive. A book can sit on a shelf. A game that loses its server or its storefront stops existing, and the people who made it can't do anything about it.
+
+I've read the arguments on both sides. Licensing is complicated, engines are licensed, music is licensed, and the publisher doesn't own everything in the file. All true. None of it changes the outcome.
+
+So my position is simple. Preserve the build even if you can't ship it. A museum can hold a machine that a store can't sell. The two functions are different and we've conflated them.
+
+I'd fund the archive before the remaster. One keeps the work and the other keeps the revenue, and only one of them is irreplaceable.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Preservation #GamesIndustry #Archives #Gaming #Games #Culture #Technology #History #IndieDev #Libraries #Media
+
+---
+
+A remaster announced eleven days after two studios lost headcount is the whole economics of this industry in one sentence.
+
+I've watched the cycle for years. The catalogue gets milked and the people who made the catalogue get treated as a cost. It's the most reliable pattern in games and it isn't specific to games.
+
+Here's what I'd notice. The remaster needs almost no new design work and it monetizes a known quantity. From a spreadsheet it's the safest line item in the building. From a career it's the signal that new ideas are being priced as risk.
+
+That's the part that worries me. Not the money. Innovation gets squeezed when the safe option is the profitable one, and every industry does this until somebody eats their lunch.
+
+I've been on both sides of that decision. I understand it. I still think it's how a catalogue gets hollowed out while the balance sheet looks fine.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #Remaster #Layoffs #StudioClosure #Business #Publishing #Games #IndieDev #Industry #Strategy #ConsoleGaming
+
+---
+
+I've watched two indie studios die this year and neither one died from a bad game. That's the detail people miss.
+
+They died from a release window. Both shipped into a month that had three enormous titles in it, and both had spent their entire runway getting to that month. The game was fine. The calendar wasn't.
+
+I've watched this pattern in publishing and in music. The work and the outcome are connected in a weak way, and the thing in between is distribution and timing. Nobody teaches timing.
+
+So my read on layoffs is the same read I've had all year. It's structural first and about quality second, and the industry keeps telling itself the opposite because quality is the part that feels controllable.
+
+I'd rather admit the calendar decides than pretend it doesn't. Fear is honest. Comfort isn't. I've watched the calendar decide a dozen times. A dozen.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #IndieDev #GamesIndustry #Publishing #Layoffs #StudioClosure #Games #Business #Strategy #Marketing #Industry #Startup
+
+---
+
+A quality team is where AI adoption in games shows up first and it's the least discussed place in the building.
+
+I've watched QA get treated as a cost center for twenty years. Now a big chunk of it can be automated, and the automation is real rather than a pitch deck. That's a good outcome for players and a bad outcome for the people doing the work.
+
+Both of those are true. Nobody has a plan for the second part. I've watched three industries hit this and the answer was training that never got funded.
+
+So my position stays where it's been. Motive, not tool. The tool is fine. The question is whether the savings get reinvested in the team or used to hit a number a quarter earlier.
+
+I've never seen that question answered in a shareholder letter. I've seen it answered in a hiring freeze every time.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #QA #AI #Automation #GamesIndustry #Jobs #FutureOfWork #Layoffs #Testing #SoftwareEngineering #Industry #Technology
+
+---
+
+I've read the same article about AI in medicine fifteen times and it always skips the part that would actually change care.
+
+The interesting use isn't a diagnosis. It's triage. Who gets seen first, who gets a scan today, who can wait a week. That's where the queues are and that's where a model can help without carrying the legal weight of a decision.
+
+I've watched this in two hospitals. The bottleneck isn't knowledge. It's attention, and attention is a resource that has to be allocated. A tool that sorts a list well saves more lives than a tool that's right ninety five percent of the time.
+
+So my position is that the boring application is the valuable one and the flashy application is the one that gets the press. That's true in every sector I've looked at.
+
+I'd fund the queue. It saves more lives. Nobody takes a photo of a queue.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Healthcare #Medicine #Hospitals #Triage #MachineLearning #HealthTech #Patients #ClinicalTrials #DeepTech #Technology #Policy
+
+---
+
+Peer review is breaking under load and I've watched it happen from the outside. Reviewers are unpaid, papers are up, and the people asked to check the work are the same people competing with it.
+
+That's a structural problem, not a lazy problem. I've reviewed work for free and I've had my own work reviewed by somebody with a deadline and no budget. Both experiences were honest and both were shallow.
+
+So I read preprints with a different posture than I read a journal article. Not because preprints are worse. Because the review step is a filter and the filter is thinner than it used to be.
+
+I don't have a fix. Nobody does. I do have a habit. I check who reviewed it, whether the data is posted, and whether anybody has run it since.
+
+That habit costs me twenty minutes. That's the price. It has caught real problems. I'd rather have the habit than a stronger opinion about the system.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #PeerReview #Research #Preprint #Academia #Publishing #Data #STEM #CriticalThinking #Education #OpenScience #Methods
+
+---
+
+Preprints are the best and worst thing in science and both parts are the same property. Nobody filtered it.
+
+That's the trade. Speed, access, and no gate. I've read findings on a preprint server a year before a journal saw them, and I've read things on the same server that should never have been posted.
+
+The fix isn't a gate. The fix is a habit, and the habit is to read the methods and check the data before I repeat the claim. I've watched people skip that step because a number looked official.
+
+So I treat a preprint as a lead and nothing more. It's a lead with a person attached and a document attached, and that's more than a headline gives me.
+
+I'd take the open server over the closed one. Every time. I'd just never confuse a lead with a finding, and the confusion is the whole risk.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Preprint #Research #OpenScience #PeerReview #Data #STEM #Methods #CriticalThinking #Education #Publishing #Learning
+
+---
+
+Launch cadence went up and the interesting effect isn't the rockets. It's that the cost of a bad idea fell. A lot.
+
+I've watched this in software. When the cost of a deploy drops, teams ship more experiments and more of them fail. That's good, and it looks like chaos from outside.
+
+The same thing is happening in orbit. A payload that would have needed a decade of justification can now ride along on a cheap ride and prove itself or die. I've watched instruments get funded on the strength of one cheap flight.
+
+So the part of the space story I care about isn't the headline launch. It's the number of small things flying and the failure rate that nobody reports. Failure at a low price is how a field learns. Cheap failure. That's the trick.
+
+I don't know which of them matters. Nobody does. That's the point of sending so many.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Rockets #Launch #Satellites #Engineering #Science #Aerospace #Innovation #DeepTech #Startup #Technology #Research
+
+---
+
+I've been asked five times this year how to pick what to write about. My answer is a filter with three questions and the first one does most of the work.
+
+Could I defend this in a comment thread. Did something happen to me that produced it. Would I say it out loud to somebody I respect. Three yes answers and I write it. Three is the bar.
+
+That filter has killed more posts than it's passed. Good. I've deleted drafts that were clever and empty, and I've never once regretted a single deletion.
+
+I've watched people publish everything they think and burn out in four months. Volume without a filter is a treadmill. The filter is what makes the volume survivable.
+
+So my advice is to build the filter before you build the habit. A person with three questions and a hundred posts beats a person with a hundred posts and no questions.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #LinkedIn #Audience #PersonalBrand #Creators #SocialMedia #Growth #Strategy #Editing #Community #Career
+
+---
+
+I answer every comment for the first two hours after I post and I've stopped apologising for it. Two hours. That's the window.
+
+I've watched people treat replies as overhead. They're the opposite. The comment thread is where the post gets tested, and the objections in it tell me what I got wrong before the wider audience sees it.
+
+I've changed my position in a comment section twice this year. Both times somebody brought a fact I didn't have. Both times I was glad to be corrected. That's worth more than another post and it costs me nothing extra to do it.
+
+That cost is real. Two hours is two hours, and I've had weeks where I couldn't do it. The weeks I don't answer, the post does worse and I learn less.
+
+So I'd say engagement isn't a growth tactic for me. It's the research step. It just happens to be public.
+
+#AI #BuildInPublic #VibeCoding #tech #LinkedIn #Community #ContentCreator #Audience #Creators #SocialMedia #Growth #PersonalBrand #Writing #Networking #Strategy #Feedback
+
+---
+
+I've turned down work I wanted because the company couldn't answer one question. What does success look like in six months.
+
+I've watched two of those companies since. Both are gone or much smaller now. Not one survivor. Neither failed for the reason I predicted, and both failed partly because nobody had defined the target.
+
+That's the interview question I'd keep. Not the technical one. The one about the definition, because a team that can't define success can't tell you when it's failing either.
+
+I've been on the other side of that table and it's uncomfortable. A manager who doesn't know the definition and can't say so is a manager who will improvise. Improvisation is fine for a week and fatal for a year.
+
+So my advice is to ask it plainly in the first round. Week one. The answer tells you more than the salary does, and it costs nothing to ask.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Hiring #Interviewing #Jobs #JobSearch #Management #CareerAdvice #WorkLife #Technology #Teams #Strategy #FutureOfWork
+
+---
+
+I've taken two boring jobs that turned out to be the best decisions of my career. Neither one looked interesting from the outside.
+
+The first had a small team, a clear product and no drama. I learned more in a year than I'd learned in three somewhere louder, because the work got shipped and shipped work teaches you things a roadmap can't.
+
+The second had a manager who told me what was going wrong in the first week. On day four, in fact. I've never had that anywhere else. Honesty at the start is the strongest signal I know.
+
+So when somebody asks me whether to take the exciting offer or the dull one, I ask them about the people and the shipping. I've watched two decades of that question and the exciting option loses more often than it wins.
+
+Boring and real beats exciting and hypothetical. I'd write that on a wall. Twice.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Jobs #JobSearch #Management #Advice #Technology #WorkLife #Growth #Teams #Culture #FutureOfWork #Learning
+
+---
+
+Drone jamming is the part of the drone story that decides outcomes and it gets one percent of the coverage.
+
+I've read enough about the current conflicts to see the pattern. The cheap drone works until somebody turns on a jammer. Then it stops. Fast. The drone that matters is the one with a wire, a smarter radio, or enough autonomy to keep going without a signal.
+
+That's the arms race. It moves faster than any treaty process. I've watched countermeasures get fielded in weeks because the feedback loop is short and the cost of being wrong is visible.
+
+So when I write about autonomous weapons I try to write about the countermeasures. The system that decides whether a swarm arrives is the one nobody is debating.
+
+I don't think there's a principled line here. There's a technical race with a legal argument running behind it, and the race is winning.
+
+#AI #BuildInPublic #VibeCoding #tech #DroneSwarm #ElectronicWarfare #MilitaryAI #Defense #AutonomousWeapons #Geopolitics #NationalSecurity #Robotics #WarEthics #Policy #Technology #Engineering
+
+---
+
+Procurement cycles decide what gets fielded and they run on a clock nobody in the technology world respects. I've watched a good system lose to a worse one because the worse one fit a contract.
+
+That's the part that surprises engineers. The best tool doesn't win. The tool that matches an existing line item wins, because the budget already exists and the process already anticipates it.
+
+I've watched this in government and in large companies. The purchasing path is the product. A team that understands the path beats a team with better technology, and it beats them every time.
+
+So when I see a smart young company announce a defence contract I check whether they hired a procurement person first. If they did, they'll be around in five years.
+
+That's not cynical. It's the cheapest prediction I can make and it's been right more often than wrong. By a lot.
+
+#AI #BuildInPublic #VibeCoding #tech #Defense #Procurement #Policy #Government #MilitaryAI #Technology #Strategy #Business #Engineering #Geopolitics #Startup #NationalSecurity
+
+---
+
+The state level patchwork on AI is going to decide more than the federal fight does, and I don't think people have noticed.
+
+I've watched this in privacy. The federal bill never passed and the states went ahead, and after five years the practical standard was set by the strictest state rather than the capital. Companies comply with the hardest rule because maintaining two systems costs more than one.
+
+So the AI version will run the same way. Same script. A handful of states write something real, everybody else copies the language, and the federal floor arrives later to ratify what already exists.
+
+I don't know whether that's good. I do think it's likely, and it's the opposite of what the commentary predicts, because the commentary is watching the wrong chamber.
+
+My advice is to read the state bills. They're shorter than the federal ones and they'll get enforced sooner. Watch the states. Not the capital.
+
+#AI #BuildInPublic #VibeCoding #tech #AIRegulation #Policy #Governance #Law #Privacy #Technology #Government #Compliance #PublicPolicy #StatePolicy #TechNews #Business
+
+---
+
+I've read the compliance math for a small company selling into Europe and it's brutal. A legal review, a documentation process, a person accountable for the file. That's a real line item before you've sold anything.
+
+I've watched this pattern in every regulation I've lived through. It's written for a problem that large companies have, and the burden lands hardest on the companies that aren't the problem.
+
+That doesn't make the rule wrong. It makes it expensive, and expensive rules consolidate markets. I've watched three sectors go that way and the outcome was fewer companies each single time.
+
+So my position is that the goal and the cost are both real, and pretending either one away is a failure of honesty. The people who write the rules know. The people who comply know. The argument online doesn't.
+
+I'd add an exemption rather than a repeal. Small companies get time, not amnesty.
+
+#AI #BuildInPublic #VibeCoding #tech #EUAIAct #Compliance #Regulation #AI #Policy #Business #Startup #Governance #Law #TechNews #SmallBusiness #Economy
+
+---
+
+Depreciation is the word that decides the AI build out and it's the least discussed word in the coverage.
+
+I've watched infrastructure booms get judged on the wrong number. Everyone asks about revenue and nobody asks about the schedule the asset gets written down on. A chip has a short life and a substation has a long one, and those two facts point in different directions.
+
+That's the honest risk. Nobody models it. If the hardware turns over in three years, the build has to earn its money in three years. If the demand forecast is soft in year two, the math stops working and the decision gets made by the lender rather than the operator.
+
+I've watched two of these cycles. In both, the write down came before the write up.
+
+So I'd read the filings rather than the launch events. The useful number is on a line nobody quotes. So I read that line.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Finance #Investing #Infrastructure #Accounting #Economy #Markets #Capital #Business #TechNews #Strategy
+
+---
+
+I've stopped building on top of a single API when I can avoid it and the reason isn't ideology. It's the roadmap.
+
+I've watched two vendors change terms under a product I'd built on. Nothing was promised and nothing was broken. The price moved, the limits moved and one capability got quietly restricted, and the rewrite cost me three weeks.
+
+That's the real lock in. Not the technical dependency. The business dependency. A model you can run yourself is a model nobody can re price without your permission.
+
+So I use both. Hosted for the hard problems, open weights for the parts that have to be mine. The dividing line is simple. If the feature is core, I want a path that doesn't include somebody else's pricing page.
+
+I've made the opposite call plenty of times and paid for it. That's how I learned where the line goes. Money and time.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #AI #LocalLLM #APIs #Developer #Engineering #SoftwareEngineering #Risk #Strategy #Technology #BuildInPublic #Architecture
+
+---
+
+Verification is the part of this craft nobody posts about. I've shipped four projects with a model in the loop this year and the difference between a good outcome and a bad one was never the model.
+
+Here's what it was. Whether I ran the thing myself before I said it worked. Whether I opened the file and read the diff. Whether I tested the failure path rather than the demo.
+
+I've watched people skip all three and I understand why. None of it photographs well. A green test run is boring. A working feature is a screenshot, and the screenshot is what gets shared.
+
+So I keep a rule that costs me about an hour a week. Before I claim anything works, I run it, I read the change, and I say which of the two I actually did. I tested this and this should work are different sentences. I use both.
+
+That's the whole discipline. Not clever. Just honest about the evidence. That's it.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Testing #Developer #Engineering #Verification #Quality #Coding #BuildInPublic #TechNews #Craft #Reliability #Proof
+
+---
+
+I've had posts at 300 views and posts at 40,000 and the difference wasn't quality. I checked, because I wanted it to be quality.
+
+Here's what it was. The 40,000 one answered a question people were already asking that week. The 300 one answered a question I thought was interesting. Both were written the same way.
+
+That hurt to learn. I'd rather believe the work decides. I've kept a sheet of every post for six months, views against topic, and the topic column explains most of the variance. Topic first. Craft second.
+
+So my advice changed. Write about what people are asking and write it in your own voice, then say the thing only you would say about it. That's not selling out. That's showing up where the conversation is.
+
+I still write the ones I want. I just stopped expecting them to travel, and one of them did anyway, which is the part nobody can plan. Nobody can.
+
+#AI #BuildInPublic #VibeCoding #tech #ContentCreator #Audience #LinkedIn #Growth #PersonalBrand #SocialMedia #Writing #Creators #Strategy #Community #Data #Lessons

@@ -1,0 +1,419 @@
+Two days on a bug that turned out to be one wrong word. That's my most expensive typo so far.
+
+I'd read the config, read the logs, read the tests. All correct. The problem sat in a helper I wrote months earlier and never opened again, because I trusted it.
+
+That's the trap with trust. I wrote that file when I understood the problem less than I do now, and I never went back to check. Old confidence, older code.
+
+I had the fix in a five minute habit I never used. When a bug survives an hour, I stop staring at the bug and start listing every assumption in the path. One of them is wrong. It always is.
+
+The bad word was a variable name that meant the opposite of what it said. Renamed it and the bug died. Two days for two words. Both of them mine. Neither one clever.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #SoftwareEngineering #Developer #Coding #Programming #Engineering #BuildInPublic #TechNews #Learning #Craft #CodeReview #Habits
+
+---
+
+My worst interview lasted eleven minutes. I got the first question wrong and never recovered.
+
+They asked me to walk through a project and I picked the wrong one. I chose the clever thing instead of the thing I'd shipped. So when they pushed on trade offs I had nothing, because I'd never had to defend a decision I hadn't actually made.
+
+Sat in the car afterwards and wrote down what happened. Not the technical part. The part where I chose the impressive story over the true one.
+
+That habit has paid for itself since. I keep a file of interview questions I got wrong, and the file is longer than I'd like. Sixty or so entries now. Every one of them is a question I could answer today.
+
+The lesson wasn't study harder. It was bring the real work, because real work survives a follow up question and a story doesn't.
+
+#AI #BuildInPublic #VibeCoding #tech #Interviewing #Career #Jobs #JobSearch #Hiring #Developer #SoftwareEngineering #Coding #Learning #Growth #TechNews #Advice
+
+---
+
+A client asked me for a discount and I said yes before I'd done the math. Then I did the math.
+
+The number they wanted was about thirty percent below the hours I'd already logged. I'd agreed to it in a sentence, in a meeting, because saying yes is easy and the silence after no is uncomfortable.
+
+I emailed back the next morning. Two options. Same scope at the original price, or the smaller scope at their number. They picked the smaller scope and we both stayed friendly.
+
+That was the day I learned that a discount is a scope conversation wearing a price question. Nobody is negotiating money. They're negotiating what they get, and if you don't move the scope you're just working for less.
+
+I've used that email maybe forty times since. Two options, no lecture, same friendly tone. Works better than a rate card, and it takes four minutes.
+
+#AI #BuildInPublic #VibeCoding #tech #Freelance #Consulting #Pricing #Business #Negotiation #Developer #Career #BuildInPublic #TechNews #Clients #Money #Advice
+
+---
+
+Nobody tells you how much of this job is deleting things. I've removed more code than I've written this year and the product got better.
+
+I killed three features because nobody used them. One endpoint had four callers and two of them were my own tests. A settings page had nine toggles, and reading the logs showed that six of them had never been switched off their default.
+
+Deleting is scary in a way writing isn't. Writing feels like progress. Deleting feels like admitting the plan was wrong, and the plan usually belongs to somebody in the room. Sounds easy. It isn't.
+
+What made it easy was a dashboard with a column nobody wanted to look at. Weekly active users per feature. Put that column on a screen and the argument ends in about four minutes.
+
+Nothing I've shipped improved as much as the quarter I spent removing things. Hard to put in a performance review. Easy to feel in the codebase.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Developer #Refactoring #ProductDesign #Coding #Engineering #BuildInPublic #TechNews #Product #Craft #Strategy #Data
+
+---
+
+If you're naming something and the obvious name is taken, the temptation is a synonym. Don't. Change the shape instead.
+
+I spent an afternoon on a name last month and the reason it took an afternoon is that I was trying to describe a thing that did two jobs. Once I split it into two, the names took ten seconds each.
+
+That's the tell. A name that won't come is usually a design that won't hold. The word is missing because the boundary is missing.
+
+I've watched two teams ship a module called something vague because nobody could find the right word. Both of those modules grew into a mess, and both times the mess started at the name.
+
+So I treat naming as a test. Not a task. If I can't name it in a sentence, I don't understand it yet. Cheapest design review I know, and it costs nothing.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Naming #Developer #Coding #Programming #Design #Engineering #Architecture #Craft #BuildInPublic #TechNews #Learning
+
+---
+
+Three months into my first paid job I found out what the other guy was charging. Twice what I was, for the same work.
+
+I didn't raise my rate that week. I raised it the next time somebody asked, and I lost the project, and I survived. That's the part nobody says out loud. The worst case is usually a no and a quiet afternoon.
+
+Undercharging isn't modesty. It's a signal. A client who pays half expects a person who costs half, and then the work gets treated like the price. I've watched that spiral in both directions.
+
+What fixed it for me was a number I could say without flinching. Two weeks of it one project at a time, until the sentence stopped feeling like a lie.
+
+The number is higher now than it was. I still say it the same way. Flat, no apology, then silence. The silence does most of the work.
+
+#AI #BuildInPublic #VibeCoding #tech #Freelance #Pricing #Money #Business #Career #Developer #Consulting #Negotiation #BuildInPublic #TechNews #Advice #Confidence
+
+---
+
+A comment thread changed my mind about a claim I'd posted, and I want to write down how it went.
+
+I'd said a thing came down to money. A reader pointed out a case where it wasn't, with a date and a document. Not aggressive about it. Just a fact I didn't have.
+
+My first instinct was to add a caveat and move on. Instead I wrote a reply that said the objection was right, and then I wrote a second post about the case.
+
+Two things happened. The second post did better than the first, because it had an argument in it. And the reader who corrected me stuck around, and has corrected me twice since. Both times he was right.
+
+I'd rather be corrected in public than be wrong in public for a year. The correction takes four minutes. The other thing takes a career. Those are the two options.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #Community #ContentCreator #LinkedIn #Learning #CriticalThinking #Audience #BuildInPublic #TechNews #Growth #Craft #Feedback
+
+---
+
+I broke a build on a Friday with a whitespace change. Not a clever mistake. A pointless one.
+
+The diff was one line. A formatter I'd run out of habit reformatted a template and the parser on the other side didn't like it. Took forty minutes to find, because nobody reads a one line change carefully.
+
+I stopped merging anything after four on a Friday unless it fixes something live. Not superstition. My own error rate goes up in the last two hours of a week and I've got the history to prove it.
+
+The bigger lesson is about diff size. A big change gets read. A small change gets waved through, and waved through is where the silly breakage lives.
+
+So I attach a note to small diffs now. One sentence about what I expect to happen. Writing the sentence forces me to think about the line, and the line stops being invisible.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Git #Developer #Engineering #CodeReview #Deployment #Coding #BuildInPublic #TechNews #Process #Habits #Reliability
+
+---
+
+Slow internet for two years made me a better developer and I didn't notice until it got fast.
+
+When a page takes nine seconds, you stop opening six of them. You plan the change before you touch the editor, because every reload costs a coffee break. So you batch edits, you think first, you read the docs instead of guessing.
+
+I didn't connect any of that to my habits until I moved somewhere with fibre. The first month I shipped less. I was browsing more and deciding less, and the browser was the difference.
+
+I'm not recommending bad internet. Nobody should want that. I'm saying friction did a job that discipline now has to do on purpose. I keep two rules from that period. One tab at a time, and no reload until the change is complete.
+
+Fast connection, same discipline. Took me two years. Nearly lost it in one month.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #SoftwareEngineering #Productivity #Focus #Habits #Coding #Learning #BuildInPublic #TechNews #Craft #Engineering #Growth
+
+---
+
+I dropped a tool I'd used for four years and the reason wasn't the price. It was the export.
+
+Everything I'd built lived inside it in a format only it understood. When I asked how to get my own data out, the answer was a support ticket and a promise. That's when I understood I didn't own the thing I'd built.
+
+So I moved. It took six weeks and the first three were the worst kind of work, because nothing looked better at any point. Then it was over and I could read my own data in a text editor.
+
+I've applied that test ever since. Before I put real work into a platform, I ask where the door is. Not the price, not the features. Can I leave, and how long would it take.
+
+Every tool you adopt is a relationship. Some of them you can end. It's worth knowing which ones before you've moved in.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #SoftwareEngineering #Tools #DataOwnership #Technology #Coding #BuildInPublic #TechNews #Strategy #Privacy #Engineering #Advice
+
+---
+
+Reading somebody else's code is the fastest way to find out what you actually believe. Mine got interrogated by a file I didn't write.
+
+I read their file and it was longer than mine and easier to follow, which annoyed me. I noticed every function did one thing and returned one shape, and every failure path was written next to the success path instead of three files away.
+
+I copied three habits out of that file. Error shape first, then the happy path. Names that read like sentences. A single place where the logging happens.
+
+Nothing about it was clever. That's what made it useful. Clever code teaches you the author's taste. Ordinary well built code teaches you the job.
+
+I'd give one piece of advice. Pick a file in your own repo that somebody else wrote and read the whole thing on a Sunday. It changed more of my habits than any book.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #CodeReview #Developer #Coding #Programming #Learning #Engineering #Craft #BuildInPublic #TechNews #Architecture #Growth
+
+---
+
+I gave an estimate of two weeks and it took six. Here's what actually happened, because the reasons matter more than the miss.
+
+Week one was the feature and it went fine. I found out in week two that the integration was undocumented. I spent week three preserving behaviour the old code had that nobody had listed.
+
+None of that was unknown. I just hadn't listed it. An estimate is really a list of what you remembered on the day you were asked, and the difference between that list and reality is about four weeks.
+
+So I changed the shape of the estimate rather than the number. Now I write three lines. The work, the unknown, and the thing I'll ask about on day three. People plan better with three lines than with a date.
+
+The date hasn't gotten much better. The conversations have. That's most of the value and it costs a paragraph.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Estimating #Developer #Engineering #Management #Projects #Planning #BuildInPublic #TechNews #Craft #Teams #Advice
+
+---
+
+The first time I said I don't know in a meeting, the room got quieter and then it got useful.
+
+Someone asked how long a migration would take and everyone looked at me, because I was the one who'd touched the schema. I said I don't know, and then I said what I'd need to find out. Two hours and a copy of the production table shape.
+
+The manager said fine. Go find out. So I did, and came back with a real number instead of a confident guess. Two hours. That's what I asked for. Not a shrug. A plan. The meeting was four minutes longer and the project was two weeks shorter.
+
+What I'd been afraid of wasn't looking ignorant. It was looking like the person who slows things down. Turns out the thing that slows a project down is a guess that gets planned around.
+
+I say it more now, and I say it with the follow up attached. I don't know plus here is how I'd find out is a complete answer. I don't know on its own is a shrug.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Management #Career #Teams #Communication #Developer #WorkCulture #BuildInPublic #TechNews #Advice #SoftwareEngineering #Growth
+
+---
+
+A mentor told me my code was fine and my questions were the problem. He was blunt about it. He was right.
+
+He meant I asked for a decision before I'd gathered the parts of it. So he'd answer, I'd go away, and I'd come back with a second question that I could have asked in the first one. He was doing my thinking in five minute blocks.
+
+For about a month I stopped asking him anything and wrote the question down instead. I found half of them answered themselves by the time I'd typed the sentence. The rest arrived with the options attached.
+
+I noticed he answered faster after that. Not because I asked less. Because the questions had a shape he could say yes or no to.
+
+Cheapest mentorship I've ever had. It cost me a month of writing things down and it doubled the value of every conversation after it.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Mentorship #Developer #SoftwareEngineering #Learning #Growth #Teams #BuildInPublic #TechNews #Advice #Coding #Communication
+
+---
+
+A user did the thing I told them not to do and they were completely reasonable about it. That was the most useful bug report I've had this year.
+
+They'd put a decimal into a field I'd built for whole numbers. My form rejected it with a message about invalid input. From their side they'd typed a price. From mine they'd broken a rule I invented and never explained.
+
+I fixed it that afternoon. Twelve characters. Twelve characters into the message and the confusion went away. It said whole numbers only. No cents.
+
+That's the whole job in one story. I built the rule, the rule was invisible, and I blamed the person for not knowing what I hadn't told them. Every validation message I've written since gets read out loud before it ships.
+
+If you're building forms, read your own error messages as a stranger. If the message describes the format instead of the fix, it's unfinished.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductDesign #UX #Developer #SoftwareEngineering #Forms #Design #BuildInPublic #TechNews #Users #Craft #Engineering #Product
+
+---
+
+I raised my prices and lost my two cheapest clients in the same month. Best quarter I've had.
+
+Not because the losses were good. Because what replaced them was work I actually wanted, and the reason I could take it was that a slow week stopped being terrifying. I'd been undercharging to avoid empty calendars and the emptying was the point.
+
+Here's the arithmetic nobody shows you. Four projects at a low rate is more hours than two at a higher one, and the four come with four sets of expectations. The money can end up the same and the week is twice as long.
+
+I've watched people stay busy as a defence against being irrelevant. I did it for years. The defence works. It just costs you the thing you were protecting.
+
+So the spreadsheet that decided this wasn't about price. It was hours per client against total income. Two columns. Once I had those numbers the decision stopped being emotional.
+
+#AI #BuildInPublic #VibeCoding #tech #Freelance #Pricing #Business #Money #Career #Consulting #BuildInPublic #TechNews #Strategy #Advice #Developer #Focus
+
+---
+
+I write short sentences now and it isn't a style choice. It's because long ones let me hide.
+
+When I'm unsure, my sentences get longer. I add clauses, I qualify, I hedge. The hedge feels careful and it's actually a way to avoid saying anything that could be checked.
+
+I caught myself doing it in a design document. Read the paragraph out loud and couldn't tell what I was recommending. Four sentences. Nine hedges. Zero decisions.
+
+So I cut. Now the rule is that the recommendation goes in the first sentence of the section and it's one clause long. Everything after that can be as long as it needs to be, because it's supporting a claim instead of avoiding one.
+
+I see the same thing in posts, in emails, in code comments. Short sentence, then the reasoning. Nine years of writing and I've never once regretted the short one. Not once.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #SoftwareEngineering #Communication #Developer #Editing #Craft #BuildInPublic #TechNews #Documentation #Advice #Career #Clarity
+
+---
+
+Nobody warns you that the hardest part of shipping a product is answering email. I didn't budget a single hour for it.
+
+The first month I treated support like an interruption to the real work. So replies took two days, and the people writing in got quieter, and I told myself the drop in volume was a drop in problems.
+
+It wasn't. Wrong. Twice wrong. Three of those quiet people had found the same bug and none of them said so twice. I found it four weeks later in the logs. By then my best early user had stopped using the thing.
+
+Now support gets the first hour of my day. Not because it's polite. Because it's the only place where the product's real shape shows up, and the shape in my head hasn't matched the shape in the logs yet.
+
+Turns out the inbox is a research department that pays you in bug reports. Slow replies are how you unsubscribe.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #CustomerSupport #Startup #Developer #BuildInPublic #TechNews #Users #Business #Feedback #Growth #Engineering #Advice
+
+---
+
+Every product I've built has a feature in it that exists because one loud person asked twice. I want to talk about the second time.
+
+The first ask is information. The second ask is a signal, and the signal is that this person keeps coming back. That's worth more than a survey with two hundred responses, because most surveys get filled in once.
+
+But there's a trap. Same place. The loud person is available and the quiet majority isn't, so it's tempting to build for the person in the room. I've done it. Two features shipped for one account. Neither one got used by anybody else.
+
+What fixed it for me was a rule about what a request has to come with. A story about what they were doing when they hit the problem. That single line separates a preference from a real blocker, and blockers are the only ones worth building for.
+
+Ask for the story. If they can't tell you what they were doing, they're describing a mood.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #Startup #UserResearch #Developer #BuildInPublic #TechNews #Design #Business #Strategy #Feedback #Users #Advice
+
+---
+
+I've apologized to a model more times than I'd like to admit and I've started noticing what that teaches me about my own patience.
+
+It happens when I get a bad answer. I'll type something short and irritated, then delete it and write a proper question with the context attached. The good question gets the good answer. Every time.
+
+That's the whole thing. The frustration comes from giving it nothing and expecting everything. Which is exactly what I do to people sometimes, and the model doesn't mind, and people do.
+
+So the habit transferred. Before I ask a person for something hard, I write the version of the question that already contains what they'll need. It's four extra lines and it saves a round trip.
+
+Turns out prompting is just the discipline of asking well, with a machine that never takes offence. Handy place to practice, since the feedback is instant and the cost is nothing.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Prompting #Developer #Communication #SoftwareEngineering #BuildInPublic #TechNews #Craft #Learning #Habits #Engineering #Advice
+
+---
+
+The most useful thing on my screen isn't the editor. It's a plain text file with today's date at the top and three lines under it.
+
+What I'm doing. What's blocking me. What I'll do next. I write it at the start of the day in about ninety seconds, and I read yesterday's first thing in the morning.
+
+That file has caught more lost context than any tool. Two weeks into a project I can see that the blocker repeats every third day, and that's a process problem, not a focus problem. I'd never notice that from memory.
+
+I've tried the fancy versions of this. Task managers, boards, integrations. All of them lasted a month, because the friction of updating them is where they die. A text file opens in half a second and never asks me to categorize anything.
+
+Nine hundred entries now. Cheapest project management system I've ever used, and the only one I've never abandoned.
+
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Developer #SoftwareEngineering #Habits #Workflow #BuildInPublic #TechNews #Craft #Career #Focus #Tools #Advice
+
+---
+
+Someone on here told me my posts were too long and I checked before I argued. They were right.
+
+I pulled the numbers on my own account. Sub two hundred words and the completion holds. Past that and the read stops about halfway, and the halfway point is exactly where I put my third argument. So the best part of the post was landing on nobody.
+
+That's the thing about writing for a feed. You're competing with a thumb, and the thumb decides in about two seconds and again at the halfway mark. Structure beats length, and length alone just loses.
+
+I still write long posts when the thing needs it. I just move the point up. One paragraph instead of three, then the reasoning for whoever stays.
+
+Two years of writing and the most useful feedback came from a stranger who told me something small and specific. Free, blunt, correct. That's the good end of the internet.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #ContentCreator #LinkedIn #Audience #Creators #BuildInPublic #TechNews #Craft #SocialMedia #Growth #Advice #Feedback
+
+---
+
+Six months in I found the comment I'd written above a function. It said this is fine, don't touch it. That was the whole comment.
+
+I'd written it for myself after a fight with a parser and it saved me later, because I came back with fresh confidence and the comment stopped me. I read it, laughed, and checked the thing anyway.
+
+That's what a comment is for. Not describing what the code does, since the code does that. Explaining why somebody didn't do the obvious thing, because the obvious thing is what the next person will try.
+
+So my notes are all the same shape now. We tried the short version, it broke on this input. Nine words. That's the whole comment. They cost nothing and they prevent a rewrite.
+
+Most comments in most codebases say what. The ones that saved me said don't, and then told me why not.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Comments #Developer #Coding #Documentation #Programming #Engineering #Craft #BuildInPublic #TechNews #Learning #CodeReview
+
+---
+
+I broke production on my own birthday, fixed it from a phone, and learned how much of an incident is actually preparation.
+
+The alert came through while I was at dinner. I'd set up the runbook the week before because a friend told me to, and I'd argued that it was overhead. Turns out the runbook was the whole difference between a ten minute fix and a ruined evening.
+
+I didn't debug anything. I followed four lines. Check the flag, flip the flag, watch the error rate, tell the person who asked. The thinking had already happened on a Tuesday afternoon when I wasn't under pressure.
+
+That's what preparation buys. Not fewer incidents. A shorter gap between the incident and the part where you're calm again.
+
+Everyone says write the runbook. Nobody says what it's for. It's for the version of you at a dinner with a phone in one hand and no ability to reason.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #IncidentResponse #Developer #Reliability #Engineering #OnCall #BuildInPublic #TechNews #Operations #Craft #Habits #Systems
+
+---
+
+My git history used to be a museum of apologies. Fixed bug. Fixed for real. Fixed again on Thursday. I couldn't read my own history, which is the actual problem.
+
+The messages told you nothing and the diffs told you less, because I was committing four things at once. Six months later I couldn't tell why a line existed. What I could tell you is that I'd been annoyed when I wrote it.
+
+So I changed two habits. One idea per commit, and the message says why rather than what. Not added validation. Rejected decimals because three users typed a price with cents.
+
+That second habit is the one that pays. The why is the part that isn't in the code, and it's the part the next person needs when they're deciding whether they can delete it.
+
+I write log messages as letters to a stranger who will be me in a year. I write them like I expect him to be tired, because he will be.
+
+#AI #BuildInPublic #VibeCoding #tech #Git #SoftwareEngineering #Developer #Coding #VersionControl #Engineering #Craft #BuildInPublic #TechNews #Habits #CodeReview #Practices
+
+---
+
+A stranger rewrote my post into two sentences and both were better. I sat with that for a while before deciding she was right.
+
+What she'd done was remove every place I'd explained myself twice. I open with a claim, then restate the claim with different words, then give an example that says it a third time. Feels thorough when I write it. Reads as padding when somebody else does.
+
+I still catch myself doing it. The fix is a read through with one question. If I've already said it, why is it here again.
+
+Three passes now. Write it, cut the repeats, read it out loud. The out loud pass is where the last ten percent goes, because the ear hears what the eye skips.
+
+I've kept the two sentence version in my notes. Better than a style guide, since it's my own writing with the fat removed. Cheaper too.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #Editing #ContentCreator #Craft #LinkedIn #Creators #BuildInPublic #TechNews #Learning #Advice #Growth #Communication
+
+---
+
+I built a feature nobody asked for and it's the one I'm proudest of. That sentence needs the second half.
+
+It was a keyboard shortcut for a thing people did forty times a day by mouse. No client requested it, no survey mentioned it, and the release notes buried it at the bottom.
+
+Three weeks later the support tickets for that flow dropped to zero. Nobody wrote in to thank me. They just stopped having the problem, and the absence of email is the only metric that ever made me feel good about a release.
+
+That's the argument for small inventions inside a product. Somebody has to be close enough to hear the forty clicks. That isn't scheduled. It isn't assigned.
+
+I haven't been able to repeat that result on demand. I do keep the habit. Once a week I use my own thing the way a customer would, all the way through, and I write down where I got annoyed.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #Design #Developer #SoftwareEngineering #UX #BuildInPublic #TechNews #Craft #Users #Engineering #ProductDesign #Habits
+
+---
+
+The best money I've made came from work nobody wanted to do. Twice now, and I'd bet on it a third time.
+
+I took a data migration that everybody else at the table called boring. Twenty three tables, four years of accounts, no design decisions to make and no glory in it. It took me nine days and the client still calls me for everything.
+
+I've seen the same pattern twice. Interesting work draws a crowd and the crowd competes on taste. Dull work draws nobody and the competition is just showing up and finishing it. Nothing shiny. Just finished. That's a much easier game if you can stand being unimpressed with yourself.
+
+I've watched people chase the shiny project and lose to somebody with a spreadsheet and a work ethic. Every single time.
+
+So the advice is unglamorous. Find the task your smart friend turned down and do it well. Revenue arrives before reputation and it lasts longer.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Business #Freelance #Developer #Money #Consulting #BuildInPublic #TechNews #Strategy #Advice #Growth #SoftwareEngineering
+
+---
+
+I read a study last month, then read the method, and the number I'd been about to quote got much smaller. Small enough that I dropped it.
+
+The headline figure came from everyone who finished the program. The method showed that about a third of the people who started didn't finish, and they were the ones doing worst. So the average was measuring the survivors.
+
+I'd been two minutes away from posting it. Nothing malicious on my side. I read the abstract, the abstract was accurate, and the difference was in section four.
+
+That's why I read the method before I repeat a number. Not to catch anyone. Because the interesting part of a study is almost never in the summary, and the summary is the only part that travels.
+
+Twenty minutes now, or one correction later. I'll take the twenty minutes. I've taken the correction before and it's worse.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #CriticalThinking #Data #Methods #BuildInPublic #TechNews #Learning #Evidence #Education #Media
+
+---
+
+The thing I got wrong about getting older in this industry is that the writing gets easier and the deciding doesn't.
+
+I can produce a page of clear explanation in the time it took me to open a document ten years ago. What hasn't moved is the moment before a real choice, the one where two options are both defensible and one of them is a version of yourself you'd rather not be.
+
+I've watched myself take the safe option and tell myself a story about it. Twice that I can point to. Both times the story cost more than the choice would have.
+
+What helps is a question I stole from somebody. It works. Try it. If I do this and I'm wrong, can I say so out loud. If the answer is no, the option is off the table, because I'm about to hide something.
+
+Nothing clever. Just a test that catches the version of me who wants to look good more than he wants to be right.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #DecisionMaking #WorkLife #Growth #Engineering #BuildInPublic #TechNews #Advice #Experience #Thinking #Craft #Learning
+
+---

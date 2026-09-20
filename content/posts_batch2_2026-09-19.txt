@@ -1,0 +1,575 @@
+The hardest part of my week was picking a name for a function.
+
+I spent forty minutes on it. The function is eleven lines long.
+
+That ratio sounds stupid until you write the wrong name, come back in March, and have to read the whole thing to work out what it does. A bad name means you re-read the code every time you touch it. A good name means you skip it. Small thing. Enormous cost.
+
+I keep a list of names I regret. Most of them are honest attempts at being clever. processData. handleStuff. doTheThing. Every one of those tells the next reader nothing, and the next reader is me. I have opened a file I wrote and had no idea what a function did. That's the worst feeling in this job.
+
+So now I name things for what comes out, not what goes in. If the name needs a comment, the name is wrong. I would rather write fetchUnpaidInvoices than getData a hundred times over. It sounds trivial, and it saves me more time than any tool I installed this year.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #CleanCode #Engineering #Craft #Refactoring #OpenSource #SoloBuilder #Learning #backend #DeepTech #CodeReview #Productivity
+---
+I deleted every comment in one of my files and the code got easier to read.
+
+None of them were wrong. They were all true when I wrote them. The problem is that the code moved six times and the comments didn't move once. So a comment said this handles the empty case and the code above it handled the full case. I trusted it for a week.
+
+I think comments that explain what the code does are a tax. They go stale, and a stale comment is worse than no comment because it lies with authority. Nobody re-reads them. Nobody updates them. They just sit there getting less true.
+
+What I kept is the handful that explain why. Why this order. Why this ugly workaround exists. Why we aren't using the obvious approach.
+
+Those don't rot, because the reason doesn't change when the code does. They're short and they're ugly and every one of them has a date. That's the split I use now. What is visible in the code. Why isn't.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Documentation #Coding #Engineering #Refactoring #CleanCode #CodeReview #backend #OpenSource #SoloBuilder #Learning #DeepTech #Maintenance
+---
+My logs told me nothing for two years and I only noticed when something broke badly.
+
+Every line said the same thing. Starting. Finished. Error. No identifier, no duration, no idea which user or which request. When it went wrong at 2am I had a wall of identical text and a hunch.
+
+A hunch isn't a debugging strategy. So I added four fields. A request id, a duration, an outcome, and one line of context. That's it. No logging framework, no dashboard, no vendor. Two weeks later the same class of bug took eleven minutes instead of most of a night. I searched for the request id, read four lines, and knew.
+
+The bit that surprised me is how little I needed. I thought good logs meant more logs. It's the opposite. More lines make the useful ones harder to find. Four fields on every line beat a thousand lines with no shape.
+
+I still get it wrong, but now when something breaks I read instead of guess.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Observability #Debugging #Software #Developer #Engineering #Logging #Coding #Reliability #DevOps #backend #OpenSource #SoloBuilder #DeepTech #Infrastructure
+---
+The error message I wrote for myself six months ago saved me an hour this week. It was one sentence.
+
+It said the config file was missing and gave the exact path it looked in. That's it. No stack trace theory, no advice, no apology. I hit it at 11pm, read the line, made the file, and moved on. I didn't have to open the source. I didn't have to remember anything.
+
+Compare that to the errors I got from a library last month. Something went wrong. Check your input. Which input. Which line. No idea.
+
+Bad errors cost the reader time and the writer nothing. Good errors cost the writer two minutes and save everyone else hours. It's one of the most lopsided trades in this job and almost nobody takes it.
+
+So now every failure path I write has to say what failed, where, and what to do. If I can't fill those three in, I don't understand my own error case yet. That test has caught design problems before the code even ran.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Software #Developer #Coding #ErrorHandling #Engineering #Debugging #Quality #OpenSource #SoloBuilder #backend #DeepTech #Productivity #CleanCode #Architecture
+---
+I moved one project from a config file to plain defaults and it got used twice as often.
+
+The old version had eleven settings. Port, log level, paths, retries, formats. All reasonable. All documented. All of it a decision I was handing to somebody who just wanted to run a thing.
+
+Every setting is a question, and questions are a tax on starting. The first run is where you either keep a tool or close it forever. So I picked the values I use and hardcoded them. I cut the eleven settings to two. If you need the others, there's an environment variable and a page explaining it.
+
+Nothing broke. Nothing was lost. The people who wanted to tune it still can. The people who didn't now get a working tool in one command.
+
+The thing I got wrong for years is thinking flexibility is free. It isn't. You pay for every option with attention, and attention is the scarcest thing your user has. Defaults are an opinion. I would rather ship mine and be argued with than ship eleven blank boxes.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Design #Coding #Product #UX #Engineering #OpenSource #CLI #Tools #devops #SoloBuilder #DeepTech #Minimalism
+---
+My code assumed every timestamp was in the same timezone and it worked fine for eight months.
+
+Then a user in a different timezone scheduled something and it fired four hours early. Nobody lost money. It was still wrong.
+
+I had been treating a date as a simple value. It isn't. It's a position on a line that depends on who is looking. Two people in two places can disagree about what today means and both be right.
+
+The fix took twenty minutes. Store everything as a single reference and convert only when showing it to a person. That's the whole rule and it's older than I'm. What annoyed me is that I knew this. I had read it. I still wrote the naive version because my test data happened to sit in one timezone, which meant my tests were measuring nothing.
+
+That's the pattern I keep finding. My tests pass because they share my assumptions. They aren't wrong. They're blind in the same place I'm. The bug was never the timezone. It was the confidence.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #Timezones #Engineering #Debugging #Testing #Quality #devops #OpenSource #SoloBuilder #DeepTech #Learning #Reliability
+---
+I wrote money as a decimal and the totals came out a cent off. That cent cost me an afternoon.
+
+A computer stores a decimal as a binary fraction, and some of those fractions can't be represented exactly. So a tenth isn't quite a tenth. Add it a few thousand times and the error shows up where people notice. I stopped using decimals for money at all. Store the smallest unit as a whole number. Cents, not dollars. Then addition is exact because whole numbers are exact.
+
+It feels like a step backwards. It isn't. It's the difference between an accountant trusting your number and an accountant finding your mistake.
+
+I still think about how invisible it was. My test with four rows passed. My test with four hundred rows passed. The drift only appears when you add up a lot of small things, which is what a real total does.
+
+So now anything that people will count in money gets stored as an integer. Prices, fees, balances, totals. No exceptions and no cleverness. One bug taught me a rule I will keep for the rest of my career.
+
+#AI #career #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #Engineering #Fintech #Correctness #Debugging #work #OpenSource #SoloBuilder #DeepTech #Quality #Learning #Testing
+---
+I pasted the same eight lines into four places and told myself I would tidy it up later.
+
+Later didn't come. Then I fixed a bug in one of the four copies and shipped it. Three still had the bug. Nobody noticed for a month because three of the four paths were rare. The one I fixed was the common one, which is why my testing looked clean.
+
+That's the thing about copy paste. It's not that the duplication is ugly. It's that you now have to remember every copy exists, and you won't. So I have a rule that's probably too strict. Two copies are fine. The third time I reach for the same lines I stop and pull them out.
+
+The reason two is fine is that the abstraction is often worse than the duplication. I have built the shared helper too soon and ended up with a function that takes six flags and does four jobs. That's not better. That's a different mess.
+
+The hard part is timing it. Not too early and not on the fourth copy. I still get that wrong maybe a third of the time.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #Refactoring #Engineering #CleanCode #Architecture #backend #OpenSource #SoloBuilder #DeepTech #CodeReview #Learning #Debugging
+---
+I added a type annotation to a file and the compiler found three bugs I had shipped a week earlier.
+
+None of them were dramatic. A value that could be missing, passed where it had to exist. A number passed where the function wanted text. The kind of thing that works until the one input that breaks it.
+
+That's what I wanted from types. Not correctness proofs. Just a machine reading my code with fresh eyes and pointing at the places where I was vague. Being vague is the natural state. You write a function and it takes a thing. A thing is fine while you're inside it and confusing the moment you leave.
+
+The annoying part is that I resisted this for a long time. I had decided types were ceremony. What changed my mind was a bug I couldn't reproduce, and a compiler that pointed at it in a second.
+
+I don't annotate everything. I annotate the boundaries. Where data enters, where it leaves, where two systems meet. That's where the vagueness costs the most. Everywhere else I let it be messy and get on with it.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #Engineering #TypeScript #Debugging #Quality #devops #OpenSource #SoloBuilder #DeepTech #Learning #CodeReview #Architecture
+---
+I only trust tests I have watched fail.
+
+That sounds obvious. It isn't, because the natural workflow is to write the test after the code, run it once, watch it go green, and feel good. Green tells you almost nothing. It might be testing the wrong thing. It might be testing nothing. The way to know a test does its job is to break the code on purpose and check that it screams.
+
+I did this on a small utility last month. Nine tests, all green. I broke each function in turn and four of the tests didn't notice. They were asserting on shapes that couldn't change. Decoration.
+
+After fixing them I broke the code again and all nine caught it. That took an hour. It's the most valuable hour in that whole project.
+
+Since then my rule is blunt. A test I have never seen fail is a comment with extra steps. It's slower at the start. It's the reason I can change things later without that feeling in my chest.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Testing #Quality #Coding #Engineering #Debugging #devops #OpenSource #SoloBuilder #DeepTech #Reliability #Learning #CodeReview
+---
+I read code I wrote a year ago and couldn't follow it. That was more useful than any course.
+
+I remembered building it. I remembered thinking it was clear. What I couldn't remember was why this file had three entry points and a function that returned two different shapes depending on a flag. Past me had reasons. Past me didn't write them down. So present me was reading a decision with the reasoning cut off.
+
+That's what most bad code actually is. Not stupidity. A reasonable choice, made under pressure, with the context lost.
+
+So I changed one habit. When I make a decision that isn't obvious, I write one line explaining it for whoever reads next. Half the time that person is me, and I'm a stranger to my own work by then.
+
+The other thing it did was make me less precious. I stopped defending old code. It was written by somebody with less information and no reason to feel bad about that. Reading my own history is the only review I get with no social cost.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Coding #CodeReview #Refactoring #Engineering #Learning #LegacyCode #devops #OpenSource #SoloBuilder #DeepTech #Documentation #GrowthMindset
+---
+I put a password in a file and committed it, and that mistake is permanent in a way I didn't understand.
+
+Deleting the line later doesn't help. The history keeps it. Anyone who clones the repo can read every version back to the first one.
+
+I got lucky. It was a test key for a service I didn't care about. I rotated it, deleted the whole repo, and started again. Twenty minutes and no real harm.
+
+What I took from it is that a leaked secret isn't a mistake you fix. It's a mistake you respond to. Rotate first, clean up second. The order matters because the value is compromised the moment it's pushed.
+
+So now the config lives in an environment file that never gets committed, and there's a checked in example file with fake values so a new machine knows what to set. Nothing clever. No vault, no encryption, no ceremony. Just a hard line between what's in the repo and what isn't. It's the least interesting habit I have and the one I'd least want to drop.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Security #Developer #Software #Coding #Engineering #DevOps #Secrets #backend #OpenSource #SoloBuilder #DeepTech #BestPractices #Learning #Infrastructure
+---
+I kept a function around for two years because removing it might break something.
+
+It was used exactly nowhere. I checked twice, six months apart, and both times the answer was the same. Nothing called it.
+
+What kept it alive was the possibility. What if some path I haven't thought about needs it. What if a user hit it in a way I can't see. That fear is real when you have users. It's a fantasy when the only user is you and the whole thing runs on one machine.
+
+So I deleted it. Nothing broke. The file got shorter, and the shorter file took me less time to read the next week. Now I use a blunt test. If I can't name who calls it, it goes. If I'm wrong, the error is loud and instant and I put it back in a minute.
+
+The cost of deleting something you needed is tiny. The cost of keeping things you don't is a file that's slow to read forever. I had those two costs backwards for a long time.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Refactoring #Coding #Engineering #Simplicity #CleanCode #backend #OpenSource #SoloBuilder #DeepTech #Maintenance #Learning #Productivity
+---
+My deploy used to scare me and that fear was quietly making my code worse.
+
+If shipping is frightening, you bundle. You wait until three changes are ready so you pay the fear once. Which means three changes land together, and when it breaks you don't know which one did it.
+
+I was doing that. Then I made the boring change instead. Same day, one small commit, watch it for two minutes.
+
+Turns out the fear was the problem, not the deploy. Once it landed forty times with nothing going wrong, it stopped being an event and became a step. Small deploys are easier to reason about, easier to reverse, and easier to spot. The one thing they're worse at is feeling dramatic. I will take it.
+
+I care about the tooling here but it's not the point. What matters is time from commit to running, measured in minutes. If that number is hours you will batch, no matter how disciplined you think you're. Mine is about ninety seconds now, which is short enough that waiting to bundle three changes together costs me more than shipping them one at a time. That single number changed how I write code more than any technique I have read about.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #DevOps #Developer #Software #Deployment #Engineering #Reliability #CI #backend #OpenSource #SoloBuilder #DeepTech #Infrastructure #Coding #Automation
+---
+The most valuable thing I did after a bad outage was write down what I thought happened before anyone explained it.
+
+I wrote it wrong. I was confident and I was wrong in an interesting direction. I blamed a dependency first. The real cause was a change I had made myself two days earlier.
+
+That written guess is why I learned anything. If I had just read the explanation, I would have nodded and moved on. Having a wrong theory on paper forced the comparison. Now I do that after every failure, small or large. Three lines. What I expected, what happened, what would have caught it.
+
+The last one is the only one that changes anything. It turns a vague resolution to be careful into a specific thing I can add. In this case, one alert on a number I wasn't watching.
+
+Two years of writing those down and I have a list of mistakes I have mostly stopped repeating, which is worth more to me than any course I could have taken. Not because I got wiser. Because I wrote them down while they were fresh and painful. That's the whole method and it costs five minutes.
+
+#AI #science #research #physics #tech #Programming #Developer #Software #Engineering #Postmortem #Reliability #IncidentResponse #DevOps #Learning #stem #scientificmethod #evidence #DeepTech #Observability #GrowthMindset
+---
+I turned off most of my alerts and started noticing real problems sooner.
+
+I used to get an email about everything. Disk usage, a slow query, a spike in requests. All true, none of it urgent. Within a month I had trained myself to ignore the whole channel, which is worse than having no alerts at all. An alert you don't act on is noise with a badge. It teaches you that warnings are normal, which is the opposite of what an alert is for.
+
+So I cut them down to the ones where I would get up. If nothing bad happens when I ignore it, it isn't an alert. It's a chart, and charts belong on a dashboard I check when curious. That reframe took maybe fifteen minutes and it changed my relationship with the whole thing.
+
+The other half is the opposite problem. A silent failure is just as expensive as a loud pointless one. So for anything that should happen and didn't, there's one check and it fires once.
+
+Two alerts total. Both mean something. I act on both. Fewer and louder beats many and ignored, and I have never once wished I had more of them.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #DevOps #Observability #Reliability #Software #Engineering #Developer #Alerting #backend #OpenSource #SoloBuilder #DeepTech #Infrastructure #Automation #Focus
+---
+A dashboard I built showed a number going up and to the right for three months and it meant nothing.
+
+Sessions were growing. I felt good about it. Then I looked at where the sessions came from and found one bot hitting the same page on a loop.
+
+I wasn't being lied to. It was answering a question I hadn't asked. Sessions went up. Real people didn't.
+
+That's the trap with any number you can see without thinking. It's easy to watch, so you watch it, and you stop asking what it measures. I write the definition next to the number now. Sessions means unique identifiers seen in a day, excluding anything without a completed action. Once you write that sentence you find out whether you have an opinion or just a chart.
+
+Half the time writing the definition is enough to make the metric useless, and that's the best possible outcome. Better to learn that in a sentence than in a quarter. Numbers don't have meaning. Definitions do, and I was skipping them.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Analytics #Data #Product #Software #Developer #Metrics #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #ProductManagement #DataScience #Learning #GrowthMindset
+---
+I read forty support messages in one sitting and found the same complaint eleven times.
+
+Not the same words. The same feeling. People couldn't tell whether the thing had saved. So they did it twice and got confused.
+
+Nobody had ever reported it as a bug. It wasn't a bug. It was a silence where a confirmation should be. I never read them together, which is the reason it survived. Support messages arrive one at a time and each one looks like an individual, but read in a batch the pattern is impossible to miss.
+
+So now I do that every few weeks. Paste them all into one file, read straight through, count the repeats. It takes half an hour and it has never once found nothing.
+
+I read both now. Analytics tells you what people did. Messages tell you what confused them. The second one is usually more specific and it arrives with an explanation. The best product decisions I have made came from a pile of complaints, not a chart.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Software #Design #Developer #CustomerSupport #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #UserResearch #Feedback #ProductManagement #Learning
+---
+My search box returned nothing for a typo and I lost a user in four seconds.
+
+I watched one person type the name wrong. The system compared two strings, found no match, and displayed an empty page with no suggestions. From the user's side the product is broken. They don't know that a character was off.
+
+So I stopped comparing strings for equality and started ranking them by how close they're. I wrote a few lines. No search engine, no index, no infrastructure. Just stop demanding exactness from people who are typing on a phone.
+
+The empty result page got fixed too. It now says what it looked for and offers two things that are almost right. Almost right is a huge amount better than nothing. Nothing tells the user they're wrong. Almost right tells them they're close.
+
+I did it in an afternoon. That is the highest ratio of user relief to engineering effort I have ever shipped, and I have shipped plenty of things that took far longer. I wish I had watched one person use search before building anything else.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Software #Design #Search #Developer #Engineering #cleancode #OpenSource #SoloBuilder #DeepTech #UserExperience #Coding #ProductManagement #Learning
+---
+The screen a new user sees before they have any data is the one that decides whether they stay, and I ignored it for months.
+
+My app opened on an empty list. No rows, no explanation, no next step. Just a heading and white space that looked like a loading failure.
+
+I had built the populated version because that's the version I saw every day. My account had data in it. The empty state was a case I never inhabited.
+
+So I made it a real screen. One sentence about what this list will hold, one button that creates the first item, and a small example so the shape is obvious before you commit anything. The drop off on day one moved. Not by much, but it moved, and the change took under two hours.
+
+The lesson isn't about onboarding. It's that I only ever test the state I live in. Every screen has a version with nothing, and that version is the first one most people see. I now check every list and every page with the data removed. It's the cheapest review I know.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Design #Software #Onboarding #Developer #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #UserExperience #Coding #ProductManagement #WebDev
+---
+I removed a confirmation dialog and my users stopped asking me about accidental deletes.
+
+The dialog said are you sure. Two buttons. I thought it was protecting people. What it did was add a step to a frequent action and catch almost nothing, because people click through dialogs on reflex. The dialog had become a coin flip with a prompt.
+
+So I replaced it with something better. Delete is instant, and a small bar at the bottom says what was deleted with an undo link that stays for ten seconds. Now the fast path is fast and the mistake is recoverable instead of prevented. That's the trade I had backwards. You can't stop someone making a mistake. You can make the mistake cheap.
+
+I found undo harder to build than a dialog. It means the data isn't gone for a moment, which means more care in the layer below. Ten minutes of work.
+
+Since then I ask one question about every confirmation. Am I preventing a mistake, or am I just making the user ask themselves. I usually find it's the second one.
+
+#AI #llm #BuildInPublic #VibeCoding #tech #UX #Product #Design #Software #Developer #UserExperience #Coding #machinelearning #OpenSource #SoloBuilder #DeepTech #ProductManagement #WebDev #Interaction #Learning
+---
+The three words under my button did more for conversion than anything I changed in the layout.
+
+My sign up button said Get Started. It's the most common phrase on the internet and it tells you nothing about what happens next. People hovered and left. I changed it to Create a free account. Same position, same color, same size. The click rate moved enough that I noticed it in a day.
+
+Then I changed the field labels from vague to literal. Email instead of Contact. Password instead of Security. I watched the number of people who filled in the wrong box drop to nothing.
+
+That's the whole discipline. Say what happens. Don't be clever. Don't make the reader translate.
+
+Small text has an outsized effect because it sits exactly where a person is deciding. A heading can be vague and nobody minds. A button can't, because that's the moment of commitment. I now spend more time on twelve words of interface copy than on any graphic on the page. It's the cheapest design work that exists and it's the part everyone treats as an afterthought.
+
+#AI #learning #BuildInPublic #VibeCoding #tech #UX #Product #Microcopy #Design #Software #Developer #Copywriting #Startup #research #OpenSource #SoloBuilder #DeepTech #Conversion #WebDev #ProductManagement
+---
+I built dark mode by inverting my colors and shipped the ugliest version of my own app.
+
+Pure black backgrounds and pure white text. It looked sharp for ten seconds and hurt after ten minutes. The contrast was so high that every paragraph felt like it was shouting. The fix is to stop using the extremes. Almost black backgrounds, slightly off white text, and let the borders do more work than they did in light mode because shadows don't read on dark surfaces.
+
+Then there's the part nobody warns you about. Every hardcoded color in the app doubles. Every green that meant success now needs a version that reads on dark. I had about thirty of them by then and I found them one complaint at a time.
+
+The thing I should have done is put the colors in one place at the start. I didn't. Dark mode is the audit that found out.
+
+It's still worth building. It's just not a filter you apply at the end. It's a promise about how you store color, and you either made it on day one or you're doing a cleanup.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #CSS #Developer #Software #DarkMode #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Accessibility #ProductDesign
+---
+I added an animation to my app and it made the whole thing feel slower even though nothing got slower.
+
+A panel slid in over three hundred milliseconds. Pretty on its own. Awful when you open that panel twenty times in a session, because you're now waiting three hundred milliseconds, twenty times, for information you already decided you wanted. Motion has a budget and I had been spending it on the wrong things.
+
+So I cut the panel animation to almost nothing and moved the budget to the places where it communicates something. A row appearing where you dropped it. A button that shows it registered your click. Those tell you what happened. The sliding panel just told you it was important.
+
+I use one rule now. Motion should explain a change of state, not decorate one. The test is simple. If I remove it and nothing is confusing, it was decoration. If removing it makes you lose track of where something went, it was doing a job.
+
+Most of my animations were decoration and I had talked myself into calling them polish.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #Animation #Developer #Software #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #ProductDesign #Interaction #Performance
+---
+I checked my app on a phone for the first time in three months and found four broken screens.
+
+Everything sat above the fold on a laptop. On a phone the same layout pushed the button below the keyboard, cut the heading off mid word, and made one table impossible to read. None of it was hard to fix. All of it had been live for weeks.
+
+The reason is that I develop on a big screen and the narrow case never appears by accident. You have to go looking for it. It's not a bug that finds you.
+
+So I changed my default. When I finish a screen I resize the window down to phone width before I call it done. It's one keystroke.
+
+That single habit caught more problems than the review process I don't have. I also started writing simpler layouts. A layout that survives a narrow screen is usually a tidier one on a wide screen too, because it can't rely on elbow room to hide a bad grouping. Small screens aren't an edge case. They're the default and I was treating them as an extra.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #Responsive #Developer #Software #MobileDev #CSS #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Testing #ProductDesign
+---
+I stopped clicking buttons with my mouse for a week and found three screens I couldn't operate at all.
+
+Not slow. Impossible. A dropdown that opened on hover and nothing else. A dialog with no visible focus ring, so I had no idea which field I was in. A close button that needed a click.
+
+I'm not a keyboard user out of principle. I did it to test, and it turned out to be a better way to use my own app. Focus rings are the clearest example of the problem. I had removed them because they looked untidy in screenshots. What I removed was the indication of where you are, for anyone not using a mouse.
+
+The fix was a few lines of style. The lesson is that I had shipped an app that some people simply couldn't use, and I hadn't noticed because I have a trackpad.
+
+Now I tab through every new screen before I finish it. It takes a minute. It catches something maybe half the time. Accessibility testing is the highest return review I do and it's the one I used to skip.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Accessibility #UX #Design #Frontend #Developer #Software #A11y #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Testing #Inclusion
+---
+I guessed two days on a task and it took nine. That's not the problem. The problem is that I told nobody.
+
+I worked in silence because I kept thinking I was nearly there. Each day I found one more thing and each one felt like the last. I had missed two other things by day six and nobody knew. The estimate wasn't the failure. The estimate was a guess, and guesses are supposed to be wrong sometimes. The failure wasn't saying anything while the guess decayed.
+
+So I changed one habit. Now when I pass the point where I thought I would be done, I say so immediately, with what I found and what I think now. It's uncomfortable and it takes one sentence.
+
+Doing that costs almost nothing at the time. Doing it late costs everything, because by then the other people have built plans on top of my silence. Estimates aren't a promise. They're a snapshot of what I know, and they should update out loud.
+
+I'm still bad at guessing. I'm much better at saying when I'm wrong.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Estimation #Coding #Work #devops #OpenSource #SoloBuilder #DeepTech #Communication #Productivity #ProjectManagement #Learning
+---
+I found a piece of code I wrote last year and could see it was holding the whole file together and also causing every problem in it.
+
+That's the shape of tech debt and it's not laziness. Somebody made a good decision for the constraints they had. The constraints changed. The decision didn't.
+
+What makes it hard is that the same thing is load bearing and broken. You can't delete it. Things depend on it. You can't leave it because it's where every bug lives.
+
+So the honest move is replacement in place, one caller at a time, with both versions running next to each other until the last one moves. Slow, boring, and it never breaks anything. The version I tried first was a rewrite. I started a fresh file, got three days in, and discovered I had dropped four behaviours that existed in the old code.
+
+That's how I learned to respect the thing. That mess held more information than I could hold in my head. Rewriting is the tempting move and it's usually the expensive one.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Refactoring #LegacyCode #Engineering #Coding #devops #OpenSource #SoloBuilder #DeepTech #Architecture #TechnicalDebt #Learning #Maintenance
+---
+I had a feature flag on for eight months and I could no longer remember which way was on.
+
+That's the failure mode nobody mentions. Flags start as a way to test a change without risking the live one. They become a second version of your program, and every combination is a program you have never tested. I had three flags by then, which is eight states. I had tested two.
+
+So I did the cleanup I should have scheduled on day one. The winner became the path. The loser got deleted. The flag got removed from the config.
+
+The whole thing took an afternoon and removed more code than any refactor I had done that quarter. What I do differently now is write the removal date when I add the flag. Not a reminder, a date, in the description next to a link to the task that removes it. Half the value is admitting at creation time that this is temporary.
+
+A flag is a loan against your future attention. It's fine to take. It's not fine to forget you took it.
+
+#AI #backend #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #FeatureFlags #DevOps #Coding #testing #OpenSource #SoloBuilder #DeepTech #Deployment #CleanCode #Learning #Maintenance
+---
+A retry loop I added to handle flaky networks nearly took down a service by hammering it.
+
+I thought the logic was careful. If the call fails, wait a bit and try again. Three attempts. What I hadn't thought about is that a failing server is the worst possible moment to send more requests, and everyone retrying at once makes the failure worse.
+
+The fix isn't to retry harder. It's to retry less and agree on a rule. Wait longer each time, so the fourth attempt is minutes later not milliseconds. Add a random offset so a thousand clients don't fire together. That second one is the part I'd never have guessed. Randomness makes the retries spread out instead of arriving in a wave.
+
+Then there's the question underneath all of it. Should this retry at all. If the call isn't safe to repeat, retrying might charge a card twice. Retries need to know that.
+
+Mine didn't. It was one line and it could have duplicated work. I got away with it because the operation happened to be harmless. I got lucky and I've stopped pretending that's the same as being right.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Reliability #DistributedSystems #Backend #Coding #testing #OpenSource #SoloBuilder #DeepTech #DevOps #Architecture #Learning
+---
+I made one endpoint safe to call twice and it changed how confident I felt about the whole system.
+
+It was a create action. Call it once and you get one thing. Call it again with the same request and you got a second copy. A user who tapped twice because the first tap looked slow ended up with two of everything.
+
+I give each request a name. If the server has seen that name before, it returns the original result instead of making a new one. Same request, same answer, every time.
+
+That one change removed a whole class of problem. Retries became safe. A flaky connection stopped being able to duplicate work. My test suite got shorter because I stopped writing tests for the double submission case. It's a few lines and one extra field. What it buys is the ability to retry anything without checking whether it's safe first, and that's worth much more than the code.
+
+I put it on every write endpoint now. Create, update, charge, send. Anything where doing it twice would be a real problem. The boring guarantees are the ones that let you sleep.
+
+#AI #health #sleep #biology #tech #Programming #Developer #Software #Backend #API #Engineering #DistributedSystems #Reliability #Coding #medicine #neuroscience #publichealth #DeepTech #Architecture #Learning
+---
+I stored a job in memory and lost it when the process restarted, which took me a while to notice because I never restarted it.
+
+The design was simple. A queue in the process, a worker taking items off it. Fine on a laptop that stays on. Not fine anywhere else.
+
+I learned that a process isn't permanent. It crashes, it gets redeployed, the machine reboots. Everything in memory goes with it, silently, and nobody gets an error. So the queue has to live somewhere that outlives the process. A table is enough. Pick a row, mark it as taken, delete it when done.
+
+The bit I missed the first time is what happens if the worker dies halfway. The row stays marked forever and that job never runs again. So the mark needs a timestamp and a rule that reclaims anything older than a few minutes.
+
+That's the whole outbox pattern. Store it first, then work. Anything still only in memory is not queued. It is a hope. I lost maybe four jobs before I noticed. Silent data loss is the worst kind because there's nothing to read.
+
+#AI #learning #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Backend #Engineering #Queues #Reliability #DistributedSystems #Coding #research #OpenSource #SoloBuilder #DeepTech #Architecture #DataEngineering
+---
+Two machines disagreed about what time it was by four seconds and it broke a signature check.
+
+The check was correct. Sign with the current time, verify that the time is recent. Simple and standard. My server and the other one had drifted by a few seconds, so a signed request looked like it came from the future.
+
+Nothing was hacked. Two clocks just disagreed, which is normal and expected. The fix is to allow a window. A couple of minutes either side instead of a few seconds. That absorbs normal drift without accepting an old request.
+
+What I learned is that time is a distributed resource and I had been treating it like a local one. I treat every machine as having its own opinion. So now anything involving clocks gets an explicit tolerance, written as a named number in the config, not buried in the code. If it's a security boundary the value matters and someone should have to think about it.
+
+I expected an exotic bug. The cause was ordinary.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Security #DistributedSystems #Backend #Reliability #Coding #devops #OpenSource #SoloBuilder #DeepTech #Architecture #Learning
+---
+I tried to load a large file into memory and my program died with no warning and no error message.
+
+No crash dump with a useful line. The process just stopped existing. That's what running out of memory looks like, and it doesn't ask permission. The file wasn't even that big by modern standards. But I was loading all of it, then making a copy, then a third copy while filtering. Three times the size of the file in memory at peak.
+
+So I stopped loading it all. Read it a line at a time, keep a running total, throw each line away when done. Constant memory regardless of file size.
+
+I got the same result in less time and it used almost nothing. Same output, checked against the old version to be sure. That comparison mattered. Turning a whole file operation into a streaming one is easy to get subtly wrong, and the only way I trust it is diffing the output on a real file.
+
+Since then the default is streaming unless there's a reason not to, and the reason has to be written down. Loading everything is the convenient choice and convenience has a ceiling.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Performance #Coding #Backend #DataEngineering #devops #OpenSource #SoloBuilder #DeepTech #Memory #Architecture #Learning
+---
+I pinned every dependency version exactly and my builds stopped changing under me. That fixed more than I expected.
+
+I used ranges before that, which is the default and feels friendly. You get bug fixes for free. What you also get is a different program on every machine and every day, chosen by someone else, at a moment you didn't pick.
+
+The failure I hit was a patch release that changed a default. No breaking change, no wrong version, just a different default. My code was fine and my behaviour changed. That's the worst kind of dependency problem because nothing announces it. Your code and the library both did what they said.
+
+I keep versions exact now. Updates are a deliberate act on a branch, which I run, which I watch. Boring. A bit more work.
+
+The thing I gained isn't stability for its own sake. It's that when something changes I know it was me. Debugging is much easier when you can rule out the rest of the world.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Dependencies #DevOps #Coding #Build #backend #OpenSource #SoloBuilder #DeepTech #Reproducibility #Architecture #Learning
+---
+The slowest thing in my app was a database query inside a loop and it was invisible in every test I wrote.
+
+I tested with eleven rows. Eleven queries is nothing. Production had four thousand, which is four thousand round trips, and the page took nine seconds. The code looked tidy. A loop, a lookup, a build. It reads like the natural way to write it and it's the single most common performance mistake there's.
+
+I stopped asking one at a time. Collect every id first, ask once, and match the answers up in memory. One query instead of four thousand. That change took the page to under a second. The code is longer and less pretty. That's the trade and it's not close.
+
+I count the queries in anything that loops now. Not estimate. Count. In development, with realistic data, because eleven rows will never show you this.
+
+The number that matters isn't the query time. It's how many times you ask. Mine was four thousand and I would never have guessed.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Performance #Database #Backend #Engineering #Coding #devops #OpenSource #SoloBuilder #DeepTech #Optimization #Architecture #Learning
+---
+I stopped writing tests for the shape of things and started writing tests for the behaviour, and my suite got smaller and better.
+
+Most of my old tests asserted that a function returned an object with four fields. Fine until I add a fifth field and eleven tests fail for no reason. That's a test measuring the wrong thing, and it teaches you to change tests without reading them. Which is the actual damage. Once you're editing tests to make them pass, they stop being a safety net and become a chore.
+
+So the new ones call the thing and check what it did. Given this input, this number comes out. Given that user, this action is refused. Behaviour, stated in plain words.
+
+Those barely ever change, because I don't redesign what the product does. I redesign how it's organised, and the old tests don't care. The other benefit is that they read as documentation. Someone can open the file and learn what the code is supposed to do.
+
+Fewer tests, more confidence. That took a while to believe.
+
+#AI #devops #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Testing #Engineering #Coding #Quality #Refactoring #backend #OpenSource #SoloBuilder #DeepTech #CleanCode #Architecture #Learning
+---
+I built a search index for a dataset that a plain filter handled fine forever.
+
+The dataset grew in my head. It was a few thousand rows and I started planning for millions. So I added a database, a sync job, a background worker, and three failure modes I then had to handle.
+
+Two weeks of work. Then I measured. The filter was taking four milliseconds. That's the mistake in one line. I optimised a thing I had never timed, using a scale I had invented, for a future that might not arrive.
+
+So now the first version is the dumbest thing that works. Loop over the list. Compare strings. Ship it. Then measure, and only build the clever version if the number tells me to.
+
+Almost every time the number says no and I keep my afternoon. The hard part is the boring version is unsatisfying. There's no craft in a loop. But the loop runs and the index had three bugs in it. I catch myself reaching for the interesting answer all the time. It's the most reliable way I know to waste a week.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Simplicity #Performance #Coding #Architecture #devops #OpenSource #SoloBuilder #DeepTech #Productivity #Learning #DecisionMaking
+---
+I wrote down what I was going to build before I built it and I deleted half of it before writing any code.
+
+Not a design document. Half a page. What this thing does, what goes in, what comes out, and what I won't do. Two of the four features on my list didn't survive that page. One of them solved a problem I had invented. The other needed a setting, and I have a rule about settings.
+
+I still remember how good the deleted ideas felt ten minutes earlier. They were the fun ones. The remaining two were the boring pair that made the tool useful.
+
+So the page is now a filter, not a proposal. If I can't finish the last line, the thing isn't specified yet and I shouldn't start typing. It takes twenty minutes at most and it has never once failed to save me more than that.
+
+I noticed one other effect. Ending up with less scope means I actually finish, and finishing is the part I used to be bad at. Ambition is easy. A short list is discipline.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Planning #Engineering #Coding #Product #devops #OpenSource #SoloBuilder #DeepTech #DecisionMaking #Productivity #Architecture #Learning
+---
+I removed one step from my sign up flow and the completion rate jumped further than every redesign I had tried.
+
+The step was verification. Confirm your email before you can do anything. Standard, sensible, and it was costing me most of the people who arrived. I didn't delete it. I moved it. You get in immediately and the app asks you to confirm when you first need to receive something. Same guarantee, later gate.
+
+The difference is what the user has by then. At the start they have curiosity and nothing else. Two minutes later they have work sitting in the app and a reason to come back.
+
+Sequence matters more than I used to think. The same set of steps in a different order is a different product. The lesson generalises past onboarding, which is why it stuck with me. Whenever something feels heavy, I ask whether it has to happen here or just has to happen.
+
+Usually it just has to happen. I put it first because that's what I saw other people do. Copying a sequence without copying the reason is how you inherit somebody else's problem.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Design #Software #Onboarding #Startup #Developer #cleancode #OpenSource #SoloBuilder #DeepTech #GrowthMindset #Conversion #ProductManagement #WebDev
+---
+I checked my own app the way a stranger would and found that my error page told them to contact support at an address that bounced.
+
+It was a default from a template. I had never read it. Nobody had emailed it because most people don't bother, they just leave. That's the thing about the pages you never see. They decide whether someone gives you a second chance, and nobody tests them because the happy path is the one you live in.
+
+So I went through every failure state in the app. Wrong password, expired link, failed payment, missing page. Eleven screens. Four of them were defaults I didn't write. One had the wrong app name on it.
+
+The whole pass took an hour. I rewrote them so each one says what happened and what to do next, in plain words with no apology and no jargon. Bad news delivered clearly is fine. Bad news delivered vaguely is what makes people leave.
+
+I had been treating error screens as plumbing. They're the last impression I get.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Design #Software #Developer #UserExperience #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #Quality #Microcopy #WebDev #Learning
+---
+I spent a month building a feature nobody used and the data told me in one afternoon.
+
+I built the feature with tests and docs and empty states. I was wrong. It shipped, it worked, and inside three weeks exactly two accounts had touched it. Both were mine. That stung.
+
+I had assumed demand because I wanted the feature. I never checked whether anyone else did. The cost wasn't the month. It was the month plus the code I now maintain forever. Every feature is a promise to keep something working, and the keeping is the part that never ends.
+
+So I changed the order. Now the first version is the smallest moving part I can ship. A form that emails me. A manual step I do by hand for two weeks. Anything that gets real usage without real code.
+
+If people use the manual version I build the real thing. If they don't I've lost an afternoon instead of a month. It feels unambitious and it's the single best change I've made to how I work. The web version of the feature cost me two days and it's used daily.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #Startup #Software #Design #Developer #LeanStartup #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #ProductManagement #DecisionMaking #Learning #GrowthMindset
+---
+I made a copy of my database before a risky change and it saved me from a mistake I had already reviewed twice.
+
+I was renaming a column. Straightforward, checked, and I ran it against a table with two rows of test data. Fine. Then it ran against production, where one column had a constraint I had forgotten existed.
+
+The backup took four minutes to restore. Without it I would have been reconstructing data by hand from logs. Backups aren't interesting and that's exactly why they get skipped. You don't get credit for the disaster that didn't happen.
+
+What I changed afterwards is the part that matters. The near miss became a rule. Before anything that touches stored data I take a copy and I write down the command to undo it. If I can't write the undo, I don't run the change yet.
+
+That last condition is the useful one. Writing the undo forces me to think about what could actually go wrong, which is a different question from whether the change is correct. Twice now the undo line was impossible to write and both times I found a reason not to ship.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Database #Backups #Engineering #DevOps #Reliability #Coding #backend #OpenSource #SoloBuilder #DeepTech #Safety #Learning
+---
+I stopped trying to be fast at typing and got faster at shipping, which is a different skill.
+
+My speed came from not deciding twice. I keep one place for tasks, one place for notes, and one command that runs my checks. When something needs doing it goes in the list and I stop holding it in my head. Holding things in your head feels productive, but it's a background process that taxes everything else and never tells you.
+
+The other change was smaller. I keep the editor open on the file I'm working on and nothing else. No tabs for things I might get to. Every open tab is a small unfinished thought asking for attention.
+
+That sounds fussy. It moved my output more than any technique I've read about. The last one is the honest one. I stopped reading about methods and started measuring what I did in a day, and my guess about where the time went was wrong in three places.
+
+Optimising the wrong thing is worse than not optimising. You just pay the focus and lose the time anyway.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Productivity #Programming #Developer #Software #Focus #Coding #Engineering #devops #OpenSource #SoloBuilder #DeepTech #Workflow #Habits #Learning #TimeManagement
+---
+I built a feature that let people customise everything and they used the defaults.
+
+Every setting I added was a question. What font, what density, what order, what to show. I thought I was giving control. I was handing over decisions nobody wanted to make.
+
+I checked the data. About three percent changed anything at all, and most of those changed one thing once and never came back. The rest saw a settings page and either ignored it or felt a small pang of not having set it up right.
+
+So I cut it down. The two settings that people changed stayed. The rest became defaults with an environment variable for anyone who needs it, documented in one line. The app got shorter and the setup got faster and nothing got worse.
+
+That's become a rule I trust. Every option is a tax you charge your user to avoid making a decision yourself. Sometimes that's right. Usually you should just pick. I was hiding behind flexibility because picking is scary.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #Design #UX #Software #Developer #Simplicity #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #ProductManagement #DecisionMaking #Minimalism #Learning
+---
+I reviewed my own code the next morning instead of the same night and found things I had sworn were fine.
+
+It's the same eyes and the same code. What changed is that I wasn't holding the whole thing in my head anymore, so I read what was written instead of what I meant. That gap is where the bugs live. You read your intent, not the text, and your intent is always correct.
+
+So I started leaving anything non trivial overnight. Not as a ritual. Just because the next morning I read it as a stranger and it takes six minutes.
+
+The other thing it does is remove the ego. At midnight a criticism of the code is a criticism of me. At nine the next day it's just a thing I wrote yesterday and I can be blunt about it.
+
+I keep a short list of what to look for. Any place I handled a case and didn't test it. Any name I rushed. Any error I swallowed. It's the cheapest review I have and there's nobody to offend.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #CodeReview #Coding #Engineering #Quality #devops #OpenSource #SoloBuilder #DeepTech #Refactoring #Habits #Learning #Productivity
+---
+I wrote a feature for the way I use my app and it turned out nobody else uses it that way.
+
+I live in one screen. I open the app, I go to the list, I work from the top. So I built a keyboard shortcut that jumps straight there. Almost nobody used it because almost nobody starts where I start. They arrive from a notification, or a link, or a search, and land in the middle of things.
+
+That's the blind spot. I have months of context about where things are. A new user has none, and I can't simulate that by trying hard.
+
+The fix was to watch someone actually use it. Not ask them. Watch. Within four minutes they had gone somewhere I didn't expect and paused, and that pause was worth more than the shortcut.
+
+So now when I'm unsure I stop designing and find one person. Twenty minutes of watching beats a week of guessing. It's uncomfortable because I can't explain the app while they use it. That silence is the entire value. Every surprise I've found this way was invisible from the inside.
+
+#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Design #Software #UserResearch #Developer #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #Coding #Learning #ProductManagement #Feedback
+---
+I stopped deleting my old version when I rewrote something and started keeping the working one underneath.
+
+The pattern was always the same. New implementation, confident it's better, delete the old one. Then a week later find the one behaviour the old one had that the new one lost. So now the new one runs alongside the old one, both behind a flag, and I compare outputs on real inputs for a few days. When they agree for long enough I delete the old one.
+
+I used to call that delay indecision, and it has caught something every single time. Twice it was a rounding difference. Once it was an empty input the old code treated as fine and the new one as an error.
+
+None of those were in my tests, because my tests were written against my understanding, and my understanding is what I just replaced. The rule underneath is that replacing behaviour is riskier than adding behaviour. My confidence is highest exactly when I should trust it least.
+
+The old version isn't sentiment. It's a witness.
+
+#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Refactoring #Engineering #Coding #Testing #Quality #devops #OpenSource #SoloBuilder #DeepTech #Architecture #FeatureFlags #Learning

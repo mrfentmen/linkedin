@@ -1,0 +1,403 @@
+I fixed the search box on our docs site last month and the problem wasn't the search. It was that people were searching for the wrong words, and the page never told them the right ones.
+
+I'd measured the query log and made the ranking better, which is the obvious thing. It moved the needle by almost nothing. Then I read about forty of the queries by hand.
+
+Half of them used a term we don't use anywhere in the product. Customers called it the pipeline. Our docs called it the flow. Both names were correct and only one of them was in the index.
+
+I added a line of synonyms built from the query log, about thirty pairs, and the click through rate nearly doubled in a week. One config file. No model, no embeddings, nothing clever.
+
+The best clues about your search are in the queries people typed and the words they used. Read them. It's thirty minutes and it beats another round of ranking work.
+
+#AI #BuildInPublic #VibeCoding #tech #Search #Product #Users #Documentation #BuildInPublic #TechNews #Frontend #Engineering #Craft #Data #Coding #Advice
+
+---
+
+My worst estimate last year was three weeks and it took eleven, and the reason is not that I was wrong about the work. I was wrong about everything around it.
+
+The work was two weeks. What I didn't count was the review cycle, which was four days because the reviewer was on holiday, the data migration window, which only opens on a Tuesday, and the two days of testing on real data that found three things nobody predicted.
+
+I also didn't count the meeting where we decided to do it, which sounds like a joke and isn't. That was three hours spread over two weeks and it changed the shape of the thing twice.
+
+What I do now is write the parts before the estimate. Then I put a number against each part separately and add them up out loud. Mine was one number. A real estimate is about six numbers and the total is the least interesting of them.
+
+Say the six numbers out loud. The single number is where the lie lives.
+
+#AI #BuildInPublic #VibeCoding #tech #Estimating #ProjectManagement #SoftwareEngineering #Developer #BuildInPublic #TechNews #Planning #Engineering #Craft #Teams #Advice #Product
+
+---
+
+We ran a code freeze for two weeks before a launch and the thing that actually landed was not the launch. It was that everybody got their reviews done.
+
+I'd expected the freeze to be about discipline. It wasn't. What it produced was a backlog of finished work with nowhere to go, and people used that time to do the things that never make it to the top of a list. Reviews, tests, docs, and one person who finally deleted a dead service.
+
+We shipped about forty percent of what we'd planned to ship and the product was fine. Nobody noticed the missing pieces. That's worth knowing before the next big date, because it means a chunk of the plan was never load bearing.
+
+The other thing I learned is that a freeze needs an exception path. We had two. Both were justified. Having a written path meant the exceptions didn't turn into an argument in a channel at midnight.
+
+A freeze is not a brake. It's a change of activity, and the useful activity is the stuff you skip when you're shipping.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Teams #Process #Engineering #BuildInPublic #TechNews #Shipping #Release #Craft #Management #Advice #Developer
+
+---
+
+A teammate disagreed with me in a design review and did it so well that I changed my mind in ten minutes and thanked him. I've been trying to copy the shape ever since.
+
+He didn't say I was wrong. He said what he'd do instead and what it would cost. Then he said what would have to be true for my version to be right, which was the part that got me. He described my argument better than I had.
+
+That's the move. If you can state the other position in their words, the other person has to engage with your version of the tradeoff. If you can't, you're arguing against something they don't believe.
+
+The other thing he did was pick one point. Not five. One. Five points reads as a dislike of the whole thing and it puts people on the defensive about everything at once.
+
+I use that shape now. Disagree about one thing and describe it with care. That's a whole technique and it fits in two minutes.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Communication #Teams #Engineering #BuildInPublic #TechNews #Design #Craft #Advice #Leadership #Developer #DesignReview
+
+---
+
+A bug we fixed in 2023 came back last month and the fix was still in the file. What was missing was the test, which nobody had written because the fix was one line.
+
+The fix was a guard clause. One line. It was correct when it went in and it stayed correct. What changed was a new caller that reached the same code from a different direction, and the guard didn't cover that path because nobody had drawn the path.
+
+That's the specific cost of a one line fix. It feels too small to test. No test. Then no protection from the next four changes that touch the same function.
+
+I wrote the test after the second fix. It took twenty minutes and it fails if you remove the guard, which I checked by removing it.
+
+I test the small fixes now. If a fix is too small to test, it's small enough that you'll forget why it's there. Test it anyway. The test is the note to the next person.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Debugging #SoftwareEngineering #Developer #BuildInPublic #TechNews #Engineering #Coding #Craft #Habits #Maintenance #Advice
+
+---
+
+A library we depend on got abandoned in April and I found out from a comment in an issue rather than from anything we're watching. That's the gap.
+
+Nothing breaks when a maintainer stops. The package works. It just stops getting fixes, and the security advisories start to arrive with no patch attached, and then you're the maintainer whether you agreed to it or not.
+
+I did something small after that. I wrote the four packages we lean on hardest into a file with the last release date and the number of open issues. Then I set a reminder to look at the file every quarter.
+
+I checked and two of the four had last releases over eighteen months ago. One of those is fine, because it's finished software and finished is a real thing. The other one is load bearing and I now have a plan for it.
+
+I track what I depend on now. Not everything, and not with a dashboard. Four names, four dates, one reminder.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #Dependencies #SoftwareEngineering #Developer #BuildInPublic #TechNews #Maintenance #Engineering #Systems #Craft #Advice #Security
+
+---
+
+I let an agent loose on a refactor and the interesting part was not what it wrote. It was the four permissions I had to think about for the first time. Four permissions.
+
+It wanted to run the test suite. That's fine. It wanted to install a package, which I said no to, and it worked around it without complaining. It wanted to read a production config file, which I said no to. And it wanted to delete a directory, which I said no to. I said no to all three.
+
+That list is now the list I give any agent, and writing it took twenty minutes. Twenty minutes. Every item on it is something I'd have done without asking at eleven at night with a deploy window open and nobody awake to disagree with me. That's the actual finding. The agent forced me to write down my own permissions.
+
+The refactor itself was fine. About four hundred lines moved, tests passed, one naming choice I changed by hand.
+
+The value was in the policy, not the code. I use it for humans too.
+
+#AI #BuildInPublic #VibeCoding #tech #AIAgents #Automation #LLM #Developer #BuildInPublic #TechNews #Security #Engineering #Coding #Permissions #SoftwareEngineering #Advice
+
+---
+
+I saw a new fab announcement last week and the number everybody repeated was the investment. The interesting number is the date. Three years.
+
+Building a leading edge plant takes about three years from the decision to the first wafer, and that's if the equipment arrives on schedule, which is the part that historically doesn't. So the capacity everyone is excited about is a bet on demand in 2029.
+
+The other thing I watch is where the people come from. A fab needs thousands of trained process engineers and they don't exist until somebody trains them. That hiring curve shows up in the local universities two years before the plant opens.
+
+None of that makes the announcement fake. It means the announcement is a decision about the future rather than a fact about now, and the coverage treats it as a fact because a number is easier to write than a timeline.
+
+I follow the dates now. When a plant starts producing is a much better predictor than how much it cost.
+
+#AI #BuildInPublic #VibeCoding #tech #Semiconductors #Manufacturing #SupplyChain #Policy #BuildInPublic #TechNews #Hardware #Engineering #Business #Geopolitics #Investment #Advice
+
+---
+
+I read a book about failures this year that had almost nothing to say about software and it changed how I run a release. Not the story. I mean the appendix.
+
+It was a table of about forty incidents with one column for what the operator believed and one for what was happening. That's the whole book.
+
+Almost every entry had the same shape. Somebody had a model that was correct on the previous version of the system, and the system had changed in a way nobody told them about. So their action was reasonable and wrong.
+
+That's the question I ask before any risky change. What did this used to be true about, and when did that stop. It's a minute. Twice this year the answer was that the assumption came from an architecture we'd retired.
+
+Books about other fields are the cheapest source of ideas. Nobody in software has a monopoly on being surprised.
+
+#AI #BuildInPublic #VibeCoding #tech #Reading #Engineering #Systems #Safety #BuildInPublic #TechNews #Process #Craft #Learning #Incidents #Advice #Books
+
+---
+
+I read a study on remote work this year. The number that got quoted was a productivity change. The number I wanted was in a table eight pages in. How far people live from the office. Two hours of driving.
+
+That's the variable that decides whether the policy works. If the team is spread over two hours of driving, an office mandate converts a job into a move for a chunk of them, and the people with the most options are the first to go.
+
+I noticed the productivity number moves in both directions depending on the task. Both directions. Focused work does better at home in most of the studies I've read and onboarding does worse. Neither is a surprise if you've done both.
+
+I'd rather argue about the counterfactual. An office day isn't compared to a perfect home day. It's compared to the commute plus the home day, and the commute is the part that never shows up in the measurement.
+
+I read the demographics table now. The productivity line is the headline and the geography is the plot.
+
+#AI #BuildInPublic #VibeCoding #tech #RemoteWork #Research #Data #Workplace #BuildInPublic #TechNews #Hiring #Management #Statistics #Teams #Advice #Productivity
+
+---
+
+I read about a spacecraft that launched this year with an instrument sending back about a terabyte a month. One terabyte a month. The interesting problem isn't the downlink. It's that nobody has time to look at all of it.
+
+Bandwidth is solvable with bigger dishes and more of them. Attention is the bottleneck, and it's why so much of the work now is writing software that flags what's worth a human's afternoon.
+
+That's a real shift and it's the same shift happening in medicine and in security. Instruments aren't the constraint anymore. A queue of unfiltered data is.
+
+I watch how the team decides what matters. If the filter is trained on what people looked at last time, it will find more of what you already know and go blind to the new thing, which is usually the discovery.
+
+I think more data is a solved problem. Two problems. One is solved. Knowing which ten images to look at isn't, and that's the part I'd want to work on.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Science #Data #Astronomy #BuildInPublic #TechNews #MachineLearning #Research #Engineering #AI #Advice #Physics
+
+---
+
+I sat on a hiring panel that made the wrong call and I can point at the exact ten minutes where it happened. It was the first interview, and the first interviewer's read anchored the rest of us.
+
+He said he found her evasive, and after that everything anybody said got interpreted through that. A pause became hesitation. A detail became over explaining. We hired nobody and she went somewhere else and did well.
+
+The fix isn't anything about bias training. It's sequencing. Everybody writes their own read before anybody speaks, and the most junior person speaks first, because the most senior person's read is the heaviest.
+
+We do that now. Four written paragraphs before the discussion, no exceptions. The decisions take about twenty minutes longer and the discussion is completely different, because the evidence arrives before the conclusion.
+
+Put the writes before the talking. A panel is a terrible place to form an opinion for the first time.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviewing #Teams #Management #BuildInPublic #TechNews #Recruiting #Process #Advice #Career #Leadership #Decisions
+
+---
+
+I wrote a status report for eight months that nobody read and I only found out because somebody asked a question the report already answered. That's the test.
+
+The report was six sections long with a percentage on the top line and about four hundred words of detail underneath. It was accurate and it was long, and long reports get skimmed for one number.
+
+I replaced it with three lines. Three lines. What changed since last week, what's blocked, and what I need from you. Nine times out of ten the third line was empty and saying so out loud turned out to be useful, because it told the reader they could close the tab.
+
+The other change is smaller. I stopped writing it for the team and started writing it for one named person. That one change removed about half the words, because a specific reader doesn't need the context.
+
+I write it for a person now. If you can't name them, you don't have a reader and they don't have a report.
+
+#AI #BuildInPublic #VibeCoding #tech #Writing #Communication #Management #Teams #BuildInPublic #TechNews #Workplace #Craft #Advice #Product #Engineering #Leadership
+
+---
+
+An accessibility bug on our checkout page had been live for about a year and we found it from a support ticket that mentioned the tab key. Not a complaint. A description.
+
+The focus order jumped from the form to the footer, so a keyboard user had to tab about forty times to reach the pay button. That's the whole bug. Nobody using a mouse would ever see it, which is why a year passed.
+
+What fixed it was one line. What shouldn't have been needed was the year, and the reason for the year is that we had no keyboard test at all. We had contrast checks and screen reader spot checks and nothing that pressed tab through the flow.
+
+I added a test that tabs through the four steps and asserts the focus lands where it should. It's about thirty lines and it runs in two seconds.
+
+The test is cheap and the blind spot was expensive. Press tab through your own flow once a quarter.
+
+#AI #BuildInPublic #VibeCoding #tech #Accessibility #Frontend #Testing #Engineering #BuildInPublic #TechNews #Users #ProductDesign #Craft #Coding #Advice #UX
+
+---
+
+I renamed a field in our API last month and it touched fourteen services, and the part that took the time had nothing to do with the rename. It was the four places where nobody could tell us what the field meant.
+
+The rename itself was mechanical. Add the new name, write to both, migrate readers, remove the old one. Four weeks of dull work with a clear order.
+
+The four places were the problem. Each one had a comment restating the field name and no explanation, so we couldn't say whether they were using it for the same purpose. Two were. One was using it as a cache key. One was comparing it to a value from a third party.
+
+That's why I now write one line about what a field is for next to every field I touch. Not what it holds. What it decides.
+
+I check that in every review now. Finding out what fourteen services thought the word meant took three people and a week.
+
+#AI #BuildInPublic #VibeCoding #tech #API #Refactoring #SoftwareEngineering #Developer #BuildInPublic #TechNews #Naming #Engineering #Systems #Craft #Maintenance #Advice
+
+---
+
+I bought a machine for a work project last year and the decision that mattered was not the specs. It was whether I could get parts in three years.
+
+The fast one was about forty percent cheaper and had better numbers on every benchmark I ran. It also came from a company that changes its platform every eighteen months, which meant the storage adapter and the power supply would be unreplaceable when they failed, and they always fail.
+
+I bought the boring one. Slower, louder, and about a third larger, and I've replaced two fans and a drive without a support contract. It has cost less than the fast one would have, once you count the downtime that didn't happen.
+
+That isn't a lesson about boring winning. It's that the specification ends at the moment of purchase and the ownership starts then. Nobody benchmarks year three.
+
+For anything you'll own for years, price the parts and the lead time. One week against three years.
+
+#AI #BuildInPublic #VibeCoding #tech #Hardware #Infrastructure #Engineering #BuildInPublic #TechNews #Systems #Decision #Craft #Maintenance #HomeLab #Advice #Engineering
+
+---
+
+I ran a workshop for six people last month and the thing that made it work was a rule I stole from a teacher. Nobody presents. Everybody works.
+
+The format I'd used before was three people talking for an hour. Everybody else listened. That's a conference with a small audience, and the material never survives because nobody has used it.
+
+Version two was one problem and four hours, and everybody builds something in the room. One problem. I talked for about twenty minutes total, in four short chunks between the work. The rest was me walking around the room answering questions, which is the part I should have budgeted for.
+
+Two people got stuck on setup and that's the cost. It means the workshop needs a working environment handed to everybody, and building that took me a day and a half beforehand.
+
+Adults learn by doing and by being stuck. The talking is for the ten minutes after that. Six people. Four hours.
+
+#AI #BuildInPublic #VibeCoding #tech #Teaching #Workshops #Engineering #Teams #BuildInPublic #TechNews #Learning #Mentorship #Craft #Advice #Developer #Education
+
+---
+
+I stole and rewrote the interview question I ask about conflict. Tell me about a time somebody disagreed with your technical decision and you were wrong.
+
+I used to ask about handling disagreement, which produces a story about a person who handled it well. My version produces something better. It asks for a loss and it asks the candidate to name it.
+
+Answers I trust describe the other person's argument fairly. Answers I don't are about a stakeholder who didn't understand the constraints. That's a real thing and it's also the answer you give when you've never really lost an argument.
+
+What I listen for is whether the person changed a process afterwards. One person said he now writes down the strongest counterargument before he proposes anything, which is more than most engineers do and it's a habit I took.
+
+I ask about a loss. I ask what changed after. One question. Two minutes. That's the whole thing and it's hard to fake.
+
+#AI #BuildInPublic #VibeCoding #tech #Interviewing #Hiring #Career #Teams #BuildInPublic #TechNews #Advice #Workplace #SoftSkills #Growth #Leadership #Engineering
+
+---
+
+I rolled back a deploy at four in the afternoon last month and the rollback was the easy part. Hard part was the forty minutes of deciding.
+
+It was a small change and it was working in staging, and the error rate in production went from about zero point two percent to about one percent. Small numbers. What I couldn't answer was whether one percent was the change or the afternoon traffic.
+
+What made the decision possible was a number I'd put on a dashboard six months earlier. Errors by route. Once I had that, I could see it was one endpoint and one endpoint only, and that the endpoint was the one I'd touched. Two minutes later it was rolled back.
+
+One more thing helped. I'd written the rollback command in the ticket before deploying, so nobody had to think about it at four. That's a habit I'd recommend to anybody who deploys.
+
+I make the decision cheap now. The number and the command go where I'll need them, before I need them.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #Rollback #Reliability #Engineering #BuildInPublic #TechNews #Monitoring #Operations #SRE #Craft #Systems #Advice
+
+---
+
+We have a wiki page about our deployment process that eleven people have bookmarked and nobody has read since March of last year. I know because I checked the revision history.
+
+It's not a bad page. That's the problem. It's a complete page, about two thousand words, and it was correct when it was written and two of the steps have since changed.
+
+What we replaced it with is a script. One command, with the steps as comments, and the script fails if you try to skip a step. Nobody has to read anything because the process is executable now. The wiki page still exists and it links to the script with one sentence about why the script is the source of truth. That's the whole page now.
+
+If a process needs to be read and remembered, it will drift. If it can be run, it stays correct because it's checked by the machine every time somebody uses it.
+
+Always run the process. Never read the process.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #SoftwareEngineering #Process #Engineering #BuildInPublic #TechNews #Automation #Craft #Systems #Advice #Tools #Developer
+
+---
+
+I landed a small language change in a project I maintain. It broke nothing and irritated about four people. Those four are the interesting part.
+
+The change was the word filter to restrict in a config file. The thing kept only records that matched and filter was doing two jobs. Twelve lines, two files, one migration.
+
+Nobody's code broke. What happened is that four people had the old word in their heads and their notes and one slide deck, and for about three weeks they wrote the wrong key and got no error, because unknown keys were ignored.
+
+I think that last part is the actual bug. We'd made the config forgiving, which felt kind at the time and meant a typo was silent. Now it warns and prints the two closest keys.
+
+I know renaming a word is cheap. Making sure everyone hears about it is the expensive part, and a silent fallback makes the hearing worse.
+
+#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Config #Naming #Developer #BuildInPublic #TechNews #Engineering #Craft #Maintenance #Coding #Advice #API
+
+---
+
+I lost a customer last month after two years and the exit call was the most useful forty minutes of my quarter. They didn't churn because of price.
+
+They churned because one workflow needed four manual steps and those four steps never made it onto a roadmap. It was small enough to keep being deprioritised and important enough that a person did it forty times a week.
+
+I got the size of small wrong. A four step workaround done forty times a week. Forty times a week. About six hours of somebody's month, which isn't small from where they're sitting.
+
+We've since added a column to our request list that asks how often a thing happens. Frequency times minutes. It's a rough number and it's changed the order of that list twice. Twice. Frequency times minutes. It works, because the things at the top of that list are not the things we talk about most.
+
+I talk to the ones who leave now. They're the only people with no reason to be polite about it.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #Customers #Churn #Users #BuildInPublic #TechNews #ProductDesign #Startup #Engineering #Craft #Advice #Research
+
+---
+
+I read a vendor contract for about two hours last month and the sentence that mattered was not about price or term. It was about what happens to my data when I stop paying.
+
+A clause said they'd retain it for ninety days and then delete it, and that if I wanted it back I had to request an export during those ninety days. That's three months to notice, decide, and export, and if the billing fails silently nobody notices for two of them.
+
+One more thing was buried in there. Who owns anything I generate with the tool. That answer was fine. The sentence sat in a different section from the one about ownership of my uploads, which is presumably why it's easy to miss on a first read at eleven at night when you are trying to sign something before a deadline.
+
+What I do now is read three things in every contract. Three clauses. Data retention after termination, who owns the output, and what the notice period is for a price change. I ask about all three before I sign.
+
+Ninety minutes of reading against three years of a decision. Ninety minutes. That's the cheapest part of the whole purchase.
+
+#AI #BuildInPublic #VibeCoding #tech #Contracts #SaaS #Business #Data #BuildInPublic #TechNews #Procurement #Advice #Privacy #Legal #Startup #Engineering
+
+---
+
+I mentored somebody who was more senior than me for six months and the lesson was about what I could actually offer. It was not technical guidance.
+
+He knew more than I did about the domain and about the language. What he didn't have was a view of how the work looked from three levels up, because he'd never sat in those meetings and nobody had explained the shape of the year.
+
+So that's what our hour was for. I'd bring the view from above. Where the budget pressure was coming from, which two things were in conflict at the leadership level, and what the actual measures were. He'd bring the work and we'd argue about priorities with more information than either of us had alone.
+
+That's a useful shape for mentoring and nobody calls it that. It's not teaching. It's handing somebody the map of the building you happen to be standing in.
+
+You don't have to know more than somebody to be useful to them. You have to know something they can't see from where they sit.
+
+#AI #BuildInPublic #VibeCoding #tech #Mentorship #Career #Teams #Leadership #BuildInPublic #TechNews #Advice #Growth #Management #Workplace #People #Learning
+
+---
+
+I lost power for about four hours last week and the thing that failed wasn't the machine. It was the thing I'd forgotten to plug into the battery.
+
+The battery kept the router and the main box up, which was the plan. What went down was the small switch that connects the two, so everything in the flat was powered and unreachable. Four hours of a system that was running.
+
+The battery beeps. That's the other thing I learned. Loudly, every few seconds, for four hours, at two in the morning. It was telling me something useful and I had never noticed because the power had never gone off for long enough.
+
+I've since written the list of everything that has to be on the battery. Seven items. One switch. One modem. Both of them were the ones I'd missed. It's taped inside the cupboard where I'll see it during the next one.
+
+A hardware plan is only as good as the list. I write the list while I'm annoyed, not while I'm calm.
+
+#AI #BuildInPublic #VibeCoding #tech #HomeLab #Infrastructure #SelfHosted #Engineering #BuildInPublic #TechNews #Hardware #Reliability #Systems #Craft #Advice #Power
+
+---
+
+Our test data was a copy of production with the names changed. Last month a support engineer found a real customer's phone number in a screenshot from our staging environment. That's how we learned the scrambling missed a column.
+
+The tool replaced the obvious fields. It didn't touch a free text field where support notes had been copied in over four years. Four years. Those notes contained phone numbers and addresses written by hand.
+
+Nobody was careless. I wrote that scramble step once, in a hurry, and there was no test that asserted a real value never appears. So it passed every time.
+
+I added a check that greps the staging dump for patterns that look like real data and fails the pipeline if it finds any. It's about twenty lines and it has already caught one more column.
+
+I use generated test data now. It's safer than scrubbed production data. If you must use the real thing, test the scrubber, because an untested scrubber is a promise with no evidence behind it.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Data #Privacy #Engineering #BuildInPublic #TechNews #Security #Systems #Compliance #Craft #Advice #SoftwareEngineering
+
+---
+
+I said I don't know in a meeting last month and the room got quieter, which I hadn't expected. Usually admitting ignorance helps. That time it stopped something.
+
+The question was about how a revenue figure was calculated and nobody in the room knew, and I'd been about to guess with a confident tone, which is the thing I'm trying to stop doing. So I said I didn't know and I'd find out by Thursday. That's it.
+
+What happened next is that the meeting ended early and I found out in about ten minutes, because the answer was in a document two people had written. Two people. Nobody had read it.
+
+The reason the room got quiet is that everybody else had been about to guess too, and my not guessing took the option away. That's the useful part of saying it out loud. It gives everybody permission and it stops the meeting from inventing a number.
+
+I keep it short and specific. I don't know, and I'll have it by Thursday. Ten words. A better answer than a plausible one.
+
+#AI #BuildInPublic #VibeCoding #tech #Honesty #Workplace #Communication #Teams #BuildInPublic #TechNews #Meetings #Advice #Leadership #Career #Engineering #Growth
+
+---
+
+A side project of mine died in June after about seven months and the postmortem is short. I built the wrong half first.
+
+I spent four months on a nice interface and a nice data model, and about three weeks on the part that gets people to come back. The retention was terrible and the interface was lovely, and I could show you screenshots of a thing that nobody used twice.
+
+The mistake was understandable and specific. The interface was the part I could do well and the retention was the part I'd never built, so I did the part I was good at for as long as I could.
+
+What I'd do differently is write the number that would make me stop before I start. Mine would have been ten returning users in week four, and I would have hit that wall in about six weeks instead of thirty.
+
+Pick the number that ends it. Write it down. If you can't name one, you're not building a product. You're decorating.
+
+#AI #BuildInPublic #VibeCoding #tech #SideProject #Startup #Product #IndieDev #BuildInPublic #TechNews #Shipping #Focus #Advice #Engineering #Learning #Failure
+
+---
+
+I got a code review last week that was three sentences and it was the best one I've had this year. It didn't mention a single line of the code I'd written.
+
+It said the change was in the wrong place. It belonged two layers up, next to the thing that decides when it runs, and I'd put it next to the thing it operates on because that's where the data was.
+
+Three sentences. That's a review I couldn't have given myself, because knowing where a function belongs is the part I stop seeing once I've written it. I was thinking about the function and he was thinking about the system. I moved it the next morning and the tests still passed.
+
+What made it land was that he said why in one sentence and stopped. No list of alternatives, no rewrite. One claim. A reason attached, and the reason was checkable.
+
+Reviews I remember are about placement. Style notes are useful and they're not the same thing, and a reviewer who can see the seam is worth more than ten who can see the semicolons.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Architecture #Craft #Teams #Coding #Advice #Design

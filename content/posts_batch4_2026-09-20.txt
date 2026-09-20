@@ -1,0 +1,417 @@
+I rebuilt the same tool three times this year. Each version did less.
+
+The plan was a dashboard that tracked every project I had open, and I spent six weeks on charts nobody asked for before I admitted the thing was unusable on my own phone. So I cut it down.
+
+What's left is a text file and a script. It runs in Ollama on a laptop with no internet, takes about four seconds, and tells me which of my five projects I have ignored the longest. That's it. Two hundred lines.
+
+I use it every morning. The lesson wasn't about the code. I kept designing for a version of me that doesn't exist, one with a clean backlog and time to read charts.
+
+Real me has three CLI tools half finished. Real me needs one number before coffee. Nine months to learn that. Worth it. Boring software that runs beats clever software that doesn't. Built with Gemini CLI, debugged by hand at two in the morning.
+
+#AI #BuildInPublic #VibeCoding #tech #MachineLearning #LLM #Coding #Software #Developer #OpenSource #Automation #SideProject #SoloBuilder #IndieHacker #DeepTech #Engineering #Productivity #Tools
+
+---
+
+I spent my first month letting the AI write everything. I read none of it.
+
+It worked, which is the problem, because working code hides whether you understood the thing or just described it well enough for something else to guess. I shipped garbage fast.
+
+Then it broke in production and I couldn't find the bug. I opened the file, stared at four hundred lines I had never read, and realised the tool had done its job while I skipped mine. So I changed how I work.
+
+Now I write the first version myself, badly, and let the model clean it up. I read every diff. It's slower on day one. By week two it's faster, because I know what the code does when it fails.
+
+The AI isn't the crutch. Skipping the reading is. I've broken that rule twice since and both times I paid for it at two in the morning. Read the code you ship. Even the parts you didn't write.
+
+#AI #BuildInPublic #VibeCoding #tech #MachineLearning #LLM #Coding #Software #Developer #OpenSource #Automation #SideProject #SoloBuilder #IndieHacker #DeepTech #Engineering #Productivity #Tools
+
+---
+
+I counted the AI tools on this laptop last night. Eleven.
+
+Only three of those eleven earn their place, which means I've been installing command line programs the way other people collect browser tabs. That's hoarding.
+
+Cleaning the list took one afternoon. I kept Gemini CLI and Ollama, deleted the rest, then did a second pass and cut two more. Nothing broke.
+
+The reason I collect them stopped being curiosity a while ago. It's the small hope that the next one covers the gap the last four missed, and that hope costs more attention than any of the tools save me. So I wrote a rule on a sticky note. A tool has to replace something I already do by hand. That one sentence killed six installs.
+
+Nobody needs eleven of anything. I needed eleven tries to find three that fit. Half of my old list existed because I read a thread at midnight and felt behind. Feeling behind is free. Installing takes an hour and teaches nothing. I'd do the three again.
+
+#AI #BuildInPublic #VibeCoding #tech #MachineLearning #LLM #Coding #Software #Developer #OpenSource #Automation #SideProject #SoloBuilder #IndieHacker #DeepTech #Engineering #Productivity #Tools
+
+---
+
+I ran a full workday on local models and no cloud. No API keys, no account, no network.
+
+Ollama on a laptop that never touched the internet handled the drafting and about forty small edits to scripts I'd already written. It was slower.
+
+Hard reasoning took longer and the answers were worse maybe one time in five. So I'd call it a real tradeoff, not a free win. Everything else held up.
+
+I sent nothing anywhere for eight hours. Nobody saw any of it. Every prompt I typed stayed on the machine, which matters more to me than a benchmark score because half of what I write is client work that isn't mine to leak. I'm not moving everything offline. Frontier models still win on the hard stuff, and I'll keep paying for that.
+
+I changed the default. Small local models now take the boring half of my day, the part that never needed a data center. Privacy stopped being a feature I wanted. It's a setting I use.
+
+#AI #BuildInPublic #VibeCoding #tech #Ollama #LocalLLM #Privacy #OpenSource #DeepSeek #Qwen #DataPrivacy #MachineLearning #Software #Developer #Automation #Engineering #LLM #Productivity
+
+---
+
+I used one model for everything for a month. Bad idea, and I didn't notice until it ended.
+
+The blind spot showed up in my drafts. I'd stopped generating options the model wouldn't also have generated, so everything I wrote started sounding like the tool's default voice, and I called that voice mine.
+
+Nobody warned me about that part. The tool never lied to me. It just answered inside one set of assumptions, and I lived there long enough to forget the walls.
+
+Switching models is annoying. The tone changes, the formatting habits change, and prompt skills don't transfer cleanly between them. I did it anyway. Three models now, picked by task: one for code, one for long documents, one for anything I want argued with.
+
+Two weeks in, the blind spots are easier to see. I catch myself copying one model's phrasing and I rewrite it. That's the whole benefit. Not better output. More chances to notice when I'm wrong.
+
+#AI #BuildInPublic #VibeCoding #tech #Ollama #LocalLLM #Privacy #OpenSource #DeepSeek #Qwen #DataPrivacy #MachineLearning #Software #Developer #Automation #Engineering #LLM #Productivity
+
+---
+
+I drew a line through my own work last month. Client files stay on the machine.
+
+Public documentation, boilerplate and anything I could paste into a forum go to the big models where the reasoning is better and the speed is worth the money. That split took me a while to work out.
+
+The first version of the rule was too strict. I ran everything locally for two weeks and my output dropped hard, because small models fumble long files and I was too stubborn to admit it. So I measured it. Same five tasks, both setups, one week apart.
+
+The local model won two of them. One was transcription cleanup where privacy mattered and quality didn't. The cloud model won the other three by a wide margin, mostly on files longer than a thousand lines. Now I pick per task.
+
+That's a boring conclusion and it's the right one. The privacy question isn't yes or no. It's which files, in which room, for which job. I answer that before I type. Not after.
+
+#AI #BuildInPublic #VibeCoding #tech #Ollama #LocalLLM #Privacy #OpenSource #DeepSeek #Qwen #DataPrivacy #MachineLearning #Software #Developer #Automation #Engineering #LLM #Productivity
+
+---
+
+I posted three times a day for four months and gained nothing. Flat numbers the whole time.
+
+The advice was consistent and it was all the same advice: post more, chase trending audio, reply to everyone in the comments. I did all three. My reach didn't move.
+
+The breaking point was a Tuesday when I watched a video about consistency for the fortieth time and realised none of the people making that content had numbers I could check. So I stopped listening.
+
+I ran one test instead. Same video, two different first seconds, posted a week apart, everything else identical. Version two did eleven times the views. One test, no course, no coach, no twenty minute YouTube lecture.
+
+That's how I found out the hook matters more than the frequency. Everything I know about this came from testing my own assumptions. I'm still doing it, badly, in public. The playbook never told me anything a test couldn't. Four months of posting taught me less than that one week did.
+
+#AI #BuildInPublic #VibeCoding #tech #SocialMedia #ContentStrategy #Creator #Growth #Marketing #Storytelling #PersonalBrand #AudienceGrowth #Analytics #LinkedIn #Community #FutureOfWork
+
+---
+
+My best post last year was about being ignored by a recruiter. Seventy six reactions.
+
+The AI posts I spent hours on got between one and four, and the one I typed in four minutes got seventy six, which tells me I'd been building the wrong thing for months. I sat with that for a while.
+
+My instinct was to argue with the data. Maybe the algorithm had a bad week, maybe the audience was tired, maybe the topic was just lucky. Then I ran the same experiment three more times.
+
+Every workplace post beat every tool post. Not by a little. So the split holds up across five posts, and I don't love what that says about the work I enjoy most. I've now written thirty of both to be sure.
+
+That's the whole job. Not guessing. Posting, reading the number, changing one thing. The number doesn't care about my taste. Neither should I. I'll keep taking it.
+
+#AI #BuildInPublic #VibeCoding #tech #SocialMedia #ContentStrategy #Creator #Growth #Marketing #Storytelling #PersonalBrand #AudienceGrowth #Analytics #LinkedIn #Community #FutureOfWork
+
+---
+
+The people who understand distribution tend to sell a course about it. I get why.
+
+It's the easiest money in the world, and the advice is cheap to produce because the person giving it never has to prove it on someone else's account again.
+
+The part that bothers me is the wrapper. Everything useful in a growth course fits on one page, and the page is different for every account, which is why the course can't work. So the price is for the confidence, not the information.
+
+I've watched people pay four figures for a template that describes someone else's audience. Then they post it and it flops, and they blame themselves instead of the template. I did that too, twice.
+
+What moved the needle for me was boring and free. Post one thing, wait three days, look at the retention graph, change one variable, repeat. That's it. Nine months of that beat everything I ever paid for. Nobody can sell you your own audience. They can only rent you a guess.
+
+#AI #BuildInPublic #VibeCoding #tech #SocialMedia #ContentStrategy #Creator #Growth #Marketing #Storytelling #PersonalBrand #AudienceGrowth #Analytics #LinkedIn #Community #FutureOfWork
+
+---
+
+Nobody at my last job got fired by a robot. They just didn't get replaced.
+
+Two people left the team in a year, and the job posts for both roles went up as one post with a smaller budget. It got filled once. By someone junior.
+
+Three months later a third person quit and that role never went up at all. Nobody announced anything. The work got split between the people who stayed.
+
+I believe this version more than the layoff story. Not a wave of layoffs with a date on it, but a slow squeeze where the team shrinks and the output target doesn't. Attrition, a hiring freeze, a role that quietly stops existing. None of it is a headline.
+
+I care because of organising. You can't protest a job posting that was never written. There's no day to point at, so nothing ever happens, and the pattern keeps working. I'd rather have the headline.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #Recruiting #HumanResources #Layoffs #Workplace #Management #Leadership #Automation #Economy #CareerGrowth
+
+---
+
+A recruiter called me on a Thursday about a role I wanted. Then nothing for five weeks.
+
+Not a rejection, not a yes, just a calendar invite that never came and a number I stopped recognising when it lit up my phone. I followed up twice. Polite both times.
+
+Then the role got reposted. Same title, same description, same company, three days after my second follow up. That's the part that stuck with me.
+
+Ghosting is annoying. Reposting the same job while a candidate waits tells you exactly how the place handles people, and it isn't a scheduling problem. Somebody made a call about it.
+
+I don't think anyone is evil here. I think the process has no owner, so nobody feels responsible for the person on the other end. That's a leadership problem, not a personality one. It costs nothing to send a two line email. Companies spend thousands on employer branding and skip the free part.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #Recruiting #HumanResources #Layoffs #Workplace #Management #Leadership #Automation #Economy #CareerGrowth
+
+---
+
+Every few years a report says machines will take a fixed share of jobs by a round number year. Thirty percent by 2030 was the last one I read.
+
+I've read versions of that headline since I was a kid and the world kept hiring anyway, which doesn't mean the current version is wrong. It means the number isn't evidence.
+
+The mistake is treating the transition as free. Employment can stay flat and a lot of people can still get wrecked in the same decade, which is the part the forecasters skip because it doesn't fit in a chart. I've watched that happen twice.
+
+The people who get displaced are usually older, more specialised and closer to retirement than the average. Retraining sounds clean on paper. In practice it means a person of fifty starts as a junior somewhere, if anyone will take the application.
+
+So I don't argue about the percentage. I ask what happens to the specific person in the specific year. That question has an answer. The percentage doesn't.
+
+#AI #BuildInPublic #VibeCoding #tech #FutureOfWork #Hiring #Careers #Recruiting #HumanResources #Layoffs #Workplace #Management #Leadership #Automation #Economy #CareerGrowth
+
+---
+
+I spent six hours in a new game last week and I couldn't tell you one thing any character said. Not one line.
+
+The writing wasn't bad, which is the strange part. Every conversation landed inside the lines, and every character had a clear motivation, and I forgot all of them the second the dialogue box closed.
+
+Generative dialogue, deployed at scale. You can hear it in how even the texture is, every conversation the same length and the same temperature, no awkward aside that a writer would have fought to keep. I've written dialogue for a text adventure. Different scale, same problem.
+
+Characters live in the leftovers. The digression, the joke that doesn't serve the plot, the two words that tell you who this person is when nobody is watching. A model generates the average and the average is nobody.
+
+I don't blame the tool. It's fast and cheap and it works. I blame the motive. If the goal is fewer writers, you get fewer writers and a game that reads like it.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #GameDesign #NarrativeDesign #VoiceActing #IndieGame #FPS #Unity #Unreal #Steam #AAA #ArtDirection
+
+---
+
+There are two ways to use AI in a game studio and only one of them ends with a game I want to play. One buys you time. The other buys you headcount.
+
+The first kind shows up in things that were impossible last year: bigger worlds, more variation, systems that react to you without a writer scripting every branch. The second kind shows up in the credits.
+
+I've watched studios announce both in the same quarter. Studios keep the tool and cut the team, and then they wonder why the reviews mention that the world feels empty. It does. Because the world was built by a tool that learned from everything and a team that learned from each other, and only one of those was allowed to stay.
+
+My prediction is boring and falsifiable. Studios that use these tools to build what nobody could build before will win. Studios that use them to skip paying writers and artists will ship forgettable games that look expensive.
+
+I'd bet on the first group. I already pay for the games either way. I just remember the first kind longer.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #GameDesign #NarrativeDesign #VoiceActing #IndieGame #FPS #Unity #Unreal #Steam #AAA #ArtDirection
+
+---
+
+An artist I know has been at the same studio for nine years. His team is less than half the size it was two years ago.
+
+He told me the numbers over dinner the way you'd mention the weather, no anger in it at all, and that part bothered me more than the numbers did. The games still look good. That's what makes it work as a business decision.
+
+The output didn't fall. It went up, and the headcount behind it went down, and I can't pretend that's not the whole point.
+
+I'm building an FPS by myself with these tools. I'm the other half of that story. Every hour I save on a texture or a script is an hour a studio used to pay someone for. I don't get to feel neutral about this.
+
+Direction survives, not execution. Fewer people building the assets, more people deciding what the assets should be. That's a real job and it's a smaller number of jobs. Both of those things can be true.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #GameDesign #NarrativeDesign #VoiceActing #IndieGame #FPS #Unity #Unreal #Steam #AAA #ArtDirection
+
+---
+
+Half the games I loved as a teenager cannot legally be played today.
+
+Not because the discs rotted. Because the servers went dark, the store delisted them, and the licence I paid for turned out to be a long term rental with an expiry date nobody told me about.
+
+I lost access to three games that way in one year. One of them still has an active player wiki and no way to play it. That's absurd.
+
+The industry calls this preservation and treats it like a hobby for archivists. It isn't. It's the same argument as every other question about who owns what you bought. If a remaster can quietly delete a gender option and a set of armor variants, it can also delete the whole game.
+
+Both things already happened and both went through a meeting. I'd like to know what was said in the room. I don't have access to the room. I do have the receipt.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GamePreservation #GameDev #DigitalOwnership #Licensing #RetroGaming #PCGaming #Steam #VideoGames #ConsumerRights #GameDesign #Archiving
+
+---
+
+The most endorsed mod for the Oblivion remaster restores one dropdown. A volunteer did that in a week.
+
+The studio had the source, the budget and a decade of player feedback, and still shipped Body Type 1 and Body Type 2 instead. Then players noticed the female armor variants were gone too. Glass, Iron, Chainmail.
+
+Modders found that, not the press. Somebody opened the files, compared them to the 2006 release and wrote down what was missing, and the rest of us found out from a forum thread.
+
+That's the archive now. Volunteers with no contract and no obligation are doing the documentation that publishers won't fund, and it works because they care more than the people who own the thing.
+
+I don't want this to sound like a complaint about mods. It's the opposite. It's proof the audience is paying attention. The people who make the games should be embarrassed that the fix came from outside. I'd rather they were embarrassed than comfortable.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #Modding #Mods #Oblivion #Bethesda #ElderScrolls #GameDev #PCGaming #NexusMods #Remaster #GameDesign #VideoGames
+
+---
+
+I think changing a character people already love is the most expensive thing a studio can do. They do it anyway.
+
+Cortana changed again this year and the redesign is the same argument as last time. Wikipedia calls her Halo 4 look one of the most dramatic changes in the series.
+
+I watched fans build a replacement model to put the old one back. That's the tell. Nobody writes a long essay about a design they merely dislike. People open a modelling program.
+
+Studios misread it. I've watched this audience accept change constantly and pay for it, which is why the misreading stands out. What it won't accept is a change nobody can justify out loud.
+
+I'd test every redesign with one question. Say the reason in a sentence, without hedging. We changed a character people have loved for twenty years because the new version is more appealing to a focus group. If that sounds insane to say, it's insane to ship.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #Halo #Cortana #CharacterDesign #GameDev #GameDesign #VideoGames #Xbox #Remake #Storytelling #PCGaming #GamingCommunity
+
+---
+
+A study went around last month about AI spotting lung disease early. I read the methods before the abstract.
+
+Thirty three patients. That's the whole cohort, and the headline finding was a 0.3 percent change in ground glass opacity, which is about the difference between breathing in and breathing out. You can't build a diagnostic on that.
+
+On a sample that small, any model will find something. Give a machine learning pipeline thirty three rows and a dozen variables and it will produce a p-value with total confidence. That's not a signal. That's a fitted curve.
+
+I'm not against AI in medicine. I'm against a title that implies a test is coming when the data can't carry it. The paper was honest. Somebody else wrote the headline.
+
+So my rule is boring and it works. Find the N. Say it out loud. Then read the claim again. Most of them shrink when you do.
+
+#AI #BuildInPublic #VibeCoding #tech #Research #Science #DataScience #Statistics #ScientificMethod #MachineLearning #Medicine #Health #PeerReview #STEM #Biology #DataLiteracy
+
+---
+
+A wearable claimed it catches an infection before you feel sick. Fifty people, two weeks.
+
+Three of them got infected, and the model caught two, and that got written up as 67 percent sensitivity. Sixty seven percent of three.
+
+I can hear how that reads. It sounds like a result and it's arithmetic performed on a coin flip, twice, with the coin deciding the conclusion. One different outcome and the number drops by a third.
+
+The researchers knew all of this. The press release didn't mention the three, because the press release had a number in it and the number was good.
+
+I'm not against the device. A wearable that notices illness early is the kind of thing I want to exist, and I've written about them before with some enthusiasm. Wanting something to be true is the reason to check the N first. Excitement is the worst time to read a methods section. I've learned that the slow way.
+
+#AI #BuildInPublic #VibeCoding #tech #Research #Science #DataScience #Statistics #ScientificMethod #MachineLearning #Medicine #Health #PeerReview #STEM #Biology #DataLiteracy
+
+---
+
+A paper said the gut microbiome predicts Parkinson's years before symptoms. The correlation is real. The causation is unknown.
+
+That's the sentence the abstract needed and the title skipped. Diet moves the microbiome, and so do medication, sleep, exercise and stress, and the study controlled for none of them.
+
+So the finding is a fingerprint of everything about the person, not one disease. I'd still fund the follow up. The direction is worth chasing.
+
+What I won't do is repeat the headline for ten years. A predictive test that doesn't control for breakfast is not a predictive test yet. Someday it will be.
+
+I've said this before and I'll keep saying it. Scepticism isn't the opposite of hope. It's the thing that stops hope from getting spent on a result that can't hold. I want these papers to be right. Checking them is how I find out. Bad method hides bad results for years.
+
+#AI #BuildInPublic #VibeCoding #tech #Research #Science #DataScience #Statistics #ScientificMethod #MachineLearning #Medicine #Health #PeerReview #STEM #Biology #DataLiteracy
+
+---
+
+JWST pulls in about 235 gigabytes of raw data every day. There are maybe a few thousand professional astronomers on the planet.
+
+I did the math and it's worse than the problem looks. The instrument works. The instrument was never the bottleneck.
+
+People are, and there aren't enough of them, and the backlog grows whether or not anyone looks at it. Nothing gets thrown away. Somewhere in that pile is the result somebody will win a prize for in 2040.
+
+I've watched this pattern in medicine and in gaming and it's identical every time. We build machines that produce more data than the people who understand the data can read. Then we act surprised.
+
+AI is the only thing that makes the arithmetic work. Not because it's smarter than an astronomer. Because it never gets tired of looking at the boring half. I still need someone who knows which half is boring. That's the whole gap.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Astronomy #JWST #NASA #Astrophysics #Science #Physics #DataScience #MachineLearning #Research #Telescope #Cosmology
+
+---
+
+Superconductivity at ambient pressure now happens at 151 Kelvin. That's about minus 122 Celsius.
+
+I want to be careful about the number, because the headline read like a breakthrough and it's a record instead. Room temperature is roughly 293 Kelvin.
+
+We're roughly half way there, measured in Kelvin, which sounds great until you remember that the last twenty Kelvin took twenty years. Progress on this runs in steps, not a curve. That part never makes the press release.
+
+The pressure is the interesting part. The old records needed a diamond anvil and a sample the size of a grain of sand, which is a lab trick rather than a material. Doing it at ambient pressure is the difference between a paper and a product.
+
+I'm hopeful. I'm not calling it a revolution. It's a step, and I've seen steps turn into transmission lines before. That took forty years. I'd rather be the person who said forty.
+
+#AI #BuildInPublic #VibeCoding #tech #Physics #Superconductivity #MaterialsScience #Science #CondensedMatter #Research #Engineering #QuantumPhysics #Energy #STEM #DeepTech #Lab
+
+---
+
+Dark energy appears to have changed over the life of the universe. That shouldn't be possible at all.
+
+If it changed once it can change again, and the way the universe ends depends on which direction it's heading. That's the part that keeps me up.
+
+I'm not a physicist and I want to be clear about that. What I can do is read the paper and notice how careful the authors are being with the word changing.
+
+They measured it against the biggest surveys we have. The result is a tension, not a proof, and the tension is several sigma deep, which is why it survived review. I still think it might be an instrument problem.
+
+The honest version is that we don't know, and the dishonest version sells books. I'll take the first one. Boring uncertainty beats an exciting answer that gets walked back in five years. That's happened to me before.
+
+#AI #BuildInPublic #VibeCoding #tech #Physics #Cosmology #DarkEnergy #Space #Astronomy #Science #Research #Astrophysics #QuantumPhysics #Universe #STEM #DeepTech
+
+---
+
+Nobody takes a photo of a battery installation. Solar panels get the headlines.
+
+Batteries are the part that decides whether any of the rest of it works, because panels stop producing at sunset and turbines stop when the air settles. That's a physics problem, and no amount of capacity fixes it.
+
+I keep an eye on one line item in grid reports, and it's storage. Not generation. Storage.
+
+The reason it's boring is that it doesn't generate anything. It moves the afternoon into the evening. That's the entire product, and without it, the cheap power shows up at the wrong time and gets curtailed.
+
+I've stopped following solar efficiency records. The records I check now are dollars per kilowatt hour of storage and how many hours a site can hold. Those two numbers decide the transition. Panels were always going to get cheap. Storing the afternoon was the hard part. I check that number now instead of panel efficiency.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #BatteryTech #Grid #RenewableEnergy #Solar #Storage #Climate #Sustainability #CleanEnergy #Engineering #Infrastructure #FutureOfEnergy
+
+---
+
+More than thirty private fusion companies are running right now. Thirty of them.
+
+They're not chasing one design either. Tokamaks, stellarators and laser inertial confinement are three completely different bets on how to hold a star in a box.
+
+I find that more convincing than any single company's timeline. One approach has to work and none of them knows which, so the field is a portfolio.
+
+The failure mode I watch for is everybody copying the same design because it photographs well. That's ten years of nothing. Different bets improve the odds.
+
+I also notice where the money goes. It goes into magnets, materials and control software, not into the publicity. The boring spending is the signal. I'd rather read a magnet spec than a press release. One of these teams is going to be right. I've no idea which, and neither does anyone else. That's the whole argument for the portfolio.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #FusionEnergy #Nuclear #Physics #Engineering #CleanEnergy #DeepTech #Science #Research #Innovation #FutureOfEnergy #Sustainability
+
+---
+
+Gas used to cost less than bottled water where I grew up. That world is ending inside my lifetime.
+
+There are about forty to fifty years of oil left at current consumption rates, which sounds like a long time until you notice that the infrastructure took a century to build. Replacing it doesn't get a century.
+
+This isn't a moral argument. I think it's arithmetic, and arithmetic doesn't care about anyone's politics. Every assumption about cheap energy is priced into everything.
+
+Food, freight, housing, the cost of a haircut. You can watch that slowly get repriced and it's already happening in insurance.
+
+I'm not predicting a collapse. I'm saying the timeline is shorter than the planning horizon of anyone making the decisions. That gap is the whole problem. The people who will live through it aren't in the room. I've been in enough rooms to know how that ends. That's where my head goes at 3am.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #Climate #FossilFuels #Economy #Infrastructure #Oil #Sustainability #FutureOfEnergy #EnergyTransition #Markets #ClimateChange #Policy
+
+---
+
+We treat neurological disease by numbing it and calling that medicine. It isn't.
+
+A cure removes the disease and we don't have one for Parkinson's or for tardive dyskinesia. A fix is different and nobody talks about it. A fix stops the disease from ruining your afternoon.
+
+Tremor is a signal. It has a frequency you can measure, and if you can measure it you can push back against it in real time.
+
+That's the wearable I keep describing. A band that reads your tremor and returns a counter vibration, tuned to you, because no two tremor signatures are the same. Not a generic device. A device that learns you.
+
+I give it ten years. The hardware exists, the sensors exist and the models that personalise it exist. What's missing is somebody deciding to build it. I'd build it if I could do the biology. I can't, so I keep writing about it.
+
+#AI #BuildInPublic #VibeCoding #tech #Health #Neuroscience #Medicine #Parkinsons #Wearables #MedicalDevices #Bioengineering #Research #Biology #PublicHealth #Science #Engineering
+
+---
+
+Every tremor drug I've read about works by slowing something down in the brain. That's the design.
+
+You trade the shake for drowsiness, or dizziness, or a flat feeling that people describe as losing a bit of themselves. Nobody puts that part in the advert.
+
+I'm not against medication. For a lot of people it's the difference between working and not. What I object to is that the industry stopped looking.
+
+A pill is a blunt instrument because it goes everywhere. A tremor in your left hand doesn't need a molecule in your liver. It's an engineering problem.
+
+Wearables can be targeted and they can learn. I think we gave up on them too early because they don't fit neatly into a prescription model that pays for itself. Nobody can bill for a band. I've made that complaint to people who work in the field. That's a business problem pretending to be a science problem.
+
+#AI #BuildInPublic #VibeCoding #tech #Health #Neuroscience #Medicine #Parkinsons #Wearables #MedicalDevices #Bioengineering #Research #Biology #PublicHealth #Science #Engineering
+
+---
+
+Tardive dyskinesia is what happens when the medication that helps you starts moving your face for you. It's a side effect with no good answer.
+
+People live with it for years because the alternative is worse. The fix people get told about is another drug.
+
+I want a band on the finger that senses the movement before it lands and cancels it. That's not science fiction. Accelerometers cost a few dollars, the models are small enough to run on a watch, and the control loop is a solved problem in robotics. I think what's missing is a product decision.
+
+I keep coming back to the signature part. Every tremor is a signature and the whole device only works if it learns yours. That's why one firmware update can blunt the advantage of a competitor. You can't copy a model that was trained on someone else's hand.
+
+I put this in the next ten years. Not as a cure. As a fix, which is the word I keep using because the difference matters. Cures are what we promise. Fixes are what we could ship.
+
+#AI #BuildInPublic #VibeCoding #tech #Health #Neuroscience #Medicine #Parkinsons #Wearables #MedicalDevices #Bioengineering #Research #Biology #PublicHealth #Science #Engineering

@@ -1,0 +1,426 @@
+# === LinkedIn Hashtag Library ===
+# Organized by category.  Copy the ones you want into each post.
+# Lines starting with # are ignored.
+# 
+# DEFAULT SET (use these on every post unless you specify otherwise):
+# #AI #VibeCoding #BuildInPublic #freebuff #cline #ollama #codex #gemini #claude #openclaw #hermes #coding #developer #solobuilder #indiehacker #startup #tech #innovation #opensource
+
+# ============================================================
+# CORE BRAND (always include)
+# ============================================================
+AI
+VibeCoding
+BuildInPublic
+freebuff
+coding
+developer
+solobuilder
+indiehacker
+tech
+innovation
+
+# ============================================================
+# TOOLS & MODELS
+# ============================================================
+cline
+ollama
+codex
+gemini
+claude
+deepseek
+qwen
+openclaw
+hermes
+geminicli
+codexcli
+groq
+llama
+mistral
+nvidia
+nim
+chatgpt
+langchain
+
+# ============================================================
+# AI / TECH BROAD
+# ============================================================
+ArtificialIntelligence
+SoftwareDevelopment
+OpenSource
+opensource
+buildinpublic
+aiagents
+agenticai
+automation
+programming
+softwareengineering
+productdevelopment
+futureofwork
+futureofcoding
+devops
+shipit
+nocode
+lowcode
+cli
+python
+generativeai
+machinelearning
+largelanguagemodels
+llm
+llms
+promptengineering
+codingwithai
+openweights
+googleai
+anthropic
+google
+opencode
+vibecode
+
+# ============================================================
+# ENTREPRENEURSHIP & BUILDING
+# ============================================================
+entrepreneur
+startup
+startupfounder
+learninginpublic
+buildandlearn
+makers
+productdevelopment
+productthinking
+digitaltransformation
+digitalnomad
+startups
+entrepreneurship
+
+# ============================================================
+# SCIENCE & PHYSICS (new)
+# ============================================================
+Physics
+QuantumComputing
+QuantumPhysics
+QuantumMechanics
+Science
+ScientificResearch
+PhysicsNews
+Astrophysics
+ParticlePhysics
+TheoreticalPhysics
+QuantumTech
+QuantumInformation
+QuantumSupremacy
+ScienceCommunication
+STEM
+Research
+ScientificDiscovery
+PhysicsLover
+SpaceExploration
+Cosmology
+NuclearPhysics
+CondensedMatter
+Photonics
+Superconductivity
+QuantumEntanglement
+QuantumAnnealing
+QuantumSensors
+QuantumCryptography
+QuantumNetworks
+FutureOfScience
+ScienceAndTech
+PhysicsAndTech
+EnergyScience
+FusionEnergy
+RenewableEnergy
+CleanEnergy
+ClimateScience
+Sustainability
+
+# ============================================================
+# GAMING & GAME DEV
+# ============================================================
+GameDev
+GameDevelopment
+IndieGame
+IndieDev
+Gaming
+GameDesign
+AIinGaming
+ProceduralGeneration
+UnrealEngine
+Unity
+Godot
+FPS
+GameDevCommunity
+SoloGameDev
+AIGameDev
+
+# ============================================================
+# ENERGY & CLIMATE
+# ============================================================
+RenewableEnergy
+CleanEnergy
+SolarEnergy
+WindEnergy
+HydroEnergy
+EnergyIndependence
+FossilFuels
+ClimateChange
+ClimateAction
+Sustainability
+GreenEnergy
+EnergyTransition
+FutureOfEnergy
+NetZero
+Decarbonization
+
+# ============================================================
+# CHEMISTRY (new)
+# ============================================================
+Chemistry
+ComputationalChemistry
+MaterialsScience
+DrugDiscovery
+Pharmaceuticals
+ProteinFolding
+ChemicalEngineering
+Catalysis
+BatteryTech
+MolecularModeling
+MedicinalChemistry
+Biochemistry
+Nanotechnology
+ChemicalResearch
+
+# ============================================================
+# ASTRONOMY & SPACE (new)
+# ============================================================
+Astronomy
+SpaceExploration
+Cosmos
+Exoplanets
+Telescope
+JamesWebb
+SETI
+ObservableUniverse
+Astrobiology
+SpaceScience
+Galaxies
+Stars
+PlanetaryScience
+AstroPhysics
+
+# ============================================================
+# METEOROLOGY & CLIMATE (new)
+# ============================================================
+Meteorology
+WeatherPrediction
+ClimateModeling
+ClimateScience
+AtmosphericScience
+HurricanePrediction
+ExtremeWeather
+EarthScience
+EnvironmentalScience
+ClimateData
+WeatherTech
+
+# ============================================================
+# ENGINEERING (new)
+# ============================================================
+Engineering
+GenerativeDesign
+AerospaceEngineering
+CivilEngineering
+MechanicalEngineering
+StructuralEngineering
+Manufacturing
+SupplyChain
+Infrastructure
+Robotics
+RoboticsEngineering
+IndustrialDesign
+
+# ============================================================
+# BIOPHYSICS (new)
+# ============================================================
+Biophysics
+MolecularBiology
+CryoEM
+ProteinImaging
+Neuroscience
+BrainResearch
+Bioengineering
+ComputationalBiology
+SystemsBiology
+StructuralBiology
+Genomics
+Bioinformatics
+
+# ============================================================
+# ROBOT WARS & DEFENSE (new)
+# ============================================================
+AutonomousWeapons
+DroneSwarm
+MilitaryAI
+DefenseTechnology
+FutureOfWarfare
+AIRegulation
+WarEthics
+NationalSecurity
+CyberWarfare
+Defense
+
+# ============================================================
+# WORKFORCE & SOCIETY
+# ============================================================
+FutureOfWork
+Automation
+AIReplacingJobs
+WorkforceTransformation
+GigEconomy
+RemoteWork
+DigitalWorkforce
+LaborMarket
+EconomicShift
+UniversalBasicIncome
+Reskilling
+FutureOfJobs
+TechUnemployment
+
+# ============================================================
+# SOCIAL MEDIA & MARKETING (new - trending July 2026)
+# ============================================================
+SocialMedia
+SocialMediaManager
+SocialMediaStrategy
+SocialMediaMarketing
+SocialMediaTips
+DigitalMarketing
+ContentMarketing
+ContentStrategy
+ContentCreation
+ContentCreator
+Marketing
+MarketingStrategy
+Branding
+BrandBuilding
+BrandStrategy
+PersonalBranding
+CreativeStrategy
+CreativeDirector
+CreativeEconomy
+InfluencerMarketing
+InfluencerStrategy
+AudienceGrowth
+Engagement
+CommunityManagement
+ViralContent
+ViralMarketing
+OrganicGrowth
+GrowthHacking
+GrowthStrategy
+Algorithm
+PlatformStrategy
+ROI
+MarketingTips
+Copywriting
+Copywriter
+Storytelling
+VisualStorytelling
+Campaign
+CampaignStrategy
+Analytics
+SocialListening
+Trending
+
+# ============================================================
+# CAREER & JOB TRUTHS (new)
+# ============================================================
+CareerAdvice
+CareerGrowth
+CareerDevelopment
+JobSearch
+JobMarket
+JobHunt
+Hiring
+HumanResources
+HR
+Recruitment
+Recruiting
+Recruiter
+Resume
+ResumeTips
+InterviewTips
+JobInterview
+CareerChange
+CareerPivot
+SideHustle
+WorkLife
+WorkCulture
+WorkLifeBalance
+CorporateLife
+CorporateCulture
+TeamWork
+TeamManagement
+Leadership
+Management
+Manager
+RemoteWork
+HybridWork
+RTO
+ReturnToOffice
+EmployeeExperience
+EmployeeWellbeing
+WorkTrends
+FutureOfWork
+ProfessionalGrowth
+
+# ============================================================
+# TRENDING BROAD HASHTAGS (use on most posts)
+# ============================================================
+Innovation
+Technology
+Creativity
+Entrepreneurship
+
+# ============================================================
+# FINANCE & BUSINESS (supplemental)
+# ============================================================
+Finance
+FinTech
+Investing
+WealthManagement
+Business
+Entrepreneur
+Startup
+StartupLife
+SmallBusiness
+BusinessGrowth
+B2B
+B2C
+Revenue
+Monetization
+
+# ============================================================
+# SKILLS & PROFESSIONAL
+# ============================================================
+SkillDevelopment
+Skills
+ProfessionalDevelopment
+ContinuousLearning
+LifelongLearning
+Mentorship
+Coaching
+Consulting
+Freelance
+Freelancer
+Freelancing
+AgencyLife
+AgencyOwner
+VideoEditing
+PhotoEditing
+GraphicDesign
+CapCut
+Photoshop
+ContentTools
+ContentProduction

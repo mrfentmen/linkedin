@@ -1,0 +1,155 @@
+Fully autonomous drones are already on the battlefield, and the argument about whether to allow them is still in a committee. That's the gap.
+
+I keep watching this framed as a future problem. It isn't. It's a procurement problem. The systems exist, they're cheap, and cheap means they get used, because the alternative is sending a person. They cost a few thousand dollars each.
+
+That's the actual driver and nobody says it out loud. A drone costs less than a soldier and it doesn't come home in a box, so the moral pressure runs toward using it. Not because anyone likes the idea. Because the alternative got more expensive.
+
+So the line I want is about who decides. Not whether a drone can identify a target. Whether a human signed off, and whether that signature sits in a file somebody can read. I don't think a treaty gets us there. I think a court gets us there, on the day it asks for the file and there isn't one.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #DroneSwarm #AutonomousWeapons #Defense #WarEthics #NationalSecurity #Robotics #Geopolitics #Policy #FutureOfWarfare #Ethics #Technology
+
+---
+
+The scary version of autonomous weapons isn't a robot deciding to kill everyone. It's a system that works as designed and someone dies anyway.
+
+I believe that more than any of the loud versions. A boring failure is easier to ship, because nobody in the chain sees a red flag. A model reports a target with confidence and everybody downstream reads the number as permission.
+
+That's how a normalised bad outcome happens. Not one decision. A thousand small ones, each defensible on its own, each made by somebody who never sees the person at the other end.
+
+I've written about this before and I'll keep writing about it. The danger isn't the hardware. It's the decision window, measured in seconds, because the only things fast enough to act have no accountability. I don't know how to fix that. Nobody does. Pretending it's science fiction is the current fix and it isn't working.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #DroneSwarm #AutonomousWeapons #Defense #WarEthics #NationalSecurity #Robotics #Geopolitics #Policy #FutureOfWarfare #Ethics #Technology
+
+---
+
+Every autonomous weapons debate ends the same way. Someone says the technology is coming and can't be stopped. I've started asking a different question.
+
+Which decision is a human still making, and is it on the record. That's it. A targeting system that suggests and a human who approves is a different machine from one that approves itself, and the difference isn't the model. It's the paperwork.
+
+I don't think the treaty track produces a result. Plenty of countries have real programmes and none of them wants to go first. So the practical lever isn't a ban. It's a rule about records, written into the procurement contract.
+
+That's the boring version. Every contract can carry one line about what gets logged and who signs it. I'd take a boring rule over a noble statement, because the contract gets enforced and the statement gets filed. A contract is the only document both sides have to live with.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #DroneSwarm #AutonomousWeapons #Defense #WarEthics #NationalSecurity #Robotics #Geopolitics #Policy #FutureOfWarfare #Ethics #Technology
+
+---
+
+A legal analysis published in July lists four reasons accountability gets hard when a weapon acts on its own. The interesting one is that the law was built for a person who pulls a trigger.
+
+I'm not a lawyer and I don't play one. I can see the gap between two facts. The systems are deployed. The rules assume a human in the loop at the moment of decision.
+
+So when a swarm runs and something goes wrong, the questions are who ordered it, who built it, and who approved the parameters. Three different organisations. Three different sets of records. None of them kept a copy of the same thing. That's the whole problem.
+
+This is the boring version of the killer robot story. Not a machine deciding to start a war. A pile of paperwork nobody can assemble in the right order on the day it matters. I'd rather fund the paperwork than the next headline. Paperwork is cheaper and it's the only part that changes behaviour.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #AutonomousWeapons #Law #Defense #WarEthics #NationalSecurity #Policy #Geopolitics #Ethics #FutureOfWarfare #HumanRights #Technology
+
+---
+
+When a system makes a decision at machine speed, the person who gets hurt has nobody to sue. That's the part of this debate that never gets airtime.
+
+Insurance is the missing piece. A weapon that acts on its own has no insurer, no premium and no claims history, and those are how a society works out what a dangerous thing costs. There's no table for it. Nobody wants to be the first underwriter.
+
+I don't think that's a moral point. It's a market point. Once there's an actuarial table for autonomous weapon mishaps, somebody prices it, and pricing moves procurement faster than a resolution ever does, because a premium is a number a programme manager has to defend. That's the pressure point. Nobody is assembling that table yet.
+
+I'd watch the insurer here, not the treaty. Write a thousand claims and the table appears. Slow, ugly, and the only mechanism I've seen change what gets fielded. I'd rather build the table than write the statement.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #AutonomousWeapons #Insurance #Law #Defense #Policy #Geopolitics #Ethics #FutureOfWarfare #NationalSecurity #RiskManagement #Technology
+
+---
+
+There's a version of the autonomous weapons argument I can't get behind, and it's the one where people describe the robot as the murderer. Hardware doesn't murder. Somebody chose the target class and somebody signed the parameters.
+
+I keep making the same point because it keeps getting skipped. The accountability question isn't about what the machine understood. It's about which human accepted the risk of being wrong, and whether that acceptance is written down anywhere.
+
+I've watched organisations solve this in other domains. Aviation has an accident chain and a named investigator. Medicine has a morbidity review. Both assume the failure comes from a system and both still name a person who owns the file.
+
+That's the model I'd copy. Not a ban, not a treaty, and not a promise. A named owner and a file, per incident, in a place somebody outside the programme can read.
+
+I don't think it's a complete answer. I do think it's the part that's actually achievable this year.
+
+#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #AutonomousWeapons #Law #Defense #Policy #Geopolitics #Ethics #FutureOfWarfare #NationalSecurity #Accountability #Governance #Technology
+
+---
+
+AI regulation is deadlocked. The reporting on it is blunt about why. The White House is against new safety law, Congress is split, and the bills pile up without a vote.
+
+I've read three of the proposals and the disagreement isn't about whether the technology is risky. It's about who writes the rule. Federal preemption, state law, and a repeal bill aimed at the executive order all sit in the same queue.
+
+So the honest summary is that nothing passes soon, and the pressure keeps building anyway. That's not a stable situation. It's a held breath.
+
+I don't think a deadlock is neutral. A vacuum gets filled, and in this case it gets filled by whoever ships fastest, which is the group with the least interest in a rule.
+
+I'd rather have a bad federal floor than a patchwork and a pause. I don't love that answer. I do think it's the one that ages better than another year of nothing.
+
+#AI #BuildInPublic #VibeCoding #tech #AIRegulation #Policy #Governance #Technology #Government #Law #Technology #Ethics #Innovation #PublicPolicy #FutureOfWork #DeepTech
+
+---
+
+The AI regulation fight isn't really about safety. It's about which layer of government gets to write the rule, and both sides know it. One camp wants a federal framework that stops states from passing their own laws. The other wants the opposite, and there's a bill drafted to repeal the executive order so states can act alone.
+
+I've watched this exact argument in privacy and in crypto. In both cases the industry said it wanted clarity, and in both cases what it meant was that it wanted one door to knock on instead of fifty. Fifty is a lot.
+
+That's a legitimate interest. Fifty different compliance regimes is a nightmare for a small company and a moat for a big one, which is the part nobody says. Nobody says it.
+
+So the question I'd want answered is who this helps. If the answer is the company with the biggest legal department, the framework isn't about safety.
+
+I don't know which side wins. I do know that inaction has a winner too, and it isn't the person worried about the technology. One page of real rules inside fifty pages of definitions, and it still might not get a vote. It's a start.
+
+#AI #BuildInPublic #VibeCoding #tech #AIRegulation #Policy #Governance #Technology #Government #Law #Privacy #Ethics #Innovation #PublicPolicy #Compliance #DeepTech
+
+---
+
+A bipartisan bill from September would have the National Security Agency write a security plan for advanced models. That's the shape of what's passing instead of a safety law.
+
+I find that telling. The one area with movement is the one framed as national security, because that's the frame that gets a vote. Safety language dies. Security language moves.
+
+I don't think the distinction is fake. A model that can find software vulnerabilities is a genuine security question. But the same capability is the thing people are worried about, and the only version that gets funded is the one about somebody else's country.
+
+So we get capability rules written by the agency that wants the capability, which is exactly the structure I'd worry about if I cared about oversight.
+
+I'd take the bill. I'd also notice what it isn't. One clause inside fifty pages of definitions. It still counts for something.
+
+#AI #BuildInPublic #VibeCoding #tech #AIRegulation #NationalSecurity #Policy #Governance #Technology #CyberSecurity #Law #Ethics #Government #CyberWarfare #DeepTech #PublicPolicy
+
+---
+
+AI companies spent a fortnight warning that advanced models could escape human control. The same companies are shipping those models and selling the compute behind them.
+
+I don't think that's hypocrisy in the simple sense. It's worse and more ordinary. A lab that believes it's building something dangerous also believes the responsible move is to build it carefully, in house, rather than let somebody less careful do it first.
+
+That logic is airtight. It's also a licence to keep going. I've seen the same structure in weapons programmes and in finance, where the risk argument becomes the argument for the budget. That's the structure.
+
+So I read the warnings as a real signal about their own uncertainty. The people with the most information are the least sure, and that's worth taking seriously.
+
+What I won't do is treat the warning as a licence. A company that says the thing is dangerous and keeps building has told you which of those two beliefs it acts on. I'd rather judge the actions.
+
+#AI #BuildInPublic #VibeCoding #tech #AISafety #Ethics #Governance #Technology #MachineLearning #DeepTech #Policy #Research #Risk #Innovation #FutureOfWork #ArtificialIntelligence
+
+---
+
+Hollywood fights AI in public and builds it into movies in private. That's not my read, that's how the trade press describes it now. The hiring tells the story.
+
+I've been saying for two years that film adopts faster than music because the economics are more obvious. Concept art, storyboards, rough cuts, all of it cheaper. The studios worked out the same thing and stopped saying it out loud.
+
+What I notice is where the hiring sits. Not the marquee roles. Pre production, visual development, post, the layers audiences never see. That's the sensible place to start and it's also the place with the least visibility.
+
+So the public fight is about credit and consent, which is a real fight, and the private adoption is about cost, which is the fight that decides. That's the weird part.
+
+I think audiences mostly do not care how it was made. They care whether it's good. Which means the studios are right about the money and wrong to be quiet about it.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #AIinFilm #Media #Production #Storytelling #Entertainment #VisualEffects #CreativeDirector #FutureOfWork #Technology #Innovation
+
+---
+
+The interesting thing about Hollywood and AI isn't whether it gets used. It's who gets to control it. The studios are moving from resistance to ownership.
+
+I called this two years ago in a different form. I said the adoption would be driven by money and not by taste, and that the audience would judge the output rather than the method. Both seem to be running on schedule.
+
+What changed is the union language. Instead of refusing the tool, the contracts are moving toward consent, notice and compensation, which is the version that survives contact with a release schedule.
+
+I think that's the right fight and a much harder one. Refusing a tool is a slogan. Pricing the tool is a negotiation, and the negotiation is where the jobs actually get protected.
+
+I don't know how it lands. I do know a studio that says it won't use AI and then hires for it has already answered the question.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #Media #Storytelling #Entertainment #SAGAFTRA #Production #CreativeEconomy #FutureOfWork #Negotiation #Technology #Innovation
