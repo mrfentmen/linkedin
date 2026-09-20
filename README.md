@@ -104,6 +104,31 @@ visible without reading logs.
   python3 -m pytest tests -q
   ```
 
+## Checking what LinkedIn actually has scheduled
+
+`content/posts_sent.txt` records what we *asked* LinkedIn to schedule. It can
+drift from reality: a run that fails part way, or gets killed, can leave a slot
+recorded as taken when nothing was scheduled into it.
+
+`scripts/check_scheduled.py` asks LinkedIn instead. It reads the `Scheduled (N)`
+tab label, opens the list, walks it and diffs every entry against the archive.
+
+```bash
+python3 scripts/check_scheduled.py
+python3 scripts/check_scheduled.py --headless
+```
+
+It never posts, never schedules and never presses Confirm. The only two things
+it clicks are the schedule clock and the `Scheduled (N)` tab, both of which just
+navigate within a view. Evidence lands in `logs/`: the list text and a
+screenshot.
+
+One thing to know about how it reads the list: a long list is virtualised, so
+the DOM only holds the rows near the viewport. Reading it once gives a window,
+not the list. The script scrolls the whole thing and unions what it sees at
+every step, which is why it reports "distinct entries collected while scrolling"
+rather than "lines on the page".
+
 ## What is deliberately not here
 
 - No passwords, tokens, API keys or cookies. Empty by construction, not by
