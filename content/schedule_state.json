@@ -11555,6 +11555,33 @@
       "updated_at": "2026-09-20T23:22:08+00:00",
       "attempts": 2,
       "finalized": true
+    },
+    "82e50746e26d9966aa287d93067eb9cfa65b1eb4e0459e9eaedd3e78e5776aa1": {
+      "record_id": "82e50746e26d9966aa287d93067eb9cfa65b1eb4e0459e9eaedd3e78e5776aa1",
+      "status": "failed",
+      "content": "A manager told me not now on a project I cared about and it was the right call for reasons he never explained. I spent a month annoyed about the wrong thing. One month.\n\nWhat I assumed was that he didn't rate the work. What was actually happening was that the team was about to lose two people and he couldn't say so. The project was fine. The timing wasn't.\n\nThe part I got wrong was the silence. I treated not now as a verdict on the idea. It was a statement about capacity. I stopped bringing him things for a while and that cost us both.\n\nWhat I do differently now is ask two questions when I hear not now. Is this a no, or is it a later. And what would have to be true for it to move up. Those two questions have changed about half of those conversations, because most not now answers are about something other than the idea.\n\nAsk what would have to change. If nobody can answer, that's also an answer.\n\n#AI #BuildInPublic #VibeCoding #tech #Management #Career #Workplace #Communication #BuildInPublic #TechNews #Teams #Leadership #Advice #Growth #Product #SoftwareEngineering",
+      "schedule_time": "2026-09-20 18:45",
+      "error": "",
+      "updated_at": "2026-09-20T23:38:58+00:00",
+      "attempts": 2
+    },
+    "fb69efdeff69a6b9562693668b3da3636e63ec0445495259ddf028702f2f6855": {
+      "record_id": "fb69efdeff69a6b9562693668b3da3636e63ec0445495259ddf028702f2f6855",
+      "status": "failed",
+      "content": "I worked with a person who documented nothing for two years and I didn't understand the cost until he left, which turned out to be about four weeks of other people's time.\n\nHe was fast. Genuinely fast. His code worked and his reviews were good and he shipped more than anyone. Every one of those things was true right up until his accounts were deactivated. Then the questions started.\n\nWhy does this job run at three in the morning. What happens if this queue backs up. Which of these two settings is the real one. Nobody could answer, because the answers lived in his head and he had no reason to write them down. I'm not angry about it. The incentive structure at most companies rewards shipped features and ignores what happens after somebody leaves.\n\nHe optimised for the scoreboard he was given. I don't blame him for that. The fix isn't a policy. I ask one question in every review now. If this person is gone next month, what breaks. Then write down the answer. Twenty minutes. It outlives the sprint.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #SoftwareEngineering #Teams #Engineering #BuildInPublic #TechNews #KnowledgeTransfer #Developer #Career #Craft #Maintenance #Advice",
+      "schedule_time": "2026-09-20 19:00",
+      "error": "",
+      "updated_at": "2026-09-20T23:40:17+00:00",
+      "attempts": 2
+    },
+    "789063f6757a8567ea3b8403b680a4f806fd728062608c0693fd7508ac25bb37": {
+      "record_id": "789063f6757a8567ea3b8403b680a4f806fd728062608c0693fd7508ac25bb37",
+      "status": "failed",
+      "content": "Everybody asks which model to use. I've started answering with a different question. What happens when it's wrong.\n\nI've built enough with these tools to know the capability isn't the deciding factor. My last three projects all worked in the demo and the difference between them was what they did on a bad day. One failed in the open. One failed in silence. One failed and told me.\n\nThe one that told me is still running. The one that failed in silence is the one I had to kill, because a system that's wrong without a signal is worse than a system that's down.\n\nSo when somebody asks me for a recommendation I ask about their tolerance instead. What's the cost of a wrong answer, and is there a human in the loop when the cost is high.\n\nI've never once been asked that question back. Not one time in two years. It's the question that decides the answer.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #Engineering #Reliability #SoftwareEngineering #Developer #MachineLearning #Architecture #BuildInPublic #TechNews #ProductDesign #Risk #Systems",
+      "schedule_time": "2026-09-21 08:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-20T23:41:14+00:00",
+      "attempts": 2
     }
   }
 }
