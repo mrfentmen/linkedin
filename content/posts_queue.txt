@@ -1,25 +1,3 @@
-I ran six side projects over two years and one of them worked. I want to write down what was different, because it wasn't the idea.
-
-Four of the six had a plan and a roadmap. Four failed. One of them had no roadmap at all and a single user, who was me, with a problem I had four times a week. It solved that and nothing else for the first year.
-
-Second difference was the finish. Five of them got to about eighty percent and stalled, because eighty percent is where the interesting problems are solved and the boring ones begin. That one got finished because it was small enough to finish in a weekend and then never grew.
-
-I stopped starting projects with ambition attached. If it needs a domain name and a landing page before it's useful, I've probably already lost.
-
-Six projects. One shipped. I used to be embarrassed by that ratio and now it's just a fact about how I work.
-
-#AI #BuildInPublic #VibeCoding #tech #SideProject #Startup #Developer #BuildInPublic #TechNews #IndieDev #Shipping #Engineering #Craft #Advice #Focus #Product
----
-I nearly quit a project twice in one month. Twice. Both times the thing that kept me in it was a person, not the work. I want to write about that, because the advice I'd been given was all about the work.
-
-The first time I was three weeks into a rewrite and the scope was half again what we'd estimated. What kept me in was a colleague who said he'd seen this exact shape before and that the middle was the bad part. The second time came after a bad review where a stakeholder said the design wasn't ambitious enough.
-
-What kept me in was a different person asking what would make it ambitious, out loud, in the room. He didn't defend my work and he didn't argue. He asked for a definition. Both times the help was small. Both times it came from somebody who wasn't trying to solve my problem.
-
-That's what I try to do now. Not general encouragement, which is nice and does nothing. One specific sentence that moves the stuck part. I name the shape when I can. It costs nothing and it's the whole difference.
-
-#AI #BuildInPublic #VibeCoding #tech #Teams #Mentorship #Career #SoftwareEngineering #BuildInPublic #TechNews #Engineering #Leadership #Communication #Workplace #Growth #Advice
----
 Somebody paid me for my writing for the first time this year and the number was small enough to print on a napkin. It changed how I write anyway.
 
 Two hundred dollars. A short piece about a tool I use. It took about four hours, so the hourly rate was poor. The thing I noticed was that I checked the facts four times, because somebody else was on the hook for them.
