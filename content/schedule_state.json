@@ -11243,9 +11243,8 @@
       "content": "I ran six side projects over two years and one of them worked. I want to write down what was different, because it wasn't the idea.\n\nFour of the six had a plan and a roadmap. Four failed. One of them had no roadmap at all and a single user, who was me, with a problem I had four times a week. It solved that and nothing else for the first year.\n\nSecond difference was the finish. Five of them got to about eighty percent and stalled, because eighty percent is where the interesting problems are solved and the boring ones begin. That one got finished because it was small enough to finish in a weekend and then never grew.\n\nI stopped starting projects with ambition attached. If it needs a domain name and a landing page before it's useful, I've probably already lost.\n\nSix projects. One shipped. I used to be embarrassed by that ratio and now it's just a fact about how I work.\n\n#AI #BuildInPublic #VibeCoding #tech #SideProject #Startup #Developer #BuildInPublic #TechNews #IndieDev #Shipping #Engineering #Craft #Advice #Focus #Product",
       "schedule_time": "2026-09-27 08:15",
       "error": "",
-      "updated_at": "2026-09-20T21:33:38+00:00",
-      "attempts": 2,
-      "finalized": true
+      "updated_at": "2026-09-20T20:45:43+00:00",
+      "attempts": 2
     },
     "b868c2e03e120a1f5151fabc3731ebf1aa1f45000e48d9100e3ccc8f696f562f": {
       "record_id": "b868c2e03e120a1f5151fabc3731ebf1aa1f45000e48d9100e3ccc8f696f562f",
@@ -11253,53 +11252,7 @@
       "content": "I nearly quit a project twice in one month. Twice. Both times the thing that kept me in it was a person, not the work. I want to write about that, because the advice I'd been given was all about the work.\n\nThe first time I was three weeks into a rewrite and the scope was half again what we'd estimated. What kept me in was a colleague who said he'd seen this exact shape before and that the middle was the bad part. The second time came after a bad review where a stakeholder said the design wasn't ambitious enough.\n\nWhat kept me in was a different person asking what would make it ambitious, out loud, in the room. He didn't defend my work and he didn't argue. He asked for a definition. Both times the help was small. Both times it came from somebody who wasn't trying to solve my problem.\n\nThat's what I try to do now. Not general encouragement, which is nice and does nothing. One specific sentence that moves the stuck part. I name the shape when I can. It costs nothing and it's the whole difference.\n\n#AI #BuildInPublic #VibeCoding #tech #Teams #Mentorship #Career #SoftwareEngineering #BuildInPublic #TechNews #Engineering #Leadership #Communication #Workplace #Growth #Advice",
       "schedule_time": "2026-09-27 08:30",
       "error": "",
-      "updated_at": "2026-09-20T21:33:38+00:00",
-      "attempts": 2,
-      "finalized": true
-    },
-    "d7a195c67ffa3d0d942309f82d8cdd03a5b9ab333752123e621646fdda665f14": {
-      "record_id": "d7a195c67ffa3d0d942309f82d8cdd03a5b9ab333752123e621646fdda665f14",
-      "status": "failed",
-      "content": "Somebody paid me for my writing for the first time this year and the number was small enough to print on a napkin. It changed how I write anyway.\n\nTwo hundred dollars. A short piece about a tool I use. It took about four hours, so the hourly rate was poor. The thing I noticed was that I checked the facts four times, because somebody else was on the hook for them.\n\nThat's the part I kept. When it's my feed, a soft claim gets a soft word and I move on. When it's somebody else's publication, every number gets a tab open next to it and a source I can name.\n\nI've kept the second habit and dropped the first one. It costs me about twenty extra minutes per post and it has cut how often I have to correct myself.\n\nFour hours, two hundred dollars, one better habit. Cheap lesson. I'd take that trade again, and I'd take it at half the price, since the habit is the thing I kept.\n\n#AI #BuildInPublic #VibeCoding #tech #Writing #Freelance #Money #Creator #BuildInPublic #TechNews #Career #FactChecking #Craft #Income #Advice #Learning",
-      "schedule_time": "2026-09-27 08:15",
-      "error": "",
-      "updated_at": "2026-09-20T21:34:37+00:00",
-      "attempts": 2
-    },
-    "c8a06ffc906d8bf72c0f181ce321c4b5dedc57a9399312708dd42001c82dac56": {
-      "record_id": "c8a06ffc906d8bf72c0f181ce321c4b5dedc57a9399312708dd42001c82dac56",
-      "status": "failed",
-      "content": "I run a small open weight model on my own laptop for private work and I'll tell you the trade honestly. I've been doing it for eight months.\n\nIt's slower. The context is smaller. The output is worse than the frontier options on anything hard, and I have to think about quantization and memory in a way I never do in the cloud.\n\nI still use it, because the data never leaves the machine and the cost doesn't move when usage does. For anything with a name in it, that trade is worth more to me than a benchmark point.\n\nThe part nobody mentions is the maintenance. A local setup is a pet. You update it, you debug it, you own every failure. That's real work and it lands on you at the worst time.\n\nSo my advice is to run both and be clear about which is which. Cloud for the hard problems, local for the private ones. And read the license before anything goes near a release.\n\n#AI #BuildInPublic #VibeCoding #tech #LocalLLM #OpenSource #AI #Privacy #MachineLearning #SelfHosted #Developer #LLM #DeepTech #Technology #TechNews #Security",
-      "schedule_time": "2026-09-27 08:30",
-      "error": "",
-      "updated_at": "2026-09-20T21:36:01+00:00",
-      "attempts": 2
-    },
-    "f9ae725b8c7c5e4f51c774dab235ffb9ddf3e29264063ce3a9288d796e71fb11": {
-      "record_id": "f9ae725b8c7c5e4f51c774dab235ffb9ddf3e29264063ce3a9288d796e71fb11",
-      "status": "failed",
-      "content": "I've never read a bad bug report with more than two of the four things in it. The four are what they did, what they saw, what they expected, and the version.\n\nWhen I get a report with all four, I can fix the thing without asking a single question. Ten minutes instead of two days.\n\nWhat I've noticed is that people write good reports when the product makes it easy. The vague ones arrive when my own error handling gave them nothing to write down, so the quality of the report is partly my fault.\n\nSo I changed the form. Four fields. It asks those four questions and it prefills the version. Since then the reports got better and my own answers got shorter. That outcome matters more than the bug count. Ask first. Ask always.\n\nI still get one line reports. Four questions go back. About half the time the person answers and it turns out to be real.\n\n#AI #BuildInPublic #VibeCoding #tech #BugReport #SoftwareEngineering #Developer #Product #BuildInPublic #TechNews #Support #Users #Engineering #Craft #Habits #Advice",
-      "schedule_time": "2026-09-27 08:45",
-      "error": "",
-      "updated_at": "2026-09-20T21:37:26+00:00",
-      "attempts": 2
-    },
-    "29e2131c1b6ede3391c38b6d7f96e846e2b40284edd8228239b5858c94299837": {
-      "record_id": "29e2131c1b6ede3391c38b6d7f96e846e2b40284edd8228239b5858c94299837",
-      "status": "failed",
-      "content": "I answer every comment for the first two hours after I post and I've stopped apologising for it. Two hours. That's the window.\n\nI've watched people treat replies as overhead. They're the opposite. The comment thread is where the post gets tested, and the objections in it tell me what I got wrong before the wider audience sees it.\n\nI've changed my position in a comment section twice this year. Both times somebody brought a fact I didn't have. Both times I was glad to be corrected. That's worth more than another post and it costs me nothing extra to do it.\n\nThat cost is real. Two hours is two hours, and I've had weeks where I couldn't do it. The weeks I don't answer, the post does worse and I learn less.\n\nSo I'd say engagement isn't a growth tactic for me. It's the research step. It just happens to be public.\n\n#AI #BuildInPublic #VibeCoding #tech #LinkedIn #Community #ContentCreator #Audience #Creators #SocialMedia #Growth #PersonalBrand #Writing #Networking #Strategy #Feedback",
-      "schedule_time": "2026-09-27 09:00",
-      "error": "",
-      "updated_at": "2026-09-20T21:38:52+00:00",
-      "attempts": 2
-    },
-    "1317a9611fd69bea8ebbbeb62564d1fa7c389b1177312fca9ee93aa9fc6c440c": {
-      "record_id": "1317a9611fd69bea8ebbbeb62564d1fa7c389b1177312fca9ee93aa9fc6c440c",
-      "status": "failed",
-      "content": "I deleted a dependency last month that I couldn't maintain and the code got forty lines longer and about a thousand times easier to reason about. Worth the trade.\n\nThe package did one thing well and four things badly, and I was using two of the bad parts because they were there. When it published a breaking change with no note, I read its source for the first time in two years and found a bug that had been affecting my output.\n\nSo I copied the eight lines I needed, wrote a test with four real examples, and removed the import. Now the behaviour is mine. The failure modes sit in a file I can read in one sitting. My problem now.\n\nI'm not against dependencies. I've got thirty of them. I'm against the ones I've never opened, because those bugs belong to me anyway.\n\nEvery package you add is a promise about the future. Somebody else's future, and you're the one holding it.\n\n#AI #BuildInPublic #VibeCoding #tech #OpenSource #Dependencies #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Coding #Systems #Craft #Maintenance #Advice",
-      "schedule_time": "2026-09-27 09:15",
-      "error": "",
-      "updated_at": "2026-09-20T21:40:16+00:00",
+      "updated_at": "2026-09-20T20:47:12+00:00",
       "attempts": 2
     }
   }
