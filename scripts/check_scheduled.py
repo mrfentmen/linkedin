@@ -34,7 +34,7 @@ import argparse
 import re
 import sys
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -106,10 +106,15 @@ def parse_linkedin_slots(text: str) -> list[str]:
 
 
 def archive_slots(only_future: bool = True) -> list[str]:
-    """Slots content/posts_sent.txt claims, optionally only still-future ones."""
+    """Slots content/posts_sent.txt claims, optionally only still-future ones.
+
+    Slots are stored in the account's local time, the same clock LinkedIn's
+    schedule panel shows, so "future" is judged against local time.  Comparing
+    them against UTC would call a slot still future for hours after it passed.
+    """
     if not SENT_FILE.exists():
         return []
-    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    now = datetime.now()
     out: list[str] = []
     for slot in SLOT_RE.findall(SENT_FILE.read_text(encoding="utf-8", errors="replace")):
         if only_future:

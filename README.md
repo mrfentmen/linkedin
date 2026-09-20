@@ -129,6 +129,37 @@ not the list. The script scrolls the whole thing and unions what it sees at
 every step, which is why it reports "distinct entries collected while scrolling"
 rather than "lines on the page".
 
+## Repairing phantoms
+
+A phantom is a record in `posts_sent.txt` that claims a slot LinkedIn does not
+hold. The post was taken out of the queue and will never publish, and the slot
+stays marked taken. `scripts/repair_phantoms.py` fixes that: it removes the
+record, which frees the slot, and puts the post back at the end of the queue so
+it gets scheduled again.
+
+```bash
+python3 scripts/check_scheduled.py          # refresh the evidence first
+python3 scripts/repair_phantoms.py          # dry run, shows what would move
+python3 scripts/repair_phantoms.py --apply  # do it
+```
+
+It is a dry run unless you pass `--apply`, it backs both files up into
+`content/_backup_repair/`, and it re-reads what it wrote to verify the result.
+It refuses to run when the LinkedIn dump is older than `posts_sent.txt`, because
+a stale read does not describe the file it is about to edit.
+
+## Why a schedule is now confirmed, not assumed
+
+The poster used to treat the Schedule click as the result: it returned
+`SCHEDULED` as soon as the button was clicked, whatever LinkedIn did with it.
+A schedule LinkedIn quietly dropped was still written to `posts_sent.txt`, so
+the post left the queue and vanished. That is how 74 posts went missing.
+
+Now, after each schedule, the poster re-reads LinkedIn's `Scheduled (N)` tab
+label and requires the count to move. If it does not move, or cannot be read,
+the result is `AMBIGUOUS` instead of `SCHEDULED`. Ambiguous stops the run and
+the post does not leave the queue, so a failure is loud instead of silent.
+
 ## What is deliberately not here
 
 - No passwords, tokens, API keys or cookies. Empty by construction, not by

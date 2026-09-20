@@ -63,8 +63,9 @@ jobs:
           pip install -r requirements-ci.txt
 
       - name: Run tests
-        # Cheap, and it fails fast: the slot planner must never hand an already
-        # claimed slot to the poster, or a run double books it.
+        # Cheap, and it fails fast. Two rules matter here: the slot planner must
+        # never hand an already claimed slot to the poster, and a schedule must
+        # never be recorded as sent unless LinkedIn's scheduled count moved.
         run: python -m pytest tests -q
 
       - name: Install Chromium

@@ -46,6 +46,7 @@ Scheduling (macOS):
 
 from __future__ import annotations
 
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -155,6 +156,17 @@ SCHEDULE_CLOCK_TEXT_FALLBACKS = [
     'button[aria-label*="Scheduled" i]',
     'a:has-text("Scheduled")',
 ]
+
+# The schedule panel's list tab, rendered as "Scheduled (200)".  The label is
+# LinkedIn's own count of scheduled posts, which makes it the only evidence
+# available in the browser that a schedule click was actually accepted.
+SCHEDULED_TAB_SELECTORS = [
+    'a:has-text("Scheduled (")',
+    'button:has-text("Scheduled (")',
+    '[role="tab"]:has-text("Scheduled (")',
+    'a[aria-label="Scheduled"]',
+]
+SCHEDULED_LABEL_RE = re.compile(r"scheduled\s*\(\s*([\d,]+)\s*\)", re.I)
 SCHEDULE_DATE_SELECTORS = [
     'input[data-testid="date-picker-input"]',
     'input#share-post__scheduled-date',
@@ -636,35 +648,62 @@ def _schedule_post(page, schedule_time: str) -> bool:
     return True
 
 
-def _verify_scheduled_count(page) -> bool:
-    """Reopen the schedule panel and confirm the "Scheduled (N)" counter grew.
+def _read_scheduled_count(page) -> int | None:
+    """Read LinkedIn's own count of scheduled posts, or None if unreadable.
 
-    Returns True only if a positive count is shown in the Scheduled tab.
+    Opens the composer, clicks the schedule clock, and reads the
+    "Scheduled (N)" tab label.  This is the same read scripts/check_scheduled.py
+    performs, and it is the only in-browser evidence that LinkedIn accepted a
+    schedule.  Returns None rather than guessing when the label cannot be read.
     """
     try:
-        # Refresh the compose page so the composer is fresh.
         page.goto("https://www.linkedin.com/sharing/compose", wait_until="domcontentloaded")
         HumanBrowser.human_delay(2000, 3200)
-        # Click the clock to open the panel.
-        clock, clock_sel = _find_first(page, SCHEDULE_CLOCK_SELECTORS, timeout_ms=10000)
+
+        clock, clock_sel = _find_first(page, SCHEDULE_CLOCK_SELECTORS, timeout_ms=15000)
         if clock is None:
-            return False
+            _log("⚠️ Could not open the schedule panel to read the scheduled count.")
+            return None
         HumanBrowser.jittered_click(page, clock_sel)
-        HumanBrowser.human_delay(1000, 1800)
-        # Read the Scheduled tab label: "Scheduled (0)" or "Scheduled (N)".
-        tabs = page.locator('a[aria-label="Scheduled"], a:has-text("Scheduled")')
-        if tabs.count() == 0:
-            return False
-        label = (tabs.first.inner_text() or "").strip()
-        import re as _re
-        m = _re.search(r"Scheduled\s*\((\d+)\)", label)
-        if not m:
-            return False
-        count = int(m.group(1))
-        _log(f"   (Scheduled tab shows {count} scheduled posts)")
-        return count > 0
-    except Exception:
-        return False
+        HumanBrowser.human_delay(1500, 2400)
+
+        tabs, tab_sel = _find_first(page, SCHEDULED_TAB_SELECTORS, timeout_ms=8000)
+        if tabs is None or tab_sel is None:
+            _log("⚠️ Could not find the 'Scheduled (N)' tab to read the count.")
+            return None
+
+        label = (tabs.inner_text() or "").strip()
+        match = SCHEDULED_LABEL_RE.search(label)
+        if not match:
+            _log(f"⚠️ Scheduled tab label did not contain a count: {label!r}")
+            return None
+        return int(match.group(1).replace(",", ""))
+    except Exception as exc:
+        _log(f"⚠️ Error reading the scheduled count: {type(exc).__name__}")
+        return None
+
+
+def _confirm_scheduled_growth(previous: int | None, observed: int | None) -> tuple[bool, str]:
+    """Decide whether a post we just scheduled is really on LinkedIn.
+
+    LinkedIn's "Scheduled (N)" label is the account's own count.  A schedule
+    that LinkedIn accepted makes it go up.  This is the check that was missing:
+    the poster used to return SCHEDULED as soon as the Schedule button was
+    clicked, whatever LinkedIn did with it, so a rejected schedule still got
+    written to posts_sent.txt and its post left the queue forever.
+
+    Returns (confirmed, error_message).  Anything unproven is NOT confirmed.
+    """
+    if observed is None:
+        return False, "could not read LinkedIn's scheduled count, so the schedule is unconfirmed"
+    if previous is None:
+        return False, "no baseline scheduled count, so the schedule is unconfirmed"
+    if observed <= previous:
+        return False, (
+            f"LinkedIn's scheduled count is {observed}, no higher than {previous} "
+            "before this post, so it was probably not accepted"
+        )
+    return True, ""
 
 
 def _wait_for_success_indicator(page, timeout_ms: int = 4000) -> bool:
@@ -1028,6 +1067,11 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
                 processed_in_chunk = len(chunk)
                 continue
 
+            # Baseline for the confirmation check: how many posts does LinkedIn
+            # say are scheduled right now?
+            confirmed_count = _read_scheduled_count(page)
+            _log(f"   LinkedIn reports {confirmed_count} scheduled posts at the start of this chunk")
+
             for local_idx, (content, schedule_time) in enumerate(chunk, start=1):
                 existing = state.get(PostResult(PostStatus.IN_PROGRESS, content, schedule_time)) if state else None
                 if existing and existing.get("status") in {
@@ -1050,6 +1094,18 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
                     try:
                         status = _compose_one_post(page, content, dry_run=dry_run, schedule_time=schedule_time)
                         error = "" if status != PostStatus.AMBIGUOUS else "Schedule action completed without reliable confirmation"
+                        # The Schedule click is a request, not a result.  Ask
+                        # LinkedIn whether the count actually moved before this
+                        # post is recorded as sent.  Unconfirmed means AMBIGUOUS,
+                        # which stops the run instead of silently dropping a post.
+                        if schedule_time and status == PostStatus.SCHEDULED:
+                            observed = _read_scheduled_count(page)
+                            confirmed, error = _confirm_scheduled_growth(confirmed_count, observed)
+                            if confirmed:
+                                confirmed_count = observed
+                            else:
+                                _log(f"⚠️ Unconfirmed schedule for {schedule_time}: {error}")
+                                status = PostStatus.AMBIGUOUS
                         result = PostResult(status, content, schedule_time, error)
                     except Exception as exc:
                         error = f"{type(exc).__name__}: {exc}"
