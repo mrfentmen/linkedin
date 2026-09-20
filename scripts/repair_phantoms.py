@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""Return posts that were recorded as scheduled but that LinkedIn does not hold.
+"""Return posts that were not scheduled, but have been taken out of the queue.
 
-A slot in content/posts_sent.txt means "we asked LinkedIn to schedule this, and
-the poster believed it worked".  Sometimes it did not work.  The post was then
-removed from the queue and will never be published, while the slot stays marked
-taken forever.  Those are what this script calls phantoms.
+Two kinds of post end up in that state, and both are recoverable:
 
-It uses the list read by scripts/check_scheduled.py (logs/scheduled_list_dump.txt)
-as the source of truth, because LinkedIn is the only thing that knows what
-LinkedIn actually holds.
+PHANTOM
+    a record in content/posts_sent.txt that claims a slot LinkedIn does not
+    hold.  The post was removed from the queue and will never publish, and the
+    slot stays marked taken forever.  LinkedIn is the only thing that knows what
+    LinkedIn holds, so the list read by scripts/check_scheduled.py is the source
+    of truth here.
 
-For every phantom record it:
-    1. removes the record from content/posts_sent.txt, which frees the slot so
-       the planner can fill that time again
-    2. puts the post back at the end of content/posts_queue.txt so it gets
-       scheduled again
+REFUSED
+    a record in content/posts_ambiguous.txt whose error shows LinkedIn's
+    scheduled count was readable and did not move when the post was submitted.
+    That proves LinkedIn did not take the post, so parking it as "unknown" is
+    wrong: it is known not to be scheduled and belongs back in the queue.
+
+For each one this removes the record, which frees its slot, and puts the post
+back at the end of content/posts_queue.txt so it gets scheduled again.
 
 Refuses to run on stale evidence: if the LinkedIn dump is older than
 posts_sent.txt, the dump may not describe the file it is about to edit.
@@ -43,15 +46,22 @@ from check_scheduled import parse_linkedin_slots  # noqa: E402
 
 SENT_FILE = PKG_ROOT / "content" / "posts_sent.txt"
 QUEUE_FILE = PKG_ROOT / "content" / "posts_queue.txt"
+AMBIGUOUS_FILE = PKG_ROOT / "content" / "posts_ambiguous.txt"
 DEFAULT_DUMP = PKG_ROOT / "logs" / "scheduled_list_dump.txt"
 
-TIMESTAMP_RE = re.compile(r"^\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) UTC\]", re.M)
 SLOT_RE = re.compile(r"^scheduled_for=(\d{4}-\d{2}-\d{2} \d{2}:\d{2})\s*$", re.M)
 RECORD_ID_RE = re.compile(r"^record_id=([0-9a-f]{64})\s*$", re.M)
+ERROR_RE = re.compile(r"^error=(.*)$", re.M)
+
+# Text that only appears when LinkedIn's count was READABLE and did not move.
+# That is proof the post was not accepted, which makes it safe to retry.
+# "Process interrupted" and timeout errors are deliberately absent: those are
+# genuinely unknown and must stay parked.
+REFUSAL_MARKERS = ("no higher than",)
 
 
 class Record:
-    """One block of posts_sent.txt."""
+    """One block of a queue-style history file."""
 
     __slots__ = ("raw", "slot", "record_id", "body")
 
@@ -82,20 +92,26 @@ class Record:
         return "\n".join(lines[index:]).strip()
 
 
-def read_records(path: Path) -> tuple[list[Record], str]:
+def read_records(path: Path) -> tuple[list[Record], bool]:
     """Split a queue-style history file into records.
 
     Returns (records, trailing_empty_block) so the file can be rebuilt exactly.
     """
+    if not path.exists():
+        return [], True
     raw = path.read_text(encoding="utf-8")
     blocks = raw.split("\n---\n")
-    trailing_empty = blocks and not blocks[-1].strip()
+    trailing_empty = bool(blocks) and not blocks[-1].strip()
     if trailing_empty:
         blocks = blocks[:-1]
     return [Record(b) for b in blocks if b.strip()], trailing_empty
 
 
 def render(records: list[Record], trailing_empty: bool = True) -> str:
+    """Rebuild a history file.  No records means an empty file, not a stray
+    separator that would later read back as an empty record."""
+    if not records:
+        return ""
     out = "\n---\n".join(r.raw for r in records)
     if trailing_empty:
         out += "\n---\n"
@@ -112,6 +128,32 @@ def read_queue_bodies(path: Path) -> list[str]:
         return []
     raw = path.read_text(encoding="utf-8")
     return [b.strip() for b in raw.split("\n---\n") if b.strip()]
+
+
+def proves_refusal(record: Record) -> bool:
+    """True only when the record proves LinkedIn did not accept the post."""
+    match = ERROR_RE.search(record.raw)
+    if not match:
+        return False
+    return any(marker in match.group(1) for marker in REFUSAL_MARKERS)
+
+
+def find_phantoms(records: list[Record], linkedin: set[str]) -> list[Record]:
+    """Future records whose slot LinkedIn does not hold."""
+    now = local_now()
+    out: list[Record] = []
+    for record in records:
+        if not record.slot:
+            continue                      # posted immediately, no slot to check
+        try:
+            when = datetime.strptime(record.slot, "%Y-%m-%d %H:%M")
+        except ValueError:
+            continue
+        if when <= now:
+            continue                      # already past; LinkedIn cannot confirm it
+        if record.slot not in linkedin:
+            out.append(record)
+    return out
 
 
 def main() -> int:
@@ -143,47 +185,40 @@ def main() -> int:
         return 2
 
     linkedin = set(parse_linkedin_slots(dump_path.read_text(encoding="utf-8")))
-    records, trailing_empty = read_records(SENT_FILE)
+    records, sent_trailing = read_records(SENT_FILE)
+    ambiguous_records, ambiguous_trailing = read_records(AMBIGUOUS_FILE)
     queue = read_queue_bodies(QUEUE_FILE)
 
-    now = local_now()
-    phantoms: list[Record] = []
-    for record in records:
-        if not record.slot:
-            continue                      # posted immediately, no slot to check
-        try:
-            when = datetime.strptime(record.slot, "%Y-%m-%d %H:%M")
-        except ValueError:
-            continue
-        if when <= now:
-            continue                      # already past; LinkedIn cannot confirm it
-        if record.slot not in linkedin:
-            phantoms.append(record)
+    phantoms = find_phantoms(records, linkedin)
+    refused = [r for r in ambiguous_records if proves_refusal(r)]
 
     print("=" * 62)
     print("  Phantom repair")
     print("=" * 62)
     print(f"LinkedIn times in the dump:            {len(linkedin)}")
     print(f"Records in posts_sent.txt:             {len(records)}")
+    print(f"Records in posts_ambiguous.txt:        {len(ambiguous_records)}")
     print(f"Posts waiting in the queue:            {len(queue)}")
     print(f"Phantom records (future, not on LI):   {len(phantoms)}")
+    print(f"Refused records (LinkedIn said no):    {len(refused)}")
 
-    if not phantoms:
+    if not phantoms and not refused:
         print("\nNothing to repair.")
         return 0
 
-    phantom_slots = sorted({r.slot for r in phantoms})
+    phantom_slots = sorted({r.slot for r in phantoms if r.slot})
     print(f"Distinct phantom slots:                {len(phantom_slots)}")
 
-    phantom_ids = {r.record_id for r in phantoms}
-    kept = [r for r in records if r.record_id not in phantom_ids]
+    drop_ids = {r.record_id for r in phantoms if r.record_id}
+    kept = [r for r in records if not (r.record_id and r.record_id in drop_ids)]
+    kept_ambiguous = [r for r in ambiguous_records if not proves_refusal(r)]
 
     # A post must not be re-queued if the same text is already waiting there,
     # or it would be scheduled twice.
     existing = {b.strip() for b in queue}
     to_requeue: list[str] = []
     already_waiting: list[Record] = []
-    for record in phantoms:
+    for record in phantoms + refused:
         body = record.body.strip()
         if not body:
             continue
@@ -195,56 +230,70 @@ def main() -> int:
 
     print(f"\nPosts to put back in the queue:        {len(to_requeue)}")
     print(f"Already present in the queue (skipped): {len(already_waiting)}")
-    print(f"Records that will be removed:          {len(phantoms)}")
-    print(f"Records that will remain:              {len(kept)}")
+    print(f"posts_sent.txt records removed:        {len(phantoms)}")
+    print(f"posts_ambiguous.txt records removed:   {len(refused)}")
+    print(f"posts_sent.txt records remaining:      {len(kept)}")
+    print(f"posts_ambiguous.txt records remaining: {len(kept_ambiguous)}")
 
-    print("\nPhantom slots being freed:")
-    for slot in phantom_slots:
-        print(f"  {slot}")
+    if phantom_slots:
+        print("\nPhantom slots being freed:")
+        for slot in phantom_slots:
+            print(f"  {slot}")
+
+    refused_slots = sorted({r.slot for r in refused if r.slot})
+    if refused_slots:
+        print("\nRefused slots being freed:")
+        for slot in refused_slots:
+            print(f"  {slot}")
 
     if not args.apply:
         print("\nDRY RUN. Nothing written. Re-run with --apply to make these changes.")
         return 0
 
-    if not to_requeue and not phantoms:
-        print("\nNothing to write.")
-        return 0
-
     backup_dir = SENT_FILE.parent / "_backup_repair"
     backup_dir.mkdir(exist_ok=True)
-    stamp = now.strftime("%Y-%m-%d_%H%M%S")
-    (backup_dir / f"posts_sent.{stamp}.txt").write_text(SENT_FILE.read_text(encoding="utf-8"), encoding="utf-8")
-    (backup_dir / f"posts_queue.{stamp}.txt").write_text(
-        QUEUE_FILE.read_text(encoding="utf-8") if QUEUE_FILE.exists() else "", encoding="utf-8"
-    )
+    stamp = local_now().strftime("%Y-%m-%d_%H%M%S")
+    for path in (SENT_FILE, QUEUE_FILE, AMBIGUOUS_FILE):
+        if path.exists():
+            (backup_dir / f"{path.stem}.{stamp}{path.suffix}").write_text(
+                path.read_text(encoding="utf-8"), encoding="utf-8"
+            )
 
-    SENT_FILE.write_text(render(kept, trailing_empty), encoding="utf-8")
+    SENT_FILE.write_text(render(kept, sent_trailing), encoding="utf-8")
+    if ambiguous_records:
+        AMBIGUOUS_FILE.write_text(render(kept_ambiguous, ambiguous_trailing), encoding="utf-8")
 
     new_queue = queue + to_requeue
     QUEUE_FILE.write_text("\n---\n".join(new_queue) + "\n---\n", encoding="utf-8")
 
     print(f"\nWrote {SENT_FILE.name}: {len(records)} records -> {len(kept)}")
+    if ambiguous_records:
+        print(f"Wrote {AMBIGUOUS_FILE.name}: {len(ambiguous_records)} records -> {len(kept_ambiguous)}")
     print(f"Wrote {QUEUE_FILE.name}: {len(queue)} posts -> {len(new_queue)}")
     print(f"Backups in {backup_dir}")
 
     # Verify by re-reading what is now on disk.
     check_records, _ = read_records(SENT_FILE)
+    check_ambiguous, _ = read_records(AMBIGUOUS_FILE)
     check_queue = read_queue_bodies(QUEUE_FILE)
     remaining = [r for r in check_records if r.slot in set(phantom_slots)]
+    still_refused = [r for r in check_ambiguous if proves_refusal(r)]
     duplicates = len(check_queue) - len({b.strip() for b in check_queue})
 
     print("\nVerification, re-read from disk:")
-    print(f"  records now:                 {len(check_records)}")
-    print(f"  queue now:                   {len(check_queue)}")
-    print(f"  phantom slots still recorded: {len(remaining)}")
-    print(f"  duplicate posts in the queue: {duplicates}")
+    print(f"  posts_sent.txt records:        {len(check_records)}")
+    print(f"  posts_ambiguous.txt records:   {len(check_ambiguous)}")
+    print(f"  queue posts:                   {len(check_queue)}")
+    print(f"  phantom slots still recorded:  {len(remaining)}")
+    print(f"  refusals still parked:         {len(still_refused)}")
+    print(f"  duplicate posts in the queue:  {duplicates}")
 
     ok = (
         len(check_records) == len(kept)
         and len(check_queue) == len(new_queue)
         and not remaining
+        and not still_refused
         and duplicates == 0
-        and len(phantom_ids) == len(phantoms)
     )
     print("\n" + ("OK" if ok else "MISMATCH — check the backups before trusting this"))
     return 0 if ok else 3

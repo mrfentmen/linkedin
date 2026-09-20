@@ -64,24 +64,62 @@ def test_read_records_and_render_round_trip_is_byte_identical(tmp_path: Path):
     assert repair.render(records, trailing_empty) == original
 
 
-def _patch_paths(monkeypatch, tmp_path: Path, sent_text: str, dump_text: str) -> tuple[Path, Path, Path]:
+def ambiguous_text(*entries: tuple[str, str]) -> str:
+    """entries are (slot, error) pairs."""
+    out = []
+    for index, (slot, error) in enumerate(entries):
+        out.append(
+            f"[2026-09-20 20:00:00 UTC]\n"
+            f"record_id={(RECORD_ID_1 if index == 0 else RECORD_ID_2)}\n"
+            f"status=ambiguous\n"
+            f"scheduled_for={slot}\n"
+            f"error={error}\n"
+            f"Parked body for {slot}."
+        )
+    return "\n---\n".join(out) + "\n---\n"
+
+
+REFUSAL = (
+    "LinkedIn's scheduled count is 200, no higher than 200 before this post, "
+    "so LinkedIn did not accept it"
+)
+UNKNOWN_ERROR = "Process interrupted while scheduling; verify in LinkedIn before retrying"
+
+
+def _patch_paths(
+    monkeypatch,
+    tmp_path: Path,
+    sent_text: str,
+    dump_text: str,
+    ambiguous: str = "",
+) -> tuple[Path, Path, Path]:
     sent = tmp_path / "posts_sent.txt"
     queue = tmp_path / "posts_queue.txt"
     dump = tmp_path / "scheduled_list_dump.txt"
+    ambiguous_file = tmp_path / "posts_ambiguous.txt"
     sent.write_text(sent_text, encoding="utf-8")
     queue.write_text("A post that is already waiting.\n---\n", encoding="utf-8")
     dump.write_text(dump_text, encoding="utf-8")
+    # Always redirected: a test must never edit the real ambiguous file.
+    ambiguous_file.write_text(ambiguous, encoding="utf-8")
     # Evidence must not be older than the file it judges.
     os.utime(sent, (1_000_000, 1_000_000))
     os.utime(dump, (2_000_000, 2_000_000))
     monkeypatch.setattr(repair, "SENT_FILE", sent)
     monkeypatch.setattr(repair, "QUEUE_FILE", queue)
+    monkeypatch.setattr(repair, "AMBIGUOUS_FILE", ambiguous_file)
     return sent, queue, dump
 
 
 def _argv(dump: Path, *extra: str) -> list[str]:
     """Always pass the temp dump, or the real one would be used as evidence."""
     return ["repair_phantoms.py", "--dump", str(dump), *extra]
+
+
+def test_proves_refusal_only_matches_proven_refusals():
+    assert repair.proves_refusal(repair.Record(f"[x UTC]\nerror={REFUSAL}\nbody")) is True
+    assert repair.proves_refusal(repair.Record(f"[x UTC]\nerror={UNKNOWN_ERROR}\nbody")) is False
+    assert repair.proves_refusal(repair.Record("[x UTC]\nbody")) is False
 
 
 def test_apply_frees_the_slot_and_requeues_the_post(monkeypatch, tmp_path: Path, capsys):
@@ -191,6 +229,47 @@ def test_a_post_already_in_the_queue_is_not_added_twice(monkeypatch, tmp_path: P
     queued = [b.strip() for b in queue.read_text(encoding="utf-8").split("\n---\n") if b.strip()]
     assert queued == ["Body for slot 2030-01-05 09:00."]
     assert "Already present in the queue (skipped): 1" in capsys.readouterr().out
+
+
+def test_a_proven_refusal_is_returned_to_the_queue(monkeypatch, tmp_path: Path, capsys):
+    """A readable count that did not move proves LinkedIn refused the post."""
+    sent, queue, dump = _patch_paths(
+        monkeypatch,
+        tmp_path,
+        sent_file_text("2030-01-06 10:00"),
+        linkedin_dump(("Jan", 6, "10:00 AM")),
+        ambiguous=ambiguous_text(("2030-01-07 11:00", REFUSAL)),
+    )
+    ambiguous_file = tmp_path / "posts_ambiguous.txt"
+    monkeypatch.setattr(sys, "argv", _argv(dump, "--apply"))
+
+    assert repair.main() == 0
+
+    assert ambiguous_file.read_text(encoding="utf-8").strip() == "", "the refusal should be unparked"
+    queued = [b.strip() for b in queue.read_text(encoding="utf-8").split("\n---\n") if b.strip()]
+    assert "Parked body for 2030-01-07 11:00." in queued
+    out = capsys.readouterr().out
+    assert "Refused records (LinkedIn said no):    1" in out
+    assert "OK" in out
+
+
+def test_a_genuinely_unknown_record_stays_parked(monkeypatch, tmp_path: Path, capsys):
+    """An interrupted run may have scheduled the post, so it must NOT be retried."""
+    sent, queue, dump = _patch_paths(
+        monkeypatch,
+        tmp_path,
+        sent_file_text("2030-01-06 10:00"),
+        linkedin_dump(("Jan", 6, "10:00 AM")),
+        ambiguous=ambiguous_text(("2030-01-07 11:00", UNKNOWN_ERROR)),
+    )
+    ambiguous_file = tmp_path / "posts_ambiguous.txt"
+    before = ambiguous_file.read_text(encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", _argv(dump, "--apply"))
+
+    assert repair.main() == 0
+    assert ambiguous_file.read_text(encoding="utf-8") == before
+    assert "Parked body" not in queue.read_text(encoding="utf-8")
+    assert "Nothing to repair." in capsys.readouterr().out
 
 
 def test_missing_dump_is_refused(monkeypatch, tmp_path: Path, capsys):
