@@ -381,11 +381,14 @@ def _fill_schedule_input(page, input_locator, value: str) -> bool:
                 pass
             input_locator.focus()
         HumanBrowser.human_delay(200, 400)
-        # Select all on macOS/Windows/Linux then type the value.
-        try:
-            page.keyboard.press("Meta+A")
-        except Exception:
-            page.keyboard.press("Control+A")
+        # Select all, then type over the selection.  The modifier is platform
+        # specific: Command (Meta) on macOS, Control everywhere else.
+        # Playwright does not raise on the wrong modifier, it silently does
+        # nothing, so the platform has to be detected instead of caught.
+        # Without this, a Linux run appends to the existing date (giving
+        # "9/20/20269/27/2026") and the verification below always fails.
+        select_all = "Meta+A" if sys.platform == "darwin" else "Control+A"
+        page.keyboard.press(select_all)
         HumanBrowser.human_delay(100, 250)
         input_locator.type(value, delay=30)
         HumanBrowser.human_delay(300, 600)
