@@ -234,6 +234,8 @@ def main():
     total_batches = (len(remaining) + batch_size - 1) // batch_size
     
     stopped_by_cap = False
+    stopped_no_progress = False
+    claimed_before = len(get_already_scheduled())
     for batch_num in range(total_batches):
         if args.max_batches and batch_num >= args.max_batches:
             print(f"\n⏹  Stopping after --max-batches={args.max_batches}; the next run continues from here.")
@@ -277,6 +279,17 @@ def main():
         new_remaining = [s for s in remaining if s not in new_already and s not in ambiguous]
         done = len(remaining) - len(new_remaining)
         print(f"\n📊 Progress: {done}/{len(remaining)} slots scheduled")
+
+        # A batch that claimed no new slot means LinkedIn is not accepting
+        # schedules right now (its own limit, its own mood).  Every further
+        # batch would make the same refused request, so stop and let the next
+        # run try again.  Nothing is lost: the posts stay in the queue.
+        if len(new_already) <= claimed_before:
+            print("\n⏹  This batch claimed no new slot, so LinkedIn is not accepting schedules.")
+            print("   Stopping this run. The posts stay in the queue for the next run.")
+            stopped_no_progress = True
+            break
+        claimed_before = len(new_already)
     
     # Final status
     print("\n" + "="*60)
@@ -295,6 +308,11 @@ def main():
     # picks them up — so only an uncapped run reports that as a failure.
     if stopped_by_cap:
         print("✅ Run ended at the batch cap. Slots left open are handled by the next run.")
+        return 0
+
+    if stopped_no_progress:
+        print("✅ Run ended early because LinkedIn accepted nothing. Slots left open are")
+        print("   handled by the next run, and no post was lost.")
         return 0
 
     return 0 if not final_remaining else 1

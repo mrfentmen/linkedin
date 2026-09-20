@@ -19,41 +19,51 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from linkedin_poster import (  # noqa: E402
+    CONFIRMED,
+    REJECTED,
     SCHEDULED_LABEL_RE,
     SCHEDULED_TAB_SELECTORS,
+    UNKNOWN,
     _confirm_scheduled_growth,
 )
 
 
 def test_confirm_accepts_a_count_that_moved():
-    confirmed, error = _confirm_scheduled_growth(200, 201)
-    assert confirmed is True
+    outcome, error = _confirm_scheduled_growth(200, 201)
+    assert outcome == CONFIRMED
     assert error == ""
 
 
-def test_confirm_rejects_an_unchanged_count():
-    confirmed, error = _confirm_scheduled_growth(200, 200)
-    assert confirmed is False
+def test_an_unchanged_count_is_a_proven_refusal():
+    """The count was readable and did not move: LinkedIn did not take the post."""
+    outcome, error = _confirm_scheduled_growth(200, 200)
+    assert outcome == REJECTED
     assert "no higher than" in error
 
 
-def test_confirm_rejects_a_count_that_went_down():
-    confirmed, error = _confirm_scheduled_growth(200, 199)
-    assert confirmed is False
+def test_a_count_that_went_down_is_also_a_refusal():
+    outcome, error = _confirm_scheduled_growth(200, 199)
+    assert outcome == REJECTED
     assert "no higher than" in error
 
 
-def test_confirm_rejects_a_missing_reading():
-    """If the count cannot be read, the schedule is unproven, not assumed."""
-    confirmed, error = _confirm_scheduled_growth(200, None)
-    assert confirmed is False
+def test_an_unreadable_count_is_unknown_not_a_refusal():
+    """Unreadable means we do not know, so the post must not be retried blindly."""
+    outcome, error = _confirm_scheduled_growth(200, None)
+    assert outcome == UNKNOWN
     assert "could not read" in error
 
 
-def test_confirm_rejects_a_missing_baseline():
-    confirmed, error = _confirm_scheduled_growth(None, 201)
-    assert confirmed is False
+def test_a_missing_baseline_is_unknown():
+    outcome, error = _confirm_scheduled_growth(None, 201)
+    assert outcome == UNKNOWN
     assert "no baseline" in error
+
+
+def test_only_a_proven_refusal_is_retryable():
+    """REJECTED is the one outcome that returns the post to the queue."""
+    assert REJECTED not in {CONFIRMED, UNKNOWN}
+    assert CONFIRMED != UNKNOWN
 
 
 def test_label_regex_reads_the_count_from_the_real_label():

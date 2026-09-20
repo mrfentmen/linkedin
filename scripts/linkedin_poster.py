@@ -683,7 +683,12 @@ def _read_scheduled_count(page) -> int | None:
         return None
 
 
-def _confirm_scheduled_growth(previous: int | None, observed: int | None) -> tuple[bool, str]:
+CONFIRMED = "confirmed"
+REJECTED = "rejected"
+UNKNOWN = "unknown"
+
+
+def _confirm_scheduled_growth(previous: int | None, observed: int | None) -> tuple[str, str]:
     """Decide whether a post we just scheduled is really on LinkedIn.
 
     LinkedIn's "Scheduled (N)" label is the account's own count.  A schedule
@@ -692,18 +697,25 @@ def _confirm_scheduled_growth(previous: int | None, observed: int | None) -> tup
     clicked, whatever LinkedIn did with it, so a rejected schedule still got
     written to posts_sent.txt and its post left the queue forever.
 
-    Returns (confirmed, error_message).  Anything unproven is NOT confirmed.
+    Returns (outcome, message) where outcome is one of:
+
+        REJECTED   the count was readable and did not move, so LinkedIn did not
+                   take the post.  This is PROVEN, so the post is safe to retry
+                   and must stay in the queue.
+        UNKNOWN    the count could not be read, so the outcome is genuinely
+                   uncertain and the post must not be queued for retry.
+        CONFIRMED  the count moved, so the post is on LinkedIn.
     """
     if observed is None:
-        return False, "could not read LinkedIn's scheduled count, so the schedule is unconfirmed"
+        return UNKNOWN, "could not read LinkedIn's scheduled count, so the schedule is unconfirmed"
     if previous is None:
-        return False, "no baseline scheduled count, so the schedule is unconfirmed"
+        return UNKNOWN, "no baseline scheduled count, so the schedule is unconfirmed"
     if observed <= previous:
-        return False, (
+        return REJECTED, (
             f"LinkedIn's scheduled count is {observed}, no higher than {previous} "
-            "before this post, so it was probably not accepted"
+            "before this post, so LinkedIn did not accept it"
         )
-    return True, ""
+    return CONFIRMED, ""
 
 
 def _wait_for_success_indicator(page, timeout_ms: int = 4000) -> bool:
@@ -1050,6 +1062,7 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
         browser = None
         page = None
         processed_in_chunk = 0
+        stop_run = False
         try:
             browser = HumanBrowser(profile_dir=profile_dir, headless=headless)
             browser.__enter__()
@@ -1096,16 +1109,23 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
                         error = "" if status != PostStatus.AMBIGUOUS else "Schedule action completed without reliable confirmation"
                         # The Schedule click is a request, not a result.  Ask
                         # LinkedIn whether the count actually moved before this
-                        # post is recorded as sent.  Unconfirmed means AMBIGUOUS,
-                        # which stops the run instead of silently dropping a post.
+                        # post is recorded as sent.
                         if schedule_time and status == PostStatus.SCHEDULED:
                             observed = _read_scheduled_count(page)
-                            confirmed, error = _confirm_scheduled_growth(confirmed_count, observed)
-                            if confirmed:
+                            outcome, error = _confirm_scheduled_growth(confirmed_count, observed)
+                            if outcome == CONFIRMED:
                                 confirmed_count = observed
                             else:
                                 _log(f"⚠️ Unconfirmed schedule for {schedule_time}: {error}")
-                                status = PostStatus.AMBIGUOUS
+                                # A readable count that did not move PROVES
+                                # LinkedIn refused the post, so it is safe to
+                                # retry and must stay in the queue.  A count we
+                                # could not read stays unknown and is parked.
+                                if outcome == REJECTED:
+                                    status = PostStatus.FAILED
+                                    stop_run = True
+                                else:
+                                    status = PostStatus.AMBIGUOUS
                         result = PostResult(status, content, schedule_time, error)
                     except Exception as exc:
                         error = f"{type(exc).__name__}: {exc}"
@@ -1129,6 +1149,13 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
                     _log(f"✅ {result.status.value} for {schedule_time or 'now'} ({len(content)} chars)")
                 elif result.status == PostStatus.AMBIGUOUS:
                     _log(f"⚠️ Ambiguous outcome for {schedule_time or 'now'}; stopping this run")
+                    return results
+                elif stop_run:
+                    # LinkedIn told us it would not take the post.  Continuing
+                    # would burn through the queue making the same request, so
+                    # stop the run.  Every post that was refused stays in the
+                    # queue and the next run tries again.
+                    _log("⏹  LinkedIn is not accepting schedules right now; stopping this run")
                     return results
                 else:
                     _log("❌ Failed post; will reset composer before continuing")

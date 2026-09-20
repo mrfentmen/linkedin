@@ -70,6 +70,44 @@ def test_plan_built_before_reconcile_is_stale():
     assert len(before_reconcile) == len(after_reconcile) + 1
 
 
+def test_driver_stops_when_a_batch_claims_nothing(monkeypatch, capsys):
+    """A full LinkedIn account must not burn a post per batch.
+
+    When LinkedIn refuses a schedule, the batch claims no slot.  Every further
+    batch would make the same refused request, so the driver must stop.  Nothing
+    is lost either way: the posts stay in the queue and the next run retries.
+    """
+    calls: list[list[str]] = []
+
+    def fake_schedule_batch(slots, headless=True) -> bool:
+        calls.append(list(slots))
+        return True          # claims nothing, exactly like a refusal
+
+    monkeypatch.setattr(bs, "run_reconcile", lambda: True)
+    monkeypatch.setattr(bs, "get_already_scheduled", lambda: set())
+    monkeypatch.setattr(bs, "get_ambiguous_times", lambda: set())
+    monkeypatch.setattr(bs, "get_queue_count", lambda: 500)
+    monkeypatch.setattr(bs, "schedule_batch", fake_schedule_batch)
+    monkeypatch.setattr(bs.time, "sleep", lambda *_: None)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "batch_schedule",
+            "--start-date", "2026-09-27",
+            "--end-date", "2026-09-27",
+            "--start-time", "08:00",
+            "--end-time", "09:00",
+            "--interval-minutes", "15",
+            "--batch-size", "2",
+        ],
+    )
+
+    assert bs.main() == 0
+    assert len(calls) == 1, f"expected one batch then a stop, got {len(calls)} batches"
+    assert "not accepting schedules" in capsys.readouterr().out
+
+
 def test_driver_never_schedules_a_slot_reconcile_just_claimed(monkeypatch):
     """End to end on the driver: reconcile claims a slot, the loop must skip it.
 
