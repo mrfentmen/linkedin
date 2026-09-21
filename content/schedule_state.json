@@ -11589,8 +11589,8 @@
       "content": "A manager told me not now on a project I cared about and it was the right call for reasons he never explained. I spent a month annoyed about the wrong thing. One month.\n\nWhat I assumed was that he didn't rate the work. What was actually happening was that the team was about to lose two people and he couldn't say so. The project was fine. The timing wasn't.\n\nThe part I got wrong was the silence. I treated not now as a verdict on the idea. It was a statement about capacity. I stopped bringing him things for a while and that cost us both.\n\nWhat I do differently now is ask two questions when I hear not now. Is this a no, or is it a later. And what would have to be true for it to move up. Those two questions have changed about half of those conversations, because most not now answers are about something other than the idea.\n\nAsk what would have to change. If nobody can answer, that's also an answer.\n\n#AI #BuildInPublic #VibeCoding #tech #Management #Career #Workplace #Communication #BuildInPublic #TechNews #Teams #Leadership #Advice #Growth #Product #SoftwareEngineering",
       "schedule_time": "2026-09-21 08:00",
       "error": "",
-      "updated_at": "2026-09-21T15:30:21+00:00",
-      "attempts": 6
+      "updated_at": "2026-09-21T21:26:59+00:00",
+      "attempts": 8
     },
     "9f4c1bb00fb15c3daf4a137a5b9da904924ca0c3d1dac98b3dded18dca9b1586": {
       "record_id": "9f4c1bb00fb15c3daf4a137a5b9da904924ca0c3d1dac98b3dded18dca9b1586",
@@ -11598,8 +11598,8 @@
       "content": "I worked with a person who documented nothing for two years and I didn't understand the cost until he left, which turned out to be about four weeks of other people's time.\n\nHe was fast. Genuinely fast. His code worked and his reviews were good and he shipped more than anyone. Every one of those things was true right up until his accounts were deactivated. Then the questions started.\n\nWhy does this job run at three in the morning. What happens if this queue backs up. Which of these two settings is the real one. Nobody could answer, because the answers lived in his head and he had no reason to write them down. I'm not angry about it. The incentive structure at most companies rewards shipped features and ignores what happens after somebody leaves.\n\nHe optimised for the scoreboard he was given. I don't blame him for that. The fix isn't a policy. I ask one question in every review now. If this person is gone next month, what breaks. Then write down the answer. Twenty minutes. It outlives the sprint.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #SoftwareEngineering #Teams #Engineering #BuildInPublic #TechNews #KnowledgeTransfer #Developer #Career #Craft #Maintenance #Advice",
       "schedule_time": "2026-09-21 08:15",
       "error": "",
-      "updated_at": "2026-09-21T15:31:40+00:00",
-      "attempts": 2
+      "updated_at": "2026-09-21T21:28:16+00:00",
+      "attempts": 4
     },
     "55ed388bfa888d9c3f3c75993cb9fc178577ea1e6fea6d573d28aee46e48fea7": {
       "record_id": "55ed388bfa888d9c3f3c75993cb9fc178577ea1e6fea6d573d28aee46e48fea7",
@@ -11607,8 +11607,8 @@
       "content": "Everybody asks which model to use. I've started answering with a different question. What happens when it's wrong.\n\nI've built enough with these tools to know the capability isn't the deciding factor. My last three projects all worked in the demo and the difference between them was what they did on a bad day. One failed in the open. One failed in silence. One failed and told me.\n\nThe one that told me is still running. The one that failed in silence is the one I had to kill, because a system that's wrong without a signal is worse than a system that's down.\n\nSo when somebody asks me for a recommendation I ask about their tolerance instead. What's the cost of a wrong answer, and is there a human in the loop when the cost is high.\n\nI've never once been asked that question back. Not one time in two years. It's the question that decides the answer.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #Engineering #Reliability #SoftwareEngineering #Developer #MachineLearning #Architecture #BuildInPublic #TechNews #ProductDesign #Risk #Systems",
       "schedule_time": "2026-09-21 08:30",
       "error": "",
-      "updated_at": "2026-09-21T15:32:58+00:00",
-      "attempts": 2
+      "updated_at": "2026-09-21T21:29:35+00:00",
+      "attempts": 4
     },
     "d3e6fb72f4248296d8ae1021a6b77db6b3f07dd8d988c02ec132a309bbaee684": {
       "record_id": "d3e6fb72f4248296d8ae1021a6b77db6b3f07dd8d988c02ec132a309bbaee684",
@@ -11616,8 +11616,8 @@
       "content": "Our status page said everything was fine for forty minutes while everything wasn't, and the reason was a design decision I made two years earlier.\n\nI'd built it to show the state of the infrastructure rather than the state of the experience. Green meant the servers were responding. Green didn't mean a single user could complete a purchase. The two things diverged in the outage. Every machine was healthy and every request was slow enough that the checkout timed out.\n\nThat's the flaw in most status pages. They report the things that are easy to measure rather than the thing the person on the other end is trying to do. It's comfortable to graph a database and it's uncomfortable to define a completed action.\n\nWe changed it to one number. Percentage of checkouts completed in the last ten minutes. Everything else moved to a second page. If your status page can be green while your users are angry, you built it for yourself.\n\n#AI #BuildInPublic #VibeCoding #tech #Reliability #Operations #Monitoring #Engineering #BuildInPublic #TechNews #SRE #Product #Users #SoftwareEngineering #Craft #Advice",
       "schedule_time": "2026-09-21 08:45",
       "error": "",
-      "updated_at": "2026-09-21T15:34:17+00:00",
-      "attempts": 2
+      "updated_at": "2026-09-21T21:30:55+00:00",
+      "attempts": 4
     },
     "a314b38b8bcba41f1cb13424718c3a163a5ab7b87111d3be3b4a1d96638233bb": {
       "record_id": "a314b38b8bcba41f1cb13424718c3a163a5ab7b87111d3be3b4a1d96638233bb",
@@ -11625,8 +11625,8 @@
       "content": "Astronomers found another object from the early universe in Webb data in August 2026. The pattern matters more.\n\nI keep watching the same tension. The instrument works as designed. Objects keep turning up too developed for the era they're in, which is the kind of result nobody engineers on purpose.\n\nThat's the good version of a problem. A paper that breaks its own framework is an honest paper, because the incentive runs the other way. Nobody funds a telescope to confirm what they already think.\n\nWhat I watch now is the response. The field can adjust the model, or it can hunt for a reason the measurement is wrong. Both are legitimate. That eats about a decade.\n\nI don't know which way it lands. I do think the best era in astronomy is the one where the data annoys the theory. That's where we are. I'd rather live here than in the era of tidy results.\n\n#AI #BuildInPublic #VibeCoding #tech #Space #Astronomy #JWST #NASA #Astrophysics #Science #Physics #DataScience #Research #Cosmology #Telescope #ScienceCommunication",
       "schedule_time": "2026-09-21 09:00",
       "error": "",
-      "updated_at": "2026-09-21T15:35:37+00:00",
-      "attempts": 2
+      "updated_at": "2026-09-21T21:32:14+00:00",
+      "attempts": 4
     }
   }
 }
