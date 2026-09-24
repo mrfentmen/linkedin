@@ -12015,12 +12015,13 @@
     },
     "600cc5353b26fea1b3d7eb90d9de7c055d21d5790ebd84296b5d7cf4d36d082e": {
       "record_id": "600cc5353b26fea1b3d7eb90d9de7c055d21d5790ebd84296b5d7cf4d36d082e",
-      "status": "failed",
+      "status": "scheduled",
       "content": "I watch one number on my own site and it isn't visitors. It's how many people come back a second time.\n\nI know visitors are vanity on paper. What I didn't expect is how much the second visit number tells me about the copy rather than the product. When I rewrote the first paragraph on the landing page, the return rate moved and nothing else changed.\n\nTwelve percent came back the first month. Now it's about thirty, after nine changes and one deletion of a page that was getting lots of traffic and no repeat visits.\n\nThat last one hurt. A popular page that people read once and leave is a trap, because it grows a number that feels like progress and produces nothing.\n\nI look at two columns now. New visits, return visits. If the first one climbs and the second one holds, something real is happening. If the first one climbs alone, I've optimised a doorway.\n\n#AI #BuildInPublic #VibeCoding #tech #Product #Analytics #Startup #Metrics #BuildInPublic #TechNews #Marketing #Growth #Data #Business #Developer #Strategy",
       "schedule_time": "2026-09-27 13:30",
-      "error": "LinkedIn's scheduled count is 177, no higher than 177 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-23T18:46:21+00:00",
-      "attempts": 8
+      "error": "",
+      "updated_at": "2026-09-23T23:28:48+00:00",
+      "attempts": 10,
+      "finalized": true
     },
     "53f5df48da025a43baca97a1d6c95dbb7001a65effac3ad041ad3c64ef9529cb": {
       "record_id": "53f5df48da025a43baca97a1d6c95dbb7001a65effac3ad041ad3c64ef9529cb",
@@ -12029,6 +12030,405 @@
       "schedule_time": "2026-09-27 13:45",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-23T03:22:43+00:00",
+      "attempts": 2
+    },
+    "a2bb91bf194d36ae7694cfe70b151d660d476cae3f4754411ffa36617f5508c2": {
+      "record_id": "a2bb91bf194d36ae7694cfe70b151d660d476cae3f4754411ffa36617f5508c2",
+      "status": "scheduled",
+      "content": "I paid forty dollars for a tool I could have written in a weekend. Forty dollars. It was the best money I spent last year and writing it would've been the expensive option.\n\nI had done the maths wrong for years. I compared the price against my hourly rate and it always came out in favour of building it myself. What I never counted was the maintenance, which doesn't stop when the first version works.\n\nWhat I paid for has been updated every month for a year by somebody whose job is to do that. If I had built mine, I'd be the one reading changelogs on a Sunday and deciding whether to fix a thing nobody had complained about yet.\n\nMy rule now is about whether the thing is close to the core of what I do. If it is, I build it. I own the maintenance. If it's adjacent, I pay and I get my weekends.\n\nThe price of software isn't the price. The price is the next two years of attention.\n\n#AI #BuildInPublic #VibeCoding #tech #Tools #SoftwareEngineering #Developer #BuildInPublic #TechNews #BuyVsBuild #Maintenance #Craft #Productivity #Advice #Business #Engineering",
+      "schedule_time": "2026-09-27 13:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:28:48+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b79227ac6c89caf1b4a6231ad5b0fb4cd19b0b9e9d990f8758be3eb287f12bb9": {
+      "record_id": "b79227ac6c89caf1b4a6231ad5b0fb4cd19b0b9e9d990f8758be3eb287f12bb9",
+      "status": "scheduled",
+      "content": "I lost power for about four hours last week and the thing that failed wasn't the machine. It was the thing I'd forgotten to plug into the battery.\n\nThe battery kept the router and the main box up, which was the plan. What went down was the small switch that connects the two, so everything in the flat was powered and unreachable. Four hours of a system that was running.\n\nThe battery beeps. That's the other thing I learned. Loudly, every few seconds, for four hours, at two in the morning. It was telling me something useful and I had never noticed because the power had never gone off for long enough.\n\nI've since written the list of everything that has to be on the battery. Seven items. One switch. One modem. Both of them were the ones I'd missed. It's taped inside the cupboard where I'll see it during the next one.\n\nA hardware plan is only as good as the list. I write the list while I'm annoyed, not while I'm calm.\n\n#AI #BuildInPublic #VibeCoding #tech #HomeLab #Infrastructure #SelfHosted #Engineering #BuildInPublic #TechNews #Hardware #Reliability #Systems #Craft #Advice #Power",
+      "schedule_time": "2026-09-27 14:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:28:48+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "648f275eb7aa4cb8fbc6ae9b789339d9d8a5597c11c5b01880b0efdd8f8dfbec": {
+      "record_id": "648f275eb7aa4cb8fbc6ae9b789339d9d8a5597c11c5b01880b0efdd8f8dfbec",
+      "status": "scheduled",
+      "content": "I was wrong in public last month about a number. I was wrong. The correction took four minutes and cost me nothing. Four minutes.\n\nThe original post had a number in it that was off by a factor of ten. Somebody with domain knowledge pointed it out in a reply that was polite and specific. My first instinct was to write a long explanation of how I got there. Instead I wrote three lines saying he was right and here's the corrected number.\n\nWhat happened next was the interesting part. Two people replied to the correction. They'd assumed the wrong number too. More people engaged with the fix than with the original claim.\n\nThe thing I was protecting was a version of myself that had never been wrong about anything, and nobody in that thread was asking for that version of me. They were asking for somebody who would say when a number changed.\n\nI correct now within the hour. The longer it sits, the smaller the correction feels and the bigger it becomes.\n\n#AI #BuildInPublic #VibeCoding #tech #Writing #Credibility #Learning #BuildInPublic #TechNews #Mistakes #Community #Craft #Growth #Advice #Habits #Trust",
+      "schedule_time": "2026-09-27 14:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:28:48+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "342d5bd07eb3c5000809e58ee6b62ba616133976941d5016b6cf4d1cfb287e31": {
+      "record_id": "342d5bd07eb3c5000809e58ee6b62ba616133976941d5016b6cf4d1cfb287e31",
+      "status": "scheduled",
+      "content": "I've watched AI get adopted in four industries now and the order is always the same. Invisible layer first. Then the visible one.\n\nFilm adopted it in pre production and post. Games adopted it in tooling and QA. Energy adopted it in forecasting. None of those are the jobs people argue about, and all of them are where the headcount sits.\n\nThe visible layer is the last to move, because the visible layer is where the audience has an opinion. Nobody has a view about how a storyboard got made. Everybody has a view about a performance.\n\nI've said this before and I'll keep saying it. I watch the credits nobody reads. That's where the change shows up first and it's where the arguments arrive last.\n\nFor me the practical version is simple. Two rules. If you do work the audience never sees, your job is already in the transition. If you do work they see, you've got longer and less warning.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #FutureOfWork #Film #GameDev #Energy #Adoption #Technology #Industry #TechNews #Strategy #Careers #Innovation",
+      "schedule_time": "2026-09-27 14:30",
+      "error": "",
+      "updated_at": "2026-09-23T23:28:48+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "712b04a47d29d39de34df329cecfabbba0b2c00222efed07893793a9203af068": {
+      "record_id": "712b04a47d29d39de34df329cecfabbba0b2c00222efed07893793a9203af068",
+      "status": "scheduled",
+      "content": "I asked a designer to review a dashboard I had built and she spent ten minutes on a question I had never considered. What does this number mean if it's zero.\n\nThe answer was that the panel showed a blank space. Not a zero. Not a dash. Nothing, because my code skipped rendering when the value was empty. So a metric that had stopped reporting looked exactly like a metric with no problems.\n\nThat's the same bug in five other panels. Nobody had noticed because the situation hadn't come up, and the situation comes up exactly when you need the dashboard most.\n\nI design the states before the happy path now. Empty, zero, loading, and the number that hasn't arrived yet. Four states. Five minutes of thinking. No code that lies to you at three in the morning.\n\nNobody has ever had an outage because their empty state was too well designed.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductDesign #UX #Data #Dashboards #BuildInPublic #TechNews #Design #Engineering #Frontend #Craft #Users #Advice",
+      "schedule_time": "2026-09-27 14:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:35:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c05c67099e15796856ea1f9201ee1c1333492aa784f62034d75e0a1d52ccbc12": {
+      "record_id": "c05c67099e15796856ea1f9201ee1c1333492aa784f62034d75e0a1d52ccbc12",
+      "status": "scheduled",
+      "content": "A colleague I liked quit last year and her exit interview was one sentence long. She said she stopped learning in month six and stayed for two years. Two years.\n\nI had no idea. From the outside she was the most engaged person on the team. She ran the demos, she mentored two people, and she was the one who remembered the context on everything. None of that's the same as growing.\n\nWhat she described was a slow narrowing. She got very good at the specific system and progressively worse at everything adjacent, and nobody noticed because the specific system was all we asked her about.\n\nSince then I ask people a different question in our one to ones. I ask what they learned this month that they couldn't have learned here last year. If the answer is nothing two months in a row, the clock is running.\n\nEngagement and growth look identical from the outside and they aren't the same thing at all.\n\n#AI #BuildInPublic #VibeCoding #tech #Management #Career #Teams #Retention #BuildInPublic #TechNews #Leadership #Growth #Workplace #Learning #Advice #People",
+      "schedule_time": "2026-09-27 15:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:35:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "4abf15a44dcea7c845a5a34be4cffa1c2dcd17a5bac0568d4a3274eb07e1db37": {
+      "record_id": "4abf15a44dcea7c845a5a34be4cffa1c2dcd17a5bac0568d4a3274eb07e1db37",
+      "status": "scheduled",
+      "content": "I deleted a feature that four customers used and the conversation took two weeks and ended with nobody angry. I want to write about how, because it usually ends badly.\n\nThe feature was about eighty lines. The scaffolding around it was about six thousand, spread across docs, tests and support. Nobody had used it in a new project for two years. The four were grandfathered accounts.\n\nWhat I did first was mail all four and ask what they used it for. Three said they couldn't remember and one said it powered a scheduled export that mattered. That's the whole reason the first email was worth sending.\n\nWe rebuilt the export on the current path, tested it with him over two calls, and then announced the removal with a date and a migration note. Nobody complained. Nobody was surprised.\n\nTwo weeks. Deleting is a relationship task first and an engineering task second. Ask what people use it for before you decide that nobody does.\n\n#AI #BuildInPublic #VibeCoding #tech #Product #Deprecation #Customers #Users #BuildInPublic #TechNews #ProductDesign #Engineering #Communication #Advice #SoftwareEngineering #Maintenance",
+      "schedule_time": "2026-09-27 15:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:35:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5f6cae1f0459550ca832b877db056e08c557213ebfb0cfe3ecedaef7058c0322": {
+      "record_id": "5f6cae1f0459550ca832b877db056e08c557213ebfb0cfe3ecedaef7058c0322",
+      "status": "scheduled",
+      "content": "Verification is the part of this craft nobody posts about. I've shipped four projects with a model in the loop this year and the difference between a good outcome and a bad one was never the model.\n\nHere's what it was. Whether I ran the thing myself before I said it worked. Whether I opened the file and read the diff. Whether I tested the failure path rather than the demo.\n\nI've watched people skip all three and I understand why. None of it photographs well. A green test run is boring. A working feature is a screenshot, and the screenshot is what gets shared.\n\nSo I keep a rule that costs me about an hour a week. Before I claim anything works, I run it, I read the change, and I say which of the two I actually did. I tested this and this should work are different sentences. I use both.\n\nThat's the whole discipline. Not clever. Just honest about the evidence. That's it.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Testing #Developer #Engineering #Verification #Quality #Coding #BuildInPublic #TechNews #Craft #Reliability #Proof",
+      "schedule_time": "2026-09-27 15:30",
+      "error": "",
+      "updated_at": "2026-09-23T23:35:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "00c5ffa38293b6d587454909bd2320daf6cfdc8425a859b377f755710d7eb706": {
+      "record_id": "00c5ffa38293b6d587454909bd2320daf6cfdc8425a859b377f755710d7eb706",
+      "status": "scheduled",
+      "content": "A bug in our billing page only showed up for accounts with more than one hundred items and I found it because a customer sent a screenshot instead of a complaint. Screenshots are worth ten emails. Ten emails.\n\nA complaint says the page is broken. Then it takes three replies to establish which page, which account, and what they expected. I got it in one message because somebody sent a screenshot. It had the browser width in it, which turned out to be the actual trigger.\n\nIt's a layout bug. Not a data bug. At that width the total column wrapped under the row and a reader could pair the wrong figure with the wrong line. I could have caught it in review if I'd opened the page at that width. Nothing was calculated wrong and somebody could still have paid the wrong amount.\n\nWe fixed the layout and added a test at that width, and it's three lines long because the state is easy to build once you know the trigger's visual.\n\nScreen first. I ask for a picture first now. It answers questions nobody's thought to ask yet.\n\n#AI #BuildInPublic #VibeCoding #tech #BugReport #Support #Users #Frontend #BuildInPublic #TechNews #Testing #ProductDesign #Engineering #CustomerSupport #Craft #Advice",
+      "schedule_time": "2026-09-27 15:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:35:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "19f368b9ffdab946e27c3796d0d15326eccd292c6d454184aad3ed6b73964195": {
+      "record_id": "19f368b9ffdab946e27c3796d0d15326eccd292c6d454184aad3ed6b73964195",
+      "status": "scheduled",
+      "content": "I stole a design trick from a kitchen and it's the best thing in my current product. The trick is a mise en place, one tray with the current step on it.\n\nIn software it became a single panel that shows the one thing you're doing, with everything else behind a disclosure. No tabs, no sidebar of six sections, no dashboard of unrelated numbers. One task, visible, with a way out.\n\nThe measurement that convinced me was time to first useful action, which dropped from about ninety seconds to under twenty in a test with nine people. Not a study. Enough to move.\n\nI've watched teams build a control panel because it looks impressive and then wonder why users get lost. A control panel is a tool for an expert who already knows the machine. Most of my users are standing in the kitchen for the first time.\n\nBorrow from anywhere. The best interface ideas I've shipped came from trades, not from software.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductDesign #UX #Design #Developer #BuildInPublic #TechNews #Craft #Users #Engineering #Product #Innovation #Advice",
+      "schedule_time": "2026-09-27 16:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:43:29+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a0cd95f2ee2c5c8a1c77432b57a1ee69739861e427579193e1ba6dc305fad85b": {
+      "record_id": "a0cd95f2ee2c5c8a1c77432b57a1ee69739861e427579193e1ba6dc305fad85b",
+      "status": "scheduled",
+      "content": "I've started writing down what I don't know before I start a task and the list is usually three lines. Those three lines save me more time than any tool I have adopted.\n\nThe list isn't a plan. It's a list of the specific facts I'm assuming and haven't checked. Which environment this runs in. Who else calls this function. Whether the number in the ticket is current.\n\nI use it to short circuit the part of a task where I go down a road for ninety minutes and find out the assumption at the end. Two of the three items usually take four minutes each to verify.\n\nI can't verify the third one most of the time, and knowing that up front changes how I write the code. If I can't check it, I build the failure case first and I make the assumption visible in a log line.\n\nI write my assumptions down. Then I check the cheap ones. Ninety seconds of listing beats an afternoon of discovering.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Planning #Developer #Engineering #BuildInPublic #TechNews #Coding #Craft #Habits #Productivity #Systems #Advice",
+      "schedule_time": "2026-09-27 16:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:43:29+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "51c1027e5465c7c1337825470d0e3690dc255523e7baac593c340043d456073e": {
+      "record_id": "51c1027e5465c7c1337825470d0e3690dc255523e7baac593c340043d456073e",
+      "status": "scheduled",
+      "content": "I said I don't know in a meeting last month and the room got quieter, which I hadn't expected. Usually admitting ignorance helps. That time it stopped something.\n\nThe question was about how a revenue figure was calculated and nobody in the room knew, and I'd been about to guess with a confident tone, which is the thing I'm trying to stop doing. So I said I didn't know and I'd find out by Thursday. That's it.\n\nWhat happened next is that the meeting ended early and I found out in about ten minutes, because the answer was in a document two people had written. Two people. Nobody had read it.\n\nThe reason the room got quiet is that everybody else had been about to guess too, and my not guessing took the option away. That's the useful part of saying it out loud. It gives everybody permission and it stops the meeting from inventing a number.\n\nI keep it short and specific. I don't know, and I'll have it by Thursday. Ten words. A better answer than a plausible one.\n\n#AI #BuildInPublic #VibeCoding #tech #Honesty #Workplace #Communication #Teams #BuildInPublic #TechNews #Meetings #Advice #Leadership #Career #Engineering #Growth",
+      "schedule_time": "2026-09-27 16:30",
+      "error": "",
+      "updated_at": "2026-09-23T23:43:29+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ac2c23fd158640def46df79aed18145b04b003d54c9fb86e98f54d92f68960e7": {
+      "record_id": "ac2c23fd158640def46df79aed18145b04b003d54c9fb86e98f54d92f68960e7",
+      "status": "scheduled",
+      "content": "A teammate solved the problem I had been stuck on for two days in about seven minutes and I asked him afterwards what he looked at first. He said he read the ticket out loud.\n\nThat sounds like a joke and it isn't. What he heard when he said it out loud was the word export, and the bug was in a background job that he hadn't been thinking about because the ticket title said page.\n\nSeven minutes. Two days. I'd read the ticket about thirty times. Reading and hearing are different operations and I had only done the quiet one.\n\nNow when I'm stuck for more than twenty minutes I describe the problem to an empty room or write it in a message I don't send. About a third of the time the answer arrives in the middle of the sentence.\n\nI check the boring thing first now. Is the job running at all. That's a five second check I'd skipped because I'd assumed it was fine. Say it out loud. Ask the boring question.\n\n#AI #BuildInPublic #VibeCoding #tech #Debugging #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Coding #Craft #Habits #Tips #Systems #Advice",
+      "schedule_time": "2026-09-27 16:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:43:29+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a5ad88149671974d6205df4c1cc1757e41657ae647b8dda4a9d9fdef3ce13db9": {
+      "record_id": "a5ad88149671974d6205df4c1cc1757e41657ae647b8dda4a9d9fdef3ce13db9",
+      "status": "scheduled",
+      "content": "Games get deleted and nobody holds a funeral. I've watched storefronts close and take whole libraries with them.\n\nThat's the part of this industry I find hardest to defend. A film can be found in an archive. A book can sit on a shelf. A game that loses its server or its storefront stops existing, and the people who made it can't do anything about it.\n\nI've read the arguments on both sides. Licensing is complicated, engines are licensed, music is licensed, and the publisher doesn't own everything in the file. All true. None of it changes the outcome.\n\nSo my position is simple. Preserve the build even if you can't ship it. A museum can hold a machine that a store can't sell. The two functions are different and we've conflated them.\n\nI'd fund the archive before the remaster. One keeps the work and the other keeps the revenue, and only one of them is irreplaceable.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #Preservation #GamesIndustry #Archives #Gaming #Games #Culture #Technology #History #IndieDev #Libraries #Media",
+      "schedule_time": "2026-09-27 17:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:43:29+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "9a252ed563fee7805154fee9dcbd72c480a1cb912317c412703931cd9430111e": {
+      "record_id": "9a252ed563fee7805154fee9dcbd72c480a1cb912317c412703931cd9430111e",
+      "status": "scheduled",
+      "content": "I fixed a slow query last week by reading the log instead of the code, and the difference was about ninety minutes. I'd been in the wrong file for an hour.\n\nIt looked fine. It was a loop over users with a lookup inside, which I'd written and which I'd defended in a review six months earlier. So I opened it and read every line twice and found nothing, because there was nothing there.\n\nMy log said something else. It said the same query ran eleven thousand times, and the loop was not the problem. A library was fetching a setting from the database on every call and caching nothing.\n\nI moved that fetch outside the function. Same behaviour, four lines different. That endpoint went from nine seconds to about two hundred milliseconds, and I spent the rest of the day annoyed at the hour.\n\nWhen the code looks right and the machine is slow, ask the machine what it did. Logs are witnesses and they don't have a theory to defend.\n\n#AI #BuildInPublic #VibeCoding #tech #Performance #Databases #SoftwareEngineering #Developer #BuildInPublic #TechNews #Debugging #Engineering #Coding #Craft #Systems #Advice",
+      "schedule_time": "2026-09-27 17:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:51:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "146de43869dcc5b2e6b6e3dc92a2569ba5f946f22199ae22781c3b330a7297b4": {
+      "record_id": "146de43869dcc5b2e6b6e3dc92a2569ba5f946f22199ae22781c3b330a7297b4",
+      "status": "scheduled",
+      "content": "Helion ran deuterium and tritium fuel in February and became the first private company to do it. That's a real milestone and I want to give it its due before I say the other thing.\n\nThe other thing is the timeline. Fusion has been ten years away for forty years, and the reason is that a plasma event in a test cell and a power plant on a grid are different products. The gap between them is not science. It's engineering at a scale nobody has financed yet.\n\nI still think this matters more than most of what gets a headline. It's the enabling layer. It's the boring middle of the energy story, and the boring middle is what actually moves.\n\nSo my read is the same as it's always been. Watch the fuel handling and the turbine, not the announcement. Those are the two places where a demo becomes a product, and they're the two places nobody films.\n\nTen years is still my guess. I'd love to be wrong and I'd love it to be three.\n\n#AI #BuildInPublic #VibeCoding #tech #Fusion #Energy #CleanEnergy #Helion #Climate #DeepTech #Science #Physics #EnergyTransition #Research #Infrastructure #FutureTech",
+      "schedule_time": "2026-09-27 17:30",
+      "error": "",
+      "updated_at": "2026-09-23T23:51:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3ad0621cf1a3e632404e571dfcb8623763e2557fd6486c28fbf8dcfd02411523": {
+      "record_id": "3ad0621cf1a3e632404e571dfcb8623763e2557fd6486c28fbf8dcfd02411523",
+      "status": "scheduled",
+      "content": "An open source maintainer rejected my pull request and explained why in a comment that was longer than my diff. I would have been annoyed if he was wrong.\n\nHe wasn't. I'd added a feature he'd been asked for about six times and turned down each time, and the reason was in an issue from two years before. The feature would have doubled the surface area of one function for a use case he didn't want to own.\n\nWhat I should have done is read the closed issues. That's a twenty minute search. I did it after he told me and found three threads where he explained the same decision with patience every time.\n\nSo I closed my pull request and wrote a short note in the issue thread explaining the workaround I'd found in my own code. That note got more thanks than the feature would have.\n\nRead the closed issues. Before you contribute. The maintainer has already had your idea and already said no, and reading why is the cheapest education available in open source.\n\n#AI #BuildInPublic #VibeCoding #tech #OpenSource #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Contribution #Craft #Community #Coding #Maintenance #Advice",
+      "schedule_time": "2026-09-27 17:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:51:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "60092b247f93f90bc53dbbda5b309672937b36363d12809c8d6fffb476a94694": {
+      "record_id": "60092b247f93f90bc53dbbda5b309672937b36363d12809c8d6fffb476a94694",
+      "status": "scheduled",
+      "content": "I almost took a job because the office was nice and the salary was fine. I caught it because a friend asked one question. One question. Who would I learn from on a Tuesday.\n\nOne question cut through five interviews of politeness. I'd never asked about the day to day, only about the role, the team, and the plan. I never asked it. Nobody did. Nobody in the process had said the sentence I needed, which was that I'd sit near somebody whose work I wanted to steal.\n\nThe job I took instead paid a bit less and put me next to a technical lead who reviewed my code for eight months and told me about the two habits that made reviewing me painful. I learned more in that stretch than in the previous two years and the money caught up within one cycle.\n\nThe lesson is about what I was optimising for. Not the offer. I was reading the offer and ignoring the room. A job is mostly the four people you talk to most and none of that's in a description.\n\nAsk who you would learn from. Ask it before the final round, when there's still room to care about the answer.\n\n#AI #BuildInPublic #VibeCoding #tech #Career #Jobs #Hiring #Mentorship #BuildInPublic #TechNews #Growth #Interviewing #Advice #Workplace #Learning #People",
+      "schedule_time": "2026-09-27 18:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:51:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6dd49a7296fdfc7f8694ae10fee6ff67c14845f6357086fa921d6f709fe27e04": {
+      "record_id": "6dd49a7296fdfc7f8694ae10fee6ff67c14845f6357086fa921d6f709fe27e04",
+      "status": "scheduled",
+      "content": "A compliance deadline in the EU is doing more to change products than any conference talk I've attended, and the reason is that it has a date and a name attached. A date and a name. Deadlines beat arguments.\n\nI've watched three teams this year rebuild something they'd been discussing for eighteen months. The discussion never produced a decision because it never had to. The date produced it in a week.\n\nI'd tell anybody working on this to read the actual text and not the summary posts. A lot of the summaries I've seen flatten a list of specific obligations into a general vibe about being responsible, and the specific obligations are the whole point.\n\nStart with the data. Where it lives, why you have it, how long you keep it. Most teams can't answer the third question. Few can. That's the one that tends to bite.\n\nGood regulation is a forcing function. It converts a debate that could run for years into a checklist with a date on it.\n\n#AI #BuildInPublic #VibeCoding #tech #Regulation #Privacy #AI #Compliance #BuildInPublic #TechNews #Policy #Data #Engineering #Product #Business #Advice",
+      "schedule_time": "2026-09-27 18:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:51:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2261e1f14a8603bf97129db1cdd93d3e4b45c94efd821e6a8f7010f85abe6315": {
+      "record_id": "2261e1f14a8603bf97129db1cdd93d3e4b45c94efd821e6a8f7010f85abe6315",
+      "status": "scheduled",
+      "content": "I've apologized to a model more times than I'd like to admit and I've started noticing what that teaches me about my own patience.\n\nIt happens when I get a bad answer. I'll type something short and irritated, then delete it and write a proper question with the context attached. The good question gets the good answer. Every time.\n\nThat's the whole thing. The frustration comes from giving it nothing and expecting everything. Which is exactly what I do to people sometimes, and the model doesn't mind, and people do.\n\nSo the habit transferred. Before I ask a person for something hard, I write the version of the question that already contains what they'll need. It's four extra lines and it saves a round trip.\n\nTurns out prompting is just the discipline of asking well, with a machine that never takes offence. Handy place to practice, since the feedback is instant and the cost is nothing.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #Prompting #Developer #Communication #SoftwareEngineering #BuildInPublic #TechNews #Craft #Learning #Habits #Engineering #Advice",
+      "schedule_time": "2026-09-27 18:30",
+      "error": "",
+      "updated_at": "2026-09-23T23:58:39+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "959a0c95c1c4ab0525a41067efa3eb190bdfcfa531acaed9bf1a65b9320981bb": {
+      "record_id": "959a0c95c1c4ab0525a41067efa3eb190bdfcfa531acaed9bf1a65b9320981bb",
+      "status": "scheduled",
+      "content": "I read a study about walking and creativity and the finding was real and small, which is the most useful kind of finding. About six percent better on one test.\n\nSix percent will not change your life. What it does do is survive scrutiny, and that's worth more to me now than a large number I can't trust. I've stopped reading for the headline effect and started reading for whether the thing holds up.\n\nI treat a small finding as a cheap default. If I'm stuck, I walk for fifteen minutes, which costs me almost nothing and which the evidence says is a bit helpful, and that is enough for me to make it a habit. Cheap default.\n\nThe mistake is treating a small effect as a large one and then arguing about it. That's how a decent study becomes a lifestyle claim, and then somebody writes a headline and it becomes a fight.\n\nSmall and real beats big and shaky. I'd rather be right about six percent than confident about forty.\n\n#AI #BuildInPublic #VibeCoding #tech #Science #Research #Habits #Evidence #BuildInPublic #TechNews #Health #Data #Statistics #Walking #Learning #Advice",
+      "schedule_time": "2026-09-27 18:45",
+      "error": "",
+      "updated_at": "2026-09-23T23:58:39+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "423a129a86d232834de1f999479bce3c56b09366c598375d515bc405421efa9d": {
+      "record_id": "423a129a86d232834de1f999479bce3c56b09366c598375d515bc405421efa9d",
+      "status": "scheduled",
+      "content": "A screen recording from one user taught me more in eleven minutes than three months of my own usage notes. I'd been designing for somebody who doesn't exist.\n\nWhat I saw was the pause. She opened the page, moved the mouse to the right corner, stopped, came back, and then typed something into a box I'd labelled as optional. That pause was nine seconds of a person deciding whether she was in the right place.\n\nI'd never noticed it because I always know where I am. I built the page. The pause is invisible from the inside and obvious from a recording.\n\nSo I made one change. The heading now says what the page does in seven words, and the pause went away in the next two recordings I watched. Small fix, and I'd have never found it by asking.\n\nThree recordings is the cheapest research I've ever funded. Nobody has to answer a survey. They just have to be willing to share a screen.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductDesign #UX #UserResearch #Design #Developer #BuildInPublic #TechNews #Product #Users #Craft #Growth #Advice",
+      "schedule_time": "2026-09-27 19:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:58:39+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8bc9750c7ee225d110e28eaf94bfa8b9327c79bd8738412d2297931f34243229": {
+      "record_id": "8bc9750c7ee225d110e28eaf94bfa8b9327c79bd8738412d2297931f34243229",
+      "status": "scheduled",
+      "content": "I paired with somebody for three hours last week and we solved a problem I'd been circling for two days. Pairing is not about speed for me. It's about not being able to lie.\n\nAlone, I can keep an assumption for an hour without noticing. I'll write a line, run it, see a strange result, and move on. With another person there, I have to say the assumption out loud, and about half the time saying it is enough to see it is wrong.\n\nI don't pair all day. Three hours. Past that the second person becomes an audience and I stop narrating. The narrating is the entire benefit.\n\nThe other rule I have is to swap who types every forty minutes. The person at the keyboard controls what gets tried, and if that's always the same person you get the same ideas faster than before.\n\nPairing is expensive and it's the cheapest way I know to catch the thing I can't see.\n\n#AI #BuildInPublic #VibeCoding #tech #PairProgramming #Teams #SoftwareEngineering #Developer #BuildInPublic #TechNews #Engineering #Craft #Coding #Collaboration #Advice #Debugging",
+      "schedule_time": "2026-09-28 08:00",
+      "error": "",
+      "updated_at": "2026-09-23T23:58:39+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ffd8f51f11d62e9515cd3df0970ef4397c93a14b4e7b7faf130ab24ec2b0c2ff": {
+      "record_id": "ffd8f51f11d62e9515cd3df0970ef4397c93a14b4e7b7faf130ab24ec2b0c2ff",
+      "status": "scheduled",
+      "content": "An outage last month was caused by a config typo and the typo was not the interesting part. The interesting part is that the bad value was accepted at all.\n\nSomebody wrote true instead of false, with a capital T, and the parser coerced it. So a safety check that disabled a payment path got turned on in one environment and off in another, and nobody saw a warning.\n\nI want to be careful here, because the person who made the typo isn't the problem and I'd reject any write up that said so. A config format that accepts six spellings of yes and two of no has a design problem, not an operator problem.\n\nWe've made the parser strict. Unknown values now fail at startup instead of at three in the morning, and the deployment shows you the parsed values before it proceeds. No guessing.\n\nStrict parsing isn't a nicety. If your system guesses what you meant, your runbook's a guess too. Check both.\n\n#AI #BuildInPublic #VibeCoding #tech #Config #Reliability #Engineering #Operations #BuildInPublic #TechNews #Systems #SRE #Craft #Advice #IncidentResponse #SoftwareEngineering",
+      "schedule_time": "2026-09-28 08:15",
+      "error": "",
+      "updated_at": "2026-09-23T23:58:39+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6152d9f43335517278b6ae635110348a8c79b615db62760eedc7dcb75cab11c1": {
+      "record_id": "6152d9f43335517278b6ae635110348a8c79b615db62760eedc7dcb75cab11c1",
+      "status": "scheduled",
+      "content": "I deleted a comment from a function last week and renamed the function instead, and the file got clearer by about a paragraph. That's a small change with a large return.\n\nThe comment said what the function did with the result of a lookup, and the function was called process. So the comment was doing the work of a name, badly, for anybody who skimmed.\n\nI renamed it to filter accounts with no activity in ninety days and the comment disappeared because it was no longer needed. The behavior didn't change at all. Nothing I did made the code faster or safer.\n\nWhat it did was remove a place where the code and the comment could disagree, which they will, because one of them gets edited and the other doesn't. Every comment that restates a name is a future lie.\n\nComments are for the why. Names are for the what. When a name is doing its job, the comment has no reason to exist. One rename.\n\n#AI #BuildInPublic #VibeCoding #tech #Naming #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Coding #Refactoring #Craft #CodeReview #Maintainability #Advice",
+      "schedule_time": "2026-09-28 08:30",
+      "error": "",
+      "updated_at": "2026-09-24T00:06:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "e0a2b623ad718570590682691307ca879702e9d11aa7e26daecff7e68fde60e1": {
+      "record_id": "e0a2b623ad718570590682691307ca879702e9d11aa7e26daecff7e68fde60e1",
+      "status": "scheduled",
+      "content": "A remaster announced eleven days after two studios lost headcount is the whole economics of this industry in one sentence.\n\nI've watched the cycle for years. The catalogue gets milked and the people who made the catalogue get treated as a cost. It's the most reliable pattern in games and it isn't specific to games.\n\nHere's what I'd notice. The remaster needs almost no new design work and it monetizes a known quantity. From a spreadsheet it's the safest line item in the building. From a career it's the signal that new ideas are being priced as risk.\n\nThat's the part that worries me. Not the money. Innovation gets squeezed when the safe option is the profitable one, and every industry does this until somebody eats their lunch.\n\nI've been on both sides of that decision. I understand it. I still think it's how a catalogue gets hollowed out while the balance sheet looks fine.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #Remaster #Layoffs #StudioClosure #Business #Publishing #Games #IndieDev #Industry #Strategy #ConsoleGaming",
+      "schedule_time": "2026-09-28 08:45",
+      "error": "",
+      "updated_at": "2026-09-24T00:06:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d6ef51841fa9eadb899b0a367a43d132b6abba6831a9a8570397e906eef455af": {
+      "record_id": "d6ef51841fa9eadb899b0a367a43d132b6abba6831a9a8570397e906eef455af",
+      "status": "scheduled",
+      "content": "I wrote a postmortem after our worst outage and it got read by more people than anything else I've written. The reason is one section. Just the timeline.\n\nNot what we thought. Not who did what. Just times and events, in order, in one column. Somebody reading it can see that one person was on the call for forty minutes without a handover, and that fact does more than any paragraph of analysis.\n\nWhat I got wrong the first time was the tone. I wrote it like a defence, with each decision explained and justified. A reviewer told me it read like a lawyer's letter and she was right. Version two had no adjectives about people at all.\n\nThird is the follow up items, which is where most postmortems die. Five items, each with a name and a date. We did four and dropped one on purpose, and we said why.\n\nThis document isn't for the incident. It's for the person who has the same incident in eighteen months and searches the wiki.\n\n#AI #BuildInPublic #VibeCoding #tech #Postmortem #Reliability #Engineering #SRE #BuildInPublic #TechNews #IncidentResponse #Writing #Teams #Operations #Craft #Advice",
+      "schedule_time": "2026-09-28 09:00",
+      "error": "",
+      "updated_at": "2026-09-24T00:06:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "578f5cac360d8659a39e06b2d47b41acdaed30fb6096eac78d17ce2ed6e88fd2": {
+      "record_id": "578f5cac360d8659a39e06b2d47b41acdaed30fb6096eac78d17ce2ed6e88fd2",
+      "status": "scheduled",
+      "content": "Fusion and grid demand are two halves of the same story. Almost nobody puts them in one paragraph. Data centers are forecast to take around a tenth of the power the Western grid plans for. That is a big number. It is not a crisis.\n\nI keep coming back to that tenth. So I read it as an allocation question. Somebody has to decide what gets built, and the deciding is done by utilities and planners in rooms with no cameras.\n\nI've said for a while that energy is the unsexy layer under all of this. Everyone wants to talk about the model. The model runs on megawatts, and the megawatts come from a transmission line that took nine years to permit.\n\nSo the interesting projects to me aren't the flagship ones. They're the interconnects, the transformers, the permitting reform, the boring hardware that has to exist before any of the flashy stuff works.\n\nThat layer is where the whole thing is decided. It's also the layer with the worst press cycle, which is why it stays underfunded.\n\n#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Climate #AI #EnergyTransition #Utilities #DeepTech #Policy #Sustainability #Fusion",
+      "schedule_time": "2026-09-28 09:15",
+      "error": "",
+      "updated_at": "2026-09-24T00:06:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "533c54a2614a90d6b85fc8dc15bb61e17a584735bb76fe2341ac25ded3f25833": {
+      "record_id": "533c54a2614a90d6b85fc8dc15bb61e17a584735bb76fe2341ac25ded3f25833",
+      "status": "scheduled",
+      "content": "I stopped using a tool I'd recommended to about six people and I want to be honest about why, because the recommendation did some damage. It wasn't the tool. It was that I recommended it before I'd run it for a month.\n\nIt was fine at first. It solved the thing I had and it was fast. What I hadn't seen was how it behaved when the data got messy, which it did at week six, and at that point I'd already sent the link to people who now had it in their workflow.\n\nThat's the cost of an early recommendation. You're not just saying the tool works. You're transferring your credibility to something you've only run for two weeks, and when it breaks, it breaks for them and not for you.\n\nI recommend with the shape of my experience attached now. Two weeks in and it fixed this. Ask me in three months. That's less exciting and it has never cost me a relationship.\n\nI say how long I've been using it. That's the recommendation.\n\n#AI #BuildInPublic #VibeCoding #tech #Tools #Recommendations #SoftwareEngineering #Developer #BuildInPublic #TechNews #Trust #Craft #Advice #Productivity #Engineering #Learning",
+      "schedule_time": "2026-09-28 09:30",
+      "error": "",
+      "updated_at": "2026-09-24T00:06:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8f973526514f9d1b43fb33d2f7bf3fad4bb84235fd46cb80d0f6b8b0b72faab5": {
+      "record_id": "8f973526514f9d1b43fb33d2f7bf3fad4bb84235fd46cb80d0f6b8b0b72faab5",
+      "status": "scheduled",
+      "content": "I turned down a promotion once and it took me a year to explain why without sounding like a coward. A year. The reason was that I wanted to keep writing code.\n\nThe role was a manager of five and it came with a small raise and a large amount of calendar. I had watched two people take it and both of them stopped shipping within a month, which isn't a criticism of them. That's what the job is.\n\nWhat I didn't have at the time was a way to say that without implying the work was beneath me. I said I wanted to stay close to the technology, which sounded like an excuse.\n\nThe version I have now is clearer. I told my next manager that I want to be judged on what I ship and that I know what happens to that number when my week has fifteen meetings in it. He understood and we found a path that kept both.\n\nPick the work you want to be measured on. Then say that sentence out loud.\n\n#AI #BuildInPublic #VibeCoding #tech #Career #Management #Promotion #Jobs #BuildInPublic #TechNews #SoftwareEngineering #Workplace #Advice #Growth #Leadership #Life",
+      "schedule_time": "2026-09-28 09:45",
+      "error": "",
+      "updated_at": "2026-09-24T00:13:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "fdda0ea5d0a2cd9a754a2a162ab4ca533ba88a7a05757e5641526deae898eb1c": {
+      "record_id": "fdda0ea5d0a2cd9a754a2a162ab4ca533ba88a7a05757e5641526deae898eb1c",
+      "status": "scheduled",
+      "content": "I did my hardest code review this year on a file that worked and read like a machine wrote it slowly. Every line was reasonable. It had no shape.\n\nI don't have a name for this pattern yet. Dense, plausible, a bit redundant, with a comment above every block explaining what the obvious line below does. None of it is wrong in isolation.\n\nWhat it costs is the reader, who has to hold all of it because nothing in the file tells you what matters. A human who writes a two hundred line function has a reason most of the time. This had none, and that's the tell.\n\nI gave three comments. Delete the comment above every block. Group the four things into four functions. Then re read it and delete whatever you can't justify. The author did all three and the file went from three hundred lines to about eighty.\n\nVolume is not output. A file that explains everything has explained nothing.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Coding #Craft #AI #Refactoring #Maintainability #Advice",
+      "schedule_time": "2026-09-28 10:00",
+      "error": "",
+      "updated_at": "2026-09-24T00:13:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "cc97cec200d4fae2b78fb7b9581d10a75a8224428c06051a6bbc8fd01873ef9b": {
+      "record_id": "cc97cec200d4fae2b78fb7b9581d10a75a8224428c06051a6bbc8fd01873ef9b",
+      "status": "scheduled",
+      "content": "I wrote tests for a feature I didn't understand yet and the tests taught me what I was building. That used to feel backwards.\n\nThe feature was a pricing rule with three conditions and two exceptions, described to me in a meeting that ran long. I came away with a warm feeling and no clear model, so I wrote the examples down as if they were tests. Nine of them, plain sentences with numbers.\n\nWriting them took forty minutes and the fourth one didn't make sense. So I went back to the person who'd asked for it, and the answer was that the fourth case had been a mistake in the meeting and nobody had noticed.\n\nSince then the first thing I produce for anything unclear is a list of examples. Not a design. Not a diagram. Cases, with numbers, that either pass or fail.\n\nI've caught four requirement mistakes that way this year. Each one would have cost a day if it had been found after the code existed.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Testing #Developer #Engineering #Requirements #BuildInPublic #TechNews #Craft #Product #Coding #Habits #TDD",
+      "schedule_time": "2026-09-28 10:15",
+      "error": "",
+      "updated_at": "2026-09-24T00:13:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2b7105245e6f6d599659b9a981550fdf046c7bb62709cea215363567650cf97e": {
+      "record_id": "2b7105245e6f6d599659b9a981550fdf046c7bb62709cea215363567650cf97e",
+      "status": "scheduled",
+      "content": "I turned down a meeting last week and nothing bad happened, which surprised me because I'd rehearsed a paragraph explaining why. Nobody asked. Nobody noticed.\n\nThe meeting was an hour. One hour. Standing, with eleven people, and the agenda was to align on something that had already been decided in writing. I said I'd read the notes and ask questions in the channel, and I did, and one of my questions turned out to be useful.\n\nWhat I've noticed is that the cost of not attending is almost always a written question. The cost of attending is an hour plus a context switch, and nobody counts the two because they're not in the calendar.\n\nThe version I use now is to ask for the agenda before accepting. If there isn't one, I ask what decision the meeting makes. If the answer is none, I ask for the notes. Three questions. That's changed about a third of the invites.\n\nSay no with a question attached. That's a lot easier than saying no and it does almost the same work.\n\n#AI #BuildInPublic #VibeCoding #tech #Meetings #Productivity #Workplace #Management #BuildInPublic #TechNews #TimeManagement #Boundaries #Advice #Communication #Teams #Habits",
+      "schedule_time": "2026-09-28 10:30",
+      "error": "",
+      "updated_at": "2026-09-24T00:13:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6c49631a360f18533307fc90fdd29f1b12c9b21fcf0e1097072e4685a97cd03a": {
+      "record_id": "6c49631a360f18533307fc90fdd29f1b12c9b21fcf0e1097072e4685a97cd03a",
+      "status": "scheduled",
+      "content": "A failed experiment at work had four hundred rows of data and the summary said no effect. The rows said something else and it was a decision worth making.\n\nI plotted it. The summary was thin. Two segments moved in opposite directions, one by nine percent and one by about four the other way, and the average was a flat line. Nobody had looked at the segments because the top level number was fine.\n\nThat's the trap with an average. It's a single line drawn through a set of points and it hides exactly the thing a decision needs, which is who moved.\n\nSo the decision we made was a segment one. We shipped the change to the half it helped and left the other half alone. Roughly six weeks later the blended number beat the control on the same measure, and the half we left alone stayed flat, which was the outcome we were after.\n\nI've stopped reading summaries as conclusions. They're a starting point, and the starting point is a person who was told to write something brief.\n\n#AI #BuildInPublic #VibeCoding #tech #Data #Analytics #Experiments #Product #BuildInPublic #TechNews #Metrics #Statistics #Business #Strategy #Engineering #Advice",
+      "schedule_time": "2026-09-28 10:45",
+      "error": "",
+      "updated_at": "2026-09-24T00:13:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d6858c8fb1858c9243ae1632e6418cedd3ae0524a99926e78d24dc00fc60ec21": {
+      "record_id": "d6858c8fb1858c9243ae1632e6418cedd3ae0524a99926e78d24dc00fc60ec21",
+      "status": "scheduled",
+      "content": "A rounding bug cost us about four thousand dollars over nine months and the amount is why nobody found it. Four thousand dollars. Spread across thousands of orders and invisible.\n\nI found it while writing a test for something else. Two orders with different line items came out three cents apart in a way the logic said was impossible, so I followed it back and found that a percentage was being stored as a whole number.\n\nThe part that stays with me is that the assertion I wrote was the wrong one. I'd written it expecting a match and got a small difference, and my first instinct was to loosen the test. I nearly changed the test to make the bug invisible.\n\nThree cents out of place. That's the moment I want to remember. When a test fails and the difference is tiny, the tiny difference is the finding. Loosening an assertion is how a bug becomes permanent.\n\nI use exact comparisons for money now, and I never round inside a calculation. Round once. At the end. Never in a loop.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #Money #SoftwareEngineering #Developer #BuildInPublic #TechNews #Debugging #Engineering #Craft #Coding #Reliability #Advice",
+      "schedule_time": "2026-09-28 11:00",
+      "error": "",
+      "updated_at": "2026-09-24T00:21:30+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5d42dee7c499c390f60b68dca32b87ca6e581adcbbe0a902489dc8eb88474bd7": {
+      "record_id": "5d42dee7c499c390f60b68dca32b87ca6e581adcbbe0a902489dc8eb88474bd7",
+      "status": "scheduled",
+      "content": "When a system makes a decision at machine speed, the person who gets hurt has nobody to sue. That's the part of this debate that never gets airtime.\n\nInsurance is the missing piece. A weapon that acts on its own has no insurer, no premium and no claims history, and those are how a society works out what a dangerous thing costs. There's no table for it. Nobody wants to be the first underwriter.\n\nI don't think that's a moral point. It's a market point. Once there's an actuarial table for autonomous weapon mishaps, somebody prices it, and pricing moves procurement faster than a resolution ever does, because a premium is a number a programme manager has to defend. That's the pressure point. Nobody is assembling that table yet.\n\nI'd watch the insurer here, not the treaty. Write a thousand claims and the table appears. Slow, ugly, and the only mechanism I've seen change what gets fielded. I'd rather build the table than write the statement.\n\n#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #AutonomousWeapons #Insurance #Law #Defense #Policy #Geopolitics #Ethics #FutureOfWarfare #NationalSecurity #RiskManagement #Technology",
+      "schedule_time": "2026-09-28 11:15",
+      "error": "",
+      "updated_at": "2026-09-24T00:21:30+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "db811f500fbbe5362f33245f8f08d1f582e2e1b64da7e3b3f1439b6f3999e442": {
+      "record_id": "db811f500fbbe5362f33245f8f08d1f582e2e1b64da7e3b3f1439b6f3999e442",
+      "status": "scheduled",
+      "content": "A laptop battery swelled up in a machine I keep in a drawer and the reason it happened is that I left it at a hundred percent for two years. Two years. Sitting at the top of the range is hard on the cell.\n\nI'd been told this and had not internalised it. The difference between eighty and a hundred is about a fifth of the useful life, and I had one machine plugged in permanently as a server for eleven months.\n\nI cap the charge at eighty on anything that lives on a desk. Eighty percent. One setting and it costs me about thirty minutes of runtime on a device that never leaves the desk.\n\nWhere the machine sits matters too. Heat is the other variable and a closed drawer is a bad place for something that runs all day. Mine now sits on a shelf with air around it. The drawer was never a data centre.\n\nHardware has habits. It rewards the boring ones. Charge to eighty and get it out of the box.\n\n#AI #BuildInPublic #VibeCoding #tech #Hardware #SelfHosted #Engineering #BuildInPublic #TechNews #Batteries #Devices #HomeLab #Craft #Maintenance #Advice #Systems",
+      "schedule_time": "2026-09-28 11:30",
+      "error": "",
+      "updated_at": "2026-09-24T00:21:30+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ecb5147445cb34f975bcfe0f7dfa66cf0ef65589aeae9ac8ef07a62829d1a454": {
+      "record_id": "ecb5147445cb34f975bcfe0f7dfa66cf0ef65589aeae9ac8ef07a62829d1a454",
+      "status": "scheduled",
+      "content": "I watched a conference talk online last month that was excellent and the room was half full, and the reason is in the first thirty seconds. The speaker opened with the specific thing that went wrong rather than the company mission.\n\nMost talks I sit through open with context. Who I am, what my team does, why this matters. All of that is true and none of it is the reason I'm watching, and it takes about four minutes.\n\nThis one opened with a number. We spent eleven percent of the quarter on one incident. Then it explained the incident. Everything else about the company arrived about six minutes in, by which point nobody needed to be convinced to keep listening.\n\nThat's trivial and almost nobody does it. It isn't clever. Say the problem first. Introduce yourself after, or don't.\n\nIf your first slide is about your org chart, the second slide is the one nobody sees.\n\n#AI #BuildInPublic #VibeCoding #tech #PublicSpeaking #Talks #Communication #Craft #BuildInPublic #TechNews #Storytelling #Writing #Advice #Conferences #Career #Learning",
+      "schedule_time": "2026-09-28 11:45",
+      "error": "",
+      "updated_at": "2026-09-24T00:21:30+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8f68c25a20d1e2701dcf30ebe9c87b7ab234c0556e18218ddfcc924970c610e4": {
+      "record_id": "8f68c25a20d1e2701dcf30ebe9c87b7ab234c0556e18218ddfcc924970c610e4",
+      "status": "scheduled",
+      "content": "I gave a talk last month that I prepared for about six hours and the thing people remembered was a two minute story I told in the middle and hadn't planned. I'd written the story down as a note and almost cut it to save time.\n\nThe story was about a deploy I'd broken and the four hours that followed, and it had one number in it and one mistake by me. That's all. Two minutes. Two minutes, told from memory.\n\nEverything else in the talk was structure and it was fine. The story is what people quoted back to me afterwards, because it's the only part where anything was at risk.\n\nWhat I've changed since is to plan the stories first and the structure second. Six hours of slides became about two hours of slides and about one hour of deciding which four stories go in. One story.\n\nTalks are not documents read out loud. If nothing in it can fail, there's nothing in it to remember.\n\n#AI #BuildInPublic #VibeCoding #tech #PublicSpeaking #Talks #Communication #Storytelling #BuildInPublic #TechNews #Career #Craft #Writing #Advice #Conferences #Learning",
+      "schedule_time": "2026-09-28 12:00",
+      "error": "",
+      "updated_at": "2026-09-24T00:21:30+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "56fee57806bef8ea888a6cbeb2e845caec67e72e42a708f38d81eb09b6b216b4": {
+      "record_id": "56fee57806bef8ea888a6cbeb2e845caec67e72e42a708f38d81eb09b6b216b4",
+      "status": "failed",
+      "content": "I've watched two indie studios die this year and neither one died from a bad game. That's the detail people miss.\n\nThey died from a release window. Both shipped into a month that had three enormous titles in it, and both had spent their entire runway getting to that month. The game was fine. The calendar wasn't.\n\nI've watched this pattern in publishing and in music. The work and the outcome are connected in a weak way, and the thing in between is distribution and timing. Nobody teaches timing.\n\nSo my read on layoffs is the same read I've had all year. It's structural first and about quality second, and the industry keeps telling itself the opposite because quality is the part that feels controllable.\n\nI'd rather admit the calendar decides than pretend it doesn't. Fear is honest. Comfort isn't. I've watched the calendar decide a dozen times. A dozen.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #IndieDev #GamesIndustry #Publishing #Layoffs #StudioClosure #Games #Business #Strategy #Marketing #Industry #Startup",
+      "schedule_time": "2026-09-28 12:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-24T00:23:10+00:00",
       "attempts": 2
     }
   }
