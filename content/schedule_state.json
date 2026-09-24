@@ -12424,12 +12424,80 @@
     },
     "56fee57806bef8ea888a6cbeb2e845caec67e72e42a708f38d81eb09b6b216b4": {
       "record_id": "56fee57806bef8ea888a6cbeb2e845caec67e72e42a708f38d81eb09b6b216b4",
-      "status": "failed",
+      "status": "scheduled",
       "content": "I've watched two indie studios die this year and neither one died from a bad game. That's the detail people miss.\n\nThey died from a release window. Both shipped into a month that had three enormous titles in it, and both had spent their entire runway getting to that month. The game was fine. The calendar wasn't.\n\nI've watched this pattern in publishing and in music. The work and the outcome are connected in a weak way, and the thing in between is distribution and timing. Nobody teaches timing.\n\nSo my read on layoffs is the same read I've had all year. It's structural first and about quality second, and the industry keeps telling itself the opposite because quality is the part that feels controllable.\n\nI'd rather admit the calendar decides than pretend it doesn't. Fear is honest. Comfort isn't. I've watched the calendar decide a dozen times. A dozen.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #IndieDev #GamesIndustry #Publishing #Layoffs #StudioClosure #Games #Business #Strategy #Marketing #Industry #Startup",
       "schedule_time": "2026-09-28 12:15",
+      "error": "",
+      "updated_at": "2026-09-24T14:02:28+00:00",
+      "attempts": 8,
+      "finalized": true
+    },
+    "1ba60df3b6a407cf0ea7d4f88eb87a741a49b32c538390d3153d42035a15239c": {
+      "record_id": "1ba60df3b6a407cf0ea7d4f88eb87a741a49b32c538390d3153d42035a15239c",
+      "status": "scheduled",
+      "content": "Somebody asked us to delete their data last month and the request exposed something nobody had looked at in three years. We had copies in four places. Four places. One of them we'd forgotten.\n\nThe four were the database, an analytics export, a backup that ran monthly, and a search index. Three had owners and a runbook. The fourth had neither and held about eighteen months of records.\n\nWe handled it, and the deletion took the rest of the week because we had to write the procedure for the index while doing it. That's the actual lesson. A deletion request is a test of your data map, and most companies have a map with a room that isn't drawn.\n\nNow I can answer three questions in under a minute. Three questions. Where does it live, who can read it, and how long does it last. If a team can't answer the first one, the request becomes an incident.\n\nYou get asked to forget something eventually. It's cheaper to know where you kept it before that.\n\n#AI #BuildInPublic #VibeCoding #tech #Data #Privacy #Compliance #Engineering #BuildInPublic #TechNews #Security #Systems #Product #Policy #Advice #Infrastructure",
+      "schedule_time": "2026-09-28 12:30",
+      "error": "",
+      "updated_at": "2026-09-24T14:02:28+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "bf1fbcda833ec4b3591322501ac06a6298d6af899133e5f5a60098da530aad54": {
+      "record_id": "bf1fbcda833ec4b3591322501ac06a6298d6af899133e5f5a60098da530aad54",
+      "status": "scheduled",
+      "content": "Everyone wants to talk about the model. The model is downstream of a transformer yard and a permitting office.\n\nI've watched this pattern in every wave. The visible layer gets the attention and the invisible layer sets the ceiling. I don't think compute is the constraint on AI in the long run. Power is. Power is a construction project with a public comment period. That is the ceiling.\n\nSo when I read about a data center build, I want to know three things. Where the power comes from, who approved the interconnect, and what the local ratepayer ends up paying. Those three questions get asked at every county meeting and answered at almost none.\n\nI don't think this is a villain story. It's a timing story. Utilities plan in decades and the demand showed up in eighteen months, and the mismatch has to land somewhere.\n\nIt lands on the rate base and on the schedule. Which is why I keep writing about transformers instead of benchmarks. Boring, and it's the actual constraint.\n\n#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Utilities #Climate #DeepTech #Policy #AI #Sustainability #Engineering #EnergyTransition",
+      "schedule_time": "2026-09-28 12:45",
+      "error": "",
+      "updated_at": "2026-09-24T14:02:28+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8bf17dbe421d0495f95b5f7c8051380abe1270b931562b6ac9752e4fb4f01379": {
+      "record_id": "8bf17dbe421d0495f95b5f7c8051380abe1270b931562b6ac9752e4fb4f01379",
+      "status": "scheduled",
+      "content": "My worst estimate last year was three weeks and it took eleven, and the reason is not that I was wrong about the work. I was wrong about everything around it.\n\nThe work was two weeks. What I didn't count was the review cycle, which was four days because the reviewer was on holiday, the data migration window, which only opens on a Tuesday, and the two days of testing on real data that found three things nobody predicted.\n\nI also didn't count the meeting where we decided to do it, which sounds like a joke and isn't. That was three hours spread over two weeks and it changed the shape of the thing twice.\n\nWhat I do now is write the parts before the estimate. Then I put a number against each part separately and add them up out loud. Mine was one number. A real estimate is about six numbers and the total is the least interesting of them.\n\nSay the six numbers out loud. The single number is where the lie lives.\n\n#AI #BuildInPublic #VibeCoding #tech #Estimating #ProjectManagement #SoftwareEngineering #Developer #BuildInPublic #TechNews #Planning #Engineering #Craft #Teams #Advice #Product",
+      "schedule_time": "2026-09-28 13:00",
+      "error": "",
+      "updated_at": "2026-09-24T14:02:28+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "017716dda9fc0f3d454f81e5d70047906d3c182d7dab4766308d02311cc26756": {
+      "record_id": "017716dda9fc0f3d454f81e5d70047906d3c182d7dab4766308d02311cc26756",
+      "status": "failed",
+      "content": "I failed a coding interview last year and I've thought about why more than I've thought about any interview I passed. The reason was not the algorithm, which I got right.\n\nI talked for twenty five minutes and produced working code. What I never did was check in. Not once. I didn't say what I was assuming, didn't ask whether the input could be empty, and didn't say what I planned before I started typing.\n\nThe interviewer said afterwards that she learned nothing about how I'd be to work with. That stung and it was fair. Two people working on one problem have to talk, and I'd treated the session as a test with a silence rule that nobody else had agreed to.\n\nWhat I do now is say the plan in two sentences before I write anything. Then I say the assumption out loud when I make it. That's about thirty seconds of talking and it changes what the other person gets from the hour.\n\nThe code was never the part I needed to prove. I made it the whole thing.\n\n#AI #BuildInPublic #VibeCoding #tech #Interviewing #Career #Hiring #SoftwareEngineering #BuildInPublic #TechNews #Jobs #Communication #Advice #Workplace #Growth #Coding",
+      "schedule_time": "2026-09-28 13:15",
+      "error": "LinkedIn's scheduled count is 199, no higher than 199 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-24T14:02:27+00:00",
+      "attempts": 2
+    },
+    "6da021fa21be230aca38448b617004b97db5988a7c5ed4e087e7534d8cc696a4": {
+      "record_id": "6da021fa21be230aca38448b617004b97db5988a7c5ed4e087e7534d8cc696a4",
+      "status": "scheduled",
+      "content": "I failed a coding interview last year and I've thought about why more than I've thought about any interview I passed. The reason was not the algorithm, which I got right.\n\nI talked for twenty five minutes and produced working code. What I never did was check in. Not once. I didn't say what I was assuming, didn't ask whether the input could be empty, and didn't say what I planned before I started typing.\n\nThe interviewer said afterwards that she learned nothing about how I'd be to work with. That stung and it was fair. Two people working on one problem have to talk, and I'd treated the session as a test with a silence rule that nobody else had agreed to.\n\nWhat I do now is say the plan in two sentences before I write anything. Then I say the assumption out loud when I make it. That's about thirty seconds of talking and it changes what the other person gets from the hour.\n\nThe code was never the part I needed to prove. I made it the whole thing.\n\n#AI #BuildInPublic #VibeCoding #tech #Interviewing #Career #Hiring #SoftwareEngineering #BuildInPublic #TechNews #Jobs #Communication #Advice #Workplace #Growth #Coding",
+      "schedule_time": "2026-09-28 13:30",
+      "error": "",
+      "updated_at": "2026-09-24T14:05:38+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7a4b24d1eda36f3183c0618d92943e9936c3670326041006b735a2a0e25f9b1a": {
+      "record_id": "7a4b24d1eda36f3183c0618d92943e9936c3670326041006b735a2a0e25f9b1a",
+      "status": "failed",
+      "content": "We ran a code freeze for two weeks before a launch and the thing that actually landed was not the launch. It was that everybody got their reviews done.\n\nI'd expected the freeze to be about discipline. It wasn't. What it produced was a backlog of finished work with nowhere to go, and people used that time to do the things that never make it to the top of a list. Reviews, tests, docs, and one person who finally deleted a dead service.\n\nWe shipped about forty percent of what we'd planned to ship and the product was fine. Nobody noticed the missing pieces. That's worth knowing before the next big date, because it means a chunk of the plan was never load bearing.\n\nThe other thing I learned is that a freeze needs an exception path. We had two. Both were justified. Having a written path meant the exceptions didn't turn into an argument in a channel at midnight.\n\nA freeze is not a brake. It's a change of activity, and the useful activity is the stuff you skip when you're shipping.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Teams #Process #Engineering #BuildInPublic #TechNews #Shipping #Release #Craft #Management #Advice #Developer",
+      "schedule_time": "2026-09-28 13:45",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-24T08:00:03+00:00",
-      "attempts": 6
+      "updated_at": "2026-09-24T14:05:37+00:00",
+      "attempts": 2
+    },
+    "f6e9061141f4729742b1d560b609af511319678b953ab935b12737a775a78e51": {
+      "record_id": "f6e9061141f4729742b1d560b609af511319678b953ab935b12737a775a78e51",
+      "status": "failed",
+      "content": "We ran a code freeze for two weeks before a launch and the thing that actually landed was not the launch. It was that everybody got their reviews done.\n\nI'd expected the freeze to be about discipline. It wasn't. What it produced was a backlog of finished work with nowhere to go, and people used that time to do the things that never make it to the top of a list. Reviews, tests, docs, and one person who finally deleted a dead service.\n\nWe shipped about forty percent of what we'd planned to ship and the product was fine. Nobody noticed the missing pieces. That's worth knowing before the next big date, because it means a chunk of the plan was never load bearing.\n\nThe other thing I learned is that a freeze needs an exception path. We had two. Both were justified. Having a written path meant the exceptions didn't turn into an argument in a channel at midnight.\n\nA freeze is not a brake. It's a change of activity, and the useful activity is the stuff you skip when you're shipping.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Teams #Process #Engineering #BuildInPublic #TechNews #Shipping #Release #Craft #Management #Advice #Developer",
+      "schedule_time": "2026-09-28 14:45",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-24T14:07:18+00:00",
+      "attempts": 2
     }
   }
 }
