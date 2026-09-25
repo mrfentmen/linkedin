@@ -21944,3 +21944,93 @@ A tool that hides work from you is fine. A tool that hides the work you needed t
 
 #AI #BuildInPublic #VibeCoding #tech #AI #SoftwareEngineering #Developer #BuildInPublic #TechNews #LLM #Coding #Craft #Engineering #Advice #Learning #CodeReview
 ---
+[2026-09-25 14:26:05 UTC]
+record_id=f19f09523647c9d33bce23940b905c9390a92987235cd5b288ecfedbdba56258
+scheduled_for=2026-09-29 10:00
+I read a study about sleep and phone use and the effect size was smaller than the headline made it sound. The study was fine. The number was real. It was just small.
+
+The effect was about four minutes of sleep per hour of use in the evening. If you're on your phone for two hours before bed that's eight minutes. That's a real finding and it isn't the reason you feel terrible.
+
+What the study showed is that the average effect is small and the variance is large. Some people lose forty minutes. Most lose almost none. Averages hide that and the average is what gets reported.
+
+I don't take from it that phones are fine. It's that population averages are a bad tool for a decision about one person, which is you. Your own data is noisy and it's also the only data about you.
+
+I read the effect size and the spread now. Then I run the experiment on myself for two weeks. That's more useful than any headline.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #Sleep #BuildInPublic #TechNews #Health #Data #Evidence #CriticalThinking #Habits #Advice
+---
+[2026-09-25 14:26:05 UTC]
+record_id=29723009cf094f47cbec47e7c53951c76d7dac3a022b5852c79ac404572c1f44
+scheduled_for=2026-09-29 10:15
+I reviewed a design document last week and the most useful thing I did was ask one question. What would we do if the third requirement turned out to be impossible. Nobody had an answer.
+
+The document was good. It had a problem statement, three options with tradeoffs, and a recommendation. What it didn't have was a plan for being wrong, and the third requirement was the one that made the whole design expensive.
+
+So we spent twenty minutes on it and found out that a simple version of the same thing would work if that requirement was relaxed, and that relaxing it was a product decision rather than a technical one. That's a conversation worth having before the build, not after.
+
+I put that in every document I write. A section called what would make us stop. Two lines. It's the section people quote back to me.
+
+A design without a kill condition is a commitment. Ask it early. Ask what would change the plan before you agree to it.
+
+#AI #BuildInPublic #VibeCoding #tech #Design #SoftwareEngineering #Engineering #Architecture #BuildInPublic #TechNews #Writing #Craft #Advice #Teams #Product #Decisions
+---
+[2026-09-25 14:26:05 UTC]
+record_id=86255d2494def635602a686e4a879e06d6cf456b00037eb295bff3bbb18271b9
+scheduled_for=2026-09-29 10:30
+Hollywood resistance is loud and the adoption is quiet, and I think the loud part is about dignity rather than money.
+
+That's not a small thing. People spent decades building a craft and the craft is being valued at a different number. That stings in a way a contract clause cannot fix, and pretending it's all economics misses the human part.
+
+But I've watched enough industries hit this wall to know how it goes. The craft doesn't vanish. It gets repriced and the top of the market keeps doing it by hand, because the top of any market sells provenance.
+
+So my read is a split. I think volume work goes to the tool. Prestige work stays human and charges more for being human. That's what happened with photography and illustration. Film won't be special.
+
+I think the interesting question is the middle. The middle is where most of the jobs live. The middle gets squeezed first.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #Media #Craft #CreativeEconomy #FutureOfWork #Storytelling #Entertainment #AIinFilm #Production #Technology #Labour
+---
+[2026-09-25 14:26:05 UTC]
+record_id=cc1a3d8c02cd2b44e7b755a5555511d262962dd772eedd28c727d4bc2a6cd22f
+scheduled_for=2026-09-29 10:45
+We shipped a feature to three countries and the strings broke in two of them because the German translation was about forty percent longer and pushed a button off the screen. That's the whole bug and the fix took a day. One day.
+
+The layout used a fixed width in one place instead of a flexible one, which had been fine in English for two years. Two years. I'd never seen it because I'd never looked at the page in the language with the long words.
+
+What I do now is check two things before shipping any interface change. The longest string in the file and the longest plausible value a user could enter. Both are quick and both have found real problems.
+
+The other thing that helps is a fake locale. We added one that replaces every string with something about a third longer and it runs in the test suite. About ten lines. It catches this class of bug before a translator sees it.
+
+Test with the longest case, not the one you wrote. Not yours. English is a short language and most of the world isn't.
+
+#AI #BuildInPublic #VibeCoding #tech #Localization #Frontend #Testing #Engineering #BuildInPublic #TechNews #i18n #ProductDesign #Craft #Coding #Advice #UX
+---
+[2026-09-25 14:26:05 UTC]
+record_id=3513f5e3138ea38615e5c3227d40a3e64451edb3fe458aea96a6ce70fc4e2509
+scheduled_for=2026-09-29 11:00
+I watched a team argue about a naming decision for about forty minutes and the thing that ended it was somebody drawing the boxes. Nothing else worked.
+
+I'd heard the same words for half an hour. They disagreed about what the word meant, and neither of them noticed because each was certain about their own meaning. That's most long arguments. Two words, two meanings.
+
+The drawing took about ninety seconds. Four boxes, two arrows, and one label in the wrong place. Then it was obvious which name described which box, and the argument ended because there was nothing left to disagree about.
+
+What I took from it is that some arguments are about language and they can't be settled with more language. They get settled with a picture that makes the disagreement visible.
+
+I draw it before I argue it now. If the conversation is going in circles, the circle is usually a word.
+
+#AI #BuildInPublic #VibeCoding #tech #Communication #Teams #Engineering #Naming #BuildInPublic #TechNews #Design #Architecture #Advice #Craft #Workplace #SoftwareEngineering
+---
+[2026-09-25 14:29:18 UTC]
+record_id=3cc159bee7516638c979809f8f01a52dd52396c60900a5dc83c2b89d6b0510ad
+scheduled_for=2026-09-29 11:15
+I bought a laptop this year by ranking the things I could not change and ignoring the benchmarks. Not the benchmarks. The order was repairability, keyboard, screen, and then speed. It has been the right machine for a year.
+
+I'd bought on performance twice before and both machines were dead in three years, one from a soldered drive and one from a battery I couldn't replace. Neither ever felt slow enough to matter and both became unusable at a point where the numbers were still excellent.
+
+What I've noticed is that the parts I interact with every day are the parts benchmarks never measure. A keyboard gets typed on about eight hours a day. A hinge gets opened twelve times. Those fail long before a processor becomes a bottleneck for anything I do.
+
+The machine I have now is slower than what I'd have bought on a spec sheet. It's also the first one in a decade I expect to own for five years. Five years.
+
+Rank the things you can't upgrade. Then look at the numbers.
+
+#AI #BuildInPublic #VibeCoding #tech #Hardware #Devices #Engineering #BuildInPublic #TechNews #Laptops #Repairability #Craft #Purchase #Advice #Productivity #Design
+---

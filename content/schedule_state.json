@@ -12838,12 +12838,13 @@
     },
     "f19f09523647c9d33bce23940b905c9390a92987235cd5b288ecfedbdba56258": {
       "record_id": "f19f09523647c9d33bce23940b905c9390a92987235cd5b288ecfedbdba56258",
-      "status": "failed",
+      "status": "scheduled",
       "content": "I read a study about sleep and phone use and the effect size was smaller than the headline made it sound. The study was fine. The number was real. It was just small.\n\nThe effect was about four minutes of sleep per hour of use in the evening. If you're on your phone for two hours before bed that's eight minutes. That's a real finding and it isn't the reason you feel terrible.\n\nWhat the study showed is that the average effect is small and the variance is large. Some people lose forty minutes. Most lose almost none. Averages hide that and the average is what gets reported.\n\nI don't take from it that phones are fine. It's that population averages are a bad tool for a decision about one person, which is you. Your own data is noisy and it's also the only data about you.\n\nI read the effect size and the spread now. Then I run the experiment on myself for two weeks. That's more useful than any headline.\n\n#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #Sleep #BuildInPublic #TechNews #Health #Data #Evidence #CriticalThinking #Habits #Advice",
       "schedule_time": "2026-09-29 10:00",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-25T08:22:37+00:00",
-      "attempts": 6
+      "error": "",
+      "updated_at": "2026-09-25T14:26:05+00:00",
+      "attempts": 8,
+      "finalized": true
     },
     "aa18422b1071e15ca838836667c5223021333f597f3644394975b1d091ddafac": {
       "record_id": "aa18422b1071e15ca838836667c5223021333f597f3644394975b1d091ddafac",
@@ -12852,6 +12853,74 @@
       "schedule_time": "2026-09-29 10:15",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-25T00:03:52+00:00",
+      "attempts": 2
+    },
+    "29723009cf094f47cbec47e7c53951c76d7dac3a022b5852c79ac404572c1f44": {
+      "record_id": "29723009cf094f47cbec47e7c53951c76d7dac3a022b5852c79ac404572c1f44",
+      "status": "scheduled",
+      "content": "I reviewed a design document last week and the most useful thing I did was ask one question. What would we do if the third requirement turned out to be impossible. Nobody had an answer.\n\nThe document was good. It had a problem statement, three options with tradeoffs, and a recommendation. What it didn't have was a plan for being wrong, and the third requirement was the one that made the whole design expensive.\n\nSo we spent twenty minutes on it and found out that a simple version of the same thing would work if that requirement was relaxed, and that relaxing it was a product decision rather than a technical one. That's a conversation worth having before the build, not after.\n\nI put that in every document I write. A section called what would make us stop. Two lines. It's the section people quote back to me.\n\nA design without a kill condition is a commitment. Ask it early. Ask what would change the plan before you agree to it.\n\n#AI #BuildInPublic #VibeCoding #tech #Design #SoftwareEngineering #Engineering #Architecture #BuildInPublic #TechNews #Writing #Craft #Advice #Teams #Product #Decisions",
+      "schedule_time": "2026-09-29 10:15",
+      "error": "",
+      "updated_at": "2026-09-25T14:26:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "86255d2494def635602a686e4a879e06d6cf456b00037eb295bff3bbb18271b9": {
+      "record_id": "86255d2494def635602a686e4a879e06d6cf456b00037eb295bff3bbb18271b9",
+      "status": "scheduled",
+      "content": "Hollywood resistance is loud and the adoption is quiet, and I think the loud part is about dignity rather than money.\n\nThat's not a small thing. People spent decades building a craft and the craft is being valued at a different number. That stings in a way a contract clause cannot fix, and pretending it's all economics misses the human part.\n\nBut I've watched enough industries hit this wall to know how it goes. The craft doesn't vanish. It gets repriced and the top of the market keeps doing it by hand, because the top of any market sells provenance.\n\nSo my read is a split. I think volume work goes to the tool. Prestige work stays human and charges more for being human. That's what happened with photography and illustration. Film won't be special.\n\nI think the interesting question is the middle. The middle is where most of the jobs live. The middle gets squeezed first.\n\n#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #Media #Craft #CreativeEconomy #FutureOfWork #Storytelling #Entertainment #AIinFilm #Production #Technology #Labour",
+      "schedule_time": "2026-09-29 10:30",
+      "error": "",
+      "updated_at": "2026-09-25T14:26:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "cc1a3d8c02cd2b44e7b755a5555511d262962dd772eedd28c727d4bc2a6cd22f": {
+      "record_id": "cc1a3d8c02cd2b44e7b755a5555511d262962dd772eedd28c727d4bc2a6cd22f",
+      "status": "scheduled",
+      "content": "We shipped a feature to three countries and the strings broke in two of them because the German translation was about forty percent longer and pushed a button off the screen. That's the whole bug and the fix took a day. One day.\n\nThe layout used a fixed width in one place instead of a flexible one, which had been fine in English for two years. Two years. I'd never seen it because I'd never looked at the page in the language with the long words.\n\nWhat I do now is check two things before shipping any interface change. The longest string in the file and the longest plausible value a user could enter. Both are quick and both have found real problems.\n\nThe other thing that helps is a fake locale. We added one that replaces every string with something about a third longer and it runs in the test suite. About ten lines. It catches this class of bug before a translator sees it.\n\nTest with the longest case, not the one you wrote. Not yours. English is a short language and most of the world isn't.\n\n#AI #BuildInPublic #VibeCoding #tech #Localization #Frontend #Testing #Engineering #BuildInPublic #TechNews #i18n #ProductDesign #Craft #Coding #Advice #UX",
+      "schedule_time": "2026-09-29 10:45",
+      "error": "",
+      "updated_at": "2026-09-25T14:26:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3513f5e3138ea38615e5c3227d40a3e64451edb3fe458aea96a6ce70fc4e2509": {
+      "record_id": "3513f5e3138ea38615e5c3227d40a3e64451edb3fe458aea96a6ce70fc4e2509",
+      "status": "scheduled",
+      "content": "I watched a team argue about a naming decision for about forty minutes and the thing that ended it was somebody drawing the boxes. Nothing else worked.\n\nI'd heard the same words for half an hour. They disagreed about what the word meant, and neither of them noticed because each was certain about their own meaning. That's most long arguments. Two words, two meanings.\n\nThe drawing took about ninety seconds. Four boxes, two arrows, and one label in the wrong place. Then it was obvious which name described which box, and the argument ended because there was nothing left to disagree about.\n\nWhat I took from it is that some arguments are about language and they can't be settled with more language. They get settled with a picture that makes the disagreement visible.\n\nI draw it before I argue it now. If the conversation is going in circles, the circle is usually a word.\n\n#AI #BuildInPublic #VibeCoding #tech #Communication #Teams #Engineering #Naming #BuildInPublic #TechNews #Design #Architecture #Advice #Craft #Workplace #SoftwareEngineering",
+      "schedule_time": "2026-09-29 11:00",
+      "error": "",
+      "updated_at": "2026-09-25T14:26:05+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3cc159bee7516638c979809f8f01a52dd52396c60900a5dc83c2b89d6b0510ad": {
+      "record_id": "3cc159bee7516638c979809f8f01a52dd52396c60900a5dc83c2b89d6b0510ad",
+      "status": "scheduled",
+      "content": "I bought a laptop this year by ranking the things I could not change and ignoring the benchmarks. Not the benchmarks. The order was repairability, keyboard, screen, and then speed. It has been the right machine for a year.\n\nI'd bought on performance twice before and both machines were dead in three years, one from a soldered drive and one from a battery I couldn't replace. Neither ever felt slow enough to matter and both became unusable at a point where the numbers were still excellent.\n\nWhat I've noticed is that the parts I interact with every day are the parts benchmarks never measure. A keyboard gets typed on about eight hours a day. A hinge gets opened twelve times. Those fail long before a processor becomes a bottleneck for anything I do.\n\nThe machine I have now is slower than what I'd have bought on a spec sheet. It's also the first one in a decade I expect to own for five years. Five years.\n\nRank the things you can't upgrade. Then look at the numbers.\n\n#AI #BuildInPublic #VibeCoding #tech #Hardware #Devices #Engineering #BuildInPublic #TechNews #Laptops #Repairability #Craft #Purchase #Advice #Productivity #Design",
+      "schedule_time": "2026-09-29 11:15",
+      "error": "",
+      "updated_at": "2026-09-25T14:29:18+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "367cf5fae5de2dd2ccb48f9dec059abdd2cc91909f4420c10a501b86098ec7b1": {
+      "record_id": "367cf5fae5de2dd2ccb48f9dec059abdd2cc91909f4420c10a501b86098ec7b1",
+      "status": "failed",
+      "content": "The safest job in games right now is the one that decides which studios to close. I'm not joking.\n\nXbox cut 3,200 roles in July and the studios carried the announcement, because studios are the unit that gets measured in a press release. The people who chose the strategy are still choosing strategy. This isn't unique to games either.\n\nMedia did it, telecom did it, and every one of those cycles was sold as a correction. A correction means the number went down. It says nothing about who absorbed the cost. In games this year the cost landed on 135 studios and about 10,863 people, by the count one tracker keeps. I'd rather name the number than the mood.\n\nTwo thirds of it came from AAA studios. Small teams get the headlines. Big ones get the severance. I don't have a fix. I do have a rule. Watch who presents the decision, because that's usually who caused it.\n\n#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews",
+      "schedule_time": "2026-09-29 11:30",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-25T14:29:17+00:00",
+      "attempts": 2
+    },
+    "874800e831fadb8868037870ba890a2d13228dee12aeeea282483fecab81ac04": {
+      "record_id": "874800e831fadb8868037870ba890a2d13228dee12aeeea282483fecab81ac04",
+      "status": "failed",
+      "content": "The safest job in games right now is the one that decides which studios to close. I'm not joking.\n\nXbox cut 3,200 roles in July and the studios carried the announcement, because studios are the unit that gets measured in a press release. The people who chose the strategy are still choosing strategy. This isn't unique to games either.\n\nMedia did it, telecom did it, and every one of those cycles was sold as a correction. A correction means the number went down. It says nothing about who absorbed the cost. In games this year the cost landed on 135 studios and about 10,863 people, by the count one tracker keeps. I'd rather name the number than the mood.\n\nTwo thirds of it came from AAA studios. Small teams get the headlines. Big ones get the severance. I don't have a fix. I do have a rule. Watch who presents the decision, because that's usually who caused it.\n\n#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews",
+      "schedule_time": "2026-09-29 12:30",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-25T14:30:56+00:00",
       "attempts": 2
     }
   }
