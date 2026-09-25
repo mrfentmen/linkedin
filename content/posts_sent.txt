@@ -22034,3 +22034,254 @@ Rank the things you can't upgrade. Then look at the numbers.
 
 #AI #BuildInPublic #VibeCoding #tech #Hardware #Devices #Engineering #BuildInPublic #TechNews #Laptops #Repairability #Craft #Purchase #Advice #Productivity #Design
 ---
+[2026-09-25 19:11:07 UTC]
+record_id=367cf5fae5de2dd2ccb48f9dec059abdd2cc91909f4420c10a501b86098ec7b1
+scheduled_for=2026-09-29 11:30
+The safest job in games right now is the one that decides which studios to close. I'm not joking.
+
+Xbox cut 3,200 roles in July and the studios carried the announcement, because studios are the unit that gets measured in a press release. The people who chose the strategy are still choosing strategy. This isn't unique to games either.
+
+Media did it, telecom did it, and every one of those cycles was sold as a correction. A correction means the number went down. It says nothing about who absorbed the cost. In games this year the cost landed on 135 studios and about 10,863 people, by the count one tracker keeps. I'd rather name the number than the mood.
+
+Two thirds of it came from AAA studios. Small teams get the headlines. Big ones get the severance. I don't have a fix. I do have a rule. Watch who presents the decision, because that's usually who caused it.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+---
+[2026-09-25 19:11:07 UTC]
+record_id=ba5b21da26b790f7e435ee5f56ba654b724ecd9b23dc2829b1f414c5eeb353e0
+scheduled_for=2026-09-29 11:45
+I turned off a service last month that three people used and I'd been paying about forty dollars a month to keep alive for two years. Two years. The money wasn't the point. The attention was.
+
+It was a search index we'd built for a feature that got replaced. I'd kept it because turning it off meant a migration and a conversation and the migration was always the third thing on a list of two things.
+
+What I hadn't counted was the four alerts a month. Each one was a five minute check and a decision that it was fine. Over two years that's about eight hours of somebody's attention, spread thin enough that nobody ever made the decision. Eight hours.
+
+Now I look at the alert list every quarter and ask which of these have never once been actionable. Never once. Three of them went that way last quarter.
+
+The hidden cost of a small system is not the invoice. It's the interruptions that are too small to notice and too frequent to ignore.
+
+#AI #BuildInPublic #VibeCoding #tech #Maintenance #Systems #SRE #Engineering #BuildInPublic #TechNews #Infrastructure #Simplicity #Craft #Operations #Advice #SoftwareEngineering
+---
+[2026-09-25 19:11:07 UTC]
+record_id=1856718f3baec38993c3ce3384be6c478679be46f16982805c4efb6d6f97ef6c
+scheduled_for=2026-09-29 12:00
+Rare earths and magnets are the least exciting sentence in the energy story and the one that decides the most. I've followed this chain for a while and the shape never changes.
+
+Mining is the part people talk about. Refining and magnet making are the parts that bind and both of those are concentrated in a small number of places, and both of those are concentrated in a small number of places for reasons that are part technical and part environmental. Nobody wants the acid in their county.
+
+That's the trap. Every country wants the turbines and the motors and none of them wants the middle of the supply chain. So the middle stays where it is and everybody builds on a dependency they've said out loud they'd like to remove. The middle is the story.
+
+I've watched two attempts to restart domestic refining and both bumped into the same wall. The permitting is slow and the neighbours are organized, and the neighbours have a point.
+
+So my read is that this decade ends with the same map and a lot more rhetoric. I'd rather fund the boring middle than buy another study about it.
+
+#AI #BuildInPublic #VibeCoding #tech #CriticalMinerals #RareEarths #SupplyChain #Energy #Manufacturing #Trade #Policy #Technology #Mining #Geopolitics #TechNews #Infrastructure
+---
+[2026-09-25 19:11:07 UTC]
+record_id=b879d835dc598ae294c308ff6bd27a0c2d0b26880631a4eb650de18c65d44580
+scheduled_for=2026-09-29 12:15
+I watched our runbook get used for real last month. The step that saved us was one somebody added after a bad night two years ago. Check the clock on the box before you trust the log times.
+
+That step looks like a joke until you're in a sixteen minute skew and every event in your timeline is in the wrong order. Somebody hit it in 2024, wrote one line, and it took thirty seconds to find the problem this time.
+
+That's the whole argument for runbooks. Not documentation of the happy path, which anybody can reconstruct. The lines that matter are the ones about the thing that bit you once.
+
+I add one line after every incident. Just one, to the runbook, in the same place. Not a rewrite. A rewrite never happens. One line is a step you'll actually do at two in the morning.
+
+I add one line per incident now. Two years is about twenty lines and each one of them cost somebody a night.
+
+#AI #BuildInPublic #VibeCoding #tech #Runbooks #Reliability #Operations #SRE #BuildInPublic #TechNews #Documentation #Craft #Systems #Advice #IncidentResponse #Engineering
+---
+[2026-09-25 19:11:07 UTC]
+record_id=e50b70b3b60a1569e8fcffaf820e6d474867d13c58385f26cfc9f73ed593dfd4
+scheduled_for=2026-09-29 12:30
+I've been a generalist for most of my career and I've watched specialists get promoted faster for about ten years. Ten years. I'm not going to pretend that hasn't stung, because it has.
+
+What I've never been able to do is stay in one layer. I've been the person who can talk to the database and the frontend and the person who buys the software, and that's not a skill any ladder is built to measure.
+
+The payoff arrived late and it arrived twice. Twice. Once when a project needed somebody to hold the whole shape, and once when a problem crossed three teams and nobody else could see the seam. That's where I've been most useful and it took about eight years to become a job title.
+
+What I'd tell somebody starting is to pick a depth first anyway. Generalist value is real and it's rented from other people's knowledge, and if you don't have one thing you can go deep on, you're the person who talks in meetings.
+
+Go deep on one thing. Then let yourself get wide, on purpose.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Generalist #Specialist #Growth #BuildInPublic #TechNews #SoftwareEngineering #Workplace #Advice #Skills #Learning #Life
+---
+[2026-09-25 19:15:52 UTC]
+record_id=57f2015e0ded4571c9a900ee3ebc3723befcadaf75bf37fd838ce64c7cb857f0
+scheduled_for=2026-09-29 12:45
+I found a date bug on one of our services that had been live about six weeks. Six weeks. Nobody noticed because the error was small. One hour, twice a year, in one timezone.
+
+The bug was a daylight saving rule that had been changed by a government and the library version we pinned didn't know about it yet. So for two weeks a scheduled report ran an hour early and the timestamps in it were consistent with each other, which is why it looked correct.
+
+What found it was a person in that country saying the numbers looked off for the month. Not a monitoring system. A human who knew what the number should be.
+
+I keep the date in my calendar twice a year now. Twice a year. It's four lines in a maintenance doc and it has already mattered once.
+
+Some dependencies are libraries and some are facts about the world. The second kind changes on somebody else's schedule.
+
+#AI #BuildInPublic #VibeCoding #tech #Timezones #Dependencies #SoftwareEngineering #Developer #BuildInPublic #TechNews #Debugging #Engineering #Maintenance #Craft #Systems #Advice
+---
+[2026-09-25 19:15:52 UTC]
+record_id=e3b375992646bd44d195dd82b1a1606f441605f43259f405c313594dfb8fe46e
+scheduled_for=2026-09-29 13:00
+I broke a migration in 2023 and the thing I remember isn't the outage. It's the four minutes I spent looking for somebody to blame before I looked at the query.
+
+I had run it on staging and it passed, so my first thought was that somebody had changed the schema. That's a comfortable thought because it has an owner who isn't me. I spent four minutes on it and then I opened my own file.
+
+My migration added an index and then wrote to the same table in a loop. On staging the table had two hundred rows. In production it had eleven million. Nothing was different in the code. The data was.
+
+I didn't know the row count because nobody had told me and I hadn't asked. That's the whole mistake. The query was fine and my model of the system was wrong.
+
+Now the first line of every migration I write is a comment with the row count I expect and the time I expect it to take. If I can't fill that in, I'm not ready to run it.
+
+#AI #BuildInPublic #VibeCoding #tech #Databases #Migrations #SoftwareEngineering #Developer #BuildInPublic #TechNews #Engineering #Systems #Reliability #Craft #Production #Advice
+---
+[2026-09-25 19:23:35 UTC]
+record_id=66a50555bb8bef68ad1faf605b6128653c701619859750301d6d2bc9a487a431
+scheduled_for=2026-09-29 14:00
+I got a fix from a customer last month. Not a bug report. A patch, in a diff, with a test, for a package we maintain.
+
+He'd found that our retry logic didn't handle a specific response code, and he'd written about twelve lines and a test that failed before his change and passed after. Twelve lines. His message was three sentences and a link. Three sentences.
+
+I merged it in about four minutes. Four minutes. I asked him if he wanted to be listed as a contributor on the next release. He said yes and told me he'd been using the tool for six years and wanted to give something back.
+
+What I learned is about how much easier it is to accept a fix than a complaint. Same information, same correctness, completely different experience for the person receiving it.
+
+I'd take a patch over a paragraph any day. Twelve lines and a test beats a complaint.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #Community #SoftwareEngineering #Developer #BuildInPublic #TechNews #Contributing #Craft #Coding #Advice #Maintenance #Engineering
+---
+[2026-09-25 19:23:35 UTC]
+record_id=fbffdd7febb07f5d42b9cacac0fc7766b39e7f6246369d0af62fe842302b50ca
+scheduled_for=2026-09-29 14:15
+AI arrived in my kid's school in September. I expected a cheating story. One month in, what happened had nothing to do with cheating. It happened in the marking.
+
+Two teachers told me the same story. They can no longer tell whether an essay was written by the student. So they stopped grading essays and moved the assessment into class, on paper, with the material in front of them.
+
+I think that's a real change and it's not a scandal. It's a measurement problem. Not a scandal. The measurement problem arrived overnight. What it does to a student who learned to write well at home is something nobody has worked out yet.
+
+I'd rather see the boring version. Ask students to use it and then defend what came out. That tests understanding in a way an essay never did, and it also means a kid who can use the tool well is not being punished for a skill the workplace now expects.
+
+The tool didn't break the school. It exposed which part of the assessment was testing recall and which part was testing thinking.
+
+#AI #BuildInPublic #VibeCoding #tech #Education #AI #Assessment #Schools #BuildInPublic #TechNews #Teaching #Learning #Policy #Ethics #Students #Advice
+---
+[2026-09-25 19:23:35 UTC]
+record_id=620226b01721f580c0864c3cabdc3bd4051176d6a1da007d087bc055460e91a3
+scheduled_for=2026-09-29 14:30
+I read the license on a library before adding it last week and found a clause about patents that I didn't understand, so I asked our lawyer and the answer changed what we did. It was a twenty minute conversation.
+
+The library was fine for us commercially. What it also did was grant a patent license that terminated if we ever sued the authors over anything related, which is a sentence that sounds legal and is actually a decision about what we can do later.
+
+None of my normal checks would have found this. I look at stars, last release date, size, and whether the tests exist. All of that was good and none of it is about the text.
+
+What I do now is read the two sections that matter. What you may do with it and what happens if you go to court. Ten minutes. That's the part of a dependency nobody reads.
+
+Ask a lawyer. Read the license. Two sections. You are one function call away from agreeing to it.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #Licensing #Legal #SoftwareEngineering #BuildInPublic #TechNews #Compliance #Engineering #Business #Advice #Developer #Craft
+---
+[2026-09-25 19:23:35 UTC]
+record_id=a4a659aeb5d7d2d8fde16dac2636b2fbc7f939c7b73a5f862837b214037aac06
+scheduled_for=2026-09-29 14:45
+I've been wrong about timelines before and I want to own one now. Two years ago I wrote that the film industry would make a public decision about AI by 2026. It went quiet instead.
+
+The reason is obvious in hindsight. Big studios are risk managers. A quiet integration keeps the union conversation contained and avoids a headline that costs a weekend of press.
+
+So the adoption raced ahead of the announcement, which is the opposite of what I expected. I assumed the announcement would come first because the cost saving is a good story for investors.
+
+It wasn't. Investors were told in earnings language and audiences were told nothing. That is a more efficient path than the one I predicted, and I should have seen it, because it is how every quiet roll out works.
+
+I'll keep writing down where I'm wrong. Three wrong calls this year so far. A person who never revises is just running a broadcast.
+
+#AI #BuildInPublic #VibeCoding #tech #Film #Hollywood #AIinFilm #Media #Storytelling #Entertainment #Production #Prediction #Technology #Innovation #Business #Lessons
+---
+[2026-09-25 19:23:35 UTC]
+record_id=0d6fb205a2b6decce64f293608c868ae11289824e39897596f46b1bb9567917c
+scheduled_for=2026-09-29 15:00
+I looked at our log bill last month. Three hundred dollars a month. The useful fraction was almost nothing and nobody had asked what we were paying for in two years.
+
+I found that about ninety percent of the volume came from two services logging on every request at a level nobody read. Two services. So we were paying to store the same sentence forty million times and the answer to every incident was in the one percent nobody was writing.
+
+What we did was cheap. One of the two now logs at that level behind a flag that turns on for an hour when you need it, and the other one logs a summary line every thousand requests. Same debugging ability, about a twentieth of the volume.
+
+The other thing that came out of it was a rule about log levels in a review. If a line has no state in it and no error, it's a metric and the metric already exists.
+
+I ask what a log line is for before I add it. One line. Volume isn't observability.
+
+#AI #BuildInPublic #VibeCoding #tech #Logging #Observability #Engineering #Systems #BuildInPublic #TechNews #Cost #Reliability #SRE #Craft #Advice #SoftwareEngineering
+---
+[2026-09-25 19:31:21 UTC]
+record_id=5e2763219eff7fd7c34ac0f8eb247abc905ef9ddb4f75b318b689f3713ff3869
+scheduled_for=2026-09-29 15:15
+I read a study about meeting load this year. The finding I remember isn't the average. It's the shape of the distribution, which was nothing like a bell. Not a bell.
+
+Most people had a small number of hours in meetings and a few people had about two thirds of their week in them. The average was about nine hours. Nine hours. It described nobody in the study. Not one person.
+
+That matters for any intervention. If you cut meeting time by ten percent across the board, you're cutting it from the people who barely have any and leaving the problem in place for the ones who do.
+
+What I did with it was look at my own calendar as a distribution rather than a total. My Wednesdays had about six hours of meetings and my Mondays had none, and moving one recurring thing fixed the whole week.
+
+I read the distribution before I read the average now. A mean describes nobody and it's the number that gets quoted.
+
+#AI #BuildInPublic #VibeCoding #tech #Meetings #Productivity #Research #Data #BuildInPublic #TechNews #Statistics #Workplace #Advice #Habits #Teams #Management
+---
+[2026-09-25 19:31:21 UTC]
+record_id=0db8a7137c15ea052dc92ecf5dacd8b8ec30c205c849526d4131a478bc53cd8b
+scheduled_for=2026-09-29 15:30
+A side project of mine shipped in April and it makes about thirty dollars a month, which is a failure by any measure and taught me the only lesson that has ever stuck about finishing things. Scope was the lesson.
+
+I'd started eleven projects before it. Eleven projects. Every one died at about eighty percent, which is where the interesting problems end and the boring integration work begins. One feature. This one I cut to a single feature on the first day and refused to add a second.
+
+Thirty dollars a month is not a business. What it is, is a finished thing, and I've now used the same shape for two other projects. Two projects. Both are live, which is two more than the previous eleven combined.
+
+My constraint now is one command to install and one page to explain it. If it needs two pages, it's two projects and I pick one.
+
+I keep it small now. Finish something small. The finishing is the skill and it doesn't transfer from a bigger attempt.
+
+#AI #BuildInPublic #VibeCoding #tech #SideProject #Startup #IndieDev #Shipping #BuildInPublic #TechNews #Product #Focus #Advice #Engineering #Learning #Craft
+---
+[2026-09-25 19:31:21 UTC]
+record_id=87861c3b6b02c9d95280c03d7015534c4072bae034239108258d42ef8a81ac9b
+scheduled_for=2026-09-29 15:45
+Two of the four studios came out of that announcement intact. Double Fine and Compulsion keep their teams. That's the press release version.
+
+They lose the umbrella. No salary floor from a company with a balance sheet, no marketing department, and no Game Pass slot on day one. Independent sounds like freedom until you price it.
+
+A studio that lived on one publisher's budget now has to find a new partner for every project. The first thing that partner looks at is headcount, because headcount is the bill. I've watched small teams make this exact trade. Some of them got better and smaller. Some had one bad quarter and closed with no press release at all. Nobody watches a studio that hasn't shipped.
+
+So a spin off isn't a win for the people who work there. That's the arithmetic every independent team runs. It's a longer runway and a steeper climb. I've seen it go both ways. I'll keep the second version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews
+---
+[2026-09-25 19:31:21 UTC]
+record_id=e9176a3a8524bd920d606fba9d6673313fe151e37ab820a85d909f9d3ba33394
+scheduled_for=2026-09-29 16:00
+I fixed a bug last week that had been reported three times. Three times. And closed twice. The third report had a screenshot and that's the only reason it survived.
+
+The first two described a page that was wrong after saving. I couldn't reproduce it either time, so I asked for steps, got none, and closed it. That's the pattern and I was on the wrong side of it.
+
+The third person sent a screenshot of the page and a screenshot of the list after saving. One number was wrong by exactly the amount of a pending item. That's all I needed. One image. About ten minutes.
+
+I've changed how I close these. Before closing I write one line about what I tried and what I'd need. That line is what the next person builds on, and twice since then somebody has replied with the thing I was missing.
+
+Ask for a picture before you close it. Two screenshots. Two screenshots beat four messages and they arrive in one day.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Support #SoftwareEngineering #Developer #BuildInPublic #TechNews #Users #Engineering #Craft #Coding #Triage #Advice
+---
+[2026-09-25 19:34:33 UTC]
+record_id=d61fd31b3ecdbfb939e6ef87d37f04b25cef0acb276addb9bff6d8ac1d133e60
+scheduled_for=2026-09-29 16:30
+Grid batteries are the part of the energy transition that actually shipped, and I don't think most people have noticed. I've watched a substation add a container yard and turn a peak problem into a scheduling problem.
+
+That's the whole trick. A battery doesn't make power. It moves it four hours later, and four hours happens to be the gap between the sun going down and the evening load. That gap is what everyone argued about for twenty years.
+
+I've read the case against the batteries and some of it is fair. They don't solve a windless week. They do solve the daily cycle, and they're buildable in eighteen months without a new transmission line.
+
+That last part is why I care. It's a cheap answer that doesn't need federal approval, and cheap answers that clear a local hurdle get built while the elegant ones sit in a queue.
+
+I don't know how far the curve goes. I know the container yard arrived before the reactor did, and that ordering matters.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #Batteries #Grid #Storage #Renewables #Climate #Infrastructure #EnergyTransition #Utilities #DeepTech #Technology #Engineering
+---
