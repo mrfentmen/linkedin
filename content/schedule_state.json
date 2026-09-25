@@ -12695,6 +12695,164 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-24T19:15:59+00:00",
       "attempts": 2
+    },
+    "51e3d606321e311a29efe64b928295e20ca215b2a16e54709890de4efed348e3": {
+      "record_id": "51e3d606321e311a29efe64b928295e20ca215b2a16e54709890de4efed348e3",
+      "status": "scheduled",
+      "content": "I want to write about the week I deleted more code than I added, because it was the best week I had that quarter. Net minus four hundred lines and the feature worked better.\n\nThe code came out of three places. A feature flag that had been on for two years, an abstraction with exactly one implementation, and a caching layer that was slower than the thing it cached. None of those were wrong when they were written.\n\nThe caching one is the interesting one. It had been correct and it had become wrong, because the underlying call got faster and the cache kept its own bugs. Nobody removes a cache. It looks like performance and performance isn't a thing you argue against. I only found it because I was asked to speed up a slow page and I measured before I assumed. The measurement said the cache was the cost.\n\nThat's the whole method. Measure before you add. Then measure again in a year, because the correct answer expires. Deleting code isn't cleanup. It's the same job as writing it, done later with better information.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Refactoring #Performance #Developer #BuildInPublic #TechNews #Coding #Engineering #Craft #Maintenance #Systems #Advice",
+      "schedule_time": "2026-09-28 15:45",
+      "error": "",
+      "updated_at": "2026-09-24T23:48:57+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3d1e890a4880789bf1b2a83b654ce03f94754af6b37b31b88a8b05e93810d9d2": {
+      "record_id": "3d1e890a4880789bf1b2a83b654ce03f94754af6b37b31b88a8b05e93810d9d2",
+      "status": "scheduled",
+      "content": "I landed a small language change in a project I maintain. It broke nothing and irritated about four people. Those four are the interesting part.\n\nThe change was the word filter to restrict in a config file. The thing kept only records that matched and filter was doing two jobs. Twelve lines, two files, one migration.\n\nNobody's code broke. What happened is that four people had the old word in their heads and their notes and one slide deck, and for about three weeks they wrote the wrong key and got no error, because unknown keys were ignored.\n\nI think that last part is the actual bug. We'd made the config forgiving, which felt kind at the time and meant a typo was silent. Now it warns and prints the two closest keys.\n\nI know renaming a word is cheap. Making sure everyone hears about it is the expensive part, and a silent fallback makes the hearing worse.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #Config #Naming #Developer #BuildInPublic #TechNews #Engineering #Craft #Maintenance #Coding #Advice #API",
+      "schedule_time": "2026-09-28 18:00",
+      "error": "",
+      "updated_at": "2026-09-24T23:48:57+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a030e76612f43cfde4221a8a6cea46f56ecbc82f07e4a75f3f8cb3dca3cb4756": {
+      "record_id": "a030e76612f43cfde4221a8a6cea46f56ecbc82f07e4a75f3f8cb3dca3cb4756",
+      "status": "scheduled",
+      "content": "Hydrogen got sold as the answer to everything and it's turned into the answer to about three things. I've watched that correction happen and I think it was healthy.\n\nThe pitch was heat, transport, industry, power. The reality is refining, ammonia and a few industrial processes where nothing else fits. That's not a failure. It's a smaller, more honest market.\n\nI've watched the same correction in other technologies. A tool gets marketed as universal, the easy cases get funded, and the hard cases go back to the old solution. The hard cases were never the point.\n\nWhat I'd keep an eye on is the electrolyser cost curve and the hours it runs. A machine that runs a third of the time pays back three times slower, and that arithmetic is what killed the early projects.\n\nSo my position is that hydrogen stays a chemical feedstock play for now and a heat play later. Boring, smaller than the slide deck, and much closer to the truth.\n\n#AI #BuildInPublic #VibeCoding #tech #Hydrogen #Energy #Climate #EnergyTransition #Industry #DeepTech #Infrastructure #Technology #Policy #Engineering #Chemicals #Sustainability",
+      "schedule_time": "2026-09-28 18:15",
+      "error": "",
+      "updated_at": "2026-09-24T23:48:57+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d0a67eed252c54ccec1e8fb1fe6a9eabf073c6e2e9d3976577edbee5c445401b": {
+      "record_id": "d0a67eed252c54ccec1e8fb1fe6a9eabf073c6e2e9d3976577edbee5c445401b",
+      "status": "scheduled",
+      "content": "I read a vendor contract for about two hours last month and the sentence that mattered was not about price or term. It was about what happens to my data when I stop paying.\n\nA clause said they'd retain it for ninety days and then delete it, and that if I wanted it back I had to request an export during those ninety days. That's three months to notice, decide, and export, and if the billing fails silently nobody notices for two of them.\n\nOne more thing was buried in there. Who owns anything I generate with the tool. That answer was fine. The sentence sat in a different section from the one about ownership of my uploads, which is presumably why it's easy to miss on a first read at eleven at night when you are trying to sign something before a deadline.\n\nWhat I do now is read three things in every contract. Three clauses. Data retention after termination, who owns the output, and what the notice period is for a price change. I ask about all three before I sign.\n\nNinety minutes of reading against three years of a decision. Ninety minutes. That's the cheapest part of the whole purchase.\n\n#AI #BuildInPublic #VibeCoding #tech #Contracts #SaaS #Business #Data #BuildInPublic #TechNews #Procurement #Advice #Privacy #Legal #Startup #Engineering",
+      "schedule_time": "2026-09-28 18:30",
+      "error": "",
+      "updated_at": "2026-09-24T23:48:57+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d776f87900586d3044cc452fc66191b7948db4911fe69f3503a147a214b1b0bb": {
+      "record_id": "d776f87900586d3044cc452fc66191b7948db4911fe69f3503a147a214b1b0bb",
+      "status": "scheduled",
+      "content": "I got a review this year that said I was the person people went to when a decision needed making and that this had become a bottleneck. It was the most useful negative thing anybody has said to me at work.\n\nI'd thought of it as a strength. Being the one who decides is how I got promoted twice. Twice. And nobody had told me that the same behaviour at a bigger scale means four people waiting for me every week.\n\nWhat I changed was small and it took about two months to stick. Before I answer a question now I ask whether the person could make the call with what they already know. Half the time. About half the time they can, and I say so instead of answering.\n\nThe other half is where I'm actually needed, and that turned out to be about two hours a week rather than the fifteen I'd been spending.\n\nAsk whether they can decide it. Two hours a week. That's the difference between being useful and being a queue.\n\n#AI #BuildInPublic #VibeCoding #tech #Feedback #Leadership #Career #Teams #BuildInPublic #TechNews #Management #Advice #Growth #Workplace #Engineering #Decisions",
+      "schedule_time": "2026-09-28 18:45",
+      "error": "",
+      "updated_at": "2026-09-24T23:48:57+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2812d35920f47849c3b36f6943c066d8dddf6d7358444612f2c8671c43283ccd": {
+      "record_id": "2812d35920f47849c3b36f6943c066d8dddf6d7358444612f2c8671c43283ccd",
+      "status": "scheduled",
+      "content": "Our test data was a copy of production with the names changed. Last month a support engineer found a real customer's phone number in a screenshot from our staging environment. That's how we learned the scrambling missed a column.\n\nThe tool replaced the obvious fields. It didn't touch a free text field where support notes had been copied in over four years. Four years. Those notes contained phone numbers and addresses written by hand.\n\nNobody was careless. I wrote that scramble step once, in a hurry, and there was no test that asserted a real value never appears. So it passed every time.\n\nI added a check that greps the staging dump for patterns that look like real data and fails the pipeline if it finds any. It's about twenty lines and it has already caught one more column.\n\nI use generated test data now. It's safer than scrubbed production data. If you must use the real thing, test the scrubber, because an untested scrubber is a promise with no evidence behind it.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #Data #Privacy #Engineering #BuildInPublic #TechNews #Security #Systems #Compliance #Craft #Advice #SoftwareEngineering",
+      "schedule_time": "2026-09-28 19:00",
+      "error": "",
+      "updated_at": "2026-09-24T23:55:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "38761d77b16f15092a6a0a3f71b9e918961c0dc8f5b1c00b37340500a179fe26": {
+      "record_id": "38761d77b16f15092a6a0a3f71b9e918961c0dc8f5b1c00b37340500a179fe26",
+      "status": "scheduled",
+      "content": "Xbox cut 3,200 jobs in July and let four studios go. Double Fine, Compulsion, Ninja Theory, Undead Labs.\n\nNone of them were failing in public. Double Fine has awards on the shelf, and Ninja Theory built a motion capture pipeline the rest of the industry copied. Both teams were small by AAA standards, which is supposed to be the safe kind of studio.\n\nI don't think the decision was about the games. Game Pass economics were the input, and a subscription business that grew fast and then had to pay for a hardware business underneath it. People keep arguing about which release caused this. No release caused this. The call came from people who don't ship anything, and their scoreboard is quarterly.\n\nI looked at the tracker for this year. I've read the statement twice. Two thirds of the game industry layoffs came from AAA studios. Same story, bigger budget. The people who chose the model kept their jobs.\n\n#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #Xbox #FutureOfWork #GameDesign #IndieGame #Steam #VideoGames #Careers #TechNews",
+      "schedule_time": "2026-09-29 08:00",
+      "error": "",
+      "updated_at": "2026-09-24T23:55:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3dec91caa03e60f9b3fdc6f830cf76100e230d2c293a2adab7b81f9b4a441d7b": {
+      "record_id": "3dec91caa03e60f9b3fdc6f830cf76100e230d2c293a2adab7b81f9b4a441d7b",
+      "status": "scheduled",
+      "content": "I got a code review last week that was three sentences and it was the best one I've had this year. It didn't mention a single line of the code I'd written.\n\nIt said the change was in the wrong place. It belonged two layers up, next to the thing that decides when it runs, and I'd put it next to the thing it operates on because that's where the data was.\n\nThree sentences. That's a review I couldn't have given myself, because knowing where a function belongs is the part I stop seeing once I've written it. I was thinking about the function and he was thinking about the system. I moved it the next morning and the tests still passed.\n\nWhat made it land was that he said why in one sentence and stopped. No list of alternatives, no rewrite. One claim. A reason attached, and the reason was checkable.\n\nReviews I remember are about placement. Style notes are useful and they're not the same thing, and a reviewer who can see the seam is worth more than ten who can see the semicolons.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Architecture #Craft #Teams #Coding #Advice #Design",
+      "schedule_time": "2026-09-29 08:15",
+      "error": "",
+      "updated_at": "2026-09-24T23:55:02+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "bf2bb41261d80b3079e127ca926529090863f487235a17c2a2a8f583223f32da": {
+      "record_id": "bf2bb41261d80b3079e127ca926529090863f487235a17c2a2a8f583223f32da",
+      "status": "scheduled",
+      "content": "Advanced packaging is the bottleneck nobody argues about, and it's a stranger story than the chips themselves. I've read three supply chain notes this year and all three land on the same step.\n\nHere's the shape. A fast chip is one part of a finished module. Connecting it to memory and to everything else needs a plant that took a decade to build, and there are a handful of them on the planet.\n\nThat's the constraint. Not design. Not the fab. It's the assembly step in between, and it gets left out of the announcement because it doesn't photograph well.\n\nI've watched this pattern in batteries and in solar. Visible layers get the subsidies and the invisible layer becomes the chokepoint, and then a trade dispute over the chokepoint does more damage than any policy on the headline product.\n\nSo I'd track the packaging capacity before I track the chip roadmap. Roadmaps are marketing. Capacity is arithmetic, and arithmetic wins this argument every time.\n\n#AI #BuildInPublic #VibeCoding #tech #Semiconductors #Chips #SupplyChain #AI #Manufacturing #AdvancedPackaging #Technology #TechNews #DeepTech #Engineering #Trade #Hardware",
+      "schedule_time": "2026-09-29 08:30",
+      "error": "",
+      "updated_at": "2026-09-24T23:55:02+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "0216c7bc2679e7d71ad949509e44d1a5094aa39af4f603a7c09efa5deb92b43e": {
+      "record_id": "0216c7bc2679e7d71ad949509e44d1a5094aa39af4f603a7c09efa5deb92b43e",
+      "status": "scheduled",
+      "content": "Our review process was taking three days per change. Three days. I found the cost in a place nobody was measuring. The wait time, not the review time.\n\nI measured both for two weeks. Reviews took about forty minutes of actual attention. The other two and a half days were queue. Somebody opened the request, looked at it, decided it needed a proper read, and then went to a meeting.\n\nSo the fix wasn't making reviews faster. It was making the handover a decision. Now each request has one reviewer assigned within an hour, and that person either reviews it or says when they will. One reviewer. Two days of waiting turned into about four hours.\n\nNobody works faster. Nobody writes better code. I changed who owns the next action and the queue emptied.\n\nMeasure the wait. Most teams measure the work, and the work is rarely the problem. The queue is.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Teams #SoftwareEngineering #Engineering #BuildInPublic #TechNews #Process #Developer #Productivity #Craft #Advice #Management",
+      "schedule_time": "2026-09-29 08:45",
+      "error": "",
+      "updated_at": "2026-09-24T23:55:02+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "df71cd529c26764418c9458ddb11964d05552ae62a7a6393ee6152f7af4cbc41": {
+      "record_id": "df71cd529c26764418c9458ddb11964d05552ae62a7a6393ee6152f7af4cbc41",
+      "status": "scheduled",
+      "content": "I mentored somebody for six months and the thing that helped most was not the code review I gave him. It was one sentence I said in the third week and forgot about.\n\nHe mentioned it eight months later. I'd said something like the thing he was worried about was a two week problem and not a career problem, and he'd written it down. He told me he read it twice that month.\n\nThe advice I gave in reviews was better researched and it did nothing, because advice about code is fine and he was going to get that from everybody. What he didn't have was a sense of scale. Everything feels permanent at the start of a career.\n\nSince then I try to name the size of a thing when somebody's stuck. This is a week. This is a month. This is the kind of thing that follows you and here is how to avoid it. That's usually the whole conversation.\n\nThe most useful thing you can hand somebody early is proportion.\n\n#AI #BuildInPublic #VibeCoding #tech #Mentorship #Career #Teams #SoftwareEngineering #BuildInPublic #TechNews #Advice #Growth #Leadership #People #Learning #Workplace",
+      "schedule_time": "2026-09-29 09:00",
+      "error": "",
+      "updated_at": "2026-09-25T00:02:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ea169704f6b7f751f6559bc39d949942d4d8d22dc66558b019639ced3b299e26": {
+      "record_id": "ea169704f6b7f751f6559bc39d949942d4d8d22dc66558b019639ced3b299e26",
+      "status": "scheduled",
+      "content": "I added one index last week. One index. A page went from four seconds to ninety milliseconds, and the reason I hadn't done it two years earlier is that nobody had complained loudly enough. That's a bad reason.\n\nThe query was filtering on a status column and a date column and sorting by the date. Without the index it read about two million rows every time. With it, about four hundred.\n\nWhat bothers me is the path we took to get there. We'd added a cache, then a background job, then a limit on the page, and none of those addressed the read. Each one was a workaround for a two minute fix we never considered because the page felt fast enough.\n\nSo I wrote down what we spent on the workarounds. About three weeks of engineering across three people, plus a cache that now has a bug in it.\n\nCheck the query plan before you build around a slow query. One minute. The plan is a document and it takes a minute to read.\n\n#AI #BuildInPublic #VibeCoding #tech #Performance #Databases #SoftwareEngineering #Developer #BuildInPublic #TechNews #Engineering #Coding #Systems #Craft #Indexes #Advice",
+      "schedule_time": "2026-09-29 09:15",
+      "error": "",
+      "updated_at": "2026-09-25T00:02:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "226ac107cfa9df14a96473724b529ba3ecf19f1765a6821ba707be54bddb7c98": {
+      "record_id": "226ac107cfa9df14a96473724b529ba3ecf19f1765a6821ba707be54bddb7c98",
+      "status": "scheduled",
+      "content": "I read about a weather model this year that gained about thirty hours of lead time on storm tracks. Thirty hours. That's not small.\n\nIt's the difference between a mandatory evacuation order that people can act on and one that arrives when half the roads are already closed. Lead time is the variable that decides how many people can leave, so a model that buys a day is a public safety tool.\n\nI want to know how the error rate behaves at the edges. The coverage doesn't say. Average accuracy can improve while the rare catastrophic miss gets worse, and the rare miss is the one that kills people. The teams working on this know that and they publish it.\n\nI look for one thing in any model that gets deployed. One thing matters. What does the tail look like. Who gets harmed when it's wrong. Those questions are boring and they're the ones that matter.\n\nI'd rather have a model that's never catastrophically wrong than one with a better average.\n\n#AI #BuildInPublic #VibeCoding #tech #Weather #AI #PublicSafety #Science #BuildInPublic #TechNews #Climate #Data #Modeling #Research #Policy #Advice",
+      "schedule_time": "2026-09-29 09:30",
+      "error": "",
+      "updated_at": "2026-09-25T00:02:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6a9c10b3789333809a3ec55f1366fe5a653c27f54fc6b5d02db4c3df58b323fb": {
+      "record_id": "6a9c10b3789333809a3ec55f1366fe5a653c27f54fc6b5d02db4c3df58b323fb",
+      "status": "scheduled",
+      "content": "I stopped using an AI coding tool after about five months. Five months. I want to be specific about why, because the reason isn't that it was bad. It's that I stopped reading my own code.\n\nThe tool got fast and my reviews got thin. I'd accept a diff that looked right and move on, and after a few weeks I couldn't explain a function I'd committed the day before. That's a real cost and it doesn't show up in any metric. Nothing measures it.\n\nWhat I do now is keep the tool for the parts I'd otherwise avoid. Writing tests from an example, renaming across files, drafting docs. Boring work. Anything where the output is checkable by running it.\n\nThe parts I keep for myself are the ones where the shape matters, because the shape is the thing I'd be outsourcing and the shape is the whole job.\n\nA tool that hides work from you is fine. A tool that hides the work you needed to do is the problem. Two different things.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #SoftwareEngineering #Developer #BuildInPublic #TechNews #LLM #Coding #Craft #Engineering #Advice #Learning #CodeReview",
+      "schedule_time": "2026-09-29 09:45",
+      "error": "",
+      "updated_at": "2026-09-25T00:02:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f19f09523647c9d33bce23940b905c9390a92987235cd5b288ecfedbdba56258": {
+      "record_id": "f19f09523647c9d33bce23940b905c9390a92987235cd5b288ecfedbdba56258",
+      "status": "failed",
+      "content": "I read a study about sleep and phone use and the effect size was smaller than the headline made it sound. The study was fine. The number was real. It was just small.\n\nThe effect was about four minutes of sleep per hour of use in the evening. If you're on your phone for two hours before bed that's eight minutes. That's a real finding and it isn't the reason you feel terrible.\n\nWhat the study showed is that the average effect is small and the variance is large. Some people lose forty minutes. Most lose almost none. Averages hide that and the average is what gets reported.\n\nI don't take from it that phones are fine. It's that population averages are a bad tool for a decision about one person, which is you. Your own data is noisy and it's also the only data about you.\n\nI read the effect size and the spread now. Then I run the experiment on myself for two weeks. That's more useful than any headline.\n\n#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #Sleep #BuildInPublic #TechNews #Health #Data #Evidence #CriticalThinking #Habits #Advice",
+      "schedule_time": "2026-09-29 10:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-25T00:02:10+00:00",
+      "attempts": 2
+    },
+    "aa18422b1071e15ca838836667c5223021333f597f3644394975b1d091ddafac": {
+      "record_id": "aa18422b1071e15ca838836667c5223021333f597f3644394975b1d091ddafac",
+      "status": "failed",
+      "content": "I read a study about sleep and phone use and the effect size was smaller than the headline made it sound. The study was fine. The number was real. It was just small.\n\nThe effect was about four minutes of sleep per hour of use in the evening. If you're on your phone for two hours before bed that's eight minutes. That's a real finding and it isn't the reason you feel terrible.\n\nWhat the study showed is that the average effect is small and the variance is large. Some people lose forty minutes. Most lose almost none. Averages hide that and the average is what gets reported.\n\nI don't take from it that phones are fine. It's that population averages are a bad tool for a decision about one person, which is you. Your own data is noisy and it's also the only data about you.\n\nI read the effect size and the spread now. Then I run the experiment on myself for two weeks. That's more useful than any headline.\n\n#AI #BuildInPublic #VibeCoding #tech #Science #Research #Statistics #Sleep #BuildInPublic #TechNews #Health #Data #Evidence #CriticalThinking #Habits #Advice",
+      "schedule_time": "2026-09-29 10:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-25T00:03:52+00:00",
+      "attempts": 2
     }
   }
 }
