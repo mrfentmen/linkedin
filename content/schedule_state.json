@@ -13246,8 +13246,8 @@
       "content": "I wrote about four hundred words of documentation last month and deleted about three hundred of them in review, and the remaining hundred did more than the original. That's a ratio I now expect.\n\nThree hundred words. The three hundred were mostly explaining what the code does, which I'd written because I was unsure it was readable. That's a signal about the code, not about the docs. If the function needs three paragraphs, the function is the problem.\n\nWhat's left is about sixty words of setup and about forty about the two decisions somebody would otherwise undo. Sixty words. Two decisions. Both of those are things the code can't say for itself.\n\nI now write the doc after the review of the code, not before. The review usually removes half the things I wanted to explain, which is the cheapest edit available.\n\nI write the why and delete the what now. If the what needs writing down, fix the code instead.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #SoftwareEngineering #Developer #BuildInPublic #TechNews #Craft #CodeReview #Advice #Engineering #Coding #Maintainability",
       "schedule_time": "2026-09-29 18:45",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-26T02:37:27+00:00",
-      "attempts": 4
+      "updated_at": "2026-09-26T08:09:07+00:00",
+      "attempts": 6
     },
     "13038403e31e85d53d49d7d3676a9bc330342e0be54436a93e9fc120f2598ee8": {
       "record_id": "13038403e31e85d53d49d7d3676a9bc330342e0be54436a93e9fc120f2598ee8",
