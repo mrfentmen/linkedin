@@ -22465,3 +22465,284 @@ I read the ratios now. The top line is the story somebody chose and the ratio is
 
 #AI #BuildInPublic #VibeCoding #tech #Business #Data #Metrics #Support #BuildInPublic #TechNews #Product #Analytics #Advice #Strategy #Startup #Customers
 ---
+[2026-09-26 18:18:19 UTC]
+record_id=45bd74d2308b7c4fdb88be2bad3f1408e5e02c18d6ac975bdda41e6b7aa0a914
+scheduled_for=2026-09-29 18:45
+I wrote about four hundred words of documentation last month and deleted about three hundred of them in review, and the remaining hundred did more than the original. That's a ratio I now expect.
+
+Three hundred words. The three hundred were mostly explaining what the code does, which I'd written because I was unsure it was readable. That's a signal about the code, not about the docs. If the function needs three paragraphs, the function is the problem.
+
+What's left is about sixty words of setup and about forty about the two decisions somebody would otherwise undo. Sixty words. Two decisions. Both of those are things the code can't say for itself.
+
+I now write the doc after the review of the code, not before. The review usually removes half the things I wanted to explain, which is the cheapest edit available.
+
+I write the why and delete the what now. If the what needs writing down, fix the code instead.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #SoftwareEngineering #Developer #BuildInPublic #TechNews #Craft #CodeReview #Advice #Engineering #Coding #Maintainability
+---
+[2026-09-26 18:18:19 UTC]
+record_id=8f6dc1dfd49daa05444f263459868bceffe64360293054b38d4a4658790e79a1
+scheduled_for=2026-09-29 19:00
+Obsidian cut 52 developers in early July. Eleven days later the Fallout remaster everyone wanted was announced.
+
+I've written about the eighteen months Obsidian got to build New Vegas. The other team got four years for Fallout 3, which is not a small difference when you're building an open world from scratch. Four years versus eighteen months. That game scored 93 and sold 12.4 million copies. New Vegas scored 84 and sold 11.6 million, and New Vegas is the one people still mod and still argue about, because the writing holds up and the engine never did.
+
+So a shorter schedule produced the game people still argue about a decade later, which is not what any production schedule predicts. I don't think that's a coincidence. I don't think it's proof either. Then the same studio loses 52 people in the month its most requested remaster gets announced.
+
+I can't prove that link. I can put the two facts side by side. This industry keeps its institutional memory in the people it lets go, and somebody at ZeniMax Online is one of 213 who found out the same way that month. The remasters are the easy money. The people who made the original are the hard part to replace.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #Fallout #Obsidian #Bethesda #FutureOfWork #BusinessOfGaming #GameDesign #VideoGames #PCGaming #TechNews
+---
+[2026-09-26 18:18:19 UTC]
+record_id=71f114ed2116f14242daa1d165ee392845e6d59d3d55bfed7f6ef3dc598b4a6c
+scheduled_for=2026-09-30 08:00
+A designer showed me two versions of the same screen last week. Two versions. She asked which one I preferred. I picked the wrong one and she'd known I would, and she told me why.
+
+The version I picked had the primary action in the top right, because that's where our other screens put it. The version she liked put it at the bottom, next to the thing the user had just entered, because on this screen the user was copying from one panel to another.
+
+She hadn't asked me which was better. She'd asked me to confirm her read that consistency was the wrong argument here. That's a better question and I'd missed it.
+
+What I take from it is that the person closest to the work shouldn't ask me to choose. They should ask me to check the reason, and the reason is the part I can actually add.
+
+I ask for the reason now, not the choice. Ask for the reason. Choosing is the part you already know more about.
+
+#AI #BuildInPublic #VibeCoding #tech #Design #ProductDesign #UX #Teams #BuildInPublic #TechNews #Frontend #Communication #Advice #Engineering #Craft #Users
+---
+[2026-09-26 18:18:19 UTC]
+record_id=ecd7cf229ad3b5a1cad4b44ba637fee552e632e9575af6a0e27a3ceda56a8688
+scheduled_for=2026-09-30 08:15
+The Federal Reserve raised rates by a quarter point on the sixteenth of September, to three and three quarters percent at the top of the band. First increase since 2023.
+
+I don't trade and I don't give advice. What interests me is that the increase happened while the largest capital expenditure programme in modern corporate history is still running, and nobody in the market seemed to treat those two facts as connected.
+
+They are connected. Cheap money subsidised the build. Expensive money changes the discount rate on every project that pays back in eight years, and a data center pays back in years.
+
+So I'd expect the pressure to show up in the second tier first. The company with three sites and a lease. Not the one with the balance sheet. That's how these cycles work, and it's how the first rounds of layoffs get justified.
+
+I've been watching this wave from the outside for two years. My read is the money got more expensive and the plans didn't move. Something has to give.
+
+#AI #BuildInPublic #VibeCoding #tech #FederalReserve #InterestRates #Economy #AI #DataCenters #Markets #Finance #Macro #Investing #TechNews #Business #Capital
+---
+[2026-09-26 18:18:19 UTC]
+record_id=fc00394b06c7d2788869743bb3267c9f19c328ea2c74e073065b7b6fbe14480c
+scheduled_for=2026-09-30 08:30
+I spent two hours on a bug that turned out to be a stale cache in my own browser and I want to write about the two hours because the lesson is not about caching. It's about trusting my tools.
+
+I'd deployed the fix twice and seen the old behavior twice, so I concluded the fix was wrong. I never checked whether the page I was looking at was the page I'd deployed, because the page had always been right before.
+
+What I do now is one check before I start debugging anything in the browser. Open it in a private window. It takes about four seconds. Four seconds. It has caught this twice since, both times in less than a minute.
+
+The other version of this is a build that didn't run. Same shape. The evidence you're looking at is from before your change and it looks exactly like evidence from after.
+
+Verify the thing you're looking at is the thing you changed. Two hours. Four seconds of doubt before two hours of certainty.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Caching #Frontend #Developer #BuildInPublic #TechNews #Engineering #Coding #Craft #Advice #Habits #SoftwareEngineering
+---
+[2026-09-26 18:24:58 UTC]
+record_id=3ef356077fc1f9de6a49367219c4cf4ddb13284312aca88480d0e627f397d92c
+scheduled_for=2026-09-30 08:45
+I sat on a hiring panel that made the wrong call and I can point at the exact ten minutes where it happened. It was the first interview, and the first interviewer's read anchored the rest of us.
+
+He said he found her evasive, and after that everything anybody said got interpreted through that. A pause became hesitation. A detail became over explaining. We hired nobody and she went somewhere else and did well.
+
+The fix isn't anything about bias training. It's sequencing. Everybody writes their own read before anybody speaks, and the most junior person speaks first, because the most senior person's read is the heaviest.
+
+We do that now. Four written paragraphs before the discussion, no exceptions. The decisions take about twenty minutes longer and the discussion is completely different, because the evidence arrives before the conclusion.
+
+Put the writes before the talking. A panel is a terrible place to form an opinion for the first time.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviewing #Teams #Management #BuildInPublic #TechNews #Recruiting #Process #Advice #Career #Leadership #Decisions
+---
+[2026-09-26 18:24:58 UTC]
+record_id=330dd42db84418bc7898fd70b4adfd3c08b36ea6557189b5836ef53f07b23543
+scheduled_for=2026-09-30 09:00
+I read a proposal from somebody on my team three times before I noticed the thing that bothered me. The proposal was good. It was that every option led to the same outcome. One outcome.
+
+Four options, all with costs and benefits, and all four ended with the same sized team doing the same work. So the decision didn't matter, which is a fine thing to conclude and it wasn't what the document said.
+
+I wrote back one line. One line. It looks like all four lead to the same place, in which case you don't need my review. That turned out to be the answer he'd been looking for, because he'd written the doc to test whether that was true.
+
+If a proposal has four options with one outcome, the work is done. Say so and let the person move on. Reviewing it in detail is the least useful thing I could have done.
+
+I look for where the options converge now. One sentence. Sometimes the most useful review is one sentence saying they don't matter.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Communication #Workplace #Teams #BuildInPublic #TechNews #Writing #Advice #Leadership #Product #Craft #Decisions
+---
+[2026-09-26 18:24:58 UTC]
+record_id=f4291eb3ad134e89bc09cc3b8e6bfebe5ba4868c7c03a3a02565a05e57398324
+scheduled_for=2026-09-30 09:15
+I fixed the search box on our docs site last month and the problem wasn't the search. It was that people were searching for the wrong words, and the page never told them the right ones.
+
+I'd measured the query log and made the ranking better, which is the obvious thing. It moved the needle by almost nothing. Then I read about forty of the queries by hand.
+
+Half of them used a term we don't use anywhere in the product. Customers called it the pipeline. Our docs called it the flow. Both names were correct and only one of them was in the index.
+
+I added a line of synonyms built from the query log, about thirty pairs, and the click through rate nearly doubled in a week. One config file. No model, no embeddings, nothing clever.
+
+The best clues about your search are in the queries people typed and the words they used. Read them. It's thirty minutes and it beats another round of ranking work.
+
+#AI #BuildInPublic #VibeCoding #tech #Search #Product #Users #Documentation #BuildInPublic #TechNews #Frontend #Engineering #Craft #Data #Coding #Advice
+---
+[2026-09-26 18:24:58 UTC]
+record_id=e317dd54bf7ed1df8e9de48c90aea06e32d85024118ab01e6c5584929969e94c
+scheduled_for=2026-09-30 09:30
+A customer asked us for an export last month and the export took a day because the data was spread over four systems and one of them had no owner. One owner. That's the finding.
+
+Four systems. Billing, activity, support and identity. Three had a service and a runbook. The identity data had a table and a person who had left in 2023 and nobody had noticed because nothing had needed changing.
+
+I wrote the export as a script rather than as a one off, and it lives in the repo with a note about the fourth system. That took about an extra four hours and it means the next request is about ten minutes.
+
+I want to remember that the request is the test. A data request, a deletion, an audit. Each one is a probe of your data map and each one finds the room nobody drew.
+
+I build the one off as a script now. A second request is always coming and you'll have forgotten by then.
+
+#AI #BuildInPublic #VibeCoding #tech #Data #Architecture #Engineering #Systems #BuildInPublic #TechNews #Compliance #Privacy #Craft #Advice #SoftwareEngineering #Infrastructure
+---
+[2026-09-26 18:24:58 UTC]
+record_id=635e34a51c33bbc5065075bd4c45e1df041afc1c83ce98766e18c62dc1442152
+scheduled_for=2026-09-30 09:45
+I read a study about exercise and mood this year with a small effect size and a long follow up. It's the first one I've changed something for. About two percent on a mood scale. Two percent.
+
+Two percent sounds like nothing and it isn't, because the intervention costs about twenty minutes and the measurement was over a year. Small effects that persist are worth more than large effects that vanish, and most of what I read is the second kind.
+
+What I did with it is smaller than a habit. I walk on the days I feel flat now. That's different from walking every day, because the every day version lasted about four months the last two times I tried it. Four months.
+
+That's the honest use of a small study. Not a system. A nudge with evidence attached, applied when the situation matches the study's situation.
+
+I read the follow up period before I change anything now. A year of a small effect is a finding. Two weeks of a large one is a press release.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Habits #Evidence #BuildInPublic #TechNews #Health #Data #Statistics #Learning #Advice #Exercise
+---
+[2026-09-26 18:30:37 UTC]
+record_id=110d21ff6c9721d55d4e0092a81518a2a1a22feacbb4de85d4ef293455866af4
+scheduled_for=2026-09-30 10:00
+I watched a senior engineer say I don't know three times in one meeting. Three times. And each time it moved the conversation forward. That's the whole thing I want to write about.
+
+Once was about a number. Once about whether a library would handle a case. Once about who had made a decision in 2022. All three were answered in about ten minutes by somebody else in the room.
+
+What I noticed is what he did in the gap. He said what he thought it probably was, then said he wasn't sure, then said who would know. Three sentences and the conversation had a next step instead of a guess.
+
+The reason people don't do this is that a guess sounds more senior than a question. It does sound that way and it costs a day of somebody building on a number that was invented in a room.
+
+I say what I think, I say I'm not sure, and I say who knows. Eight seconds. That's the whole sentence.
+
+#AI #BuildInPublic #VibeCoding #tech #Honesty #Engineering #Teams #Communication #BuildInPublic #TechNews #Leadership #Advice #Workplace #Craft #SoftwareEngineering #Learning
+---
+[2026-09-26 18:30:37 UTC]
+record_id=c62c5a49d9623b439c4cdc35cb7aafd8fac8ef91fa3c56c83153452d39f67af0
+scheduled_for=2026-09-30 10:15
+Nearly a thousand startups shut down this year. I saw 987 on a tracker, and it counts companies that raised money and then stopped.
+
+I want to be careful with it, because a shutdown tracker measures what it can see. Still, the direction is worth noticing. A funding environment where the second round is harder to raise is a funding environment that kills companies without a headline, and silence is how it goes.
+
+I've been inside one of those. The last six months aren't dramatic. I can say that from experience. They are a sequence of conversations where a number gets smaller, until the number is zero.
+
+I bring it up because the AI narrative is loud and the shutdowns are silent, so the picture people get is skewed. The same quarter that produced a record valuation produced this list. Both are the same economy.
+
+So I'd say the honest summary is that the money is concentrating. Not scarce. Concentrated. That distinction decides which companies die and which get another round, and it isn't about the product.
+
+#AI #BuildInPublic #VibeCoding #tech #Startups #VentureCapital #AI #Funding #Business #Entrepreneurship #TechNews #Economy #Founders #Market #Innovation #Tech
+---
+[2026-09-26 18:30:37 UTC]
+record_id=edbed7c23bdb592ca3c9587e064f0f99cbf096050155d77ec6ffe251a10914b2
+scheduled_for=2026-09-30 10:30
+I moved a hundred and forty files in a repository last month and the migration that scared me was not the code. It was the links in about thirty documents.
+
+Moving the code was mechanical. Imports, build config, tests. About two hours with a script and a careful review. Docs were the part nobody had counted, and about a third of them pointed at paths that had been renamed twice already.
+
+What I did was write a check that scans every markdown file for a path and fails if it doesn't resolve. It was about twenty lines and it found nine broken links that predated my change by a year.
+
+I put that check in the build. It took an afternoon and the check has already been worth it twice, both times for somebody else's rename.
+
+If you're moving files, test the references. Compilers check code and nothing checks prose.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Documentation #SoftwareEngineering #Developer #BuildInPublic #TechNews #Engineering #Automation #Craft #Maintenance #Advice #Coding
+---
+[2026-09-26 18:37:44 UTC]
+record_id=c683aaefd3a7e85d4c8df935d1823098eb403b8bcd0c5e2002450da45b53c648
+scheduled_for=2026-09-30 11:15
+A drug discovered and designed by an AI system posted positive results in a mid stage trial and moved into the final stage. That's a real milestone and it isn't the one people will repeat.
+
+I don't think the milestone is a model thinking up a molecule. It's that the molecule survived a trial with humans in it. Everything before that's a screening exercise, and screening has been cheap for a decade.
+
+I read the numbers the way I read any efficacy result. One group gained lung function. The control group lost some. The gap was real and the trial was small.
+
+Small matters. A mid stage trial with a modest number of patients is a green light, not a proof. I've watched enough compounds die in the final stage to keep that in view, and the people running the trial would say the same thing.
+
+So my read is that this is a genuine first and a limited one. The tool did its part. What decides is still the trial, and the trial is slow, expensive and about human biology.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DrugDiscovery #Biotech #Pharma #ClinicalTrials #Medicine #LifeSciences #Research #DeepTech #Healthcare #Science #Innovation
+---
+[2026-09-26 18:37:44 UTC]
+record_id=bcebef2a009c3f18e52cf5f1218ea523975c62158705879e76b4d9388cdefee7
+scheduled_for=2026-09-30 11:30
+I looked at a contract for a friend last month and the clause that mattered was about notice. One clause matters. Ninety days to cancel and thirty days to be told about a price change.
+
+That combination is the one to look for. Short notice for a price change and long notice to leave means you can be repriced twice before you can get out, and by then you've spent about four months and a migration.
+
+The other thing I looked for was what counts as a user. One contract we saw counted an API key as a seat, which turns a small integration into about forty seats and nobody had spotted it.
+
+What I'd suggest to anybody signing one of these is to write the two numbers down and put them somewhere with a date. Ninety and thirty. I put both in a calendar reminder a month before.
+
+I read the numbers that are periods of time now. Two numbers. Notice periods. Price is the thing you negotiate and the periods are the thing that traps you.
+
+#AI #BuildInPublic #VibeCoding #tech #Contracts #SaaS #Business #Legal #BuildInPublic #TechNews #Procurement #Advice #Money #Startup #Engineering #Negotiation
+---
+[2026-09-26 18:37:44 UTC]
+record_id=d3d92e69e64770b7d1dc819348beea6c20f85d24c3aea5fde794b8108033352d
+scheduled_for=2026-09-30 11:45
+A monitoring alert of ours fired about ninety times last year and every single one was a false positive, and we only knew because somebody sat down and did the count. Everybody assumed it was about half.
+
+That assumption is the interesting part. Each person saw a handful of alerts, each one looked plausible, and nobody added them up. So a useless alert stayed on the channel for a year and trained four people to ignore the channel.
+
+I did the count in about fifteen minutes by grepping the alert history. Ninety times fired, zero times actionable, and two of those nights somebody got woken up.
+
+We deleted it. The replacement watches a different number that has flagged one real problem in four months, which is a much better ratio and it's the reason the channel gets read now.
+
+Count your alerts once a quarter. If an alert has never been right, it's not a monitor. It's background noise with a pager attached.
+
+#AI #BuildInPublic #VibeCoding #tech #Monitoring #Reliability #SRE #Operations #BuildInPublic #TechNews #Alerts #Systems #Craft #Advice #OnCall #Engineering
+---
+[2026-09-26 18:37:44 UTC]
+record_id=c4bfdb4fba3c7862f0465069df5756671bd4406000eb1d754a82f9721cf017f4
+scheduled_for=2026-09-30 12:00
+I cut our onboarding from about three weeks to about five days. Three weeks. Five days. And the biggest single change was giving new people something to break. On purpose.
+
+Old version, reading and shadowing. New version, a small task that ships in week one, in a system nobody depends on, with a named person to ask. That task is real and the blast radius is one internal tool.
+
+That changed everything about the first month. Questions stopped being about access and started being about the code, which is the shift you're trying to cause.
+
+There's another change and it's about thirty small things. Every repo now has a script that sets up a local environment in one command, and half of what used to be week one is now about four minutes of waiting.
+
+I give a new person something to break in week one. Everything else is logistics and logistics can be a script.
+
+#AI #BuildInPublic #VibeCoding #tech #Onboarding #Developer #Teams #Engineering #BuildInPublic #TechNews #Hiring #Craft #Advice #Productivity #SoftwareEngineering #Growth
+---
+[2026-09-26 18:37:44 UTC]
+record_id=2cbd0b32c471eddd0d3bfd173a8ed3bb28b1e4aa4dd31315f1a5d9bbaca815f5
+scheduled_for=2026-09-30 12:15
+A tracker puts this year at about 10,863 game industry layoffs and 135 studios closed. I've stopped treating that as a bad year.
+
+Look at the shape instead of the size. Two thirds of the cuts came from AAA studios, which are the ones with the biggest budgets and the safest assumptions. The studios that closed needed one game to land.
+
+So the industry is doing what the money asks. Cheap to make, big if it hits, gone if it misses. Everything else gets cut first. I don't think this is AI yet. I think it's a business model that was already broken, and AI is arriving in the middle of it. That's the whole argument.
+
+That will let everyone blame the wrong thing for the next five years. If the layoffs keep coming after the tools are standard, the tools were never the reason. The model was. I'd rather argue about the model now, while somebody in the room still remembers the old version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+---
+[2026-09-26 18:40:57 UTC]
+record_id=56e27f1f15542cf575641014113b508cab6eef9258c5d6ef89e21b7c51a29e11
+scheduled_for=2026-09-30 12:30
+I spent about six months deciding whether to rewrite a service and about five days doing it once I'd decided. Six months. Five days. That tells me the decision was the expensive part. Not the work.
+
+The service was about four thousand lines and it had three problems. It was slow, it was hard to test, and only one person understood it. I kept measuring the rewrite and never measuring the cost of the situation.
+
+I moved it by writing down the cost of not doing it. Four hours a month of confusion plus two incidents in a year plus the bus factor of one. Once that was a number, the rewrite was obvious.
+
+What I'd do differently is set a threshold before the measuring starts. Something like if this costs more than a day a month, it gets rewritten. Then the measuring takes a week instead of six months.
+
+I decide with a number I set in advance now. Six months of deciding is one number nobody wrote down. One number.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #SoftwareEngineering #Engineering #Developer #BuildInPublic #TechNews #Decisions #Craft #Maintenance #Advice #Systems #Leadership
+---
