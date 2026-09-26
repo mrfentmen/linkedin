@@ -13119,6 +13119,144 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-25T19:36:13+00:00",
       "attempts": 2
+    },
+    "1e683ea48ac2a8edf4a19efedc93e1bb56320e0a46817fad1553d58379e5c456": {
+      "record_id": "1e683ea48ac2a8edf4a19efedc93e1bb56320e0a46817fad1553d58379e5c456",
+      "status": "scheduled",
+      "content": "A script of mine deleted about four hundred rows it shouldn't have last month. Four hundred rows. And I found out because a report looked thin. Not because anything alerted.\n\nI'd written the script for a one time cleanup and I'd tested it on a copy, and the copy had about two thousand rows while the live table had about forty thousand. So my where clause matched four hundred rows in production and zero in the test.\n\nWhat saved it was a backup from the night before, which took about twenty minutes to restore. Twenty minutes. What didn't save it was a review, because I ran it myself and nobody else saw the query.\n\nI've since added two rules for anything I run against production. Two rules. Every delete gets a select first that prints the count. And a delete never runs from my laptop.\n\nRun the select first and read the number. If the number surprises you, you've just found the bug before it happened.\n\n#AI #BuildInPublic #VibeCoding #tech #Databases #Reliability #Engineering #Developer #BuildInPublic #TechNews #Production #Systems #Craft #Backups #Advice #SoftwareEngineering",
+      "schedule_time": "2026-09-29 13:15",
+      "error": "",
+      "updated_at": "2026-09-25T23:50:13+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c973dd3fe64d94781716f46542e9716e1c3ee2dde672b2d4bcf5769f54413925": {
+      "record_id": "c973dd3fe64d94781716f46542e9716e1c3ee2dde672b2d4bcf5769f54413925",
+      "status": "scheduled",
+      "content": "I saw a new fab announcement last week and the number everybody repeated was the investment. The interesting number is the date. Three years.\n\nBuilding a leading edge plant takes about three years from the decision to the first wafer, and that's if the equipment arrives on schedule, which is the part that historically doesn't. So the capacity everyone is excited about is a bet on demand in 2029.\n\nThe other thing I watch is where the people come from. A fab needs thousands of trained process engineers and they don't exist until somebody trains them. That hiring curve shows up in the local universities two years before the plant opens.\n\nNone of that makes the announcement fake. It means the announcement is a decision about the future rather than a fact about now, and the coverage treats it as a fact because a number is easier to write than a timeline.\n\nI follow the dates now. When a plant starts producing is a much better predictor than how much it cost.\n\n#AI #BuildInPublic #VibeCoding #tech #Semiconductors #Manufacturing #SupplyChain #Policy #BuildInPublic #TechNews #Hardware #Engineering #Business #Geopolitics #Investment #Advice",
+      "schedule_time": "2026-09-29 13:30",
+      "error": "",
+      "updated_at": "2026-09-25T23:50:13+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ce59d9a04ad83042cbc264909c136818538cc9fd83d0dea9329f74bcb2720aa4": {
+      "record_id": "ce59d9a04ad83042cbc264909c136818538cc9fd83d0dea9329f74bcb2720aa4",
+      "status": "scheduled",
+      "content": "I got promoted once for a project that failed and the write up mentioned the failure in the first line. Five months. That's the part people don't believe until they see it.\n\nThe project ran for five months and got cancelled in month six. Month six. The numbers came in. What I did that mattered was write down what we would have to see to stop, in week one, and then say it out loud in month four when we saw it.\n\nThe alternative was another four months and about a million dollars. Nobody was going to say stop, because the people who started it were the people who would have to admit it. So the kill condition was the only thing that could.\n\nI've used the same shape three times since and cancelled two of them early. Both were correct and neither cost me anything, which surprised me the first time and doesn't surprise me now.\n\nI write the stopping condition in week one. One line, then act on it. Say it out loud when you hit it. That's the whole skill.\n\n#AI #BuildInPublic #VibeCoding #tech #Product #Projects #Career #Engineering #BuildInPublic #TechNews #Leadership #Decisions #Advice #Management #SoftwareEngineering #Teams",
+      "schedule_time": "2026-09-29 13:45",
+      "error": "",
+      "updated_at": "2026-09-25T23:50:13+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "993766fbca4f53786d49bbdd837419f76f023fa64b4dc92aed96f580a7cdd92c": {
+      "record_id": "993766fbca4f53786d49bbdd837419f76f023fa64b4dc92aed96f580a7cdd92c",
+      "status": "scheduled",
+      "content": "I read a security report from a researcher who found a bug in our product and the write up was more useful than the fix. He described the assumption we had made, not just the hole.\n\nIt was in password reset. We had assumed the token was only readable by the person who requested it, and the token was in a URL that got logged by a proxy. Nothing in our code was wrong. Everything around our code was different than we pictured.\n\nWhat made his report good was the second section. It listed three other places with the same assumption and let us check them ourselves. Two were fine and one wasn't.\n\nMost bug reports stop at the reproduction. A valuable report hands you a pattern. If you report something, tell people what you think the underlying mistake is, even when you aren't sure. Whoever wrote the code can check that faster than they can check a description.\n\nReport the assumption. By then the finding's already in the past.\n\n#AI #BuildInPublic #VibeCoding #tech #Security #BugBounty #SoftwareEngineering #Developer #BuildInPublic #TechNews #AppSec #Engineering #Craft #Reporting #Systems #Advice",
+      "schedule_time": "2026-09-29 16:15",
+      "error": "",
+      "updated_at": "2026-09-25T23:50:13+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3672a6a01de976df11a9286487fec204ae12e396c097879d52ee9d226698067b": {
+      "record_id": "3672a6a01de976df11a9286487fec204ae12e396c097879d52ee9d226698067b",
+      "status": "scheduled",
+      "content": "A teammate's code was about twice as long as mine for the same feature and about four times easier to change. I spent a week figuring out why. One week. The answer was boring.\n\nHer version had three functions where mine had one. Three functions. Twice as long. None of them did more than one thing. Mine had one function with a flag, and the flag made four of the six call sites pass true and two pass false, which is a shape that's impossible to hold in your head.\n\nThe length came from her typing out the call sites rather than parameterising them. About forty extra lines and no conditionals at the point of use.\n\nI'd been optimising for the diff size, because a small diff is easier to review. That's true and it's the wrong target past about a hundred lines, because the review is one day and the maintenance is two years.\n\nI optimise for the reader in month six now. That's the only reader whose opinion lasts.\n\n#AI #BuildInPublic #VibeCoding #tech #SoftwareEngineering #CodeReview #Developer #Engineering #BuildInPublic #TechNews #Refactoring #Craft #Coding #Maintenance #Advice #Design",
+      "schedule_time": "2026-09-29 16:45",
+      "error": "",
+      "updated_at": "2026-09-25T23:50:13+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c195be82d31b2b5da8c48ff74e067dd3b50eeed52a5c1441ae18dbea52e4d523": {
+      "record_id": "c195be82d31b2b5da8c48ff74e067dd3b50eeed52a5c1441ae18dbea52e4d523",
+      "status": "scheduled",
+      "content": "I read a study on remote work this year. The number that got quoted was a productivity change. The number I wanted was in a table eight pages in. How far people live from the office. Two hours of driving.\n\nThat's the variable that decides whether the policy works. If the team is spread over two hours of driving, an office mandate converts a job into a move for a chunk of them, and the people with the most options are the first to go.\n\nI noticed the productivity number moves in both directions depending on the task. Both directions. Focused work does better at home in most of the studies I've read and onboarding does worse. Neither is a surprise if you've done both.\n\nI'd rather argue about the counterfactual. An office day isn't compared to a perfect home day. It's compared to the commute plus the home day, and the commute is the part that never shows up in the measurement.\n\nI read the demographics table now. The productivity line is the headline and the geography is the plot.\n\n#AI #BuildInPublic #VibeCoding #tech #RemoteWork #Research #Data #Workplace #BuildInPublic #TechNews #Hiring #Management #Statistics #Teams #Advice #Productivity",
+      "schedule_time": "2026-09-29 17:00",
+      "error": "",
+      "updated_at": "2026-09-25T23:56:17+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5e6cc9307acf40736d0f389349844d09ef559f300c0dbc13322cbc2997f21570": {
+      "record_id": "5e6cc9307acf40736d0f389349844d09ef559f300c0dbc13322cbc2997f21570",
+      "status": "scheduled",
+      "content": "A rail line near me has been running the same trains for about forty years. Not the engineering. The platform height. It was set by a decision nobody wrote down.\n\nSomebody set the standard in the 1960s and it's about four inches different from the national one. Four inches. So any new train has to be built to a shape that only exists on one route, and the cost of that is high enough that nobody orders them.\n\nThat's a really good example of a decision that was free when it was made and expensive forever. Nobody was careless. They picked a number that worked for the trains they had.\n\nI take one lesson into software. It's about anything that gets copied. A config value, an interface shape, a naming convention. I treat the first version as a standard now, because it is one. One route.\n\nExpensive decisions look like nothing at the time.\n\n#AI #BuildInPublic #VibeCoding #tech #Standards #Infrastructure #Engineering #Systems #BuildInPublic #TechNews #Design #History #Craft #Advice #SoftwareEngineering #Legacy",
+      "schedule_time": "2026-09-29 17:15",
+      "error": "",
+      "updated_at": "2026-09-25T23:56:17+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "24143d6582a285e5e8dfa42e0d718c60ba07c36fab04b6a08b4a025e8735e027": {
+      "record_id": "24143d6582a285e5e8dfa42e0d718c60ba07c36fab04b6a08b4a025e8735e027",
+      "status": "scheduled",
+      "content": "An analyst note in September argued that higher rates may not slow AI spending at all. I think that's probably right and I think it's a bad sign rather than a good one.\n\nThe reasoning is that the spending is strategic rather than financial. If a company believes the alternative is losing, it pays whatever the rate is. That's how infrastructure races have always gone. Every single time.\n\nStrategies like that don't respond to price. They respond to a competitor stopping, which means nobody stops until somebody runs out of money. That's the definition of a bubble and it's also how railroads and fibre got built.\n\nI've watched two of these cycles. Both produced a lot of useful infrastructure and a lot of dead companies. The infrastructure outlived the companies, which is a strange comfort if you're an investor and no comfort at all if you're an employee.\n\nSo my read is the rate doesn't stop this. The rate changes who survives it. That's a different sentence. It's the one I'd underline.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Investing #Economy #FederalReserve #Infrastructure #Markets #Business #Finance #TechNews #VentureCapital #Strategy",
+      "schedule_time": "2026-09-29 17:30",
+      "error": "",
+      "updated_at": "2026-09-25T23:56:17+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "14a03ce06f5dfcc52a2ba6d625785d5bd53720018f1ce28a351a4ecc9a8e7a4e": {
+      "record_id": "14a03ce06f5dfcc52a2ba6d625785d5bd53720018f1ce28a351a4ecc9a8e7a4e",
+      "status": "scheduled",
+      "content": "I got asked in a review why I hadn't written a test for something and my honest answer was that I couldn't think of one. He wrote it in about four minutes. Four minutes.\n\nThe thing was a cache invalidation path that only ran when a value was older than an hour and the clock had crossed a boundary. I'd said it wasn't testable without waiting, and he showed me that the clock was already injected and I could move it.\n\nThird time. That's the third time this year somebody has written a test I said was impossible, and the pattern is always the same. I'd decided something was hard and I never checked whether the seam already existed.\n\nWhat I do now when I think a test is impossible is spend two minutes looking for the seam out loud. Two minutes. Sometimes there isn't one and that's a design note. Sometimes there is and I've just saved myself a week of not testing it.\n\nSay the sentence I can't test this and then look for the seam. The sentence is where the mistake starts.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #SoftwareEngineering #Developer #Engineering #BuildInPublic #TechNews #Coding #Craft #CodeReview #Advice #Systems #Debugging",
+      "schedule_time": "2026-09-29 17:45",
+      "error": "",
+      "updated_at": "2026-09-25T23:56:17+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ee41dd9565112680a013a86e5005b02edbf63ab87c687beb733c8ed145d376bf": {
+      "record_id": "ee41dd9565112680a013a86e5005b02edbf63ab87c687beb733c8ed145d376bf",
+      "status": "scheduled",
+      "content": "There's a version of the autonomous weapons argument I can't get behind, and it's the one where people describe the robot as the murderer. Hardware doesn't murder. Somebody chose the target class and somebody signed the parameters.\n\nI keep making the same point because it keeps getting skipped. The accountability question isn't about what the machine understood. It's about which human accepted the risk of being wrong, and whether that acceptance is written down anywhere.\n\nI've watched organisations solve this in other domains. Aviation has an accident chain and a named investigator. Medicine has a morbidity review. Both assume the failure comes from a system and both still name a person who owns the file.\n\nThat's the model I'd copy. Not a ban, not a treaty, and not a promise. A named owner and a file, per incident, in a place somebody outside the programme can read.\n\nI don't think it's a complete answer. I do think it's the part that's actually achievable this year.\n\n#AI #BuildInPublic #VibeCoding #tech #MilitaryAI #AutonomousWeapons #Law #Defense #Policy #Geopolitics #Ethics #FutureOfWarfare #NationalSecurity #Accountability #Governance #Technology",
+      "schedule_time": "2026-09-29 18:00",
+      "error": "",
+      "updated_at": "2026-09-25T23:56:17+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b0f6d43bf1f5d5333f6ac3a78df450487eb80fb295fb2dcd10116cde08898814": {
+      "record_id": "b0f6d43bf1f5d5333f6ac3a78df450487eb80fb295fb2dcd10116cde08898814",
+      "status": "scheduled",
+      "content": "I explained a system to a new hire last week and the question that exposed a gap was about what happens when two of these arrive at once. Two at once. I'd never thought about it because it had never happened.\n\nIt had never happened because the volume was low, and the volume was rising by about twenty percent a quarter, so it was going to happen within a year. That's the whole point of the question. He had no habit of assuming my experience was complete.\n\nWhat I've started doing is walking through a system with a new person once a month, because that's the only time the assumptions get said out loud. Everybody who's been here for a year shares them and nobody notices that they're assumptions.\n\nI ask what has to be true for this to work. One question. That takes a person who doesn't know the answer, and it finds the invisible ones. A year of curiosity beats a week of reading.\n\nI walk somebody new through it once a month. One month. Their ignorance is a feature and you're wasting it if you don't use it.\n\n#AI #BuildInPublic #VibeCoding #tech #Onboarding #Teams #Engineering #Systems #BuildInPublic #TechNews #SoftwareEngineering #Architecture #Mentorship #Advice #Craft #Design",
+      "schedule_time": "2026-09-29 18:15",
+      "error": "",
+      "updated_at": "2026-09-26T00:00:56+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b720e3c7e8a37800c7ff413afdf59911e60541bbb38dc04485e12c4eadc99408": {
+      "record_id": "b720e3c7e8a37800c7ff413afdf59911e60541bbb38dc04485e12c4eadc99408",
+      "status": "scheduled",
+      "content": "I read a quarterly report from a company I follow and the number I found most interesting was not revenue. Not revenue. It was the count of open support tickets per customer, which had doubled while the customer count grew about thirty percent.\n\nThat's a leading indicator and nobody put it in the summary. Revenue looked fine and the ticket ratio was telling you that the product had grown past what the team could explain, which shows up in churn about two quarters later. Two quarters.\n\nThe reason I noticed is that I'd been looking for it, because the same thing happened to us in 2024 and we didn't see it until a renewal went sideways. I keep both numbers side by side now. Ours went from about two per customer to about four and stayed there for a year. A ratio.\n\nWhat I watch now in any report is a ratio that moves differently from the top line. Those are the sentences the writers skip because the story they're telling doesn't need them.\n\nI read the ratios now. The top line is the story somebody chose and the ratio is the one that follows.\n\n#AI #BuildInPublic #VibeCoding #tech #Business #Data #Metrics #Support #BuildInPublic #TechNews #Product #Analytics #Advice #Strategy #Startup #Customers",
+      "schedule_time": "2026-09-29 18:30",
+      "error": "",
+      "updated_at": "2026-09-26T00:00:56+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "45bd74d2308b7c4fdb88be2bad3f1408e5e02c18d6ac975bdda41e6b7aa0a914": {
+      "record_id": "45bd74d2308b7c4fdb88be2bad3f1408e5e02c18d6ac975bdda41e6b7aa0a914",
+      "status": "failed",
+      "content": "I wrote about four hundred words of documentation last month and deleted about three hundred of them in review, and the remaining hundred did more than the original. That's a ratio I now expect.\n\nThree hundred words. The three hundred were mostly explaining what the code does, which I'd written because I was unsure it was readable. That's a signal about the code, not about the docs. If the function needs three paragraphs, the function is the problem.\n\nWhat's left is about sixty words of setup and about forty about the two decisions somebody would otherwise undo. Sixty words. Two decisions. Both of those are things the code can't say for itself.\n\nI now write the doc after the review of the code, not before. The review usually removes half the things I wanted to explain, which is the cheapest edit available.\n\nI write the why and delete the what now. If the what needs writing down, fix the code instead.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #SoftwareEngineering #Developer #BuildInPublic #TechNews #Craft #CodeReview #Advice #Engineering #Coding #Maintainability",
+      "schedule_time": "2026-09-29 18:45",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-26T00:00:55+00:00",
+      "attempts": 2
+    },
+    "13038403e31e85d53d49d7d3676a9bc330342e0be54436a93e9fc120f2598ee8": {
+      "record_id": "13038403e31e85d53d49d7d3676a9bc330342e0be54436a93e9fc120f2598ee8",
+      "status": "failed",
+      "content": "I wrote about four hundred words of documentation last month and deleted about three hundred of them in review, and the remaining hundred did more than the original. That's a ratio I now expect.\n\nThree hundred words. The three hundred were mostly explaining what the code does, which I'd written because I was unsure it was readable. That's a signal about the code, not about the docs. If the function needs three paragraphs, the function is the problem.\n\nWhat's left is about sixty words of setup and about forty about the two decisions somebody would otherwise undo. Sixty words. Two decisions. Both of those are things the code can't say for itself.\n\nI now write the doc after the review of the code, not before. The review usually removes half the things I wanted to explain, which is the cheapest edit available.\n\nI write the why and delete the what now. If the what needs writing down, fix the code instead.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #SoftwareEngineering #Developer #BuildInPublic #TechNews #Craft #CodeReview #Advice #Engineering #Coding #Maintainability",
+      "schedule_time": "2026-09-30 08:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-26T00:02:35+00:00",
+      "attempts": 2
     }
   }
 }
