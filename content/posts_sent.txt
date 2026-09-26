@@ -22746,3 +22746,235 @@ I decide with a number I set in advance now. Six months of deciding is one numbe
 
 #AI #BuildInPublic #VibeCoding #tech #Refactoring #SoftwareEngineering #Engineering #Developer #BuildInPublic #TechNews #Decisions #Craft #Maintenance #Advice #Systems #Leadership
 ---
+[2026-09-26 23:22:30 UTC]
+record_id=a2b43de91f09dbfcb84a1f9accf1f5b0a1bf623b22a169d9cbc93ccf06c8b065
+scheduled_for=2026-09-30 10:45
+The chip export story is the clearest example I know of policy following revenue rather than strategy, and I say that without naming a villain.
+
+Here's how it looks from outside. Restrictions with a security rationale, then a revision that opens the door, then a tariff that prices the door. Each step has its own justification. Read the sequence as a whole and it tells you which constraint was binding.
+
+I've watched this in energy and in telecom. A stated goal seldom survives contact with a sales pipeline. That'sn't corruption. It's a system with several goals, and the one with a revenue number attached is the one that gets measured.
+
+So the practical question for me is about substitution. If the chips don't come from here, do they come from somewhere else, or does the domestic programme get slower. Those are different futures and the policy doesn't settle it.
+
+I'd watch the domestic fabs and not the license list. Those are the part that compounds.
+
+#AI #BuildInPublic #VibeCoding #tech #ExportControls #Semiconductors #AI #Policy #Geopolitics #Trade #SupplyChain #Technology #Manufacturing #NationalSecurity #TechNews #Strategy
+---
+[2026-09-26 23:22:30 UTC]
+record_id=3b2ec46e9703f4e21266d3054fe0cc165958d56616439f99f5c6fafc1e3d0276
+scheduled_for=2026-09-30 11:00
+I had to write a message telling about forty users that a feature they used was going away and the version that worked began with the sentence they cared about. Not with the reason.
+
+Our reason was our own complexity and nobody needed it in the first line. So the message opened with what was changing and the date, then one line about what to use instead, then the reason in a paragraph at the bottom for the three people who'd ask.
+
+About nine people replied. Seven were fine. Two had a workflow we hadn't seen, and both of those turned out to be cheap to support, so we kept a small path for them and shipped the rest.
+
+I'd have got it wrong a year ago by writing it as an announcement. It's a request for information and the first line should tell people whether they have to act.
+
+I lead with what changes and when now. One line. Reasons are for the people who ask, and they'll ask anyway.
+
+#AI #BuildInPublic #VibeCoding #tech #Communication #Product #Users #Deprecation #BuildInPublic #TechNews #Writing #Advice #Engineering #Teams #Craft #SoftwareEngineering
+---
+[2026-09-26 23:22:30 UTC]
+record_id=7f82406b1ea02d31ba9caac401cf123ea1171b363bd4de1ce094b37fc353c625
+scheduled_for=2026-09-30 12:45
+I watched a teammate say no last month and she got promoted for it. One meeting. She said no to a thing in front of the person who wanted it.
+
+The thing was a feature with no owner and no date and a lot of enthusiasm. Two other people had already said yes to it in the same week, in different rooms, for different reasons. She was the first one to say what it would displace.
+
+What struck me is that she didn't say the idea was bad. She said the team could do it or the other thing and here is the cost of each, and then she asked him to pick. He picked. That was the end of it.
+
+The promotion write up called it scope management. I'd call it being the person who makes the tradeoff visible, which is most of what a senior engineer does and almost none of what a junior one is asked to do. Ninety seconds.
+
+Say the tradeoff out loud, in the room, once. That's a skill and it's learnable.
+
+#AI #BuildInPublic #VibeCoding #tech #Teams #Engineering #Promotion #Career #BuildInPublic #TechNews #Leadership #Management #Communication #Advice #Workplace #Growth
+---
+[2026-09-26 23:22:30 UTC]
+record_id=b72978fb6aa3e7becd36d325bc9d38329267b3f7df0371696bf9492457ea5c7b
+scheduled_for=2026-09-30 13:00
+A process change we made last quarter cut our deploy failures by about half. About half. The change was not technical. We made deploys boring by making them small.
+
+I used to ship once a week with about forty changes in it. Each failure required working out which of the forty did it, and the answer took an afternoon about half the time. So the recovery was slow and the fear was high.
+
+Now it's about six deploys a day with one or two changes each. One or two changes. Same total work and the failures are obvious, because there's a single candidate. I found a bad change in about four minutes last week. Four minutes.
+
+The reason this took so long to adopt is that the once a week release felt safer. A single window, one checklist, one person watching. It was safer for the deployer and worse for the person debugging on Saturday.
+
+I make the change small now. Small changes are obvious when they break and obvious is the whole benefit.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #Reliability #Engineering #Teams #BuildInPublic #TechNews #Process #Operations #SRE #Craft #Advice #SoftwareEngineering
+---
+[2026-09-26 23:22:30 UTC]
+record_id=9ddf3dccaae4f90ef3943faa250d29eb3408b4c3eeaedab1156f0ae94e3c3e97
+scheduled_for=2026-09-30 13:15
+I let an agent loose on a refactor and the interesting part was not what it wrote. It was the four permissions I had to think about for the first time. Four permissions.
+
+It wanted to run the test suite. That's fine. It wanted to install a package, which I said no to, and it worked around it without complaining. It wanted to read a production config file, which I said no to. And it wanted to delete a directory, which I said no to. I said no to all three.
+
+That list is now the list I give any agent, and writing it took twenty minutes. Twenty minutes. Every item on it is something I'd have done without asking at eleven at night with a deploy window open and nobody awake to disagree with me. That's the actual finding. The agent forced me to write down my own permissions.
+
+The refactor itself was fine. About four hundred lines moved, tests passed, one naming choice I changed by hand.
+
+The value was in the policy, not the code. I use it for humans too.
+
+#AI #BuildInPublic #VibeCoding #tech #AIAgents #Automation #LLM #Developer #BuildInPublic #TechNews #Security #Engineering #Coding #Permissions #SoftwareEngineering #Advice
+---
+[2026-09-26 23:29:11 UTC]
+record_id=fa71edd7633c86555eabe472ac8ff4ce6ed36aa1e280e05d437c0da13cbb8a1b
+scheduled_for=2026-09-30 13:30
+I sat in a standup last month that ran twenty two minutes and I couldn't tell you what anybody was working on. Nobody said a word about work.
+
+I changed it the next week. I turned the round robin into three questions. What did you finish. What are you on now. What is stuck. Fifteen minutes, and the stuck one gets the time.
+
+Two people hated it at first. They said they liked hearing the whole picture. Fine. One of them started using the stuck slot for real problems and he stopped complaining by the third week.
+
+I don't care about the format. I care that a meeting ends with somebody unblocked. Status is a document. Blockers are a conversation and they need a room.
+
+A status meeting that measures attendance is a broadcast. A status meeting that ends with somebody unblocked is a tool. I only keep the second kind now. I ask once a month whether mine is either one.
+
+#AI #BuildInPublic #VibeCoding #tech #Teams #Meetings #Engineering #Process #TechNews #Advice #Management #Craft #Workplace #SoftwareEngineering #Productivity
+---
+[2026-09-26 23:29:11 UTC]
+record_id=eeb53578f59d17a3f014ea1df866bbcc0b00fbc4626cd95723c18b157a93b3a2
+scheduled_for=2026-09-30 13:45
+I think about space debris differently after reading two papers. Two papers. Most of the tracked objects aren't satellites. They're the pieces. Different problem.
+
+A collision at orbital speed doesn't dent anything. It shatters both objects into thousands of fragments, and each fragment can cause another collision, which is the part that makes this a different kind of problem from litter.
+
+I find it tractable because a few hundred objects carry most of the risk. Four hundred. If you can remove those, the cascade probability drops a lot. That's the argument for active removal and it's a much smaller, more specific argument than the general one.
+
+The hard part is legal rather than technical. Nobody has settled who may touch whose hardware in orbit, and a removal mission that grabs the wrong thing is a diplomatic incident with a rocket attached.
+
+I follow the tracking data now. The count of objects is not the story. Count the dangerous ones.
+
+#AI #BuildInPublic #VibeCoding #tech #Space #Satellites #Policy #Engineering #BuildInPublic #TechNews #Physics #OrbitalDebris #Research #Science #Advice #Infrastructure
+---
+[2026-09-26 23:29:11 UTC]
+record_id=58a1241749304a3107a6e54a19cc6326770367a2fa997ea1611910a51da06709
+scheduled_for=2026-09-30 14:00
+I chased a bug for three days that only appeared on Tuesdays. Production, every week, same window. I read the code four times and found nothing. Nothing. Four times.
+
+The cause was one timezone. A report ran at midnight in a zone that shifted once a year, and the shift happened to land on a Tuesday that year because of when the batch was scheduled. Two lines of code, one assumption, three days of my life.
+
+The worst part is that the answer was in my notes the whole time. I'd hit a version of it two years earlier and never connected the two. Never connected them.
+
+I didn't feel stupid. I felt lucky, because the first thing I checked was the schedule and it said Tuesday. If it had said Monday I would still be there.
+
+I keep that one in my notes. When a bug has a calendar, stop reading the code and look at the clock. Recurring at a fixed time is a schedule problem and not a logic problem.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Timezone #Engineering #SoftwareEngineering #TechNews #Craft #Advice #Coding #Backend #Reliability #Systems
+---
+[2026-09-26 23:29:11 UTC]
+record_id=08f45e8e798f90c474fd35dde86ed9ef0ef34f3d4a9b95fe5a7a139087ba55e1
+scheduled_for=2026-09-30 14:15
+The compute deals this year are the part of the AI story that will age best. A fourteen billion dollar agreement, a multi gigawatt build, a chip order measured in millions of units.
+
+I say they will age best because they're physical. A model gets replaced in six months. A substation lasts forty years. The contracts people sign this year are the skeleton the industry runs on for a decade.
+
+I've watched infrastructure waves before. Rail, fibre, cloud. In all three, the build out outlasted the boom and the capacity was eventually used for something nobody predicted. Somebody always pays for the overbuild and somebody always inherits it cheap.
+
+So I don't read these numbers as proof of a healthy market. I read them as a bet on a decade. The interesting question isn't whether the bet is right. It's who holds the bag if it's wrong.
+
+That's a question about who signed the lease. Not about the model.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #DataCenters #Infrastructure #Compute #GPU #Investing #Technology #Business #TechNews #Cloud #Economy #Capital
+---
+[2026-09-26 23:29:11 UTC]
+record_id=c99ab0b8f5d629e769c94edc6fe90dcf6372b0d03e3d90a465dd8243f4e88b85
+scheduled_for=2026-09-30 14:30
+A dependency we use shipped a minor version and I upgraded on a Friday because the changelog said two words. Two words. Bug fixes.
+
+It broke our date handling in a way nobody noticed for eleven days. They had fixed a rounding bug and our code depended on the wrong rounding. We had built on top of their mistake and their fix was correct and our week was ruined.
+
+The upgrade took four minutes. The eleven days of wrong dates took longer, and nobody noticed because the report was monthly and the numbers looked close.
+
+I read changelogs now. Not the whole thing. I read the sections about things we call. If the diff touches a function in our import list, the upgrade gets a test and a Tuesday.
+
+The costly part of a dependency is not the code. It's the assumptions you made about it, and those aren't in the changelog. So I write them down where the upgrade happens.
+
+#AI #BuildInPublic #VibeCoding #tech #Dependencies #Engineering #SoftwareEngineering #TechNews #Craft #Advice #Upgrades #Backend #Risk #Maintenance #Coding
+---
+[2026-09-26 23:36:21 UTC]
+record_id=70d4aca4875c8180f9047b9963211ca729762318c34a95cc65f2553eaec92473
+scheduled_for=2026-09-30 14:45
+I've read the same article about AI in medicine fifteen times and it always skips the part that would actually change care.
+
+The interesting use isn't a diagnosis. It's triage. Who gets seen first, who gets a scan today, who can wait a week. That's where the queues are and that's where a model can help without carrying the legal weight of a decision.
+
+I've watched this in two hospitals. The bottleneck isn't knowledge. It's attention, and attention is a resource that has to be allocated. A tool that sorts a list well saves more lives than a tool that's right ninety five percent of the time.
+
+So my position is that the boring application is the valuable one and the flashy application is the one that gets the press. That's true in every sector I've looked at.
+
+I'd fund the queue. It saves more lives. Nobody takes a photo of a queue.
+
+#AI #BuildInPublic #VibeCoding #tech #AI #Healthcare #Medicine #Hospitals #Triage #MachineLearning #HealthTech #Patients #ClinicalTrials #DeepTech #Technology #Policy
+---
+[2026-09-26 23:36:22 UTC]
+record_id=3053024a1f530b51834e86897db9efe9fac5ac4d0548ec4b096f032c8d1b9954
+scheduled_for=2026-09-30 15:00
+Somebody asked me for a feature I was never going to build and I said no in a way that ended the conversation badly. I told him it wasn't on the roadmap. He heard that it was never happening and that I didn't care.
+
+What I do now is give a condition instead of a no. I told the next person it becomes worth building if three customers ask and one of them will pay. That's honest. Three and one. Those were the numbers and they were real. It also gives him something to do.
+
+One of those conditions got met about five months later and I built the thing in a week. He remembered the condition and told me the week it changed. That's a better relationship than a yes would have bought.
+
+A no with a condition is not a softer no. It's a real answer with a path in it. People can work with a path.
+
+#AI #BuildInPublic #VibeCoding #tech #Product #Communication #Roadmap #Engineering #TechNews #Advice #Leadership #Customers #Craft #Startup #Workplace
+---
+[2026-09-26 23:36:22 UTC]
+record_id=8a6c6dc750a3246c33b943a333315b2fe45d4c51fab5331db5bb14149f586d01
+scheduled_for=2026-09-30 15:15
+A vendor raised our prices about forty percent this year. Forty percent. The negotiation took about fifteen minutes because I had one number. Fifteen minutes. The cost of leaving.
+
+I'd estimated the migration at about nine weeks of work and about two weeks of retraining. That's a real number and I could say it out loud, which changed the conversation from a complaint into a decision.
+
+What I didn't do is pretend I'd leave tomorrow. Vendors hear that every day and it's not credible, and credibility is the only thing that moves a price.
+
+We settled at about eighteen percent with a longer term. Eighteen percent. That's a decent outcome and it only happened because I knew what the alternative cost before I picked up the phone.
+
+I know the cost of leaving before I ask for a better price now. A number you can say out loud beats a threat you can't act on.
+
+#AI #BuildInPublic #VibeCoding #tech #Negotiation #Business #Procurement #SaaS #BuildInPublic #TechNews #Vendors #Advice #Money #Strategy #Engineering #Cost
+---
+[2026-09-26 23:36:22 UTC]
+record_id=511577b19dc24c14eca0b76d8c3a3de5d694ca2e9ffb9af2de67fb86c7d25431
+scheduled_for=2026-09-30 15:30
+I spent a weekend building myself a tool and deleted it four months later. It was about two hundred lines that turned a manual report into one command. I used it twice a week. Twice a week.
+
+It broke silently in month three. Nobody told me. A source changed a column name and my script wrote zeros into a report and nobody reads reports. I didn't check the row count, because I'd written the thing and I'd trusted it. That's the whole bug. My only check was that the number looked plausible, and zero can look plausible in a quiet week. Zero looks plausible.
+
+I deleted it and wrote the report by hand until it earned a test. The second version has a row count and an alert if the count moves more than ten percent. Four lines of checking. Boring fix for a boring bug.
+
+Personal tools deserve the same shape as production ones if other people see the output. If nobody sees the output, delete it. You'll save yourself the upkeep. Half a tool is worse than no tool.
+
+#AI #BuildInPublic #VibeCoding #tech #Tooling #Engineering #Automation #TechNews #Craft #Advice #Maintenance #SoftwareEngineering #Data #Reliability #Habits
+---
+[2026-09-26 23:36:22 UTC]
+record_id=9f5cef423b92b6d904112945a9e679a4c8aac6eceb0b7469d4017e2f8ad39e5f
+scheduled_for=2026-09-30 15:45
+The numbers stopped being surprising, and that's what worries me. Three years of layoffs and the announcement is now a format.
+
+A studio, a headcount, a statement about the difficult decision, a nod to the players. I can read the first line and predict the fourth. When something becomes a format, people stop reacting to it. Nobody reacts. The 135 studios that closed this year didn't get a fraction of the attention the first round got in 2024.
+
+That's how a bad norm gets set. Not by a decision anybody defends, but by repetition until the decision needs no defense. I'd rather stay annoyed. Annoyed is renewable. It keeps me reading the filings.
+
+If you work in this industry, the useful habit isn't optimism. Watch which roles stop getting posted. That tells you what the studio decided, long before anybody says it out loud. I'll keep reading them. I'd rather be annoyed than adjusted.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+---
+[2026-09-26 23:38:58 UTC]
+record_id=89b39611eb85572cd21b0d8b660efe3624726b1370fe4e7143970804ef1c341a
+scheduled_for=2026-09-30 16:00
+I added a log line on a hunch during a slow afternoon and it answered a question three months later in about four minutes. The line printed the tenant id and the cache key. Nothing clever.
+
+We had a bug where one customer's data was stale and we couldn't reproduce it because the traffic was unusual. Two minutes. Two minutes into the investigation I searched the log and found the pattern. One tenant, one key, one job that never finished.
+
+The lesson for me is not about logging everything. It's about logging identifiers. Every log line in our service now carries the request id, the tenant, and the user. Nine out of ten questions become one search. One search.
+
+Logging is a bet on a question you haven't been asked yet. Identifiers are the cheapest bet and I've never regretted one. I've added about nine of those lines since that afternoon. Verbose messages I regret about once a month.
+
+#AI #BuildInPublic #VibeCoding #tech #Logging #Observability #Debugging #Engineering #TechNews #Backend #Craft #Advice #SRE #Operations #SoftwareEngineering
+---
