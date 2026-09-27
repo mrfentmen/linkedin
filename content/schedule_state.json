@@ -13628,12 +13628,13 @@
     },
     "d857fbbff641c1713d1850815a6baf93484f1348c949bfd726d1632373c6e51c": {
       "record_id": "d857fbbff641c1713d1850815a6baf93484f1348c949bfd726d1632373c6e51c",
-      "status": "failed",
+      "status": "scheduled",
       "content": "A data center needs power at a scale that no small reactor has ever delivered. That's the whole gap and the news usually skips it.\n\nI've read the small modular reactor pitch a dozen times. Cheap, factory built, walk away safe. It's a good pitch. The problem is that a factory built reactor still needs a site, a license and a grid connection, and those three things take longer than the reactor.\n\nThat's why I keep saying the enabling layer is the story. Not the design. The paperwork and the interconnect. I've watched a project wait nine years for a transmission line and get built in two.\n\nSo when somebody tells me a reactor powers a data center by 2030 I ask which queue it's in. If they can't answer, the date is a wish.\n\nI'd love to be wrong. Cheap firm power would fix a lot. The reactor isn't the hard part yet.\n\n#AI #BuildInPublic #VibeCoding #tech #Nuclear #Energy #SMR #DataCenters #Grid #Infrastructure #Climate #EnergyTransition #Policy #DeepTech #Utilities #Engineering",
       "schedule_time": "2026-09-30 16:15",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-27T08:45:09+00:00",
-      "attempts": 6
+      "error": "",
+      "updated_at": "2026-09-27T14:30:52+00:00",
+      "attempts": 8,
+      "finalized": true
     },
     "78fe3e05f5644d76c0ae2204e2d25bb365e351f3c4867c98d53e73c2cb11fe6b": {
       "record_id": "78fe3e05f5644d76c0ae2204e2d25bb365e351f3c4867c98d53e73c2cb11fe6b",
@@ -13642,6 +13643,83 @@
       "schedule_time": "2026-09-30 17:15",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-26T23:40:40+00:00",
+      "attempts": 2
+    },
+    "90c714ca977acb45dffc963707cb72c23fa0f8aca157eef981f6297d455ff975": {
+      "record_id": "90c714ca977acb45dffc963707cb72c23fa0f8aca157eef981f6297d455ff975",
+      "status": "scheduled",
+      "content": "My first production incident was a bad deploy at six in the evening and the thing I did wrong was not the deploy. It was that I didn't tell anybody for forty minutes because I thought I could fix it fast. Forty minutes.\n\nI couldn't fix it fast. I spent forty minutes going down one theory while two other people were waiting to be told there was a problem, and both of them had the context that would have found it in five.\n\nA senior engineer joined, asked one question, and we were back up in about twelve minutes. A senior engineer asked one question and that's the whole lesson. One question. She wasn't angry about the deploy. She was angry about the silence.\n\nI announce problems early now, even when I think I own them. A problem you haven't announced is a problem nobody else can help with, and help arrives in minutes when the flag is up.\n\n#AI #BuildInPublic #VibeCoding #tech #Incidents #Reliability #SRE #Engineering #TechNews #Advice #Teams #OnCall #Craft #Communication #Operations",
+      "schedule_time": "2026-09-30 16:30",
+      "error": "",
+      "updated_at": "2026-09-27T14:30:52+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "324fb310c27345c390f1209f637e13bf3fa98d21100f02aae8cf5b00b62f11a8": {
+      "record_id": "324fb310c27345c390f1209f637e13bf3fa98d21100f02aae8cf5b00b62f11a8",
+      "status": "scheduled",
+      "content": "I ran a technical interview last month and the candidate was right and my question was wrong. Two days later. That's when I found out, and I've been telling people since.\n\nThe question was about a design I'd built and I'd baked in a constraint that no longer holds because we changed a dependency in March. Stale question. I hadn't updated it, so I was testing whether somebody would arrive at my old answer.\n\nShe pushed back in the interview and I explained why the constraint mattered. I was confident and I was wrong, and I only worked it out because I went to quote her feedback to another interviewer and read the constraint out loud.\n\nWhat I did next was email her, explain the mistake, and say the score was mine and not hers. She'd already accepted another offer by then, which was fine, and she said the email was the reason she'd consider us in two years. Free lesson.\n\nKeep the questions current. An interview question with a stale assumption measures the interviewer. Mine measured me.\n\n#AI #BuildInPublic #VibeCoding #tech #Interviewing #Hiring #SoftwareEngineering #Engineering #BuildInPublic #TechNews #Advice #Workplace #Integrity #Career #Design #Teams",
+      "schedule_time": "2026-09-30 16:45",
+      "error": "",
+      "updated_at": "2026-09-27T14:30:52+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "afde6b617591acfcbd6683966ef83e299be7e530847b0434e27cdbb47085a544": {
+      "record_id": "afde6b617591acfcbd6683966ef83e299be7e530847b0434e27cdbb47085a544",
+      "status": "failed",
+      "content": "There's a comment in our codebase from four years ago that explains why the retry count is three. It saved me about six months of a decision. Three is one attempt, one retry, and one for the network wobble. Two lines. That's all it was.\n\nI've opened that ticket about twenty times since then because our error rate looked high. It pointed at a downstream service that falls over under load, and raising the count would have tripled the requests during the exact incident it was protecting against.\n\nI rewrote it in the present tense and added the date. Explaining why is far more valuable than explaining what. The what is in the code. The why is nowhere unless somebody wrote it down.\n\nI now write one comment at the top of any file where the shape is surprising. Two lines on why this is like this. Its only readers are future me and future you. That's it.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #CodeReview #Engineering #SoftwareEngineering #TechNews #Craft #Advice #Comments #Backend #Maintenance #Systems",
+      "schedule_time": "2026-09-30 17:00",
+      "error": "LinkedIn's scheduled count is 197, no higher than 197 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-27T14:30:51+00:00",
+      "attempts": 2
+    },
+    "07c4ddbf398f196f2983d1bef13ed0eb5e328e28c58f2bca329bff86a5365433": {
+      "record_id": "07c4ddbf398f196f2983d1bef13ed0eb5e328e28c58f2bca329bff86a5365433",
+      "status": "scheduled",
+      "content": "There's a comment in our codebase from four years ago that explains why the retry count is three. It saved me about six months of a decision. Three is one attempt, one retry, and one for the network wobble. Two lines. That's all it was.\n\nI've opened that ticket about twenty times since then because our error rate looked high. It pointed at a downstream service that falls over under load, and raising the count would have tripled the requests during the exact incident it was protecting against.\n\nI rewrote it in the present tense and added the date. Explaining why is far more valuable than explaining what. The what is in the code. The why is nowhere unless somebody wrote it down.\n\nI now write one comment at the top of any file where the shape is surprising. Two lines on why this is like this. Its only readers are future me and future you. That's it.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #CodeReview #Engineering #SoftwareEngineering #TechNews #Craft #Advice #Comments #Backend #Maintenance #Systems",
+      "schedule_time": "2026-09-30 17:30",
+      "error": "",
+      "updated_at": "2026-09-27T14:36:31+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "da9904fdeac06b9dff04393047399c1b913b23c5b56096da8c38a055145042f7": {
+      "record_id": "da9904fdeac06b9dff04393047399c1b913b23c5b56096da8c38a055145042f7",
+      "status": "scheduled",
+      "content": "I read a book about failures this year that had almost nothing to say about software and it changed how I run a release. Not the story. I mean the appendix.\n\nIt was a table of about forty incidents with one column for what the operator believed and one for what was happening. That's the whole book.\n\nAlmost every entry had the same shape. Somebody had a model that was correct on the previous version of the system, and the system had changed in a way nobody told them about. So their action was reasonable and wrong.\n\nThat's the question I ask before any risky change. What did this used to be true about, and when did that stop. It's a minute. Twice this year the answer was that the assumption came from an architecture we'd retired.\n\nBooks about other fields are the cheapest source of ideas. Nobody in software has a monopoly on being surprised.\n\n#AI #BuildInPublic #VibeCoding #tech #Reading #Engineering #Systems #Safety #BuildInPublic #TechNews #Process #Craft #Learning #Incidents #Advice #Books",
+      "schedule_time": "2026-09-30 17:45",
+      "error": "",
+      "updated_at": "2026-09-27T14:36:31+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6bc0a7554e257773095e301c40c391a614597bbf7b5f14f4a5569a559892851a": {
+      "record_id": "6bc0a7554e257773095e301c40c391a614597bbf7b5f14f4a5569a559892851a",
+      "status": "scheduled",
+      "content": "I made a small thing for myself on a Saturday and a teammate asked me to share it on Monday, and two years later it runs in four teams. It started as about forty lines that renamed files in a folder.\n\nVersion one had my paths hardcoded. Version two asked. Version three got a config file and a README, which took more effort than the original program. Forty lines. That's the part nobody tells you.\n\nI didn't plan for it to spread. I planned for it to work on my machine, and the spread happened because a tool that saves ten minutes is worth adopting if the setup is under five.\n\nSharing something small costs a README and a config. Not sharing it costs five people building the same forty lines badly. That second cost is bigger and it's invisible. Four teams now, and none of them know it started as forty lines on a Saturday.\n\n#AI #BuildInPublic #VibeCoding #tech #Tooling #Teams #Engineering #OpenSource #TechNews #Craft #Advice #Automation #SoftwareEngineering #Developer #Growth",
+      "schedule_time": "2026-09-30 18:00",
+      "error": "",
+      "updated_at": "2026-09-27T14:36:31+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ea8aca1aafdd59b3cb056d2999aa16fade0e778c9e489619960d731b1ff2b460": {
+      "record_id": "ea8aca1aafdd59b3cb056d2999aa16fade0e778c9e489619960d731b1ff2b460",
+      "status": "failed",
+      "content": "I rolled back a change last month that had already been forward fixed, because the forward fix was the second thing we'd shipped in an hour and that's a pattern I've learned to distrust. Two changes at once is a coin flip.\n\nThe original change was fine and the forward fix was fine. What wasn't fine was not knowing which one had caused the new error rate, and I could not tell from the graphs because both had touched the same endpoint.\n\nI sent us back to the state before both and we waited twenty minutes. Everything was healthy. Then we shipped them one at a time, twenty minutes apart, and found that the forward fix was the one with the problem.\n\nA rollback is not a defeat. It's the only way to get back to a state you've measured, and the state you've measured is the only place you can start a clean experiment from.\n\nI do one change at a time when something is wrong. One change. Faster is slower.\n\n#AI #BuildInPublic #VibeCoding #tech #Deployment #Rollback #Reliability #Engineering #BuildInPublic #TechNews #Operations #Systems #SRE #Craft #Debugging #Advice",
+      "schedule_time": "2026-09-30 18:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-27T14:36:30+00:00",
+      "attempts": 2
+    },
+    "e246c4b86926bb473c664dad499133dc71ba23c30e26015eb673787a4777f448": {
+      "record_id": "e246c4b86926bb473c664dad499133dc71ba23c30e26015eb673787a4777f448",
+      "status": "failed",
+      "content": "I rolled back a change last month that had already been forward fixed, because the forward fix was the second thing we'd shipped in an hour and that's a pattern I've learned to distrust. Two changes at once is a coin flip.\n\nThe original change was fine and the forward fix was fine. What wasn't fine was not knowing which one had caused the new error rate, and I could not tell from the graphs because both had touched the same endpoint.\n\nI sent us back to the state before both and we waited twenty minutes. Everything was healthy. Then we shipped them one at a time, twenty minutes apart, and found that the forward fix was the one with the problem.\n\nA rollback is not a defeat. It's the only way to get back to a state you've measured, and the state you've measured is the only place you can start a clean experiment from.\n\nI do one change at a time when something is wrong. One change. Faster is slower.\n\n#AI #BuildInPublic #VibeCoding #tech #Deployment #Rollback #Reliability #Engineering #BuildInPublic #TechNews #Operations #Systems #SRE #Craft #Debugging #Advice",
+      "schedule_time": "2026-09-30 18:45",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-27T14:38:11+00:00",
       "attempts": 2
     }
   }

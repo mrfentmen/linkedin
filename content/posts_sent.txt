@@ -22978,3 +22978,87 @@ Logging is a bet on a question you haven't been asked yet. Identifiers are the c
 
 #AI #BuildInPublic #VibeCoding #tech #Logging #Observability #Debugging #Engineering #TechNews #Backend #Craft #Advice #SRE #Operations #SoftwareEngineering
 ---
+[2026-09-27 14:30:52 UTC]
+record_id=d857fbbff641c1713d1850815a6baf93484f1348c949bfd726d1632373c6e51c
+scheduled_for=2026-09-30 16:15
+A data center needs power at a scale that no small reactor has ever delivered. That's the whole gap and the news usually skips it.
+
+I've read the small modular reactor pitch a dozen times. Cheap, factory built, walk away safe. It's a good pitch. The problem is that a factory built reactor still needs a site, a license and a grid connection, and those three things take longer than the reactor.
+
+That's why I keep saying the enabling layer is the story. Not the design. The paperwork and the interconnect. I've watched a project wait nine years for a transmission line and get built in two.
+
+So when somebody tells me a reactor powers a data center by 2030 I ask which queue it's in. If they can't answer, the date is a wish.
+
+I'd love to be wrong. Cheap firm power would fix a lot. The reactor isn't the hard part yet.
+
+#AI #BuildInPublic #VibeCoding #tech #Nuclear #Energy #SMR #DataCenters #Grid #Infrastructure #Climate #EnergyTransition #Policy #DeepTech #Utilities #Engineering
+---
+[2026-09-27 14:30:52 UTC]
+record_id=90c714ca977acb45dffc963707cb72c23fa0f8aca157eef981f6297d455ff975
+scheduled_for=2026-09-30 16:30
+My first production incident was a bad deploy at six in the evening and the thing I did wrong was not the deploy. It was that I didn't tell anybody for forty minutes because I thought I could fix it fast. Forty minutes.
+
+I couldn't fix it fast. I spent forty minutes going down one theory while two other people were waiting to be told there was a problem, and both of them had the context that would have found it in five.
+
+A senior engineer joined, asked one question, and we were back up in about twelve minutes. A senior engineer asked one question and that's the whole lesson. One question. She wasn't angry about the deploy. She was angry about the silence.
+
+I announce problems early now, even when I think I own them. A problem you haven't announced is a problem nobody else can help with, and help arrives in minutes when the flag is up.
+
+#AI #BuildInPublic #VibeCoding #tech #Incidents #Reliability #SRE #Engineering #TechNews #Advice #Teams #OnCall #Craft #Communication #Operations
+---
+[2026-09-27 14:30:52 UTC]
+record_id=324fb310c27345c390f1209f637e13bf3fa98d21100f02aae8cf5b00b62f11a8
+scheduled_for=2026-09-30 16:45
+I ran a technical interview last month and the candidate was right and my question was wrong. Two days later. That's when I found out, and I've been telling people since.
+
+The question was about a design I'd built and I'd baked in a constraint that no longer holds because we changed a dependency in March. Stale question. I hadn't updated it, so I was testing whether somebody would arrive at my old answer.
+
+She pushed back in the interview and I explained why the constraint mattered. I was confident and I was wrong, and I only worked it out because I went to quote her feedback to another interviewer and read the constraint out loud.
+
+What I did next was email her, explain the mistake, and say the score was mine and not hers. She'd already accepted another offer by then, which was fine, and she said the email was the reason she'd consider us in two years. Free lesson.
+
+Keep the questions current. An interview question with a stale assumption measures the interviewer. Mine measured me.
+
+#AI #BuildInPublic #VibeCoding #tech #Interviewing #Hiring #SoftwareEngineering #Engineering #BuildInPublic #TechNews #Advice #Workplace #Integrity #Career #Design #Teams
+---
+[2026-09-27 14:36:31 UTC]
+record_id=07c4ddbf398f196f2983d1bef13ed0eb5e328e28c58f2bca329bff86a5365433
+scheduled_for=2026-09-30 17:30
+There's a comment in our codebase from four years ago that explains why the retry count is three. It saved me about six months of a decision. Three is one attempt, one retry, and one for the network wobble. Two lines. That's all it was.
+
+I've opened that ticket about twenty times since then because our error rate looked high. It pointed at a downstream service that falls over under load, and raising the count would have tripled the requests during the exact incident it was protecting against.
+
+I rewrote it in the present tense and added the date. Explaining why is far more valuable than explaining what. The what is in the code. The why is nowhere unless somebody wrote it down.
+
+I now write one comment at the top of any file where the shape is surprising. Two lines on why this is like this. Its only readers are future me and future you. That's it.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #CodeReview #Engineering #SoftwareEngineering #TechNews #Craft #Advice #Comments #Backend #Maintenance #Systems
+---
+[2026-09-27 14:36:31 UTC]
+record_id=da9904fdeac06b9dff04393047399c1b913b23c5b56096da8c38a055145042f7
+scheduled_for=2026-09-30 17:45
+I read a book about failures this year that had almost nothing to say about software and it changed how I run a release. Not the story. I mean the appendix.
+
+It was a table of about forty incidents with one column for what the operator believed and one for what was happening. That's the whole book.
+
+Almost every entry had the same shape. Somebody had a model that was correct on the previous version of the system, and the system had changed in a way nobody told them about. So their action was reasonable and wrong.
+
+That's the question I ask before any risky change. What did this used to be true about, and when did that stop. It's a minute. Twice this year the answer was that the assumption came from an architecture we'd retired.
+
+Books about other fields are the cheapest source of ideas. Nobody in software has a monopoly on being surprised.
+
+#AI #BuildInPublic #VibeCoding #tech #Reading #Engineering #Systems #Safety #BuildInPublic #TechNews #Process #Craft #Learning #Incidents #Advice #Books
+---
+[2026-09-27 14:36:31 UTC]
+record_id=6bc0a7554e257773095e301c40c391a614597bbf7b5f14f4a5569a559892851a
+scheduled_for=2026-09-30 18:00
+I made a small thing for myself on a Saturday and a teammate asked me to share it on Monday, and two years later it runs in four teams. It started as about forty lines that renamed files in a folder.
+
+Version one had my paths hardcoded. Version two asked. Version three got a config file and a README, which took more effort than the original program. Forty lines. That's the part nobody tells you.
+
+I didn't plan for it to spread. I planned for it to work on my machine, and the spread happened because a tool that saves ten minutes is worth adopting if the setup is under five.
+
+Sharing something small costs a README and a config. Not sharing it costs five people building the same forty lines badly. That second cost is bigger and it's invisible. Four teams now, and none of them know it started as forty lines on a Saturday.
+
+#AI #BuildInPublic #VibeCoding #tech #Tooling #Teams #Engineering #OpenSource #TechNews #Craft #Advice #Automation #SoftwareEngineering #Developer #Growth
+---
