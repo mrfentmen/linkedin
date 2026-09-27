@@ -23062,3 +23062,143 @@ Sharing something small costs a README and a config. Not sharing it costs five p
 
 #AI #BuildInPublic #VibeCoding #tech #Tooling #Teams #Engineering #OpenSource #TechNews #Craft #Advice #Automation #SoftwareEngineering #Developer #Growth
 ---
+[2026-09-27 18:53:18 UTC]
+record_id=76c695efe55ad7812d19a017a145ddefcd2447d440c44245ac4c4ef00d621a3d
+scheduled_for=2026-09-30 17:00
+I rolled back a change last month that had already been forward fixed, because the forward fix was the second thing we'd shipped in an hour and that's a pattern I've learned to distrust. Two changes at once is a coin flip.
+
+The original change was fine and the forward fix was fine. What wasn't fine was not knowing which one had caused the new error rate, and I could not tell from the graphs because both had touched the same endpoint.
+
+I sent us back to the state before both and we waited twenty minutes. Everything was healthy. Then we shipped them one at a time, twenty minutes apart, and found that the forward fix was the one with the problem.
+
+A rollback is not a defeat. It's the only way to get back to a state you've measured, and the state you've measured is the only place you can start a clean experiment from.
+
+I do one change at a time when something is wrong. One change. Faster is slower.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #Rollback #Reliability #Engineering #BuildInPublic #TechNews #Operations #Systems #SRE #Craft #Debugging #Advice
+---
+[2026-09-27 18:53:18 UTC]
+record_id=17a4f6e926599a2398bdbf98db607e47c75395e2892cf1a7e255007410f17419
+scheduled_for=2026-09-30 17:15
+I decided not to hire for a role I had open and it was the right call, and it took me three months to get there. Three months. It existed because a project was late, and the project was late because we'd agreed to a date with no design.
+
+The candidates were fine. Two candidates. I had two who would have passed. I kept thinking about what they'd do in month four when the project either shipped or didn't, and the honest answer was that they'd be doing work we hadn't defined.
+
+So I closed the role, went back to the project, and cut about half the scope. Nobody was angry. The date moved anyway and the next two hires were for work that already existed.
+
+A role is a bet on work that hasn't happened yet. Opening one because you're behind is how you end up with a team and a schedule that both grew in the wrong direction.
+
+#AI #BuildInPublic #VibeCoding #tech #Hiring #Teams #Engineering #Careers #TechNews #Advice #Management #Recruiting #Planning #Craft #Leadership
+---
+[2026-09-27 18:53:18 UTC]
+record_id=a7e9f6e363e2143c9f5421f870d13e5d295171bce08292c5a8e00db70d25d45f
+scheduled_for=2026-09-30 18:15
+The EU rules on AI moved into a phase where penalties actually apply from the second of August. Enforcement dates change behaviour in a way that guidelines don't.
+
+I've been through compliance regimes as an engineer. Nothing focuses a roadmap like a fine schedule. Work that sat in a backlog for two years gets resourced in a quarter because somebody legal prints a table of numbers.
+
+What interests me is the asymmetry. A European penalty applies to a company selling into Europe. A company that doesn't sell there can ignore it. So the rules become a market access question rather than a technology question, and market access has always been the strongest lever anybody has.
+
+I don't have a strong view on whether the rules are well designed. I do have a view on what will happen next. Documentation will get built, model cards will get standardized, and those artifacts will leak into products everywhere because it's cheaper to write once.
+
+That's how Brussels has changed tech before. Not by banning. By making a form.
+
+#AI #BuildInPublic #VibeCoding #tech #EUAIAct #AI #Regulation #Compliance #Policy #Governance #Technology #TechPolicy #Law #Europe #ResponsibleAI #Business
+---
+[2026-09-27 18:53:18 UTC]
+record_id=a0e22a111625c5d01b9f9dab207caad8e6698bdc56f59d75e9a6900218c8de86
+scheduled_for=2026-09-30 18:30
+I spent two weeks building a dashboard that four people asked for and one person opened twice. Four requests came in a single week and I treated the count as demand, when what I had was one loud morning.
+
+The one user wanted a single number. Failed jobs. In a channel, not a page. I gave him a page with eleven charts and he looked at it once.
+
+So I moved the one number into a message that posts every morning and deleted the rest. He has not missed a day since, and I have about four hundred lines less to maintain. Four hundred lines gone.
+
+Ask what decision the number changes and where that decision happens. If a chart doesn't change a decision, it's decoration, and decoration has a maintenance cost. One decision. Four people asked and one of them was the only real user. I could have found that out with a message instead of a dashboard.
+
+#AI #BuildInPublic #VibeCoding #tech #Dashboards #Product #Engineering #Metrics #TechNews #Advice #Data #Craft #SoftwareEngineering #Customers #Decisions
+---
+[2026-09-27 18:53:18 UTC]
+record_id=2755bc6e5f550646fb85c7c8c0bd67fc41e475b43c2434bd7ef059765a86d95d
+scheduled_for=2026-09-30 18:45
+I stopped chasing the word senior about two years ago and my work improved, which is an uncomfortable thing to admit.
+
+The chase made my decisions small. I'd pick the visible fix over the important one because visible fixes get mentioned in reviews. I'd take the project with a launch date instead of the one with a real problem. That's a career strategy that works and it makes you worse at the job.
+
+What replaced it was a question about the next twelve months. Which of these will still matter in a year. Not which one looks good. Which one is load bearing.
+
+Turns out the answers are boring. Tests, documentation, removing the thing nobody uses, knowing who owns which piece. None of it is a story you tell at a dinner.
+
+I don't know if this hurts me professionally. I do know I've shipped more of the work I'd want to be judged on, and I sleep better on the days when the recognisable parts are absent.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #Engineering #SoftwareEngineering #Developer #Growth #Advice #BuildInPublic #TechNews #Craft #Work #Promotion #Decisions
+---
+[2026-09-27 18:59:41 UTC]
+record_id=8d01a814c2e77217f722df9658568692c2f0d642fcabb91a8035cd94fe9d1b86
+scheduled_for=2026-09-30 19:00
+I mentored somebody through their first incident last month and the thing I did most was stay quiet. One question. Ten minutes. It was harder than it sounds and I got it wrong once.
+
+He was working through it and I could see where he was going to be wrong about four steps in. I said nothing for about ten minutes and then I said something, and the something was a hint about the wrong layer.
+
+What worked better was asking a question about what he'd expect to see. He answered it, paused, and went somewhere else entirely. That's the whole technique and it works because the answer was already in his head.
+
+The other thing I did right was nothing at the end. I let him write the summary and I didn't correct the wording, and the summary he wrote was better than what I'd have produced.
+
+I ask. Then I wait. The waiting is the part that feels like doing nothing and is the actual teaching.
+
+#AI #BuildInPublic #VibeCoding #tech #IncidentResponse #Mentorship #Teams #Engineering #BuildInPublic #TechNews #OnCall #Advice #SRE #Leadership #Craft #Reliability
+---
+[2026-09-27 18:59:41 UTC]
+record_id=17e5d570f16337bdd8328f802e76fbdee43e46f88c90647360f2aa9137aec684
+scheduled_for=2026-10-01 08:00
+Two thirds of this year's game industry layoffs came from AAA studios. The studios with the most money cut the most people, and I keep not being surprised.
+
+Look at the structure. A single AAA game can cost more than the entire output of twenty small studios, so a miss is measured in hundreds of millions and a hit is still a slow return. That forces one move. Cut the variable cost, which is people, and protect the quarter.
+
+I don't think this is a villain story. It's a model story. The model rewards a smaller payroll and a bigger bet every single year, so that's what the industry keeps doing. I don't see anybody in the chain paid to ask a different question.
+
+The alternative is boring and unfashionable. Smaller games, smaller teams, smaller risks, slower money. Somebody has to decide to want that. I'd want the boring version.
+
+#AI #BuildInPublic #VibeCoding #tech #Gaming #GameDev #Layoffs #BusinessOfGaming #IndieGame #FutureOfWork #GameDesign #Steam #VideoGames #PCGaming #Careers #TechNews
+---
+[2026-09-27 18:59:41 UTC]
+record_id=0949e59b15a4066a717f1ccb7acacee0e1adbd6b1824e09e5f27c8990355b5bb
+scheduled_for=2026-10-01 08:15
+In the western United States, planned data centers average about 10 percent of the grid region's forecast demand. In some areas they run as high as 40 percent. Forty percent.
+
+Forty percent of a forecast is not a line item. I keep watching this get reported as an AI story and it isn't. It isn't. It's a construction story with an AI label, because the thing that takes years is the transmission line. Not the chip.
+
+A data center can go up in eighteen months. The substation and the lines into it take longer, and the permitting takes longer than that. So demand arrives while the grid is still in a hearing. That's a queue.
+
+That gap is where the politics live. Somebody pays for the upgrade, and the obvious candidate is the customer who caused it, which is a sentence that gets unpopular fast. I don't have a clever answer. I do think cheap power is over for a while, and the bill arrives somewhere nobody was looking.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #DataCenters #Grid #Infrastructure #Electricity #Climate #RenewableEnergy #Nuclear #Policy #Engineering #Economy #Sustainability
+---
+[2026-09-27 18:59:41 UTC]
+record_id=61b3a5b651ea52aa67f2687a3f0b7f38ee826877d8771b6d610f67a7025c6e69
+scheduled_for=2026-10-01 08:30
+A migration ran for four hours instead of the eleven minutes I'd predicted and the intervention I needed was a decision, not a fix. I wasn't there to make it.
+
+I'd run it in staging against about two hundred thousand rows. It finished in eleven minutes. What I hadn't asked was the production row count, which was about forty million, and the difference in write locking behavior between the two sizes is not linear.
+
+What saved it was that I'd written the abort command in the ticket before I started, and a colleague read the ticket and used it at the two hour mark when I was unreachable. The data was fine. The deploy was late.
+
+Since then the first line of my migration is a comment with the row count I expect and the time I expect, and the second line is the abort. If I can't fill in the first, I'm not ready.
+
+Write the abort command before you need it. Nobody thinks well at hour three.
+
+#AI #BuildInPublic #VibeCoding #tech #Databases #Migrations #Engineering #Reliability #BuildInPublic #TechNews #Systems #SoftwareEngineering #Production #Craft #Advice #Operations
+---
+[2026-09-27 18:59:41 UTC]
+record_id=5219174ec1783eb83717221813d8d5fe3beede22c2307825ec224c9a27f2d72b
+scheduled_for=2026-10-01 08:45
+I added a cache that made our service slower and I didn't believe it for a week. The hit rate was ninety four percent. Everything looked better on the cache dashboard and worse on the customer dashboard.
+
+Invalidation was the problem. It was a fan out from a job that ran every few seconds, so a hot key got dropped and refilled constantly, and every refill held a lock the request path waited on. Ninety four percent hits, ninety four percent waits.
+
+Ninety four percent hits. Ninety four percent waits. I removed it and the endpoint went from about nine hundred milliseconds to two hundred. The cache had been holding a lock, not saving time, and the dashboard I built to check it only measured hits.
+
+Measure the thing the user feels. A hit rate is a proxy and proxies lie when you write them from the same assumptions that built the thing.
+
+#AI #BuildInPublic #VibeCoding #tech #Caching #Performance #Backend #Engineering #TechNews #Debugging #Craft #Advice #Architecture #SoftwareEngineering #Metrics
+---
