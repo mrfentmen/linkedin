@@ -14088,8 +14088,8 @@
       "content": "I found a spreadsheet that had been running a part of our business for about four years after the system that replaced it went live. Four years. I found it because a number in a meeting didn't match a number in a database. The spreadsheet won.\n\nSomebody had kept it going because the new tool couldn't do one calculation in the way the team trusted. So every month they exported, pasted, and adjusted. Two hours. Nobody was being lazy. The tool just didn't speak their language and the sheet did.\n\nWe moved that calculation into the tool and the spreadsheet died in a week. The loss that mattered was the judgment. It had been real and undocumented, and it lived in a column of manual overrides nobody had read.\n\nA spreadsheet that survives a migration means the migration missed something. I find the manual column and ask why now, because the answer is a requirement nobody wrote down.\n\n#AI #BuildInPublic #VibeCoding #tech #Data #Spreadsheets #Engineering #TechNews #Advice #Process #Systems #Craft #Business #Product #Migration",
       "schedule_time": "2026-10-01 15:30",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-09-28T00:10:12+00:00",
-      "attempts": 2
+      "updated_at": "2026-09-28T02:39:22+00:00",
+      "attempts": 4
     },
     "6e478a0fae0cc090cad26e2c2e016346aed545bdbd37c3d48fc523dec82aae33": {
       "record_id": "6e478a0fae0cc090cad26e2c2e016346aed545bdbd37c3d48fc523dec82aae33",
