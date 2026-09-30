@@ -15176,6 +15176,15 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-30T03:23:17+00:00",
       "attempts": 2
+    },
+    "8ac4eddaa508fc35c4fec6d9a64700bd07dd15af414f30543d6fd91af38da458": {
+      "record_id": "8ac4eddaa508fc35c4fec6d9a64700bd07dd15af414f30543d6fd91af38da458",
+      "status": "failed",
+      "content": "I wrote my first runbook in a panic at eleven at night. It was four steps long and it saved me twice in the following month.\n\nThe steps are boring. Check the queue depth. Restart the worker. Watch the depth fall. If it doesn't fall, this is the command that shows why. Written down, in order, with the exact strings copied.\n\nWhat makes it work is that I wrote it while I was scared. That's the only time I remember the details that matter, like the service name I always get wrong and the flag that has to come before the argument.\n\nNobody else reads it. That was never the point. The point is that the worst version of me, tired and under pressure, gets to follow a list instead of inventing one at two in the morning. A runbook is a note you leave for the person having the worst night. I wrote mine for me.\n\n#AI #BuildInPublic #VibeCoding #tech #Runbook #DevOps #Reliability #Engineering #Software #Developer #OnCall #Infrastructure #Coding #DeepTech #Documentation #IncidentResponse #Monitoring #OpenSource #Production #Engineering",
+      "schedule_time": "2026-10-03 15:45",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-30T11:37:52+00:00",
+      "attempts": 2
     }
   }
 }
