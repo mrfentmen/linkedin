@@ -15433,6 +15433,15 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-09-30T17:58:00+00:00",
       "attempts": 2
+    },
+    "dc378207c20400d602057ba6e7fea6ce5ff966e5166650f6dbca70e44061321c": {
+      "record_id": "dc378207c20400d602057ba6e7fea6ce5ff966e5166650f6dbca70e44061321c",
+      "status": "failed",
+      "content": "I cut my alerts down to two a day and my reply time got better. The urgent ones were being buried by the rest.\n\nI had email, chat, two task tools and a build system all competing for the corner of my screen. Every ping pulled me out of whatever I was holding in my head, and getting back took minutes each time.\n\nNow the build posts to a channel I read twice a day. Chat is muted except for direct messages. Email gets two passes, morning and late afternoon. That's it.\n\nMy average reply time went from nine hours to two, because replies got batched and I stopped answering in the middle of other work. Nothing important waited longer. Most of what interrupted me was never going to be answered that hour anyway. Fewer pings, faster answers. I answer better now and I work longer. Nobody has complained about the quiet yet.\n\n#AI #BuildInPublic #VibeCoding #tech #Focus #Productivity #Developer #Software #Engineering #Career #DeepTech #Communication #DeepWork #Workflow #Learning #OpenSource #TimeManagement #Notifications #Engineering #WorkLife",
+      "schedule_time": "2026-10-03 18:45",
+      "error": "LinkedIn's scheduled count is 181, no higher than 181 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-09-30T21:46:02+00:00",
+      "attempts": 2
     }
   }
 }
