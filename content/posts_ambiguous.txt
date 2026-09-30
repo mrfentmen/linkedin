@@ -366,3 +366,33 @@ There's no cleverness in any of this. The message is the fastest document in the
 
 #AI #BuildInPublic #VibeCoding #tech #Debugging #SoftwareEngineering #Developer #Engineering #Coding #BuildInPublic #TechNews #Habits #Craft #Programming #Learning #Advice
 ---
+[2026-09-30 17:49:16 UTC]
+record_id=906735f254edb6887b6f258abad2a0242bbc35b0ef31f8d7aa2b8511189d6017
+status=ambiguous
+scheduled_for=2026-10-04 11:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I deleted my analytics for a month and shipped more software. That was not the plan. It just happened.
+
+Without the dashboard I stopped the morning check. That check was ten minutes of reading numbers that changed nothing about what I built that day. Then it was twenty minutes, then it was a habit with a cup of coffee and a bad mood.
+
+What I did instead was talk to four users. One conversation told me more than ninety days of graphs, because a person can say why, and a graph can only say what.
+
+I'm not against measurement. I still track errors and latency, because those change what I do within the hour. The rest came back when I had a question that needed an answer, which took a month and a half. Measurement should follow a question, not replace one. Most dashboards are answers to questions nobody asked. That's the rule.
+
+#AI #BuildInPublic #VibeCoding #tech #Analytics #ProductManagement #Startup #Developer #Software #Engineering #Productivity #Coding #UX #DeepTech #Focus #Learning #Growth #CustomerSupport #Minimalism #Engineering
+---
+[2026-09-30 17:56:23 UTC]
+record_id=cee93d527bc7466ff7d3c56880e8880255402d7871da7dbd490ef8f6eb0892bc
+status=ambiguous
+scheduled_for=2026-10-04 13:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I rewrote my 404 page and support tickets dropped by a third. Not the traffic. Support messages.
+
+My old page said not found and offered a link home. My new one asks one question. Were you looking for this one. Then it shows the three closest pages, the search box, and a way to tell me what you wanted.
+
+Complaints about broken links dropped almost at once, because most of them were never broken links. People had typed a name wrong or followed a bookmark from an old version of the site.
+
+That's an hour of work and a third of my support load. Errors are the one place where a user has already told you they are stuck, and most of us answer with a shrug. I rebuilt mine in an hour. That's the cheapest support tool I own. I keep finding places where a small answer beats a big system.
+
+#AI #BuildInPublic #VibeCoding #tech #UX #ProductDesign #Developer #Software #Engineering #WebDevelopment #Coding #Design #DeepTech #CustomerSupport #ProductManagement #Learning #OpenSource #Accessibility #Frontend #Engineering
+---
