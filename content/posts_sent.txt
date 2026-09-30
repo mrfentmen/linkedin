@@ -24768,3 +24768,159 @@ So I threw it away. That old function is still 140 lines and I can read it top t
 
 #AI #BuildInPublic #VibeCoding #tech #Refactoring #CleanCode #Developer #Software #Engineering #Programming #Coding #TechDebt #DeepTech #Backend #Learning #CodeReview #OpenSource #Design #Engineering #Software
 ---
+[2026-09-30 03:10:23 UTC]
+record_id=cc44e70e921a57e8fa2339d4cfba4aaff2204b64d210dfceefc6310ca77ca39f
+scheduled_for=2026-10-03 11:30
+A feature flag saved a release that would otherwise have gone badly. We shipped the code on a Monday and turned it on for one percent of users the next day.
+
+By Tuesday the error rate on that path was nine times the baseline. We turned the flag off and the graph went flat. Nobody noticed except us, and the fix went out on Wednesday with no rollback, no hotfix branch, and no apology post.
+
+I think about that week a lot. The code wasn't ready and we'd have shipped it as ready. The flag didn't make the code better. It just changed the cost of being wrong from an incident to a data point.
+
+The catch is the cleanup. Flags rot, and a codebase with two hundred of them is a maze. So every flag gets a date and a name attached, and the default is off. Merge it, watch it, remove it. Nothing stays.
+
+#AI #BuildInPublic #VibeCoding #tech #FeatureFlags #DevOps #Software #Engineering #Developer #Deployment #Coding #Reliability #Backend #DeepTech #CI #Monitoring #Production #OpenSource #Release #Engineering
+---
+[2026-09-30 03:10:23 UTC]
+record_id=d73f910c9aea6b2b173d045add64aac22e644725388c4a88647a7378d2bea1cf
+scheduled_for=2026-10-03 11:45
+Reading someone else's code taught me more in two hours than a month of writing my own. I was lost for the first forty minutes. Then the whole thing clicked.
+
+What worked was starting at the entry point and refusing to jump around. I followed one request all the way through, naming every step as I went. It passed through four files, one queue and a cache, and came out the other side. The parts had a reason to exist.
+
+Before that I had been reading files in alphabetical order. That's the worst possible order. Code isn't organised by name for a reader. It's organised by the path a job takes. Alphabetical is for lookup. Nobody looks up a system.
+
+Now I read for motion. I pick a bug and chase it. You learn the shape of a system because the system has to carry something through it. Files make no sense until they are moving.
+
+#AI #BuildInPublic #VibeCoding #tech #Programming #Developer #Software #Engineering #Coding #Learning #CodeReview #ReadTheSource #DeepTech #Backend #OpenSource #Career #Mentoring #Skills #Engineering #Software
+---
+[2026-09-30 03:10:23 UTC]
+record_id=5d7f9478b2a7960d4d9dfc9d30f92471b150e0faf1a8ded6c6c08412dfbaec6d
+scheduled_for=2026-10-03 12:00
+I worked out what my AI feature costs per user and it changed what I built. The number was small. The number times ten thousand was not.
+
+Here's the mistake I made. I tested with my own prompts, which are long, careful and few. Real traffic is the opposite. Short prompts, sent all day, in bursts. My test said one cent a user a month. My load test said thirty.
+
+So I moved the cheap work off the expensive model. Sorting, tagging and short replies run on a small model now. Hard reasoning still goes to the big one, because that's where the quality shows and that's what people pay for.
+
+This isn't about AI being expensive. It's that I costed it on my own behaviour, which looks nothing like the behaviour of a thousand strangers. Measure the crowd, not yourself. My bill follows the crowd, and the crowd is bigger than me.
+
+#AI #BuildInPublic #VibeCoding #tech #CostOptimization #AIEngineering #Developer #Software #Engineering #LLM #Coding #Startup #DeepTech #Backend #Cloud #MachineLearning #ProductManagement #OpenSource #LocalLLM #Engineering
+---
+[2026-09-30 03:10:23 UTC]
+record_id=79fa8b1ad9dc6a72f66a6da4e2a6e2c8a76fdc080a5d94fcd9b0d7227c87aa8d
+scheduled_for=2026-10-03 14:45
+I ran a local model for a week on work I send to the cloud. Nothing left my machine, and that mattered more than the speed.
+
+My honest report is mixed. Simple tasks were fine. Summarising, renaming, drafting a reply. Hard reasoning was worse and I felt it as extra checking, which ate the time I thought I was saving.
+
+But my point was never the benchmark. I wanted one category of work to stay on my own disk, the one with names and addresses in it. That isn't a speed question. That's a question about who else gets a copy.
+
+I split my work into two buckets. Anything with personal detail stays local, even when the local answer is worse. Everything else goes where quality is best. Slower, a bit dumber, and I know where it goes. That's the trade I'll take every time. Two buckets, one rule, no guessing.
+
+#AI #BuildInPublic #VibeCoding #tech #LocalLLM #Privacy #Ollama #Developer #Software #AIEngineering #Coding #OpenSource #DeepTech #DataPrivacy #MachineLearning #SelfHosted #Engineering #Backend #Security #FutureOfWork
+---
+[2026-09-30 03:10:23 UTC]
+record_id=5b17f37e82085742064a3c5ad450cf412e0f20fbc68c68cd1080b2b333705753
+scheduled_for=2026-10-03 15:00
+Fusion has a date problem and it isn't the physics. I watched a company run a deuterium and tritium shot this year and the headline still oversold it.
+
+A shot isn't a plant. A plant isn't a price. That much was real and the engineering that got there deserves the attention it got. What it doesn't mean is power on a grid this decade.
+
+I care about the price. A grid buys electrons, and the moment someone can sell them at a number that competes, everything else follows on its own. Until then, every fusion story is a physics story wearing an economics costume.
+
+So I keep two columns when I read these. One column is what was demonstrated. The other is what a utility would have to pay. One number moves fast and the other moves slowly. The gap between them is the whole conversation, and I've stopped letting the fast one speak for both.
+
+#AI #BuildInPublic #VibeCoding #tech #Energy #Fusion #Climate #Physics #Engineering #Science #DeepTech #Grid #Infrastructure #CleanEnergy #Research #STEM #FutureTech #Learning #Renewables #EnergyTransition
+---
+[2026-09-30 03:17:09 UTC]
+record_id=fd1123b43548188f7c151096aafa0906b596388d7272ad11cc4b4d90ab10c5fb
+scheduled_for=2026-10-03 15:15
+I read a paper wrong for two days before I caught myself. The abstract said improved. The methods said different sample.
+
+I wanted a clean comparison and I didn't have one. Those two groups were never chosen at random. One had more of everything. More time, more staff, more follow up.
+
+I noticed because I wanted to cite it and went looking for the sample size. It wasn't in the abstract. It was in a paragraph four pages in, phrased as a limitation, which is where the real finding hides.
+
+So my habit now is to read that paragraph first. Before the result, before the conclusion. It tells me what the study can't claim, and everything after that is easier to read as it is. Headlines are the last thing I trust. The limitation is the first. Everything in between is a story about a sample, and the sample is almost never you.
+
+#AI #BuildInPublic #VibeCoding #tech #Science #Research #Reading #CriticalThinking #Statistics #Learning #DeepTech #STEM #Evidence #Methodology #AcademicChatter #Writing #Analysis #Medicine #Education #Science
+---
+[2026-09-30 03:17:09 UTC]
+record_id=c1018811417a67683766786e15c254325c0bc47be5d21d1535b59865a47fc2c0
+scheduled_for=2026-10-03 15:30
+I replayed an eleven year old game this month and it ran better than it did at launch. Not because of a patch. Because of a modder who fixed what the studio never returned to fix.
+
+That's the part the industry keeps missing. A game that gets abandoned is not finished, it's frozen. The bugs are still there. They just stop being addressed. Someone in a forum with no payment and no deadline took it on instead.
+
+I'm not saying every studio should support a game forever. I'm saying the tools to let other people do it should be the default, not a favour. Ship the format. Ship the mod tools. Let the thing keep living after the money stops.
+
+The counterargument is control and cost. I get it. But a game that can't be repaired is a game on a timer, and there's a growing list of them that only exist because strangers cared more than the balance sheet did.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #Games #Preservation #Modding #GameDesign #Developer #Software #IndieGame #Engineering #OpenSource #DeepTech #GamesIndustry #PCGaming #Community #Ethics #Gaming
+---
+[2026-09-30 03:17:09 UTC]
+record_id=700be22182b782babe6d10b8685867f53f54e0226c699057420fb5ba9abaf8f0
+scheduled_for=2026-10-03 16:00
+A customer sent me a complaint that was rude and correct. I fixed the bug in an hour and read the message about ten times.
+
+The bug was embarrassing. My export button worked for small accounts and dropped rows for big ones. Nobody had told me because nobody with a big account had tried it yet. Then someone did, at the worst possible moment, and they let me know in a way I didn't enjoy reading.
+
+I almost replied to the tone. That would have been the mistake. The tone was the wrapping. Inside was a precise bug report with steps, a screenshot, and the exact account size where it broke.
+
+So I read complaints twice before I answer now. Once for the feeling. Once for the fact. The feeling goes away on its own and the fact is the thing I can act on. My best three fixes this year all arrived inside messages I was annoyed by.
+
+#AI #BuildInPublic #VibeCoding #tech #CustomerSupport #ProductManagement #Developer #Software #Startup #Engineering #Feedback #UX #Coding #DeepTech #Career #Communication #Learning #Reliability #Backend #Growth
+---
+[2026-09-30 03:17:09 UTC]
+record_id=2c8b26efb10376d3669a643d40b31f06c21262c11e818452894320b2536449fa
+scheduled_for=2026-10-03 16:15
+A bad name cost me half a day last week. The function was called check and it did four things.
+
+I kept reading it as a validator. It validated, then wrote to the database, then sent a message, then returned a count. The name told me one of those jobs and hid the other three. My brain filled in the rest and got it wrong.
+
+The fix was a rename. ValidateAndEnqueue is uglier and it's honest. Nobody reads that function now and assumes it's safe to call twice, which is exactly what I assumed for a year.
+
+I used to think names were cosmetic. They are the cheapest documentation a codebase gets, and a misleading one is worse than none at all. Half a day for one word. I would rather spend two minutes on the word. I still forget that. I forget it less than I used to, most weeks.
+
+#AI #BuildInPublic #VibeCoding #tech #Naming #CleanCode #Programming #Developer #Software #Engineering #Coding #Refactoring #CodeReview #Learning #DeepTech #Backend #BestPractices #OpenSource #Skills #Engineering
+---
+[2026-09-30 03:21:39 UTC]
+record_id=7bed9ac5a8bb59d88436c897218383cafd88fbdaa3c2e443820c2987b1ac4496
+scheduled_for=2026-10-03 16:30
+Drone swarms are already in the field and the accounting for them isn't written yet. That's the part I keep coming back to. The hardware moved. The rules didn't.
+
+When one person can launch many machines that act together, the old question of who pulled the trigger gets blurry. It's not blurry in a philosophical way. It's blurry in a paperwork way. There's no name on the event.
+
+I'm not against the technology on principle. I've watched enough tools get used badly to know the tool isn't the argument. The argument is that speed has outrun the process that assigns blame, and a system with no blame has no brake.
+
+So what I want isn't a ban. It's a boring answer that already exists for other machines. Who is responsible, which record names them, and what happens when that record is empty. Boring answers are what keep this from becoming a story we can't close.
+
+#AI #BuildInPublic #VibeCoding #tech #AIethics #Drones #AutonomousWeapons #Security #Policy #Engineering #Technology #DefenseTech #Geopolitics #Accountability #Robotics #DeepTech #AIsecurity #Governance #Ethics #FutureTech
+---
+[2026-09-30 03:21:39 UTC]
+record_id=78fcb9f1cf9d8c4910c17b5df48a46faf572e61fbfe96ef4c5a891af783a47e3
+scheduled_for=2026-10-03 16:45
+I found an N+1 query in a page that loaded in four seconds. One line in a loop fixed it and the page came back in under 200 milliseconds.
+
+The code looked innocent. For each order, fetch the customer. Ten orders, ten queries. A thousand orders, a thousand queries, and a database that spends its day answering the same question over and over.
+
+I saw it because I turned on query logging for ten minutes. The log was sixty thousand lines long. Reading it was like watching someone walk to the shops a thousand times when once would do.
+
+The fix was to ask for every customer in one go and join them up in memory. Same shapes, same results, one query. That's the whole trick. I log query counts on every page I build now, because a number in a log beats a hunch every single time and it's cheaper than a bad week.
+
+#AI #BuildInPublic #VibeCoding #tech #Database #Performance #Backend #Developer #Software #Engineering #Coding #SQL #Optimization #DeepTech #Reliability #Monitoring #OpenSource #WebDevelopment #Profiling #Engineering
+---
+[2026-09-30 03:21:39 UTC]
+record_id=99f0fd29a05fd6b84f1e89aadaa0a30996fac46506e58f83c7d1cf48f0ff1023
+scheduled_for=2026-10-03 17:00
+I pinned every dependency in my project and nothing broke for a year. Then I unpinned one and spent a Saturday on the fallout.
+
+The problem wasn't the update. It was that I had no idea what had changed in eleven months of releases. Three major versions arrived at once. Each one carried a deprecation I had not read. That's a lot of surprise in one afternoon. None of it was planned.
+
+So the real cost of pinning is that it hides the bill. You get stability now and a very large payment on a day you did not choose. My bill came due on a Saturday I would rather have spent elsewhere.
+
+I update one package a week now, on purpose, and I read the changelog before I run the tests. It takes fifteen minutes. It has never taken a Saturday. Small updates on a schedule beat one enormous update at the worst possible moment, and I stopped dreading the word upgrade.
+
+#AI #BuildInPublic #VibeCoding #tech #Dependencies #DevOps #Developer #Software #Engineering #Coding #Security #Maintenance #DeepTech #Backend #Reliability #OpenSource #VersionControl #Learning #Automation #Engineering
+---
