@@ -15593,6 +15593,143 @@
       "updated_at": "2026-10-01T03:34:41+00:00",
       "attempts": 2,
       "finalized": true
+    },
+    "7a3eb3cb8524927bb4de22170ad5d052044dc79f15725165c91a42bc5c64175e": {
+      "record_id": "7a3eb3cb8524927bb4de22170ad5d052044dc79f15725165c91a42bc5c64175e",
+      "status": "scheduled",
+      "content": "A survey of two thousand developers said sixty six percent saw layoffs in twelve months. I keep thinking about the people who didn't.\n\nThe ones who didn't aren't the best engineers. I have worked with brilliant people who got cut in a round that made no sense, and mediocre people who survived three of them. Skill correlates with survival. It's nowhere near a guarantee.\n\nWhat actually correlates is being expensive to remove. One person knew the billing system end to end. Another ran the only release process anyone trusted. Neither was the strongest coder on the team and both were untouchable in practice.\n\nSo I stopped optimising for being impressive and started optimising for being load bearing. Write the runbook. Own the scary part. Make the team slower when you vanish, and then vanish anyway because a good holiday is how you find out whether it worked. That's the career advice nobody gives.\n\n#AI #BuildInPublic #VibeCoding #tech #Layoffs #Career #Developer #Software #Engineering #TechLayoffs #Coding #GamesIndustry #DeepTech #WorkLife #Learning #JobSearch #Strategy #Engineering #Resilience #CareerAdvice",
+      "schedule_time": "2026-10-04 15:30",
+      "error": "",
+      "updated_at": "2026-10-01T12:11:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a3e741b60d896b4d5e2f120971578029e4e5d317474c80a09a54f7f94bdb213d": {
+      "record_id": "a3e741b60d896b4d5e2f120971578029e4e5d317474c80a09a54f7f94bdb213d",
+      "status": "scheduled",
+      "content": "Obsidian got eighteen months to build Fallout New Vegas. Bethesda spent about four years on Fallout 3, and the documented view is that eighteen months was brutally short for a game that size.\n\nIt scored eighty four. Fallout 3 scored ninety three and sold about twelve point four million copies to New Vegas at eleven point six. So the shorter game with the worse score is the one people are still modding in 2026, with a remaster confirmed.\n\nI think about that timeline at work. Half of my bad decisions weren't bad ideas. They were good ideas made under a deadline that didn't leave room to finish them. The plan was fine. The clock was the problem.\n\nI learned that from this game. That's why I now ask about the shape of the deadline before I agree to the shape of the work. A small thing finished well beats a large thing rushed, and the reviews don't care how much you meant well.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #Fallout #Obsidian #Games #GameDesign #Developer #Software #Engineering #Production #DeepTech #Deadlines #Learning #GamesIndustry #Gaming #Architecture #Career",
+      "schedule_time": "2026-10-04 15:45",
+      "error": "",
+      "updated_at": "2026-10-01T12:11:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "47ab3feac940fc0ab5686085aa243faf4ef2337bb1702be705ac0d795ee5ab33": {
+      "record_id": "47ab3feac940fc0ab5686085aa243faf4ef2337bb1702be705ac0d795ee5ab33",
+      "status": "scheduled",
+      "content": "The live service model killed a studio after a reported four hundred million dollar build that peaked at six hundred and ninety seven players on Steam. Sony wrote the shutdown post themselves and the reporting pointed at the model, not the genre.\n\nThat number is the part I can't stop thinking about. Six hundred and ninety seven. You need hundreds of thousands of daily players for that kind of budget to work. The game was designed for a crowd that never came.\n\nEvery team I have been on has a version of this. A feature built for a scale we didn't have. A queue for ten thousand updates a second when traffic was nine an hour. The plan is always correct for a company ten times larger.\n\nSo the question I ask now is boring and it saves months. Who is the user, how many are there, and what happens if there are fifty. If nobody can answer with a number, we're guessing at scale and paying for it. I have made that mistake myself. I know why. Twice. I shipped a queue for a scale we never had. It felt responsible. I caught it late and I paid for it.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #LiveService #ProductManagement #Developer #Software #Engineering #GamesIndustry #Coding #DeepTech #Strategy #ProductDesign #Learning #Architecture #Startup #Prioritization #Gaming",
+      "schedule_time": "2026-10-04 16:00",
+      "error": "",
+      "updated_at": "2026-10-01T12:11:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c227ca480c63865d1fbf2f38fc466fb7d6498a99a52c436d88c5558a20323c6c": {
+      "record_id": "c227ca480c63865d1fbf2f38fc466fb7d6498a99a52c436d88c5558a20323c6c",
+      "status": "scheduled",
+      "content": "The same industry survey tracked how developers feel about generative AI and the number moved from eighteen percent saying it's bad for the industry to fifty two percent in two years. That's a thirty four point swing and it happened while tool use went up.\n\nI feel both halves of that. My output is higher with an agent doing the boring parts, and my confidence in a codebase I didn't write goes down. Both are true. I shipped more this year than any year before and I understand less of what I shipped.\n\nThe number that worries me is the review one. If half the code never had a human read it with intent, then the bugs are all in the seams between files. Nothing crashes. It just costs more every month.\n\nSo I keep one rule that has survived. Every change gets one person who can explain why, in their own words, without opening the diff. That's the cheapest quality gate I have found and it doesn't scale, which is exactly why it works.\n\n#AI #BuildInPublic #VibeCoding #tech #AICode #CodeReview #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #QualityAssurance #Learning #OpenSource #BestPractices #AI #Engineering #DeveloperExperience",
+      "schedule_time": "2026-10-04 16:15",
+      "error": "",
+      "updated_at": "2026-10-01T12:11:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6dc6206c86b3e15aff49df0496e2f8430c97dae38102af12fc5bd809516d1c38": {
+      "record_id": "6dc6206c86b3e15aff49df0496e2f8430c97dae38102af12fc5bd809516d1c38",
+      "status": "scheduled",
+      "content": "Fallout 3 scored ninety three and sold twelve point four million. New Vegas scored eighty four and sold eleven point six million. By the numbers, Fallout 3 is the bigger game.\n\nNew Vegas is the one with mods being released in 2026, a remaster confirmed, and a television season set in its city. People put thousands of hours into the game with the lower score. They didn't do that with the higher one.\n\nI have stopped treating review scores as a proxy for care. A score tells me what a reviewer thought in a week. Hours played tells me what a person chose with their evenings. Those are different measurements and only one of them lasts.\n\nThe practical version, the one I can use at work, is that I should measure the thing people come back to. Not the launch number. Retention is unglamorous and it was the honest number for that game over fifteen years. I know which one I would keep. Not the score. The hours. I played it for nine hundred hours.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #Fallout #Games #GameDesign #Metrics #Developer #Software #Engineering #ProductManagement #DeepTech #Retention #Learning #GamesIndustry #Gaming #Analytics #Design",
+      "schedule_time": "2026-10-04 16:30",
+      "error": "",
+      "updated_at": "2026-10-01T12:11:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a81f88f72b98d9246b00f0a1f2158abdb4907f87f8a95ec88079898efd027bb1": {
+      "record_id": "a81f88f72b98d9246b00f0a1f2158abdb4907f87f8a95ec88079898efd027bb1",
+      "status": "scheduled",
+      "content": "I deleted a feature last week that took three weeks to build and it already had ten users. Ten. Out of about four thousand, which works out to a quarter of one percent.\n\nI built it because I wanted it. Somebody asked in a reply and I heard an opportunity instead of a person. That's how most features I regret get started, and the polite version of the story is that I responded to user demand.\n\nDeleting it took forty minutes. The tests went with it. Two files and a database column came out, and the deploy got faster because a background job stopped running.\n\nThe number I should have checked first is the size of the request. One person asking is an anecdote. Twenty people is a signal. I now write the count next to the request when I put it on the list, so future me can't pretend.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Feature #Developer #Software #Engineering #Coding #Simplicity #DeepTech #Backend #Prioritization #Learning #OpenSource #Startup #DataDriven #Engineering #UX",
+      "schedule_time": "2026-10-04 16:45",
+      "error": "",
+      "updated_at": "2026-10-01T12:16:37+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7ce03d91af8731be72537cfefbde6f94de944f7d3d83626abf56f667e2744b34": {
+      "record_id": "7ce03d91af8731be72537cfefbde6f94de944f7d3d83626abf56f667e2744b34",
+      "status": "scheduled",
+      "content": "I started writing a changelog by hand in June and it changed how I plan work. One file, dated lines, plain English, no marketing.\n\nThe first entry was two lines. Fixed the export crash on empty files. Added a retry to the upload job. Reading it a month later, I could see the pattern at once. Eight of the twelve entries were about uploads failing and being retried.\n\nNobody on the team read the changelog for a year. They read it the week we planned the next quarter, and it settled an argument in about four minutes because the evidence was already written down.\n\nThat's the whole trick. A changelog is a cheap log of what happened, and what happened is the most reliable input to what should happen next. Kept by hand it costs a minute. Rebuilt a quarter later it costs a weekend and it's always wrong. I write it on the day. I read it before planning.\n\n#AI #BuildInPublic #VibeCoding #tech #Changelog #Documentation #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Planning #Learning #OpenSource #BestPractices #ProductManagement #Engineering #Workflow",
+      "schedule_time": "2026-10-04 17:00",
+      "error": "",
+      "updated_at": "2026-10-01T12:16:37+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7dd7522d299778cd4adfae594f68b12ea647c27efcfdedc55adf72763125878a": {
+      "record_id": "7dd7522d299778cd4adfae594f68b12ea647c27efcfdedc55adf72763125878a",
+      "status": "failed",
+      "content": "A bug that only happened on Tuesdays was the most educational bug of my year. It turned out to be a weekly cleanup job that deleted a row I depended on, and the two pieces of code had lived side by side for eleven months.\n\nI found it by accident. I was rerunning a test to check something else and it failed, and it had passed an hour before. That's the part that took an hour to believe. A test that passes on Monday and fails on Tuesday with no code change is telling you something about time.\n\nThe real defect was structural. Two things owned the same row and neither knew about the other. The Tuesday schedule was just the messenger.\n\nSo I drew the nine tables that job touched and wrote down who owned what. Four hours of drawing, one line changed. I have never once regretted spending a day on a diagram, and I have regretted every time I skipped one.\n\n#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Database #Architecture #Learning #OpenSource #Testing #BestPractices #Reliability #Engineering",
+      "schedule_time": "2026-10-04 17:15",
+      "error": "LinkedIn's scheduled count is 196, no higher than 196 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T12:16:36+00:00",
+      "attempts": 2
+    },
+    "a193157ec051d2cdec4f2806bdf0d800d7fc6b24ecb9529351a9e8e0f3001259": {
+      "record_id": "a193157ec051d2cdec4f2806bdf0d800d7fc6b24ecb9529351a9e8e0f3001259",
+      "status": "scheduled",
+      "content": "A bug that only happened on Tuesdays was the most educational bug of my year. It turned out to be a weekly cleanup job that deleted a row I depended on, and the two pieces of code had lived side by side for eleven months.\n\nI found it by accident. I was rerunning a test to check something else and it failed, and it had passed an hour before. That's the part that took an hour to believe. A test that passes on Monday and fails on Tuesday with no code change is telling you something about time.\n\nThe real defect was structural. Two things owned the same row and neither knew about the other. The Tuesday schedule was just the messenger.\n\nSo I drew the nine tables that job touched and wrote down who owned what. Four hours of drawing, one line changed. I have never once regretted spending a day on a diagram, and I have regretted every time I skipped one.\n\n#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Database #Architecture #Learning #OpenSource #Testing #BestPractices #Reliability #Engineering",
+      "schedule_time": "2026-10-04 18:00",
+      "error": "",
+      "updated_at": "2026-10-01T12:24:24+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b7d02b036c392950ebab79e60f7650c0dc7db1c2c2fe9c5cb16572180799b763": {
+      "record_id": "b7d02b036c392950ebab79e60f7650c0dc7db1c2c2fe9c5cb16572180799b763",
+      "status": "scheduled",
+      "content": "I added logging to a flaky test and the failure rate dropped to zero. That isn't a joke and it's not magic. The test was slow and the extra lines changed the timing enough to hide a race.\n\nThat's the worst kind of fix, and I wrote it down as a real finding rather than quietly keeping it. A test that passes because it got slower is a test that will fail in production, where the timing isn't kind.\n\nWhat I should have done is the boring thing. Reproduce it with a sleep, prove the race, then fix the ordering. Twenty extra minutes and one genuine bug removed instead of a passing suite that lies.\n\nI now treat a passing suite with suspicion when the fix was unrelated. If a change makes a failure go away and I can't explain the mechanism, I haven't fixed anything. I have bought time, and time gets billed later with interest. I wrote it down as a finding. I knew better. I still did it. Nobody reads that file. That's on me.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #FlakyTests #Developer #Software #Engineering #Coding #Programming #Debugging #DeepTech #Backend #QualityAssurance #Learning #OpenSource #RaceCondition #Concurrency #Engineering",
+      "schedule_time": "2026-10-04 18:15",
+      "error": "",
+      "updated_at": "2026-10-01T12:24:24+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b8b43a60f377128506c6f898114323f0100e99028a04858c711c9e68248ca3a3": {
+      "record_id": "b8b43a60f377128506c6f898114323f0100e99028a04858c711c9e68248ca3a3",
+      "status": "scheduled",
+      "content": "I read a dependency's source code before adding it last week and it took eleven minutes. Four of those minutes changed my mind about using it.\n\nThe README said it handled retries. The source showed one retry, no backoff, and a hardcoded two second delay. That isn't a lie in the docs. It's just a smaller thing than the sentence implied, and the sentence is what I would have trusted.\n\nEleven minutes is nothing next to the alternative. If it had failed in production I would have spent an afternoon reading the same file, except that afternoon would have had a customer in it.\n\nSo the rule I use is cheap and I recommend stealing it. Before adding a library for anything that touches money, time or email, open the function that does the thing. If it fits on one screen and you understand it, ship it. If it doesn't, you just learned why the package is large. I read it first now. I check before I add.\n\n#AI #BuildInPublic #VibeCoding #tech #Dependencies #OpenSource #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #CodeReview #Learning #BestPractices #Maintenance #DevOps #Architecture #Engineering",
+      "schedule_time": "2026-10-04 18:30",
+      "error": "",
+      "updated_at": "2026-10-01T12:24:24+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "03b3f4539471ebe0caf28bbc9c6e873f163b81116dc27056cc47d80db081df1c": {
+      "record_id": "03b3f4539471ebe0caf28bbc9c6e873f163b81116dc27056cc47d80db081df1c",
+      "status": "scheduled",
+      "content": "I deleted forty percent of my tests and the suite got more useful. The ones I removed checked that a function called another function. That's a test of my own refactoring style, not of behavior.\n\nWhat was left was smaller and slower to write and it failed for real reasons. Every failure pointed at a problem a user could hit. That's the only kind of test failure worth waking up for.\n\nThe other forty percent wasn't harmless. It was maintenance. Every rename touched thirty tests that asserted on a call count, and every one of those edits was a chance to break something for no reason.\n\nI keep a different number in my head now. Coverage of decisions, not lines. Can I name the branches that matter and are they all hit. I can't tell you my line coverage and I can tell you the four places this code can fail, which turns out to be the more useful sentence. I count decisions now.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #CodeReview #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #QualityAssurance #Learning #OpenSource #BestPractices #Maintenance #Engineering",
+      "schedule_time": "2026-10-04 18:45",
+      "error": "",
+      "updated_at": "2026-10-01T12:24:24+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "836016660806bcd9be34c5df8f98fe13214a17483d6b1341c5b89f9ef0ba8646": {
+      "record_id": "836016660806bcd9be34c5df8f98fe13214a17483d6b1341c5b89f9ef0ba8646",
+      "status": "failed",
+      "content": "I got ghosted after a seven round interview loop and it taught me more about hiring than the interview did. Fourteen hours of my time, five take home exercises, and one message at the end that said they were moving on.\n\nThe part that stung wasn't the no. It was the silence after the last round, which lasted nineteen days. I sent two polite follow ups and got nothing, and then the rejection arrived with no name on it.\n\nI don't think that's malice. It's a process with no owner. Nobody's job was to tell me, so it fell to nobody, and the cost landed entirely on my side of the table.\n\nThe lesson I carry is about my own product. Any step where the answer is silence is a step where a person is stuck. If a system can leave someone waiting nineteen days, that isn't a people problem. It's a missing notification and I can fix that. I keep that number. Nineteen days.\n\n#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviews #Career #Developer #Software #Engineering #JobSearch #Recruiting #DeepTech #ProductDesign #Learning #UX #Communication #Engineering #CareerAdvice #WorkLife",
+      "schedule_time": "2026-10-04 19:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T12:24:23+00:00",
+      "attempts": 2
+    },
+    "ef335e2f9ffc2a7f34c09710781cbd09a5ff89a3503411f913f2be1a6a08ec89": {
+      "record_id": "ef335e2f9ffc2a7f34c09710781cbd09a5ff89a3503411f913f2be1a6a08ec89",
+      "status": "failed",
+      "content": "I got ghosted after a seven round interview loop and it taught me more about hiring than the interview did. Fourteen hours of my time, five take home exercises, and one message at the end that said they were moving on.\n\nThe part that stung wasn't the no. It was the silence after the last round, which lasted nineteen days. I sent two polite follow ups and got nothing, and then the rejection arrived with no name on it.\n\nI don't think that's malice. It's a process with no owner. Nobody's job was to tell me, so it fell to nobody, and the cost landed entirely on my side of the table.\n\nThe lesson I carry is about my own product. Any step where the answer is silence is a step where a person is stuck. If a system can leave someone waiting nineteen days, that isn't a people problem. It's a missing notification and I can fix that. I keep that number. Nineteen days.\n\n#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviews #Career #Developer #Software #Engineering #JobSearch #Recruiting #DeepTech #ProductDesign #Learning #UX #Communication #Engineering #CareerAdvice #WorkLife",
+      "schedule_time": "2026-10-05 08:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T12:26:03+00:00",
+      "attempts": 2
     }
   }
 }
