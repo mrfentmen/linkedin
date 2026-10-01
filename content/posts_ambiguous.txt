@@ -396,3 +396,18 @@ That's an hour of work and a third of my support load. Errors are the one place 
 
 #AI #BuildInPublic #VibeCoding #tech #UX #ProductDesign #Developer #Software #Engineering #WebDevelopment #Coding #Design #DeepTech #CustomerSupport #ProductManagement #Learning #OpenSource #Accessibility #Frontend #Engineering
 ---
+[2026-10-01 03:34:41 UTC]
+record_id=cfeb6301cae03591ff84e6207061bf0c6429148a3cc3cecab659821512002d53
+status=ambiguous
+scheduled_for=2026-10-04 15:15
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I reread a file I wrote in June and I couldn't follow my own logic. Ninety lines, four functions, and one of them did two jobs under one name.
+
+I remember writing it. It felt clean at the time. Every decision had a reason, and the reasons were all in my head, which is the only place they ever lived. Nobody else could see them and I didn't write them down.
+
+Three months later the head is empty. What's left is a function called process that takes a thing and returns a thing. I had to print values into a log to work out what it did. That took forty minutes for code I wrote myself.
+
+The fix was two hours of renaming. handleUpload and notifySlack. Same behavior, no new tests needed, and the next person can read it without me standing there. Naming is most of the work and I keep pretending it isn't.
+
+#AI #BuildInPublic #VibeCoding #tech #CleanCode #Naming #Developer #Software #Engineering #Coding #Programming #Refactoring #CodeReview #DeepTech #Backend #Learning #OpenSource #Maintenance #Engineering #Career
+---
