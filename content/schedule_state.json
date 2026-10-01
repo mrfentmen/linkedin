@@ -15730,6 +15730,213 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-01T12:26:03+00:00",
       "attempts": 2
+    },
+    "d60b6c8464e6473c1848a67606b1dbd6108fc79813ea9d8cb6a406c6a4f1b56a": {
+      "record_id": "d60b6c8464e6473c1848a67606b1dbd6108fc79813ea9d8cb6a406c6a4f1b56a",
+      "status": "scheduled",
+      "content": "I got ghosted after a seven round interview loop and it taught me more about hiring than the interview did. Fourteen hours of my time, five take home exercises, and one message at the end that said they were moving on.\n\nThe part that stung wasn't the no. It was the silence after the last round, which lasted nineteen days. I sent two polite follow ups and got nothing, and then the rejection arrived with no name on it.\n\nI don't think that's malice. It's a process with no owner. Nobody's job was to tell me, so it fell to nobody, and the cost landed entirely on my side of the table.\n\nThe lesson I carry is about my own product. Any step where the answer is silence is a step where a person is stuck. If a system can leave someone waiting nineteen days, that isn't a people problem. It's a missing notification and I can fix that. I keep that number. Nineteen days.\n\n#AI #BuildInPublic #VibeCoding #tech #Hiring #Interviews #Career #Developer #Software #Engineering #JobSearch #Recruiting #DeepTech #ProductDesign #Learning #UX #Communication #Engineering #CareerAdvice #WorkLife",
+      "schedule_time": "2026-10-04 17:15",
+      "error": "",
+      "updated_at": "2026-10-01T20:02:48+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8004bc5a9c61e9a32a301b1b97066c046c3d0c77d97670ed47bc79a0441376e8": {
+      "record_id": "8004bc5a9c61e9a32a301b1b97066c046c3d0c77d97670ed47bc79a0441376e8",
+      "status": "failed",
+      "content": "I took a boring job for two years and it made me a better engineer than any exciting one. Insurance claims. Old code, slow releases, and a system that had been running for nineteen years without a rewrite.\n\nThe code was ugly. It was also correct, which is a combination I had never seen up close. Every weird line had a comment explaining a rule that existed because of an incident in 2009. The comments were the actual documentation of the business.\n\nNothing about that job was impressive in a portfolio sense. Nobody asked about it in interviews. What it gave me was pattern recognition for systems that survive, which is a different skill from building new ones.\n\nI now look for the boring parts of every project on purpose. The jobs nobody wants, the subsystem everyone is afraid of, the deploy script with no owner. That's where the real understanding lives, and understanding is the thing that transfers. I choose it every time.\n\n#AI #BuildInPublic #VibeCoding #tech #Career #Developer #Software #Engineering #LegacyCode #Coding #Programming #DeepTech #Backend #Learning #OpenSource #Maintenance #BestPractices #Engineering #CareerAdvice #SoftwareEngineering",
+      "schedule_time": "2026-10-04 17:30",
+      "error": "LinkedIn's scheduled count is 168, no higher than 168 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T20:02:48+00:00",
+      "attempts": 2
+    },
+    "c9871201c9948c1beb1133503972b86202ed8b9a67b19c8b874bd57ca309f570": {
+      "record_id": "c9871201c9948c1beb1133503972b86202ed8b9a67b19c8b874bd57ca309f570",
+      "status": "scheduled",
+      "content": "I took a boring job for two years and it made me a better engineer than any exciting one. Insurance claims. Old code, slow releases, and a system that had been running for nineteen years without a rewrite.\n\nThe code was ugly. It was also correct, which is a combination I had never seen up close. Every weird line had a comment explaining a rule that existed because of an incident in 2009. The comments were the actual documentation of the business.\n\nNothing about that job was impressive in a portfolio sense. Nobody asked about it in interviews. What it gave me was pattern recognition for systems that survive, which is a different skill from building new ones.\n\nI now look for the boring parts of every project on purpose. The jobs nobody wants, the subsystem everyone is afraid of, the deploy script with no owner. That's where the real understanding lives, and understanding is the thing that transfers. I choose it every time.\n\n#AI #BuildInPublic #VibeCoding #tech #Career #Developer #Software #Engineering #LegacyCode #Coding #Programming #DeepTech #Backend #Learning #OpenSource #Maintenance #BestPractices #Engineering #CareerAdvice #SoftwareEngineering",
+      "schedule_time": "2026-10-05 08:15",
+      "error": "",
+      "updated_at": "2026-10-01T20:10:32+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6243333f279865a9e4ea9f4ab71a6f6ddf8e8d1906c00880e031edff84dfaa6d": {
+      "record_id": "6243333f279865a9e4ea9f4ab71a6f6ddf8e8d1906c00880e031edff84dfaa6d",
+      "status": "scheduled",
+      "content": "A portfolio of four finished small projects beat a resume of forty technologies for me. I got the last two roles because someone opened a working link, not because of a list of frameworks.\n\nThe resume said I knew nine languages. The portfolio showed a small tool that ingests a spreadsheet and prints labels, with the source on my profile and a screenshot of it running. One of those is a claim. The other is a thing.\n\nWhat made the difference was that it did something complete. Not a tutorial clone. Not a demo that only works locally. It had an error state, a README that explained the one strange decision, and it had been used by four people who weren't me.\n\nI would give that advice to anyone starting out. One finished thing beats ten started things, and the finishing is the part that teaches you the tradeoffs. Anyone can begin. Beginning is free.\n\n#AI #BuildInPublic #VibeCoding #tech #Portfolio #Career #Developer #Software #Engineering #Coding #Programming #JobSearch #DeepTech #Learning #OpenSource #Projects #BestPractices #Engineering #CareerAdvice #WebDevelopment",
+      "schedule_time": "2026-10-05 08:30",
+      "error": "",
+      "updated_at": "2026-10-01T20:10:32+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "4b788d9182051b78aca1a35b12bb7881167579bc28434818f8b4c4230d43e167": {
+      "record_id": "4b788d9182051b78aca1a35b12bb7881167579bc28434818f8b4c4230d43e167",
+      "status": "scheduled",
+      "content": "I answered every reply on a post for two weeks and it changed what I write. Sixty four replies, most of them short, and every single one was specific about which sentence landed.\n\nThe replies that helped weren't the praise. They were the corrections. One person said my number came from a press release and not a paper, and they were right, and that one reply was worth more than the other sixty three combined.\n\nThe other thing it fixed was my openings. A comment that says what is this about is a signal that sentence one is decorative. I started cutting first lines and the replies stopped asking that question.\n\nTwo weeks isn't a long experiment and it's longer than most people try. The habit I kept is smaller. I read every comment and I answer the ones that ask a real question, and I write down the corrections. That's it. It's not a growth strategy and it works.\n\n#AI #BuildInPublic #VibeCoding #tech #Community #Writing #Developer #Software #Engineering #Coding #Programming #DeepTech #Learning #Audience #BestPractices #ContentStrategy #Career #Engineering #SocialMedia #Creativity",
+      "schedule_time": "2026-10-05 08:45",
+      "error": "",
+      "updated_at": "2026-10-01T20:10:32+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "059b7aa76fd7fe2af6c336678c64d3c1d24accec468bc1b144777a3fadd7ce9c": {
+      "record_id": "059b7aa76fd7fe2af6c336678c64d3c1d24accec468bc1b144777a3fadd7ce9c",
+      "status": "scheduled",
+      "content": "I ran a seven billion parameter model on my own laptop for a month and it changed which tasks I send to a cloud model. Local handled seventy percent of the work and cost me nothing per token.\n\nThat seventy percent is the boring part of the work. Rewriting a function, explaining an error, turning a paragraph into a commit message, checking a regex against eight test strings. Small tasks with a clear right answer and no need for the newest model.\n\nThat last thirty percent is where the money goes. Anything that needs a large context, current information or a difficult judgment call goes to a hosted model. Those are the calls I want to spend on, and before the local setup I was spending on both.\n\nI saved about forty dollars a month from that split. That isn't the point. Latency went to zero for the common case and I stopped self censoring small questions. That's the part that changed my output. It paid for itself. I check the split every month.\n\n#AI #BuildInPublic #VibeCoding #tech #LocalAI #LLM #Developer #Software #Engineering #Coding #Programming #DeepTech #OpenSource #SelfHosted #Learning #AI #Privacy #Performance #Infrastructure #Engineering",
+      "schedule_time": "2026-10-05 09:00",
+      "error": "",
+      "updated_at": "2026-10-01T20:10:32+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "dc8a44a4c1937816a525742a742335619ef1c7723eb19be355709969784bc03f": {
+      "record_id": "dc8a44a4c1937816a525742a742335619ef1c7723eb19be355709969784bc03f",
+      "status": "scheduled",
+      "content": "My first evaluation was four questions and a score out of five. It took two weeks to discover it was ranking my prompts by length and not by quality.\n\nI wrote the questions myself. Every question rewarded the behavior I already liked, so the winner was always the prompt that sounded most like me. That isn't an evaluation. That's a mirror.\n\nWhat fixed it was a set of twenty examples with known good answers, written before I generated anything. I scored the output against the answers and stopped asking how it felt. Results changed on the first run and the change was uncomfortable.\n\nI watch one number now. Agreement between two people scoring the same output. When it drops below about seventy percent, the rubric is broken, not the model. Most of my evaluation problems were rubric problems and it took me a year to notice. I check that number before I trust any score.\n\n#AI #BuildInPublic #VibeCoding #tech #Evaluation #LLM #Developer #Software #Engineering #Testing #Coding #AI #DeepTech #QualityAssurance #Learning #BestPractices #MachineLearning #Metrics #Engineering #DataScience",
+      "schedule_time": "2026-10-05 09:15",
+      "error": "",
+      "updated_at": "2026-10-01T20:10:32+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7c97cc127b559944dd40420100c0f32fe2d13ea068b7c115fb0ae6624d8b061f": {
+      "record_id": "7c97cc127b559944dd40420100c0f32fe2d13ea068b7c115fb0ae6624d8b061f",
+      "status": "scheduled",
+      "content": "I remember two comments from eleven years of code review. Both were two lines long. One said this function does two things and the other said who calls this.\n\nBoth were asking a question instead of making a demand, and both took me somewhere I hadn't looked. Essays got skimmed. Questions got answered, and answering them is how I learned.\n\nBad reviews were the right and unfriendly kind. I once got a paragraph about a naming choice and my main memory of that review is being annoyed, which means the reviewer spent ten minutes and taught me nothing. Rude feedback is expensive feedback.\n\nSo I write short now and I ask. What happens if this is null. Who reads this field. Where does this get retried. Four words, one direction, and it works on people who are tired, which is everyone who is reviewing anything on a Thursday. I keep it to two lines.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #Communication #Learning #OpenSource #BestPractices #Collaboration #Engineering #Career",
+      "schedule_time": "2026-10-05 09:30",
+      "error": "",
+      "updated_at": "2026-10-01T20:15:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "9e69332b18b387d464babcd8cf10c65518825f13bbe7cc0ded5b9339d43cd680": {
+      "record_id": "9e69332b18b387d464babcd8cf10c65518825f13bbe7cc0ded5b9339d43cd680",
+      "status": "scheduled",
+      "content": "Tango Gameworks shipped a game people loved and the studio closed anyway. That's the sentence I use whenever someone argues that quality protects a team.\n\nIt doesn't. The game was well reviewed and the studio was shut, and the reporting pointed at the model and the subscription economics rather than the content. A good game in the wrong shape is still a bad business, and the team that made it paid for a decision they didn't make.\n\nI keep that in mind when I hear the argument that good work speaks for itself. Work doesn't speak. Someone has to carry it to a room and explain what it costs and what it returns, and if nobody does that, quality is a private matter.\n\nWhich is why I write things down now. The changelog, the decision, the reason. Half of surviving is being legible to the person deciding, and legible is a skill I can practice. I watched it happen once. I wrote it down. The notes are longer than the announcement was.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #Career #Developer #Software #Engineering #Quality #Coding #DeepTech #StudioManagement #Learning #ProductManagement #Gaming #Strategy #Engineering #WorkLife",
+      "schedule_time": "2026-10-05 09:45",
+      "error": "",
+      "updated_at": "2026-10-01T20:15:16+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "baebb58e412f7b557f22bfa6e7599853ea0603d0e1ddeb275b7ac0fb720ec37a": {
+      "record_id": "baebb58e412f7b557f22bfa6e7599853ea0603d0e1ddeb275b7ac0fb720ec37a",
+      "status": "failed",
+      "content": "My whole thesis fits in one sentence. The tool isn't the problem, the motive is. I have watched it hold up across games, film and AI for three years and it hasn't failed me yet.\n\nA studio optimises for internal approval instead of the customer. The tooling is fine, the talent is fine, the roadmap is approved. The failure is that every decision was measured by how it looked in a room rather than how it felt to a player.\n\nAn AI model writes the same function whether the team wants it to be good or wants to close a ticket. Same tool. Different motive. Different codebase six months later.\n\nThat's why I stopped arguing about tools. Banning a model doesn't fix a team that points its incentives inward, and a careful team with a weak model still ships something worth using. Judge the motive and the tool argument mostly disappears. I test it on every argument I have. I haven't lost yet.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #GamesIndustry #GameDev #Developer #Software #Engineering #ProductManagement #Coding #DeepTech #Strategy #Learning #Leadership #Culture #BestPractices #Engineering #FutureOfWork",
+      "schedule_time": "2026-10-05 10:00",
+      "error": "LinkedIn's scheduled count is 175, no higher than 175 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T20:15:16+00:00",
+      "attempts": 2
+    },
+    "7955c3633ca51ae08324af82df54c866f6a08da840af140b1ac30f8d87fa85e6": {
+      "record_id": "7955c3633ca51ae08324af82df54c866f6a08da840af140b1ac30f8d87fa85e6",
+      "status": "scheduled",
+      "content": "My whole thesis fits in one sentence. The tool isn't the problem, the motive is. I have watched it hold up across games, film and AI for three years and it hasn't failed me yet.\n\nA studio optimises for internal approval instead of the customer. The tooling is fine, the talent is fine, the roadmap is approved. The failure is that every decision was measured by how it looked in a room rather than how it felt to a player.\n\nAn AI model writes the same function whether the team wants it to be good or wants to close a ticket. Same tool. Different motive. Different codebase six months later.\n\nThat's why I stopped arguing about tools. Banning a model doesn't fix a team that points its incentives inward, and a careful team with a weak model still ships something worth using. Judge the motive and the tool argument mostly disappears. I test it on every argument I have. I haven't lost yet.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #GamesIndustry #GameDev #Developer #Software #Engineering #ProductManagement #Coding #DeepTech #Strategy #Learning #Leadership #Culture #BestPractices #Engineering #FutureOfWork",
+      "schedule_time": "2026-10-05 10:45",
+      "error": "",
+      "updated_at": "2026-10-01T20:23:00+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "74d50a048cddc1733f1360c4ec890fa08c17fe2578306c2c9d8668522cec6c5d": {
+      "record_id": "74d50a048cddc1733f1360c4ec890fa08c17fe2578306c2c9d8668522cec6c5d",
+      "status": "scheduled",
+      "content": "Oblivion Remastered replaced Male and Female with Body Type 1 and Body Type 2, and modders confirmed it also removed several female armor variants. Nexus pulled a mod restoring the old option and then reinstated it, and it's now the most endorsed mod for that game.\n\nThe interesting part isn't the change. It's that the loudest argument was about a menu label and the quiet argument was about the actual armor. One of those is a design choice and the other is content being deleted, and the discourse rolled them into one fight.\n\nI have a rule for this at work. If a change removes something people paid attention to, say so in the notes and say why. A label change is cheap to explain. A removal that shows up in a modding community as a surprise is expensive, and hiding it costs trust that's hard to buy back.\n\nTaste is allowed here. Liking the old version is a preference. But a preference argument can't answer a question about where the content went, and that question always wins. I have made that call badly myself. I left a removal out of the notes once.\n\n#AI #BuildInPublic #VibeCoding #tech #GameDev #Games #Modding #Oblivion #GameDesign #Developer #Software #Engineering #Community #DeepTech #GamesIndustry #Gaming #Learning #Design #Trust #Accessibility",
+      "schedule_time": "2026-10-05 11:00",
+      "error": "",
+      "updated_at": "2026-10-01T20:23:00+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d646795fd3857cf85101aeb3e151fe860dcb5deae80df7ff9d5ce34a119803db": {
+      "record_id": "d646795fd3857cf85101aeb3e151fe860dcb5deae80df7ff9d5ce34a119803db",
+      "status": "scheduled",
+      "content": "I was wrong about a caching decision in public and the correction was the most useful thing I did that quarter. I had written that a cache layer would halve our page time. It cut eleven percent and cost two days.\n\nThe person who corrected me did it politely and with numbers from their own service. I quoted it, said I was wrong, and wrote the eleven percent into the changelog along with why the estimate was off. My estimate assumed the database was the bottleneck. It was the network.\n\nTwo things happened after that. Nobody treated the error as a bigger deal than it was, and four people sent me their own numbers from systems I had never seen. Being wrong in public is how you find the people who know more than you.\n\nThe habit I keep is smaller than it sounds. When I write a number I write where it came from. When it turns out wrong, I edit the post instead of deleting it, because deleting an error teaches nobody anything. It's the honest version. I was wrong and I said so.\n\n#AI #BuildInPublic #VibeCoding #tech #Performance #Caching #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Learning #Engineering #Humility #BestPractices #OpenSource #Career #Writing",
+      "schedule_time": "2026-10-05 11:15",
+      "error": "",
+      "updated_at": "2026-10-01T20:23:00+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "567a991fdc131a13be4d0e29629c93de488fccc9b9bcd4ee7cf3113329dd25e3": {
+      "record_id": "567a991fdc131a13be4d0e29629c93de488fccc9b9bcd4ee7cf3113329dd25e3",
+      "status": "scheduled",
+      "content": "I shipped something small every Friday for a quarter and it beat every big project I tried that year. Thirteen Fridays, thirteen deploys, and eleven of them actually improved a number.\n\nThe small ones were unglamorous. A retry on a failed job. A better empty state. Deleting a query that ran twice per page load. None of those needed a planning meeting and none of them took more than a day.\n\nThe habit did something I didn't expect. It removed the fear. When a deploy is routine, I stop spending three days arguing about a change that should take an hour, because the downside of a bad Friday is that I revert on Monday.\n\nThe constraint is the part that matters. A weekly deadline forced me to pick the smallest version of each idea, and the smallest version is almost always the one that should ship first anyway. Big plans are a hedge against doing anything. I kept the streak going. I haven't missed a Friday since.\n\n#AI #BuildInPublic #VibeCoding #tech #Shipping #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #ProductManagement #Learning #OpenSource #BestPractices #Deployment #Startup #Engineering #Workflow",
+      "schedule_time": "2026-10-05 11:30",
+      "error": "",
+      "updated_at": "2026-10-01T20:23:00+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "569cc4986a92ab7c86df7d8346097d5d0cfee5aa544d99e5cc4709fdb9493690": {
+      "record_id": "569cc4986a92ab7c86df7d8346097d5d0cfee5aa544d99e5cc4709fdb9493690",
+      "status": "scheduled",
+      "content": "I moved my configuration into code and deleted four hundred lines of environment handling. One file, typed, checked at startup, and it fails loudly instead of at three in the morning.\n\nThe old version had forty two variables spread across three deployment systems. Nobody could name all of them. Two were documented in a wiki, four were only in a colleague's terminal history, and one was set in production and nowhere else.\n\nThe replacement is about ninety lines. It reads the environment once, validates every value, and refuses to start if something required is missing. That last part is the whole benefit. A bad deploy now fails in eleven seconds with a sentence, not in nine hours with a stack trace.\n\nThere is a cost. Every new setting is a code change and a review. I will take that trade every time. A setting nobody reviewed is a setting nobody understands, and I have spent enough nights on those.\n\n#AI #BuildInPublic #VibeCoding #tech #Configuration #DevOps #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Infrastructure #Learning #OpenSource #BestPractices #TypeSafety #Engineering #SRE",
+      "schedule_time": "2026-10-05 11:45",
+      "error": "",
+      "updated_at": "2026-10-01T20:23:00+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "db7d689cc17fe0a2197334cca9b938874aa7c4f7eb66296b96938e68fa25f8df": {
+      "record_id": "db7d689cc17fe0a2197334cca9b938874aa7c4f7eb66296b96938e68fa25f8df",
+      "status": "scheduled",
+      "content": "I stopped guessing at my own metrics and wrote one query that answered three questions. Median response time, worst ten percent, and how many requests took over two seconds. Four lines of SQL.\n\nThe dashboard had nineteen panels and I couldn't tell you which one mattered. Nobody looked at it. The one query told me that eight percent of requests were slow and that they came from a single endpoint with a missing index. That's a Tuesday afternoon fix.\n\nAdding one index took the slow share from eight percent to under one. I would never have found it in the chart of average response time, because the average was fine. Averages are how a bad tail hides.\n\nNow I look at two numbers before anything else. The ninety fifth percentile and the count of requests over my own threshold. If both are quiet, I go do something else, and that's most days.\n\n#AI #BuildInPublic #VibeCoding #tech #Performance #Observability #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Database #Metrics #Learning #OpenSource #SRE #Analytics #Engineering",
+      "schedule_time": "2026-10-05 12:00",
+      "error": "",
+      "updated_at": "2026-10-01T20:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "48876120436ecbd36000d5665b2302c66177270a5de7fa8a6053c713bb5aacb1": {
+      "record_id": "48876120436ecbd36000d5665b2302c66177270a5de7fa8a6053c713bb5aacb1",
+      "status": "scheduled",
+      "content": "A teammate asked me why a line existed and I couldn't answer. That single question removed nine lines and a scheduled job.\n\nThe line was a workaround someone added for a bug that had been fixed in a library upgrade two years earlier. Nobody removed it because nobody could prove it was safe to remove. So it sat there, waking up every night and doing nothing.\n\nI have started asking that question on purpose in reviews. Why does this line exist. If the answer is a name and a date, a comment can carry it. If the answer is nobody knows, it's a candidate for deletion and a test.\n\nThe uncomfortable version of this is that most of a mature codebase is unverified belief. Every one of those beliefs costs a little attention forever. The cheap move is to write down the reason when you write the line, and the expensive move is what happens when you don't. I ask it every week. It works. Every single time. I have deleted a lot since then.\n\n#AI #BuildInPublic #VibeCoding #tech #CleanCode #CodeReview #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #Maintenance #Learning #OpenSource #BestPractices #Engineering #LegacyCode",
+      "schedule_time": "2026-10-05 12:15",
+      "error": "",
+      "updated_at": "2026-10-01T20:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c25b428a9f6e26e6306690ccf07d04790b5b89451de8a69c5fb10c50ad84afef": {
+      "record_id": "c25b428a9f6e26e6306690ccf07d04790b5b89451de8a69c5fb10c50ad84afef",
+      "status": "scheduled",
+      "content": "I set a rule that every bug fix gets a test and it survived eleven months of my own laziness. Two of those tests have since caught the same bug coming back.\n\nI will be honest about the failure rate. I skipped the rule maybe six times, and each skip was a hurry, and one of those skips is still an open bug today. The rule didn't make me consistent. It made the exceptions visible.\n\nThe tests I keep are short. Recreate the report with three lines, assert the bad answer, then fix. A failing test is the only proof I have that I understood the report in the first place, and understanding the report was the hard part all along.\n\nEleven months is long enough to know it works. The count of regressions on that service went from four in one quarter to zero, and the suite takes about nine seconds. Nine seconds for a quarter of no repeat bugs is a trade I would make again. I keep it simple. It works.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #Regression #Developer #Software #Engineering #Coding #Programming #Debugging #DeepTech #Backend #QualityAssurance #Learning #OpenSource #BestPractices #Discipline #Engineering",
+      "schedule_time": "2026-10-05 12:30",
+      "error": "",
+      "updated_at": "2026-10-01T20:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f8e26132766b535f641c6803c735ca93013df4e098dac528749e865ff5721ee0": {
+      "record_id": "f8e26132766b535f641c6803c735ca93013df4e098dac528749e865ff5721ee0",
+      "status": "scheduled",
+      "content": "I opened a log file from a service I hadn't touched in eight months and read it like a stranger would. Ninety lines, timestamps, and one error repeated forty times.\n\nI wrote that service. I remember the shape of it and nothing else. The log told me the retry I added in March fires nine times per failure, which means one bad request costs ten attempts against a provider that was saying no.\n\nI fixed it in eleven minutes. Backoff with a ceiling, and a cap at four attempts. The error rate dropped the same hour because the provider stopped rate limiting us. I caught it on the first run.\n\nI keep one habit from this. Once a month I open the logs of something I own and read them like a support ticket from a stranger. My code never lies to me. It waits until I stop looking. Silence isn't health.\n\n#AI #BuildInPublic #VibeCoding #tech #Debugging #Logging #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Observability #Learning #OpenSource #Reliability #BestPractices #Engineering #SRE",
+      "schedule_time": "2026-10-05 12:45",
+      "error": "",
+      "updated_at": "2026-10-01T20:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "a8bce62d417c0194cb8f29093a806745b19235b2a9162e31f27319c485205628": {
+      "record_id": "a8bce62d417c0194cb8f29093a806745b19235b2a9162e31f27319c485205628",
+      "status": "scheduled",
+      "content": "I renamed a module and the diff touched eighty three files. Most of them were one line. Nineteen of them weren't.\n\nI planned it for a week before I started. Branch first, then the rename in one commit, then the nineteen files in smaller ones I could review alone. The order matters more than the speed and I keep relearning that on every migration.\n\nI broke it twice. One import order issue and one test that imported a private function by name. Both were fixed in under an hour because the commits were small enough to bisect.\n\nEighty three files sounds like a disaster. It was eleven hours and no incidents. I used to think big changes needed big courage. Now I think they need a small commit history and a morning where nobody is waiting on me. That's the whole trick. I bisected it twice. Both times the culprit was the same import line.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Git #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #CodeReview #Learning #OpenSource #BestPractices #Migration #Engineering #DevOps",
+      "schedule_time": "2026-10-05 13:00",
+      "error": "",
+      "updated_at": "2026-10-01T20:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "79778def185cee555ca54c0b5881b71270d53959100606ef82d196406f743fdd": {
+      "record_id": "79778def185cee555ca54c0b5881b71270d53959100606ef82d196406f743fdd",
+      "status": "failed",
+      "content": "I took the on call shift nobody wanted for a quarter and it taught me more than the previous two years. Eleven pages, four real incidents, and one outage that was entirely my fault.\n\nA pager is honest in a way no dashboard is. When it goes off at three in the morning the question isn't whether the system is elegant. What matters is whether I can find the one runbook that tells me what to do.\n\nSo I rewrote three runbooks during those months. Each one starts with the symptom in plain words, then the first command, then what the output means. No context, no architecture, no reading. A tired person needs steps.\n\nI didn't expect how much it changed my normal work. Writing a runbook forces me to admit which parts of a system I don't understand, and that list was longer than I wanted it to be. I still read them. Three pages. That's the whole difference at four in the morning.\n\n#AI #BuildInPublic #VibeCoding #tech #OnCall #SRE #Developer #Software #Engineering #Coding #Backend #DeepTech #Runbook #Learning #OpenSource #Reliability #BestPractices #IncidentResponse #Engineering #DevOps",
+      "schedule_time": "2026-10-05 13:15",
+      "error": "LinkedIn's scheduled count is 184, no higher than 184 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-01T20:31:50+00:00",
+      "attempts": 2
     }
   }
 }
