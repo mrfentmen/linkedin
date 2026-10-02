@@ -15937,6 +15937,116 @@
       "error": "LinkedIn's scheduled count is 184, no higher than 184 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-01T20:31:50+00:00",
       "attempts": 2
+    },
+    "8a623f9eb9705f68d8ce2cb35428829a4245d5e03f73ca313b916d40dafa35c3": {
+      "record_id": "8a623f9eb9705f68d8ce2cb35428829a4245d5e03f73ca313b916d40dafa35c3",
+      "status": "scheduled",
+      "content": "I took the on call shift nobody wanted for a quarter and it taught me more than the previous two years. Eleven pages, four real incidents, and one outage that was entirely my fault.\n\nA pager is honest in a way no dashboard is. When it goes off at three in the morning the question isn't whether the system is elegant. What matters is whether I can find the one runbook that tells me what to do.\n\nSo I rewrote three runbooks during those months. Each one starts with the symptom in plain words, then the first command, then what the output means. No context, no architecture, no reading. A tired person needs steps.\n\nI didn't expect how much it changed my normal work. Writing a runbook forces me to admit which parts of a system I don't understand, and that list was longer than I wanted it to be. I still read them. Three pages. That's the whole difference at four in the morning.\n\n#AI #BuildInPublic #VibeCoding #tech #OnCall #SRE #Developer #Software #Engineering #Coding #Backend #DeepTech #Runbook #Learning #OpenSource #Reliability #BestPractices #IncidentResponse #Engineering #DevOps",
+      "schedule_time": "2026-10-04 17:30",
+      "error": "",
+      "updated_at": "2026-10-02T00:29:35+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "48b03986a8ffe49cc1d28980e13f98a54cb029901f41ccefc9653848d4364ac7": {
+      "record_id": "48b03986a8ffe49cc1d28980e13f98a54cb029901f41ccefc9653848d4364ac7",
+      "status": "scheduled",
+      "content": "A query that ran in forty milliseconds for two years started taking four seconds on a Tuesday. Nine hundred million rows and one column that had grown to sixty percent of the table.\n\nNobody changed the query. The data changed. That's the kind of bug that never shows up in a code review, because no line of code is wrong. My plan was fine when the column was small.\n\nI added an index and it went back to fifty milliseconds. Then I wrote a test that inserts a hundred thousand rows and asserts the plan uses the index, so the next person gets an alarm instead of a support ticket.\n\nThat test caught a regression eleven weeks later when someone dropped the index during a cleanup. I would never have noticed from the query text. The number moved and the code looked identical. That's the failure mode I stop trusting my eyes for. I check the plan now. Every time. It takes a minute.\n\n#AI #BuildInPublic #VibeCoding #tech #Performance #Database #Developer #Software #Engineering #SQL #Coding #Backend #DeepTech #Indexing #Learning #OpenSource #Observability #Engineering #SRE #DataEngineering",
+      "schedule_time": "2026-10-04 17:45",
+      "error": "",
+      "updated_at": "2026-10-02T00:29:35+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "e1da38878c8bbcc059cfcd94d163ff6c7a01e3da99bffcb783cb005e536f2a31": {
+      "record_id": "e1da38878c8bbcc059cfcd94d163ff6c7a01e3da99bffcb783cb005e536f2a31",
+      "status": "scheduled",
+      "content": "I built a small tool for myself and eleven people asked for it in three weeks. Four hundred lines, one file, and a command that turns a folder of screenshots into a contact sheet.\n\nI wrote it because I was tired of doing the same eight clicks forty times a week. It took one evening. It has saved me about nine hours a month since then, which means it paid for itself in the first fortnight.\n\nWhat surprised me is that nobody wanted the version I wanted to build. I had a plan for settings, presets, a config file and a plugin system. Every request I actually got was for the same two things. A different output size and a way to skip a file.\n\nSo I shipped those two and stopped. The tool is uglier than my plan and it gets used every day, which is the trade I would make again. The features I didn't build are the reason it still works a year later. It works. Nobody asked for the rest. I deleted the plan.\n\n#AI #BuildInPublic #VibeCoding #tech #DevTools #Developer #Software #Engineering #Coding #Programming #SideProject #DeepTech #Automation #Learning #OpenSource #Simplicity #ProductManagement #Engineering #BuildInPublic #Workflow",
+      "schedule_time": "2026-10-04 19:00",
+      "error": "",
+      "updated_at": "2026-10-02T00:29:35+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "03ac2382cd0c471c67eac90107b7e4ab532c55ba25a3cd5eb859a083065d889e": {
+      "record_id": "03ac2382cd0c471c67eac90107b7e4ab532c55ba25a3cd5eb859a083065d889e",
+      "status": "scheduled",
+      "content": "I estimated a job at three days and it took nine. My estimate wasn't a lie and it wasn't close. I spent a while working out why.\n\nEvery part I could see was three days of work. What I couldn't see was the migration, two undocumented callers, and a deploy window that opens on Thursdays only. Three days of known work plus six days of discovering work.\n\nI have started writing two numbers now. One number for the parts I can name. A separate line for the rest, set at about half the first number. On this job that would have been four and a half days. Still wrong. Closer.\n\nHere is the honest version. I'm not bad at estimating known work. I'm bad at noticing how much I don't know, and that's a different skill. Saying the range out loud is what makes the second number visible to everyone else. I write both down now. It helps.\n\n#AI #BuildInPublic #VibeCoding #tech #Estimation #Developer #Software #Engineering #Coding #Programming #ProductManagement #DeepTech #Backend #Learning #OpenSource #BestPractices #Planning #Engineering #Career #Projects",
+      "schedule_time": "2026-10-05 08:00",
+      "error": "",
+      "updated_at": "2026-10-02T00:29:35+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d4a2b1385422969ce72dd4ad66cd29034dcc4820c01bb876eea61063284bc530": {
+      "record_id": "d4a2b1385422969ce72dd4ad66cd29034dcc4820c01bb876eea61063284bc530",
+      "status": "scheduled",
+      "content": "A polite feature request came in and turning it down was the most useful thing I did that month. The request was reasonable, the person was kind about it, and the answer was still no.\n\nI didn't say no to the idea. I said no to the version they described, because it needed a new table, a new job and a new screen for four users. Then I offered the small version. A button that emails them the list.\n\nThat shipped in forty minutes and it was enough. They used it twice and stopped, which is what would have happened either way. The difference is that the small version cost an afternoon and the big one would have cost two weeks.\n\nThe line I use now is simple. I will always do the small version first, and if it's not enough I will do the rest with real evidence. Most requests die at that first step, and the ones that survive deserve the build. Four users wanted it. I gave them an afternoon. That's the whole method.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Prioritization #Learning #OpenSource #Simplicity #Startup #Engineering #UX #BestPractices",
+      "schedule_time": "2026-10-05 10:00",
+      "error": "",
+      "updated_at": "2026-10-02T00:29:35+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "45d19cada22674cb840ab2df40cc1c297262d8081a8b4a8d0d276b84d60c4439": {
+      "record_id": "45d19cada22674cb840ab2df40cc1c297262d8081a8b4a8d0d276b84d60c4439",
+      "status": "scheduled",
+      "content": "I wrote a README for a project nobody else uses and it doubled how fast I move in it. Four hundred words of what it's for, how to run it, and the two decisions that aren't obvious.\n\nThat part is the whole point. Anyone can read the code and learn what it does. Nobody can read the code and learn that the retry exists because a provider lied about accepting a message in 2024.\n\nI have started writing the README before the code on anything that will outlive the week. It's nine times out of ten a page of decisions, and writing them down catches the ones I haven't actually made yet.\n\nIt costs about twenty minutes. Future me can open the project after a month away and know where to start. That used to take an hour of reading and a lot of muttering. I write it first now. Twenty minutes. The hour comes back.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #README #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Learning #OpenSource #BestPractices #Maintenance #Engineering #Writing #Career",
+      "schedule_time": "2026-10-05 10:15",
+      "error": "",
+      "updated_at": "2026-10-02T00:37:20+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "60aee28e53b911e8c82ea24a9c275cb466e51e09f43ad9ef15ebfe8f127532ec": {
+      "record_id": "60aee28e53b911e8c82ea24a9c275cb466e51e09f43ad9ef15ebfe8f127532ec",
+      "status": "scheduled",
+      "content": "I deleted a database table that nothing appeared to use and found out three days later what used it. A nightly report, run by a person who had left the company, on a machine we didn't monitor.\n\nMy code search showed zero references. That's the trap. That reference lived in a scheduled job on a laptop in a spreadsheet macro, and no amount of reading the repository would have found it.\n\nWhat saved me was a backup. I had dumped the table to a file first because I was nervous, and restoring one table took nine minutes. The lesson isn't that I should have searched harder. I should have been nervous enough to keep the backup. I almost wasn't.\n\nI now keep two rules for deletions. Dump first, always, even for something obviously dead. And rename before you drop, so the failure happens while the data still exists. Two rules. Both cheap. I follow them every time.\n\n#AI #BuildInPublic #VibeCoding #tech #Database #Backups #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Migration #Learning #OpenSource #BestPractices #Reliability #Engineering #DataEngineering",
+      "schedule_time": "2026-10-05 10:30",
+      "error": "",
+      "updated_at": "2026-10-02T00:37:20+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "1766b5739dca00f025e46b99bc34716a636882ae706d3067294eb669400c5d7f": {
+      "record_id": "1766b5739dca00f025e46b99bc34716a636882ae706d3067294eb669400c5d7f",
+      "status": "scheduled",
+      "content": "I paired with someone for two hours and we shipped nothing. We deleted code, argued about a name and rewrote a function three times. It was the best two hours of my week.\n\nOutput looked like zero. The deliverable was a decision. The function we landed on is about thirty percent shorter with one branch instead of four. I had to explain each branch out loud to a person who kept asking why.\n\nI don't pair every day and I wouldn't want to. It's expensive and it's draining and it's worth it about once a week on the thing that has been stuck.\n\nI look for a problem I have rewritten twice alone. At that point I'm not solving it. I'm rehearsing my own assumption, and one question from another person is the cheapest way out. That's the signal. Two rewrites. Then I ask for help. It costs me one hour.\n\n#AI #BuildInPublic #VibeCoding #tech #PairProgramming #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #CodeReview #Learning #OpenSource #Collaboration #BestPractices #Engineering #Communication",
+      "schedule_time": "2026-10-05 13:15",
+      "error": "",
+      "updated_at": "2026-10-02T00:37:20+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f817bba9b772d3eaa5b7a3aaffc10c380da61c28eba0ef107ddda428f54e3520": {
+      "record_id": "f817bba9b772d3eaa5b7a3aaffc10c380da61c28eba0ef107ddda428f54e3520",
+      "status": "scheduled",
+      "content": "A junior asked me nine questions in one afternoon and I learned more than they did. Every question was some version of why does it work this way, and I could answer about half of them.\n\nThe half I couldn't answer were the interesting ones. Why is this field nullable. Why is this job scheduled at four in the morning. Why does this endpoint return an empty list instead of an error. I had shipped all three and never asked.\n\nSo we wrote the answers down as we found them. Four of the nine needed a code change to make the behavior honest. Two were just undocumented. Three turned out to be bugs nobody had hit yet.\n\nI look for junior people to work with now, and not for the reasons people usually give. They ask the questions I stopped asking years ago, and a lot of those questions still have no good answer, which means there is still work to do. I keep the list. Four items. All of them fixed.\n\n#AI #BuildInPublic #VibeCoding #tech #Mentorship #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #Learning #OpenSource #CodeReview #Career #BestPractices #Engineering #Culture",
+      "schedule_time": "2026-10-05 13:30",
+      "error": "",
+      "updated_at": "2026-10-02T00:37:20+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "6e73f641032481c5fd3ac0ca8eece6218250c7852623cafce7b45c602950ea3e": {
+      "record_id": "6e73f641032481c5fd3ac0ca8eece6218250c7852623cafce7b45c602950ea3e",
+      "status": "scheduled",
+      "content": "I turned my coding agent off for a week to find out what I actually knew. Eleven hundred lines against my usual two thousand. Two bugs, both caught in review. One of them was a real design mistake.\n\nThe first two days were slow and annoying. I had forgotten how much time I spent looking things up, and the lookup time is a tax I hadn't noticed paying. Day three the rhythm came back.\n\nThe useful part was at the end. I went back through what I had written without help and it was more deliberate. Fewer files, fewer abstractions, more comments that explain a decision instead of restating a line.\n\nI turned the agent back on. I also started running one week in four with it off, because the week showed me which parts of the work I had outsourced and stopped thinking about. Two of those parts mattered.\n\n#AI #BuildInPublic #VibeCoding #tech #AI #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Learning #OpenSource #BestPractices #Craft #Engineering #Career #DeveloperExperience #Productivity",
+      "schedule_time": "2026-10-05 13:45",
+      "error": "",
+      "updated_at": "2026-10-02T00:37:20+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "bf02b0fc76dcab6e7e5f157e95f17c63bbebd9ebfef973a6daaf0812addae87f": {
+      "record_id": "bf02b0fc76dcab6e7e5f157e95f17c63bbebd9ebfef973a6daaf0812addae87f",
+      "status": "ambiguous",
+      "content": "I read four thousand lines of someone else's code before touching it and it saved me a week of guessing. Two evenings, a notebook, and one diagram of how a request moves.\n\nThat code wasn't the problem. It was written by people solving a problem I half understood, and every strange choice had a reason that was invisible from the outside. A caching layer looked stupid until I found the case that made it necessary.\n\nI stole one habit from this. Write down the questions before writing anything. What starts the work. What can fail. Who waits on the answer. Six questions, and if I can't answer four of them the reading continues.\n\nReading first feels like doing nothing, which is why I skipped it for eleven years. My weeks are shorter now and I complain less, and those two things are related. I read the code first now. It works.\n\n#AI #BuildInPublic #VibeCoding #tech #LegacyCode #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #CodeReview #Learning #OpenSource #BestPractices #Maintenance #Engineering #Architecture #Career",
+      "schedule_time": "2026-10-05 14:00",
+      "error": "could not read LinkedIn's scheduled count, so the schedule is unconfirmed",
+      "updated_at": "2026-10-02T00:38:58+00:00",
+      "attempts": 2,
+      "finalized": true
     }
   }
 }

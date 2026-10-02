@@ -411,3 +411,18 @@ The fix was two hours of renaming. handleUpload and notifySlack. Same behavior, 
 
 #AI #BuildInPublic #VibeCoding #tech #CleanCode #Naming #Developer #Software #Engineering #Coding #Programming #Refactoring #CodeReview #DeepTech #Backend #Learning #OpenSource #Maintenance #Engineering #Career
 ---
+[2026-10-02 00:38:58 UTC]
+record_id=bf02b0fc76dcab6e7e5f157e95f17c63bbebd9ebfef973a6daaf0812addae87f
+status=ambiguous
+scheduled_for=2026-10-05 14:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I read four thousand lines of someone else's code before touching it and it saved me a week of guessing. Two evenings, a notebook, and one diagram of how a request moves.
+
+That code wasn't the problem. It was written by people solving a problem I half understood, and every strange choice had a reason that was invisible from the outside. A caching layer looked stupid until I found the case that made it necessary.
+
+I stole one habit from this. Write down the questions before writing anything. What starts the work. What can fail. Who waits on the answer. Six questions, and if I can't answer four of them the reading continues.
+
+Reading first feels like doing nothing, which is why I skipped it for eleven years. My weeks are shorter now and I complain less, and those two things are related. I read the code first now. It works.
+
+#AI #BuildInPublic #VibeCoding #tech #LegacyCode #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #CodeReview #Learning #OpenSource #BestPractices #Maintenance #Engineering #Architecture #Career
+---
