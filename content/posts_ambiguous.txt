@@ -426,3 +426,33 @@ Reading first feels like doing nothing, which is why I skipped it for eleven yea
 
 #AI #BuildInPublic #VibeCoding #tech #LegacyCode #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #CodeReview #Learning #OpenSource #BestPractices #Maintenance #Engineering #Architecture #Career
 ---
+[2026-10-02 09:23:03 UTC]
+record_id=1e5bff6796caa67c8600815016c87d7474ed24cce616d0d721013557d3433069
+status=ambiguous
+scheduled_for=2026-10-05 16:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I have a nine month gap on my resume and it has cost me exactly one interview. One. In four years of applying.
+
+The gap was real. I took time off after a layoff and did contract work that I can't show, which is the part that worried me. It turns out nobody asked about the gap because nobody got to that part of the conversation.
+
+What they asked about was the contract work. I had rewritten the entry to describe the systems rather than the clients, so it read as engineering instead of a gap with paperwork. Same facts, better frame.
+
+The lesson is smaller than the industry makes it sound. A gap is a timeline fact and a portfolio is an ability fact, and people hire on the second one. I stopped apologizing for the calendar and started describing what I built, and the questions changed. Nine months off. Four years of applying. One question about it.
+
+#AI #BuildInPublic #VibeCoding #tech #Career #JobSearch #Developer #Software #Engineering #Resume #Coding #DeepTech #Learning #OpenSource #BestPractices #Engineering #TechLayoffs #WorkLife #Interviews #Portfolio
+---
+[2026-10-02 09:32:22 UTC]
+record_id=77db656f55e10bb1bc7c02bc345e9adbe6a18615dc38e3857f16eaf02f3b20d3
+status=ambiguous
+scheduled_for=2026-10-05 18:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I added a config flag nobody turned on and I kept it for a year. One line, a branch, and a test, doing nothing in production since last September.
+
+I checked the usage. Zero. Not a low number. Zero, across four environments, nineteen months of deploys. The flag existed because I had a theory about a customer who never asked for it.
+
+Deleting it took nine minutes. Branch gone, test gone, and the module got one level shallower. That shallow part matters more than the line count. Every branch is a place the next reader has to hold two worlds in their head.
+
+My rule now is simple. A flag ships behind a date and an owner, and if nobody asks for it by that date, it goes. I put the date in the changelog where I will see it. Not in a ticket nobody reads. That's the rule. One date. One name.
+
+#AI #BuildInPublic #VibeCoding #tech #FeatureFlags #CleanCode #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #Maintenance #Learning #OpenSource #BestPractices #Engineering #DevOps
+---

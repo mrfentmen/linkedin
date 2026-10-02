@@ -16047,6 +16047,146 @@
       "updated_at": "2026-10-02T00:38:58+00:00",
       "attempts": 2,
       "finalized": true
+    },
+    "3f57e2d4e06fdbce5c0463f82685ae753b8e14ff685d000d3078f80cebd2a251": {
+      "record_id": "3f57e2d4e06fdbce5c0463f82685ae753b8e14ff685d000d3078f80cebd2a251",
+      "status": "scheduled",
+      "content": "A test suite that took six minutes stopped being run at all and I was the last to notice. Seven weeks of commits with no local test run, and two regressions that reached production.\n\nThe tests weren't slow because of the tests. They were slow because every one of them booted the whole application to check a string formatter. Four hundred tests doing eleven seconds of setup each.\n\nI split the fast ones out. Pure functions, no database, no network, under nine seconds for three hundred tests. Those run on every save now. The other hundred still take six minutes. I run those before a merge.\n\nI don't care about total time. It's time until the first useful failure. Nine seconds means I actually run it. Six minutes means I tell myself I will run it at the end, and the end is where the two regressions came from. I watch that number.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #QualityAssurance #Learning #OpenSource #Performance #BestPractices #Engineering #DeveloperExperience #CI",
+      "schedule_time": "2026-10-05 14:15",
+      "error": "",
+      "updated_at": "2026-10-02T09:18:26+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "48e5cd9d44a04c52e7563dba8413f7e01e75a44fd0aab50eb6b655c9c7845081": {
+      "record_id": "48e5cd9d44a04c52e7563dba8413f7e01e75a44fd0aab50eb6b655c9c7845081",
+      "status": "scheduled",
+      "content": "I moved a service to a new host and the migration was nine hundred lines of nothing to do with code. A runbook, a rollback plan, and four hours of checking that two systems agreed.\n\nThe code change was about thirty lines. Everything else was proving that the new host behaved the same way, which meant running both in parallel and comparing output for two days. Boring work with a real payoff. When we cut over, nothing happened, which was the goal.\n\nThe one thing that went wrong was a timezone. The old host ran on the company default and the new one ran on universal time, and a nightly job moved by five hours. It took us six hours to find because both hosts logged the right local time.\n\nI now write a list of every assumption the old environment made before a migration. Clock, locale, filesystem case, environment variables, disk layout. It's a short list and the five hour bug was on it, and I didn't check. I check the clock first now. Six hours lost. Never again.\n\n#AI #BuildInPublic #VibeCoding #tech #Migration #Infrastructure #Developer #Software #Engineering #Coding #DevOps #Backend #DeepTech #Learning #OpenSource #BestPractices #Reliability #Engineering #Cloud #SRE",
+      "schedule_time": "2026-10-05 14:30",
+      "error": "",
+      "updated_at": "2026-10-02T09:18:26+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "4c9dfaacdf5ab6047459312c997cb1191af69f7587aa9551095f50056990b7b6": {
+      "record_id": "4c9dfaacdf5ab6047459312c997cb1191af69f7587aa9551095f50056990b7b6",
+      "status": "scheduled",
+      "content": "I rewrote one error message and support tickets about that flow dropped by about half. My old message said invalid input. My new one says the date needs to be today or later.\n\nThat's a small change and it shows two things. First, the failure was never mysterious. Second, the message was written for the person who knows the system instead of the person who is stuck.\n\nI went through the twenty most common errors after that. Eleven of them failed the same test. They described the system instead of the fix. Three of them named an internal code that appears nowhere else in the product.\n\nMy rule now is that an error message has two jobs. Say what is wrong and say what to do next, in that order. If I can't say what to do next, then the error is missing a recovery path and that's a product bug, not a copy problem. Two jobs. In that order.\n\n#AI #BuildInPublic #VibeCoding #tech #ErrorHandling #UX #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #ProductDesign #Learning #OpenSource #BestPractices #CustomerSupport #Engineering #Writing",
+      "schedule_time": "2026-10-05 14:45",
+      "error": "",
+      "updated_at": "2026-10-02T09:18:26+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "71222c34efc7becbc4322eb8507c660f782eb5bd0878e4e0a4d6f8661ebba94b": {
+      "record_id": "71222c34efc7becbc4322eb8507c660f782eb5bd0878e4e0a4d6f8661ebba94b",
+      "status": "scheduled",
+      "content": "I replaced a weekly meeting with a document and nobody asked for the meeting back. Eleven people, thirty minutes, and four months of not needing it.\n\nThe document was a page with three sections. What changed since last time. What is blocked. What I need from you. Nobody had to read it live and anybody could skim it in ninety seconds, which is roughly how much attention the meeting ever got.\n\nThe meetings that survived are the ones with a decision in them. If nobody is choosing between two options, a written update is better, because it doesn't spend eleven calendars to transmit nine lines.\n\nI have one rule for this. If the same people meet three weeks in a row and nothing gets decided, I write the document instead and see who objects. Nobody has objected yet, and I have won back two hours a week. Two hours a week. That's a day a month.\n\n#AI #BuildInPublic #VibeCoding #tech #Meetings #Productivity #Developer #Software #Engineering #Coding #DeepTech #Communication #Learning #OpenSource #BestPractices #Writing #RemoteWork #Engineering #Culture #WorkLife",
+      "schedule_time": "2026-10-05 15:00",
+      "error": "",
+      "updated_at": "2026-10-02T09:18:26+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "89beb9ebf49871b1907f38c3b2db1f9f3be59b234c2ebf13868590bc3332daa6": {
+      "record_id": "89beb9ebf49871b1907f38c3b2db1f9f3be59b234c2ebf13868590bc3332daa6",
+      "status": "scheduled",
+      "content": "I woke to a page at three in the morning and the fix was one line. Finding that line took ninety minutes because the alert told me the symptom and nothing else.\n\nMy alert said high error rate on the checkout service. A cache key changed format at midnight. It started missing on every request. Nobody had designed for a key that expires, so every request went to the database.\n\nThe fix is a version prefix on the key. The real fix is the alert. It now names the dependency and the failure count, and it links the runbook that says what to check first.\n\nI keep one metric from that night. Ninety four minutes to a one line change, and about forty of those minutes were me working out what the numbers meant. Alerts that describe the system instead of the customer cost the same time at the worst possible hour. One line. Four minutes to write. That's the ratio I care about.\n\n#AI #BuildInPublic #VibeCoding #tech #OnCall #Alerting #Developer #Software #Engineering #Coding #Backend #DeepTech #Observability #Learning #OpenSource #Reliability #SRE #Engineering #IncidentResponse #Caching",
+      "schedule_time": "2026-10-05 15:15",
+      "error": "",
+      "updated_at": "2026-10-02T09:18:26+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "66f021fe15ce7af6a62bebe873f4b36cdac1f75a2f61864b2ed59028f7116cfd": {
+      "record_id": "66f021fe15ce7af6a62bebe873f4b36cdac1f75a2f61864b2ed59028f7116cfd",
+      "status": "scheduled",
+      "content": "I sold a project internally by writing one number on the first line. Three hundred and forty hours a year spent doing something a script could do in four minutes.\n\nNobody argued about the approach after that. The debate was about priority, which is a fair argument, and the number turned it into a scheduling question instead of a taste question. We did it the next quarter.\n\nThe number was wrong in my favor by about a third. That's the part I tell people. When I checked later, the real figure was closer to two hundred and twenty hours. It still cleared the bar and I said so when I found out, which mattered more than being right the first time.\n\nI use the same shape on every pitch now. The cost today, in hours or dollars, on the first line. What it costs to fix. What it costs to keep ignoring. Three numbers, and the third one is the one people remember.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Developer #Software #Engineering #Coding #Prioritization #DeepTech #Backend #Strategy #Learning #OpenSource #BestPractices #Startup #Engineering #Career #Metrics",
+      "schedule_time": "2026-10-05 15:30",
+      "error": "",
+      "updated_at": "2026-10-02T09:23:03+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "9eecc39157660283dd82b17467b1cad72b7246c1fff89bc762f30786946f5c8b": {
+      "record_id": "9eecc39157660283dd82b17467b1cad72b7246c1fff89bc762f30786946f5c8b",
+      "status": "scheduled",
+      "content": "I asked for a raise with a list instead of a feeling and got it. Four items. Each one was a thing I had shipped, with the hours it saved and the incidents it prevented.\n\nI had asked twice before and both times I talked about how hard I was working. That's a claim about my feelings. Nobody across the table can check it. Nobody can argue with a list of things that shipped.\n\nI got the number wrong. I asked for nine percent. They said yes in one sentence, which taught me I had aimed low. Next time I brought a range and let them pick the top of it.\n\nThe other thing I learned is smaller. This conversation gets easier when it isn't the first one and the numbers are already written down. Talking about the numbers twice a year, in a normal week, means the real conversation isn't a surprise to anybody.\n\n#AI #BuildInPublic #VibeCoding #tech #Negotiation #Career #Developer #Software #Engineering #Coding #DeepTech #Learning #OpenSource #BestPractices #Engineering #WorkLife #Communication #Strategy #PersonalDevelopment #Tech",
+      "schedule_time": "2026-10-05 15:45",
+      "error": "",
+      "updated_at": "2026-10-02T09:23:03+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "1e5bff6796caa67c8600815016c87d7474ed24cce616d0d721013557d3433069": {
+      "record_id": "1e5bff6796caa67c8600815016c87d7474ed24cce616d0d721013557d3433069",
+      "status": "ambiguous",
+      "content": "I have a nine month gap on my resume and it has cost me exactly one interview. One. In four years of applying.\n\nThe gap was real. I took time off after a layoff and did contract work that I can't show, which is the part that worried me. It turns out nobody asked about the gap because nobody got to that part of the conversation.\n\nWhat they asked about was the contract work. I had rewritten the entry to describe the systems rather than the clients, so it read as engineering instead of a gap with paperwork. Same facts, better frame.\n\nThe lesson is smaller than the industry makes it sound. A gap is a timeline fact and a portfolio is an ability fact, and people hire on the second one. I stopped apologizing for the calendar and started describing what I built, and the questions changed. Nine months off. Four years of applying. One question about it.\n\n#AI #BuildInPublic #VibeCoding #tech #Career #JobSearch #Developer #Software #Engineering #Resume #Coding #DeepTech #Learning #OpenSource #BestPractices #Engineering #TechLayoffs #WorkLife #Interviews #Portfolio",
+      "schedule_time": "2026-10-05 16:00",
+      "error": "could not read LinkedIn's scheduled count, so the schedule is unconfirmed",
+      "updated_at": "2026-10-02T09:23:03+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8271e4a8630000e86fff3d6628e96ec344ddb5d22d9caa658ccc7f7eebdc5a1e": {
+      "record_id": "8271e4a8630000e86fff3d6628e96ec344ddb5d22d9caa658ccc7f7eebdc5a1e",
+      "status": "scheduled",
+      "content": "I worked alone for three years and the hardest part wasn't the isolation. It was that nothing I did got checked. No code review, no second opinion, no argument.\n\nMy work was fine. The problems I shipped were the ones I had decided weren't problems, and there was nobody to say otherwise. One of them was a retry loop I had convinced myself was safe. It ran for fourteen months before a provider changed a timeout.\n\nWhat fixed it was a weekly swap with two other people who worked alone. Three projects, ninety minutes, one file each. Not a review exactly. More like showing someone the thing you have been staring at.\n\nThe rule is that everything gets a second pair of eyes before it goes live. Not a full review. Twenty minutes with someone who will ask why. That's enough to catch the belief I have stopped questioning. I keep the rule now. Three people. Ninety minutes. I don't skip it.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #RemoteWork #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Learning #OpenSource #BestPractices #Teamwork #Engineering #Career #SoloFounder",
+      "schedule_time": "2026-10-05 16:45",
+      "error": "",
+      "updated_at": "2026-10-02T09:30:47+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "fa6071248ceca41f6b4558042f10a55bc831cbcd455fe65c8093a8ebd29e2f5b": {
+      "record_id": "fa6071248ceca41f6b4558042f10a55bc831cbcd455fe65c8093a8ebd29e2f5b",
+      "status": "scheduled",
+      "content": "I'm the only person who knows how a system works and that's a problem I created. Four years of small decisions, one owner, one mental model.\n\nI noticed it during a week off. Two questions came in and both waited five days because nobody else could answer them. Nothing broke. That's the worst version of this. It breaks by making every small thing take a week.\n\nSo I have started writing the map. What starts the work, what the four main tables mean, where the retries live, and which of the eleven flags do something. About four pages.\n\nI don't know if four pages fixes it. Writing them already showed me two things I had wrong, and I have used them twice myself since, which suggests they're worth keeping. The measure of success is that someone else can change it without asking me. Four pages so far. I keep adding. It gets shorter as I understand it.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #BusFactor #Developer #Software #Engineering #Coding #DeepTech #Backend #Learning #OpenSource #BestPractices #Maintenance #Engineering #Teamwork #Career #Architecture",
+      "schedule_time": "2026-10-05 17:00",
+      "error": "",
+      "updated_at": "2026-10-02T09:30:47+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "4df852e35974bf074b4360d234cfda1fd03a996099ea7268037a6d132179e77e": {
+      "record_id": "4df852e35974bf074b4360d234cfda1fd03a996099ea7268037a6d132179e77e",
+      "status": "scheduled",
+      "content": "I stopped defending my old code and my reviews got faster. Four years of treating every comment as a verdict on my judgment, which is an expensive habit at about ten minutes of arguing per comment.\n\nThe shift was small and it took a while. A question about my naming is a question about my naming. It's not a question about me. Once I believed that, the answer became short. I stopped writing paragraphs in the comments.\n\nI replaced it with a rule about scope. I do the small suggestions without discussion. If it changes behavior I say what it would break and we decide together. If it's about style I let the person with the strongest preference win, because consistency beats my taste.\n\nMy output went up and the arguing went down. The uncomfortable part is this. I was the reason my reviews were slow, and that took eleven years to admit. Eleven years of reviews. That's on me.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #Learning #OpenSource #BestPractices #Collaboration #Engineering #Career #Communication",
+      "schedule_time": "2026-10-05 17:15",
+      "error": "",
+      "updated_at": "2026-10-02T09:30:47+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "070e0092980a229a12f358a5e8c56718e67674aa5528194a0d39501b7d882f52": {
+      "record_id": "070e0092980a229a12f358a5e8c56718e67674aa5528194a0d39501b7d882f52",
+      "status": "scheduled",
+      "content": "I have shipped one hundred and forty one small changes this year and I can't name ten of them. That sounds bad and it's the reason the product works.\n\nI remember ten of them and they're the big changes. Two rewrites, a migration, a new screen. I've forgotten the other hundred and thirty one. Retries, better errors, deleted queries, empty states, and four index changes that made a slow page fast.\n\nI check the changelog when I doubt the year was worth it. That's the whole reason I keep it. Not for the team, not for the users. For the week where nothing big happened and I need to see that the small things landed.\n\nMy target for next year isn't a bigger number. I want the same pile of forgettable changes and about a third fewer of the changes I can name, because a year where I remember the big work is usually a year where the big work was necessary. Small things. That's the year.\n\n#AI #BuildInPublic #VibeCoding #tech #Shipping #Developer #Software #Engineering #Coding #Programming #DeepTech #Backend #Changelog #Learning #OpenSource #BestPractices #Engineering #Career #ProductManagement #Workflow",
+      "schedule_time": "2026-10-05 17:30",
+      "error": "",
+      "updated_at": "2026-10-02T09:30:47+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "473024695135e843d3938cf04b11be928706431ff912b319fe18ecaa71a51b96": {
+      "record_id": "473024695135e843d3938cf04b11be928706431ff912b319fe18ecaa71a51b96",
+      "status": "scheduled",
+      "content": "Log rotation deleted the one file I needed and I found out at the worst moment. Thirty days of retention, one incident, and the evidence was gone by two hours.\n\nI keep a copy of logs for ninety days now. Not because I plan to read them. Because the one time I needed to, the disk policy had already made the decision for me and nobody had asked a single question about it.\n\nThe fix cost eleven dollars a month. I checked. Cold storage for a couple of hundred gigabytes is that cheap, and I would have paid ten times it to have that afternoon back.\n\nHere is the part I want to remember. The retention rule was set by a person trying to save money, and they were right about the money and wrong about everything else. I add the cost next to the saving when I touch a policy now. Costs are easy to name. The thing you lose isn't.\n\n#AI #BuildInPublic #VibeCoding #tech #Logging #Infrastructure #Developer #Software #Engineering #Coding #Backend #DeepTech #Observability #Learning #OpenSource #SRE #BestPractices #Engineering #IncidentResponse #Cloud",
+      "schedule_time": "2026-10-05 17:45",
+      "error": "",
+      "updated_at": "2026-10-02T09:30:47+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "77db656f55e10bb1bc7c02bc345e9adbe6a18615dc38e3857f16eaf02f3b20d3": {
+      "record_id": "77db656f55e10bb1bc7c02bc345e9adbe6a18615dc38e3857f16eaf02f3b20d3",
+      "status": "ambiguous",
+      "content": "I added a config flag nobody turned on and I kept it for a year. One line, a branch, and a test, doing nothing in production since last September.\n\nI checked the usage. Zero. Not a low number. Zero, across four environments, nineteen months of deploys. The flag existed because I had a theory about a customer who never asked for it.\n\nDeleting it took nine minutes. Branch gone, test gone, and the module got one level shallower. That shallow part matters more than the line count. Every branch is a place the next reader has to hold two worlds in their head.\n\nMy rule now is simple. A flag ships behind a date and an owner, and if nobody asks for it by that date, it goes. I put the date in the changelog where I will see it. Not in a ticket nobody reads. That's the rule. One date. One name.\n\n#AI #BuildInPublic #VibeCoding #tech #FeatureFlags #CleanCode #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #Maintenance #Learning #OpenSource #BestPractices #Engineering #DevOps",
+      "schedule_time": "2026-10-05 18:00",
+      "error": "could not read LinkedIn's scheduled count, so the schedule is unconfirmed",
+      "updated_at": "2026-10-02T09:32:22+00:00",
+      "attempts": 2,
+      "finalized": true
     }
   }
 }
