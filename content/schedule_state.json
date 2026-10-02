@@ -16463,6 +16463,65 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-02T17:46:11+00:00",
       "attempts": 2
+    },
+    "d3f102efb108a67720a230c0b66e125cd95639079f2b1b07c164334c5aa6b321": {
+      "record_id": "d3f102efb108a67720a230c0b66e125cd95639079f2b1b07c164334c5aa6b321",
+      "status": "scheduled",
+      "content": "I picked a naming convention four years ago and I still pay for it. Every model is called a Record, even the ones that aren't records.\n\nThe convention made sense in week one. Then we added documents, events and a settings blob, and all of them got the same suffix because the pattern was already there. Nobody stopped to ask whether the pattern was good. It was just the pattern.\n\nRenaming is now a two hundred file change. Not hard. Just expensive, and worse than the original mistake.\n\nMy rule now is boring and it works. Name the thing by what it does in this system, not by what it looks like. A Record that's a settings blob is a lie in the type system. Small lies compound. Four years later, they're the architecture. I have renamed four things this year. I have eleven to go. It is slow work.\n\n#AI #BuildInPublic #VibeCoding #tech #Naming #CleanCode #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #Maintenance #Learning #OpenSource #BestPractices #Engineering #Career",
+      "schedule_time": "2026-10-06 08:15",
+      "error": "",
+      "updated_at": "2026-10-02T21:43:51+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "1d27d259eb9eca8b532ddbd706201df78e519d4c15fb68f8bd96b2040f95c7b2": {
+      "record_id": "1d27d259eb9eca8b532ddbd706201df78e519d4c15fb68f8bd96b2040f95c7b2",
+      "status": "scheduled",
+      "content": "A log line I wrote said the job completed when the job had skipped every row. The line was true. The word completed wasn't.\n\nI found out from a support ticket eight weeks later. Nine thousand rows never processed, one green checkmark per night, and a person who trusted it because the message said completed.\n\nThat's the cost of a cheerful log line. A log is a claim about what happened, and the claim has to survive the worst case or it's decoration. Mine didn't survive an empty input.\n\nI rewrote eleven of them after that. Each now names the count and the path taken. Completed, zero rows, empty source. Four facts in one line, and any of them being wrong is visible. I read my own logs once a month now. It took an afternoon. It caught one more lie the next week. That was worth it. It pays off.\n\n#AI #BuildInPublic #VibeCoding #tech #Logging #Observability #Developer #Software #Engineering #Coding #Programming #Backend #DeepTech #Debugging #Learning #OpenSource #BestPractices #Engineering #SRE #Reliability",
+      "schedule_time": "2026-10-06 08:30",
+      "error": "",
+      "updated_at": "2026-10-02T21:43:51+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7469a5caba3f50a428f6949b61d2a77df830bd64ef17ce9567b51b9d8694aa9e": {
+      "record_id": "7469a5caba3f50a428f6949b61d2a77df830bd64ef17ce9567b51b9d8694aa9e",
+      "status": "scheduled",
+      "content": "A cron job ran twice and we processed about eleven thousand duplicate emails. Nobody noticed for two days because the emails were correct and the customer didn't reply twice.\n\nThe cause was a lock that expired before the work finished. Ninety seconds of timeout against a job that took four minutes when the upstream was slow. That's a design that works until it doesn't.\n\nThe fix was to make the job idempotent instead of protecting it. A processed marker on each row, checked inside the transaction. Then running it twice costs time and nothing else.\n\nI have one question for any scheduled job now. What happens if this runs while the last one is still going. If nobody can answer, the job is one slow day away from the duplicate email problem. I check every job now. What if it runs twice. What if it runs slow. Two questions. I ask them in review. One slow day. Mine failed both. Never again.\n\n#AI #BuildInPublic #VibeCoding #tech #Cron #Idempotency #Developer #Software #Engineering #Coding #Backend #DeepTech #DistributedSystems #Learning #OpenSource #BestPractices #Reliability #Engineering #SRE #DataEngineering",
+      "schedule_time": "2026-10-06 08:45",
+      "error": "",
+      "updated_at": "2026-10-02T21:43:51+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "49557fac474e5a1815ba33f23eb265d69d30106aeba92799e9d8b79eff571621": {
+      "record_id": "49557fac474e5a1815ba33f23eb265d69d30106aeba92799e9d8b79eff571621",
+      "status": "scheduled",
+      "content": "I stopped estimating in reviews and started asking one question instead. What is the smallest change that solves this. Four words fewer, ten arguments saved.\n\nThe old habit was my worst one. Somebody proposed a solution, I proposed a different one, and ninety minutes later we had a design nobody wanted and a meeting scheduled for Thursday.\n\nThe question moves the conversation off the solution and onto the problem. It also lets the person who wrote the proposal win, which is usually the right outcome because they know the code.\n\nI have watched this replace about a dozen design debates in the past year. Not every one. The ones it doesn't settle were never design debates anyway. They were resource fights wearing a design costume. Ninety minutes. Gone. I use the question every time. It has not failed me yet. Not once. One question. Every time. It works. Ask it first.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #Communication #Learning #OpenSource #BestPractices #Collaboration #Engineering #Career",
+      "schedule_time": "2026-10-06 11:15",
+      "error": "",
+      "updated_at": "2026-10-02T21:43:51+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2caeb04de597f972b5a5d6151cc52460a39f2198ca6652b47c662456823bab55": {
+      "record_id": "2caeb04de597f972b5a5d6151cc52460a39f2198ca6652b47c662456823bab55",
+      "status": "scheduled",
+      "content": "I built a dashboard with nineteen panels and when I deleted it nobody asked where it went. That's the whole review of my work on it.\n\nMy panels answered questions I found interesting. Which queue is longest. How many retries per hour. What the p99 looks like by endpoint. Useful to me and used by nobody, because nobody had the questions I had.\n\nThe panel that mattered was the simplest one. A single number, requests failing, with a link to the logs. Four lines of code and the only thing anyone ever looked at.\n\nI keep a rule from that. One number per screen, chosen by the person who gets paged. Everything else is a tab they can open when they have a reason. A dashboard isn't a report. It's an alarm with context. One number. That is it. I pick it with the person who gets paged, not with the team that built the service. That is the whole design.\n\n#AI #BuildInPublic #VibeCoding #tech #Observability #Dashboards #Developer #Software #Engineering #Coding #Backend #DeepTech #Metrics #Learning #OpenSource #BestPractices #SRE #Engineering #UX #ProductManagement",
+      "schedule_time": "2026-10-06 12:30",
+      "error": "",
+      "updated_at": "2026-10-02T21:43:51+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "b61ef0d797b036322955ea18ae75da3a64ed1c40c2898f55c55e71ac3b1d951e": {
+      "record_id": "b61ef0d797b036322955ea18ae75da3a64ed1c40c2898f55c55e71ac3b1d951e",
+      "status": "failed",
+      "content": "I said no to an urgent request and the person solved it themselves in twenty minutes. That's what happens most of the time and it took me nine years to find out.\n\nThe request sounded urgent because it was blocked, and blocked feels urgent to the person who is stuck. I had a deploy going and a queue of my own. So I said give me an hour and asked what they had tried.\n\nThey came back in twenty minutes. The answer was in a config they had already found. My hour would have been spent confirming what they already knew.\n\nThe rule I keep is a question. What have you tried. Ask it as a question and nobody takes offense. It's a filter that separates the thing that needs me from the thing anyone could do with ten more minutes. Twenty minutes. That was the answer. My hour was never needed.\n\n#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Programming #Teamwork #DeepTech #Backend #Communication #Learning #OpenSource #BestPractices #Engineering #Career #Productivity #Culture",
+      "schedule_time": "2026-10-06 13:45",
+      "error": "LinkedIn's scheduled count is 186, no higher than 187 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-02T21:45:30+00:00",
+      "attempts": 2
     }
   }
 }
