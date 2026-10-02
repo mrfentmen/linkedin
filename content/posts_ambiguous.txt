@@ -456,3 +456,18 @@ My rule now is simple. A flag ships behind a date and an owner, and if nobody as
 
 #AI #BuildInPublic #VibeCoding #tech #FeatureFlags #CleanCode #Developer #Software #Engineering #Coding #Programming #Refactoring #DeepTech #Backend #Maintenance #Learning #OpenSource #BestPractices #Engineering #DevOps
 ---
+[2026-10-02 17:36:44 UTC]
+record_id=5fbab2a35fc076b54fdf9497a2c786f5bc9c4e9e3de91c04516a1a9e0bf5e980
+status=ambiguous
+scheduled_for=2026-10-06 12:15
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I taught by writing everything down and it made me better at the work. Fourteen pages over a year, and the act of explaining forced me to check things I had assumed for years.
+
+The pages started as notes for one person. They became the thing new people read in their first week, which is a strange responsibility for something I wrote on a Tuesday to avoid repeating myself.
+
+What I didn't expect is the corrections. Four of my pages were wrong. A colleague found a mistake about a retry policy and a script that no longer worked, and fixing them taught me more than writing them had.
+
+The rule I follow now is to write the page when I answer the same question twice. Not before. If I haven't answered it twice I don't understand it well enough to teach it, and the page would be a guess with nice formatting. Write it once. Answer it twice. I check before I trust it.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #Developer #Software #Engineering #Coding #DeepTech #Mentorship #Learning #OpenSource #BestPractices #Engineering #Career #KnowledgeSharing #Teamwork #Craft
+---
