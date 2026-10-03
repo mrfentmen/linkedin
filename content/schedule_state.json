@@ -16706,12 +16706,13 @@
     },
     "3e5473ee607aa5056a5725ab60eab1790062f33218137a4b691280faaf5a6b0f": {
       "record_id": "3e5473ee607aa5056a5725ab60eab1790062f33218137a4b691280faaf5a6b0f",
-      "status": "failed",
+      "status": "scheduled",
       "content": "I deleted four hundred lines last week and nobody noticed for nine days. That's the good outcome.\n\nThe code was a retry wrapper from 2021. It caught a timeout from a service we stopped using in 2022. Nobody removed it because removing things feels risky and adding things feels like progress. So it sat there, running its checks every night, guarding a door with no room behind it.\n\nI found it while tracing something else. I didn't find it by auditing. I found it because a log line pointed at a file I'd never opened.\n\nHere's what I've learned about dead code. It isn't dangerous because it runs. It's dangerous because it teaches. A new person reads it and thinks this is how we handle timeouts here. So they copy the shape into a place where it matters, and now the dead pattern is alive again.\n\nWe don't have a lint rule for that. We can't. The rule would have to know intent and intent doesn't live in the file. It lives in the head of whoever wrote it, and that person left in 2023.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #TechnicalDebt #Maintenance #Legacy #CleanCode #Backend #Architecture #Learning #Craft #Teamwork #ProductManagement #Engineering",
       "schedule_time": "2026-10-06 18:30",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-03T08:49:04+00:00",
-      "attempts": 4
+      "error": "",
+      "updated_at": "2026-10-03T14:13:22+00:00",
+      "attempts": 6,
+      "finalized": true
     },
     "556792993c20468b2a601572d8fbb8c1f1dc17d25ea61982965384361d9aec5d": {
       "record_id": "556792993c20468b2a601572d8fbb8c1f1dc17d25ea61982965384361d9aec5d",
@@ -16720,6 +16721,93 @@
       "schedule_time": "2026-10-06 18:45",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-03T03:25:17+00:00",
+      "attempts": 2
+    },
+    "b566bb23fe55b1cd25d078d2d54f5a029865db6aa0ff4164e6a941b1ae17bb21": {
+      "record_id": "b566bb23fe55b1cd25d078d2d54f5a029865db6aa0ff4164e6a941b1ae17bb21",
+      "status": "scheduled",
+      "content": "I built a dashboard six months ago and I checked it twice. Both times were the week I shipped it.\n\nThat's not a story about laziness. It's a story about a dashboard that answered a question nobody had. I picked the metrics by asking what was easy to graph. The graphs looked great. Green lines, smooth curves, the whole thing rendered in under a second.\n\nThe question people actually had was whether a specific customer's data was intact. Nobody could answer it from my charts. They asked me in a message every time, and I queried the database every time, and we both felt bad about it.\n\nI eventually replaced the dashboard with a single query saved in a shared folder. It's ugly. It has no colors. It gets used eleven times a day.\n\nI'm not saying dashboards are bad. I'm saying I built the chart before I heard the question. If you can't name the person who will open it on a Tuesday when something looks wrong, you're building decoration.\n\n#AI #BuildInPublic #VibeCoding #tech #DataEngineering #Analytics #Developer #Software #Engineering #Dashboards #Metrics #ProductManagement #Observability #Coding #Backend #Learning #Craft #UX #Engineering #Simplicity",
+      "schedule_time": "2026-10-06 18:45",
+      "error": "",
+      "updated_at": "2026-10-03T14:13:22+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2a4b6d4f2d638dfe7a616ebf09135b8ed93886886d201239618f368c58b27bc0": {
+      "record_id": "2a4b6d4f2d638dfe7a616ebf09135b8ed93886886d201239618f368c58b27bc0",
+      "status": "scheduled",
+      "content": "It took me four tries to run a migration that should have taken one afternoon.\n\nFirst attempt: the index build locked the table and the app started timing out. Second attempt: I batched the writes but forgot the reads were still hitting the old column. Third attempt: I got the code right and the rollback wrong, which is worse, because a rollback you can't trust is a plan you don't have.\n\nFourth attempt worked. Twelve million rows. Six hours. I watched the whole thing.\n\nWhat I learned is that I kept treating the migration as a code problem. It was a scheduling problem. The database was fine. The code was fine after attempt two. What I didn't have was a window where both old and new code could run at the same time and agree with each other.\n\nI write migrations backwards now. I start with the rollback, then the dual read, then the dual write, then the cutover, then the cleanup two weeks later when I've stopped being nervous. Same total work. One less outage.\n\n#AI #BuildInPublic #VibeCoding #tech #Database #Engineering #Developer #Software #Postgres #Migration #Backend #Reliability #Architecture #Coding #DevOps #Learning #Craft #Production #DataEngineering #Engineering",
+      "schedule_time": "2026-10-06 19:00",
+      "error": "",
+      "updated_at": "2026-10-03T14:13:22+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8b807e0add10d1e0c037e4e6250209c397b5ee6e75bdd7dfd3ac8be664689305": {
+      "record_id": "8b807e0add10d1e0c037e4e6250209c397b5ee6e75bdd7dfd3ac8be664689305",
+      "status": "scheduled",
+      "content": "I turned off a feature I wrote. It was the right call and it still stung for a week.\n\nThe feature let people bulk edit a list. I was proud of it. Keyboard shortcuts, undo, the whole thing. It took three weeks and it had tests I liked.\n\nUsage data said nine people clicked it. Nine. Four of them clicked it once. Five of them clicked it by accident, twice each, because the button sat close to save. So the real benefit was zero and the real cost was confusion.\n\nI removed it on a Tuesday. Nobody emailed. Nobody asked where it went. That silence was the loudest signal of the year.\n\nHere's the part I keep coming back to. I didn't build it because people wanted it. I built it because I could see it in my head. Clarity of imagination isn't demand, and I'd been mistaking one for the other for years. If a feature is easy to picture, that's a reason to ask harder, not a reason to start.\n\n#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Developer #Software #Engineering #Coding #UX #Startups #Learning #Craft #Refactoring #Simplicity #BuildInPublic #Analytics #Backend #Engineering #Product",
+      "schedule_time": "2026-10-07 08:00",
+      "error": "",
+      "updated_at": "2026-10-03T14:13:23+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "122ebd2b33aa2cb587026162346738f9bb6c1dbecbdf5c37c4d51bb11806aeae": {
+      "record_id": "122ebd2b33aa2cb587026162346738f9bb6c1dbecbdf5c37c4d51bb11806aeae",
+      "status": "scheduled",
+      "content": "I got paged at 3:12 in the morning for a config typo. The app was fine.\n\nA value that should have been six hundred was written as sixty thousand. That's it. One extra zero in a plain config file. The queue drained, the workers sat idle, and the alert fired because a threshold I'd set three years ago got crossed.\n\nI fixed it in ninety seconds. I stayed awake for two hours.\n\nThat gap between fix time and recovery time is the thing nobody measures. We track time to resolve. We don't track time to feel normal again. And the second number is bigger.\n\nWhat changed after that: I stopped alerting on symptoms I couldn't act on at night. A full disk at 3am needs me. A queue that's slower than expected can wait until seven. I moved eleven alerts to a morning digest and I got three hours a week back. The typo is still possible. Config files lie to everyone. But the page goes out when something breaks, which means when it goes off, I believe it.\n\n#AI #BuildInPublic #VibeCoding #tech #DevOps #SRE #Developer #Software #Engineering #OnCall #Reliability #Incident #Coding #Observability #Backend #Learning #Craft #Production #Config #Engineering",
+      "schedule_time": "2026-10-07 08:15",
+      "error": "",
+      "updated_at": "2026-10-03T14:13:23+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "1aab85e181c7020aae5849aedcdbe37260a39b3bb356a13e1866f97abea70b49": {
+      "record_id": "1aab85e181c7020aae5849aedcdbe37260a39b3bb356a13e1866f97abea70b49",
+      "status": "scheduled",
+      "content": "I stopped asking a technical interview question because it was measuring the wrong thing.\n\nThe question was how do you find a memory leak. Good question. Real answers, real tradeoffs, real stories from people who'd done it. I asked it for four years.\n\nThen a candidate answered it well and couldn't read a stack trace from a language they'd never seen. And I realized I'd been testing a memory of a war story, not a skill.\n\nThe skill is reading unfamiliar output. The skill is forming a guess and then checking the guess for free. The skill is saying I don't know yet and then going to look.\n\nNow I hand them a failing test and a terminal. That's the whole interview. I watch how they move. Some read the error. Some add a log line. Some read the source. All fine. What I'm watching for is whether they narrow the space or wander it. Turns out that's a much better predictor than opinions about garbage collection, and it's kinder to people who learned this on their own.\n\n#AI #BuildInPublic #VibeCoding #tech #Hiring #Developer #Software #Engineering #Coding #Interviews #Learning #Careers #Tech #Craft #Debugging #Teamwork #Mentorship #Backend #Engineering #Culture",
+      "schedule_time": "2026-10-07 08:30",
+      "error": "",
+      "updated_at": "2026-10-03T14:16:33+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d7750cb41489e189585789beed2a403c9a55404aa2668959960258a1ee7cdeda": {
+      "record_id": "d7750cb41489e189585789beed2a403c9a55404aa2668959960258a1ee7cdeda",
+      "status": "failed",
+      "content": "The README said the service needed two environment variables. It needed five. I found out at eleven at night.\n\nThat isn't quite a documentation failure. It's worse. It's a document that was true once. Two variables got it running in February 2024. Three more arrived over the next eighteen months, added by three different people who each updated the code and the deploy config and never opened the README.\n\nI don't blame them. I've done it.\n\nWhat fixed it was a startup check. The service now fails at boot and prints what's missing in one line. The README still says two. Nobody has read it in a year, because nobody needs to. The app tells you. I think about this a lot. Documentation that drifts gets worse than no documentation, because it teaches wrong things with authority. A hard failure at startup costs nothing and tells the truth every single time.\n\nIf I can make the machine say it, I'd rather the machine say it.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #DevOps #Config #Backend #Deployment #Learning #Craft #Reliability #Platform #Onboarding #Engineering #Teamwork",
+      "schedule_time": "2026-10-07 08:45",
+      "error": "LinkedIn's scheduled count is 199, no higher than 199 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-03T14:16:32+00:00",
+      "attempts": 2
+    },
+    "03151fce5046c25b9e6788b66a6bce287214ad96932d82d21cf106b2a550b706": {
+      "record_id": "03151fce5046c25b9e6788b66a6bce287214ad96932d82d21cf106b2a550b706",
+      "status": "scheduled",
+      "content": "The README said the service needed two environment variables. It needed five. I found out at eleven at night.\n\nThat isn't quite a documentation failure. It's worse. It's a document that was true once. Two variables got it running in February 2024. Three more arrived over the next eighteen months, added by three different people who each updated the code and the deploy config and never opened the README.\n\nI don't blame them. I've done it.\n\nWhat fixed it was a startup check. The service now fails at boot and prints what's missing in one line. The README still says two. Nobody has read it in a year, because nobody needs to. The app tells you. I think about this a lot. Documentation that drifts gets worse than no documentation, because it teaches wrong things with authority. A hard failure at startup costs nothing and tells the truth every single time.\n\nIf I can make the machine say it, I'd rather the machine say it.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #DevOps #Config #Backend #Deployment #Learning #Craft #Reliability #Platform #Onboarding #Engineering #Teamwork",
+      "schedule_time": "2026-10-07 09:45",
+      "error": "",
+      "updated_at": "2026-10-03T14:19:42+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2d82c65b85284b148b966d2036623b57d118da517291b9ef7ad83d545be91bfe": {
+      "record_id": "2d82c65b85284b148b966d2036623b57d118da517291b9ef7ad83d545be91bfe",
+      "status": "failed",
+      "content": "I renamed a core concept last month and it cost three weeks. Worth it.\n\nThe old name described what the thing did in 2022. The thing changed. The name didn't. So every conversation started with a correction, and every new engineer wrote the wrong mental model in their head and then had to unlearn it.\n\nThere were about four hundred references. Code, tests, dashboards, docs, alert names, three runbooks, and a Slack channel called something adjacent.\n\nI did it in passes. New name alongside old name. Then new name in code. Then dashboards and docs. Then the channel, which was the hardest part because nobody wants to be the person who renames a channel.\n\nWhat I got back was real. Onboarding questions dropped and standups got shorter. Two arguments turned out to be about vocabulary, not design. I'd do it over. Naming is the cheapest architecture decision and the one most often deferred forever. Deferring it doesn't make it free. It makes it compound.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #Architecture #Naming #Backend #Learning #Craft #TechnicalDebt #Teamwork #ProductManagement #DX #Engineering #Maintenance",
+      "schedule_time": "2026-10-07 10:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-03T14:19:41+00:00",
+      "attempts": 2
+    },
+    "6a83296552155c9e040d743bb67610f36082babc43e1f67813fa8e428cfef1f4": {
+      "record_id": "6a83296552155c9e040d743bb67610f36082babc43e1f67813fa8e428cfef1f4",
+      "status": "failed",
+      "content": "I renamed a core concept last month and it cost three weeks. Worth it.\n\nThe old name described what the thing did in 2022. The thing changed. The name didn't. So every conversation started with a correction, and every new engineer wrote the wrong mental model in their head and then had to unlearn it.\n\nThere were about four hundred references. Code, tests, dashboards, docs, alert names, three runbooks, and a Slack channel called something adjacent.\n\nI did it in passes. New name alongside old name. Then new name in code. Then dashboards and docs. Then the channel, which was the hardest part because nobody wants to be the person who renames a channel.\n\nWhat I got back was real. Onboarding questions dropped and standups got shorter. Two arguments turned out to be about vocabulary, not design. I'd do it over. Naming is the cheapest architecture decision and the one most often deferred forever. Deferring it doesn't make it free. It makes it compound.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #Architecture #Naming #Backend #Learning #Craft #TechnicalDebt #Teamwork #ProductManagement #DX #Engineering #Maintenance",
+      "schedule_time": "2026-10-07 11:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-03T14:21:22+00:00",
       "attempts": 2
     }
   }
