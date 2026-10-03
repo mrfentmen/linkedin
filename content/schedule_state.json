@@ -16710,8 +16710,8 @@
       "content": "I deleted four hundred lines last week and nobody noticed for nine days. That's the good outcome.\n\nThe code was a retry wrapper from 2021. It caught a timeout from a service we stopped using in 2022. Nobody removed it because removing things feels risky and adding things feels like progress. So it sat there, running its checks every night, guarding a door with no room behind it.\n\nI found it while tracing something else. I didn't find it by auditing. I found it because a log line pointed at a file I'd never opened.\n\nHere's what I've learned about dead code. It isn't dangerous because it runs. It's dangerous because it teaches. A new person reads it and thinks this is how we handle timeouts here. So they copy the shape into a place where it matters, and now the dead pattern is alive again.\n\nWe don't have a lint rule for that. We can't. The rule would have to know intent and intent doesn't live in the file. It lives in the head of whoever wrote it, and that person left in 2023.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #TechnicalDebt #Maintenance #Legacy #CleanCode #Backend #Architecture #Learning #Craft #Teamwork #ProductManagement #Engineering",
       "schedule_time": "2026-10-06 18:30",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-03T03:23:38+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-03T08:49:04+00:00",
+      "attempts": 4
     },
     "556792993c20468b2a601572d8fbb8c1f1dc17d25ea61982965384361d9aec5d": {
       "record_id": "556792993c20468b2a601572d8fbb8c1f1dc17d25ea61982965384361d9aec5d",
