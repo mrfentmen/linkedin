@@ -471,3 +471,20 @@ The rule I follow now is to write the page when I answer the same question twice
 
 #AI #BuildInPublic #VibeCoding #tech #Documentation #Writing #Developer #Software #Engineering #Coding #DeepTech #Mentorship #Learning #OpenSource #BestPractices #Engineering #Career #KnowledgeSharing #Teamwork #Craft
 ---
+[2026-10-03 18:57:12 UTC]
+record_id=90afa92f38ffe6628386294acbdbace90953588a704fa47ac79e674f9f0e81a9
+status=ambiguous
+scheduled_for=2026-10-07 14:15
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+The best fix I shipped this year was turning something off.
+
+A background job recalculated a summary every ten minutes. It had grown. It now recalculated three summaries, then wrote them to a table, then triggered a notification that checked whether anything had changed, and the answer was almost always nothing.
+
+I traced it for an afternoon and the conclusion was that nothing downstream needed the ten minute cadence. The summaries changed about twice a day, because the source data changed about twice a day.
+
+So I turned the cadence down to once an hour and deleted the notification check. Two lines of config. Database load dropped by a third. Pager events on that service went to zero.
+
+It felt like cheating. I'd spent the afternoon finding out that the correct engineering response was to do less. That's a hard instinct to build in a career where everything rewards adding. Adding is visible. Removal looks like nothing happened. But the load is real, and the fastest system is usually the one running the fewest jobs.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Performance #Refactoring #Simplicity #Backend #DevOps #Database #Learning #Craft #Production #Architecture #SRE #CostOptimization
+---
