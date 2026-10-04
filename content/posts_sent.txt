@@ -27467,3 +27467,228 @@ Cheap notebooks. One pen. No sync. I'd give up three tools before this one.
 
 #AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Productivity #Learning #Craft #Habits #Tech #Notes #Backend #Thinking #Writing #BestPractices #Careers #Culture
 ---
+[2026-10-04 20:45:57 UTC]
+record_id=48adbc76213d6a3452288ff3b82b7d87c206f683146470672089042dee7be129
+scheduled_for=2026-10-07 12:30
+The bug was in my monitoring, which is the worst place to find a bug.
+
+An alert said our checkout error rate was zero for six hours. We celebrated for about ten minutes, then someone asked why the chart looked flat instead of low. Flat is not a shape that real traffic produces.
+
+The metric was broken. A rename had landed in the service and the collector still listened for the old name, so it reported zero, and zero reads as healthy. We had real errors during that window and nobody saw them.
+
+The fix is a heartbeat. Every metric now reports a count of events seen in the last minute, and a separate alert fires when a metric with traffic stops reporting. Silence now has a sound.
+
+Monitoring fails in the direction of calm. That's why it fooled us, and that's why the boring heartbeat check is the most important line of code in the whole system. I keep a list of every metric that should be moving and I read that list once a month.
+
+#AI #BuildInPublic #VibeCoding #tech #Observability #Monitoring #Developer #Software #Engineering #Coding #DevOps #Backend #Reliability #Tech #SRE #Learning #Craft #Production #Metrics #Incidents
+---
+[2026-10-04 20:45:57 UTC]
+record_id=d8f43cdaf5a21e85ab731dfd5842340a18ce71a9ab679083898207260db8a395
+scheduled_for=2026-10-08 08:00
+I deleted tests last month and the suite got stronger, which is a sentence I didn't expect to type.
+
+Two hundred tests. Fourteen of them asserted that a function returned a value, and never checked the value. Four asserted a mock was called, which is a test of a mock. Nine had been skipped for a year with a comment explaining a dependency that had since been removed.
+
+I read every one before deleting. That took an afternoon and it was the valuable part. Reading them showed me what the suite actually proved, which was less than the green checkmark implied.
+
+The suite runs ninety seconds faster now. More important, I trust it more, and trust is the whole point.
+
+A test that cannot fail is decoration. I've deleted my share and it always felt like losing something. Coverage numbers count decoration as progress, and that's how you end up with a thousand green tests and an outage nobody predicted. Most of them can't fail. I read each one with a pen in my hand and I ask whether this assertion could fail in a way that tells me something new.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Developer #Software #Engineering #Coding #QA #Refactoring #Backend #Tech #Learning #Craft #CodeReview #BestPractices #Coverage #Engineering #Teamwork
+---
+[2026-10-04 20:45:57 UTC]
+record_id=ac47917020c08376ed3ea7c5e9716769dadfc3e0746fac7cc2eaffb827ad804d
+scheduled_for=2026-10-08 08:15
+A flaky test was reporting a real race condition and we asked it to stop being flaky.
+
+It failed about one run in forty. Not enough to block work, enough to annoy everyone. We added a retry, then a longer timeout, then a label so the pipeline wouldn't count it. Four months of papering over a signal.
+
+Then a customer hit the same race in production. Two writes landing in the same millisecond, and the loser overwrote the winner. The test had been pointing at it the whole time, in the least helpful way possible.
+
+The test is deterministic now. It forces an interleaving instead of hoping for one.
+
+There's a lesson here about flaky tests that I keep paying for. A test that fails sometimes is telling you the system is uncertain. Retrying the test doesn't remove the uncertainty, it just moves the discovery to a person on a Friday night, alone, with a phone. I read the failure instead. Nine times out of ten it names the exact line, and the ninth time I learn something about how the system really behaves under load.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #FlakyTests #Developer #Software #Engineering #Coding #Concurrency #Backend #Debugging #Tech #Learning #Craft #Reliability #Production #CI #RaceConditions
+---
+[2026-10-04 20:53:42 UTC]
+record_id=029f558b5488bd8d11d02f0efcfc7b6e57e8934512f8bcd1e2e490451bfe188f
+scheduled_for=2026-10-08 12:00
+I shipped to production on a Friday and spent the weekend watching a dashboard. Not an outage. Just anxiety.
+
+The change was small. A default value. It went out at four, and by six I'd checked the error rate nine times and read the deploy log twice.
+
+The work was fine. What I did wrong was choose a window where I couldn't get help. If it had broken, I would have been alone with a laptop on a Saturday, fixing something nobody was around to explain.
+
+I don't have a rule against Friday deploys. I have a rule about who is awake. If the change needs a person to interpret a graph, it goes out on a Tuesday with two people watching. If it's a text change, ship it whenever. The difference is whether the deploy needs a human to decide something.
+
+That's the actual question, and it has nothing to do with the day of the week. Who is awake. Two words that have talked me out of four Friday deploys and cost me nothing.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #DevOps #Developer #Software #Engineering #Coding #Backend #Reliability #Tech #Learning #Craft #Production #OnCall #Incidents #Teamwork #Release
+---
+[2026-10-04 20:53:42 UTC]
+record_id=eb1ed30c9393a1e51173c996c12f8204eb80d6c976902af97ffe860e6940671e
+scheduled_for=2026-10-08 12:15
+I worked with a reviewer who found something in every one of my changes and it made me faster.
+
+Not because she was harsh. Because she was specific. She'd point at a line and say this runs once per row and the loop above it also runs once per row. Two facts, no opinion, and the fix was mine to choose.
+
+That's different from a review that says I don't like this. Dislike gives me nothing to do except argue.
+
+The other thing she did was rank her comments. One blocker, three suggestions, one question. I learned to read the ranking first, which meant I never spent an hour on something she was curious about while a real problem waited.
+
+I ask for ranked comments now when I review, and I rank my own. It takes ten seconds and it changes a list of complaints into a work plan. She left the company two years ago and I still follow her format. Rank the list. One blocker.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Teamwork #Mentorship #Backend #Tech #Learning #Craft #Culture #BestPractices #Feedback #Engineering #Hiring
+---
+[2026-10-04 20:53:42 UTC]
+record_id=280ae2fc74ba59659978de94f84be805596f44a83d6a6f0a05c8fc7c26e70d04
+scheduled_for=2026-10-08 12:30
+I copied production data into a test environment and spent a week dealing with the consequences.
+
+It was supposed to be a snapshot for debugging. It had real names, real emails, and real payment identifiers, sitting in a database with a default password and no firewall rule I had checked. Nothing happened. That's luck, not safety.
+
+That debug value was real. My problem was that I'd created a copy of the most sensitive data we own, in the least controlled place we have, and nobody knew it existed.
+
+Now the copies get scrubbed on the way in. Names become placeholders, emails become addresses at a domain we own, and payment ids get replaced with a pattern that fails any real validation. The debug value survives. The liability doesn't.
+
+The rule I follow is simple. If I wouldn't put it in a spreadsheet and email it to a stranger, it doesn't belong in a test database. I check before I copy now, and I ask who else can reach that database.
+
+#AI #BuildInPublic #VibeCoding #tech #DataPrivacy #Developer #Software #Engineering #Coding #Security #Backend #Testing #Tech #Learning #Craft #BestPractices #Compliance #Production #DataEngineering #Engineering
+---
+[2026-10-04 20:53:42 UTC]
+record_id=19322c6c0a2c864760cb6a5db885ff39d7b3152c42e2e5621a8491b1b697176e
+scheduled_for=2026-10-08 12:45
+I write the changelog before the code now and it has saved me three features.
+
+The changelog is one sentence a user would understand. Added the ability to export a filtered list. Fixed an error when a name has an apostrophe. Small, plain, and honest about what changed from outside.
+
+Writing that sentence first forces one question. Who benefits and how would they notice. Twice now the sentence turned out to be nothing. Once it turned out to be a bug fix, not a feature, which changed the whole approach.
+
+The other effect is on scope. If I can't describe the change in one sentence, it's two changes wearing one hat. Splitting them in review costs three times as much.
+
+I keep the sentence in the pull request description. It gets read far more than my architecture notes, because it's the part written for a person rather than for a process. One sentence. If I can't write it, I split the work before anyone sees it, which is cheaper than splitting it after three days of argument about scope.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Changelog #Documentation #ProductManagement #Backend #Tech #Learning #Craft #Communication #BestPractices #Release #Projects #Teamwork
+---
+[2026-10-04 20:53:42 UTC]
+record_id=6ba1343856f0742473d95e41ebb1a24bfd753fead7b04e4f728fe4de974eeb20
+scheduled_for=2026-10-08 13:00
+I spent a day tuning a query that was fast. My slow part was the client reading the results.
+
+The query returned in forty milliseconds. Six seconds showed up on the page. I assumed the database, because that's where the pain tends to live, and I rewrote the query three times for no gain.
+
+The client fetched two hundred rows and then did one lookup per row against another service. Two hundred round trips, each about twenty milliseconds. That's the six seconds, sitting in a loop I'd never opened because I was sure the problem was on the other side.
+
+The fix was one batched call. Same data, one request, six seconds down to three hundred milliseconds.
+
+What I keep from that day is a question to ask before profiling anything. Which side of the wire is slow. It takes one minute to answer and it points the whole investigation in the right direction. My assumption cost a day.
+
+#AI #BuildInPublic #VibeCoding #tech #Performance #Developer #Software #Engineering #Coding #Backend #Database #Optimization #Tech #Learning #Craft #NPlusOne #Production #Debugging #Architecture #Engineering
+---
+[2026-10-04 21:00:52 UTC]
+record_id=b48483b24bcbb534aed1c153e53638be9242572ae9bf839db0afe4454021af41
+scheduled_for=2026-10-08 13:15
+I pinned a library for four years and upgrading it took an afternoon. The fear took longer.
+
+The pin started as a temporary measure during a release week. A minor version changed a default and broke a page, so I locked it and wrote a ticket. The ticket sat for four years because nothing forced it.
+
+Four years of security patches missed. Four years of a workaround in our code that compensated for behavior the library fixed in the next version.
+
+When I finally did it, the upgrade was boring. Two breaking changes, one small wrapper deleted, twenty minutes of test runs. I'd built a monster in my head over four years of not looking.
+
+Stale dependencies are cheap to ignore and expensive to think about. Every week I don't look, the story in my head gets bigger. Now I upgrade monthly, in a window, with tests, and the fear never gets a chance to grow. One afternoon. That's all it was. The story I told myself for four years was longer than the work, and I have not trusted that story since.
+
+#AI #BuildInPublic #VibeCoding #tech #Dependencies #Developer #Software #Engineering #Coding #Security #Backend #Tech #Learning #Craft #Maintenance #BestPractices #Refactoring #Production #TechnicalDebt #Engineering
+---
+[2026-10-04 21:00:52 UTC]
+record_id=f16a435fbe8991a872c678e3e91d9ed09c78cf2cfb9db522e0708dbca2a0c723
+scheduled_for=2026-10-08 13:30
+I was wrong in a design review and said so out loud, and it changed how the team worked with me.
+
+I'd argued for a service boundary for about ten minutes. Then a colleague showed me a query pattern I hadn't considered, and my boundary would have turned one read into four.
+
+So I said I was wrong, here's the thing I didn't see, and I changed my position in front of eight people.
+
+Nobody remembers the argument. Everybody remembers the correction. Two people started doing the same thing in later meetings, and the meetings got shorter because the posturing got cheaper.
+
+The habit is hard because it feels like losing. It isn't. I lost nothing in that room. I gained a reputation for changing my mind when the facts changed, which is the kind of mind that's useful on a team. I'd rather be corrected on Tuesday than be right on Friday.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Culture #Design #Backend #Tech #Learning #Craft #Leadership #Communication #Mentorship #Humility #Hiring
+---
+[2026-10-04 21:00:52 UTC]
+record_id=08bd9a5ba2352a7e432ed2ce093a4114b656fcf901d4123a4a7396a12485f730
+scheduled_for=2026-10-08 13:45
+We replaced a weekly meeting with a document and got two hours back, then noticed something better.
+
+The document was a one page summary written before the meeting would have happened. Numbers, decisions needed, blockers. People read it and commented in the doc. Anything unresolved became a five minute call with the two people who cared.
+
+The hours are the easy part. What I didn't expect was the archive. Nine months of docs meant every decision had a short written reason attached to it, and onboarding a new person on that project went from three weeks of questions to a morning of reading.
+
+The meeting wasn't useless. It was doing two jobs, deciding and remembering, and it was bad at remembering.
+
+Now I ask every recurring meeting which of those two jobs it does. If it's remembering, it becomes a document. If it's deciding, it stays, and it gets shorter because the reading happened first. I keep every one of those documents in a folder with the date on it, and I read them before I argue about a decision that got made once already.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Meetings #Documentation #Productivity #Tech #Learning #Craft #Culture #Communication #Leadership #Remote #BestPractices
+---
+[2026-10-04 21:00:52 UTC]
+record_id=707545e08f95a360db22729bd01a7e3d976f473d9623ac306e85991bbf8080c7
+scheduled_for=2026-10-08 14:00
+A bug came back every eight months for two years and we fixed it four times.
+
+Each fix was real. Each one addressed the symptom we could see, shipped, and got closed. Nobody connected the four because they landed in different services and different years, and the people who fixed them had all moved on or away.
+
+What connected them was a date. All four happened within a week of the pricing job that runs each quarter. That job wrote a value the other four services read, and it wrote it in a shape they each handled in their own way.
+
+I fixed it in a day once we saw the pattern. Two years of symptoms, one afternoon of cause, and the cost of not connecting them was four interrupted weekends.
+
+I keep a searchable list of incidents now with one line each. Same words, no blame. The pattern shows up when the records share a place, and email doesn't share anything. One line each. That's the whole system.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Incidents #Backend #Reliability #Tech #Learning #Craft #RootCause #Postmortem #Production #Documentation #Operations
+---
+[2026-10-04 21:07:07 UTC]
+record_id=975832d4cfd41edc143535acda2cc42f674b44bc4791aad1a50a99fa2ada8944
+scheduled_for=2026-10-08 14:30
+I onboarded a new hire in week one by giving her a small real bug instead of a tour.
+
+Not a training exercise. A real bug, small, with a real customer behind it. The tour could wait.
+
+She had it fixed in two days. More importantly, she touched the deploy pipeline, the test suite, the review process, and the logging on the way. Four things she'd have heard about in a week of meetings, she learned by needing them.
+
+The other effect was social. She had something to show, which gave everyone a reason to talk to her about the system rather than about onboarding. By Friday she was answering questions from people who'd been here a year.
+
+I do this with every new person now. The first task is real work and it's small enough to finish in a week. Documentation gets written when someone needs it, not before. Need is the best teacher I've found.
+
+#AI #BuildInPublic #VibeCoding #tech #Onboarding #Developer #Software #Engineering #Coding #Teamwork #Mentorship #Backend #Tech #Learning #Craft #Culture #Hiring #Careers #Documentation #Engineering
+---
+[2026-10-04 21:07:08 UTC]
+record_id=9211a3586129a249d59c4469ec3e69b5941e5ff461788c79a5929c9c21a7be9a
+scheduled_for=2026-10-08 14:45
+I kept a bug journal for a year and the most useful entry was the shortest one.
+
+One line per bug. What I saw, what it was, how long it took. Sixty entries, no analysis, no tags.
+
+Reading them at the end of the year showed me three things. Half my bugs were integration boundaries. A third were configuration. And the ones that took longest had the flattest descriptions, which means I was confused before I started.
+
+That last one changed my behavior. Now when I open a bug I write the symptom in one sentence first, before reading any code. If I can't write the sentence, I'm not ready to debug and I go find someone to describe it to.
+
+A year of one line entries cost me maybe two hours total. It told me where my bugs come from, which is something no tool has ever told me about my own work. I'd rather know that than fix the next one faster.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Learning #Craft #Journal #Backend #Tech #BestPractices #Productivity #Habits #Reflection #Engineering #Careers
+---
+[2026-10-04 21:07:08 UTC]
+record_id=2c4e5c0b5955bad9a135f1f8c0ca181b9df28d630690c0af85ea4099b832c7ff
+scheduled_for=2026-10-08 15:00
+I tell junior engineers three things and I've stopped adding to the list.
+
+First, read the whole error before typing. It sounds insulting. It saves more hours than any technique I know, and I still catch myself skipping it.
+
+Second, if you're stuck for an hour, say so out loud. Not to get an answer. To find out whether you're solving the right problem, which you cannot judge from inside your own head.
+
+Third, write the reason next to anything surprising. The next person is you in eight months, and they'll have your memory of the code plus nothing else.
+
+That's the list. Everything else I know is a longer version of one of those three, and long lists get remembered as nothing. I add a fourth when someone's work shows me a gap I've seen three times. So far that has happened once, about backups, and it stuck. That list has four items in it now, and I hope it stays short for a long time.
+
+#AI #BuildInPublic #VibeCoding #tech #Mentorship #Developer #Software #Engineering #Coding #Careers #Teamwork #Learning #Craft #Backend #Tech #Culture #Hiring #BestPractices #Advice #Engineering
+---
