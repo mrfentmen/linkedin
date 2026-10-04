@@ -488,3 +488,18 @@ It felt like cheating. I'd spent the afternoon finding out that the correct engi
 
 #AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Performance #Refactoring #Simplicity #Backend #DevOps #Database #Learning #Craft #Production #Architecture #SRE #CostOptimization
 ---
+[2026-10-03 23:29:39 UTC]
+record_id=ff6b8161e4a1ef889791ec06f241fcc24fb4c711ae5a5895d192007eaf1b4226
+status=ambiguous
+scheduled_for=2026-10-07 09:15
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+A teammate of mine wrote a service and documented none of it. He wasn't lazy and he wasn't careless.
+
+He held the whole thing in his head. Every decision, every workaround, the reason a retry had a two second delay. Asking him a question got a good answer in ten seconds. Asking the codebase got nothing.
+
+Then he took a month off. We had three incidents that month that he'd have closed in five minutes. None of them were his fault. They were ours, for not writing down what he told us.
+
+I don't think he was wrong to know his work. I think the team was wrong to let that knowledge have one home. We fixed it after he left, which is the expensive way to learn anything. That's the version I'd rather not repeat. His name is still on the author line of forty files. Every file. Every time I open one I wish he'd written one paragraph. He was gone. The knowledge left with him in a way that no repository could hold, and the rest of us spent a month rebuilding what he could have handed over in an afternoon of writing.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #Teamwork #Knowledge #Backend #Culture #Learning #Craft #Onboarding #Mentorship #Tech #Engineering #BestPractices
+---
