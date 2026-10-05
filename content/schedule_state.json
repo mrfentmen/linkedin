@@ -17740,9 +17740,9 @@
       "status": "failed",
       "content": "A report was off by one day for users in a certain region and the cause was a timezone offset in a filter. The filter took a date and compared it to a timestamp. The date arrived as a calendar day and the timestamp lived in a different zone, so the boundary landed eight hours away from where anyone expected.\n\nNobody noticed for a year because most users were in one zone and the boundary didn't matter to them.\n\nTwo rules came out of it. One zone. One name. Store timestamps in one zone, always. Convert at the edge, where the person is, and never in a filter buried three functions deep.\n\nMy second rule is about naming. I treat any variable called date that holds a timestamp as a bug waiting for a boundary condition. I name both now. We renamed the field to include the unit and the zone, which is ugly and has prevented two repeats.\n\nDates are the classic example of a thing that looks simple and hides a decision. Name the decision and the bug has nowhere to live.\n\n#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Backend #TimeZones #Databases #Tech #Learning #Craft #DataEngineering #BestPractices #Production #Debugging #Dates #Naming",
       "schedule_time": "2026-10-08 17:30",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-05T13:08:20+00:00",
-      "attempts": 2
+      "error": "LinkedIn's scheduled count is 166, no higher than 166 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-05T21:46:35+00:00",
+      "attempts": 4
     },
     "10aefefe5e7380395e6d2961b5d34bbd2f4917b654496afe452da5ee07753514": {
       "record_id": "10aefefe5e7380395e6d2961b5d34bbd2f4917b654496afe452da5ee07753514",
