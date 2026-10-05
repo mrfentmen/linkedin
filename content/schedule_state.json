@@ -17702,8 +17702,8 @@
       "content": "I version my endpoints now because a mobile app taught me that a client outlives your assumptions.\n\nWe shipped a field rename as a cleanup. New name, same data. Two internal callers updated the same day and everything looked done.\n\nThen a support ticket arrived from a user on an old version of the app. They hadn't updated in four months, which is their right, and their app called the old field name and got nothing.\n\nThe rename was correct and the rollout was wrong. A shipped client is a contract with a version you no longer control and can't patch.\n\nNow the rule is additive first. Add the new field, keep the old one, log who still reads the old one, and delete it when the logs go quiet for a month. One extra field for a while is cheap. An angry user on an old build isn't, and neither is the emergency release that follows. That's the rule now. Add first, delete later.\n\n#AI #BuildInPublic #VibeCoding #tech #API #Developer #Software #Engineering #Coding #Backend #Versioning #MobileApps #Tech #Learning #Craft #BestPractices #Distributed #Production #Deprecation #Architecture",
       "schedule_time": "2026-10-08 16:45",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-04T23:58:32+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-05T03:06:20+00:00",
+      "attempts": 4
     },
     "db1b058caa235849a746c8bfe1a884fc51e5e8d7d3044ec47ca6bba51ea2ab57": {
       "record_id": "db1b058caa235849a746c8bfe1a884fc51e5e8d7d3044ec47ca6bba51ea2ab57",
