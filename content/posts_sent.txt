@@ -27692,3 +27692,136 @@ That's the list. Everything else I know is a longer version of one of those thre
 
 #AI #BuildInPublic #VibeCoding #tech #Mentorship #Developer #Software #Engineering #Coding #Careers #Teamwork #Learning #Craft #Backend #Tech #Culture #Hiring #BestPractices #Advice #Engineering
 ---
+[2026-10-04 23:50:49 UTC]
+record_id=da1c7b83aa3148ec19d3500ba60e1e2d81c951a71166df979194bab86c9d6351
+scheduled_for=2026-10-08 10:45
+A clock drifted by nine seconds on one machine and it broke the payment flow for two hours.
+
+Nothing else was wrong. The code hadn't changed. The database was healthy. One host had drifted because the time service it talked to had been blocked by a firewall change three weeks earlier, and nothing noticed.
+
+Payment callbacks arrived with a timestamp that failed a freshness check. Nine seconds became eleven minutes because a retry loop added delay, and the check treats anything older than five minutes as a replay attack. So the system did exactly what I asked of it, using a number I never audited.
+
+I spent two hours on it because every dashboard agreed. Hosts up, disk fine, error rate flat. Drift has no dashboard unless you build one.
+
+I built one the next day. It reads the offset of every host and alerts past fifty milliseconds. Boring. It caught a second drifter within a month, which tells me the first one was never rare.
+
+#AI #BuildInPublic #VibeCoding #tech #DevOps #Reliability #Developer #Software #Engineering #Coding #Infrastructure #Backend #Tech #Learning #Craft #Production #Incidents #Observability #TimeZones #SRE
+---
+[2026-10-04 23:50:49 UTC]
+record_id=be7c772f89096e1d140aee858e52bdfd8802c7a867cc96e365db33d1ec48871b
+scheduled_for=2026-10-08 11:45
+I read every line of a diff before I comment on it and that habit has made me a slower reviewer in a good way.
+
+It used to take me four minutes to review a change. I'd read the description, skim the diff, and leave three comments, two of which were about style and one of which was about a line that no longer existed in the file.
+
+Now it takes twelve minutes. I read up, then down, then I read the test changes last, because tests tell me what the author believes the change does.
+
+The comments got shorter. One blocker, sometimes two. Nothing else. My approval rate went up, which surprised me until I understood why. Most changes are fine and I'd been treating that as a problem to solve.
+
+Reading the whole thing costs eight extra minutes. Guessing costs somebody an hour of thread and a rewritten function, and it costs me the credibility that makes my other comments land.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Developer #Software #Engineering #Coding #Teamwork #Backend #Tech #Learning #Craft #BestPractices #Culture #Feedback #Hiring #Mentorship #Engineering
+---
+[2026-10-04 23:50:49 UTC]
+record_id=2fae5c2c20eb9bc37ce68edf10e7f05fd80a0403c0e718ac85d1dcf957cb9eb8
+scheduled_for=2026-10-08 14:15
+A service had no owner for eleven months and nobody noticed until it needed a decision.
+
+It ran fine the whole time. That's the trap. Unowned services don't fail, they accumulate. Everything about it was someone's old work in a folder that a tool still knew about.
+
+The decision was small. Do we keep the nightly export or retire it. Three teams had opinions and none of them had the authority, so the request bounced for six weeks and landed on me because I asked enough questions to look like the person in charge.
+
+I took it and spent an hour reading the code, the logs, and the two consumers. The answer was retire it, and two of the three teams agreed once they saw the list of consumers.
+
+The lesson that stuck is that ownership is a name, not a folder. I asked for one name per service after that, in a file, next to the repository link. Twelve lines of bookkeeping. It has resolved three arguments since.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Ownership #Teamwork #Backend #Tech #Learning #Craft #Culture #Architecture #Platform #Documentation #Operations #Leadership
+---
+[2026-10-04 23:50:49 UTC]
+record_id=568d5ef317515a271d58198376bd849945205eb7218aeaab926e2eb121771222
+scheduled_for=2026-10-08 15:15
+A bug report from support turned into a product decision and I'm glad I read it instead of closing it.
+
+The report said a customer couldn't undo an action after a certain point. My first read was that the undo window was working as designed. Then I checked the numbers and found that the window closed after one hour, and that half the affected actions happened on a Friday afternoon.
+
+So the feature was fine and the window was a guess somebody made in 2021 to protect the database. That guess had never been revisited, and by now it shaped how customers used the product.
+
+We changed the window to twelve hours and added a guard that blocks the expensive case. Database load didn't move.
+
+Support tickets are a reading list, not a queue. Half of them are noise and the other half are the place where the product meets how people use it. I was wrong about that. Closing them fast feels productive and hides the second half. I read them all now. All of them. That's the job.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Support #Developer #Software #Engineering #Coding #Backend #UX #Tech #Learning #Craft #Customers #Product #DataEngineering #Teamwork #Engineering
+---
+[2026-10-04 23:50:49 UTC]
+record_id=e5206dd85d125982e1cbdd835cf7b0a87897e03ce8e83b8923bcbe9618154673
+scheduled_for=2026-10-08 15:30
+Two databases held the same list and one of them was wrong, which is a sentence that took a year to prove.
+
+Both were written to by different services. Both were read from by different pages. Nobody compared them because each team trusted its own copy and the numbers were close enough to look fine.
+
+Then a customer exported a list and found rows from 2022 sitting in it. The export read the stale copy. I spent a week building a reconciler that compares counts per day and per region, and it found nine differences, three of which had been feeding a dashboard for eighteen months.
+
+I picked one writer and made the other a read model with a lag we could measure. That took a month and the argument took two.
+
+Two sources of truth is a phrase people say like it's an obvious sin. It never arrives as a sin. It arrives one small write at a time, each one reasonable on its own.
+
+#AI #BuildInPublic #VibeCoding #tech #DataEngineering #Developer #Software #Engineering #Coding #Backend #Databases #Architecture #Tech #Learning #Craft #Reliability #Data #Production #Consistency #Platform
+---
+[2026-10-04 23:58:33 UTC]
+record_id=c32b6897c50829516b7523b3da252d9fed24c65f1195e90d48ca4096159b6cd4
+scheduled_for=2026-10-08 15:45
+A production script ran from my laptop for four months and I only understood the risk when the laptop died.
+
+It was a cron job that pulled a report, cleaned it, and pushed it into a table. I wrote it in an afternoon and ran it from my machine because that was the fastest path and the task was temporary.
+
+Temporary lasted until a quarterly review depended on the output. When the battery died mid-run, nobody knew the job existed, so nobody restarted it. It showed up three weeks later as a missing line in a report. Half a day to fix. A week to find. It now runs in the scheduler with retries, a lock, and an alert that fires when it doesn't finish.
+
+My rule now is about ownership of place. Nobody owned it. That was the whole problem. The part that should have stopped me is that a job three departments rely on had one copy of itself, living on a laptop that spends half its life in a bag. I moved it into the scheduler the following Monday and it has run without me since. If a job matters to anyone besides me, it runs somewhere I don't have to be awake for. My laptop is a workbench and workbenches aren't infrastructure.
+
+#AI #BuildInPublic #VibeCoding #tech #DevOps #Developer #Software #Engineering #Coding #Automation #Backend #Reliability #Tech #Learning #Craft #Production #Scheduling #Infrastructure #Operations #Platform
+---
+[2026-10-04 23:58:33 UTC]
+record_id=7a4f08ef5fa3606e1b98282d624f5165b69c19b818e12ac6852068cb2ba9516a
+scheduled_for=2026-10-08 16:00
+I wrote tests to a deadline and the deadline is the only reason the tests existed at all.
+
+We had a release on Thursday. On Wednesday at four I had four hours and a checklist. So I wrote eleven tests that covered the paths people would hit first, ran them, fixed two real bugs, and shipped.
+
+Three of those tests are still in the suite two years later. Two have caught regressions. One has needed an update every time the format changed, which is its own kind of useful signal.
+
+The other eight are gone. I deleted them within a month because they asserted nothing.
+
+What I take from this: a rushed test is still better than no test, as long as you know which kind you wrote. Mine were a smoke screen around the risky edges. Calling them coverage would have been a lie, and the lie is what gets you in trouble, not the rush. That's the trade.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #Developer #Software #Engineering #Coding #Deadlines #Backend #QA #Tech #Learning #Craft #BestPractices #Release #Production #Refactoring #Engineering
+---
+[2026-10-04 23:58:33 UTC]
+record_id=100f142ed6b59ef5fa9a63ecedee8bab942645c780d0cf5f23df344eb2a3ca0a
+scheduled_for=2026-10-08 16:15
+I refactored a module and nobody noticed, which is the highest praise a refactor can get.
+
+Six weeks of small commits. Renamed four things, split two functions, moved a group of helpers behind a file that matched its purpose instead of its first author. Behavior identical from the outside.
+
+The reason nobody noticed is that I never let the refactor change behavior. Every commit kept the tests green, and every commit was reversible.
+
+The reward was quiet. Two weeks later a bug report came in and the fix took twenty minutes, because the file it lived in was readable and the name of the function told me where to look. That's the payoff. Not a faster system. A cheaper Tuesday.
+
+Refactors are easy to sell as cleaning and hard to sell as insurance. I stopped selling them. I do them in small pieces during normal work, and I let the next bug fix make the case for me.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #Backend #TechnicalDebt #Architecture #Tech #Learning #Craft #CodeReview #BestPractices #Maintenance #Teamwork #Engineering
+---
+[2026-10-04 23:58:33 UTC]
+record_id=710c3f5de16e3f1e07c3c38284c58f9cff73d6510682a7886d3ff7b373d62a83
+scheduled_for=2026-10-08 16:30
+An idempotency key saved us from double charging about forty customers and that number haunts me.
+
+Our payment provider retries on a timeout. Our handler wrote a charge and then updated a record. When the update was slow, the provider timed out and retried with the same request, and we created a second charge because nothing tied the two requests together.
+
+One column and one check fixed it. Our client sends a key. Our handler stores it with the result. A repeat request returns the stored result instead of charging again.
+
+I keep coming back to the timing. I let this run for three weeks and it produced forty duplicate charges. The spreadsheet from the finance team is what surfaced it, not our monitoring, because from the software side both charges were successful.
+
+Retry is a promise the network makes and the ledger keeps. Any handler that can be retried needs to be safe to run twice, and the safety belongs in the handler. It's the handler's job, not a hope about the client.
+
+#AI #BuildInPublic #VibeCoding #tech #Payments #Developer #Software #Engineering #Coding #Backend #Reliability #Idempotency #Tech #Learning #Craft #Production #Distributed #Fintech #Databases #Engineering
+---
