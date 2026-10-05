@@ -17698,12 +17698,13 @@
     },
     "c87e308714199717c3a4363274bc11fbd1ebfa14c971e9db7d03226422fc7106": {
       "record_id": "c87e308714199717c3a4363274bc11fbd1ebfa14c971e9db7d03226422fc7106",
-      "status": "failed",
+      "status": "scheduled",
       "content": "I version my endpoints now because a mobile app taught me that a client outlives your assumptions.\n\nWe shipped a field rename as a cleanup. New name, same data. Two internal callers updated the same day and everything looked done.\n\nThen a support ticket arrived from a user on an old version of the app. They hadn't updated in four months, which is their right, and their app called the old field name and got nothing.\n\nThe rename was correct and the rollout was wrong. A shipped client is a contract with a version you no longer control and can't patch.\n\nNow the rule is additive first. Add the new field, keep the old one, log who still reads the old one, and delete it when the logs go quiet for a month. One extra field for a while is cheap. An angry user on an old build isn't, and neither is the emergency release that follows. That's the rule now. Add first, delete later.\n\n#AI #BuildInPublic #VibeCoding #tech #API #Developer #Software #Engineering #Coding #Backend #Versioning #MobileApps #Tech #Learning #Craft #BestPractices #Distributed #Production #Deprecation #Architecture",
       "schedule_time": "2026-10-08 16:45",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-05T03:06:20+00:00",
-      "attempts": 4
+      "error": "",
+      "updated_at": "2026-10-05T13:08:21+00:00",
+      "attempts": 6,
+      "finalized": true
     },
     "db1b058caa235849a746c8bfe1a884fc51e5e8d7d3044ec47ca6bba51ea2ab57": {
       "record_id": "db1b058caa235849a746c8bfe1a884fc51e5e8d7d3044ec47ca6bba51ea2ab57",
@@ -17712,6 +17713,44 @@
       "schedule_time": "2026-10-08 17:00",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-05T00:00:11+00:00",
+      "attempts": 2
+    },
+    "711a7ca08d9c8ce275b9d5bd0db5df105b45204df0752cb052fb2d4954931b89": {
+      "record_id": "711a7ca08d9c8ce275b9d5bd0db5df105b45204df0752cb052fb2d4954931b89",
+      "status": "scheduled",
+      "content": "A queue filled up at four in the morning and the only reason we caught it was a person who couldn't sleep.\n\nThe consumer had been paused by a deploy. Nothing was draining, so the queue grew until it hit a limit, and then the producer started rejecting writes. Three hours of rejects before anyone looked.\n\nEvery dashboard said green. The queue depth chart had a line on it and the line was rising, but the alert was set on a threshold we picked in a meeting two years earlier and never revisited.\n\nWe caught it because a support person was awake and saw a customer complaint. That's not a detection system. That's luck with a personality.\n\nI changed the alert to fire on the rate of change, not the level. A queue that grew by ten thousand messages in ten minutes is a problem no matter where it sits. Level tells you where you stand. Rate tells you where you're going. I read the graph before the threshold now.\n\n#AI #BuildInPublic #VibeCoding #tech #DevOps #Queues #Developer #Software #Engineering #Coding #Backend #Observability #Tech #SRE #Learning #Craft #Reliability #Production #Alerting #Incidents",
+      "schedule_time": "2026-10-08 17:00",
+      "error": "",
+      "updated_at": "2026-10-05T13:08:21+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ece394e58f95a435b24233023f79025f4b5efaa20252114ed797f7e95ef43484": {
+      "record_id": "ece394e58f95a435b24233023f79025f4b5efaa20252114ed797f7e95ef43484",
+      "status": "scheduled",
+      "content": "I became the person who asks who owns this and it made me less popular for about two months.\n\nEvery incident had the same shape. We would find the broken thing, then spend twenty minutes figuring out who could approve a change, then fix it. The finding took five minutes and the finding of a person took twenty.\n\nAsking the question out loud made the gap visible. Some people heard it as a complaint about their team. I get that. It sounded like a complaint for a while.\n\nThen we wrote the names down. One name per service, in a file, with a backup name. The next incident took eleven minutes instead of forty.\n\nThe thing about org problems is that they look like personal friction. Naming the missing thing feels rude until the missing thing exists, and then everyone forgets it was ever missing. I'd rather be awkward in a meeting than be the bottleneck at two in the morning. It took a year. Worth it.\n\n#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Ownership #Backend #Tech #Learning #Craft #Culture #Incidents #Leadership #OnCall #Communication #Platform",
+      "schedule_time": "2026-10-08 17:15",
+      "error": "",
+      "updated_at": "2026-10-05T13:08:21+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "0ffb1419100db7804e066f2f29b400eb3cbce310ba18cf48964983b3524d8870": {
+      "record_id": "0ffb1419100db7804e066f2f29b400eb3cbce310ba18cf48964983b3524d8870",
+      "status": "failed",
+      "content": "A report was off by one day for users in a certain region and the cause was a timezone offset in a filter. The filter took a date and compared it to a timestamp. The date arrived as a calendar day and the timestamp lived in a different zone, so the boundary landed eight hours away from where anyone expected.\n\nNobody noticed for a year because most users were in one zone and the boundary didn't matter to them.\n\nTwo rules came out of it. One zone. One name. Store timestamps in one zone, always. Convert at the edge, where the person is, and never in a filter buried three functions deep.\n\nMy second rule is about naming. I treat any variable called date that holds a timestamp as a bug waiting for a boundary condition. I name both now. We renamed the field to include the unit and the zone, which is ugly and has prevented two repeats.\n\nDates are the classic example of a thing that looks simple and hides a decision. Name the decision and the bug has nowhere to live.\n\n#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Backend #TimeZones #Databases #Tech #Learning #Craft #DataEngineering #BestPractices #Production #Debugging #Dates #Naming",
+      "schedule_time": "2026-10-08 17:30",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-05T13:08:20+00:00",
+      "attempts": 2
+    },
+    "10aefefe5e7380395e6d2961b5d34bbd2f4917b654496afe452da5ee07753514": {
+      "record_id": "10aefefe5e7380395e6d2961b5d34bbd2f4917b654496afe452da5ee07753514",
+      "status": "failed",
+      "content": "A report was off by one day for users in a certain region and the cause was a timezone offset in a filter. The filter took a date and compared it to a timestamp. The date arrived as a calendar day and the timestamp lived in a different zone, so the boundary landed eight hours away from where anyone expected.\n\nNobody noticed for a year because most users were in one zone and the boundary didn't matter to them.\n\nTwo rules came out of it. One zone. One name. Store timestamps in one zone, always. Convert at the edge, where the person is, and never in a filter buried three functions deep.\n\nMy second rule is about naming. I treat any variable called date that holds a timestamp as a bug waiting for a boundary condition. I name both now. We renamed the field to include the unit and the zone, which is ugly and has prevented two repeats.\n\nDates are the classic example of a thing that looks simple and hides a decision. Name the decision and the bug has nowhere to live.\n\n#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Backend #TimeZones #Databases #Tech #Learning #Craft #DataEngineering #BestPractices #Production #Debugging #Dates #Naming",
+      "schedule_time": "2026-10-08 18:00",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-05T13:10:01+00:00",
       "attempts": 2
     }
   }

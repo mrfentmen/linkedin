@@ -27825,3 +27825,48 @@ Retry is a promise the network makes and the ledger keeps. Any handler that can 
 
 #AI #BuildInPublic #VibeCoding #tech #Payments #Developer #Software #Engineering #Coding #Backend #Reliability #Idempotency #Tech #Learning #Craft #Production #Distributed #Fintech #Databases #Engineering
 ---
+[2026-10-05 13:08:21 UTC]
+record_id=c87e308714199717c3a4363274bc11fbd1ebfa14c971e9db7d03226422fc7106
+scheduled_for=2026-10-08 16:45
+I version my endpoints now because a mobile app taught me that a client outlives your assumptions.
+
+We shipped a field rename as a cleanup. New name, same data. Two internal callers updated the same day and everything looked done.
+
+Then a support ticket arrived from a user on an old version of the app. They hadn't updated in four months, which is their right, and their app called the old field name and got nothing.
+
+The rename was correct and the rollout was wrong. A shipped client is a contract with a version you no longer control and can't patch.
+
+Now the rule is additive first. Add the new field, keep the old one, log who still reads the old one, and delete it when the logs go quiet for a month. One extra field for a while is cheap. An angry user on an old build isn't, and neither is the emergency release that follows. That's the rule now. Add first, delete later.
+
+#AI #BuildInPublic #VibeCoding #tech #API #Developer #Software #Engineering #Coding #Backend #Versioning #MobileApps #Tech #Learning #Craft #BestPractices #Distributed #Production #Deprecation #Architecture
+---
+[2026-10-05 13:08:21 UTC]
+record_id=711a7ca08d9c8ce275b9d5bd0db5df105b45204df0752cb052fb2d4954931b89
+scheduled_for=2026-10-08 17:00
+A queue filled up at four in the morning and the only reason we caught it was a person who couldn't sleep.
+
+The consumer had been paused by a deploy. Nothing was draining, so the queue grew until it hit a limit, and then the producer started rejecting writes. Three hours of rejects before anyone looked.
+
+Every dashboard said green. The queue depth chart had a line on it and the line was rising, but the alert was set on a threshold we picked in a meeting two years earlier and never revisited.
+
+We caught it because a support person was awake and saw a customer complaint. That's not a detection system. That's luck with a personality.
+
+I changed the alert to fire on the rate of change, not the level. A queue that grew by ten thousand messages in ten minutes is a problem no matter where it sits. Level tells you where you stand. Rate tells you where you're going. I read the graph before the threshold now.
+
+#AI #BuildInPublic #VibeCoding #tech #DevOps #Queues #Developer #Software #Engineering #Coding #Backend #Observability #Tech #SRE #Learning #Craft #Reliability #Production #Alerting #Incidents
+---
+[2026-10-05 13:08:21 UTC]
+record_id=ece394e58f95a435b24233023f79025f4b5efaa20252114ed797f7e95ef43484
+scheduled_for=2026-10-08 17:15
+I became the person who asks who owns this and it made me less popular for about two months.
+
+Every incident had the same shape. We would find the broken thing, then spend twenty minutes figuring out who could approve a change, then fix it. The finding took five minutes and the finding of a person took twenty.
+
+Asking the question out loud made the gap visible. Some people heard it as a complaint about their team. I get that. It sounded like a complaint for a while.
+
+Then we wrote the names down. One name per service, in a file, with a backup name. The next incident took eleven minutes instead of forty.
+
+The thing about org problems is that they look like personal friction. Naming the missing thing feels rude until the missing thing exists, and then everyone forgets it was ever missing. I'd rather be awkward in a meeting than be the bottleneck at two in the morning. It took a year. Worth it.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Ownership #Backend #Tech #Learning #Craft #Culture #Incidents #Leadership #OnCall #Communication #Platform
+---
