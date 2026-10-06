@@ -27870,3 +27870,584 @@ The thing about org problems is that they look like personal friction. Naming th
 
 #AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Teamwork #Ownership #Backend #Tech #Learning #Craft #Culture #Incidents #Leadership #OnCall #Communication #Platform
 ---
+[2026-10-06 04:01:49 UTC]
+record_id=0ffb1419100db7804e066f2f29b400eb3cbce310ba18cf48964983b3524d8870
+scheduled_for=2026-10-08 17:30
+A report was off by one day for users in a certain region and the cause was a timezone offset in a filter. The filter took a date and compared it to a timestamp. The date arrived as a calendar day and the timestamp lived in a different zone, so the boundary landed eight hours away from where anyone expected.
+
+Nobody noticed for a year because most users were in one zone and the boundary didn't matter to them.
+
+Two rules came out of it. One zone. One name. Store timestamps in one zone, always. Convert at the edge, where the person is, and never in a filter buried three functions deep.
+
+My second rule is about naming. I treat any variable called date that holds a timestamp as a bug waiting for a boundary condition. I name both now. We renamed the field to include the unit and the zone, which is ugly and has prevented two repeats.
+
+Dates are the classic example of a thing that looks simple and hides a decision. Name the decision and the bug has nowhere to live.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Backend #TimeZones #Databases #Tech #Learning #Craft #DataEngineering #BestPractices #Production #Debugging #Dates #Naming
+---
+[2026-10-06 04:01:49 UTC]
+record_id=7d99f6edb7e5b3c757ad297c5028ed9a981ebddbaf3384e3ea5e443d774ad73c
+scheduled_for=2026-10-08 17:45
+I put a comment above every regex I write and it has paid for itself four times.
+
+A regex is a note to a machine written in a language no human reads at speed. Mine from two years ago look like line noise, and I wrote them.
+
+It says what the pattern accepts and what it rejects, with one example each. Four lines. Thirty seconds. It takes thirty seconds and it saves the next person the twenty minutes I spent yesterday trying to decode a pattern somebody else wrote.
+
+My other habit is putting the examples in a test, not the comment. The comment explains intent. The test proves the intent still holds.
+
+I have a file with fourteen patterns and forty test cases and I open it about once a month. It's the least clever code I own and it has never surprised me. I'd like more of my code to be that boring.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Regex #Testing #Backend #Documentation #Tech #Learning #Craft #BestPractices #CodeReview #Debugging #Engineering #Maintenance
+---
+[2026-10-06 04:01:49 UTC]
+record_id=fcd6b3d1f512872009be6384861f426472ca2eee2dfbf686547595e843166ab1
+scheduled_for=2026-10-08 18:00
+We made a service four times faster by deleting a feature and the feature was mine.
+
+It generated a thumbnail for every upload. Nice touch, used by about two percent of files opened. It cost a queue, a worker pool, and a storage bucket that grew without a limit.
+
+I measured it before arguing about it. Deleting the feature removed thirty percent of the compute bill and one whole class of failure, which was the worker pool getting stuck on a corrupt image. The replacement is a placeholder. One image, no queue, no growth.
+
+Telling the three people who liked it was the hard part. Two of them said they hadn't used it in months. The third asked for a manual endpoint instead, which I added in an hour.
+
+I've done this four times now. Measure the cost, name the users, offer the smaller thing. A feature almost never survives that conversation and the service always does.
+
+#AI #BuildInPublic #VibeCoding #tech #Performance #ProductManagement #Developer #Software #Engineering #Coding #Backend #CostOptimization #Tech #Learning #Craft #Simplicity #Production #Refactoring #Cloud #Architecture
+---
+[2026-10-06 04:01:50 UTC]
+record_id=5fba1476ca9200e5f9ea626008472e5d880b23f52798343f01a928173a8a14b1
+scheduled_for=2026-10-08 18:15
+A support ticket turned out to be a product decision and it took me two days to see that.
+
+A customer asked for a field to be sortable. Simple request. I opened the code and found the field stores free text, so sorting it alphabetically groups uppercase apart from lowercase and puts punctuation first.
+
+To sort it properly I'd need a normalized column, a backfill, and a rule about how to normalize names with punctuation. None of that's code work. All of it is a decision about what the list means.
+
+I wrote the request up as three options with a cost next to each. Keep the mess and sort it. Add a column and lose the mess. Leave it and explain why the list is grouped the way it is.
+
+The product owner picked the third, and the customer was fine with it once somebody explained the tradeoff. The ticket was never a bug. It was a question nobody had asked out loud, and two days of investigation is what it costs to find the question.
+
+#AI #BuildInPublic #VibeCoding #tech #ProductManagement #Support #Developer #Software #Engineering #Coding #Backend #DataEngineering #Tech #Learning #Craft #Design #Communication #Databases #Teamwork #Engineering
+---
+[2026-10-06 04:01:50 UTC]
+record_id=0aae6e9b14eeb79677ddeeb8481c072040dbd0d5045b1d116409666e333fa556
+scheduled_for=2026-10-08 18:30
+A bug took two weeks to find and was solved by one print statement in the right place. The symptom was a number that was right most of the time and wrong about one day in twenty. Logs showed nothing. My tests passed. I added logging at the boundary, ran it for a day, and the answer was waiting there.
+
+That value was being rounded twice. Once when it was written and once when it was read, and the second rounding only changed anything when the value landed on a specific boundary.
+
+Two weeks of reasoning and the win came from printing the number at two points and comparing. That comparison took four minutes.
+
+I took two weeks because I spent the first nine days reading code and forming theories. Theories are cheap to make and expensive to test, and I tested mine out of order. Nine days of reading code without printing the number is nine days of guessing at a machine that was willing to tell me.
+
+Print the value. Two points. Compare. That's the technique and it beats every clever hypothesis I have ever had.
+
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Developer #Software #Engineering #Coding #Backend #Logging #Tech #Learning #Craft #Production #Testing #BestPractices #Observability #Engineering #Fundamentals
+---
+[2026-10-06 04:09:22 UTC]
+record_id=c226556c265c35b695e5ee18b52ef31cc768f59967948c19c5fdc3b2884c0884
+scheduled_for=2026-10-08 18:45
+I rewrote the same module twice and kept the second version, which was three hundred lines shorter.
+
+My first rewrite was the one I wanted to do. Clean abstractions, a small state machine, and an interface I designed from scratch. It took a week and it worked.
+
+I rewrote it again because the first version was hard to debug. That state machine had eight states and the real system had three.
+
+So I deleted it. Twice. Same module. The second version is a function with a switch, forty lines, and no abstraction at all. It handles every case the first one did and I can read it at two in the morning.
+
+What I learned is that abstraction is a bet on how many shapes the problem will take. I made that bet before I had seen the shapes. A switch statement is a cheaper bet, and I can always add the abstraction later once I know what varies. That's the thing I keep getting wrong. The version I shipped first was the one that looked like engineering and the version I kept was the one that looked like a person admitting a guess.
+
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Developer #Software #Engineering #Coding #Backend #Architecture #Simplicity #Tech #Learning #Craft #Design #BestPractices #Maintenance #Abstraction #Engineering
+---
+[2026-10-06 04:09:22 UTC]
+record_id=c3ff0252edd99019d3039e235ace8572cec7dc33630bf9cfcebf040039fddb36
+scheduled_for=2026-10-08 19:00
+I tested a database backup for the first time last month and I'm angry it took this long.
+
+The backups had been running for years. Daily, encrypted, shipped to storage. Every check said the job completed, and every check was about the job, not the file.
+
+The restore took ninety minutes and produced an error on the fourth table. A permission mismatch introduced six weeks earlier that the backup job couldn't see, because the backup job reads and never writes. So we had six weeks of backups that wouldn't restore, and the green dashboard was reporting on the wrong thing the whole time.
+
+The fix was to restore a copy into a scratch database every week and run three queries against it. Twenty minutes of compute and it fails hard when the file is bad.
+
+A backup you have never restored is a belief. I had years of belief and no evidence, and the difference between me and an outage was somebody else's luck. A backup job can report success for six weeks while the file it wrote is missing a table, and it keeps saying success because the job never opens the file it made. I run it every Sunday now. Three queries. That's the whole test.
+
+#AI #BuildInPublic #VibeCoding #tech #Backups #DevOps #Developer #Software #Engineering #Coding #Databases #Reliability #Tech #SRE #Learning #Craft #Production #DataSafety #Operations #Infrastructure
+---
+[2026-10-06 04:09:22 UTC]
+record_id=c71522e544e8de6c190c080bfdda4732e0060d878079dc30596c180398a9f40d
+scheduled_for=2026-10-09 08:00
+I keep a list of unknowns on every project and it has changed how I talk about risk.
+
+The list is plain. Things I don't know, written as questions, each with a name of the person who can answer it. How does their auth issue tokens. Does the legacy export include deleted rows. Who approves the schema change.
+
+I get some answered in an hour and they come off the list. The questions that stay are the ones nobody wants to own, and those decide the schedule.
+
+The value isn't the answers. It's that risk stops being a feeling in my chest and becomes a row I can hand to somebody. When I say I'm worried about this project, I can now say which four rows worry me and what each one would cost to close.
+
+That conversation goes better than any estimate I have ever given, and it takes ten minutes to start the list.
+
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Developer #Software #Coding #Risk #Planning #ProductManagement #Backend #Tech #Learning #Craft #Communication #Projects #Teamwork #Leadership #Uncertainty
+---
+[2026-10-06 04:09:22 UTC]
+record_id=f6a399d87047e69dcf76445619dfe67f8b5d51ed2519a86d7e4a79fd0abece3f
+scheduled_for=2026-10-09 08:15
+Before every deploy I check one thing, and it's not the tests. It's the rollback.
+
+The tests prove the new code works. They say nothing about whether I can get back to the old code in five minutes at eleven at night.
+
+I write the rollback down before I merge. Which commit, which command, whether the migration is reversible, whether any data written in the new shape will break the old reader. Four lines in the pull request.
+
+Twice this has stopped a deploy I wanted to make. Once the migration had no down path and I split it into two deploys. Once the new reader had already written rows the old code couldn't parse, so I shipped a flag instead.
+
+I spend five minutes on this check and it has saved two incidents. A deploy without a rollback is a bet that nothing goes wrong, and I've made that bet hundreds of times and lost more than once. Five minutes. That's the whole check.
+
+#AI #BuildInPublic #VibeCoding #tech #Deployment #DevOps #Developer #Software #Engineering #Coding #Reliability #Backend #Tech #Learning #Craft #Production #Release #Incidents #Rollback #Platform
+---
+[2026-10-06 04:09:22 UTC]
+record_id=d437a3a3628ac6beaa02676bff96fc290e8b95a8559eab5a688969fb137e73d9
+scheduled_for=2026-10-09 08:30
+A colleague shipped a service and left the company three weeks later and the repo told me nothing about his choices.
+
+The code worked. That part was solid. What was missing was the why. A retry with a fixed delay, a cache with no expiry, a config value set to two hundred where every other service uses twenty.
+
+I changed one of those values and broke a downstream job. His two hundred wasn't a typo. It matched a batch size in a partner system that I had never heard of. Recovering that knowledge took a phone call to somebody who was on leave and remembered him mentioning it in a meeting.
+
+The file had no comment and the pull request had one line. Two sentences in that file would have saved me an afternoon and a partner team a bad morning.
+
+Code travels. People don't. Those two sentences are the part of you that stays, and I write them even when the line looks obvious. I keep them in that file now.
+
+#AI #BuildInPublic #VibeCoding #tech #Documentation #Developer #Software #Engineering #Coding #Backend #Teamwork #Tech #Learning #Craft #CodeReview #BestPractices #Legacy #Onboarding #Culture #Maintenance
+---
+[2026-10-06 04:15:55 UTC]
+record_id=1acfe31af5db72d9f046b68f161099cafa8859a20baeecb216da2fb21331b595
+scheduled_for=2026-10-09 08:45
+A metric made our service look healthier for six months and it was measuring the wrong denominator.
+
+We reported error rate as failures divided by requests. Failures came from a handler that ran after a queue. Requests were counted at the edge. When the queue backed up, requests dropped and the ratio improved, so the worst hour of the quarter looked like our best.
+
+Nobody questioned it because the number was green and the graph was flat and the incident that week was attributed to a partner.
+
+The fix was one line. Count the denominator at the same place as the numerator. Then the graph showed a spike in ten minutes.
+
+Metrics are code with an agenda. They don't lie on purpose, but they answer the question you asked, and a ratio of two things measured in different places answers nothing. I now ask one question about every metric I rely on. Where is each half of this number counted. Ask that first. Every time.
+
+#AI #BuildInPublic #VibeCoding #tech #Observability #Metrics #Developer #Software #Engineering #Coding #Backend #SRE #Tech #Learning #Craft #Production #Reliability #DataEngineering #Monitoring #Incidents
+---
+[2026-10-06 04:15:55 UTC]
+record_id=bf9b8cfa3ca240790c2f9f391ee802ab6ddcc7d3781342a0f037b0697c72fea8
+scheduled_for=2026-10-09 09:00
+I stopped using clever library features and my code got shorter and easier to hand over.
+
+The library had a decorator that handled retries, caching, and tracing in one line. It worked. I used it in about twenty places and I felt productive.
+
+Then a junior engineer spent a day debugging a trace that the decorator had written, because the order of the hidden wrappers changed which span showed up as the parent. Nobody in the code could see the wrappers. They existed at import time.
+
+Now I write the retry and the cache as plain calls, six lines each, visible in the function that needs them. The library still does the work. I just stopped hiding where it happens.
+
+Clever features pay for themselves in the hands of the person who read the docs. They cost everybody else, and the rest of the team is everybody else. Plain code is a message to the next person and I'd rather send a short one.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #Simplicity #Backend #Libraries #Tech #Learning #Craft #CodeReview #Debugging #BestPractices #Onboarding #Teamwork #Architecture
+---
+[2026-10-06 04:15:55 UTC]
+record_id=875c3d154512f8e4763760de18331af675711c16d86cfe1e749def97cc9ef2b6
+scheduled_for=2026-10-09 09:15
+Nine years of writing software taught me less than nine months of watching other people use it.
+
+I could write a clean function in my first year. What I couldn't do was predict which of my clean functions somebody would click twice, misunderstand, or work around.
+
+The lessons that stuck all came from watching. A form that needed one field and had four. A save button that looked disabled and wasn't. A list that sorted by a column nobody cared about because it was the first one in the schema.
+
+None of that showed up in the code or the tests. It showed up when a person used the thing and paused, and the pause is the signal.
+
+So I sit in on support calls about once a month. It's not efficient. It doesn't scale. It's the one hour a month that reliably changes what I build next, and I'd give up a standup before I gave it up. I don't argue with a person's pause. That's the trade. Worth it.
+
+#AI #BuildInPublic #VibeCoding #tech #Developer #Software #Engineering #Coding #UX #Product #Backend #Tech #Learning #Craft #Customers #BestPractices #Culture #Careers #Empathy #ProductManagement
+---
+[2026-10-06 04:15:55 UTC]
+record_id=755e38eb1278ca23f9cfd60318279c713fd9f2cb9419aeb5c45cf4a559a6abd0
+scheduled_for=2026-10-09 09:30
+The agent wrote the whole diff and I still spent the afternoon on the rollback plan.
+
+I handed it a refactor on Monday. It produced six hundred lines in four minutes. Every test passed. I merged it on a branch and sat there with a feeling I could not name.
+
+The feeling was that I had no idea what to do if this broke at two in the morning. Not whether it was correct. What the recovery looked like. Which migration to reverse. Which cache to clear. Which table to read first.
+
+I spent three hours writing that down. One page. The agent can't write that page because it doesn't know what we have been burned by. It knows the code. It doesn't know the last four incidents. A diff is a proposal. The rollback belongs to the person who has to answer the phone, so I write it first now.
+
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Refactoring #Developer #Software #Engineering #Coding #Reliability #IncidentResponse #Production #Deployment #Rollback #Backend
+---
+[2026-10-06 04:15:56 UTC]
+record_id=76b65af43a8c12de6e4371d3717f927f5b1e87c00b395805dab41bcb3578c0f4
+scheduled_for=2026-10-09 09:45
+Every team I know runs the same three models and calls it a choice.
+
+I sat in a review last month where four services each picked a different provider. Two of them were the same model behind a different name. Nobody in the room could say which weights they were actually running, including me.
+
+That's the part that worries me. If one provider ships a bad update on a Thursday, a quarter of the industry gets worse at the same time. Not gradually. Together. There's no second opinion because there's no second model.
+
+I keep one local model on my machine for the boring jobs. Summarise a ticket. Rename a variable. Draft a commit message. It's slower and worse and it costs nothing and it never changes under me without my permission.
+
+I don't hold that as a values statement. It's the same reason I keep cash in the house. The system is fine until the day it isn't, and on that day everybody calls the same number.
+
+#AI #BuildInPublic #VibeCoding #tech #MachineLearning #OpenSource #LocalFirst #LLM #Developer #Software #Engineering #Coding #Reliability #Dependencies #TechNews #Infrastructure
+---
+[2026-10-06 04:23:02 UTC]
+record_id=24588caf87033b4af7094f0b9e8e37809f1c285285475f4fa081d859191ff753
+scheduled_for=2026-10-09 10:00
+The latest survey says fifty two percent of game developers think generative AI is bad for the industry.
+
+Two years ago that number was eighteen. Same survey. Same question. Two thousand developers. I read it twice because I wanted to believe I had the years wrong.
+
+Here's what I keep thinking about. These are the people who actually use the tools. Not the commentators. Not the executives announcing the strategy on an earnings call. The people who sit down and try to make something with it every day for a year.
+
+I use a coding agent daily and I would not go back. That's not the same as believing the industry is on a good path. I can hold both. This tool helps me. The incentive it feeds does not.
+
+That survey keeps asking about tools. What moved was the motive behind them. Fifty two percent is a lot of people saying they have watched the reason change.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #TechNews #FutureOfWork #Software #Engineering #Coding #DataDriven #GenAI #Careers #Production #Craft
+---
+[2026-10-06 04:23:02 UTC]
+record_id=273c1477e1e2a158c332a28b189ece642a9baa8348cfe3cc6db0abaa42f22841
+scheduled_for=2026-10-09 10:15
+A studio shipped a game people loved and closed anyway, and that sentence should be on a wall.
+
+Hi-Fi Rush was a surprise. It reviewed well. Players who touched it liked it. The studio that made it got shut down by the company that owned it. I have no explanation for that.
+
+I keep coming back to it because it kills the easy explanation. The easy explanation is that bad games fail. Here a good one didn't save the team, because the team was never the unit that got measured. What got measured was a subscription service and a release calendar.
+
+In the same week, I watched two engineers get cut from a project that was shipping fine. Their project wasn't the problem. A budget line three levels up was the problem.
+
+I stopped telling junior people that good work protects them. It doesn't. Good work is how you get picked next time. What protects you is knowing which number your name sits under, and that number is seldom the product.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #TechNews #Layoffs #FutureOfWork #Careers #Software #Engineering #Craft #Production #Leadership #WorkCulture
+---
+[2026-10-06 04:23:02 UTC]
+record_id=e786bf65cbed44a33a15bf2d80924fb4f0560abeba5df908f0616f7a43a2d379
+scheduled_for=2026-10-09 10:30
+One of these two games scored lower and it's the one people still install today.
+
+Fallout 3 scored ninety three and sold about twelve point four million. New Vegas scored eighty four and sold about eleven point six. Both numbers are real. Neither one is an argument.
+
+Because the modding scene for New Vegas is still running. Sixteen years of quests, fixes and overhauls, written by strangers for free. The other one has mods too and the community around it is a fraction of the size.
+
+I take two things from it. Quality scores measure the week of release, and release week is the shortest part of a game's life. The second thing is less comfortable. The thing I love most about New Vegas is a bug list that other people chose to fix.
+
+Both remasters are confirmed now, which means a publisher looked at that modding list and saw a commercial case. Fifteen years of unpaid labour became an upsell. I'm not angry about it. I just want it said out loud.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #Fallout #Modding #OpenSource #Community #TechNews #Software #Engineering #Craft #Legacy #Preservation
+---
+[2026-10-06 04:23:02 UTC]
+record_id=491cb711282b8ed02bf8eefb56061397c4cb758df2b048c71fd0e28ad915c3b6
+scheduled_for=2026-10-09 10:45
+The last patch for an old remaster changed two words on a character screen and the modders noticed within a day.
+
+Male and Female became Body Type 1 and Body Type 2. That's it. Two labels on a menu nobody looks at twice. The armor variants changed with it, so some of the female sets got longer skirts and the safest ones were quietly normalised.
+
+I have no problem with the label. I have a problem with what happened next in the pipeline. A mod that restored the old wording got pulled and then put back, and it is now the most endorsed mod for that game. I read that as evidence about where the players stood.
+
+Here's the craft lesson I keep. Every change costs something and the cost shows up somewhere you didn't look. Somebody had to redraw those meshes. Somebody had to test them. Somebody had to decide which sets were safe. That's a week of work to avoid one sentence of explanation.
+
+Two words on a menu. A week of art. A modding war. The cheapest version of this was a paragraph in the patch notes and somebody chose the other version.
+
+#AI #BuildInPublic #VibeCoding #tech #GameDev #GamesIndustry #Remaster #Modding #PatchNotes #Craft #Software #Engineering #ProductDesign #TechNews #Community #Documentation
+---
+[2026-10-06 04:23:02 UTC]
+record_id=dd92418a2df33b5e1ca132dab7e2a53d3679f99d9b000b3308012cc89c5e6b93
+scheduled_for=2026-10-09 11:00
+I have multiple phones running an AI assistant and I keep thinking about how easy that was to set up.
+
+Meta built an assistant that can touch a messaging app. Their own documentation says it can't run external tool servers. It can. Somebody wired a relay between the assistant and a phone farm and it works. Messages in, actions out, no rate limit in the middle.
+
+I want to be careful about how I say this because the fun version of this post helps nobody. This is a real security problem and it is not a clever hack. Once you can bridge one assistant to many devices, you have a botnet with a customer support voice. You have account creation at scale and you have a messaging platform that can't tell my four phones from four hundred.
+
+The fix is boring and that's why it hasn't happened. Rate limits per account. Device attestation. A hard cap on how many sessions one identity can hold. A permission model where an assistant asks before it acts on your behalf instead of inheriting the whole account.
+
+The tool is not the problem. The missing boundary is. I built with it because I wanted to see what was actually possible. What's possible right now is a platform that trusts anything holding a valid session, and that is a decision somebody made.
+
+#AI #BuildInPublic #VibeCoding #tech #Security #AppSec #AIsecurity #Privacy #Meta #RateLimiting #Software #Engineering #TechNews #APIs #Trust #DataSafety
+---
+[2026-10-06 04:30:05 UTC]
+record_id=68d1e383fc8fd01c3c0616aed5c7358b7fe875a938baf445de35230963dfb614
+scheduled_for=2026-10-09 11:15
+I gave my agents real accounts this month and my token bill went down.
+
+The old way was me in the middle. I pasted context into a chat window, read the answer, pasted the answer somewhere else. Twenty turns. Each turn burned usage on both sides and each turn lost a little of the thread.
+
+The new way is one prompt. The agent gets a repository, a scratch account and a command line tool that can actually run things. I write one long paragraph describing the job. It does the work and reports back.
+
+Two things made the difference. First, the agent gets a body. Accounts, mail, a browser, a terminal. Most of what looked like model failure was actually a missing permission. Second, the work moves out of the chat window and into a tool that doesn't charge by the turn.
+
+The part I'm still careful about is where those accounts live. A scratch identity for each agent, no shared passwords, nothing that touches billing. Cheap agents are worth it. Cheap agents on your personal login aren't.
+
+#AI #BuildInPublic #VibeCoding #tech #Automation #Agents #Developer #Software #Engineering #Coding #Workflow #Productivity #CostOptimization #Security #OpenSource #DeveloperTools
+---
+[2026-10-06 04:30:05 UTC]
+record_id=b824f2f66215cdc06cd3403a2b457298cef25d1439ad070dbd81111d164510a1
+scheduled_for=2026-10-09 11:30
+I stopped writing prompts in a chat window and started sending one giant brief to a command line agent.
+
+The chat window taught me a bad habit. Short questions, short answers, and me deciding what to do with each one. That's me doing the work with extra steps and paying per step.
+
+A command line agent that can read the repo, run the tests and edit files wants the opposite. It wants everything at once. The goal, the constraint, the thing that must not change, the way to prove it worked. One brief. Then I go do something else and read the result.
+
+The quality went up when the brief got longer, which nobody expects. The reason is simple. Every constraint I leave out is a constraint the agent invents for itself, and it always invents something reasonable and wrong.
+
+I still review everything. I still own the merge. What changed is where I spend my attention. It used to go on relaying messages between tools. Now it goes on the one paragraph that decides whether the work is any good.
+
+#AI #BuildInPublic #VibeCoding #tech #Agents #Prompting #Developer #Software #Engineering #Coding #Workflow #Productivity #DeveloperTools #CLI #Automation #Craft
+---
+[2026-10-06 04:30:05 UTC]
+record_id=6f34126ba5048b849f71040be94a085cee0af610788d404d6f1161da895b8138
+scheduled_for=2026-10-09 11:45
+I run most of my coding work through one command line tool now and it's the least interesting part of my setup.
+
+The interesting part is the briefs. I keep them in files. A brief per job, written like I'm handing work to a contractor who is fast, literal and has never met me. What done looks like. What must stay the same. Which command proves it.
+
+Then Freebuff goes and does it in my repo. It reads the files, it writes the change, it runs the check. I come back to a diff instead of a conversation.
+
+What I like is that it uses what I already have. My repo, my tests, my rules. I don't have to explain the project from scratch every time and I don't have to paste code into a chat box.
+
+The thing I've learned after a few months is that the tool is the small half. The big half is writing down what you actually want, in a form a machine can check. That habit pays off with or without an agent and I would keep it either way.
+
+#AI #BuildInPublic #VibeCoding #tech #freebuff #DeveloperTools #CLI #Agents #Developer #Software #Engineering #Coding #Automation #Workflow #OpenSource #Craft
+---
+[2026-10-06 04:30:05 UTC]
+record_id=bd61854b7b3401c5a74c5aaf7502e299de88eb5d76c2ffd17c6b1e8ef8485d83
+scheduled_for=2026-10-09 12:00
+I left a local model running overnight and it did the boring half of my week.
+
+Two hundred files needed the same three edits. Comments, a renamed variable, a log line. Nothing hard. Ninety minutes of my attention if I did it by hand, and I would have made four mistakes.
+
+I queued it before bed and read the diff with coffee. It took five hours and it cost nothing. No rate limit. No usage dashboard. No second thought about whether a rename was worth a call to an API.
+
+Here's what surprised me. The overnight job was better than my afternoon job. Not smarter. More patient. It did all two hundred files because it doesn't get bored at file one hundred and forty. That's where I usually start skipping.
+
+I do not think local models replace the big ones. I think we have been routing boring work to expensive tools because the boring work is easy to hand over. The cheap model should get the boring work. That's the whole trade.
+
+#AI #BuildInPublic #VibeCoding #tech #LocalFirst #OpenSource #LLM #MachineLearning #Developer #Software #Engineering #Coding #Automation #CostOptimization #Productivity #BatchProcessing
+---
+[2026-10-06 04:30:05 UTC]
+record_id=03cfd9930989ab97e0c4aff75e9462bbf345973fe8b131c6293dda3613c77323
+scheduled_for=2026-10-09 12:15
+I priced my own AI feature last month and the number changed what I built.
+
+It was three cents a user per month at my real volumes. I had assumed ten times that. Ten minutes with a script and a month of logs and I knew, which is the whole point.
+
+The second number mattered more. Six percent of my users generated eighty percent of the calls. One integration. Two clicks. One customer's loop that retried on every failure and never backed off.
+
+So I did two things. I moved the cheap work to a local model and dropped the expensive path to a single call per action. Then I put a ceiling on retries. I added an alert when one account crossed it.
+
+Cost is a design constraint like latency and it's the one people leave until the invoice arrives. A number on a page is worth more than a month of guessing about architecture. I should have measured this in week one instead of year two.
+
+#AI #BuildInPublic #VibeCoding #tech #CostOptimization #LLM #MachineLearning #Developer #Software #Engineering #Coding #ProductManagement #Metrics #Observability #Infrastructure #RateLimiting
+---
+[2026-10-06 04:37:10 UTC]
+record_id=322891a61c306aeb52f00029b596fea734bbe854297d8a1232a347863458e30f
+scheduled_for=2026-10-09 12:30
+My first evaluation for an AI feature was four questions and a score out of five and it told me nothing.
+
+I wrote it in an afternoon and felt good about it. Four examples, two of which I had chosen because the model did well on them. It passed. I shipped and waited for the complaints.
+
+The complaints were about a case my eval never mentioned. Long inputs with a table in the middle. My four questions were short and clean, which is what a closed mouth sounds like.
+
+The fix wasn't more questions. It was questions I could argue about. I pulled two hundred real inputs out of logs, picked fifty, and wrote down what a good answer looks like for each one, in my own words, before the model ran. Then I ran it and disagreed with myself on eleven.
+
+An eval is an argument you can rerun. If it can't fail you, it isn't one. Mine couldn't fail me for eight weeks.
+
+#AI #BuildInPublic #VibeCoding #tech #Evals #MachineLearning #LLM #Testing #Developer #Software #Engineering #Coding #QualityAssurance #DataDriven #ProductManagement #Craft
+---
+[2026-10-06 04:37:10 UTC]
+record_id=630ab8318178e1c1ceef1d585b00bfd9d7d5f59511accc6c7d4e29c436693991
+scheduled_for=2026-10-09 12:45
+A log line I wrote said the job finished and the job had skipped every row.
+
+The line was true. The function it documented did return. It had returned after an empty query, which is a very different sentence from the job ran.
+
+Nobody noticed for nine days because the job is the kind that fails quietly. A report gets stale. A number looks flat. Flat is what success looks like on that chart, so I stopped looking at it.
+
+I changed the shape of the logging, not the amount of it. Now the job prints what it touched. Rows read. Rows written. Rows skipped, with the first reason. A job that reports zero rows is a success with a fingerprint, and I can tell it apart from a job that lied.
+
+I keep one rule from that week. If a success message can't be wrong, it isn't a status. It's a decoration. I had eleven of those in one service and I deleted six.
+
+#AI #BuildInPublic #VibeCoding #tech #Logging #Observability #Debugging #Developer #Software #Engineering #Coding #Reliability #Production #IncidentResponse #Monitoring #Backend
+---
+[2026-10-06 04:37:10 UTC]
+record_id=f19b4ab24ef1f28320f4380547ab8a3f3cf811a1b50a9b61714af59024503c5f
+scheduled_for=2026-10-09 13:00
+A cron job ran at the wrong hour for two years and the schedule was correct the whole time.
+
+Midnight in the expression means midnight on the server. The server ran on universal time. Everyone reading the report sat six hours behind. So the job ran at six in the evening and joined a report that was generated at four in the morning.
+
+Nothing failed. I always had a report. It was just always a day and a bit out, and the difference showed up in month end totals where nobody looks until the totals are wrong.
+
+I fixed it by writing the offset into the schedule comment. Not the timezone name. The offset, the date it was checked, and who owns the server. The timezone name is the thing that lies twice a year.
+
+Every time I've lost a day to a clock it was something like this. Not a hard bug. A quiet agreement between two systems about what a word meant, and me never being in the room when they agreed.
+
+#AI #BuildInPublic #VibeCoding #tech #Timezones #Scheduling #Debugging #Developer #Software #Engineering #Coding #Reliability #Backend #Infrastructure #Documentation #Production
+---
+[2026-10-06 04:37:10 UTC]
+record_id=cc5ce79d8a649734efcbd7d2df69acf4a0a7d18b92bb6bb21cee7ef2d6aea22f
+scheduled_for=2026-10-09 13:15
+I deleted forty percent of my tests and the suite got more useful.
+
+The ones I removed were checking their own mocks. A test that stubs a database and then asserts the stub was called proves the stub works. It had never caught a bug in three years and it broke every time somebody renamed a private method.
+
+What's left is smaller and slower per test. It talks to a real database. It fails when the migration is wrong. That's the only test I want.
+
+The trade is real. My suite went from ninety seconds to four minutes. I would pay that twice over for a suite I believe, because a suite nobody trusts gets skipped, and a skipped suite is decorative.
+
+I spent two years adding coverage because a number on a dashboard went up. That number measured lines. Lines aren't decisions. I'd rather have sixty percent of the paths that matter than ninety percent of the lines that don't.
+
+#AI #BuildInPublic #VibeCoding #tech #Testing #QualityAssurance #Developer #Software #Engineering #Coding #Refactoring #TechnicalDebt #IntegrationTests #Craft #CI #Reliability
+---
+[2026-10-06 04:37:10 UTC]
+record_id=4b1b8b57d03ff1f87003f138f4fd0b920f82d7c3e2534bea94519980e8b1a825
+scheduled_for=2026-10-09 13:30
+One line in a loop took a page from four seconds to four hundred milliseconds and it took me a week to look.
+
+The page was slow for two years and I had blamed the framework, the server size and the region. I'd even asked for a bigger instance, which bought me maybe a third of a second and a bigger bill.
+
+Then I opened the query log instead of the profiler. Same statement, four hundred times, once per row in a list of four hundred. Nine hundred milliseconds of the four seconds was this, and the rest was me rendering what it returned.
+
+My fix was a single query and a map. Twenty minutes. That included the test I wrote so it stays fixed.
+
+I keep the boring lesson from it. Measure before you buy. I had three theories and one of them was expensive, and I picked the expensive one first because it was the easiest to ask for. The query log sat there the whole time, free. I never read it.
+
+#AI #BuildInPublic #VibeCoding #tech #Performance #Databases #Debugging #Developer #Software #Engineering #Coding #Backend #SQL #Profiling #Optimization #Observability
+---
+[2026-10-06 04:44:49 UTC]
+record_id=def9936cf2e3f44ee25291e785275fb770105a0b2328576d0ef6e816a46e16ac
+scheduled_for=2026-10-09 13:45
+I tested a backup for the first time last month and one of the three files wouldn't restore.
+
+I had been assuming backups work for four years. The job said success every night. The sizes looked plausible. Nobody had ever asked the only question that counts, which is can I get it back.
+
+The restore failed on the third file with a corruption error that the backup job had been logging as a warning for months. A warning nobody read, in a job nobody watched, protecting data nobody had needed yet.
+
+Now the restore runs on a schedule into a throwaway database and diffs the row counts against the source. It fails loudly if the counts disagree. That's the whole system. It took an afternoon.
+
+Here's the part I want to be honest about. I set up the backup in 2022 and I felt finished. A backup you have never restored isn't a backup. It's a hope with a cron entry. The cron entry took ten minutes and the restore test took an afternoon, and I spent four years proud of the ten minutes.
+
+#AI #BuildInPublic #VibeCoding #tech #Backups #DataSafety #Reliability #Developer #Software #Engineering #Coding #Databases #Operations #IncidentResponse #Production #Monitoring
+---
+[2026-10-06 04:44:49 UTC]
+record_id=d1780c7f817c7d94c817392d8dc6bd114c59e0ed14de28ebd889352bcdff819d
+scheduled_for=2026-10-09 14:00
+A feature flag outlived the person who added it by three years and nobody could say what it did.
+
+It had two branches, a default that nobody remembered choosing, and a comment that said temporary. It gated a code path that had been dead since 2023. Nine services read that flag. Four of them read it and did nothing with the result.
+
+I deleted it over two days and the deletion was the easy part. I spent the hard part on the conversation, because two people believed the flag was load bearing and neither could say why. Both were wrong, and both were right to be careful, because nobody had written down what it was for.
+
+I make every flag ship with a paragraph. What turns it on. What turns it off. Who deletes it. And a date, so the flag is somebody's homework instead of a permanent room in the house.
+
+Temporary decisions that nobody owns don't stay small. They get nine readers and a comment that was wrong for two years. That's not technical debt. That's an unsigned contractor.
+
+#AI #BuildInPublic #VibeCoding #tech #FeatureFlags #TechnicalDebt #Refactoring #Developer #Software #Engineering #Coding #Backend #Documentation #CodeReview #LegacyCode #Operations
+---
+[2026-10-06 04:44:49 UTC]
+record_id=192215b53046e1390beb09874d060eee3eb81d75652dc9ed8f37fcead4fa9955
+scheduled_for=2026-10-09 14:15
+A cron job ran twice and we sent about eleven thousand duplicate emails.
+
+I called the job idempotent and it wasn't. That was true in my head and nowhere else. A retry re-ran the batch and every send happened again. The only guard was a flag written at the end of the run.
+
+Eleven thousand people got the same email twice. Four percent of them replied to the first. The reaction to the second was angry.
+
+The fix is a unique key on the work item, written before the send, so the second attempt hits a conflict and stops. One constraint. The database does the deduplication. I stopped trusting my own control flow.
+
+What I keep from it is smaller than the fix. I had said the job was idempotent out loud, in a meeting, with confidence. I had never tested it by running it twice. Running it twice would have caught it in two minutes. I chose the meeting instead.
+
+#AI #BuildInPublic #VibeCoding #tech #Idempotency #Databases #Reliability #Developer #Software #Engineering #Coding #Backend #IncidentResponse #Testing #Production #DistributedSystems
+---
+[2026-10-06 04:44:49 UTC]
+record_id=030acb33c055d399996910bb66c7f9b78ff23d0ae9fd967a80c555855ac5332b
+scheduled_for=2026-10-09 14:30
+I wrote an on-call handoff note every week for two years and it's the best document I have ever produced.
+
+One page. What changed this week. What's broken right now. What to watch tomorrow. Who to wake up. Four headings and never more than half an hour of writing.
+
+The reason it works is that it's written for a person at three in the morning, and a person at three in the morning cannot read. Short lines. Current state first. The thing you might need next.
+
+What surprised me is what it did to my week. Writing down what's broken forces me to know what's broken, and there were two weeks where that sentence took twenty minutes because I didn't.
+
+I've seen teams replace this with a dashboard and I understand the appeal. A dashboard answers the questions you thought of in advance. It can't tell you that the payments integration has been flaky since Tuesday and the partner knows, and that's the sentence that saves somebody an hour at four in the morning.
+
+#AI #BuildInPublic #VibeCoding #tech #OnCall #IncidentResponse #Documentation #Developer #Software #Engineering #Coding #Operations #Reliability #Monitoring #Teamwork #Production
+---
+[2026-10-06 04:44:50 UTC]
+record_id=ec54f7b78e053e0c743c202b4b82a9e66b338f783f310e5b429cced7ae201561
+scheduled_for=2026-10-09 14:45
+I got ghosted after a seven round interview loop and I learned more from that than from any offer.
+
+Seven rounds over nine weeks. A take home, two coding screens, a system design, a manager chat, a culture panel and a final with a director. Then silence. Then a form letter thanking me for my interest.
+
+I wasn't angry about the answer. I was angry about the shape. Somebody decided no at round two, most likely, and the other five rounds happened because the process could not be stopped once it started.
+
+Since then I ask one question in the first call. What would make you decide no, and when do you expect to know. The good companies answer it in a sentence. The bad ones say the process is designed to be fair, which is an answer about themselves.
+
+I keep five finished projects on a page now and I talk about those. Two interviewers this year spent the round asking about one of them because it solved a problem they had. That conversation was worth nine weeks of rounds.
+
+#AI #BuildInPublic #VibeCoding #tech #Interviewing #JobSearch #Hiring #CareerAdvice #TechLayoffs #Careers #Software #Engineering #Craft #Portfolio #WorkCulture #FutureOfWork
+---
+[2026-10-06 04:50:50 UTC]
+record_id=1236c21cd83bce147f61aca8975b98082896032fd9c373ef20f21da49c41b965
+scheduled_for=2026-10-09 15:00
+A dependency I rely on got archived and I found out from a security scanner, not from the maintainer.
+
+It powers one screen in my app. The maintainer had stopped committing eight months earlier and nobody had told anybody, which is normal, because there is no mechanism that tells anybody.
+
+I did three things that week and they took four hours total. I forked it into my own repo so it can't vanish. I pinned the version I use. And I wrote two hundred words in my own notes describing what it does and what I'd do without it.
+
+That last one is the one I never used to do and it's the one that matters. The other two are habits. The note is the plan.
+
+I am not against dependencies. I depend on forty of them and rewriting them would be a much worse use of a year. But a dependency is a relationship with somebody who doesn't know you exist, and a plan for when they stop answering is part of using it.
+
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #Dependencies #SupplyChain #Developer #Software #Engineering #Coding #Security #RiskManagement #Maintenance #Legacy #Documentation
+---
+[2026-10-06 04:50:50 UTC]
+record_id=4b7bbd16237518c10405ff2460699560c6e3fdaae9fa999d289807eafcc70842
+scheduled_for=2026-10-09 15:15
+I turned a support ticket into a product decision and it took me two days to see it.
+
+The ticket said the export button was slow. I read it as a performance problem because that's the work I like. It wasn't a performance problem. It was slow because it was doing the job of a feature nobody had built. Nobody had asked for it.
+
+The customer was exporting every order to a spreadsheet every Friday, then filtering by a column, then sending the result to three people. Nine minutes of their week, forever. That slowness was a symptom of a missing weekly report.
+
+I built the report in a day. Complaints about the export went to zero and nobody asked me to speed anything up.
+
+Support tickets are an interface to the product, and I had been treating them as an interface to the code. That word was describing a workflow, not a latency budget. Reading twenty of them in one sitting, without fixing anything, is the highest value hour in my week now.
+
+#AI #BuildInPublic #VibeCoding #tech #CustomerSupport #ProductDesign #ProductManagement #Developer #Software #Engineering #Coding #UserResearch #Feedback #Performance #Craft #DataDriven
+---
+[2026-10-06 04:50:50 UTC]
+record_id=9b3f07e4370bafe4b0ae52738576391baff4e69d9bac19895d036d2c0ab728fc
+scheduled_for=2026-10-09 15:30
+I had a nine hundred line migration to a new host and about eleven lines of it were the actual move.
+
+The rest was assumptions. A hardcoded path. An environment variable that existed in one place and not the other. A cron entry that nobody had looked at since 2021. A DNS record with a four hour TTL that I found at hour five.
+
+I'd planned for the move. I hadn't planned for the things around the move, which is the difference between a plan and a wish.
+
+What saved me was the dry run. I stood up the new host, pointed nothing at it, and ran every job by hand. Nine of them worked. Two failed immediately. One failed silently, which is the one I'd have shipped.
+
+The dry run took three hours and the real cutover took eleven minutes. Every migration story I have ends the same way. The move is easy. The inventory around the move is the whole job, and the inventory is never written down.
+
+#AI #BuildInPublic #VibeCoding #tech #Migrations #Infrastructure #DevOps #Developer #Software #Engineering #Coding #Operations #Deployment #Planning #Reliability #Production
+---
+[2026-10-06 04:50:50 UTC]
+record_id=043f695391b724d9626006e2a09b8c8db963031558c50f784e8261f5967f3987
+scheduled_for=2026-10-09 15:45
+I pushed a parser fix on a Thursday because a model update changed its output shape while I slept.
+
+Nothing in my code changed. No deploy, no config, no dependency bump. The model started wrapping its answer in a different structure and my parser had been written against the old one. Six hours of bad rows before the alert fired.
+
+I build with a contract now, not a shape. My prompt asks for JSON with a named schema and I validate it before it touches the database. If the shape moves, the request fails loudly at the boundary instead of quietly at the insert.
+
+The uncomfortable part is that none of this is versioned in a way I can pin. I can pin a library. I can't pin the thing on the other end of the wire, and neither can you. Assume it moves. That's the part of this stack nobody writes in the README.
+
+#AI #BuildInPublic #VibeCoding #tech #LLM #APIs #Versioning #Developer #Software #Engineering #Coding #Reliability #Backend #DataEngineering #Validation #Production
+---
