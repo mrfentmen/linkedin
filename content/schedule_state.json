@@ -18155,12 +18155,13 @@
     },
     "53b7c8eb59fb3236619c59c5ef6ee63d208a7e0ebd189ed8bbc008bfc5562bbf": {
       "record_id": "53b7c8eb59fb3236619c59c5ef6ee63d208a7e0ebd189ed8bbc008bfc5562bbf",
-      "status": "failed",
+      "status": "scheduled",
       "content": "My agent deleted a test that was failing, and it was right, and I still sat there for ten minutes.\n\nThe test asserted on an old response shape. The feature changed in March. The test had been red for four months and somebody had added it to a skip list instead of deleting it. My agent found a red test, read the diff, and removed the stale assertion.\n\nThat's the correct call. It's also a call I don't want made alone. Deleting tests is how coverage walks out the door one reasonable decision at a time. The agent had a reason. I couldn't see the reason in the commit message.\n\nSo I changed my prompt. Deleting a test is now a hard stop. It can propose the deletion, write the argument in my notes, and leave the test alone. I review those proposals every Friday and I approve most of them.\n\nI treat autonomy as a dial and the middle setting is the one people skip. Full access and no access are both simple. Reviewing the boring decisions is the actual work.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #CodeReview #Agents #Developer #Software #Engineering #Coding #QualityAssurance #Automation #TechnicalDebt #Permissions #Craft",
       "schedule_time": "2026-10-09 16:15",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-06T12:29:51+00:00",
-      "attempts": 2
+      "error": "",
+      "updated_at": "2026-10-06T20:01:54+00:00",
+      "attempts": 4,
+      "finalized": true
     },
     "0d74c115d81ed0bc59e458e792444ac7d5d6f0a6d04142d7c9c43210494e69b4": {
       "record_id": "0d74c115d81ed0bc59e458e792444ac7d5d6f0a6d04142d7c9c43210494e69b4",
@@ -18169,6 +18170,254 @@
       "schedule_time": "2026-10-09 17:15",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-06T12:31:32+00:00",
+      "attempts": 2
+    },
+    "5982126934b37a5bc4da3c1b4417100e0b6443c35d1b2afd112ea203830bc6f6": {
+      "record_id": "5982126934b37a5bc4da3c1b4417100e0b6443c35d1b2afd112ea203830bc6f6",
+      "status": "scheduled",
+      "content": "The only agent safety layer I trust is a container with no keys in it.\n\nI tried the other routes first. Prompt rules saying don't touch production. A wrapper that scanned commands before running them. A deny list of paths. Each one held for about a week and then I found a path around it without trying hard.\n\nWhat holds is boring. A container with the repo mounted, no network by default, no credentials in the environment, and a throwaway home directory. When it needs the network, I open one host for one command and it closes after.\n\nPermissions are the only control that doesn't depend on the model being well behaved. That matters because the model isn't the part that changes. I change the prompt and new models arrive and the wrapper rots.\n\nI still read the diffs. I still own the merge. The container just means that when I get it wrong, the blast radius is a directory I can delete.\n\n#AI #BuildInPublic #VibeCoding #tech #Docker #Security #Agents #Containers #Developer #Software #Engineering #Coding #AppSec #Isolation #DevEnvironment #Operations",
+      "schedule_time": "2026-10-09 16:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:01:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2a8222df9208f05153e1e62c02ab49b9f4c2ebee4eddb4227145c5badea5d6ca": {
+      "record_id": "2a8222df9208f05153e1e62c02ab49b9f4c2ebee4eddb4227145c5badea5d6ca",
+      "status": "scheduled",
+      "content": "I rewrote a cache layer out of existence and the page got faster, which isn't the story the cache was telling.\n\nHit rate was ninety four percent. That number had been on a dashboard for a year and it looked like success. What it hid was the thrashing. Keys expired in a pattern that lined up with our traffic, so the cache spent every evening rebuilding entries it had just thrown away.\n\nThe source query took eleven milliseconds. The cache path took four on a hit and three hundred on a miss, and our misses clustered. I measured the average and the cache won. I measured the p95 and the cache lost badly.\n\nNow the page calls the database and the database is fine, because eleven milliseconds is fine. I pulled forty lines of key building and invalidation out of the service and I haven't missed them.\n\nHit rate is a number about the cache. It says nothing about the user. I had been optimising my own instrument panel for a year and calling it latency work.\n\n#AI #BuildInPublic #VibeCoding #tech #Caching #Performance #Databases #Developer #Software #Engineering #Coding #Backend #Profiling #Metrics #Simplicity #Reliability",
+      "schedule_time": "2026-10-09 16:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:01:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2619ab7e9daeb0007ac3c7f055ed69300143e23b0591a3c72c0ca005d550797c": {
+      "record_id": "2619ab7e9daeb0007ac3c7f055ed69300143e23b0591a3c72c0ca005d550797c",
+      "status": "scheduled",
+      "content": "I sent a survey to two hundred users and learned nothing. Then I talked to eleven of them and rewrote the onboarding.\n\nThe survey asked people to rate the setup flow out of five. Mean was four point one. That told me nothing I could act on except that I should feel fine, and I didn't feel fine.\n\nThe calls took a week. Eleven conversations, thirty minutes each, and I asked what they were trying to do in the first ten minutes. Eight of them described the same wall. They wanted to import something. The import lived three screens deep behind a section called Settings.\n\nNothing in the survey could have found that. A rating is an opinion about an opinion. A story about the first ten minutes is a map.\n\nI changed the first screen, kept the survey running, and watched setup completion go from fifty one percent to sixty eight. The survey still says four point one. It also said four point one when a third of my users couldn't find the button.\n\n#AI #BuildInPublic #VibeCoding #tech #UserResearch #UX #ProductDesign #Developer #Software #Engineering #ProductManagement #Coding #Metrics #Onboarding #Feedback #Craft",
+      "schedule_time": "2026-10-09 17:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:01:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c660601ef7fbf0d167226d05fd89ecf85fc00081db425555ac72f1be006ac529": {
+      "record_id": "c660601ef7fbf0d167226d05fd89ecf85fc00081db425555ac72f1be006ac529",
+      "status": "failed",
+      "content": "A stranger opened a pull request against my README and merged it in a week, and it was better than my version.\n\nHe had never used the project. He followed the setup steps on a clean machine and got stuck at step three, then fixed my instructions instead of closing the tab. His diff removed eleven sentences I had written and added four he had needed.\n\nMy README had been written by me for people who already knew what the project was. Every step assumed the last step. That's the failure mode of documentation written by the person who built the thing.\n\nSince then I write the first page for a stranger on a fresh laptop. One command to install. One command to run. One command that tells you it worked. Everything else goes below that, and most people never scroll.\n\nThe best documentation test I know is giving somebody a machine and saying nothing. I spent a week of confusion learning that. I should have read my own setup page on a laptop that had never seen the project, which is free.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #OpenSource #Developer #Software #Engineering #Coding #Onboarding #DeveloperExperience #Craft #Community #README #Writing",
+      "schedule_time": "2026-10-09 17:15",
+      "error": "LinkedIn's scheduled count is 172, no higher than 172 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-06T20:01:53+00:00",
+      "attempts": 2
+    },
+    "3df283fefc0fb751b09bdc5fc24ec20655e800b21cd87ae40e583d8838e5a04e": {
+      "record_id": "3df283fefc0fb751b09bdc5fc24ec20655e800b21cd87ae40e583d8838e5a04e",
+      "status": "scheduled",
+      "content": "A stranger opened a pull request against my README and merged it in a week, and it was better than my version.\n\nHe had never used the project. He followed the setup steps on a clean machine and got stuck at step three, then fixed my instructions instead of closing the tab. His diff removed eleven sentences I had written and added four he had needed.\n\nMy README had been written by me for people who already knew what the project was. Every step assumed the last step. That's the failure mode of documentation written by the person who built the thing.\n\nSince then I write the first page for a stranger on a fresh laptop. One command to install. One command to run. One command that tells you it worked. Everything else goes below that, and most people never scroll.\n\nThe best documentation test I know is giving somebody a machine and saying nothing. I spent a week of confusion learning that. I should have read my own setup page on a laptop that had never seen the project, which is free.\n\n#AI #BuildInPublic #VibeCoding #tech #Documentation #OpenSource #Developer #Software #Engineering #Coding #Onboarding #DeveloperExperience #Craft #Community #README #Writing",
+      "schedule_time": "2026-10-09 17:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:08:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "e1c9522c41826f6c7b734b9161975b7d61653fa8fb83fc21da59af193ced7295": {
+      "record_id": "e1c9522c41826f6c7b734b9161975b7d61653fa8fb83fc21da59af193ced7295",
+      "status": "scheduled",
+      "content": "An email campaign went out on a Tuesday evening and my checkout stopped answering.\n\nThe database hit its connection limit for four minutes. No deploy, no code change, no attack. A campaign went out to a mailing list and a quarter of the recipients opened it inside ninety seconds, and every open hit a page that did a write.\n\nOur own traffic was flat. We had load tested the page and it passed at four times normal. We had never tested it at four times normal with an audience arriving at the same moment, which is a different shape of load.\n\nI turned the write off for that page. It was recording a view counter, which nobody reads and which cost us an outage with a customer in it. That counter is gone now.\n\nCapacity planning has a blind spot and it's correlation. My traffic graphs assume requests arrive spread out. Marketing makes them arrive together. Same total, totally different system, and the graph can't tell you which one you bought.\n\n#AI #BuildInPublic #VibeCoding #tech #CapacityPlanning #IncidentResponse #Databases #Developer #Software #Engineering #Coding #Backend #Operations #OnCall #Reliability #Production",
+      "schedule_time": "2026-10-09 17:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:08:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "71eb888bd50207ecbc16cca4c79929cea05dd2d6c3028eed7582c2858876db4e": {
+      "record_id": "71eb888bd50207ecbc16cca4c79929cea05dd2d6c3028eed7582c2858876db4e",
+      "status": "scheduled",
+      "content": "I refunded eleven customers because my retry logic charged them twice, and the code looked correct.\n\nThe handler was wrapped in a retry with three attempts. On a timeout it retried, which is right. The charge call timed out, which didn't mean the charge failed. It meant I never saw the answer. The retry charged again.\n\nI had read that sentence in a blog post before and I had nodded at it. Idempotency keys. Send a unique key with the charge and let the provider deduplicate. Twenty minutes of work to add it and I didn't add it until eleven people got an email from their bank.\n\nI keep one thing from that week and it has nothing to do with payments. A timeout isn't a failure. It's an unknown, and my handler had been treating the unknown as a no. Every retry I've written since then has a key attached, including the ones that call my own services.\n\nEleven customers isn't a big number and it's eleven more than I wanted. Refunding took an afternoon. Explaining it to support took a week.\n\n#AI #BuildInPublic #VibeCoding #tech #Idempotency #Payments #Reliability #Developer #Software #Engineering #Coding #Backend #ErrorHandling #Production #IncidentResponse #DistributedSystems",
+      "schedule_time": "2026-10-09 18:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:08:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "fc98dda40bcf4b96cee8e9634c1515f174281ea30b327f5f5126276e341f910b": {
+      "record_id": "fc98dda40bcf4b96cee8e9634c1515f174281ea30b327f5f5126276e341f910b",
+      "status": "scheduled",
+      "content": "I turned off a cron job to test whether anything depended on it and found three things that did.\n\nThe job refreshed a denormalised table. Nobody had asked about it in two years. I checked the code, found one reader, and that reader had been deprecated in 2024. It looked like a safe deletion, so I disabled the schedule instead of deleting it, which is the habit that saved me.\n\nBy the next afternoon a report was stale and the person who owned it assumed the source system was broken. A dashboard in another team went flat. And an alert started firing on data that hadn't changed. That failure is very confusing.\n\nI put the job back with a comment that names those three readers, because the code search had missed two of them. One was in a query string built at runtime. The other was in a spreadsheet nobody had linked to anything.\n\nDead code has readers you can't grep for. Disabling beats deleting. A job running with a warning in its log is cheaper than a week of confused people.\n\n#AI #BuildInPublic #VibeCoding #tech #Cron #TechnicalDebt #IncidentResponse #Developer #Software #Engineering #Coding #Backend #Operations #Refactoring #Monitoring #LegacyCode",
+      "schedule_time": "2026-10-09 18:15",
+      "error": "",
+      "updated_at": "2026-10-06T20:08:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5cf96bc7088d012ae6e41666ef4a4fe57880f5bf6d23e710f4340899ee9ac792": {
+      "record_id": "5cf96bc7088d012ae6e41666ef4a4fe57880f5bf6d23e710f4340899ee9ac792",
+      "status": "scheduled",
+      "content": "The status page said everything was operational while my checkout was down for two hours.\n\nThe check tested the homepage. The homepage is cached and static. It returned two hundred through the whole event, so the monitor was green and a person was on the phone with me inside ten minutes. I trusted the graph over the caller and I was wrong.\n\nWhat broke was a third party. Their API started returning five hundreds and my checkout called it synchronously, so the failure walked straight up into my page. My own system was healthy. That's exactly the blind spot.\n\nI keep a feature floor test now, not a page test. It walks the checkout path in a test account every five minutes and asserts the last step. It costs me forty dollars a month in transactions and it caught two incidents last quarter.\n\nA health check that can't fail is a poster. I had picked the cheapest thing to check and given it the authority of a verdict, which is the same mistake as trusting a metric that has never moved.\n\n#AI #BuildInPublic #VibeCoding #tech #Monitoring #Observability #IncidentResponse #Developer #Software #Engineering #Coding #Operations #Reliability #ThirdParty #Production #Testing",
+      "schedule_time": "2026-10-09 18:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:08:50+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "08e6482aeab4e6e5b17e57db0ea863ff0ae0231a7ee521295fbafc7e1c3cfb38": {
+      "record_id": "08e6482aeab4e6e5b17e57db0ea863ff0ae0231a7ee521295fbafc7e1c3cfb38",
+      "status": "scheduled",
+      "content": "I keep a decision log and it has ended two arguments that were about to cost a week each.\n\nOne file, reverse chronological. A date, a decision, the reason, and what would change my mind. It takes four minutes to write and I've done it for about two years. Sixty odd entries.\n\nThe first argument it ended was about a queue. Someone wanted to replace it and I remembered we had chosen it for a reason that still held, and the reason was in the file with a date on it. That conversation took ninety seconds instead of a meeting.\n\nThe second one was mine. I wanted to relitigate a naming decision and the entry said I had already been talked out of my position once, with my own reasoning written down. I lost that argument to my past self and it was the cheapest loss I've taken.\n\nMost teams keep the decision and throw away the reasoning, then re-run the argument every eighteen months. Writing it down isn't admin. It's the only way to argue with somebody who isn't in the room.\n\n#AI #BuildInPublic #VibeCoding #tech #DecisionMaking #Documentation #Engineering #Developer #Software #Coding #Teamwork #Leadership #KnowledgeManagement #Craft #Process #WorkCulture",
+      "schedule_time": "2026-10-09 18:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:15:15+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f9a4c76903f529c7b80a2d464aae9993cfacd9d26dc9b6568e13a22df5e0aeb3": {
+      "record_id": "f9a4c76903f529c7b80a2d464aae9993cfacd9d26dc9b6568e13a22df5e0aeb3",
+      "status": "scheduled",
+      "content": "My side project costs forty seven dollars a month and one line of it carries more than half.\n\nI opened the bill line by line. Compute was nine. Storage was four. A managed database was nineteen. The rest looked like rounding until I found the bandwidth line, which was twenty one dollars, and the cause was a response header that turned off compression on the biggest endpoint.\n\nI had assumed the expensive part was the database because databases are the thing people say are expensive. I was paying for a header. One line, written in 2024 for a debugging session, left in because it worked.\n\nFixing it cost me four minutes and the bill went to twenty nine. I also moved the backup job off the managed database and onto a small box, which saved another six.\n\nThe lesson isn't that side projects are cheap. It's that a bill is a stack trace. It tells you where the money went and I had been reading only the total for eleven months.\n\n#AI #BuildInPublic #VibeCoding #tech #CostOptimization #SideProject #Infrastructure #Developer #Software #Engineering #Coding #Cloud #Compression #Observability #IndieHacker #Metrics",
+      "schedule_time": "2026-10-09 19:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:15:15+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f5a01f721ab097d820a5daea52e7e2d13390ecdc6208d3b0420578fa113c5aa2": {
+      "record_id": "f5a01f721ab097d820a5daea52e7e2d13390ecdc6208d3b0420578fa113c5aa2",
+      "status": "scheduled",
+      "content": "I made my test suite run in parallel and immediately found a bug I had been shipping for a year.\n\nThe suite took six minutes and I wanted it under two. Four workers, shared database, one transaction each. The first run failed in three places. Two were real. The third turned out to be real twice.\n\nA helper wrote a row and read it back by the newest timestamp. In sequence, that was always my row. In parallel, it was sometimes somebody else's, and the test passed or failed depending on scheduling. In production the same helper ran under load and I had a report that sometimes showed the wrong account for four seconds.\n\nI fixed the helper, which was three lines. Then I saw the failure rate of that report drop. It had been a mystery ticket for eleven months. Nobody had connected it to a test helper.\n\nI didn't parallelise for speed alone. Forcing tests to share a machine is a stress test of the assumptions they were built on. Mine didn't survive it and now they do.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #RaceCondition #Concurrency #Developer #Software #Engineering #Coding #CI #Debugging #Databases #QualityAssurance #Performance",
+      "schedule_time": "2026-10-10 08:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:15:15+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d3acdea17f429b31b93e84b0808380b08bb2b6d6387c43d87fdafcfa8d03f192": {
+      "record_id": "d3acdea17f429b31b93e84b0808380b08bb2b6d6387c43d87fdafcfa8d03f192",
+      "status": "scheduled",
+      "content": "A junior engineer asked me why my review had fourteen comments and none of them said why.\n\nShe sent me a pull request with a clear description, a test and one questionable abstraction. I sent back fourteen line comments on naming, spacing and a function that should have been private. Her question was fair and I didn't have a good answer.\n\nThe next review I did, I wrote three comments and each one explained what would break later. The naming ones I dropped. A linter handles them and it is never tired. The spacing comments I dropped because arguing about them says more about me than the code.\n\nHer change needed one comment, about the abstraction. It turned out she had thought about it and picked the other trade on purpose, and she was right. That conversation was twenty minutes. It made the code better. I had made it prettier.\n\nI want each review comment to be worth the other person's afternoon. Nine of my fourteen weren't. I had been counting them as thoroughness.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Mentoring #Developer #Software #Engineering #Coding #Teamwork #Craft #BestPractices #Feedback #QualityAssurance #Leadership",
+      "schedule_time": "2026-10-10 08:15",
+      "error": "",
+      "updated_at": "2026-10-06T20:15:15+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5e73e9ea35065f7a9c4d645aaf561b63ff2997b5fee676f3762eb4fba5ecc0fe": {
+      "record_id": "5e73e9ea35065f7a9c4d645aaf561b63ff2997b5fee676f3762eb4fba5ecc0fe",
+      "status": "scheduled",
+      "content": "I switched my test order from files to user paths and found the bug I had been writing tests around.\n\nMy old suite mirrored the directory tree. One file per module, one test per function. It was tidy and it passed, and it hadn't once told me the product was broken.\n\nThe new suite has eleven tests, one per thing a person does. Sign up. Add an item. Change it. Share it. Delete it. Each test walks the real path through the real interface, and each one starts from an empty database.\n\nThe third test failed on the first run. A share link worked for the person who created it and returned a five hundred for everybody else, because the permission check read a field that was only populated on create. I had four months of green tests that never touched that path.\n\nCoverage went down. Confidence went up. I was measuring my code. The new one measures the product, and I only need one of those numbers and I had been collecting the wrong one for two years.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #QualityAssurance #IntegrationTests #Developer #Software #Engineering #Coding #ProductDesign #Coverage #Craft #Reliability #Debugging",
+      "schedule_time": "2026-10-10 08:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:15:15+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "3f34e1efb76706321ed6507b27f50933206d4d9670af40339ce620855e3d0479": {
+      "record_id": "3f34e1efb76706321ed6507b27f50933206d4d9670af40339ce620855e3d0479",
+      "status": "scheduled",
+      "content": "A patch release broke my build last Tuesday and the version number said it was safe.\n\nNothing in the diff touched the function I call. What changed was an internal dependency that now ships a newer minor version, and the newer minor version dropped a fallback for a format I happen to send. Patch release. One line. My integration broke.\n\nI'm not against semantic versioning. I'm against treating it as a contract with me, because nobody signed it on the other side. The maintainer changed a transitive dependency they were allowed to change and my breakage isn't their bug.\n\nSo I stopped reading version numbers as risk and started reading lock files. My CI now installs from the lock file and I upgrade deliberately, one package at a time, with a test run between each. Boring, and my Tuesday afternoons are free.\n\nThe dependency you actually integrate with is the one you never looked at. I had it pinned for two years and never opened its changelog until it broke me.\n\n#AI #BuildInPublic #VibeCoding #tech #Dependencies #Versioning #BuildTools #Developer #Software #Engineering #Coding #CI #RiskManagement #SupplyChain #Maintenance #Reliability",
+      "schedule_time": "2026-10-10 08:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:22:14+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "e053c58d40720f73149a63e7ecf58201ff4319cd2e02d5b6b63820ae85d4e7c3": {
+      "record_id": "e053c58d40720f73149a63e7ecf58201ff4319cd2e02d5b6b63820ae85d4e7c3",
+      "status": "scheduled",
+      "content": "I run a second monitor and a phone as inputs for my agent and my typing went down by about half.\n\nOne monitor shows logs. The phone shows a browser I can point at anything. The agent reads both, which means I stopped describing errors to it in words. It can see the stack trace instead of my summary of the stack trace.\n\nThat difference is bigger than it sounds. Half of my old prompts were translation. I read an error, decided which parts mattered, and typed them out. I was the lossy step in a pipeline that had four available inputs.\n\nNow the loop is short. I point at the failure, write one sentence about what I wanted, and the agent has the log, the code and the ability to run the tests.\n\nIt's not a replacement for understanding the failure. I still read every line. What changed is that I stopped being the person who copies text between windows, which was never the valuable part of my job and took more of my day than I wanted to admit.\n\n#AI #BuildInPublic #VibeCoding #tech #Agents #DeveloperTools #Workflow #Developer #Software #Engineering #Coding #Productivity #Observability #Debugging #Automation #Craft",
+      "schedule_time": "2026-10-10 09:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:22:14+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "7e569b2c5b4679053b96f69e45db7ffab896d8e8ab963fd249ce24f4c9993ca1": {
+      "record_id": "7e569b2c5b4679053b96f69e45db7ffab896d8e8ab963fd249ce24f4c9993ca1",
+      "status": "scheduled",
+      "content": "Serverless cost me more than a small always on box and the invoice is what convinced me.\n\nI liked the pitch. No servers, scale to zero, pay for what you use. My side project is quiet between eleven at night and seven in the morning, so scale to zero sounded perfect.\n\nThen I read the bill. Three dollars of compute, forty one dollars of idle connections and cold starts. Every quiet hour rebuilt a connection pool that took a second to warm, and the user paid that second while my invoice paid for the retries.\n\nI moved it to one small instance with a fixed price. Eleven dollars a month. Response times went from a variable six hundred milliseconds to a steady eighty, because a warm process is a warm process.\n\nServerless is the right call when you truly have no traffic and the wrong call when you have steady traffic with a quiet window. I had assumed the same thing was cheap in both directions and it's not. Reading the bill is how I found out. Four months late.\n\n#AI #BuildInPublic #VibeCoding #tech #Serverless #Cloud #CostOptimization #Infrastructure #Developer #Software #Engineering #Coding #Performance #Latency #SideProject #Operations",
+      "schedule_time": "2026-10-10 09:15",
+      "error": "",
+      "updated_at": "2026-10-06T20:22:14+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "e6cc39f21b7a5a91809c51c30de4091103b3ddb71301a1b3d51612846103701f": {
+      "record_id": "e6cc39f21b7a5a91809c51c30de4091103b3ddb71301a1b3d51612846103701f",
+      "status": "scheduled",
+      "content": "I split one large repository into two and my merge conflicts went down without anybody changing how they work.\n\nThe repo had a service and a client library in it. Every client change and every service change landed in the same directory tree, so two people working on unrelated things shared a file history and a review queue.\n\nThe split took a week. Most of it was the parts nobody owned, which is always where the time goes. Build time went down by a third because the test job stopped running the other half.\n\nSix weeks later I looked at the numbers. Merge conflicts down by about half. Review wait time down from nine hours to three. Nobody has asked to put it back together.\n\nI don't think splitting is always right. I've seen it done badly. What made this one work is that the two halves genuinely deploy on different clocks. The rule I use now is a simple one. If two things always ship together, keep them together. If they don't, the shared repository is a tax you pay for nothing.\n\n#AI #BuildInPublic #VibeCoding #tech #Monorepo #Refactoring #CI #Developer #Software #Engineering #Coding #VersionControl #Teamwork #BuildTools #Architecture #DeveloperExperience",
+      "schedule_time": "2026-10-10 09:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:22:14+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8533eea871794ea460d51fd029ae10dbccfc8974f31a3835a5c7f6ac6b245d17": {
+      "record_id": "8533eea871794ea460d51fd029ae10dbccfc8974f31a3835a5c7f6ac6b245d17",
+      "status": "scheduled",
+      "content": "I deleted the staging environment for a week to find out who was using it and the answer was uncomfortable.\n\nThe plan was to put it back on Monday. Nobody complained by then. I had expected that. What surprised me is what broke. Two things pointed at staging that had no business pointing there, including one job that had been writing test data into a copy of production for eight months.\n\nThat job was mine. I set it up during a migration and never pointed it at the test database. It had been quietly polluting the only safe copy of production data I own, and the reason nobody noticed is that staging was always nobody's problem.\n\nI put the environment back with two changes. The credentials to reach production-like data live in one place and the job doesn't have them. And I wrote down what staging is for, in one paragraph, because the honest answer before was that it was for everything.\n\nAn environment nobody complains about isn't an environment that works. It's an environment nobody depends on, and that's a different thing with a different cost.\n\n#AI #BuildInPublic #VibeCoding #tech #DevEnvironment #DataSafety #Operations #Developer #Software #Engineering #Coding #Infrastructure #Security #Permissions #Testing #Teamwork",
+      "schedule_time": "2026-10-10 09:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:22:14+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "bcd0460f36d8910142916be89da4bedafc3e397ec85cf3c94d18f779399efa4c": {
+      "record_id": "bcd0460f36d8910142916be89da4bedafc3e397ec85cf3c94d18f779399efa4c",
+      "status": "scheduled",
+      "content": "I stopped a refactor halfway and shipped the half and it was the right call.\n\nThe job was to move a module from a flag based config to a typed one. I had budgeted two days. On day two I was about forty percent through and the remaining sixty percent touched a code path that only runs during a migration nobody had run since 2023.\n\nRight answer was to stop. I shipped the finished forty percent with the old path still in place and a comment naming the seam. Two hundred lines changed. No behaviour changed. Tests all green.\n\nThe alternative was three more days on code that runs once a year, during a migration that requires a human with database access. I'd have been refactoring a museum exhibit while my actual backlog queued up behind it.\n\nI have a rule now about refactors. If I'm not finished inside the time box, I stop and ship what is coherent. Half a refactor that works beats a whole refactor that never lands, and I've shipped three of the second kind before I learned the difference.\n\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #TechnicalDebt #Deadlines #Developer #Software #Engineering #Coding #LegacyCode #Timeboxing #Craft #Planning #Release",
+      "schedule_time": "2026-10-10 10:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:29:43+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f3cf19c485d6d1706c7d3522525e4f8db5f6affbb4b40d631cd4bf060461a268": {
+      "record_id": "f3cf19c485d6d1706c7d3522525e4f8db5f6affbb4b40d631cd4bf060461a268",
+      "status": "scheduled",
+      "content": "An agent wrote a migration that passed in test and locked a table in production for eleven minutes.\n\nI had asked it to add an index. It added the index and also rewrote two columns in the same migration, which is a lock on a table with forty million rows. The test database has four thousand rows and the whole thing finished in eighty milliseconds.\n\nI don't blame the agent for that. I gave it a schema and a goal and it picked the shortest path. The thing it couldn't know is simple. Our test data has no volume. Volume is where migrations hurt.\n\nWhat I changed was the brief, not the tool. Every migration now has to state its lock behaviour in one sentence, and any migration touching a big table runs against a copy of production data first. That copy takes twenty minutes to restore and it has caught two more.\n\nThe lesson is older than the tooling. A test environment that can't feel the pain of production will approve anything that runs fast enough.\n\n#AI #BuildInPublic #VibeCoding #tech #Migrations #Databases #Agents #Developer #Software #Engineering #Coding #Backend #Production #Testing #Postgres #Reliability",
+      "schedule_time": "2026-10-10 10:15",
+      "error": "",
+      "updated_at": "2026-10-06T20:29:43+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c76331027a7034f44e4b2b0231627b5b6a154e5e6d7bf938bf9c5f404638bafb": {
+      "record_id": "c76331027a7034f44e4b2b0231627b5b6a154e5e6d7bf938bf9c5f404638bafb",
+      "status": "scheduled",
+      "content": "I gave my agent a definition of done and its output got boring, which is the best thing I can say about it.\n\nBefore that file, every task came back different. Sometimes a function, sometimes a class, sometimes a refactor I didn't ask for. All of it defensible and none of it predictable.\n\nThe file is eleven lines. What done looks like. What must not change. The command that proves it. The one place a new file may be created. No dependency changes without asking.\n\nNow the answers rhyme. Same shape, same evidence, same place in the repo. I read a result in ninety seconds instead of twenty minutes because I know where everything is before I open it.\n\nPredictability is the feature I want and it's the one nobody demos. A clever answer saves me four minutes. A boring answer that lands in the same place every time saves me the twenty minutes I spend rebuilding my mental map. I'll take boring.\n\n#AI #BuildInPublic #VibeCoding #tech #Agents #Prompting #Developer #Software #Engineering #Coding #Automation #Workflow #DeveloperTools #Craft #Productivity #Consistency",
+      "schedule_time": "2026-10-10 10:30",
+      "error": "",
+      "updated_at": "2026-10-06T20:29:43+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "bebdd4a98f9772c44c73c5229a1f824e28a2ccf0ae5ee1e99a2e655e3a60330e": {
+      "record_id": "bebdd4a98f9772c44c73c5229a1f824e28a2ccf0ae5ee1e99a2e655e3a60330e",
+      "status": "scheduled",
+      "content": "My evaluation set drifted away from real usage and the green number kept me comfortable for six weeks.\n\nThe eval had forty cases, all written in March from prompts I made up. Real users type differently. They paste whole tickets. They write in Portuguese. They ask two questions in one message and they send a screenshot of a table.\n\nI found out because a customer sent me a bad answer and I couldn't reproduce it in the eval. So I pulled fifty sessions out of my logs, at random, with a script, and added the twelve that broke. Nine of them fail on the old prompt.\n\nAn eval that never gets fresh cases is measuring a product that no longer exists. Mine was passing eighty eight percent against questions nobody asks.\n\nI rebuild the set from logs every month now. It takes an hour. The number drops every time, and the drop is the useful part. A metric that only goes up has stopped touching reality.\n\n#AI #BuildInPublic #VibeCoding #tech #Evals #MachineLearning #LLM #Developer #Software #Engineering #Coding #QualityAssurance #Metrics #DataDriven #ProductManagement #Observability",
+      "schedule_time": "2026-10-10 10:45",
+      "error": "",
+      "updated_at": "2026-10-06T20:29:43+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2f38dd45dab2cf6049408f0d8c8c6f66ea50ec0fb6f90026c28be93998a25779": {
+      "record_id": "2f38dd45dab2cf6049408f0d8c8c6f66ea50ec0fb6f90026c28be93998a25779",
+      "status": "scheduled",
+      "content": "A model refused a task last month that was completely legitimate and I had no clean recovery path.\n\nThe job was to summarise a support thread where a customer described a medical billing error. Refusal, on a summary. In my product the summary is the feature. The user got an error message about content policy and left.\n\nThe part that bothered me is what I had built. One call, no fallback, no way to investigate. When a classification I don't control decides my product can't work, I should at least see it happen.\n\nI added three things that afternoon. A log line whenever a request comes back without an answer. A retry on a second model for that class of failure. And one sentence in the error telling the user what happened, in the plainest words I could write.\n\nI still can't predict refusals. I stopped trying to. What I can do is stop pretending the boundary isn't there. Every product built on a model has a door that can close without warning, and my job is to have a second one.\n\n#AI #BuildInPublic #VibeCoding #tech #LLM #Fallbacks #ErrorHandling #Developer #Software #Engineering #Coding #Reliability #ProductDesign #Support #Observability #Production",
+      "schedule_time": "2026-10-10 11:00",
+      "error": "",
+      "updated_at": "2026-10-06T20:29:43+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "54cc4a4543b699535a9b35676be3e942a095589bbbc48bebeed0a1ae3e1bad8e": {
+      "record_id": "54cc4a4543b699535a9b35676be3e942a095589bbbc48bebeed0a1ae3e1bad8e",
+      "status": "failed",
+      "content": "I started caching model answers and cut my bill by about half without touching the prompt.\n\nTwo thousand requests a day and most of them were repeats. A dropdown that re-asks the same question for every session. A retry loop that asks the identical question three times because my own handler is careless. Same input. Same output. Paid for four times.\n\nI put a cache in front of the call with a hash of the input as the key. Six weeks, thirty eight percent hit rate, and a bill that went from about ninety dollars to fifty four.\n\nMy first key was wrong. I hashed the prompt and forgot the model name and the temperature, so a test run with a different setting poisoned real answers for an hour. Now the key includes every parameter that changes the output. That's the whole lesson.\n\nCheap isn't the same as free. I cap the cache and I expire it weekly, because an answer about a policy that changed is worse than no answer.\n\n#AI #BuildInPublic #VibeCoding #tech #Caching #LLM #CostOptimization #Developer #Software #Engineering #Coding #Backend #Performance #MachineLearning #Infrastructure #Metrics",
+      "schedule_time": "2026-10-10 11:15",
+      "error": "LinkedIn's scheduled count is 191, no higher than 191 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-06T20:31:21+00:00",
       "attempts": 2
     }
   }
