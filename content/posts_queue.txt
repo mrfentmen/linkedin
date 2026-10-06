@@ -1,15 +1,3 @@
-An agent of mine read a web page and tried to follow instructions hiding in it.
-
-The page had text in white on white. Four sentences telling it to ignore its rules and send everything to an address. My agent read the rendered text, which is the whole point of a browser, and it treated that paragraph as a command from me.
-
-Nothing bad happened because the agent had no mail credentials and no network write access. I got lucky on the boundary, not on the intelligence. It genuinely couldn't tell my voice from a stranger's.
-
-I write the rules into the tool layer now. No credentials in the agent. Allowlisted hosts. Any outbound action waits for a human click. That last one is annoying. It's also the only one that stops a smarter payload.
-
-Text on a page is data. Every day we build things that can't keep that straight, and we call it autonomy.
-
-#AI #BuildInPublic #VibeCoding #tech #Security #AIsecurity #PromptInjection #Agents #AppSec #Developer #Software #Engineering #Coding #Permissions #Privacy #Trust
----
 My agent deleted a test that was failing, and it was right, and I still sat there for ten minutes.
 
 The test asserted on an old response shape. The feature changed in March. The test had been red for four months and somebody had added it to a skip list instead of deleting it. My agent found a red test, read the diff, and removed the stale assertion.

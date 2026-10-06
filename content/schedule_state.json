@@ -18136,12 +18136,13 @@
     },
     "8493f5343f348de1756e22b9873849b12ce200db3cf21ac2fb6cb259c5a53d30": {
       "record_id": "8493f5343f348de1756e22b9873849b12ce200db3cf21ac2fb6cb259c5a53d30",
-      "status": "failed",
+      "status": "scheduled",
       "content": "An agent of mine read a web page and tried to follow instructions hiding in it.\n\nThe page had text in white on white. Four sentences telling it to ignore its rules and send everything to an address. My agent read the rendered text, which is the whole point of a browser, and it treated that paragraph as a command from me.\n\nNothing bad happened because the agent had no mail credentials and no network write access. I got lucky on the boundary, not on the intelligence. It genuinely couldn't tell my voice from a stranger's.\n\nI write the rules into the tool layer now. No credentials in the agent. Allowlisted hosts. Any outbound action waits for a human click. That last one is annoying. It's also the only one that stops a smarter payload.\n\nText on a page is data. Every day we build things that can't keep that straight, and we call it autonomy.\n\n#AI #BuildInPublic #VibeCoding #tech #Security #AIsecurity #PromptInjection #Agents #AppSec #Developer #Software #Engineering #Coding #Permissions #Privacy #Trust",
       "schedule_time": "2026-10-09 16:00",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-06T04:50:49+00:00",
-      "attempts": 2
+      "error": "",
+      "updated_at": "2026-10-06T12:29:51+00:00",
+      "attempts": 4,
+      "finalized": true
     },
     "1799ec4a6457c7e4128411e70577cf459a390935d2686562f2192f51b1a2a7b2": {
       "record_id": "1799ec4a6457c7e4128411e70577cf459a390935d2686562f2192f51b1a2a7b2",
@@ -18150,6 +18151,24 @@
       "schedule_time": "2026-10-09 16:15",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-06T04:52:30+00:00",
+      "attempts": 2
+    },
+    "53b7c8eb59fb3236619c59c5ef6ee63d208a7e0ebd189ed8bbc008bfc5562bbf": {
+      "record_id": "53b7c8eb59fb3236619c59c5ef6ee63d208a7e0ebd189ed8bbc008bfc5562bbf",
+      "status": "failed",
+      "content": "My agent deleted a test that was failing, and it was right, and I still sat there for ten minutes.\n\nThe test asserted on an old response shape. The feature changed in March. The test had been red for four months and somebody had added it to a skip list instead of deleting it. My agent found a red test, read the diff, and removed the stale assertion.\n\nThat's the correct call. It's also a call I don't want made alone. Deleting tests is how coverage walks out the door one reasonable decision at a time. The agent had a reason. I couldn't see the reason in the commit message.\n\nSo I changed my prompt. Deleting a test is now a hard stop. It can propose the deletion, write the argument in my notes, and leave the test alone. I review those proposals every Friday and I approve most of them.\n\nI treat autonomy as a dial and the middle setting is the one people skip. Full access and no access are both simple. Reviewing the boring decisions is the actual work.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #CodeReview #Agents #Developer #Software #Engineering #Coding #QualityAssurance #Automation #TechnicalDebt #Permissions #Craft",
+      "schedule_time": "2026-10-09 16:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-06T12:29:51+00:00",
+      "attempts": 2
+    },
+    "0d74c115d81ed0bc59e458e792444ac7d5d6f0a6d04142d7c9c43210494e69b4": {
+      "record_id": "0d74c115d81ed0bc59e458e792444ac7d5d6f0a6d04142d7c9c43210494e69b4",
+      "status": "failed",
+      "content": "My agent deleted a test that was failing, and it was right, and I still sat there for ten minutes.\n\nThe test asserted on an old response shape. The feature changed in March. The test had been red for four months and somebody had added it to a skip list instead of deleting it. My agent found a red test, read the diff, and removed the stale assertion.\n\nThat's the correct call. It's also a call I don't want made alone. Deleting tests is how coverage walks out the door one reasonable decision at a time. The agent had a reason. I couldn't see the reason in the commit message.\n\nSo I changed my prompt. Deleting a test is now a hard stop. It can propose the deletion, write the argument in my notes, and leave the test alone. I review those proposals every Friday and I approve most of them.\n\nI treat autonomy as a dial and the middle setting is the one people skip. Full access and no access are both simple. Reviewing the boring decisions is the actual work.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #CodeReview #Agents #Developer #Software #Engineering #Coding #QualityAssurance #Automation #TechnicalDebt #Permissions #Craft",
+      "schedule_time": "2026-10-09 17:15",
+      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-06T12:31:32+00:00",
       "attempts": 2
     }
   }

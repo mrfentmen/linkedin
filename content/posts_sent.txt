@@ -28451,3 +28451,18 @@ The uncomfortable part is that none of this is versioned in a way I can pin. I c
 
 #AI #BuildInPublic #VibeCoding #tech #LLM #APIs #Versioning #Developer #Software #Engineering #Coding #Reliability #Backend #DataEngineering #Validation #Production
 ---
+[2026-10-06 12:29:51 UTC]
+record_id=8493f5343f348de1756e22b9873849b12ce200db3cf21ac2fb6cb259c5a53d30
+scheduled_for=2026-10-09 16:00
+An agent of mine read a web page and tried to follow instructions hiding in it.
+
+The page had text in white on white. Four sentences telling it to ignore its rules and send everything to an address. My agent read the rendered text, which is the whole point of a browser, and it treated that paragraph as a command from me.
+
+Nothing bad happened because the agent had no mail credentials and no network write access. I got lucky on the boundary, not on the intelligence. It genuinely couldn't tell my voice from a stranger's.
+
+I write the rules into the tool layer now. No credentials in the agent. Allowlisted hosts. Any outbound action waits for a human click. That last one is annoying. It's also the only one that stops a smarter payload.
+
+Text on a page is data. Every day we build things that can't keep that straight, and we call it autonomy.
+
+#AI #BuildInPublic #VibeCoding #tech #Security #AIsecurity #PromptInjection #Agents #AppSec #Developer #Software #Engineering #Coding #Permissions #Privacy #Trust
+---
