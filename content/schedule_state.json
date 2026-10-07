@@ -18646,8 +18646,8 @@
       "content": "I asked an agent to write the tests for the code it had just written and the tests passed on the first run.\n\nThat's not a good sign. A test written by the same mind that wrote the bug tends to test the same assumption twice. My prompt said add tests. It added tests. Both of us were satisfied and neither of us had checked the thing that actually breaks.\n\nNow the brief says something different. Write the test that would fail if the feature were removed, and list the three ways the feature could be wrong that the test can't see. That second part is the part I read. The list is where the useful thinking lands, and about half the time it names the bug.\n\nThe tests are fine. They're not the value. The value is a machine that has to say out loud what it can't prove, which is a habit I want in people too.\n\nI still write the test for the money path myself. Some work doesn't belong to a tool.\n\n#AI #BuildInPublic #VibeCoding #tech #Testing #Agents #CodeReview #Developer #Software #Engineering #Coding #QualityAssurance #MachineLearning #Automation #Craft #Trust",
       "schedule_time": "2026-10-10 16:30",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-07T00:44:13+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-07T09:34:36+00:00",
+      "attempts": 4
     },
     "2a6b1caa5dee19de056ed226fe40d092dcef4b87436e6778a56f6314183c7ce6": {
       "record_id": "2a6b1caa5dee19de056ed226fe40d092dcef4b87436e6778a56f6314183c7ce6",
