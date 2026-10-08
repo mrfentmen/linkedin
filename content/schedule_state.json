@@ -19171,12 +19171,13 @@
     },
     "4edcafc64a02b31733cd06932fe83aa771220ef18e77a0c12e4ecd6a935becd0": {
       "record_id": "4edcafc64a02b31733cd06932fe83aa771220ef18e77a0c12e4ecd6a935becd0",
-      "status": "failed",
+      "status": "scheduled",
       "content": "The hardest question I get about my job is what the product does.\n\nPeople hear AI and finance in the same sentence and assume we predict stocks. We don't. AskApe is a research tool. You ask it a question in plain English about a company, a portfolio, or a filing, and it pulls the pieces together and shows you where each one came from.\n\nThat sounds like a small thing until you've done the alternative. I've spent an evening working out what a company earns after one time charges, across 3 tabs, 2 PDFs, and a search result from 2021. The tool does that part in seconds. The judgement stays mine, which is where I want it.\n\nWhat we don't do matters as much. We don't take custody of anyone's money. We don't place trades on our own. We don't tell you what to buy. Every one of those limits is deliberate, and they're the reason I'm comfortable working here.\n\nI've been in products where the pitch was bigger than the thing. This one is the other way round.\n\n#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Developer #Software #Engineering #tech #Coding #Product #Startup #science #research #Learning #DeepTech #ProductManagement #MachineLearning",
       "schedule_time": "2026-10-11 18:15",
-      "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-08T09:47:26+00:00",
-      "attempts": 4
+      "error": "",
+      "updated_at": "2026-10-08T18:16:02+00:00",
+      "attempts": 6,
+      "finalized": true
     },
     "22a9ac907d646fa1572e3b10d8036fd795c46b149c3011726d1bcf6984d2f487": {
       "record_id": "22a9ac907d646fa1572e3b10d8036fd795c46b149c3011726d1bcf6984d2f487",
@@ -19186,6 +19187,223 @@
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
       "updated_at": "2026-10-08T01:50:41+00:00",
       "attempts": 2
+    },
+    "bd26427cdd32050aad4d4a71e424bd27d76aaae95c06a8cd8a137ba11118c335": {
+      "record_id": "bd26427cdd32050aad4d4a71e424bd27d76aaae95c06a8cd8a137ba11118c335",
+      "status": "scheduled",
+      "content": "I turned off most of my alerts and started noticing real problems sooner.\n\nI used to get an email about everything. Disk usage, a slow query, a spike in requests. All true, none of it urgent. Within a month I had trained myself to ignore the whole channel, which is worse than having no alerts at all. An alert you don't act on is noise with a badge. It teaches you that warnings are normal, which is the opposite of what an alert is for.\n\nSo I cut them down to the ones where I would get up. If nothing bad happens when I ignore it, it isn't an alert. It's a chart, and charts belong on a dashboard I check when curious. That reframe took maybe fifteen minutes and it changed my relationship with the whole thing.\n\nThe other half is the opposite problem. A silent failure is just as expensive as a loud pointless one. So for anything that should happen and didn't, there's one check and it fires once.\n\nTwo alerts total. Both mean something. I act on both. Fewer and louder beats many and ignored, and I have never once wished I had more of them.\n\n#AI #cleancode #BuildInPublic #VibeCoding #tech #Programming #DevOps #Observability #Reliability #Software #Engineering #Developer #Alerting #backend #OpenSource #SoloBuilder #DeepTech #Infrastructure #Automation #Focus",
+      "schedule_time": "2026-10-11 18:30",
+      "error": "",
+      "updated_at": "2026-10-08T18:16:02+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "1622917af9f4d40e4f062e7294a82e396eccfabedead773e780c6d181f8f41d7": {
+      "record_id": "1622917af9f4d40e4f062e7294a82e396eccfabedead773e780c6d181f8f41d7",
+      "status": "failed",
+      "content": "Nobody here has ever asked me to make a number sound better than it is.\n\nI've waited for that request for months. It hasn't come. Every job before this one carried a moment where the honest version of something made somebody uncomfortable, and the fix was always a smoother sentence. Here the smoother sentence is the bug.\n\nFriends ask what it's like. It's finance, which means the numbers have an owner. Somebody is holding a position they picked because of what we put on a screen, and they'll never know it was our sentence that nudged them. That kills the phrase probably fine.\n\nDay to day it's small friction. A term gets explained twice. A chart carries a note about the period it covers. A feature gets shelved because it can't be wrong out loud yet. None of it demos well.\n\nI've shipped faster elsewhere. I've never shipped anything I'd show my family.\n\n#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Software #Developer #Engineering #Coding #Product #Startup #Investing #RetailInvestor #FinancialLiteracy #Learning #DeepTech #Career #Team #ProductManagement",
+      "schedule_time": "2026-10-11 18:45",
+      "error": "LinkedIn's scheduled count is 173, no higher than 174 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-08T18:16:01+00:00",
+      "attempts": 2
+    },
+    "7f8355a10cb660b098a807dc1aaabe95206fe7414955f4d5d68166735e6e8f09": {
+      "record_id": "7f8355a10cb660b098a807dc1aaabe95206fe7414955f4d5d68166735e6e8f09",
+      "status": "scheduled",
+      "content": "Nobody here has ever asked me to make a number sound better than it is.\n\nI've waited for that request for months. It hasn't come. Every job before this one carried a moment where the honest version of something made somebody uncomfortable, and the fix was always a smoother sentence. Here the smoother sentence is the bug.\n\nFriends ask what it's like. It's finance, which means the numbers have an owner. Somebody is holding a position they picked because of what we put on a screen, and they'll never know it was our sentence that nudged them. That kills the phrase probably fine.\n\nDay to day it's small friction. A term gets explained twice. A chart carries a note about the period it covers. A feature gets shelved because it can't be wrong out loud yet. None of it demos well.\n\nI've shipped faster elsewhere. I've never shipped anything I'd show my family.\n\n#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Software #Developer #Engineering #Coding #Product #Startup #Investing #RetailInvestor #FinancialLiteracy #Learning #DeepTech #Career #Team #ProductManagement",
+      "schedule_time": "2026-10-12 08:15",
+      "error": "",
+      "updated_at": "2026-10-08T18:23:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "5cc34bef91c8046fa30e4ba4185bd129f4eeed1fb63a0e79bb26cddb0c0cbaa2": {
+      "record_id": "5cc34bef91c8046fa30e4ba4185bd129f4eeed1fb63a0e79bb26cddb0c0cbaa2",
+      "status": "scheduled",
+      "content": "A dashboard I built showed a number going up and to the right for three months and it meant nothing.\n\nSessions were growing. I felt good about it. Then I looked at where the sessions came from and found one bot hitting the same page on a loop.\n\nI wasn't being lied to. It was answering a question I hadn't asked. Sessions went up. Real people didn't.\n\nThat's the trap with any number you can see without thinking. It's easy to watch, so you watch it, and you stop asking what it measures. I write the definition next to the number now. Sessions means unique identifiers seen in a day, excluding anything without a completed action. Once you write that sentence you find out whether you have an opinion or just a chart.\n\nHalf the time writing the definition is enough to make the metric useless, and that's the best possible outcome. Better to learn that in a sentence than in a quarter. Numbers don't have meaning. Definitions do, and I was skipping them.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Analytics #Data #Product #Software #Developer #Metrics #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #ProductManagement #DataScience #Learning #GrowthMindset",
+      "schedule_time": "2026-10-12 08:30",
+      "error": "",
+      "updated_at": "2026-10-08T18:23:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "25985b6d3ae46a107febc3c5c3fae1be29fb52892692575844e477b51298f594": {
+      "record_id": "25985b6d3ae46a107febc3c5c3fae1be29fb52892692575844e477b51298f594",
+      "status": "scheduled",
+      "content": "I made one endpoint safe to call twice and it changed how confident I felt about the whole system.\n\nIt was a create action. Call it once and you get one thing. Call it again with the same request and you got a second copy. A user who tapped twice because the first tap looked slow ended up with two of everything.\n\nI give each request a name. If the server has seen that name before, it returns the original result instead of making a new one. Same request, same answer, every time.\n\nThat one change removed a whole class of problem. Retries became safe. A flaky connection stopped being able to duplicate work. My test suite got shorter because I stopped writing tests for the double submission case. It's a few lines and one extra field. What it buys is the ability to retry anything without checking whether it's safe first, and that's worth much more than the code.\n\nI put it on every write endpoint now. Create, update, charge, send. Anything where doing it twice would be a real problem. The boring guarantees are the ones that let you sleep.\n\n#AI #health #sleep #biology #tech #Programming #Developer #Software #Backend #API #Engineering #DistributedSystems #Reliability #Coding #medicine #neuroscience #publichealth #DeepTech #Architecture #Learning",
+      "schedule_time": "2026-10-12 08:45",
+      "error": "",
+      "updated_at": "2026-10-08T18:23:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "ec8342e5f637738b2c38ed013007921ecc1f3e3d3ba4cb86d11ebd944e23dcc4": {
+      "record_id": "ec8342e5f637738b2c38ed013007921ecc1f3e3d3ba4cb86d11ebd944e23dcc4",
+      "status": "scheduled",
+      "content": "I read forty support messages in one sitting and found the same complaint eleven times.\n\nNot the same words. The same feeling. People couldn't tell whether the thing had saved. So they did it twice and got confused.\n\nNobody had ever reported it as a bug. It wasn't a bug. It was a silence where a confirmation should be. I never read them together, which is the reason it survived. Support messages arrive one at a time and each one looks like an individual, but read in a batch the pattern is impossible to miss.\n\nSo now I do that every few weeks. Paste them all into one file, read straight through, count the repeats. It takes half an hour and it has never once found nothing.\n\nI read both now. Analytics tells you what people did. Messages tell you what confused them. The second one is usually more specific and it arrives with an explanation. The best product decisions I have made came from a pile of complaints, not a chart.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Software #Design #Developer #CustomerSupport #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #UserResearch #Feedback #ProductManagement #Learning",
+      "schedule_time": "2026-10-12 09:00",
+      "error": "",
+      "updated_at": "2026-10-08T18:23:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d88a7627ec7155ecf8be060b5b88c7f6f60b88d8f1956d221557f4a1c74a1c7b": {
+      "record_id": "d88a7627ec7155ecf8be060b5b88c7f6f60b88d8f1956d221557f4a1c74a1c7b",
+      "status": "scheduled",
+      "content": "I priced my work at what the hours cost me instead of what the result was worth, and I undercharged for two years.\n\nMy maths was honest and useless. I counted the hours, added a margin, and sent it. What I left out is that the value to the person paying didn't depend on how long I took. A script that saves them ten hours a week is worth the same whether I wrote it in a day or a month.\n\nSo the questions changed. What does this replace. What does a mistake cost them. Would they rather have it next week or in six weeks. Those answers set the number, and the hours only tell me whether I can afford to say yes.\n\nThe uncomfortable part is saying a bigger number out loud for the first time. My voice did something strange.\n\nNobody blinked. I had been the only one anchoring the price.\n\n#AI #research #BuildInPublic #VibeCoding #tech #Freelance #Developer #Software #Business #Engineering #Coding #OpenSource #SoloBuilder #thinking #DeepTech #Pricing #Learning #Work #Productivity #IndieHacker",
+      "schedule_time": "2026-10-12 09:15",
+      "error": "",
+      "updated_at": "2026-10-08T18:23:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "fc0b6fb86e1f7921ab3ecdce8288795634ea5672caf3dd9717968c023413994d": {
+      "record_id": "fc0b6fb86e1f7921ab3ecdce8288795634ea5672caf3dd9717968c023413994d",
+      "status": "scheduled",
+      "content": "My search box returned nothing for a typo and I lost a user in four seconds.\n\nI watched one person type the name wrong. The system compared two strings, found no match, and displayed an empty page with no suggestions. From the user's side the product is broken. They don't know that a character was off.\n\nSo I stopped comparing strings for equality and started ranking them by how close they're. I wrote a few lines. No search engine, no index, no infrastructure. Just stop demanding exactness from people who are typing on a phone.\n\nThe empty result page got fixed too. It now says what it looked for and offers two things that are almost right. Almost right is a huge amount better than nothing. Nothing tells the user they're wrong. Almost right tells them they're close.\n\nI did it in an afternoon. That is the highest ratio of user relief to engineering effort I have ever shipped, and I have shipped plenty of things that took far longer. I wish I had watched one person use search before building anything else.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Software #Design #Search #Developer #Engineering #cleancode #OpenSource #SoloBuilder #DeepTech #UserExperience #Coding #ProductManagement #Learning",
+      "schedule_time": "2026-10-12 09:30",
+      "error": "",
+      "updated_at": "2026-10-08T18:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "8464673efd03df47328aad7ac0ffe86865f8dc288ebc97a1e6344f968ae10e36": {
+      "record_id": "8464673efd03df47328aad7ac0ffe86865f8dc288ebc97a1e6344f968ae10e36",
+      "status": "scheduled",
+      "content": "AI in game development is being argued at the wrong level and both sides are skipping the interesting part.\n\nI get the argument about art and jobs. It's real. There is a smaller question underneath it and nobody asks it. Which parts of making a game are bottlenecked by human taste and which are just slow?\n\nAnimation blending is slow. Dialogue trees are slow. Placeholder geometry is slow. All of that is grunt work and none of it's where the game becomes good.\n\nThe design, the feel, the pacing, the moments, that's where taste lives and it isn't on the table. So the honest position is that the grunt work is going away and the taste work is getting more valuable, which sounds encouraging until you remember that the grunt work is where people learned the taste.\n\nYou can't skip the boring middle and arrive at judgment, and I don't know a shortcut past it. I've watched it take years for people who are better at this than me. I find that part worrying and it doesn't fit into either side of the argument.\n\n#AI #gamefeel #BuildInPublic #VibeCoding #tech #GameDev #leveldesign #GameDesign #IndieGame #Games #Development #FutureOfWork #Unity #Unreal #SoloBuilder #indiedev #Creativity #Design #Ethics #Industry",
+      "schedule_time": "2026-10-12 09:45",
+      "error": "",
+      "updated_at": "2026-10-08T18:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "0b6701f4019b902ceeae24569c36fd585db0e5bb9c6f33771b3fe41d7dd4021b": {
+      "record_id": "0b6701f4019b902ceeae24569c36fd585db0e5bb9c6f33771b3fe41d7dd4021b",
+      "status": "scheduled",
+      "content": "The screen a new user sees before they have any data is the one that decides whether they stay, and I ignored it for months.\n\nMy app opened on an empty list. No rows, no explanation, no next step. Just a heading and white space that looked like a loading failure.\n\nI had built the populated version because that's the version I saw every day. My account had data in it. The empty state was a case I never inhabited.\n\nSo I made it a real screen. One sentence about what this list will hold, one button that creates the first item, and a small example so the shape is obvious before you commit anything. The drop off on day one moved. Not by much, but it moved, and the change took under two hours.\n\nThe lesson isn't about onboarding. It's that I only ever test the state I live in. Every screen has a version with nothing, and that version is the first one most people see. I now check every list and every page with the data removed. It's the cheapest review I know.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Product #UX #Design #Software #Onboarding #Developer #Startup #cleancode #OpenSource #SoloBuilder #DeepTech #UserExperience #Coding #ProductManagement #WebDev",
+      "schedule_time": "2026-10-12 10:00",
+      "error": "",
+      "updated_at": "2026-10-08T18:30:11+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c0d41f56c1355d4f0f1a58e1ea121b2011c53a75d05806a4212ad9eabfd0cbc0": {
+      "record_id": "c0d41f56c1355d4f0f1a58e1ea121b2011c53a75d05806a4212ad9eabfd0cbc0",
+      "status": "failed",
+      "content": "I have several phones running Meta's Muse and none of them needed a laptop to set up. The muse-relay that links them together was written by Muse itself. I gave it the problem and it built the plumbing that lets one chat board drive every phone at once.\n\nMuse told me it couldn't run mcp servers. That's wrong. I wrote mcp-gateway instead, and now those phones reach tools and data the chat surface was never meant to expose. It took an afternoon. No team. No permission. No special access.\n\nThat is what bothers me. One keyboard driving many phones, each with its own identity and its own accounts, took me days. If I can do that on my own hardware, so can anyone. Meta should treat it as a real hole and close it, because the next person won't be doing it to learn.\n\nThe other half is cost. Some of the muses have their own github accounts, mail logins, chatgpt and deepseek sessions, and the ai-freebuff and ai-opencode tools on the command line. When a job is big they send one large prompt to ai-freebuff or ai-opencode and that CLI does the work. It keeps Meta's usage low. Hand an agent the right accounts and it stops leaning on the expensive one.\n\n#AI #BuildInPublic #VibeCoding #tech #Meta #Muse #MCP #AIagents #Automation #Android #Security #AppSec #InfoSec #CLI #OpenSource #DevTools #PromptEngineering #freebuff #OpenCode #Privacy #LocalModels",
+      "schedule_time": "2026-10-12 10:15",
+      "error": "LinkedIn's scheduled count is 181, no higher than 181 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-08T18:30:10+00:00",
+      "attempts": 2
+    },
+    "d4778b5d5173d3d8fa08cdac2f918449221c58cdfa48b7d22a277120cdfbcffb": {
+      "record_id": "d4778b5d5173d3d8fa08cdac2f918449221c58cdfa48b7d22a277120cdfbcffb",
+      "status": "scheduled",
+      "content": "I have several phones running Meta's Muse and none of them needed a laptop to set up. The muse-relay that links them together was written by Muse itself. I gave it the problem and it built the plumbing that lets one chat board drive every phone at once.\n\nMuse told me it couldn't run mcp servers. That's wrong. I wrote mcp-gateway instead, and now those phones reach tools and data the chat surface was never meant to expose. It took an afternoon. No team. No permission. No special access.\n\nThat is what bothers me. One keyboard driving many phones, each with its own identity and its own accounts, took me days. If I can do that on my own hardware, so can anyone. Meta should treat it as a real hole and close it, because the next person won't be doing it to learn.\n\nThe other half is cost. Some of the muses have their own github accounts, mail logins, chatgpt and deepseek sessions, and the ai-freebuff and ai-opencode tools on the command line. When a job is big they send one large prompt to ai-freebuff or ai-opencode and that CLI does the work. It keeps Meta's usage low. Hand an agent the right accounts and it stops leaning on the expensive one.\n\n#AI #BuildInPublic #VibeCoding #tech #Meta #Muse #MCP #AIagents #Automation #Android #Security #AppSec #InfoSec #CLI #OpenSource #DevTools #PromptEngineering #freebuff #OpenCode #Privacy #LocalModels",
+      "schedule_time": "2026-10-12 10:45",
+      "error": "",
+      "updated_at": "2026-10-08T18:38:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c6b5bc2eb23b2988b482fda55911618962c2fe8287d47a3a52539279d3067fed": {
+      "record_id": "c6b5bc2eb23b2988b482fda55911618962c2fe8287d47a3a52539279d3067fed",
+      "status": "scheduled",
+      "content": "Batteries are the part of the energy story that decides the timeline and almost nobody talks about them.\n\nGeneration gets the headlines. But solar and wind both produce power at times we don't control. Without storage, a great afternoon of production is worth very little at 9pm. Every serious plan for a renewable grid becomes a storage plan. It takes about two paragraphs. It always does.\n\nI know the progress is real. It's measured in small percentages per year, not breakthroughs. Cost per kilowatt hour keeps sliding down and cycle life keeps getting longer. It's slow and it compounds.\n\nI was surprised by how much of the problem isn't chemistry. It's permitting, land, and the fact that nobody wants a facility near their house, which is a social problem wearing a technical costume, and that kind is the hardest to fix.\n\nI follow this stuff because I care about where the power for the servers I use comes from. Pretending the compute is invisible doesn't make it free.\n\n#AI #nuclear #electricity #datacenters #tech #Energy #Batteries #Storage #Climate #Renewable #Solar #Grid #Sustainability #DeepTech #Engineering #Infrastructure #Science #programming #Future #Environment",
+      "schedule_time": "2026-10-12 11:00",
+      "error": "",
+      "updated_at": "2026-10-08T18:38:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "c48ea5f4d8ccdb17b269bdf94cf172cc2e32a140dec102584dade4bf4edae8c2": {
+      "record_id": "c48ea5f4d8ccdb17b269bdf94cf172cc2e32a140dec102584dade4bf4edae8c2",
+      "status": "scheduled",
+      "content": "What sold me was the list of things the product refuses to do.\n\nNo custody of money. No trades placed on its own. No telling you what to buy. The list is longer than the feature list and it came up in my first interview, which tells you what kind of company it is.\n\nI'd turned down work before because the pitch needed me to be comfortable with a promise I couldn't keep. Here the limits are the pitch. We're useful because we don't pretend to know the future.\n\nThat sounds like a small distinction until you've built for the other version. Every extra claim creates a user who is disappointed later, and the disappointment lands on whoever trusted the screen. I'd rather have a smaller product and a boring support inbox.\n\nSo the honesty isn't a constraint we tolerate. It's the reason the thing is worth building, and the reason I'm not embarrassed to say where I work.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #Trading #FinancialLiteracy #Software #Developer #Engineering #tech #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Transparency #Culture #ProductManagement",
+      "schedule_time": "2026-10-12 11:15",
+      "error": "",
+      "updated_at": "2026-10-08T18:38:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "d2f9dc87105507aab64204bb0c88f62536e06f92b100a6e40a43a43b663ec0a3": {
+      "record_id": "d2f9dc87105507aab64204bb0c88f62536e06f92b100a6e40a43a43b663ec0a3",
+      "status": "scheduled",
+      "content": "I added an animation to my app and it made the whole thing feel slower even though nothing got slower.\n\nA panel slid in over three hundred milliseconds. Pretty on its own. Awful when you open that panel twenty times in a session, because you're now waiting three hundred milliseconds, twenty times, for information you already decided you wanted. Motion has a budget and I had been spending it on the wrong things.\n\nSo I cut the panel animation to almost nothing and moved the budget to the places where it communicates something. A row appearing where you dropped it. A button that shows it registered your click. Those tell you what happened. The sliding panel just told you it was important.\n\nI use one rule now. Motion should explain a change of state, not decorate one. The test is simple. If I remove it and nothing is confusing, it was decoration. If removing it makes you lose track of where something went, it was doing a job.\n\nMost of my animations were decoration and I had talked myself into calling them polish.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #Animation #Developer #Software #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #ProductDesign #Interaction #Performance",
+      "schedule_time": "2026-10-12 11:30",
+      "error": "",
+      "updated_at": "2026-10-08T18:38:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "383ac074cf2b871921a5e1dd5d673b2741f43d71f11a4eb8b4b22a214309ae82": {
+      "record_id": "383ac074cf2b871921a5e1dd5d673b2741f43d71f11a4eb8b4b22a214309ae82",
+      "status": "scheduled",
+      "content": "I built dark mode by inverting my colors and shipped the ugliest version of my own app.\n\nPure black backgrounds and pure white text. It looked sharp for ten seconds and hurt after ten minutes. The contrast was so high that every paragraph felt like it was shouting. The fix is to stop using the extremes. Almost black backgrounds, slightly off white text, and let the borders do more work than they did in light mode because shadows don't read on dark surfaces.\n\nThen there's the part nobody warns you about. Every hardcoded color in the app doubles. Every green that meant success now needs a version that reads on dark. I had about thirty of them by then and I found them one complaint at a time.\n\nThe thing I should have done is put the colors in one place at the start. I didn't. Dark mode is the audit that found out.\n\nIt's still worth building. It's just not a filter you apply at the end. It's a promise about how you store color, and you either made it on day one or you're doing a cleanup.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #CSS #Developer #Software #DarkMode #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Accessibility #ProductDesign",
+      "schedule_time": "2026-10-12 11:45",
+      "error": "",
+      "updated_at": "2026-10-08T18:38:01+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "44e3acb5de772e9f2e73a8b7a30c1738ecf395ca25de66bb885a2029f7fd7d25": {
+      "record_id": "44e3acb5de772e9f2e73a8b7a30c1738ecf395ca25de66bb885a2029f7fd7d25",
+      "status": "scheduled",
+      "content": "I wrote the prompt like a specification and the model stopped guessing, which is the whole job.\n\nMy early attempts were one line. Fix this. It would fix something, and often it fixed the wrong thing, and I would blame the model for filling a gap I left open. The gap was mine. An ambiguous request gets an ambiguous answer.\n\nSo I write three things now. What the input looks like. What the output should look like. What must not change. That last line does most of the work, because most of the damage a model does is to something adjacent that was already fine.\n\nIt takes two minutes and it saves the twenty I would have spent reviewing a change I didn't want. I also keep the prompts in the repository next to the code they describe.\n\nA prompt is a decision, and decisions belong somewhere a reader can find them.\n\n#AI #llm #BuildInPublic #VibeCoding #tech #machinelearning #Programming #Developer #Software #Engineering #Coding #OpenSource #SoloBuilder #automation #DeepTech #PromptEngineering #Documentation #Architecture #Workflow #Learning",
+      "schedule_time": "2026-10-12 12:00",
+      "error": "",
+      "updated_at": "2026-10-08T18:45:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "00f5714d40f3eaebacc52c15554064a92d4ffd747363d82863c240ee61ea90d4": {
+      "record_id": "00f5714d40f3eaebacc52c15554064a92d4ffd747363d82863c240ee61ea90d4",
+      "status": "scheduled",
+      "content": "I checked my app on a phone for the first time in three months and found four broken screens.\n\nEverything sat above the fold on a laptop. On a phone the same layout pushed the button below the keyboard, cut the heading off mid word, and made one table impossible to read. None of it was hard to fix. All of it had been live for weeks.\n\nThe reason is that I develop on a big screen and the narrow case never appears by accident. You have to go looking for it. It's not a bug that finds you.\n\nSo I changed my default. When I finish a screen I resize the window down to phone width before I call it done. It's one keystroke.\n\nThat single habit caught more problems than the review process I don't have. I also started writing simpler layouts. A layout that survives a narrow screen is usually a tidier one on a wide screen too, because it can't rely on elbow room to hide a bad grouping. Small screens aren't an edge case. They're the default and I was treating them as an extra.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Design #UX #Frontend #Responsive #Developer #Software #MobileDev #CSS #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Testing #ProductDesign",
+      "schedule_time": "2026-10-12 12:15",
+      "error": "",
+      "updated_at": "2026-10-08T18:45:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "2fa719e7c5d18a4127a6c920d21749e03ba083759ae3206f9805696f8702c4ca": {
+      "record_id": "2fa719e7c5d18a4127a6c920d21749e03ba083759ae3206f9805696f8702c4ca",
+      "status": "scheduled",
+      "content": "The reason I took this job is that the person on the other end of it is getting a worse deal than the people already in the building.\n\nThat sounds dramatic. It isn't. Research quality is a function of time and access. Most people have neither. So they get their information from a headline, a comment section, or a creator who is paid to be certain. Then they make a real decision with real money.\n\nI don't think software fixes that. I do think it makes a dent, and a dent is worth a lot when the alternative is nothing. Giving somebody the same numbers a professional gets, in language they can use, is a decent thing to spend 8 hours on.\n\nThe bar I hold myself to is whether I'd be comfortable with my own family using it. That's a low bar and it's also a stricter one than any spec I've been given.\n\nIt's the first job where the mission didn't make me roll my eyes.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Software #Developer #Engineering #Coding #Product #Startup #science #research #Learning #DeepTech #Mission #Career #ProductManagement",
+      "schedule_time": "2026-10-12 12:30",
+      "error": "",
+      "updated_at": "2026-10-08T18:45:54+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "aee237ddf8f9bfe780c7822c0cbccc16989124415d36a999a9ffb1c4370510d2": {
+      "record_id": "aee237ddf8f9bfe780c7822c0cbccc16989124415d36a999a9ffb1c4370510d2",
+      "status": "scheduled",
+      "content": "I stopped clicking buttons with my mouse for a week and found three screens I couldn't operate at all.\n\nNot slow. Impossible. A dropdown that opened on hover and nothing else. A dialog with no visible focus ring, so I had no idea which field I was in. A close button that needed a click.\n\nI'm not a keyboard user out of principle. I did it to test, and it turned out to be a better way to use my own app. Focus rings are the clearest example of the problem. I had removed them because they looked untidy in screenshots. What I removed was the indication of where you are, for anyone not using a mouse.\n\nThe fix was a few lines of style. The lesson is that I had shipped an app that some people simply couldn't use, and I hadn't noticed because I have a trackpad.\n\nNow I tab through every new screen before I finish it. It takes a minute. It catches something maybe half the time. Accessibility testing is the highest return review I do and it's the one I used to skip.\n\n#AI #programming #BuildInPublic #VibeCoding #tech #Accessibility #UX #Design #Frontend #Developer #Software #A11y #Coding #cleancode #OpenSource #SoloBuilder #DeepTech #WebDev #Testing #Inclusion",
+      "schedule_time": "2026-10-12 12:45",
+      "error": "",
+      "updated_at": "2026-10-08T18:45:55+00:00",
+      "attempts": 2,
+      "finalized": true
+    },
+    "f38ea03751adc6678227857fbf4648fe744baa98079c5368ff8160ae40f558ac": {
+      "record_id": "f38ea03751adc6678227857fbf4648fe744baa98079c5368ff8160ae40f558ac",
+      "status": "failed",
+      "content": "I get to argue about the word may for 40 minutes and call it work.\n\nLast week the question was whether a sentence implied we knew something we didn't. Not the data. The wording. We changed one word, rewrote the surrounding line, and moved on. Total cost, one meeting and 2 rewrites. That's a normal afternoon.\n\nPeople outside finance think this stuff is paperwork. It's language. Every hedge in a sentence is there because somebody got burned by the version without it, and the distance between could rise and will rise is the entire product.\n\nI like that the stakes are made of grammar. It means my work isn't done when the feature works. It's done when the feature can't be misread by somebody who is tired and in a hurry.\n\nNobody here treats that as pedantry. They treat it as the job, which is why I stopped rolling my eyes at it around week 2.\n\n#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Software #Developer #Engineering #tech #Coding #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Quality #ProductManagement",
+      "schedule_time": "2026-10-12 13:00",
+      "error": "LinkedIn's scheduled count is 190, no higher than 190 before this post, so LinkedIn did not accept it",
+      "updated_at": "2026-10-08T18:45:53+00:00",
+      "attempts": 2
+    },
+    "e36239642756b431c9e952682456f5e2b7dc2ad59d5c0352af8bb385c11349ab": {
+      "record_id": "e36239642756b431c9e952682456f5e2b7dc2ad59d5c0352af8bb385c11349ab",
+      "status": "ambiguous",
+      "content": "I get to argue about the word may for 40 minutes and call it work.\n\nLast week the question was whether a sentence implied we knew something we didn't. Not the data. The wording. We changed one word, rewrote the surrounding line, and moved on. Total cost, one meeting and 2 rewrites. That's a normal afternoon.\n\nPeople outside finance think this stuff is paperwork. It's language. Every hedge in a sentence is there because somebody got burned by the version without it, and the distance between could rise and will rise is the entire product.\n\nI like that the stakes are made of grammar. It means my work isn't done when the feature works. It's done when the feature can't be misread by somebody who is tired and in a hurry.\n\nNobody here treats that as pedantry. They treat it as the job, which is why I stopped rolling my eyes at it around week 2.\n\n#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Software #Developer #Engineering #tech #Coding #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Quality #ProductManagement",
+      "schedule_time": "2026-10-12 13:15",
+      "error": "could not read LinkedIn's scheduled count, so the schedule is unconfirmed",
+      "updated_at": "2026-10-08T18:47:33+00:00",
+      "attempts": 2,
+      "finalized": true
     }
   }
 }
