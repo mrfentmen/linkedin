@@ -19751,8 +19751,8 @@
       "content": "A junior sent me his first pull request and it was one hundred and forty lines of something that worked. I asked him to cut it to forty and he looked like I had insulted his family.\n\nI explained what I was after. Not less functionality. Fewer decisions in one place. The change did four things and a reviewer can't hold four things at once, so a bug in one of them hides behind the other three.\n\nHe came back with two changes instead of one and both were good. The first was forty lines and the second was sixty, and the second one was a different problem that he had found while splitting the first. He wouldn't have seen it in the original file.\n\nThat's the part people miss about small diffs. They aren't just easier to review. They make you notice the thing you were about to bundle in.\n\nSince then I describe the shape I want before I ask for it. One change, one reason, one place to look when it breaks.\n\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #SoftwareEngineering #Mentorship #Developer #BuildInPublic #TechNews #Engineering #Craft #Teams #Hiring #Coding #Advice",
       "schedule_time": "2026-10-13 09:15",
       "error": "LinkedIn's scheduled count is 200, no higher than 200 before this post, so LinkedIn did not accept it",
-      "updated_at": "2026-10-09T01:44:19+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-09T09:50:47+00:00",
+      "attempts": 4
     },
     "8ee73c94f9bb4051df3272585aad32afd431c9042939bff03affe2e3556eb2fd": {
       "record_id": "8ee73c94f9bb4051df3272585aad32afd431c9042939bff03affe2e3556eb2fd",
