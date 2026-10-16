@@ -31823,3 +31823,219 @@ I've started doing that first now. Show me the input before I touch the pattern.
 The general version of the lesson is the one that keeps costing me. Verify the input, not the logic, and do it before you have a theory worth defending.
 #AI #BuildInPublic #VibeCoding #tech #Debugging #Coding #Software #Engineering #Developer #Regex #Python #OpenSource #DeepTech #Learning #Programming #Productivity #SoftwareEngineering #Quality
 ---
+[2026-10-16 20:25:04 UTC]
+record_id=516a5483e0b7238697892c28500cc926f0615e1b197a5d7ca8c34cc2c3bab037
+scheduled_for=2026-10-17 14:00
+I gave myself one task a day for a week and finished more than I do in a normal fortnight, which says something unpleasant about a normal fortnight.
+
+The rule was simple. Pick the one thing that would make the week better, write it down at nine, and don't start anything else until it's done or the day is over.
+
+Two of the five days produced nothing on the main task, because something else was on fire. That's the honest part. On the other three I finished early and had the afternoon for whatever the fire was.
+
+What I've noticed in a normal week is that I start about nine things, finish four, and spend the difference in a low hum of guilt about the other five. That hum is what the rule removes.
+
+I write one task down before anything else. It's the least clever productivity system I've used. It's also the first one I've kept. Six weeks now.
+#Productivity #Focus #DeepWork #Habits #Workflow #Software #Developer #Management #Learning #Science #Data #SelfTracking #Career #Tech #Mindset
+---
+[2026-10-16 20:25:04 UTC]
+record_id=29d832b8f52f4fda7a5262e053976ade022077bcaa1acf35227a4f1b467bcec0
+scheduled_for=2026-10-17 16:45
+I tracked where my hours went for a month and the top category wasn't writing code, which I'd have guessed, or meetings, which I'd have hoped.
+
+It was reading. Existing code, other people's docs, error messages, and my own notes from last month. About forty percent of the working hours.
+
+The useful part isn't the number. It's that reading is invisible in every plan I've ever written. I estimate the writing, and the reading is the thing that makes every estimate wrong.
+
+The second surprise was how much of the reading was unnecessary. Some of it was re-reading because I hadn't written anything down the first time. That's a third of the category, and it's the part I can fix.
+
+I write the note now. Not for a colleague. The next hour of reading is an hour I get back, and that's a trade I'd make every time. Every time.
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Learning #Coding #Software #Developer #Documentation #DeepWork #Data #DataScience #SelfTracking #DeepTech #Engineering #Workflow #Focus
+---
+[2026-10-16 20:25:04 UTC]
+record_id=cb503f41cb746bddc5b76f7a3b505e69fd77c0b54ec6dc7b0bf44be208013cc4
+scheduled_for=2026-10-18 09:00
+I spent two hours deleting code today. That was my whole afternoon.
+
+Two hours of removals, one commit that added nine lines. The flag had been off since spring. Nobody asked about the feature. Not one ticket, not one message, nothing in the analytics.
+
+It sat there costing every new engineer about twenty minutes the first time they opened that file. We keep old code around because deleting it feels risky. Reading it costs more than the delete ever will.
+
+So I use a season as the cutoff now. A flag dark for three months means the code behind it goes. I did keep the tests, rewritten as a comment about why we stopped. That part deserved to stay. The rest is gone, and the file is fifty lines shorter than when I opened it this morning.
+
+I'd rather delete one of these every week than explain it to a new hire again. I deleted it because the cost of keeping it never appeared in any report I read, and the cost of reading it appeared every single day. Nobody noticed.
+#AI #BuildInPublic #VibeCoding #tech #Software #Engineering #Coding #Refactoring #CodeReview #Developer #CleanCode #TechDebt #Programming #SoftwareEngineering #SoloBuilder #IndieHacker #SideProject #Startup #Learning
+---
+[2026-10-16 20:25:04 UTC]
+record_id=63afd91a9afc89ec610b1951834800ab7f9225a5a09030f78412c15024ae368c
+scheduled_for=2026-10-18 09:15
+Most teams don't have a performance problem. They've got a measurement problem. I've watched this happen four separate times now. Someone says the app feels slow. Everyone nods. Then a week of optimization starts with no baseline, no trace, nothing but a feeling in the room.
+
+The fix is boring. Time one real user action from click to paint. Write the number down. Do it again after every change. That single number settles more arguments than any architecture debate I've sat through.
+
+What surprised me was how often the number came back fine. The complaint was real, the slowness wasn't. Users were describing confusion as slowness, and no profiler was ever going to find that.
+
+So the first question is always the same. Where's the number. Not what do you think is slow. I ask it in the meeting now, not a week later. That question has ended four arguments this quarter. I ask it before anyone opens a profiler.
+#AI #BuildInPublic #VibeCoding #tech #Performance #Software #Engineering #Coding #Observability #Developer #WebPerf #Programming #SoftwareEngineering #Analytics #Startup #SoloBuilder #Learning #Metrics
+---
+[2026-10-16 20:30:39 UTC]
+record_id=f01f6e3631ca4865a591eb9d0ab9d8b184cee1b0641184152c2a0b23064033f5
+scheduled_for=2026-10-18 09:30
+I wrote a page of notes for a system I'm going to forget, and the test of whether it works is whether I can restore the thing from a cold start without reading any code.
+
+That's a higher bar than it sounds. It means the page has to name the services, the order they start in, the two environment variables that matter and where the data lives. Not how it works. How to bring it back.
+
+I've twice now found myself on a machine at midnight with a broken service and no memory of which flag I set six months ago. Both times I lost an hour to something a paragraph would have covered.
+
+What makes this different from the documentation I used to write is the audience. It's not for a colleague. It's for me, tired, and it has to survive me being tired.
+
+Write the restart page. Not the architecture page. The one you need when something is down.
+#AI #BuildInPublic #VibeCoding #tech #Documentation #DevOps #Coding #Software #Engineering #Developer #Reliability #OpenSource #KnowledgeSharing #DeepTech #Learning #SideProject #SoloBuilder #Operations
+---
+[2026-10-16 20:30:39 UTC]
+record_id=a39da4898887dda81f25af196c658128fd50048390a3be722c76219520c2dc51
+scheduled_for=2026-10-18 09:45
+The hardest part of shipping AI features isn't the model. It's the failure mode. A model that's wrong eight percent of the time isn't a model with an eight percent bug. It's a product where the user has to check every answer, and that changes the whole interface.
+
+I built a summarizer that was accurate most of the time. Fast, cheap, good on clean input. Then a customer pasted a scanned invoice with a coffee stain on it. The output was fluent nonsense. Nothing crashed. Nothing warned. It just sounded confident and was wrong.
+
+That's the trap. Silent wrongness is worse than an error message, because an error gets handled and silent wrongness gets trusted. I've watched a team ship both and the quiet one caused every support call.
+
+Now the output carries its evidence. The answer comes with the sentence it came from, so a reader can check in two seconds. Accuracy barely moved. Trust moved a lot, and that's the thing I needed. I test for that before I ship anything.
+#AI #BuildInPublic #VibeCoding #tech #MachineLearning #LLM #ArtificialIntelligence #Engineering #Software #Coding #Product #Developer #ProductDevelopment #UX #Startup #SoloBuilder #Learning
+---
+[2026-10-16 20:30:39 UTC]
+record_id=394d7a4a33023080dfb4592ae8079150c020754274ef30af980bdd337b0d4234
+scheduled_for=2026-10-18 10:00
+Nobody wants a dashboard. They want an answer. I've built four dashboards that got opened twice and closed forever, and each one had better charts than the last.
+
+The pattern repeats. I gather everything measurable because measuring feels like progress. Ten charts, six filters, a date range picker. The person who needed it opens the page, sees data, and has to do the analysis themselves. That's the job I was supposed to do for them.
+
+What worked was one number and one sentence. Weekly active builders, down four percent, the drop is all in the mobile signup step. No chart. A sentence I wrote after looking at the data myself.
+
+So I treat a dashboard as a delivery mechanism for a sentence now. If I can't write the sentence, I don't build the page. Half the ideas I've had this year died at that test, and I'm fine with it.
+#AI #BuildInPublic #VibeCoding #tech #Analytics #Product #Software #Data #Engineering #Metrics #ProductDevelopment #Startup #SoloBuilder #IndieHacker #Coding #Developer #Learning
+---
+[2026-10-16 20:38:18 UTC]
+record_id=7da152fd0efa3077d2081a7afb723588c3be17352629984fde28551a49251870
+scheduled_for=2026-10-18 10:45
+A code review that takes forty minutes isn't a thorough review. It's usually a review that started too late. I noticed this on my own pull requests before I noticed it in anyone else's.
+
+A small diff gets read line by line. A large diff gets skimmed, approved, and trusted. That's backwards, and everyone who's shipped for a few years knows it. The large change is exactly the one that needed attention.
+
+The real cost isn't the review though. It's that nobody can tell you what a two thousand line change did three months later. Not the author either, and I've been that author twice.
+
+So I split things now. Same work, landed in pieces, each piece readable in ten minutes. It takes longer to merge and much less time to understand. I haven't regretted a single split yet. Ten minutes is my limit for a real read. Past that I'm scrolling. Ten minutes. That's my cap. A diff I can't finish reading in ten minutes goes back with a request to split it, and I've never once regretted sending it back. I ask for the split every time.
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Coding #Developer #Git #Programming #SoftwareEngineering #Teamwork #Process #Startup #SoloBuilder #Learning #BestPractices
+---
+[2026-10-16 20:38:18 UTC]
+record_id=cf742fae31e85d6407a469732474b75fcb42f45bd45f94854a5f6aea82e45759
+scheduled_for=2026-10-18 11:00
+Estimates aren't for the person asking. They're for you. When a founder asks how long something takes, they want to know if it can land this month. The number is a proxy. I spent years treating the proxy as the real question and getting it wrong.
+
+The honest answer is a range with a wide tail, because the tail is where the surprises live. Integration turns out to need a new webhook. The API paging is broken. Someone's field name has a space in it.
+
+So I answer with three things now. What I know, what I don't know, and what I'll know by Friday. That third one has ended more uncomfortable conversations than any estimate I've ever given.
+
+Nobody's pushed back on it. They wanted to stop guessing, and that's all. I could've saved myself two years of false confidence by saying it sooner. I'd rather hand over a range than a promise.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Software #Engineering #Product #Planning #Coding #Developer #ProductDevelopment #SoloBuilder #IndieHacker #Business #Learning #Communication
+---
+[2026-10-16 20:38:18 UTC]
+record_id=c31f2775f8342f5f4aa616088e5d261b0e771b1adfab82974906b5e1b8dde14c
+scheduled_for=2026-10-18 11:15
+Logs that nobody reads are the same as no logs. I learned this during an incident where everything got recorded and nothing could be found. Four services, one timestamp format, no request id anywhere.
+
+We spent the first twenty minutes of that outage grepping. Not fixing. Grepping, while a customer waited on the other end of a support thread.
+
+The change was small. One identifier that follows a request through every service, logged on every line. It costs almost nothing to add and it turns an outage from an archaeology project into a lookup.
+
+I still think the discipline matters more than the tool. A log line should answer who, what, and which request. If it answers none of those, it's noise you're paying to store. That advice came from a person who'd been on call for a decade, and it's been right every time since. That's the whole fix. One field.
+#AI #BuildInPublic #VibeCoding #tech #Observability #Software #Engineering #Coding #DevOps #Developer #Backend #SoftwareEngineering #SRE #Programming #Startup #Learning #IncidentResponse
+---
+[2026-10-16 20:38:18 UTC]
+record_id=0311261314d52be64357714be0cfa8a6b6b6d919b69c9f3ba7f373d4b2d910c5
+scheduled_for=2026-10-18 11:30
+First customers don't want features. They want to be told what to do. I learned this from a paying user who asked me the same question three times in one thread, because I kept answering the question I wanted to answer.
+
+They wanted the exact steps for their workflow. I wanted to explain the flexibility of the tool. Flexibility is a feature for someone who already understands the problem. For everyone else it's homework.
+
+The fix was a single page. Do this, then this, then this. Boring, specific, written for one account. Support email from that customer dropped to zero and they upgraded a month later.
+
+So when someone asks a question now I ask what they're trying to finish. The answer is never about the product. It's about their deadline, and their deadline is the thing I can help with. I ask that question first now, before I answer anything.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Product #SaaS #CustomerSuccess #Software #SoloBuilder #IndieHacker #Business #ProductDevelopment #Founder #Learning #Growth #Support
+---
+[2026-10-16 20:38:18 UTC]
+record_id=d3ded854ccd1fee12b1e647c6a0647685e48a00b8869ae5f9a42126792843f18
+scheduled_for=2026-10-18 11:45
+Every onboarding flow I've built has been one step too long. I know this from a number I used to ignore. The drop between step two and step three, always the biggest cliff on the chart.
+
+Step one is easy. Someone decided to try. Step two is where they've invested a little. Step three is where you ask for something.
+
+Companies keep adding step three because collecting feels important. Company name, team size, use case, referral source. Four fields, one screen, and a third of signups gone before they've seen the product work.
+
+I moved all of it after the first real value moment. Activation went up twenty two percent. The data quality didn't get worse, it got better, because the people filling it in cared about the answer.
+
+Ask for things once you've earned them. That's the whole lesson and it took me years to believe it. Every single time.
+#AI #BuildInPublic #VibeCoding #tech #UX #Product #Onboarding #SaaS #Software #Startup #Growth #ProductDevelopment #Coding #SoloBuilder #IndieHacker #Conversion #Learning
+---
+[2026-10-16 20:44:48 UTC]
+record_id=6f6aedba77e895ecd04fd2c89d5fef54c3bdd4f760e59b1c32ddcfd2f0ccbe8c
+scheduled_for=2026-10-18 12:00
+Refactoring without tests isn't refactoring. It's rewriting with extra confidence. I've done both and I know how they differ in the weeks after.
+
+With tests, a refactor is a series of small green checkmarks. You move a function, run the suite, move another. Boring and safe.
+
+Without tests, you're reading code and deciding it still looks right. It usually does look right. That's the problem. The bug you introduce is the one that shows up when two edge cases collide, and it shows up in production, three weeks later, in a customer's report.
+
+So I write the test that pins the current behavior first. Even when the current behavior is ugly. Then I change the code underneath it. Behavior stays identical, which is the only definition of refactoring I trust.
+
+It's slower for an afternoon. It's faster for a year, and I've paid that bill both ways. Both ways cost me money. I test the ugly behavior first. I want the test passing before I touch the code.
+#AI #BuildInPublic #VibeCoding #tech #Testing #Refactoring #Software #Engineering #Coding #Developer #TDD #Programming #SoftwareEngineering #Quality #Startup #SoloBuilder #Learning #BestPractices
+---
+[2026-10-16 20:44:48 UTC]
+record_id=300c83df2ff9130692d181b9fe2bd69b3645c7a8c973ed002b04246c92ce7922
+scheduled_for=2026-10-18 12:15
+The most underrated engineering skill is reading code you didn't write. Interviews test whether you can produce, and almost nothing tests whether you can understand. Yet that's where the hours go.
+
+I joined a codebase once with a payment retry loop written by someone who'd left. No comments, no tests, two variables named data. I spent three days before I could change one conditional without fear.
+
+Those three days weren't wasted. They were the job. What helped was writing down what I thought the loop did, then tracing one real transaction through it. Reality corrected me twice. Both times I'd assumed a function did the obvious thing and it did something else entirely.
+
+So I leave a short note in the repo now when I finish understanding something hard. Two paragraphs, plain language. The next person saves three days, and I stop being the bottleneck. Three days today saves thirty later.
+#AI #BuildInPublic #VibeCoding #tech #Software #Engineering #Coding #Developer #Programming #LegacyCode #Documentation #SoftwareEngineering #Learning #Onboarding #CodeReview #Startup #SoloBuilder
+---
+[2026-10-16 20:44:48 UTC]
+record_id=f4c87189f0346edfa94a8193073d34aed124cb6b467bbb9bba60f652568f558a
+scheduled_for=2026-10-18 12:30
+Naming things badly is a decision you make once and pay for every week. I renamed a function last month and twelve call sites got clearer. It took an hour, and I'd put it off for a year because it felt cosmetic.
+
+It wasn't cosmetic. The old name described what the function used to do two designs ago. Every time someone read it they held a slightly wrong model of the system. Twelve people, dozens of reads, one wrong idea repeated.
+
+The cost is invisible because no single moment feels expensive. Churn shows up as things taking longer than they should, and nobody can point at the cause.
+
+Names are cheap to fix. Misreads aren't. So I treat a misleading name as a bug now. I renamed it in an hour. The old name described a version of the function that stopped existing two designs ago, and every reader paid for that gap out of their own time. It goes in the same list, with the same priority, and it gets fixed while the file is open. Clean names and fast code are the same problem wearing different clothes.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Naming #CleanCode #Developer #Programming #Refactoring #SoftwareEngineering #Craft #Startup #SoloBuilder #Learning #BestPractices
+---
+[2026-10-16 20:44:48 UTC]
+record_id=15129ae0de01bbac82a37d22cb774865871e666c9b60e3abcb3393742e78c57e
+scheduled_for=2026-10-18 12:45
+Adding an index fixed a query that had been slow for six months. Six months of a page that took three seconds, and everyone had accepted it. Nobody filed the bug because nobody remembered the page being faster.
+
+That's how performance debt works. It has no owner because it has no incident. The page is slow, people work around it, and the workaround becomes the normal way of using the product.
+
+The fix took eleven minutes. I read the query plan, saw a sequential scan, added one index, and the page went to ninety milliseconds. Eleven minutes. I should have looked a year ago. The page had been loading in three seconds for six months and everyone had built a habit around it without ever filing a ticket.
+
+So I keep a list of every place the product feels heavy. No budget, no ticket, just a list I read once a month. One item turns out to be cheap. That list has done more for retention than any feature I shipped this year.
+#AI #BuildInPublic #VibeCoding #tech #Database #Performance #Software #Engineering #Coding #SQL #Postgres #Developer #Backend #Product #Startup #SoloBuilder #Learning #Metrics
+---
+[2026-10-16 20:44:49 UTC]
+record_id=6e6194e4544c68cfc0c23254076805daf4dbe074e14920da12b56b9af4425283
+scheduled_for=2026-10-18 13:00
+There's a specific kind of tired that comes from holding a problem in your head for too long. It isn't the same as being busy. I hit it around hour six of debugging and I used to push through it, which is how I produced my worst work.
+
+The tell is when you start trying variations instead of forming a hypothesis. Change a line, run it, change it back. That loop feels productive and it's gambling with a keyboard.
+
+What works is leaving. Not a break of ten minutes. Stop for real, go outside, do something else for two hours. Twice this year the answer arrived before I sat back down, and once it arrived while I was washing dishes.
+
+I don't think that's mystical. Your brain keeps working on the problem without you narrating it. The narration is what got stuck. Hard problems need idle time, and that's a scheduling constraint, not a mood.
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Developer #Coding #Software #Engineering #Focus #DeepWork #Learning #Debugging #Programming #Startup #SoloBuilder #Health #Mindset
+---
