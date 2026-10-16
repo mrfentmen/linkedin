@@ -552,3 +552,19 @@ I got a cleanup out of it that took twenty minutes. The half hour I spent watchi
 Get a second reader in. Human or otherwise. Mine found a dead config that had been sitting in the loader for seven months.
 #AI #BuildInPublic #VibeCoding #tech #AIagents #Automation #Coding #Software #Engineering #Developer #OpenSource #CodeReview #DeepTech #LLM #Refactoring #Learning #DevTools #Productivity
 ---
+[2026-10-16 19:36:24 UTC]
+record_id=84857d27721bf2cff78d3e72312ae84298e7ca02698466106ee118d07767b2ad
+status=ambiguous
+scheduled_for=2026-10-17 10:45
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+Cache invalidation has cost me more time this year than any other class of bug and I've stopped being smug about it.
+
+The failures all look the same from the outside. A page shows yesterday's number. Someone tells me the data is wrong. I check the database, the data is right, and I spend twenty minutes discovering that a value from this morning is sitting in a layer I forgot existed.
+
+What fixed it wasn't a clever scheme. I made the cached things short lived. Fifteen seconds instead of an hour. Nobody has noticed the extra load and the wrong number complaints stopped.
+
+The next thing was naming. Every cached key now says what it holds and when it expires. When I read a stack trace at two in the morning I can tell whether I'm looking at a cache read or a database read.
+
+Fast is nice. Correct and fast is the job.
+#AI #BuildInPublic #VibeCoding #tech #Caching #Performance #Coding #Software #Engineering #Developer #Backend #Databases #OpenSource #DeepTech #Reliability #Debugging #Python #DistributedSystems
+---

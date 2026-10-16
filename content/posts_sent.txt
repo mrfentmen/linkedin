@@ -31431,3 +31431,143 @@ I moved the entry point to the moment people need it and got eleven users in a w
 Now I ask one question before I build something. Where will this live when it's done. If I can't point at the exact screen, I don't build it yet. That one question has saved me more time than any planning document I've written.
 #AI #BuildInPublic #VibeCoding #tech #Product #Analytics #Coding #Software #Startup #SoloBuilder #IndieHacker #UX #ProductDevelopment #Engineering #Developer #Learning #SideProject #Metrics
 ---
+[2026-10-16 19:31:39 UTC]
+record_id=cc002b49384f2188d30c1eb4612bd5f7b7a9a431dddb5a59598b55103536e658
+scheduled_for=2026-10-16 16:15
+I have a test that has passed on every run for two years and it has never once been able to fail. I caught it while reading it for another reason.
+
+It asserts that a list is not empty after a call that always returns a fixed list of four items. The four items come from a constant defined two files up. Nothing in the test path can change them.
+
+So it's decoration. It reports green, it makes the suite look better, and it would keep passing if the function it tests were deleted and replaced with a stub.
+
+I deleted it and wrote two tests that can fail. One feeds a bad input and expects a typed error. The other checks that the output ordering is stable. Both of those would have caught a real bug I shipped in August.
+
+The lesson wasn't about that test. It was that I'd never asked any of my tests a simple question. What would have to break for this to go red. I found four more like it that afternoon. Four. All green, all doing nothing.
+#AI #BuildInPublic #VibeCoding #tech #Testing #Coding #Software #Engineering #Developer #Quality #TDD #OpenSource #Python #CodeQuality #DeepTech #Learning #SideProject #SoftwareEngineering
+---
+[2026-10-16 19:31:39 UTC]
+record_id=e6302f16ef2930a827052e7bf08c1f5259d6127d26a28dca6d543dd05fff0a0b
+scheduled_for=2026-10-17 09:30
+A job of mine ran an hour late for six weeks and I blamed the scheduler. It was me. I wrote the time in the wrong time zone.
+
+I had the hour hardcoded as nine. My server keeps its own clock, and that clock isn't mine. Its nine is five in the morning where I live, so the report was always sitting there by the time I looked.
+
+What broke was the email. A reader in a different country started getting it overnight instead of at breakfast, and asked me why. That question is the only reason I found it.
+
+The fix took four lines. Store the zone with the time. Set the schedule in one place. Never write a bare hour again, because a bare hour is a promise you can't keep.
+
+Six weeks of a job running at the wrong time and the system never complained. Cron does what you tell it. It just doesn't know what you meant. I keep the zone in the config now, written once.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Developer #Automation #Scheduling #DevOps #Python #OpenSource #Reliability #DeepTech #Learning #SideProject #Timezones
+---
+[2026-10-16 19:31:39 UTC]
+record_id=18710702f1a3b85b01712fb94d013773977450560968cff94b26bebedbccd946
+scheduled_for=2026-10-17 09:45
+I ran everything in a container for a month and the thing I gained wasn't reproducibility. It was the freedom to break my machine.
+
+Before that, a bad install meant an hour of undoing it. So I stopped trying risky things. I'd read about a tool, decide it wasn't worth the cleanup, and move on. My environment was stable and my curiosity was quiet.
+
+Now I try more things. Pull an image, run it, hate it, delete it. Thirty seconds. I've gone through about forty tools this month and kept three, and the three are better than anything I'd have picked from a blog post.
+
+What I lost is speed on the small stuff. Starting a container to run one Python file is silly. For anything with a database or a version I might fight, it's worth it.
+
+Try things because undoing them is cheap. That's the whole argument. I spent a year being careful about the wrong risk.
+#AI #BuildInPublic #VibeCoding #tech #Docker #DevOps #Coding #Software #Engineering #Developer #Containers #OpenSource #Python #DeepTech #Learning #SideProject #CLI #Productivity
+---
+[2026-10-16 19:36:24 UTC]
+record_id=88770a21578c7793ae58fadeaf2bd49a50f22a140ca7a9d31a33da74d514e97b
+scheduled_for=2026-10-17 10:15
+A package I depend on hasn't been touched in four years and it sits inside the request path of everything I run. I found that out on a Friday.
+
+Nobody wrote it badly. It does one job, it does it well, and the author moved on. The problem is that the job it does is now something the language ships for free, and I'm carrying a library to get behaviour I already have.
+
+I spent an afternoon reading its source. Four hundred lines. Two of them matter. I could fork those two into my own repo and drop the dependency for good.
+
+What stopped me for two weeks was nerve. Dropping a dependency feels like pulling out a load bearing wall, and the tests I had wouldn't have told me if I was wrong.
+
+I did it in the end. I wrote nine tests first. The replacement is twenty lines of my own code. Try it on one small package and see what you were paying for.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Developer #OpenSource #Dependencies #Refactoring #Python #DeepTech #Learning #SideProject #DevTools #SoftwareEngineering #Maintenance
+---
+[2026-10-16 19:36:24 UTC]
+record_id=edb4be4e9b539bfde9b15a741e2858e7e2ac41d1b29014722d64cd5dc4b7f132
+scheduled_for=2026-10-17 10:30
+I spent a weekend building without any AI tool at all and I learned more about my own habits than about the code.
+
+The first hour was slow in a way that felt personal. I'd forgotten how a decorator argument order works because a model has been writing those for me. I looked it up. That took four minutes.
+
+By the second afternoon I noticed the real difference. Without a model to ask, I stopped asking anything. No second opinion, no alternate approach, no sanity check. I just made calls and moved on, and about one in five was worse than what a second pass would have produced.
+
+What I'd keep from the experiment is the reading. I read my own code much more carefully when nothing else was going to read it.
+
+I'm back to using the tools. I'm just scheduling one weekend a quarter with none of them. Two days. No autocomplete, no agent, no second opinion.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Developer #Learning #Productivity #DeepWork #OpenSource #Python #DeepTech #SideProject #SoloBuilder #Focus #Reflection
+---
+[2026-10-16 19:44:11 UTC]
+record_id=72ba3b6ebe10009c3fead7d08b038341b37e7678e3bc9b8f35705eec89365b0a
+scheduled_for=2026-10-17 11:30
+I integrated a third party API in an afternoon and spent the next three weeks paying for how I did it.
+
+I called it inline. Every request to my service that needed a quote made a live call to theirs. It worked, it was simple, and it was the wrong shape from the first line.
+
+Their rate limit hit on the eighth day. My retry logic made it worse, because it retried the failures that were caused by retrying. Then their outage became my outage, and I had a page full of errors I couldn't fix.
+
+What I should have done takes an extra hour. Store the last good answer, serve from that when the call fails, and put the call behind a queue with a budget.
+
+The lesson generalises. Anything you don't control will fail, and the question is whether it takes you with it. Design the failure on day one, not in week three. I write the timeout first now. Then the fallback. Then the happy path.
+#AI #BuildInPublic #VibeCoding #tech #API #Coding #Software #Engineering #Developer #Backend #Reliability #Architecture #OpenSource #DeepTech #RateLimiting #Python #DistributedSystems #Learning
+---
+[2026-10-16 19:44:11 UTC]
+record_id=da520244f7eca5a17ce516ca35aa0ea7aeb6ff115845ab492fd349619b49d1f6
+scheduled_for=2026-10-17 11:45
+I fixed a bug this week with a print statement after an hour of reading code, and I want to defend the print statement.
+
+I'd been staring at a function and building a theory about which branch ran. The theory was wrong, and every minute I spent on it was spent making it more detailed rather than checking it.
+
+Then I added one line that printed the value at the top and the branch it took. The output was on screen in nine seconds and the bug was obvious. The branch I was sure about never ran.
+
+What I'd done wrong was reasoning instead of measuring. A theory about runtime behaviour is cheap to hold and expensive to be wrong about, and the check is one line.
+
+I do this earlier now. Guess, then print, then read. If the print disagrees with the guess, the print is right. One line. Nine seconds. Tools don't have to be clever to be useful.
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Coding #Software #Engineering #Developer #Python #OpenSource #DeepTech #Learning #Programming #Observability #Productivity #SideProject #Logging
+---
+[2026-10-16 19:44:11 UTC]
+record_id=29604b033982daf963aaf84004d58da2687aecf1759c79ae56ae36f75de45b9f
+scheduled_for=2026-10-17 12:00
+I started counting the tokens I spend in a week and the number explained a problem I'd been calling a mystery.
+
+Roughly two thirds of my spend goes into context I re-send. The same file, every turn, because the agent has no memory of the last edit. I knew that in the abstract. Seeing it as a figure made it a decision.
+
+I cut it two ways. I keep the working files small, and I stop pasting entire logs when four lines will do. That alone took about a third off.
+
+The interesting part is what didn't change. My output stayed the same. I'd assumed the long context was buying me quality and it wasn't buying much at all.
+
+Measure the thing you think you can't control. Mine was a weekly number I'd never looked at. It took four minutes to build. Looking at it once changed how I work every day since.
+#AI #BuildInPublic #VibeCoding #tech #LLM #MachineLearning #Coding #Software #Developer #AIagents #Productivity #Costs #OpenSource #DeepTech #Python #Automation #DataScience #Engineering
+---
+[2026-10-16 19:44:11 UTC]
+record_id=097b6ec61a96ef576b42013f2a6d21853c5713a5dce8bb7954716bdbdf3e330a
+scheduled_for=2026-10-17 12:15
+A 404 page taught me more about a product than the landing page did, and it wasn't mine. I hit a dead link and the page read like it was written by someone who cared.
+
+It said the page was gone, listed three places I might have meant, and offered one plain sentence with a real email address. No mascot. No joke about the internet being hard. It took ten seconds to be useful.
+
+I went back to my own 404 page and it said the page could not be found. That's it. The most common error state in my product and I'd given it four words.
+
+I rewrote it in twenty minutes. Links to the three most visited pages, a search box, and a line that tells you what to do next. My bounce rate on that page dropped by about a third over the following month.
+
+Error states are where people meet your product at its worst. They deserve the same attention as the happy path.
+#AI #BuildInPublic #VibeCoding #tech #Product #UX #Coding #Software #Startup #SoloBuilder #IndieHacker #WebDesign #Developer #ProductDevelopment #Learning #SideProject #Engineering #Design
+---
+[2026-10-16 19:44:11 UTC]
+record_id=f5538096c8520e29b89cc0bc67a5d73afe96ed510ca8facdc261db0d8433fcd6
+scheduled_for=2026-10-17 12:30
+A support email this week caused me to build a feature I'd argued against for a year, and the customer was right.
+
+They described a flow that takes them nine clicks and asked whether it could be two. I'd always resisted because the version they were describing sounded like a power tool for a rare case.
+
+So I watched how they did it. They do it eleven times a day. From my side it looked rare because I was counting accounts with that need, and there are four of them. From their side it was most of their morning.
+
+I built the shortcut in about two hours. All four accounts use it. One of them sent a message saying it was the change they'd been waiting for.
+
+Counting how many people need something is one question. Counting how often the people who need it do it is a different one. I'd been answering the easy one. Four accounts. Eleven times a day. That changes the arithmetic.
+#AI #BuildInPublic #VibeCoding #tech #Product #UX #Startup #SoloBuilder #IndieHacker #Coding #Software #CustomerDiscovery #ProductDevelopment #Learning #Engineering #Developer #Business #SideProject
+---
