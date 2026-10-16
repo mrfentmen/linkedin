@@ -13,13 +13,25 @@ That design matters:
 
 - A delayed, skipped or failed run cannot cause a missed post, because the post
   is already sitting in LinkedIn's scheduler.
-- Slots are always spaced 15 minutes apart inside an 08:00 to 19:00 window, so a
-  retry can never produce a burst.
+- Slots are always spaced 15 minutes apart inside a 09:00 to 16:45 window (32
+  slots a day, 4 an hour for 8 hours), so a retry can never produce a burst.
 - Runs are capped (`--max-batches`), so one run stays short and the next one
   simply continues from where it stopped.
 
-The workflow runs **every 3 hours** and tops up the next 14 days. When the queue
-runs dry it says so and stops.
+The workflow runs **every 3 hours** and tops up the next 14 days.
+
+## The queue running dry is the failure that matters
+
+A dry queue is how this account went quiet for several days: the queue hit zero,
+every run then failed on the same line, and the only evidence was a log nobody
+read.
+
+So the driver now warns against a wall clock instead of against every slot in
+the range. It reports the shortfall when the queue holds less than
+`--min-queue-days` (default 2) of posts, which is early enough to add more, and
+the warning is emitted as an Actions annotation so it shows on the run itself.
+A queue of zero still fails the run, because nothing can be scheduled and that
+must not pass silently.
 
 ## Layout
 

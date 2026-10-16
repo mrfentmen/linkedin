@@ -56,6 +56,49 @@ def generate_slots(start_date: str, end_date: str, start_time: str, end_time: st
     return slots
 
 
+def slots_per_day(start_time: str, end_time: str, interval_min: int) -> int:
+    """How many slots one day holds, counting both ends of the window.
+
+    The daily content budget is derived from the window rather than passed in by
+    hand, so the warning below cannot drift away from the actual cadence when
+    the window changes.
+    """
+    start_h, start_m = (int(part) for part in start_time.split(":"))
+    end_h, end_m = (int(part) for part in end_time.split(":"))
+    span = (end_h * 60 + end_m) - (start_h * 60 + start_m)
+    if span < 0 or interval_min <= 0:
+        return 0
+    return span // interval_min + 1
+
+
+def queue_shortfall_warning(
+    queue_count: int,
+    per_day: int,
+    min_days: int,
+) -> str | None:
+    """Warn when the queue cannot cover the next `min_days` of posts.
+
+    A dry queue is what made this account go silent: the queue reached zero,
+    every run then failed on the same line, and the only evidence was a log
+    nobody read.  So the shortfall is reported against a wall of days of
+    content, not against every slot in the range, which stays red for months
+    even when the queue is healthy.
+
+    Returns None when there is enough content, otherwise the warning text.
+    """
+    if per_day <= 0 or min_days <= 0:
+        return None
+    needed = per_day * min_days
+    if queue_count >= needed:
+        return None
+    days_left = queue_count / per_day
+    return (
+        f"Queue is running dry: {queue_count} posts left, and {needed} are needed "
+        f"to cover the next {min_days} days at {per_day} posts/day "
+        f"({days_left:.1f} days of content). Add posts to content/posts_queue.txt."
+    )
+
+
 def get_already_scheduled() -> set[str]:
     """Read posts_sent.txt and return set of already-scheduled times."""
     sent_path = PKG_ROOT / "content" / "posts_sent.txt"
@@ -178,6 +221,12 @@ def main():
         default=0,
         help="Stop after N batches (0 = no limit).  Used by CI to keep a single run bounded.",
     )
+    p.add_argument(
+        "--min-queue-days",
+        type=int,
+        default=2,
+        help="Warn when the queue holds less than N days of posts (0 disables).",
+    )
     p.add_argument("--headless", action="store_true", default=True)
     p.add_argument("--show-plan", action="store_true", help="Show plan and exit")
     args = p.parse_args()
@@ -224,6 +273,15 @@ def main():
 
     q_count = get_queue_count()
     print(f"Queue count: {q_count}")
+
+    # Loud when the content is about to run out, and loud in the Actions UI.
+    # This is the check that was missing when the account went quiet for days.
+    per_day = slots_per_day(args.start_time, args.end_time, args.interval_minutes)
+    shortfall = queue_shortfall_warning(q_count, per_day, args.min_queue_days)
+    if shortfall:
+        print(f"::warning::{shortfall}")
+        print(f"⚠️  {shortfall}")
+
     if q_count < len(remaining):
         print(f"⚠️  Only {q_count} posts in queue but {len(remaining)} slots remaining!")
         if q_count == 0:

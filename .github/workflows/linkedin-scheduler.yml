@@ -114,8 +114,8 @@ jobs:
           python scripts/batch_schedule.py \
             --start-date "$(date -u +%F)" \
             --end-date "$(date -u -d "+${{ inputs.days_ahead || '14' }} days" +%F)" \
-            --start-time 08:00 \
-            --end-time 19:00 \
+            --start-time 09:00 \
+            --end-time 16:45 \
             --interval-minutes 15 \
             --batch-size 5 \
             --show-plan
@@ -127,8 +127,8 @@ jobs:
           python scripts/batch_schedule.py \
             --start-date "$(date -u +%F)" \
             --end-date "$(date -u -d "+${{ inputs.days_ahead || '14' }} days" +%F)" \
-            --start-time 08:00 \
-            --end-time 19:00 \
+            --start-time 09:00 \
+            --end-time 16:45 \
             --interval-minutes 15 \
             --batch-size 5 \
             --max-batches "${{ inputs.max_batches || '24' }}" \
@@ -193,6 +193,7 @@ jobs:
             echo "| item | value |"
             echo "|---|---|"
             echo "| queue remaining | $(grep -c '^---$' content/posts_queue.txt 2>/dev/null || echo 0) |"
+            echo "| cadence | 09:00-16:45 local, 32 posts/day |"
             echo "| slots recorded | $(grep -c 'scheduled_for=' content/posts_sent.txt 2>/dev/null || echo 0) |"
             echo "| ambiguous | $(grep -c 'scheduled_for=' content/posts_ambiguous.txt 2>/dev/null || echo 0) |"
           } >> "$GITHUB_STEP_SUMMARY"

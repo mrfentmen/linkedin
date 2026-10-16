@@ -25,7 +25,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import batch_schedule as bs  # noqa: E402
-from batch_schedule import compute_remaining  # noqa: E402
+from batch_schedule import (  # noqa: E402
+    compute_remaining,
+    queue_shortfall_warning,
+    slots_per_day,
+)
 
 
 ALL_SLOTS = [
@@ -68,6 +72,63 @@ def test_plan_built_before_reconcile_is_stale():
     assert RECLAIMED in before_reconcile, "precondition for the bug"
     assert RECLAIMED not in after_reconcile
     assert len(before_reconcile) == len(after_reconcile) + 1
+
+
+def test_window_gives_the_promised_32_posts_a_day():
+    """09:00 to 16:45 every 15 minutes is 4 posts an hour for 8 hours."""
+    assert slots_per_day("09:00", "16:45", 15) == 32
+
+
+def test_queue_is_quiet_when_it_covers_the_coming_days():
+    assert queue_shortfall_warning(32 * 5, per_day=32, min_days=2) is None
+    assert queue_shortfall_warning(64, per_day=32, min_days=2) is None
+
+
+def test_dry_queue_warns_before_it_silences_the_account():
+    """The failure that went unnoticed: an empty queue, failing quietly.
+
+    Zero posts cannot cover any days, so it must warn.  A queue with only a few
+    hours of content must warn too, while there is still time to add more.
+    """
+    empty = queue_shortfall_warning(0, per_day=32, min_days=2)
+    assert empty is not None
+    assert "0 posts left" in empty
+
+    thin = queue_shortfall_warning(10, per_day=32, min_days=2)
+    assert thin is not None
+    assert "10 posts left" in thin
+
+
+def test_shortfall_warning_can_be_switched_off():
+    assert queue_shortfall_warning(0, per_day=32, min_days=0) is None
+
+
+def test_driver_warns_on_a_thin_queue(monkeypatch, capsys):
+    """The warning has to reach the run output, not just the helper."""
+    monkeypatch.setattr(bs, "run_reconcile", lambda: True)
+    monkeypatch.setattr(bs, "get_already_scheduled", lambda: set())
+    monkeypatch.setattr(bs, "get_ambiguous_times", lambda: set())
+    monkeypatch.setattr(bs, "get_queue_count", lambda: 5)
+    monkeypatch.setattr(bs, "schedule_batch", lambda slots, headless=True: True)
+    monkeypatch.setattr(bs.time, "sleep", lambda *_: None)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "batch_schedule",
+            "--start-date", "2026-09-27",
+            "--end-date", "2026-09-27",
+            "--start-time", "09:00",
+            "--end-time", "16:45",
+            "--interval-minutes", "15",
+            "--batch-size", "5",
+        ],
+    )
+
+    bs.main()
+
+    out = capsys.readouterr().out
+    assert "::warning::Queue is running dry" in out
 
 
 def test_driver_stops_when_a_batch_claims_nothing(monkeypatch, capsys):
