@@ -31571,3 +31571,255 @@ I built the shortcut in about two hours. All four accounts use it. One of them s
 Counting how many people need something is one question. Counting how often the people who need it do it is a different one. I'd been answering the easy one. Four accounts. Eleven times a day. That changes the arithmetic.
 #AI #BuildInPublic #VibeCoding #tech #Product #UX #Startup #SoloBuilder #IndieHacker #Coding #Software #CustomerDiscovery #ProductDevelopment #Learning #Engineering #Developer #Business #SideProject
 ---
+[2026-10-16 19:53:39 UTC]
+record_id=676a346e561bf312d51b21ecaa0f4f48bc3c0a082939feb9b497b5acb8e193e9
+scheduled_for=2026-10-17 10:00
+A database migration of mine locked a table for eleven minutes during peak traffic and I had the plan that caused it on a sticky note.
+
+The change added one column. On my laptop it took a fraction of a second. On production, with a few million rows and a running workload, the same statement held a lock the whole time.
+
+What saved me was a colleague asking one question before I ran it. Have you tried it on a copy with production sizes. I hadn't. That question was worth more than the review of the SQL, which looked fine.
+
+I ran it again on a copy, saw the eleven minutes, and split it into three steps that each hold a lock for under a second. Same end state, no outage.
+
+Test the migration on data that looks like the real thing. A fast laptop isn't evidence. A green test suite isn't evidence either. I copy production into a scratch database now, every time.
+#AI #BuildInPublic #VibeCoding #tech #Databases #Migrations #Coding #Software #Engineering #Developer #Postgres #Backend #SQL #DevOps #OpenSource #DeepTech #Reliability #DataScience
+---
+[2026-10-16 19:53:39 UTC]
+record_id=1877c52bc2fcde0dfde9ba791366451cd6d3b534633c66b48726b6bf9620ed16
+scheduled_for=2026-10-17 11:00
+I deleted a tool from my setup this week and my work got faster, which is not the direction I expected.
+
+I'd been using a task tracker with a board, tags, estimates and a weekly review. I built the workflow and I maintained it for about a year. It took maybe twenty minutes a day.
+
+What I noticed when I stopped was that the board was describing work I already knew about. The valuable part was one list of five things, and I can keep that in a text file in the repo.
+
+Now I have one file. Anything not on it isn't happening. It takes me four seconds to update and it never needs me to decide which column something belongs in.
+
+I'm not against tooling. I'm against the maintenance cost of tooling that describes work instead of doing it. Some of it is just ceremony with a login.
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Tools #Coding #Software #Developer #Workflow #Focus #DeepWork #OpenSource #Learning #SideProject #SoloBuilder #Minimalism #Engineering
+---
+[2026-10-16 19:53:39 UTC]
+record_id=86f9b8961da2c23ba14ca918aa61fd859190fbd1312210d52b0037c7c0dc1557
+scheduled_for=2026-10-17 11:15
+Remote work didn't remove the meetings. It gave them somewhere new to hide, and the calendar is now the most expensive artefact in the company.
+
+A meeting costs four people forty minutes. That's over two and a half hours of work, and it's spent whether or not a decision comes out. In an office, the same conversation often happened by accident and produced something.
+
+I don't miss the office. I miss the accidental part. Two people at a whiteboard for six minutes solved things that now take a scheduled slot four days out.
+
+What works for me is a hard rule about outcomes. A meeting needs a decision it's producing, written down before the invite. If nobody can write the sentence, the meeting isn't ready.
+
+I've cancelled six of those this month. Nobody has complained. That tells me what the six were worth, and it isn't much at all. Nobody has asked for one of them back.
+#Culture #FutureOfWork #Remote #Productivity #Teams #Management #Workplace #Leadership #Meetings #Communication #Collaboration #Tech #Business #Strategy #Software
+---
+[2026-10-16 19:53:40 UTC]
+record_id=dd13d9ba0b2cbbf6c78a18b3d81bfecbdbf367238a48d34bbaba4e1504b526f6
+scheduled_for=2026-10-17 12:45
+I read a book about engineering failures and it changed what I look for when I review my own work.
+
+The pattern in most of the case studies isn't a bad engineer. It's a normal person in a place where one small omission was invisible until something else went wrong. Nobody there was careless in an interesting way.
+
+That shifted my attention from the code to the joints. Where does this assume something else will be true. What happens if that assumption is false at three in the morning on a Sunday.
+
+So I look for the boundaries. The default case, the empty case, the case where the network is up but slow. Those are the places where the small omission lives.
+
+I don't review for style much any more. I ask what would have to be true for this to be safe, then check whether that thing is written down somewhere. Empty input. Slow network. Two users at once. Those three catch most of it.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #CodeReview #Coding #Software #Developer #Reliability #SafetyEngineering #OpenSource #DeepTech #Learning #Books #SoftwareEngineering #SystemsThinking #Quality
+---
+[2026-10-16 20:00:45 UTC]
+record_id=76db77d0c69b2db12891262649d4c802ab7fc77c40b4f1309d32f900c042498b
+scheduled_for=2026-10-17 13:00
+I write commit messages for myself six months from now, and that framing fixed a habit I'd had for years.
+
+My old messages were useless. Fixed bug. Update config. They record that something happened and nothing about why, so the log reads like a list of events with the reasons deleted.
+
+Now the first line says what changed and the body says what I was thinking. Where the bug came from. What I tried that didn't work. Which alternative I rejected and why. It takes ninety seconds.
+
+Last month I needed to know why a retry limit is seven. The answer was in a commit from March, in two sentences, and it saved me an afternoon of guessing at my own intent.
+
+I've noticed one other effect. It slows me down at the right moment. If I can't explain the change in three lines, I haven't finished thinking about it.
+#AI #BuildInPublic #VibeCoding #tech #Git #Coding #Software #Engineering #Developer #Documentation #OpenSource #Productivity #DeepTech #Learning #SoftwareEngineering #Workflow #Teams #KnowledgeSharing
+---
+[2026-10-16 20:00:46 UTC]
+record_id=f97aeb734d134576ae851876bbb801bef2a978a8550d1eab3656ef21fda6eacf
+scheduled_for=2026-10-17 13:15
+I used my inbox as a to-do list for years and it worked right up until it swallowed a decision I needed to make.
+
+The problem is that an email is a shape for someone else's request. It carries their urgency, their deadline and their framing, and none of that is the same as whether the thing matters.
+
+So I read email twice a day and move anything real into one file, in my own words, ordered by what I think matters. Anything that doesn't earn a line doesn't exist. That sounds harsh and it's been correct about nineteen times out of twenty.
+
+The part that helped most was rewriting. Converting a request into my own sentence forces me to decide whether it's a task, a decision, or something I'm going to decline.
+
+My inbox went from a hundred and forty open items to zero. Nothing about the work changed. I read it twice a day. Twice. That's the whole system.
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Focus #Email #Workflow #DeepWork #Software #Developer #Management #Habits #Learning #Tools #Business #Strategy #Workplace
+---
+[2026-10-16 20:00:46 UTC]
+record_id=c2a8972d0e50a8f5d183a5ed6ba9dd32054f1c16b4b26d45de463cd0b2912d60
+scheduled_for=2026-10-17 13:30
+A visual bug sat in my product for two months and nobody reported it because every person who saw it assumed they'd broken it themselves.
+
+The button was misaligned on one screen size. Not hidden, not broken. Just off by about eight pixels at one width, and it looked like something you'd done with your zoom level.
+
+I found it when I resized a window while showing the product to someone. I fixed it in a minute. What interested me is that about forty people had seen it and not one typed a message.
+
+The reason is that a small cosmetic flaw looks like your own mistake. A broken flow looks like theirs. People report the second kind and absorb the first kind.
+
+Since then I take my own screenshots at four widths before shipping. Four widths. Two minutes. The bugs nobody reports are the ones that live longest. It's the cheapest test I run.
+#AI #BuildInPublic #VibeCoding #tech #Product #UX #Coding #Software #Design #Startup #Frontend #WebDesign #Developer #Quality #SideProject #SoloBuilder #ProductDevelopment #Testing
+---
+[2026-10-16 20:00:46 UTC]
+record_id=d0bd7cfa69486eb4367ef53e6a822de2a28f01727b106f5abfff2a1b7239a32d
+scheduled_for=2026-10-17 13:45
+A heat pump question from a friend sent me into the grid data for a weekend and the answer wasn't about the heat pump.
+
+People worry that electrifying heating overloads the network. On the annual numbers it doesn't. Extra winter demand is smaller than the summer peak the wires were built for. I found that part reassuring and it isn't the hard part.
+
+Timing is the hard part. Every heat pump pulls hard in the same cold hours, and local distribution equipment is sized for a street, not a country. Averaged over a year it's fine. Between five and eight in the evening it isn't.
+
+So the useful fixes are dull. Better insulation. A thermostat that shifts load by an hour. A meter that pays you to charge the car later.
+
+I spent about two days reading transformer and feeder reports to get this far. I still think the average number and the street reality disagreeing is the interesting part, and the street is where people live.
+#Energy #Climate #Renewable #Grid #Infrastructure #Sustainability #Research #Science #Data #DataScience #Markets #Economy #Technology #STEM #Analysis
+---
+[2026-10-16 20:07:56 UTC]
+record_id=c8dde6f1985761f44471c02df5955cf0fdbf625cc19c1d19c8921c3d2deb2cf7
+scheduled_for=2026-10-17 14:15
+I kept a grocery receipt for a month and the total told me less than the line items did, which is the opposite of how inflation gets discussed.
+
+The headline number moved a little. My actual basket moved a lot, because the things I buy every week are not the things in the index. Coffee and eggs went up by much more than the average, and electronics in my basket held flat or fell.
+
+That gap is the whole reason the average feels wrong to people. An index is a weighted basket that changes slowly. A household is a weighted basket that changes when you have a child or stop eating bread.
+
+I'm not saying the index is wrong. I'm saying it's an average of strangers, and nobody lives in an average.
+
+Read the line items. They describe your life in a way no index can. Coffee and eggs moved. A laptop I bought in March didn't.
+#Markets #Economy #Inflation #Data #DataScience #Analysis #Research #Finance #Consumer #Trends #Business #Statistics #Science #STEM #Investing
+---
+[2026-10-16 20:07:56 UTC]
+record_id=75ae0ccefc738bb97e7f8100e1c4a36f3ef7e7148677f5af090aa931e11a6e5c
+scheduled_for=2026-10-17 14:30
+The fastest I've ever learned a tool was the week I had to use it to ship something for someone else, and it wasn't close.
+
+I'd read about it for a month. Watched two videos. Kept it in a browser tab as a maybe. Then a friend asked me to build her something and the tool was the shortest path, so I started.
+
+Four hours in I knew more than the month of reading gave me, because every question I had was attached to a thing that had to work. There was no room for a tidy learning sequence.
+
+This is why I've stopped recommending courses to people who ask where to start. The order is wrong. You need the problem first, then the tool, then the reading, and most people do it backwards and quit at step one.
+
+I give myself a small real job with a deadline and a person waiting. That's the course. I've stopped reading about tools before I have a reason to use them.
+#Learning #Education #Coding #Software #SoftwareEngineering #Developer #Tech #Career #Skills #Beginner #ProjectBased #Productivity #OpenSource #Python #Growth #Advice
+---
+[2026-10-16 20:07:56 UTC]
+record_id=02ffeb5aad89fb64121a9f4714f7a9ac4fe3f2156a4d78c5f1d8404262c4d23d
+scheduled_for=2026-10-17 14:45
+I turned the music off in a game I've played for two hundred hours and half the atmosphere went with it, which I hadn't expected from a game I mostly play while listening to podcasts.
+
+What's left without the score is careful work. The wind in a valley sounds different from the wind on a ridge. Footsteps change on gravel. A door opening half a mile away is audible and tells you something.
+
+The score had been doing the emotional work and hiding the sound design that was already there. It wasn't a crutch. It was a layer so good I'd stopped noticing it was separate.
+
+That's a strange thing to get from a video game. The best craft is often the part you can remove and then miss.
+
+I've started listening to my own work the same way. Which parts are carrying the thing, and which parts are covering for the parts that aren't. Strip one out. See what breaks. That's the test.
+#Gaming #GameDev #SoundDesign #Audio #Games #Design #Creativity #IndieGame #Craftsmanship #Tech #Art #Storytelling #Music #GamesIndustry #Culture
+---
+[2026-10-16 20:07:56 UTC]
+record_id=74b598209ed9d7d05e06bbf37cec2a5cb4dbbf3684a77371ff0f039e640ea6c7
+scheduled_for=2026-10-17 15:00
+A city near me removed a few hundred parking spaces and the shops on that street report more revenue, which is the least intuitive result in urban planning.
+
+The mechanism is simpler than it sounds. A parking space moves about two people an hour past a shop front. A bus stop, a bike rack and a wider pavement move far more, and people on foot stop more often than people driving past looking for a space.
+
+The fight about it was never about the numbers. It was about who the street is for, and that question is uncomfortable enough that people argue about parking instead.
+
+What I take from it is that the loudest objection tends not to be the real objection. Parking is measurable. Changing who a place belongs to isn't. Both are real.
+
+I see the same shape in software all the time. I've watched a team argue for a month about a feature. What they disagreed about was who the product is for.
+#Cities #Urbanism #Transport #Data #Research #Analysis #Economy #Markets #Culture #Society #Policy #Science #Design #Planning #Trends
+---
+[2026-10-16 20:07:56 UTC]
+record_id=4b98a169448589799b0294223cd52408496a26095de035d29f38961aa8b3e832
+scheduled_for=2026-10-17 15:15
+I moved my phone charging cable out of the bedroom and the only thing that changed was when I started reading, which turned out to be the point.
+
+I wasn't scrolling for long. Maybe twenty minutes before sleep. What I didn't notice was that the phone was the last thing I saw and the first thing I reached for, and those two moments set the whole shape of the day.
+
+Now I read on paper for half an hour instead. I'm asleep about the same time. I'm awake about the same time. The difference is in the first hour of the morning, when I used to open messages before I'd decided what the day was for.
+
+The gain isn't sleep. It's that the first thing I think about is mine rather than someone else's request.
+
+Small change, and I'd been told versions of it for years. Doing it was different from knowing it.
+#Health #Sleep #Habits #Productivity #Focus #Wellness #Research #Science #Psychology #Learning #DeepWork #Culture #Society #Data #SelfTracking
+---
+[2026-10-16 20:14:33 UTC]
+record_id=d488eecf5abc5d50f9693d687146a17b4ec1b2975bad72effc840e90ee43af05
+scheduled_for=2026-10-17 15:30
+A study on remote work landed on my desk and the finding that mattered was about who gets promoted, not who gets work done.
+
+Output was fine. Measured by almost any definition, the remote group produced as much and often more. What differed was the informal record, the conversations that happen in the gaps and shape who gets handed the interesting job in eighteen months.
+
+That's not a productivity problem, so no productivity tool will fix it. It's an information problem, and the people who solve it are the ones who write things down where others can see them.
+
+I started posting short written updates for that reason, without asking anyone to read them. Six months in, two projects came to me because of something I'd written and forgotten about.
+
+Being good at the work and being known for the work are two separate jobs. I'd been doing one of them. I write the update now. Four lines. Nobody asked for it.
+#Culture #FutureOfWork #Remote #Workplace #Management #Teams #Productivity #Research #Career #Society #Leadership #Communication #Tech #Business #Strategy
+---
+[2026-10-16 20:14:34 UTC]
+record_id=595b7497624b771ffbf2722168682a52811444ee7316aa5109ec487ea48c17fb
+scheduled_for=2026-10-17 15:45
+I stood at my desk for a month and the useful change had nothing to do with posture. It was the two minutes of standing still that came with it.
+
+When I'm sitting, waiting for a build means opening something else. When I'm standing, waiting for a build means standing there with nothing to do, and that's when the question I should have asked an hour ago arrives.
+
+I get about four of those a day. They're not breakthroughs. They're small corrections that would otherwise have cost me forty minutes each.
+
+The posture part is negligible. The interruption part is real. I've started protecting the gap instead. No second window during a build, no phone while the tests run. Boredom is where the checking happens.
+
+Standing is the cheapest way I've found to make myself be bored, and being bored is where I do my best checking. It costs nothing. It needs no app. It just removes the chair.
+#Productivity #Health #Focus #DeepWork #Habits #Wellness #Software #Developer #Coding #Workplace #Learning #Science #Research #Data #SelfTracking
+---
+[2026-10-16 20:14:34 UTC]
+record_id=c4c366da42b8cc2cee35b79f2381a15993a944161c7636176fb2a338cd0ccb08
+scheduled_for=2026-10-17 16:00
+A podcast about a company shutting down spent an hour on the last two weeks and about four minutes on the eight years before it, which is the standard ratio and the wrong way round.
+
+Collapse is dramatic and easy to narrate. What stays invisible is the eighteen months of small decisions that made it inevitable. Every one of them was reasonable on the day it was made.
+
+I've been inside that shape. You keep a thing alive for reasons that made sense in March. By October the reasons are gone and the thing is still there. Nobody can point at the moment it stopped being worth keeping.
+
+So I ask a different question now. What would have to be true for this to be worth keeping. If I can't answer that in one sentence, the answer is no.
+
+I've shut down two things using that question. Both hurt. Both were late.
+#Business #Startup #Entrepreneurship #Strategy #Management #Product #Tech #Leadership #Learning #Culture #Markets #Economy #SoloBuilder #Lessons #Failure
+---
+[2026-10-16 20:14:34 UTC]
+record_id=8d95b58dc4f994c626652bf06c9459db990adf4a782f376f32c47703acc1b59a
+scheduled_for=2026-10-17 16:15
+I stopped incrementing my version numbers for a while and the mess it made has changed how I name releases.
+
+I'd been bumping the patch digit for anything, so every version looked equally important. Six releases all ending in a different third digit, and no way to tell from the name whether one of them fixed a data loss bug or a typo.
+
+Now the number answers one question. Does the data need a migration. If it does, the first digit goes up. If it doesn't and there are behaviour changes, the second goes up. Otherwise the third moves.
+
+Nobody outside my own projects reads these numbers, which is the point. They're for me at two in the morning when something broke and I need to know whether rolling back is safe.
+
+A version is a promise about compatibility. If it promises nothing, it's decoration with a dot in it.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Developer #ReleaseManagement #Versioning #DevOps #SemanticVersioning #OpenSource #Python #DeepTech #Learning #SoftwareEngineering #Documentation
+---
+[2026-10-16 20:14:34 UTC]
+record_id=1916ffb9d8c764b220cd62400cb1fa56b7e15cc3ad8d76541b1c08630bbfa29e
+scheduled_for=2026-10-17 16:30
+A regex took me an hour and a half this week and about forty minutes of that was spent convinced I understood it, which is a specific way to waste time.
+
+I was matching a pattern I'd written two years ago. I read it, formed a theory about what it does, and then tested against my theory instead of against the string. Each failure made my theory more elaborate.
+
+What broke the loop was printing the string with its whitespace made visible. There was a trailing space. The regex was right. My assumption about the input was wrong and had been for forty minutes.
+
+I've started doing that first now. Show me the input before I touch the pattern. Most regex bugs I've had this year were never regex bugs.
+
+The general version of the lesson is the one that keeps costing me. Verify the input, not the logic, and do it before you have a theory worth defending.
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Coding #Software #Engineering #Developer #Regex #Python #OpenSource #DeepTech #Learning #Programming #Productivity #SoftwareEngineering #Quality
+---
