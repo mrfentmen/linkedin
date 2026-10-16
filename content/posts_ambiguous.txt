@@ -520,3 +520,35 @@ Nobody here treats that as pedantry. They treat it as the job, which is why I st
 
 #AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Software #Developer #Engineering #tech #Coding #Product #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Quality #ProductManagement
 ---
+[2026-10-16 06:49:39 UTC]
+record_id=9f3212f94ed0f829ad5e385b3a8695504a5eb7e04dae2de407360913dc99901c
+status=ambiguous
+scheduled_for=2026-10-16 15:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+A studio I follow spent four years on a game and shipped it into a market that had moved twice while they built. Nobody there did anything wrong.
+
+The genre got crowded in year two. A platform shift landed in year three. The thing they designed around was old by launch, and the reviews said so, and the reviews were fair. Nothing broke. The market moved.
+
+I'd call that the trap in anything with a long lead time. You commit to a design when you know the least, and you're judged on it when you know the most.
+
+Short cycles aren't just cheaper. They let you make the decision later, with more information in hand.
+
+I've started breaking my own work into four week pieces for the same reason. Not because I ship more. Because I decide later, and the later decision gets made by someone holding a month more information than the person who started.
+#Gaming #GameDev #IndieGame #Games #Development #Product #Startup #Strategy #Tech #Industry #Creativity #Design #Gamedesign #GamesIndustry #Business
+---
+[2026-10-16 06:55:55 UTC]
+record_id=ab8ee86e5a0fd575616923c47e340f0da08df97fcb9f80618cbee361634ddfa5
+status=ambiguous
+scheduled_for=2026-10-16 16:00
+error=could not read LinkedIn's scheduled count, so the schedule is unconfirmed
+I gave an agent read access to my whole repository and the first thing it did was find a file I'd forgotten existed. That told me more about my own project than the agent did.
+
+The file was a config for a service I stopped using in March. It was still being loaded. It still held a credential path. Nothing had complained, because the code reading it had a fallback that won without saying anything.
+
+That's what a fresh reader buys you. It didn't know which parts were load bearing, so it read the parts I'd stopped seeing, and one of them mattered.
+
+I got a cleanup out of it that took twenty minutes. The half hour I spent watching it work was worth more. I saw my own repo through someone who had no habits about it.
+
+Get a second reader in. Human or otherwise. Mine found a dead config that had been sitting in the loader for seven months.
+#AI #BuildInPublic #VibeCoding #tech #AIagents #Automation #Coding #Software #Engineering #Developer #OpenSource #CodeReview #DeepTech #LLM #Refactoring #Learning #DevTools #Productivity
+---
