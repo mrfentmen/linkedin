@@ -30,6 +30,10 @@ on:
         required: false
         type: boolean
         default: false
+      post_times:
+        description: "Exact slots for the next queue posts, comma separated: 2026-10-17 06:07,... Leave empty to use the grid."
+        required: false
+        default: ""
 
 # The job commits its own schedule state back to the repo.
 permissions:
@@ -120,8 +124,20 @@ jobs:
             --batch-size 5 \
             --show-plan
 
+      - name: Schedule exact times
+        # Hand-picked slots (one extra offer post between the grid posts).
+        # Takes the next queue posts in order, one per time.  The grid step is
+        # skipped whenever this input is set, so nothing is booked twice.
+        if: ${{ !inputs.plan_only && inputs.post_times != '' }}
+        env:
+          POST_TIMES: ${{ inputs.post_times }}
+        run: |
+          set -euo pipefail
+          python scripts/linkedin_poster.py --next --headless \
+            --schedule "${POST_TIMES}"
+
       - name: Schedule slots
-        if: ${{ !inputs.plan_only }}
+        if: ${{ !inputs.plan_only && inputs.post_times == '' }}
         run: |
           set -euo pipefail
           python scripts/batch_schedule.py \
