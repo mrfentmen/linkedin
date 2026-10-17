@@ -32883,3 +32883,773 @@ Sync engines that hide this from you are hiding a decision they made on your beh
 Three weeks for one behavior. It's the single most requested feature I've built. I'd spend those three weeks again tomorrow, and I'd make the same call about conflicts.
 #AI #BuildInPublic #VibeCoding #tech #Software #Engineering #Sync #Coding #Developer #Mobile #Architecture #Product #Startup #SoloBuilder #IndieHacker #Learning #ProductDevelopment #Design
 ---
+[2026-10-17 02:18:27 UTC]
+record_id=cefa4b98b96a6ef3030ad5202bc81971b4324be3ddc51b73658d5008cefee28b
+scheduled_for=2026-10-20 13:00
+I logged a customer's email address for four months without knowing it. It arrived in a debug line I'd added during an incident and forgot to remove.
+
+The log had names, addresses, and one timestamped list of every account in a workspace. Anyone who could read the log could read that.
+
+What I do now costs almost nothing. Every log line I write goes through a small helper that strips anything that looks like an address or a card. I review the log output for one request before shipping any change to a write path.
+
+There's also a rule about incidents. A debug line added under pressure gets a ticket number in the comment, and the ticket gets closed in a week.
+
+Deleting it never happens without that reminder. Four months of exposure was my reminder. I add the ticket number before the line leaves my fingers now. That's the habit.
+#AI #BuildInPublic #VibeCoding #tech #Security #Privacy #Engineering #Software #Logging #Backend #Compliance #Coding #Developer #Startup #SoloBuilder #Learning #BestPractices #Observability
+---
+[2026-10-17 02:18:27 UTC]
+record_id=360c4db21b402e281e4762f9078f2de674e6e553a6d4dc27eaa8ca6c5edb3bea
+scheduled_for=2026-10-20 13:15
+A cron job scheduled at 2:30 in the morning runs twice a year or not at all, depending on the clock change. I found out from a duplicate invoice, which is the kind of bug nobody forgives.
+
+Nothing in my code was wrong. The scheduler saw 2:30 twice on one night because the clocks went back, and it did what I told it to do both times.
+
+Fixing it is about making the work safe to repeat, not about the schedule. My jobs now write a record when they start, keyed by the date they're meant to process. A second run sees that record and exits.
+
+That one change protects me from clock changes, retries, a manual kick, and two schedulers running at once. All four have happened since.
+
+If your job moves money or sends messages, make it safe to run twice. Times are less predictable than code. I add that record to every job I write now. Every one.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #Cron #Backend #Reliability #Coding #Developer #DevOps #Idempotency #Startup #SoloBuilder #Learning #BestPractices #SRE
+---
+[2026-10-17 02:18:27 UTC]
+record_id=b1ca02bf9f1e3abccc571cf7669d14ceddc6ffaaf04934e1ac9d8d6b4a105362
+scheduled_for=2026-10-20 13:30
+Feature requests are a signal about a problem and a guess about a solution. Treating them as instructions is how a product turns into a pile of unrelated buttons.
+
+Someone asked me for a bulk delete. I asked what they were doing and it turned out they imported the wrong file each month and wanted to undo it. Bulk delete was their fix. A preview and an undo was mine.
+
+Same problem, better answer, and it helped everyone else who imports a file.
+
+So I write the request down as a problem statement. If I can't state the problem in one sentence without naming their proposed feature, I don't understand it yet.
+
+The requests I reject are the ones phrased as a command with no story behind them. I write the problem statement first now, before I look at any solution. It takes one line and about a minute. Then choose.
+#AI #BuildInPublic #VibeCoding #tech #Product #Startup #SaaS #ProductDevelopment #UserResearch #Founder #SoloBuilder #IndieHacker #UX #Coding #Business #Learning #Strategy #Feedback
+---
+[2026-10-17 02:18:27 UTC]
+record_id=636ac02eded3e44846e9467044c588b9b16241e3daafa1e4aac91468116c0d2b
+scheduled_for=2026-10-20 13:45
+Telling a customer you don't know is better than a confident answer you'll walk back. I did the confident one twice last year and both times the correction cost more than the pause would have.
+
+What I send now says what I know, what I'll check, and when they'll hear from me. That last part is the important half. A person can wait for an answer. They can't wait for an unknown amount of time.
+
+I also stopped guessing at dates in support. If I don't know when something will ship, I say I don't know, and I come back with a date once I've looked at the work.
+
+Nobody has been upset about the honesty. Two customers told me they preferred it, which I didn't expect.
+
+Three lines. What I know, what I'll check, when I'll come back. I write it in every hard thread now. It has never failed me.
+#AI #BuildInPublic #VibeCoding #tech #Support #CustomerSuccess #SaaS #Communication #Startup #Software #Founder #SoloBuilder #Business #Trust #Learning #Growth #Culture #Product
+---
+[2026-10-17 02:18:27 UTC]
+record_id=2154a9b3cfd78deff63c4c10124b6a0172acd77139bb6d29d369dd996475850c
+scheduled_for=2026-10-20 14:00
+Measure onboarding as a funnel with names, not as a completion rate. A number tells you that people drop. A step name tells you what to fix.
+
+Mine had five steps and one cliff. Forty percent of people left between connecting an account and seeing their first report, which sounds like two different problems until you watch someone do it.
+
+Watching three sessions explained it in twenty minutes. People connected the account and then sat there, because the first report needs a date range and nothing on the screen asked for one.
+
+I moved the date picker onto the screen where the account connects. The cliff went from forty percent to twelve, and no new feature was written.
+
+Five names and one video call. That's all it took. Numbers find the drop. Names find the fix. I add a name to every step now, even when the list feels obvious.
+#AI #BuildInPublic #VibeCoding #tech #Product #Analytics #Onboarding #SaaS #UX #Growth #Startup #ProductDevelopment #Coding #SoloBuilder #IndieHacker #Learning #Metrics #Conversion
+---
+[2026-10-17 02:26:13 UTC]
+record_id=e0f8f853570220f5f349680aabb06d37c5e34aea6654c9f85969309980ba9c4f
+scheduled_for=2026-10-20 14:15
+I don't reach for an ORM on a new project any more, and it isn't because I dislike them. It's because I spent a week last year fixing a query the ORM generated that I couldn't read.
+
+The escape hatch is the thing to check before you commit. Can you drop to raw SQL for one query without rewriting the model. If the answer is no, the tool owns your performance work.
+
+The other question is who reads it. A small team of two or three people doing well understood queries gets real value from the shape an ORM gives you. A team of one with four tables doesn't.
+
+I use one now for the boring reads and write the hard queries by hand. Both live in the same file and it reads fine.
+
+Pick based on the queries you'll write. Not on the demo. Two tables. No layer at all.
+#AI #BuildInPublic #VibeCoding #tech #Database #Software #Engineering #Backend #SQL #Coding #Developer #Postgres #Architecture #Startup #SoloBuilder #Learning #BestPractices #SystemDesign
+---
+[2026-10-17 02:26:13 UTC]
+record_id=34b1062fab90198a69edc220342d6a6cb3fd756b85b18a3f56b961c4e5db443a
+scheduled_for=2026-10-20 14:30
+Webhooks beat polling when you can trust delivery, and you often can't. I've built both and each time the webhook needed a safety net underneath it.
+
+The net looks like this. A webhook arrives, you store it with its id, and you answer fast. A separate job checks for events you expected and never received, using a cursor from the provider.
+
+That cursor job was the whole fix. It caught eleven missed webhooks in the first month, including two that mattered, and it runs every ten minutes for a few milliseconds of work.
+
+Polling alone would have been simpler for this volume. Two events an hour doesn't need a webhook at all, and I said so before building one.
+
+Start with the schedule that pulls. Add the push when volume or latency makes it worth the second path. Both, in the end. Always both. I keep the pull job even when the push works.
+#AI #BuildInPublic #VibeCoding #tech #API #Webhooks #Engineering #Backend #Software #Reliability #Coding #Developer #SystemDesign #Integration #Startup #Learning #Architecture #BestPractices
+---
+[2026-10-17 02:26:13 UTC]
+record_id=e33d827c18c423f0b39a7bfbbe21a15f0877e8364b7c13b8ac288409a4f56a8e
+scheduled_for=2026-10-20 14:45
+Version numbers should tell a user whether to care. I stopped using semantic versioning on my own product and switched to two lines in a changelog that say what changed for them.
+
+The library case is different and semantic versioning earns its place there. When a machine or a package manager reads the number, the number has to be precise.
+
+For an application, nobody reads the version. They read the changelog, and if the changelog is good then the version is decoration.
+
+What I keep is a date and a short label. October, faster imports. That's the release note and it tells a person more than a number going from two point four to two point five ever will.
+
+The version still exists in the build for support. I just stopped pretending it's communication. Date and label. That's the release. I write it for the person using the app, not for the person building it.
+#AI #BuildInPublic #VibeCoding #tech #Product #Software #Engineering #Versioning #Startup #SaaS #Coding #Developer #Documentation #ProductDevelopment #SoloBuilder #IndieHacker #Learning #Communication
+---
+[2026-10-17 02:26:13 UTC]
+record_id=3c30d70a4e288ec414c1d0d855adb64b22629f9f97f5b42c509a2887e5baa740
+scheduled_for=2026-10-20 15:00
+Keep a personal README and update it every quarter. Mine has four sections. What I'm working on, what I'm bad at, how I like feedback, and the hours I'm reachable.
+
+The second section is the useful one. It says I'm slow at pricing decisions and that I'll avoid a hard support conversation for two days if nobody pushes me. Writing that down makes it fixable instead of a surprise.
+
+I share it with people I work with. Twice someone has said they'd noticed the same thing, which is worth more than any self assessment.
+
+The hours part saves everyone a guess. I answer messages in a window and I don't outside it, and saying so out loud means nobody reads silence as disinterest.
+
+Four sections. Ten minutes a quarter. It's the cheapest management tool I've found and I wrote it for myself. I update mine in January, April, July and October.
+#AI #BuildInPublic #VibeCoding #tech #Teamwork #Management #Remote #Culture #Career #Software #Engineering #Startup #SoloBuilder #Learning #Communication #Productivity #Leadership #Reflection
+---
+[2026-10-17 02:26:13 UTC]
+record_id=6b3fbba8b95f98709984f85f8745e8b85d9a7143571d8f9b23c4bf418d28b434
+scheduled_for=2026-10-20 15:15
+Put new engineers on call in their first month. Not alone. Alongside someone, watching, with no expectation of fixing anything. The purpose is to see what an outage feels like from the inside.
+
+I did this with two hires and both said the same thing afterwards. They had no idea how much of support and debugging is reading a dashboard and waiting, and they'd been designing features as if failures were rare events.
+
+One of them went back and changed how a background job told the user it had failed, because he'd watched a customer hit that path and be told nothing.
+
+If you keep new people away from incidents for six months, they build for a system where things work. Shadowing is the cheapest reality check there is. First month. Reading, no fixing.
+
+It changes what they write. I put every new hire on that rotation in week two.
+#AI #BuildInPublic #VibeCoding #tech #SRE #OnCall #Engineering #Teamwork #Hiring #Culture #Software #DevOps #Startup #Management #Learning #Onboarding #Reliability #Leadership
+---
+[2026-10-17 02:33:59 UTC]
+record_id=6a552ab48ccc6d75129bed9f9125282bf74f646d622e4370cbf090b74ee4e67f
+scheduled_for=2026-10-20 15:30
+Timebox research to one hour and write the decision down at the end. I used to read about a problem for three days and then decide the same thing I'd have decided in the first hour.
+
+What eats the time is comparison shopping. Two options is a decision. Seven options is a hobby.
+
+The hour has a shape. Twenty minutes on the two candidates, twenty on how each one fails, twenty writing the choice and the reason. If the hour ends without a decision, I pick the boring one and move.
+
+I've done this for four choices this year. Two were wrong and reversing them took a day each, because I'd written down what I expected and could see where the expectation broke.
+
+The writing is the part that makes it fast. Decide, write, move. One hour. Every time. I set a timer and I stop when it rings, even mid sentence.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #DecisionMaking #Productivity #Research #Coding #Developer #Startup #Learning #Strategy #DeepWork #TimeManagement #Craft #Focus
+---
+[2026-10-17 02:33:59 UTC]
+record_id=9f6431e5a5f56883b3797375149797c574e90fc0bb7af8719465d92a9c9b1317
+scheduled_for=2026-10-20 15:45
+Read a competitor's documentation before their product. The docs tell you what they think the hard part is, and that's the most useful thing you can learn about a rival.
+
+One competitor's docs spend four pages on permissions. That's where they've put their effort and where their users get stuck. If I ever add roles, I know what I'm signing up for.
+
+Another's docs open with a two line quick start and nothing else. Their bet is that the product explains itself, which tells me they're chasing self serve buyers.
+
+You can also see what they removed. Deprecated pages that still rank in search show you what people asked for and what got taken away.
+
+I spend an hour in their docs each quarter. It's free, it's public, and it beats guessing at a feature list I can't see behind a login. One hour. That's it. I take notes with a pen, and three things from last quarter are in my product now.
+#AI #BuildInPublic #VibeCoding #tech #Product #Strategy #Startup #Documentation #SaaS #Research #Founder #Business #ProductDevelopment #SoloBuilder #IndieHacker #Learning #Growth #Competition
+---
+[2026-10-17 02:34:00 UTC]
+record_id=62918c878d41eb04c7021a06543ec1e3971683ec8f664c09f7590e1455532b50
+scheduled_for=2026-10-20 16:00
+Name variables so they can be found with a search. One letter names and common words make a codebase harder to work in than any missing comment.
+
+I renamed two variables this year because I couldn't search for them. One was called data, which appears eleven hundred times in the repo. The other was a loop index used across forty lines.
+
+The rule I use is that a name should be unique enough to find and short enough to read. Item total, invoice rows, retry count. Those search well and read fine in a line.
+
+This matters more now that assistants read our code. A well named symbol can be followed through a file in seconds. A name like that gives a model nothing to hold on to and gives a person the same problem.
+
+Ten seconds of naming saves an hour of finding, and I've paid that bill both ways this year. I rename the moment I notice. Ten seconds. Done.
+#AI #BuildInPublic #VibeCoding #tech #Coding #Software #Engineering #Naming #CleanCode #Developer #Programming #Refactoring #CodeReview #Craft #Startup #SoloBuilder #Learning #BestPractices
+---
+[2026-10-17 02:34:00 UTC]
+record_id=33ab2e9b5a8c421d6df87fc88a8dc0382d98c626a1950cf2ad4c5c69c69b9d2f
+scheduled_for=2026-10-20 16:15
+A monorepo for one person is the right call. I split mine into three repos for a year and spent that year on version bumps and cross repo commits.
+
+The split made sense when I imagined a team. Each repo had its own pipeline and its own version, and nothing shared. What I got was a dependency I had to publish to myself six times a week.
+
+Moving back took an afternoon and removed two hundred lines of config. One repo, one pipeline, one version. Deploys went from three steps to one.
+
+The case for splitting is real when ownership splits. Different teams, different release cadences, different access. For a solo builder none of that exists, so the cost is pure overhead.
+
+I'd split again at four people. Not before. I moved back in an afternoon and deleted two hundred lines of config. One repo with one pipeline, and no version bumps. One repo. The cost of the split was a version bump six times a week, and that overhead landed on me because there was nobody else to hand it to.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #Monorepo #DevOps #Coding #Developer #Git #Architecture #CI #Startup #SoloBuilder #IndieHacker #Learning #BestPractices
+---
+[2026-10-17 02:34:00 UTC]
+record_id=c3e3eea332d3b55a81189b5d0ac4d4e8122aa1ad7e335187c8871e74b8ed139e
+scheduled_for=2026-10-20 16:30
+The first five minutes of a demo decide the rest of it. I used to open with the architecture. Now I open with the pain.
+
+One sentence about what the person is doing today that hurts, then their own data on the screen. Nothing else until they ask a question. Questions mean engagement and silence means politeness.
+
+I bring a real account with real mess in it. Imported files with duplicate rows, a half finished draft, a report from last week. Clean demo data makes a product look like a mockup and hides the parts that sell.
+
+The five minute rule keeps me honest. If I can't show value in that window with their data, the feature isn't ready to be shown to anyone.
+
+Ask them to bring a file before the call. Then start with the file. I ask for it the day before, so I can look at the mess first. I open with the piece of their data that looks wrong and let them tell me what they expected to see on that screen.
+#AI #BuildInPublic #VibeCoding #tech #Product #Sales #Startup #SaaS #Demo #Founder #Business #ProductDevelopment #SoloBuilder #IndieHacker #Growth #Learning #Communication #Strategy
+---
+[2026-10-17 02:41:46 UTC]
+record_id=f2f9c5af36ecba59f956661b76a17e11ef5bfbc1f23ac63dc3f874d4d5457b5b
+scheduled_for=2026-10-20 16:45
+Always give users a way to take their data out. Not because they'll leave. Because knowing they can is part of why they stay.
+
+I built an export in a week and it became my best support tool. Half the questions that used to arrive about reports turned into people pulling the data themselves and doing the analysis their way.
+
+The other effect was commercial. Two customers told me the export was why they signed, because it meant the decision to stay was theirs to make.
+
+The format matters. Comma separated values, one flat file where that's honest, and column names a person can read. A file someone has to email you about isn't an export.
+
+An hour of work made the tool feel less like a trap. I built mine in a week and it's still the feature I mention first. Export everything, then let people walk. That's it.
+#AI #BuildInPublic #VibeCoding #tech #Product #SaaS #Software #Engineering #Data #Startup #SoloBuilder #IndieHacker #CustomerSuccess #Business #ProductDevelopment #Learning #Trust #Growth
+---
+[2026-10-17 02:41:46 UTC]
+record_id=80a77df71f64da3713b0e54cbaa269390bd23df2e93a5d892632f666a8c43f43
+scheduled_for=2026-10-21 09:00
+A bad deploy at five in the afternoon gets one decision. Roll back or push forward. I've done both and rolling back has never been the wrong first move.
+
+The instinct to fix forward comes from not wanting to admit the deploy was bad. That's ego and it costs the evening and sometimes the night. Rolling back takes two minutes and returns the product to a known state.
+
+Then you investigate with the pressure off. Twice this year the bug turned out to be something that would have been obvious in the morning, and twice the second deploy was clean.
+
+The one thing I do before rolling back is write a single line in the incident log with the time and the guess. Three words is enough. That line is what makes the postmortem possible an hour later.
+
+Undo first. Think second. Fix third. I roll back first now, and I investigate with the pressure off.
+#AI #BuildInPublic #VibeCoding #tech #DevOps #Deployment #Software #Engineering #SRE #Reliability #Coding #Developer #IncidentResponse #Rollback #Startup #Learning #BestPractices #Teamwork
+---
+[2026-10-17 02:41:46 UTC]
+record_id=a17f2763f0ac81ee04cf04b5cb09fae563e47a2e4b10ef4b1ef4b3f427a9f215
+scheduled_for=2026-10-21 09:15
+Write tests for the boring paths and skip the clever ones. I've seen a team with eighty percent coverage and no test on the refund flow, because refunds were simple and moving invoices were interesting.
+
+The boring paths are where money and messages move. Login, reset, upload, export, retry, cancel. None of them are fun to test and all of them are the parts a customer notices when they break.
+
+My rule for a new project is five tests before anything else. Sign up, sign in, upload, export, delete. It takes an afternoon and it covers the flows I'd be paged about.
+
+Coverage as a number pushes effort toward whatever is easiest to test, which is not what matters.
+
+I write those five tests before I write a single feature, and it takes one afternoon. They cover the pages I'd be paged about at night. Five tests. One afternoon. Then I build the interesting thing.
+#AI #BuildInPublic #VibeCoding #tech #Testing #Software #Engineering #Coding #Developer #Quality #TDD #Programming #BestPractices #Startup #SoloBuilder #Learning #Craft #Reliability
+---
+[2026-10-17 02:41:46 UTC]
+record_id=66e1b0f9a6b4e8840f6c6f7c1f1c9bcb103725aeedfe7443722efc304018acd2
+scheduled_for=2026-10-21 09:30
+Refactor one small thing every week and you'll never need a refactor project. I've run two big ones and both began with a year of nobody touching anything.
+
+That version takes an hour. Rename a misleading variable. Pull one function out of a long file. Delete a branch that can't be reached. Small enough to read in a diff, big enough to matter over a year.
+
+What it prevents is the moment where the change someone needs is buried under six layers of accumulated shortcuts. That moment is where teams decide to rewrite.
+
+I keep a list of ten small things and pick one each Friday. Three of this year's fixes removed a class of bug rather than an instance.
+
+An hour a week. Fifty a year. I'd rather have those than one heroic cleanup. I keep the ten item list in a file and I pick one each Friday.
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Software #Engineering #Coding #CleanCode #TechDebt #Developer #Programming #Craft #Startup #SoloBuilder #Learning #BestPractices #CodeReview
+---
+[2026-10-17 02:41:46 UTC]
+record_id=1154d3332fdb0156d22b51c9ca1fe014ebcfd45003f26884f0e95b363936c100
+scheduled_for=2026-10-21 09:45
+A code review comment should describe a problem, not a preference. Comments I've learned from were about something breaking. The comments I've argued with were about taste dressed up as a rule.
+
+My rule now is to say which it is. This will break when the list is empty, or this is a preference and I'll defer to you. That second sentence has ended more review threads than any technical argument I've made.
+
+I separate the two now. My other habit is asking a question instead of writing an instruction. What breaks if the list comes back empty. Half the time the author answers it and the comment was unnecessary. The other half they find the bug.
+
+Reviews are a conversation about a change. Comments that read like verdicts get defended instead of considered, and I've been on both sides of that.
+
+I lead with the kind. That's it. I say which kind of comment it is, and it took two years of arguing about taste before I understood why the two kinds needed different words at all.
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Teamwork #Coding #Developer #Communication #Programming #Culture #Management #Startup #Learning #BestPractices #Craft
+---
+[2026-10-17 02:48:59 UTC]
+record_id=746e7791462bc919f7587cbdfd87179710bfa8d520b450570b1aed9556e2531d
+scheduled_for=2026-10-21 10:00
+Give a spike two weeks and a written outcome or kill it. I've run four and two of them should have ended in week one.
+
+A spike is research with a deadline. The output is a decision, not a branch. What we learned, what we'd need to build, and how long that build would take. Two pages, same as a design doc.
+
+The failure mode is a spike that becomes a half built feature. It happens when nobody writes down the ending, so the work drifts from answering a question to producing a thing.
+
+I write the question at the top of the notes before I start. Can we hold this much data in memory without a service. Yes or no. If the answer arrives on Tuesday, the spike ends on Tuesday.
+
+Two weeks. One question. One answer. I write the question at the top before I open the editor, and I delete the branch when the answer arrives.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #Research #Planning #Startup #Product #Management #Coding #Developer #Spike #Learning #Strategy #BestPractices #Craft
+---
+[2026-10-17 02:48:59 UTC]
+record_id=7e8a3a19535c17729634e85b6a4575d0ffb2d7448846adbbb36ffc11ec6cbc01
+scheduled_for=2026-10-21 10:15
+If you publish a library, plan the day you stop. I maintain one small package and the hardest part has been the exit, not the code.
+
+What helped was writing the deprecation policy on the first day. What counts as a breaking change, how long a version gets support, and what happens if I disappear. Two paragraphs in the readme.
+
+I've since deprecated two functions. Because the policy was public, nobody was surprised, and the migration notes were read.
+
+The alternative is a package that stops working on a newer runtime while people still depend on it, and nobody finds out until something breaks on a Friday.
+
+Own the ending. A maintainer who says when they'll stop is more trustworthy than one who promises forever, and I've stopped believing anyone who promises forever. I wrote mine in two paragraphs on the first day. Two years on, it's still the most useful file in the repo. Two paragraphs.
+#AI #BuildInPublic #VibeCoding #tech #OpenSource #Engineering #Software #Maintenance #Coding #Developer #Deprecation #Programming #Community #Startup #SoloBuilder #Learning #Documentation #Craft
+---
+[2026-10-17 02:48:59 UTC]
+record_id=adfd8fd32926deb7fc25871e184f67809260504d2192a614fa7989a15211475f
+scheduled_for=2026-10-21 10:30
+Build for yourself when you're the user, and for a market when you're not. Mixing those up is the most expensive mistake I've made twice.
+
+The tool I built for my own workflow was good, because I could feel every awkward step. It reached about a hundred people and then stopped, and that was fine because I was one of them.
+
+The second product was for a group I'd never been part of. I built features I thought they wanted and got polite interest and no money. I'd been guessing at a workflow I couldn't feel.
+
+If you're not the user, you need ten real conversations before you write code. If you are the user, you need one honest look at whether anyone else has your problem.
+
+Different products, different first steps. I confused them for a year. I ask one question now. Am I the user. If the answer is no, ten calls come first. The month I spent guessing at a workflow I'd never done taught me more about research than any book on the subject. One question. The difference between those two products wasn't the code. It was that in the first one, I could feel every awkward step because I was the person taking them.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Product #Founder #SaaS #SoloBuilder #IndieHacker #ProductDevelopment #UserResearch #Business #Strategy #Learning #Growth #Coding #Entrepreneurship
+---
+[2026-10-17 02:48:59 UTC]
+record_id=d7e805c8d08b70548ba536fd61c9bd976cad70be9dc0f4e9c649b340471edf8b
+scheduled_for=2026-10-21 10:45
+Look at churn by where the customer came from. The overall number hides that one source sends you people who leave in a month.
+
+Mine looked healthy at four percent a month. Split by source, the trial from a directory was at eleven and the referrals were at one. Same product, different fit.
+
+The fix wasn't the product. I stopped paying for the directory and put that time into asking happy customers for one introduction each. Total signups fell and revenue rose.
+
+Averages are comfortable because they're one number. The useful view is two columns, source and retention, and it takes an hour to build from data I already had.
+
+Four percent overall. Eleven from one place. I build that table every month now. Two columns. It takes an hour and it has changed where I spend money twice. I'd rather see the split than the total, every single month.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Analytics #Churn #SaaS #Growth #Business #Founder #Metrics #Marketing #Retention #SoloBuilder #IndieHacker #Learning #Data
+---
+[2026-10-17 02:48:59 UTC]
+record_id=eab4fe2ad02193f15b54eaf918cae07cc99c4c795081f6f94fd9b499142410fd
+scheduled_for=2026-10-21 11:00
+Learn one new thing a quarter and let it be small. Mine this year were a query planner, a background job runner, and a text editor macro. None of them changed my stack.
+
+The value isn't the tool. It's that learning something small teaches me how much I don't know, which keeps me skeptical of confident answers in areas I've never touched.
+
+I timebox it to ten hours across the quarter. If it doesn't click in that window, I stop and write down what I learned, and that note has been more useful than the tool twice.
+
+The alternative is reading about everything and building nothing, which I did for a year and don't recommend.
+
+One thing a quarter. Small, finished, written down. I pick mine in January and I finish it before April every year. Ten hours, then I stop. That's the whole system. Four a year. Forty in a decade.
+#AI #BuildInPublic #VibeCoding #tech #Learning #Developer #Software #Engineering #Coding #Craft #Growth #Education #DeepWork #Startup #SoloBuilder #Habits #Productivity #Mindset
+---
+[2026-10-17 02:56:43 UTC]
+record_id=9345010f624672d003aa0cdf432bea687c7e7a40337dbb4727c5f56d9e0b6e9a
+scheduled_for=2026-10-21 11:15
+Saying no to yourself is the hard version. I have eleven side projects and two of them get time, and the other nine are a tax on my attention every time I open the folder.
+
+What I changed was writing a status on each one. Active, paused, or dead. Nine are dead, and I stopped feeling like I owed them anything.
+
+The folder is still there. What went away was the guilt, which was the actual cost, because a paused project sits in your head and takes a slice of every evening.
+
+Now I add a new one if something dies first. The rule is brutal and it's kept me from starting four things this year, which is the point.
+
+Eleven projects. Two alive. I wrote a status on every project and closed nine of them. The folder is still there and the guilt is gone. Say no to yourself first.
+#AI #BuildInPublic #VibeCoding #tech #SoloBuilder #IndieHacker #SideProject #Focus #Productivity #Startup #Founder #Habits #Learning #Mindset #Business #Growth #Strategy #Coding
+---
+[2026-10-17 02:56:43 UTC]
+record_id=178e311898be0de47dab991980a23743b95687cc162b16e13777d6c37dfa307b
+scheduled_for=2026-10-21 11:30
+Read your own error messages out loud. I did this for twenty minutes and rewrote nine of them, and it was the cheapest product work I've done all year.
+
+Mine said things like operation failed and invalid input, which told a person nothing about what to do next. Read aloud, that language sounds like a machine talking to itself.
+
+The rewrite took no code. Your file is larger than the limit, try a smaller one. That address looks incomplete, check for the at sign. Both of those came from support threads where I'd explained the same thing by hand.
+
+Nobody enjoys writing these. It's the kind of task that never reaches a roadmap because it never blocks anything, and yet it's the voice most of your users hear more often than they hear any marketing page.
+
+Nine messages. Twenty minutes. I'd put that against most features I've shipped this year.
+#AI #BuildInPublic #VibeCoding #tech #UX #Product #Software #Writing #Engineering #Coding #Developer #Support #ProductDevelopment #Startup #SoloBuilder #Learning #Craft #Design
+---
+[2026-10-17 02:56:43 UTC]
+record_id=234176cd2374b135575591fd524217e7e72990271ac95c3a0944c95fbc238dc3
+scheduled_for=2026-10-21 11:45
+Find your slowest endpoint before you optimize anything. Mine was a small one I'd forgotten about, a lookup that ran on every page load and took four hundred milliseconds.
+
+A small log line gave it away. I timed each request and printed the slowest one every few minutes. Two days of that and the picture was obvious, which a profiler had failed to show me because the cost was spread across requests that each looked fine.
+
+The fix was a join I'd written wrong eighteen months earlier. One line. The median page went from nine hundred milliseconds to two hundred and forty.
+
+What I'd been about to do instead was add a cache, which would have hidden a bad query behind a layer that could go stale. Two days of measurement saved me that.
+
+I time the slowest request every month now. Time the slowest request. Then look at the query.
+#AI #BuildInPublic #VibeCoding #tech #Performance #Software #Engineering #Observability #Coding #Developer #Backend #Profiling #WebPerf #Database #Startup #Learning #Metrics #BestPractices
+---
+[2026-10-17 02:56:43 UTC]
+record_id=5ef18f5fd2aacc220c5af1ae2f5452201cade722ed3cfa3593295c777cbb6c04
+scheduled_for=2026-10-21 12:00
+Write the ugly version first and use it for a week. I keep learning this after spending days on something that turns out to be the wrong shape.
+
+My ugly version of a reporting feature was a form, a button, and a table dump. No settings, no filters, no saved views. It took an afternoon and it answered the question the customer asked.
+
+Two weeks of that revealed the real requirement. People wanted to run the same report every week and get it by email, which none of my imagined features covered.
+
+Then I built the small version with care, with one saved report and one schedule. Three days of work on something I now knew mattered, instead of a week on something I'd guessed at.
+
+The ugly version isn't a demo or a mockup. It's real, it's used, and it's meant to be replaced. I ride the ugly one for two weeks. Then I build the real thing. Two weeks. That's it.
+#AI #BuildInPublic #VibeCoding #tech #Product #Software #Engineering #Startup #ProductDevelopment #Coding #Developer #SoloBuilder #IndieHacker #Learning #UX #Strategy #Craft #Prototyping
+---
+[2026-10-17 02:56:43 UTC]
+record_id=bba693851427ed04524f4a70c116ba7ebe3177a51f132b1824b3d5dd9b354334
+scheduled_for=2026-10-21 12:15
+Charge each month and lose the people who wanted to commit. I moved to annual pricing and the churn number fell by more than half, which I expected, and support load fell too, which I didn't.
+
+A customer who pays each month reconsiders your product twelve times a year. An annual one reconsiders once, and if you do your job they renew without thinking about it.
+
+The surprise was the conversations. The accounts paying each month asked for small changes because they were paying attention. Annual accounts asked for less and stuck around longer, and the questions they did ask were about outcomes instead of features.
+
+I offer both now, with two months off on the annual. About six in ten pick annual, and those accounts are the ones that refer people.
+
+I moved everyone in January. Six in ten chose the year up front, and most of them are still here. Twelve decisions a year against one. I know which I'd rather earn.
+#AI #BuildInPublic #VibeCoding #tech #SaaS #Pricing #Startup #Business #Founder #Product #Churn #Revenue #SoloBuilder #IndieHacker #Growth #Strategy #Learning #Retention
+---
+[2026-10-17 03:04:27 UTC]
+record_id=70b8f41e86dad276c521a2c145c818b896e4f5d913f721034fc414b1eed654d6
+scheduled_for=2026-10-21 12:30
+A refund request is a message about the first ten minutes, not the last. Every time I've asked why, the answer turned out to be something that happened on day one and nobody mentioned.
+
+One person paid for eight months and asked for a refund, and when I asked what changed she said nothing had. She'd imported her data wrong in the first week and had been working around it since.
+
+Eight months of workarounds because my import screen said nothing when it skipped a row.
+
+I refunded her, fixed the import to report what it skipped, and she came back two months later. Same product, better first five minutes.
+
+Now I read every refund request as a report about onboarding. The question I ask is simple. What was the first thing that didn't work. I ask it in every refund thread. Every time. Two of my last four features came from that question.
+#AI #BuildInPublic #VibeCoding #tech #Product #SaaS #Onboarding #CustomerSuccess #Startup #Founder #UX #Business #Support #Learning #SoloBuilder #IndieHacker #Growth #Feedback
+---
+[2026-10-17 03:04:27 UTC]
+record_id=d066252ddf0038a17ff40281147391029de152457b2ba9140983aba76d336ad9
+scheduled_for=2026-10-21 12:45
+Log what your system costs, not just what it breaks. I added a line for spend per request and found that four percent of traffic produced most of my bill.
+
+It was a retry loop in a client library that ran for six hours after a network hiccup. Nothing failed. Nothing alerted. The invoice arrived at the end of the month and that was the first signal.
+
+So now every expensive call writes its cost to the same log as everything else. Once a day I sum the last twenty four hours and compare it to the week before. A jump of forty percent sends me a message.
+
+The alert has fired three times. Twice it was a real loop and once it was a customer who'd doubled their usage, which is the kind of problem I want.
+
+Errors get alerts because they're loud. Costs are quiet until the end of the month. I check that number myself once a day.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #FinOps #Observability #Software #Backend #Cloud #Monitoring #Coding #Developer #DevOps #Startup #Learning #Metrics #Infrastructure
+---
+[2026-10-17 03:04:27 UTC]
+record_id=97bc7912c6eb67c4dd3bd9bffcb0cf9a1fee631ba5c492cdf8417a11ad8f2426
+scheduled_for=2026-10-21 13:00
+A post went somewhere and I wasn't ready for it. Four hours of traffic arrived, the site stayed up, and I spent the evening in a support inbox instead of working on the thing that had just been validated.
+
+What broke was the parts I never thought about. My signup confirmation email had no sending limit configured and got throttled. The free tier had no ceiling and two people used a month of capacity in a day.
+
+Both were fixed in an hour, after the fact, by hand.
+
+Now I keep a small list called if this blows up. Send limits, a hard cap on the free tier, a worst case cost number, and one line about what I'd turn off first. It lives next to the deploy script and I read it once a month.
+
+I read mine on the first of the month. Two minutes. Then I close it. I add to it every time something goes wrong. Four lines. They cost nothing until the day they cost you everything. That's it.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Software #Engineering #DevOps #Scaling #Infrastructure #SaaS #Founder #SoloBuilder #IndieHacker #Growth #Learning #Reliability #Product
+---
+[2026-10-17 03:04:27 UTC]
+record_id=01f3caa211ae35d0a5c7f13498d1881421a99effed6987539edcdd6c36447743
+scheduled_for=2026-10-21 13:15
+Hire a designer for one screen, not for a whole product. Mine rebuilt the onboarding step and left everything else alone, and that one screen changed how the rest of the tool felt.
+
+The problem I couldn't see was density. I had eleven controls on a screen where a person makes one decision, and each one had arrived for a good reason. She cut it to three and moved the rest behind a link.
+
+Nothing was removed from the product. The tools were still there, one click away, for the people who needed them.
+
+That's the part I'd never have done on my own. I know what each control is for, and that knowledge made them all feel necessary.
+
+One screen, four days, a small bill. I'd do it once a year on whichever screen users complain about most. I start with the screen they complain about, not the one I find ugly. Start small. Then stop.
+#AI #BuildInPublic #VibeCoding #tech #Design #UX #Product #Startup #Hiring #Software #ProductDevelopment #SoloBuilder #IndieHacker #Learning #Craft #Business #Frontend #Growth
+---
+[2026-10-17 03:04:27 UTC]
+record_id=0f8b44e3a375d78e04ac20a0a68bf9593046e16bd8d3f398fecf60b401b0f1e2
+scheduled_for=2026-10-21 13:30
+Delete data when someone asks, and delete it everywhere. I had a deletion request that took me a week because my data lived in four places and I'd thought about one of them.
+
+The database was the easy part. The search index kept a copy. The log aggregator held six months of lines with their email address in them. And there was a spreadsheet I'd exported for a support conversation and forgotten.
+
+That week was useful in the worst way. It showed me that answering the request meant knowing every place data lands, which I couldn't have listed from memory.
+
+Now there's a page in the repo that names each system and what it stores. Four rows. When a request arrives I work down the list and tick them off.
+
+One page. It turns a week of archaeology into a thirty minute job. I read it before every deletion request now.
+#AI #BuildInPublic #VibeCoding #tech #Privacy #Security #Compliance #Engineering #Software #Data #Backend #Startup #SaaS #Developer #Learning #BestPractices #GDPR #Infrastructure
+---
+[2026-10-17 03:12:12 UTC]
+record_id=5b2719abafc8b9e01215b37867f057fdb3bd746f0d8b3bd0b0829af605cf4598
+scheduled_for=2026-10-21 13:45
+A public roadmap turns customers into project managers. I tried it for two months and the requests became a queue I had to defend.
+
+Every planned item became a commitment in someone's head, with a date they'd invented themselves. When something slipped, I got polite messages asking about it, which felt worse than an argument because nobody was being unreasonable.
+
+What worked instead was a changelog with what already shipped, and one line saying what I'm working on now. No dates on the future. No voting. The past is public and the present is one sentence.
+
+Requests still arrive. They just arrive as problems, which is what I want, instead of as votes on a list I published.
+
+Two months of a roadmap taught me that. I'd rather show what I built than promise what I'll build. The changelog is one page and I rewrite it every Friday afternoon. No dates. Nobody has asked me for one since.
+#AI #BuildInPublic #VibeCoding #tech #Product #Startup #SaaS #Roadmap #ProductDevelopment #Founder #Business #Strategy #SoloBuilder #IndieHacker #CustomerSuccess #Learning #Communication #Growth
+---
+[2026-10-17 03:12:12 UTC]
+record_id=82477f59967c6c54c533251492c286caffabb706327779bcd139aa98a37fd684
+scheduled_for=2026-10-21 14:00
+Getting the first hundred users is about being findable in the place they already look. Mine came from one forum thread where I answered questions for three weeks without mentioning my product.
+
+I'd tried advertising and got nothing. What worked was being the person with the answer in a space where people were already asking. The link in my profile did the rest.
+
+Nobody clicked through from a banner. Twelve of the first hundred came from a single comment where I described how I'd solved the exact problem someone posted about, and included the tool because it was the honest answer to their question.
+
+That's slow to start and it keeps going. Two years on, that thread still sends me signups every month.
+
+Answer where the questions are. Be useful in public. The product is a footnote, and the footnote is the point. I still do it twice a week.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Growth #Marketing #SaaS #Founder #Community #SoloBuilder #IndieHacker #Business #Distribution #Learning #Content #Product #Strategy
+---
+[2026-10-17 03:12:13 UTC]
+record_id=24209ad17cd681615d426368bb3bcfcfef3b70a1df2c70e1ef0b12006e0d7dbd
+scheduled_for=2026-10-21 14:15
+I stopped promising dates and started promising the next thing you'll see. That single change removed most of the stress from my customer conversations.
+
+Dates were always wrong, and being wrong about a date costs more trust than being slow. A customer can forgive a delay. They can't forgive a broken promise, because that's about you and not the work.
+
+What I say now is what I'll show them next. A working import, then a preview, then the schedule. They can see progress without a calendar, and I can cut the list when things take longer than expected.
+
+Two customers told me they preferred it, which surprised me. It turns out people would rather know the order than the date.
+
+Order you can keep. Dates you can guess at. I promise the sequence and I ship in that order. It has made every hard conversation shorter than a date ever did. Two things. That's all.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Product #Communication #CustomerSuccess #Founder #SaaS #Business #ProductDevelopment #SoloBuilder #IndieHacker #Management #Learning #Trust #Strategy
+---
+[2026-10-17 03:12:13 UTC]
+record_id=f1765fcd8cd82860192ad5c42117ee8fc27839162b4d1b489982434e3e1941af
+scheduled_for=2026-10-21 14:30
+Write support replies for the person who is already angry, not for the person who is curious. I rewrote mine that way and the threads got shorter.
+
+An upset message has two parts. The problem, and the fear that nobody is going to help. My old replies answered the problem and skipped the second part, which is why the next message was longer.
+
+The opening line I use now acknowledges the frustration without being theatrical. That's annoying and I can see why you're annoyed. Then the answer. Then what happens next, with a time.
+
+Four sentences. Two of my last three replies ended the thread there, which almost never happened before.
+
+Empathy without a fix reads as empty. A fix without empathy reads as cold. Both together end the conversation, and the order matters more than I expected. I write the first line before I look up the answer now.
+#AI #BuildInPublic #VibeCoding #tech #Support #CustomerSuccess #Communication #SaaS #Startup #Writing #Product #Founder #SoloBuilder #Business #Learning #Trust #UX #Culture
+---
+[2026-10-17 03:12:13 UTC]
+record_id=8ccae0a9674da72c69308db6ee84265520605d1d284a8a86ff402f2fe5382845
+scheduled_for=2026-10-21 14:45
+Two hundred lines is a feature. Anything past that needs a reason written down, and most of my reasons don't survive the writing.
+
+I measured this after a review where a change came in at nine hundred lines and I couldn't hold it in my head. Not because it was clever. Because it did four things, and the fourth was unrelated to the first.
+
+Splitting it into four diffs took an hour. Each one was reviewable in ten minutes and each one could have been rolled back on its own, which turned out to matter the next week when one of them was wrong.
+
+The line count isn't the point. The point is whether I can explain the change in one sentence, and past a couple hundred lines the answer is no.
+
+Small diffs aren't a style preference. They're how you keep the ability to undo. I split mine before I ask for a review.
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Coding #Developer #Git #Programming #Refactoring #BestPractices #Teamwork #Startup #Learning #Craft #Quality
+---
+[2026-10-17 03:19:52 UTC]
+record_id=19ea8ddae203d0cbcb18f913140442db4f3f1596b7cbe18b30ac60938f9e86de
+scheduled_for=2026-10-21 15:00
+Renaming a product costs more than naming it, and I found that out after two years of the first name. I moved from a long descriptive name to one short word and lost more than I expected.
+
+Search rankings took four months to recover. The domain cost what it cost. Two customers thought we'd been acquired and asked whether their data moved.
+
+None of that was fatal and I'd still do it again. The old name explained what the tool did and nothing about why anyone should care. The new one makes people ask, which starts a better conversation.
+
+What I'd change is the timing. I renamed during a busy month, so support and the rename landed in the same week. That was my mistake, not the name's.
+
+Pick the short name first. If you can't, rename in a quiet month and tell everyone twice. I learned that in the wrong month, which was the busy one. Two years of search traffic. Gone in a week.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Branding #Product #Marketing #Business #SaaS #Founder #SoloBuilder #IndieHacker #Strategy #Growth #Learning #Naming #ProductDevelopment
+---
+[2026-10-17 03:19:52 UTC]
+record_id=10d9a48d59ce683d16bf16e425a2b0a4487eda2eef4142e1d21a474ec9ceb296
+scheduled_for=2026-10-21 15:15
+Support macros save time and cost trust when they don't answer the question. I've received a few as a customer and the pattern is always the same. Long, polite, and about a different problem.
+
+Mine were worse than silence, because a macro that misses tells the person you didn't read their message. And they know it, because the answer doesn't match.
+
+What I use now is a set of openings instead of whole replies. One line that acknowledges the specific problem, plus my own words. It's slower per message and much faster per thread, since nobody comes back confused.
+
+I keep about twelve of those openings and I rewrite them every few months. If one of them is used more than five times a week, that's a signal about the product rather than support.
+
+Macros should be a starting point. If they're the whole answer, write the feature instead. Twelve openings. No canned answers.
+#AI #BuildInPublic #VibeCoding #tech #Support #CustomerSuccess #SaaS #Product #Startup #Communication #Automation #Business #SoloBuilder #Learning #Growth #UX #ProductDevelopment #Culture
+---
+[2026-10-17 03:19:52 UTC]
+record_id=a8be5305bf0792136a91e5e1f3003d7815f8c4d92736688a5803e395502e97f0
+scheduled_for=2026-10-21 15:30
+Typography is product work and I ignored it for two years. I changed one thing, the line length, and my support questions about reports dropped.
+
+My tables had lines running the width of a laptop screen. People lost their place reading across and asked me which row a number belonged to, which I'd assumed was a data problem.
+
+Constraining the text column and aligning numbers to the right fixed most of it. Not one person mentioned it. The questions just stopped.
+
+The other change was size. Two of my fonts looked the same, and one was a size I'd picked to fill space rather than to separate two levels of information.
+
+I keep it dull now. One font, three sizes, and a limit on how wide anything gets. Dull here means readable, and readable is the feature. I check the line length on every new screen before I call it done.
+#AI #BuildInPublic #VibeCoding #tech #Design #Typography #UX #Product #Frontend #Software #ProductDevelopment #Craft #Coding #Developer #Startup #SoloBuilder #Learning #Usability
+---
+[2026-10-17 03:19:53 UTC]
+record_id=303b73aac7cd858bc7f9c4ca04556c91309b36e688da00ee5a955fb1ed1be853
+scheduled_for=2026-10-21 15:45
+Some months the right engineering decision is to ship nothing and pay down what you owe. I took one of those months last spring and the following quarter was my best for delivery.
+
+Nothing went out for four weeks. I fixed three flaky tests, deleted two features nobody used, replaced a dependency that was two years behind, and wrote down how the billing flow works.
+
+None of it was visible. All of it made the next three months faster, because every feature I built after that landed on ground that didn't move under it.
+
+The fear is that a quiet month looks like nothing is happening. It does, from outside, and I've learned to accept that. An update that says I spent the month on maintenance is honest and unexciting, and it's better than shipping something to have something to say.
+
+One month down. Three months faster. I'll take it every year.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #Maintenance #TechDebt #Startup #Coding #Developer #Refactoring #Product #SoloBuilder #Learning #Strategy #Craft #Productivity
+---
+[2026-10-17 03:19:53 UTC]
+record_id=537ae50d39906cee631dd04b8d2d60b5151afb5252950e7ac2bc4a5485595d4c
+scheduled_for=2026-10-21 16:00
+Read your own numbers once a month, even if you're not a finance person. I put off looking at my costs for a year and found six hundred dollars a month of things I'd stopped using.
+
+Two cloud instances for a project I'd shelved. A monitoring plan on a tier I'd outgrown. A domain I was holding for an idea I never started. None of them were big and together they were a mortgage payment.
+
+The other reason to look is that it teaches you what your product is. Revenue from one customer group, costs from two, and the shape becomes obvious in a way no dashboard shows you.
+
+I do it on the first of the month with a coffee. Thirty minutes, one spreadsheet, no judgement about the past.
+
+Six hundred a month found. I do it on the first of the month. Thirty minutes. No judgement. The review is free and I'd been avoiding it for no reason at all. Every month.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Business #Finance #SaaS #Founder #SoloBuilder #IndieHacker #Costs #Learning #Strategy #Productivity #Growth #Technology #Operations
+---
+[2026-10-17 03:27:39 UTC]
+record_id=eb29ba1304710f55a283fa661eee4f13c7a028df65825aed0429aa6128230944
+scheduled_for=2026-10-21 16:15
+Send yourself every email your product sends, and do it from a fresh account. I found three broken links and a signature with the wrong name that way.
+
+I'd been testing with my own address, which meant I skipped the welcome, already had an account, and never saw the reset path at all. A new account walked through the whole thing and fell over twice.
+
+What surprised me was how the broken parts weren't obvious. The links worked. The buttons landed on a page that needed a login the recipient didn't have yet.
+
+Ten minutes, one throwaway inbox, and a checklist of the seven messages we send. I run it before any change to signup or billing.
+
+If you haven't seen your own emails as a stranger, you don't know what your product says. I wrote a ninety second welcome that nobody had read in a year. I send them to a fresh inbox. Seven messages. Ten minutes.
+#AI #BuildInPublic #VibeCoding #tech #Email #Testing #Product #Software #Engineering #UX #SaaS #Onboarding #Coding #Developer #Startup #SoloBuilder #Learning #BestPractices
+---
+[2026-10-17 03:27:39 UTC]
+record_id=48f4599d3e6a98368b3e52d75eb310289a449729afff38d08e5a086633cbc16d
+scheduled_for=2026-10-21 16:30
+Keep one scratch file for the thing you're thinking about. Mine is called notes and everything goes in it, unsorted, with dates.
+
+The value isn't organization. It's that writing an idea down stops it from taking up space in my head while I'm doing something else. Half of what I write is bad and never gets read again, and the half that matters is worth the noise.
+
+I go through it on Friday afternoons and pull out anything that still looks right. Two features this year started as a line in that file from months earlier.
+
+The other use is for decisions I'm avoiding. Writing I don't want to have this conversation, and why tends to make the conversation obvious, which is uncomfortable and useful.
+
+One file. No tags, no folders, no system. The system is that everything goes in it. I read it every Friday and pull out anything that still looks right. Every Friday.
+#AI #BuildInPublic #VibeCoding #tech #Productivity #Writing #Learning #Developer #DeepWork #Startup #SoloBuilder #Habits #Craft #Notes #Mindset #Focus #Reflection #Coding
+---
+[2026-10-17 03:27:39 UTC]
+record_id=573c4ada5f22aa0f137a3b2a23d65d2d5b62b439bf0e07c7e82f712888baba1c
+scheduled_for=2026-10-21 16:45
+For a small job, a scheduled script beats a queue. I've set up three message brokers for projects that needed one batch a night, and each one was a week of work I didn't need to do.
+
+A broker earns its place when you need retries, ordering, throughput, and several consumers. For a task that runs once a night and takes eleven minutes, a scheduled script with a log file covers everything you need.
+
+What I do instead is write the job so it's safe to run twice, which is good practice regardless, and have it exit with a clear code. That's the whole infrastructure. The scheduler is already on the machine.
+
+Two of those three brokers are gone. The jobs that use them moved to scripts and nobody noticed, which is the best thing that can happen to infrastructure.
+
+I start every small job that way now. Start with the script. Move when a real constraint appears.
+#AI #BuildInPublic #VibeCoding #tech #Engineering #Software #Backend #Cron #Architecture #DevOps #Coding #Developer #Infrastructure #SystemDesign #Startup #SoloBuilder #Learning #Simplicity
+---
+[2026-10-17 03:27:39 UTC]
+record_id=33b9f5a587ef9036e4ff127d6e89f86e0eccef933f106092a24eff4eb45504f7
+scheduled_for=2026-10-22 09:00
+Passive income from a small product is real and it isn't passive. I earn from a tool I touch once a month, and the hours go into support, updates, and one dependency upgrade that took a weekend.
+
+What it does give you is reach. The same code serves people while I sleep, and that's a different shape of work from trading hours for money.
+
+The lies are about the numbers. Most small products make a few hundred a month, not a few thousand, and the ones that make more are run by someone putting in real weeks.
+
+What helped me was calling it what it is. A small business with a good margin and no office. That framing made me do the boring parts, like looking at costs and answering email, instead of waiting for the automatic part to arrive.
+
+I call mine a small business now. That word changed how I spend my week. It's income. It's not passive, and saying so makes it better.
+#AI #BuildInPublic #VibeCoding #tech #SaaS #Startup #SoloBuilder #IndieHacker #Business #Founder #Revenue #Product #Learning #Strategy #Growth #Productivity #Mindset #Reality
+---
+[2026-10-17 03:27:39 UTC]
+record_id=31a6aa4be970375be833d664ef52edfbb2956608f967b553ac6a03ef023147b4
+scheduled_for=2026-10-22 09:15
+A bug that shows on one device is almost never about the code. Mine showed up on two iPhones and nowhere else, and it took three days to find a date parser that assumed a four digit year.
+
+The device locale used a different calendar format, and one of my inputs came through as a two digit year which the library read as nineteen twenty six. Every other platform sent the long form.
+
+What I changed wasn't the parser. I made the field accept one format and reject anything else with a message, which turned a silent wrong answer into a visible error.
+
+That's the pattern I look for now. A bug that shows on one platform means I'm trusting input from outside without saying what shape I expect.
+
+I add a shape check to every outside input now. Ten lines. Three days for one line. The message I added is why it can't happen again.
+#AI #BuildInPublic #VibeCoding #tech #Debugging #Software #Engineering #Mobile #Coding #Developer #Testing #Programming #Locale #Startup #SoloBuilder #Learning #BestPractices #Quality
+---
+[2026-10-17 03:35:20 UTC]
+record_id=9ff511bfb637fc08d2e00e618bf7bcbc4a5b17589a3d61b65bcc5ecea664c072
+scheduled_for=2026-10-22 09:30
+Someone who churned and came back is the best interview you'll ever get. I called four of them last year and every answer was about a gap, not a grudge.
+
+They didn't leave because of a bug. Two left for a workflow I didn't support yet, one for a price that made sense at their old job, and one for a feature I shipped the month after they left.
+
+The useful question is not why they left. It's what brought them back, because that tells you what your product is for in someone's week.
+
+Three of the four said the same thing. Nothing else did the export right. That's the whole positioning of my product in one sentence and I'd never have written it without asking.
+
+I block an hour a month for those calls. Call the people who came back. They already know the alternatives and they chose you twice. One hour. Every month.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Churn #CustomerSuccess #SaaS #Product #Founder #Business #Retention #SoloBuilder #IndieHacker #Learning #Growth #Positioning #Strategy
+---
+[2026-10-17 03:35:20 UTC]
+record_id=9cb730f37075f952f4ae27e696ee0172f1b620090835df1ef66db8ad803c0ec1
+scheduled_for=2026-10-22 09:45
+A competitor copied my pricing page last year and I took it as information rather than an insult. It told me they were worried, and it told me which tier they thought was the threat.
+
+They copied the structure and not the number, which was the interesting part. Their enterprise tier sat right where mine did, which suggested they were also moving upmarket.
+
+What I did was nothing for a month and then a small change to the free tier that they couldn't copy without breaking their own onboarding. That's the advantage of being small. A big product can't make a narrow decision.
+
+Copying is a signal about what works. If someone copies you, you've already done the expensive part, which is knowing which shape to build.
+
+I read it as a signal and I move on. Then I build the next thing. I keep building anyway. They've copied twice more since. The second time was a feature I'd already removed because nobody used it.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Product #Strategy #Business #Competition #SaaS #Founder #Pricing #SoloBuilder #IndieHacker #Positioning #Learning #Growth #ProductDevelopment
+---
+[2026-10-17 03:35:20 UTC]
+record_id=232a74c67d6b7029104aa10b3011023405562d8a7e1f1beb3cba3ae2d2a0d326
+scheduled_for=2026-10-22 10:00
+Every setting you add is a question you're asking the user. I counted mine and found thirty one, and I could explain about nine of them.
+
+The rest were preferences I'd added because someone asked, or because the right answer depended on context I didn't have. All of them pushed a decision onto a person who wanted to get on with their work.
+
+So I picked a default for twenty two of them and hid the setting. Same feature set, same power for anyone who wants it, and the panel went from four screens to one.
+
+The support questions about configuration dropped to nothing, which tells me most people never wanted to choose.
+
+Two settings stayed visible and they're the two where the wrong answer costs something. I had thirty one settings last year. Nine needed to exist. Nine. That's all. Hidden is the default now. I ask when the answer changes what happens.
+#AI #BuildInPublic #VibeCoding #tech #Product #UX #Software #Engineering #Settings #Startup #Coding #Developer #Design #ProductDevelopment #SoloBuilder #Learning #Simplicity #Craft
+---
+[2026-10-17 03:35:20 UTC]
+record_id=e20d367c9397c1432f80ab97ff8b8011ee98866fe5b323b3f2fb608db4c4c2f3
+scheduled_for=2026-10-22 10:15
+Write the error message before you write the feature. I've started doing this and it catches half of my bad interface decisions before they exist.
+
+If the message I'd have to write is unclear, the feature is unclear. Could not complete the operation tells me nothing, and I discover that when I try to write it for a person who needs to know what to do next.
+
+The other thing it exposes is missing states. Writing the failure message forces me to name what a failure looks like, which is the question I skip when I'm excited about the happy path.
+
+My rule now is that the error text goes in the pull request description next to the code. If I can't write one that helps, the feature isn't finished.
+
+Some of these take ten minutes. I write the error text first now. Ten minutes. It saves a screen. One of them made me delete a whole screen, which was the right call.
+#AI #BuildInPublic #VibeCoding #tech #UX #Product #Software #Engineering #Design #Coding #Developer #Writing #ProductDevelopment #Startup #SoloBuilder #Learning #Craft #BestPractices
+---
+[2026-10-17 03:35:20 UTC]
+record_id=76dac856d3d1f8b3e777c43d0fc0417060eda7a9bc9da02c2d881965680b4c15
+scheduled_for=2026-10-22 10:30
+Keep a demo environment that's a little messy. Mine has an imported file with a duplicate row and a half finished draft saved from last week, and it sells better than any clean dataset ever did.
+
+Clean data makes a product look like a screenshot. Messy data makes it look like it works, because the person watching can see their own mess in it.
+
+I set it up on a Sunday and it takes ten minutes to reset. One workspace with four projects, some abandoned, some active, and one that failed an import so I can show what happens when things break.
+
+That last part is the strongest thing in a demo. Showing a failure and a clear recovery does more than showing everything work.
+
+Ten minutes of setup. It has become the single most reused thing I own, and I reset it before every call. I keep a failed import in there on purpose. People remember it. Ten minutes. That's it.
+#AI #BuildInPublic #VibeCoding #tech #Product #Sales #Demo #SaaS #Startup #Founder #Data #Business #SoloBuilder #IndieHacker #ProductDevelopment #Learning #Growth #Strategy
+---

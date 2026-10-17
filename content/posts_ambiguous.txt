@@ -568,3 +568,19 @@ The next thing was naming. Every cached key now says what it holds and when it e
 Fast is nice. Correct and fast is the job.
 #AI #BuildInPublic #VibeCoding #tech #Caching #Performance #Coding #Software #Engineering #Developer #Backend #Databases #OpenSource #DeepTech #Reliability #Debugging #Python #DistributedSystems
 ---
+[2026-10-17 02:10:44 UTC]
+record_id=e14eac428b315109569a48199a0085f64fba2d1698e303bf4455f37101a5bed9
+status=ambiguous
+scheduled_for=2026-10-20 12:45
+error=Process interrupted while scheduling; verify in LinkedIn before retrying.
+Give your own tool keyboard shortcuts and use them for a week. Half of mine were wrong, and I found out by living inside the product for five days.
+
+Two shortcuts collided with the browser. One did something on a page where it made no sense. The most used action in the app had no shortcut at all, and I'd assumed it was covered.
+
+Using your own software with a stopwatch is humbling. I found four extra clicks on the path I take forty times a day. Fixing those took an hour and changed how the tool feels.
+
+The other thing I learned is which features nobody touches. Two menu items I'd built with care went unclicked for five days.
+
+You can't see that from a dashboard. You have to be the user for a week and notice what your hands do. I do it every release now. Five days. That's the whole test. I open the app on my phone, do the thing I do forty times a day, and count the taps with a timer running.
+#AI #BuildInPublic #VibeCoding #tech #UX #Product #Software #Design #Coding #Developer #Frontend #ProductDevelopment #Startup #SoloBuilder #IndieHacker #Learning #Usability #Craft
+---
