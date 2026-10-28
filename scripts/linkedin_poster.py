@@ -950,6 +950,22 @@ def _compose_one_post(page, content: str, *, dry_run: bool = False, schedule_tim
         except Exception:
             pass
 
+        # LinkedIn now serves a blank /sharing/compose to some sessions while
+        # the feed still renders the "Start a post" trigger.  Without this the
+        # run died on a page that had no trigger to click, even though the
+        # account was signed in.
+        if not _editor_is_open(page):
+            _log("   Compose route rendered no editor; falling back to the feed")
+            try:
+                page.goto(
+                    "https://www.linkedin.com/feed/",
+                    wait_until="domcontentloaded",
+                    timeout=30000,
+                )
+                HumanBrowser.human_delay(1500, 2500)
+            except Exception:
+                pass
+
     if not _editor_is_open(page):
         _dismiss_overlays(page)
         if _page_closed(page):
