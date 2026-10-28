@@ -33789,3 +33789,45 @@ So the work has to hold up. Hosting on Cloudflare. A check that pings every site
 
 #SmallBusiness #WebDesign #LocalBusiness #Referrals #Brooklyn #NYC #SmallBiz #Freelance #Entrepreneur #WebDevelopment #ShopLocal #WordOfMouth #Websites #BusinessTips #SoloBuilder #Community #BuildInPublic
 ---
+[2026-10-28 13:15:25 UTC]
+record_id=9b309f13508ff3dc1f3671c60d48d8b6040c4301f4b42341150381fde00bb6c1
+scheduled_for=2026-10-22 10:45
+Review your own pull request before you ask anyone else to. I do it in the browser, not the editor, and I've never made it through without changing something.
+
+Reading a diff in the review view is a different job from reading a file. On the page I notice what's missing. No test for the empty case. A variable name that makes sense with the surrounding code in view.
+
+I also write the description as if I'm the reviewer, which means saying why and not what. What changed is visible. Why is the part that has to be typed out.
+
+Ten minutes of this has removed most of the comments I used to get, which is a strange way to measure it but it's the honest one.
+
+I read mine in the review view every time, and I always change something. Nobody else has to read your diff. That's why you should read it first.
+#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Coding #Developer #Git #Programming #BestPractices #Craft #Teamwork #Startup #SoloBuilder #Learning #Quality
+---
+[2026-10-28 13:15:25 UTC]
+record_id=7918347c42586269dc97517141b547ef4eae84aab77fbd3c9dff9e72c8e22a18
+scheduled_for=2026-10-22 11:00
+I inherited a function of a thousand lines and learned more from it than from any architecture book. It had fourteen parameters and every one of them had arrived for a reason.
+
+Reading it top to bottom took an hour. What kept me going was writing down what each branch was for, and by the end I had a map with four sections, which is how many functions it should have been.
+
+Nobody wrote it that way in one sitting. Somebody added a case every few months for three years, and each addition was sensible. There was no moment where anyone decided to build a monster.
+
+That's the lesson. Complexity arrives one reasonable change at a time, and the defense is noticing when a function starts growing sections.
+
+I split it into five pieces over two days. Same behavior, and the diff was whitespace moved around. Four sections. Five functions. Worth two days.
+#AI #BuildInPublic #VibeCoding #tech #Refactoring #Software #Engineering #LegacyCode #Coding #Developer #Programming #CleanCode #TechDebt #Architecture #Startup #Learning #Craft #BestPractices
+---
+[2026-10-28 13:15:25 UTC]
+record_id=f96e92778d77461ced0a508b30c7e5396210832c5b3d884502b3e2e6903dc84a
+scheduled_for=2026-10-22 11:15
+Being the bottleneck feels like being needed and it's the most expensive feeling in a small company. I held every decision for a year and called it quality control.
+
+The cost showed up as waiting. A design choice would sit for three days because I hadn't looked at it, and the person who raised it had already moved to something else by the time I answered.
+
+What fixed it was writing down which decisions are mine. Pricing, the data model, anything that touches customer data. Everything else belongs to whoever is closest to the problem.
+
+Nobody has made a call I regretted since. Two were different from mine and both were better, because the person making them knew more about the details than I did.
+
+I decide three things a week now. That's it. Deciding fewer things is a skill. I'm better at the ones I keep, because I'm not tired when they arrive.
+#AI #BuildInPublic #VibeCoding #tech #Startup #Management #Leadership #Founder #Teamwork #Software #Business #SoloBuilder #Delegation #Learning #Growth #Strategy #Culture #Productivity
+---

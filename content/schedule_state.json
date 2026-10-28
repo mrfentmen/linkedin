@@ -22057,8 +22057,9 @@
       "content": "Review your own pull request before you ask anyone else to. I do it in the browser, not the editor, and I've never made it through without changing something.\n\nReading a diff in the review view is a different job from reading a file. On the page I notice what's missing. No test for the empty case. A variable name that makes sense with the surrounding code in view.\n\nI also write the description as if I'm the reviewer, which means saying why and not what. What changed is visible. Why is the part that has to be typed out.\n\nTen minutes of this has removed most of the comments I used to get, which is a strange way to measure it but it's the honest one.\n\nI read mine in the review view every time, and I always change something. Nobody else has to read your diff. That's why you should read it first.\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Coding #Developer #Git #Programming #BestPractices #Craft #Teamwork #Startup #SoloBuilder #Learning #Quality",
       "schedule_time": "2026-10-22 10:45",
       "error": "",
-      "updated_at": "2026-10-17T03:37:00+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:15:25+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "7918347c42586269dc97517141b547ef4eae84aab77fbd3c9dff9e72c8e22a18": {
       "record_id": "7918347c42586269dc97517141b547ef4eae84aab77fbd3c9dff9e72c8e22a18",
@@ -22066,8 +22067,9 @@
       "content": "I inherited a function of a thousand lines and learned more from it than from any architecture book. It had fourteen parameters and every one of them had arrived for a reason.\n\nReading it top to bottom took an hour. What kept me going was writing down what each branch was for, and by the end I had a map with four sections, which is how many functions it should have been.\n\nNobody wrote it that way in one sitting. Somebody added a case every few months for three years, and each addition was sensible. There was no moment where anyone decided to build a monster.\n\nThat's the lesson. Complexity arrives one reasonable change at a time, and the defense is noticing when a function starts growing sections.\n\nI split it into five pieces over two days. Same behavior, and the diff was whitespace moved around. Four sections. Five functions. Worth two days.\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Software #Engineering #LegacyCode #Coding #Developer #Programming #CleanCode #TechDebt #Architecture #Startup #Learning #Craft #BestPractices",
       "schedule_time": "2026-10-22 11:00",
       "error": "",
-      "updated_at": "2026-10-17T03:38:30+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:15:25+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "f96e92778d77461ced0a508b30c7e5396210832c5b3d884502b3e2e6903dc84a": {
       "record_id": "f96e92778d77461ced0a508b30c7e5396210832c5b3d884502b3e2e6903dc84a",
@@ -22075,8 +22077,9 @@
       "content": "Being the bottleneck feels like being needed and it's the most expensive feeling in a small company. I held every decision for a year and called it quality control.\n\nThe cost showed up as waiting. A design choice would sit for three days because I hadn't looked at it, and the person who raised it had already moved to something else by the time I answered.\n\nWhat fixed it was writing down which decisions are mine. Pricing, the data model, anything that touches customer data. Everything else belongs to whoever is closest to the problem.\n\nNobody has made a call I regretted since. Two were different from mine and both were better, because the person making them knew more about the details than I did.\n\nI decide three things a week now. That's it. Deciding fewer things is a skill. I'm better at the ones I keep, because I'm not tired when they arrive.\n#AI #BuildInPublic #VibeCoding #tech #Startup #Management #Leadership #Founder #Teamwork #Software #Business #SoloBuilder #Delegation #Learning #Growth #Strategy #Culture #Productivity",
       "schedule_time": "2026-10-22 11:15",
       "error": "",
-      "updated_at": "2026-10-17T03:40:01+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:15:25+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "0e11c9c19c1d2a0f8a75be56a885ba6521c227398655e8c0349d50539ca13d7c": {
       "record_id": "0e11c9c19c1d2a0f8a75be56a885ba6521c227398655e8c0349d50539ca13d7c",
@@ -22177,6 +22180,33 @@
       "updated_at": "2026-10-17T04:51:17+00:00",
       "attempts": 2,
       "finalized": true
+    },
+    "6969ae8e05ed111952343ec2224049c77dbb1b3a7f62d815041264641e9ee43d": {
+      "record_id": "6969ae8e05ed111952343ec2224049c77dbb1b3a7f62d815041264641e9ee43d",
+      "status": "failed",
+      "content": "Naming a product is a marketing decision, so I stopped treating it as a technical one. My first name described the mechanism and nobody remembered it, including me when I answered the phone.\n\nThe test I use now is on paper. Say the name in a sentence to someone who doesn't work in software. If they ask you to repeat it, it's the wrong name.\n\nShort, pronounceable, and hard to misspell. Those three matter more than meaning, because meaning is what the product earns over time and the name is a handle.\n\nI also check the domain and the obvious social handles before falling in love, and I check whether the word sounds like something worse in another language. Two of my favourites failed that last test.\n\nThe name is a handle. I test mine on three people. Two minutes each. Pick one your customers can say out loud at a meeting and move on to the thing they'll talk about.\n#AI #BuildInPublic #VibeCoding #tech #Branding #Startup #Naming #Product #Marketing #Business #Founder #SoloBuilder #IndieHacker #Strategy #Learning #Growth #ProductDevelopment #Design",
+      "schedule_time": "2026-10-28 09:00",
+      "error": "",
+      "updated_at": "2026-10-28T13:16:01+00:00",
+      "attempts": 2
+    },
+    "fee749a5ee03401bf40e23c9e756adcde98917cf63046ddc381516552d67a1f8": {
+      "record_id": "fee749a5ee03401bf40e23c9e756adcde98917cf63046ddc381516552d67a1f8",
+      "status": "failed",
+      "content": "Manage energy rather than time. I moved my hardest work to the morning and my output went up without changing a single hour of my schedule.\n\nThe old plan was to fill every block with something useful, and it didn't work. What I never accounted for was that a hard problem at four in the afternoon takes me three times as long as the same problem at nine.\n\nSo the calendar has two kinds of blocks now. Thinking blocks before noon, three hours, no meetings. Everything else after, which includes email, support, invoices, and code I could write half asleep.\n\nThe surprising effect was on how I felt about the week. I stopped ending days with the important thing untouched, which used to happen every single time.\n\nSame hours. Different order. The order was the whole problem. I don't move those blocks for anything. Not even for a customer, unless it's an outage.\n#AI #BuildInPublic #VibeCoding #tech #Productivity #DeepWork #Developer #Founder #Habits #Startup #SoloBuilder #Focus #Learning #TimeManagement #Mindset #Health #Craft #Work",
+      "schedule_time": "2026-10-28 09:15",
+      "error": "",
+      "updated_at": "2026-10-28T13:16:29+00:00",
+      "attempts": 2
+    },
+    "46378901bd14ab8e27f248f976a232205fb24d936e70b19bb68de4d52dd00340": {
+      "record_id": "46378901bd14ab8e27f248f976a232205fb24d936e70b19bb68de4d52dd00340",
+      "status": "failed",
+      "content": "Stopping a project is a decision you should make on a date you chose in advance. I keep a review date next to every new thing, and I hold to it.\n\nThe review asks one question. Is anyone using this who isn't me. If the answer is no and the project is past its date, it stops. No sunk cost argument, no waiting for a good month, no third month of maybe.\n\nTwo of my last four ideas died on their review date. Both felt premature when I read the answer, and neither has come up since.\n\nThe date is what makes it work. Deciding in the moment means deciding while I'm still attached, because I built the thing and I want it to be right.\n\nPut the date in when you start. Let past you make the call. I do it in a note next to the first commit. Four ideas. Two alive. That's a fine record.\n#AI #BuildInPublic #VibeCoding #tech #Startup #SoloBuilder #IndieHacker #Strategy #DecisionMaking #Founder #Business #Product #SideProject #Learning #Focus #Growth #Mindset #Planning",
+      "schedule_time": "2026-10-28 09:30",
+      "error": "",
+      "updated_at": "2026-10-28T13:16:57+00:00",
+      "attempts": 2
     }
   }
 }
