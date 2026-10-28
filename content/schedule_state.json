@@ -22057,8 +22057,9 @@
       "content": "Review your own pull request before you ask anyone else to. I do it in the browser, not the editor, and I've never made it through without changing something.\n\nReading a diff in the review view is a different job from reading a file. On the page I notice what's missing. No test for the empty case. A variable name that makes sense with the surrounding code in view.\n\nI also write the description as if I'm the reviewer, which means saying why and not what. What changed is visible. Why is the part that has to be typed out.\n\nTen minutes of this has removed most of the comments I used to get, which is a strange way to measure it but it's the honest one.\n\nI read mine in the review view every time, and I always change something. Nobody else has to read your diff. That's why you should read it first.\n#AI #BuildInPublic #VibeCoding #tech #CodeReview #Software #Engineering #Coding #Developer #Git #Programming #BestPractices #Craft #Teamwork #Startup #SoloBuilder #Learning #Quality",
       "schedule_time": "2026-10-22 10:45",
       "error": "",
-      "updated_at": "2026-10-17T03:37:00+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:28:42+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "7918347c42586269dc97517141b547ef4eae84aab77fbd3c9dff9e72c8e22a18": {
       "record_id": "7918347c42586269dc97517141b547ef4eae84aab77fbd3c9dff9e72c8e22a18",
@@ -22066,8 +22067,9 @@
       "content": "I inherited a function of a thousand lines and learned more from it than from any architecture book. It had fourteen parameters and every one of them had arrived for a reason.\n\nReading it top to bottom took an hour. What kept me going was writing down what each branch was for, and by the end I had a map with four sections, which is how many functions it should have been.\n\nNobody wrote it that way in one sitting. Somebody added a case every few months for three years, and each addition was sensible. There was no moment where anyone decided to build a monster.\n\nThat's the lesson. Complexity arrives one reasonable change at a time, and the defense is noticing when a function starts growing sections.\n\nI split it into five pieces over two days. Same behavior, and the diff was whitespace moved around. Four sections. Five functions. Worth two days.\n#AI #BuildInPublic #VibeCoding #tech #Refactoring #Software #Engineering #LegacyCode #Coding #Developer #Programming #CleanCode #TechDebt #Architecture #Startup #Learning #Craft #BestPractices",
       "schedule_time": "2026-10-22 11:00",
       "error": "",
-      "updated_at": "2026-10-17T03:38:30+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:28:43+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "f96e92778d77461ced0a508b30c7e5396210832c5b3d884502b3e2e6903dc84a": {
       "record_id": "f96e92778d77461ced0a508b30c7e5396210832c5b3d884502b3e2e6903dc84a",
@@ -22075,8 +22077,9 @@
       "content": "Being the bottleneck feels like being needed and it's the most expensive feeling in a small company. I held every decision for a year and called it quality control.\n\nThe cost showed up as waiting. A design choice would sit for three days because I hadn't looked at it, and the person who raised it had already moved to something else by the time I answered.\n\nWhat fixed it was writing down which decisions are mine. Pricing, the data model, anything that touches customer data. Everything else belongs to whoever is closest to the problem.\n\nNobody has made a call I regretted since. Two were different from mine and both were better, because the person making them knew more about the details than I did.\n\nI decide three things a week now. That's it. Deciding fewer things is a skill. I'm better at the ones I keep, because I'm not tired when they arrive.\n#AI #BuildInPublic #VibeCoding #tech #Startup #Management #Leadership #Founder #Teamwork #Software #Business #SoloBuilder #Delegation #Learning #Growth #Strategy #Culture #Productivity",
       "schedule_time": "2026-10-22 11:15",
       "error": "",
-      "updated_at": "2026-10-17T03:40:01+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:28:43+00:00",
+      "attempts": 2,
+      "finalized": true
     },
     "0e11c9c19c1d2a0f8a75be56a885ba6521c227398655e8c0349d50539ca13d7c": {
       "record_id": "0e11c9c19c1d2a0f8a75be56a885ba6521c227398655e8c0349d50539ca13d7c",
@@ -22177,6 +22180,51 @@
       "updated_at": "2026-10-17T04:51:17+00:00",
       "attempts": 2,
       "finalized": true
+    },
+    "fbc187c66310004516c9ba9dff4f0b9dae241b7af10693e5771289970fa2cea0": {
+      "record_id": "fbc187c66310004516c9ba9dff4f0b9dae241b7af10693e5771289970fa2cea0",
+      "status": "failed",
+      "content": "The hardest question I get about my job is what the product does.\n\nPeople hear AI and finance in the same sentence and assume we predict stocks. We don't. AskApe is a research tool. You ask it a question in plain English about a company, a portfolio, or a filing, and it pulls the pieces together and shows you where each one came from.\n\nThat sounds like a small thing until you've done the alternative. I've spent an evening working out what a company earns after one time charges, across 3 tabs, 2 PDFs, and a search result from 2021. The tool does that part in seconds. The judgement stays mine, which is where I want it.\n\nWhat we don't do matters as much. We don't take custody of anyone's money. We don't place trades on our own. We don't tell you what to buy. Every one of those limits is deliberate, and they're the reason I'm comfortable working here.\n\nI've been in products where the pitch was bigger than the thing. This one is the other way round.\n\n#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Developer #Software #Engineering #tech #Coding #Product #Startup #science #research #Learning #DeepTech #ProductManagement #MachineLearning",
+      "schedule_time": "2026-10-28 09:00",
+      "error": "",
+      "updated_at": "2026-10-28T13:29:21+00:00",
+      "attempts": 2
+    },
+    "e597b385dfb185a866fbf614be1ba2b4fb096e4cce869264632e36ad55a024dd": {
+      "record_id": "e597b385dfb185a866fbf614be1ba2b4fb096e4cce869264632e36ad55a024dd",
+      "status": "failed",
+      "content": "I use the thing we build for my own positions, which is either good discipline or a conflict of interest depending on who you ask.\n\nBoth, probably. What it does for me is shrink the boring part. I used to keep a note file with 4 columns and a prayer. Now I connect an account, ask what changed this week, and get an answer that cites the numbers instead of summarising vibes.\n\nThe part I care about is that it doesn't flatter me. It doesn't. It will tell me a position I'm proud of has done nothing for 8 months while a boring one carried the whole year. I've never had a tool do that, because most of them are trying to keep me engaged.\n\nUsing your own product is the cheapest review you'll get. Nobody does it. I found 3 confusing screens in the first week just by being a normal user instead of the person who built them.\n\nI don't think you can build for investors without being one. Even a bad one.\n\n#AskApe #AI #fintech #Investing #geopolitics #conflict #tech #Developer #Software #Engineering #Coding #Product #Startup #RetailInvestor #Trading #Learning #DeepTech #PortfolioManagement #ProductManagement #FinancialLiteracy",
+      "schedule_time": "2026-10-28 09:15",
+      "error": "",
+      "updated_at": "2026-10-28T13:29:48+00:00",
+      "attempts": 2
+    },
+    "a5adffe37298ba596b97baec5a511e8a446caf90684eb0c561c893e216e3dd20": {
+      "record_id": "a5adffe37298ba596b97baec5a511e8a446caf90684eb0c561c893e216e3dd20",
+      "status": "failed",
+      "content": "The tools that people need for this stuff have always existed. They just cost more than a car.\n\nWhen I started here I assumed the job was making a cheaper version of a terminal. It isn't. It's making the same information usable by somebody who doesn't have 3 hours and a finance degree to spare. Those are different problems and the second one is much harder.\n\nA professional can read a dense table and know within 10 seconds which numbers matter, because they have seen a thousand tables like it. Everybody else sees 40 numbers and no idea which 2 are the story. So most of the work is not fetching data. It's deciding what to leave out and what to explain in the same breath.\n\nI find that part interesting. Anyone can render a table. Explaining why the number moved, and what it doesn't tell you, is the product.\n\nI don't think retail investors are less serious. They have less time. Good tools respect that.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Product #Software #Developer #Engineering #Coding #Startup #Design #UX #BuildInPublic #VibeCoding #Learning #DeepTech #ProductManagement",
+      "schedule_time": "2026-10-28 09:30",
+      "error": "",
+      "updated_at": "2026-10-28T13:30:17+00:00",
+      "attempts": 2
+    },
+    "96efd47a2a3cb805b901a3c5ac7dd90c5f85cd88c76ddea59cad43edd2153aa0": {
+      "record_id": "96efd47a2a3cb805b901a3c5ac7dd90c5f85cd88c76ddea59cad43edd2153aa0",
+      "status": "failed",
+      "content": "Every feature request we get can be traced back to a sentence somebody didn't understand.\n\nNot a missing number. A missing explanation. So we spend a lot of time on plain English, and I mean that as an engineering constraint rather than a tone of voice. If a screen needs a glossary, it's broken.\n\nThe test I use is whether my dad would get it. He's not stupid, he just doesn't work in finance, and he's not going to look up \"adjusted\" before deciding whether he cares. If the answer depends on him knowing one industry word, I've shipped a bad answer.\n\nI'm still surprised by how much harder simple is. Jargon is a shortcut. It assumes you already know. Writing \"the company made less per sale than last quarter\" takes 4 more drafts than \"margin compression\".\n\nI have never once looked at a finance tool and wished it were more technical. Not once.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #UX #Product #Design #Software #Developer #Engineering #Coding #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Communication",
+      "schedule_time": "2026-10-28 09:45",
+      "error": "",
+      "updated_at": "2026-10-28T13:30:45+00:00",
+      "attempts": 2
+    },
+    "cd7703d6098ab2fe64d2181a538f84d55d677088426f092dbebe68037aa4b44c": {
+      "record_id": "cd7703d6098ab2fe64d2181a538f84d55d677088426f092dbebe68037aa4b44c",
+      "status": "failed",
+      "content": "A demo of an AI finance tool and the thing you'd trust with your portfolio are about 90 percent different work.\n\nI learned that here. Making a model answer a question is a weekend. Making it answer the same question the same way, with the right source attached, at 8:30 in the morning on a heavy news day, is the job. Demos don't have bad days. Products do.\n\nSo I spend my time on the unglamorous half. What happens when a provider is slow. What happens when a filing lands 10 minutes late. What the screen looks like when we have nothing to say, because that's a real answer and it shouldn't look like an error.\n\nI don't post about that work. It's also the reason the impressive part is worth anything.\n\nI've shipped features that looked great in a demo and I'd rather not do it again. Trust is built in the boring cases.\n\n#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Engineering #Software #Developer #Coding #Reliability #Product #Startup #Investing #RetailInvestor #Learning #DeepTech #Quality #ProductManagement #Testing",
+      "schedule_time": "2026-10-28 10:00",
+      "error": "",
+      "updated_at": "2026-10-28T13:31:13+00:00",
+      "attempts": 2
     }
   }
 }
