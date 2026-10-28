@@ -22187,8 +22187,8 @@
       "content": "The hardest question I get about my job is what the product does.\n\nPeople hear AI and finance in the same sentence and assume we predict stocks. We don't. AskApe is a research tool. You ask it a question in plain English about a company, a portfolio, or a filing, and it pulls the pieces together and shows you where each one came from.\n\nThat sounds like a small thing until you've done the alternative. I've spent an evening working out what a company earns after one time charges, across 3 tabs, 2 PDFs, and a search result from 2021. The tool does that part in seconds. The judgement stays mine, which is where I want it.\n\nWhat we don't do matters as much. We don't take custody of anyone's money. We don't place trades on our own. We don't tell you what to buy. Every one of those limits is deliberate, and they're the reason I'm comfortable working here.\n\nI've been in products where the pitch was bigger than the thing. This one is the other way round.\n\n#AskApe #AI #fintech #Investing #Trading #RetailInvestor #FinancialLiteracy #Developer #Software #Engineering #tech #Coding #Product #Startup #science #research #Learning #DeepTech #ProductManagement #MachineLearning",
       "schedule_time": "2026-10-28 09:00",
       "error": "",
-      "updated_at": "2026-10-28T13:29:21+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:35:15+00:00",
+      "attempts": 4
     },
     "e597b385dfb185a866fbf614be1ba2b4fb096e4cce869264632e36ad55a024dd": {
       "record_id": "e597b385dfb185a866fbf614be1ba2b4fb096e4cce869264632e36ad55a024dd",
@@ -22196,8 +22196,8 @@
       "content": "I use the thing we build for my own positions, which is either good discipline or a conflict of interest depending on who you ask.\n\nBoth, probably. What it does for me is shrink the boring part. I used to keep a note file with 4 columns and a prayer. Now I connect an account, ask what changed this week, and get an answer that cites the numbers instead of summarising vibes.\n\nThe part I care about is that it doesn't flatter me. It doesn't. It will tell me a position I'm proud of has done nothing for 8 months while a boring one carried the whole year. I've never had a tool do that, because most of them are trying to keep me engaged.\n\nUsing your own product is the cheapest review you'll get. Nobody does it. I found 3 confusing screens in the first week just by being a normal user instead of the person who built them.\n\nI don't think you can build for investors without being one. Even a bad one.\n\n#AskApe #AI #fintech #Investing #geopolitics #conflict #tech #Developer #Software #Engineering #Coding #Product #Startup #RetailInvestor #Trading #Learning #DeepTech #PortfolioManagement #ProductManagement #FinancialLiteracy",
       "schedule_time": "2026-10-28 09:15",
       "error": "",
-      "updated_at": "2026-10-28T13:29:48+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:35:43+00:00",
+      "attempts": 4
     },
     "a5adffe37298ba596b97baec5a511e8a446caf90684eb0c561c893e216e3dd20": {
       "record_id": "a5adffe37298ba596b97baec5a511e8a446caf90684eb0c561c893e216e3dd20",
@@ -22205,8 +22205,8 @@
       "content": "The tools that people need for this stuff have always existed. They just cost more than a car.\n\nWhen I started here I assumed the job was making a cheaper version of a terminal. It isn't. It's making the same information usable by somebody who doesn't have 3 hours and a finance degree to spare. Those are different problems and the second one is much harder.\n\nA professional can read a dense table and know within 10 seconds which numbers matter, because they have seen a thousand tables like it. Everybody else sees 40 numbers and no idea which 2 are the story. So most of the work is not fetching data. It's deciding what to leave out and what to explain in the same breath.\n\nI find that part interesting. Anyone can render a table. Explaining why the number moved, and what it doesn't tell you, is the product.\n\nI don't think retail investors are less serious. They have less time. Good tools respect that.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #Product #Software #Developer #Engineering #Coding #Startup #Design #UX #BuildInPublic #VibeCoding #Learning #DeepTech #ProductManagement",
       "schedule_time": "2026-10-28 09:30",
       "error": "",
-      "updated_at": "2026-10-28T13:30:17+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:36:12+00:00",
+      "attempts": 4
     },
     "96efd47a2a3cb805b901a3c5ac7dd90c5f85cd88c76ddea59cad43edd2153aa0": {
       "record_id": "96efd47a2a3cb805b901a3c5ac7dd90c5f85cd88c76ddea59cad43edd2153aa0",
@@ -22214,8 +22214,8 @@
       "content": "Every feature request we get can be traced back to a sentence somebody didn't understand.\n\nNot a missing number. A missing explanation. So we spend a lot of time on plain English, and I mean that as an engineering constraint rather than a tone of voice. If a screen needs a glossary, it's broken.\n\nThe test I use is whether my dad would get it. He's not stupid, he just doesn't work in finance, and he's not going to look up \"adjusted\" before deciding whether he cares. If the answer depends on him knowing one industry word, I've shipped a bad answer.\n\nI'm still surprised by how much harder simple is. Jargon is a shortcut. It assumes you already know. Writing \"the company made less per sale than last quarter\" takes 4 more drafts than \"margin compression\".\n\nI have never once looked at a finance tool and wished it were more technical. Not once.\n\n#AskApe #AI #fintech #Investing #RetailInvestor #FinancialLiteracy #tech #UX #Product #Design #Software #Developer #Engineering #Coding #Startup #BuildInPublic #VibeCoding #Learning #DeepTech #Communication",
       "schedule_time": "2026-10-28 09:45",
       "error": "",
-      "updated_at": "2026-10-28T13:30:45+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:36:41+00:00",
+      "attempts": 4
     },
     "cd7703d6098ab2fe64d2181a538f84d55d677088426f092dbebe68037aa4b44c": {
       "record_id": "cd7703d6098ab2fe64d2181a538f84d55d677088426f092dbebe68037aa4b44c",
@@ -22223,8 +22223,8 @@
       "content": "A demo of an AI finance tool and the thing you'd trust with your portfolio are about 90 percent different work.\n\nI learned that here. Making a model answer a question is a weekend. Making it answer the same question the same way, with the right source attached, at 8:30 in the morning on a heavy news day, is the job. Demos don't have bad days. Products do.\n\nSo I spend my time on the unglamorous half. What happens when a provider is slow. What happens when a filing lands 10 minutes late. What the screen looks like when we have nothing to say, because that's a real answer and it shouldn't look like an error.\n\nI don't post about that work. It's also the reason the impressive part is worth anything.\n\nI've shipped features that looked great in a demo and I'd rather not do it again. Trust is built in the boring cases.\n\n#AskApe #AI #fintech #BuildInPublic #VibeCoding #tech #Engineering #Software #Developer #Coding #Reliability #Product #Startup #Investing #RetailInvestor #Learning #DeepTech #Quality #ProductManagement #Testing",
       "schedule_time": "2026-10-28 10:00",
       "error": "",
-      "updated_at": "2026-10-28T13:31:13+00:00",
-      "attempts": 2
+      "updated_at": "2026-10-28T13:37:08+00:00",
+      "attempts": 4
     }
   }
 }
