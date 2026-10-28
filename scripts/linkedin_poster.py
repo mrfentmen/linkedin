@@ -91,6 +91,10 @@ LINKEDIN_CHAR_LIMIT = 3000
 # The clickable area that opens the post composer on the feed page.
 # LinkedIn uses a <div> with aria-label="Start a post" (confirmed July 2026).
 POST_TRIGGER_SELECTORS = [
+    # 2026-10 markup: the feed trigger is a <div> with a stable id wrapping
+    # <p>Start a post</p>.  It no longer carries an aria-label at all.
+    '[id="draft-text-replaceable-component"]',
+    'p:text-is("Start a post")',
     'div[aria-label="Start a post"]',
     'a[href*="/preload/sharebox/"]',
     'a:has-text("Start a post")',
@@ -134,7 +138,13 @@ SUBMIT_SELECTORS = [
 # and a final button labeled "Confirm".  Legacy selectors are kept as
 # fallbacks for older composer versions.
 SCHEDULE_CLOCK_SELECTORS = [
-    # Current composer markup: a span wraps <svg id="clock-medium">.
+    # 2026-10 markup: the footer clock is a <span> (not a button, no
+    # aria-label) wrapping <svg id="clock-outline-medium"> plus the count.
+    # The icon id changed from "clock-medium" to "clock-outline-medium".
+    'span:has(> svg#clock-outline-medium)',
+    'span:has(> svg[id^="clock-outline-medium"])',
+    'svg#clock-outline-medium',
+    # Older composer markup: a span wraps <svg id="clock-medium">.
     # The generated class names are unstable, so use the semantic icon id.
     'span:has(> svg#clock-medium)',
     'button:has(svg#clock-medium)',
@@ -453,7 +463,11 @@ def _schedule_post(page, schedule_time: str) -> bool:
         # Raw-JS scan: ANY element wrapping the clock-medium icon.
         try:
             hit = page.evaluate("""() => {
-                const icons = document.querySelectorAll('svg[data-test-icon="clock-medium"], svg use[href="#clock-medium"]');
+                const icons = document.querySelectorAll(
+                    'svg#clock-outline-medium, svg[id^="clock-outline-medium"], ' +
+                    'svg#clock-medium, svg[data-test-icon="clock-medium"], ' +
+                    'svg use[href="#clock-medium"]'
+                );
                 for (const svg of icons) {
                     const el = svg.closest('button, a, [role="button"]') || svg.parentElement;
                     if (!el) continue;
@@ -805,6 +819,52 @@ def _editor_is_open(page) -> bool:
         return False
 
 
+def _session_expired(page) -> bool:
+    """True when LinkedIn has bounced us to a login/authwall page.
+
+    The compose page renders its shell before the redirect lands, so the URL
+    read immediately after goto can still say /sharing/compose while the
+    account is already signed out.  Callers must let the page settle and then
+    ask this, instead of trusting the first URL.
+    """
+    if _page_closed(page):
+        return True
+    try:
+        url = page.url.lower()
+    except Exception:
+        return True
+    if any(marker in url for marker in ("/login", "authwall", "checkpoint", "signup")):
+        return True
+    try:
+        return page.locator('input[name="session_key"]:visible').count() > 0
+    except Exception:
+        return False
+
+
+def _wait_for_linkedin_ready(page, timeout_ms: int = 10000) -> bool:
+    """Wait for the composer, or for a login redirect, before driving the UI.
+
+    Returns False when the stored session is signed out.  Without this the
+    poster reported a dozen misleading "could not find button" errors and kept
+    retrying the same dead session instead of naming the real problem.
+    """
+    import time as _t
+    deadline = _t.time() + timeout_ms / 1000
+    while _t.time() < deadline:
+        if _session_expired(page):
+            return False
+        try:
+            if page.locator('div[contenteditable="true"]:visible').count() > 0:
+                return True
+        except Exception:
+            pass
+        try:
+            page.wait_for_timeout(250)
+        except Exception:
+            break
+    return not _session_expired(page)
+
+
 def _safe_screenshot(page, name: str) -> None:
     """Diagnostic screenshot that never raises if the page has closed."""
     if _page_closed(page):
@@ -1069,8 +1129,11 @@ def post_to_linkedin(contents: list[str], *, dry_run: bool = False, headless: bo
             page = browser.new_page()
             page.goto("https://www.linkedin.com/sharing/compose", wait_until="domcontentloaded")
             HumanBrowser.human_delay(400, 800)
-            if "login" in page.url.lower() or "authwall" in page.url.lower() or "checkpoint" in page.url.lower():
-                error = "Redirected to login — storage.json session expired"
+            if not _wait_for_linkedin_ready(page):
+                error = (
+                    "Redirected to login — storage.json session expired. "
+                    "Run scripts/pre_login.py to sign in again."
+                )
                 _log(f"❌ {error}")
                 for content, schedule_time in chunk:
                     result = PostResult(PostStatus.FAILED, content, schedule_time, error)

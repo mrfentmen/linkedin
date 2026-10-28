@@ -22,6 +22,7 @@ Flow:
 
 from __future__ import annotations
 
+import os
 import random
 from pathlib import Path
 from typing import Optional
@@ -45,7 +46,7 @@ except ImportError:  # pragma: no cover
 # user_agent, unlike launch_persistent_context.
 DEFAULT_USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
 )
 
 
@@ -72,6 +73,10 @@ class HumanBrowser:
         self._browser: Optional[Browser] = None
         self._context: Optional[BrowserContext] = None
         self._storage_path = profile_dir / "storage.json"
+        # True when attached to an already-running browser over CDP.  In that
+        # mode the context belongs to someone else, so it must not be written
+        # back to storage.json or closed on exit.
+        self._attached = False
 
     # ------------------------------------------------------------------
     # context manager
@@ -79,6 +84,21 @@ class HumanBrowser:
 
     def __enter__(self) -> "HumanBrowser":
         self.profile_dir.mkdir(parents=True, exist_ok=True)
+
+        cdp_url = os.environ.get("LINKEDIN_CDP_URL", "").strip()
+        if cdp_url:
+            # Attach to a browser that is already signed in.  Launching a new
+            # browser with storage.json kept losing the LinkedIn session, so a
+            # live browser is the reliable path.
+            self._playwright = sync_playwright().start()
+            self._browser = self._playwright.chromium.connect_over_cdp(cdp_url)
+            if not self._browser.contexts:
+                raise RuntimeError(
+                    f"Attached browser at {cdp_url} has no context to reuse."
+                )
+            self._context = self._browser.contexts[0]
+            self._attached = True
+            return self
 
         self._playwright = sync_playwright().start()
 
@@ -122,13 +142,17 @@ class HumanBrowser:
 
     def __exit__(self, exc_type, exc, tb) -> None:
         try:
-            if self._context:
-                # Persist cookies so the next run picks them up.
+            if self._context and not self._attached:
+                # Persist cookies so the next run picks them up.  Never in
+                # attached mode: the context is a live browser we do not own.
                 self._context.storage_state(path=str(self._storage_path))
                 self._context.close()
         finally:
-            if self._browser:
-                self._browser.close()
+            if self._browser and not self._attached:
+                try:
+                    self._browser.close()
+                except Exception:
+                    pass
             if self._playwright:
                 self._playwright.stop()
 

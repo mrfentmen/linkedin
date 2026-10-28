@@ -50,9 +50,13 @@ COMPOSE_URL = "https://www.linkedin.com/sharing/compose"
 SENT_FILE = PKG_ROOT / "content" / "posts_sent.txt"
 OUT_DIR = PKG_ROOT / "logs"
 
-# The composer's clock.  Its <svg> id is stable; the span wrapping it is the
-# clickable node, and it is not a <button>.
+# The composer's clock.  Its <svg> id is stable per composer version; the
+# span wrapping it is the clickable node, and it is not a <button>.  LinkedIn
+# renamed the icon from "clock-medium" to "clock-outline-medium" in 2026-10.
 CLOCK_SELECTORS = [
+    "span:has(> svg#clock-outline-medium)",
+    "span:has(> svg[id^=\"clock-outline-medium\"])",
+    "svg#clock-outline-medium",
     "span:has(> svg#clock-medium)",
     "svg#clock-medium",
 ]

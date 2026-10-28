@@ -20,7 +20,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from linkedin_poster import (  # noqa: E402
     CONFIRMED,
+    POST_TRIGGER_SELECTORS,
     REJECTED,
+    SCHEDULE_CLOCK_SELECTORS,
     SCHEDULED_LABEL_RE,
     SCHEDULED_TAB_SELECTORS,
     UNKNOWN,
@@ -82,3 +84,26 @@ def test_label_regex_ignores_a_label_without_a_count():
 def test_tab_selectors_prefer_the_count_label():
     """The first selector must target 'Scheduled (N)', not a bare 'Scheduled'."""
     assert SCHEDULED_TAB_SELECTORS[0] == 'a:has-text("Scheduled (")'
+
+
+def test_the_2026_10_start_a_post_markup_is_matched():
+    """LinkedIn dropped the aria-label from the feed trigger in 2026-10.
+
+    The trigger is now a <div id="draft-text-replaceable-component"> wrapping
+    <p>Start a post</p>.  Without the id and the exact-text selector the
+    composer never opens and every run fails on the same line.
+    """
+    assert '[id="draft-text-replaceable-component"]' in POST_TRIGGER_SELECTORS
+    assert 'p:text-is("Start a post")' in POST_TRIGGER_SELECTORS
+
+
+def test_the_2026_10_clock_icon_is_tried_before_the_old_one():
+    """The footer clock became svg#clock-outline-medium (was clock-medium).
+
+    Order matters: the outline icon is what the live composer renders now, so
+    it has to be tried before the legacy id or a stale first match wins.
+    """
+    new = 'span:has(> svg#clock-outline-medium)'
+    old = 'span:has(> svg#clock-medium)'
+    assert new in SCHEDULE_CLOCK_SELECTORS
+    assert SCHEDULE_CLOCK_SELECTORS.index(new) < SCHEDULE_CLOCK_SELECTORS.index(old)
