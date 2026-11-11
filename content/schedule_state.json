@@ -22558,6 +22558,33 @@
       "error": "",
       "updated_at": "2026-11-10T21:12:05+00:00",
       "attempts": 6
+    },
+    "13f4af2fa3513e7a2e6da0204a07484f0ec6e187085515ca89d61627bcafc76e": {
+      "record_id": "13f4af2fa3513e7a2e6da0204a07484f0ec6e187085515ca89d61627bcafc76e",
+      "status": "failed",
+      "content": "Naming a product is a marketing decision, so I stopped treating it as a technical one. My first name described the mechanism and nobody remembered it, including me when I answered the phone.\n\nThe test I use now is on paper. Say the name in a sentence to someone who doesn't work in software. If they ask you to repeat it, it's the wrong name.\n\nShort, pronounceable, and hard to misspell. Those three matter more than meaning, because meaning is what the product earns over time and the name is a handle.\n\nI also check the domain and the obvious social handles before falling in love, and I check whether the word sounds like something worse in another language. Two of my favourites failed that last test.\n\nThe name is a handle. I test mine on three people. Two minutes each. Pick one your customers can say out loud at a meeting and move on to the thing they'll talk about.\n#AI #BuildInPublic #VibeCoding #tech #Branding #Startup #Naming #Product #Marketing #Business #Founder #SoloBuilder #IndieHacker #Strategy #Learning #Growth #ProductDevelopment #Design",
+      "schedule_time": "2026-11-11 09:00",
+      "error": "",
+      "updated_at": "2026-11-11T04:17:28+00:00",
+      "attempts": 2
+    },
+    "b950bee2c18f59d6903c0127e31633c56bbdec97d0000263fa8010b194dad934": {
+      "record_id": "b950bee2c18f59d6903c0127e31633c56bbdec97d0000263fa8010b194dad934",
+      "status": "failed",
+      "content": "Manage energy rather than time. I moved my hardest work to the morning and my output went up without changing a single hour of my schedule.\n\nThe old plan was to fill every block with something useful, and it didn't work. What I never accounted for was that a hard problem at four in the afternoon takes me three times as long as the same problem at nine.\n\nSo the calendar has two kinds of blocks now. Thinking blocks before noon, three hours, no meetings. Everything else after, which includes email, support, invoices, and code I could write half asleep.\n\nThe surprising effect was on how I felt about the week. I stopped ending days with the important thing untouched, which used to happen every single time.\n\nSame hours. Different order. The order was the whole problem. I don't move those blocks for anything. Not even for a customer, unless it's an outage.\n#AI #BuildInPublic #VibeCoding #tech #Productivity #DeepWork #Developer #Founder #Habits #Startup #SoloBuilder #Focus #Learning #TimeManagement #Mindset #Health #Craft #Work",
+      "schedule_time": "2026-11-11 09:15",
+      "error": "",
+      "updated_at": "2026-11-11T04:17:55+00:00",
+      "attempts": 2
+    },
+    "c2e19f74408a43002a5a3aa437baea14edc820a9dc70ab5aae14a1a6e2c050ab": {
+      "record_id": "c2e19f74408a43002a5a3aa437baea14edc820a9dc70ab5aae14a1a6e2c050ab",
+      "status": "failed",
+      "content": "Stopping a project is a decision you should make on a date you chose in advance. I keep a review date next to every new thing, and I hold to it.\n\nThe review asks one question. Is anyone using this who isn't me. If the answer is no and the project is past its date, it stops. No sunk cost argument, no waiting for a good month, no third month of maybe.\n\nTwo of my last four ideas died on their review date. Both felt premature when I read the answer, and neither has come up since.\n\nThe date is what makes it work. Deciding in the moment means deciding while I'm still attached, because I built the thing and I want it to be right.\n\nPut the date in when you start. Let past you make the call. I do it in a note next to the first commit. Four ideas. Two alive. That's a fine record.\n#AI #BuildInPublic #VibeCoding #tech #Startup #SoloBuilder #IndieHacker #Strategy #DecisionMaking #Founder #Business #Product #SideProject #Learning #Focus #Growth #Mindset #Planning",
+      "schedule_time": "2026-11-11 09:30",
+      "error": "",
+      "updated_at": "2026-11-11T04:18:24+00:00",
+      "attempts": 2
     }
   }
 }
